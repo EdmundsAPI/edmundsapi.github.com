@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello Edmunds in API World!
+title: Hello Edmunds in the API World!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
