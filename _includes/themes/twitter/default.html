@@ -6,17 +6,35 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <!-- viewport for responsin designe -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- JQuery -->
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/jquery-1.9.1.js"></script>
+ 
+    <!-- Style dropdown -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/dropdowns.css" rel="stylesheet">
+	
+	<!-- Style Bootstrap -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Style Bootstrap responsive -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<!-- Style Custom -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	
+	<!-- Js plugins of the bootstrap -->
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-collapse.js"></script>
+
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -25,42 +43,121 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+  <script type="text/javascript">
 
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+      $(function(){
 
+       //$('.dropdown-toggle').dropdown();
+       $(".collapse").collapse();
+
+      });
+
+  </script>
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+
+     <div class="topBlogBackground"></div>
+    
+    <div class="container">
+      
+    <header>
+		<div class="row">
+          <div class="span2">
+            <a href="#" title="Edmunds"><img width="93" src="{{ ASSET_PATH }}/img/logo.png" alt="Edmunds"></a>
+          </div>
+  
+          <div class="span10 navbar">
+ 			 
+			<a class="linkGetStart" href="#" title="Get started">Get started</a>
+		  	
+            <nav class="navbar-inner headerLinks">
+              <div class="register">
+                <img src="{{ ASSET_PATH }}/img/icon_user.gif" alt="User"> 
+                <a href="#" title="Sign in">Sign in</a>
+                <span>or</span>
+                <a href="#" title="Register">Register</a>
+              </div>
+              <ul class="nav">
+                <li><a href="#" title="FAQ">FAQ</a></li>
+                <li><a href="#" title="Blog">Blog</a></li>
+                <li><a href="#" title="Forum">Forum</a></li>
+              </ul>
+            </nav>
+  
+            <nav class="navbar-inner headerMenu">
+              <ul class="nav">
+              	<!--{% assign pages_list = site.pages %}
+	            {% assign group = 'navigation' %}
+           		{% include JB/pages_list %}-->
+                <li class="active"><a href="#" title="api documentation">api documentation</a></li>
+                <li><a href="#" title="widgets and apps">widgets and apps</a></li>
+                <li><a href="#" title="showcase">showcase</a></li>
+                <li><a href="#" title="certified developers">certified developers</a></li>
+              </ul>
+            </nav>
+ 
+          </div>
+          
+  
+          
+         </div>
+         
+          <div class="row h1Title">
+          	
+          	<!--<div class="span2"></div>-->
+          	<div class="span10"><h1>The Edmunds API</h1></div>
+          	<div class="span2"></div>
+          	
+          </div>
+
+       </header>
+      <!-- start content {{ content }}-->
+        <div class="content">
+          
+
+          {{content}}
+
+
         </div>
-      </div>
+
+      <!-- end content -->
+	<div class="push"></div>
     </div>
 
-    <div class="container-narrow">
+   <footer class="footerLayout navbar row">
 
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
+        <div class="container">
+
+          <div class="span6 footerLinks">
+
+            <nav class="navbar-inner">
+              <ul class="nav">
+                <li><a href="#" title="Terms of user">Terms of user</a></li>
+                <li><a href="#" title="API Explorer">API Explorer</a></li>
+                <li><a href="#" title="API Branding Guide">API Branding Guide</a></li>
+                <li><a href="#" title="Contact us">Contact us</a></li>
+              </ul>
+            </nav>
+
+          </div>
+          <div class="span6 social">
+
+            <nav class="navbar-inner">
+              <ul class="nav">
+                <li><a href="#" title="Facebook"><img src="{{ ASSET_PATH }}/img/icon_facebook.gif" alt="Facebook"></a></li>
+                <li><a href="#" title="Twitter"><img src="{{ ASSET_PATH }}/img/icon_twitter.gif" alt="Twitter"></a></li>
+                <li><a href="#" title="Google +"><img src="{{ ASSET_PATH }}/img/icon_google_plus.gif" alt="Google +"></a></li>
+              </ul>
+              <p class="visible-desktop">Say Hallo! Connect with
+                Edmunds Developer Network on
+                Facebook, Twitter and Google+</p>
+            </nav>
+
+          </div>
+
+        </div>
+
       </footer>
-
-    </div>
-
-    {% include JB/analytics %}
   </body>
 </html>
