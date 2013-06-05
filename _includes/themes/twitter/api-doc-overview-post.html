@@ -1,0 +1,19 @@
+<header>
+    			<h1>Model year reposirory</h1>
+
+    			<div class="navbar">
+					<nav class="navbar-inner headerMenuContent">
+					  <ul class="nav">
+					    {% assign pages_list = site.pages %}
+						{% assign group = 'api-doc-submenu' %}
+						{% include JB/pages_list %} 
+					  </ul>
+					</nav>
+				</div>
+    		</header>
+    		<section>
+    			
+    			{{content}}
+
+	    		
+</section>

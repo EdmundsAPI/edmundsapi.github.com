@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% include JB/setup %}
+
+
+ <div class="row"> 	 
+
+    	<div class="span2 collumnMenu">
+			<ul class="nav">
+			  {% assign pages_list = site.pages %}
+			  {% assign group = 'left menu api documentation' %}
+			  {% include JB/pages_list %}     
+			</ul>
+    	</div>
+
+    	<div class="span10 sectionContent">
+    		{{content}}
+    	</div>
+
+    </div>
