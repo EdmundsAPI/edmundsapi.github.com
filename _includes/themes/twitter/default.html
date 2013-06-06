@@ -124,40 +124,8 @@
       <!-- end content -->
 	<div class="push"></div>
     </div>
-
-   <footer class="footerLayout navbar row">
-
-        <div class="container">
-
-          <div class="span6 footerLinks">
-
-            <nav class="navbar-inner">
-              <ul class="nav">
-                <li><a href="#" title="Terms of user">Terms of user</a></li>
-                <li><a href="#" title="API Explorer">API Explorer</a></li>
-                <li><a href="#" title="API Branding Guide">API Branding Guide</a></li>
-                <li><a href="#" title="Contact us">Contact us</a></li>
-              </ul>
-            </nav>
-
-          </div>
-          <div class="span6 social">
-
-            <nav class="navbar-inner">
-              <ul class="nav">
-                <li><a href="#" title="Facebook"><img src="{{ ASSET_PATH }}/img/icon_facebook.gif" alt="Facebook"></a></li>
-                <li><a href="#" title="Twitter"><img src="{{ ASSET_PATH }}/img/icon_twitter.gif" alt="Twitter"></a></li>
-                <li><a href="#" title="Google +"><img src="{{ ASSET_PATH }}/img/icon_google_plus.gif" alt="Google +"></a></li>
-              </ul>
-              <p class="visible-desktop">Say Hallo! Connect with
-                Edmunds Developer Network on
-                Facebook, Twitter and Google+</p>
-            </nav>
-
-          </div>
-
-        </div>
-
-      </footer>
+	
+	{% include themes/twitter/footer_layout.html %}
+   
   </body>
 </html>
