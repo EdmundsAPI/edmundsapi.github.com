@@ -7,13 +7,11 @@ layout: default
  <div class="row"> 	 
 
     	<div class="span2 collumnMenu">
-			{% comment%}<!--<ul class="nav">
-			  {% assign pages_list = site.pages %}
-			  {% assign group = 'left menu api documentation' %}
-			  {% include JB/pages_list %}     
-			</ul>-->{% endcomment %}
+    		
+    		{% include themes/twitter/api-doc-select-api-version.html %}
+    		
+			{% include themes/twitter/api-doc-left-menu-api-v1.html %}
 			
-			{% include themes/twitter/api-doc-left-menu.html %}
     	</div>
 
     	<div class="span10 sectionContent">

@@ -1,0 +1,55 @@
+
+
+<div class="btn-group">
+    <a class="value_selected_item btn dropdown-toggle" data-toggle="dropdown" href="#">
+    	Кнопка
+    	<span class="caret"></span>
+    </a>
+    <ul class="htabs dropdown-menu">
+		<li><a href="{{ PATH }}/api-documentation/api-v1/api_v1.html" id="api-v1" title="Api version 1.0">Api version 1.0</a></li>
+		<li><a href="{{ PATH }}/api-documentation/api-v2/api_v2.html" id="api-v2" title="Api version 2.0">Api version 2.0</a></li>
+    </ul>
+</div>
+
+
+
+<script type="text/javascript">
+	
+jQuery(document).ready(function(){
+
+	var cookieName = 'level';
+	var cookieOptions = {expires: 7, path: '/'};
+	var value_selected_item = $('.value_selected_item');
+	
+	$("#verbose").val("");
+	$("#" + $.cookie(cookieName)).addClass("selected");
+
+	$(".htabs a").click(function(e){
+		//e.preventDefault();
+		$("#" + $.cookie(cookieName)).removeClass("selected");
+		$.cookie(cookieName, $(this).attr("id"), cookieOptions);
+		$("#" + $.cookie(cookieName)).addClass("selected");
+	});
+	
+	$("#showCookie").click(function(e){
+		e.preventDefault();
+		$("#verbose").val("Значение куки : " + $.cookie(cookieName) + ".");
+	});
+	
+	$("#deleteCookie").click(function(e){
+		e.preventDefault();
+		$("#verbose").val("Куки 'level' со значением \"" + $.cookie(cookieName) + "\" удалено.");
+		$("#" + $.cookie(cookieName)).removeClass("selected");
+		$.cookie(cookieName, null, {path:'/'});
+	});
+	
+	
+	var count_selected = $('.selected');
+	
+	if (count_selected.length == 1) {
+		value_selected_item.html(count_selected.text() + '<span class="caret"></span>');
+	}
+	
+	
+});
+</script>

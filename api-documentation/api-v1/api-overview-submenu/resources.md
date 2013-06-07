@@ -1,5 +1,5 @@
 ---
-layout: api-documentation-overview
+layout: api-documentation-overview-api-v1
 title : Resources
 header : Resources
 group: api-doc-submenu
