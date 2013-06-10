@@ -203,7 +203,7 @@ nav.headerLinks {
   text-align: center;
   background: #444;
 }
-.linkGetStart:hover {
+.linkGetStart:hover, .linkGetStart:focus {
 	color:#fff;
 	text-decoration: none;
 }
