@@ -64,10 +64,10 @@
     
     <div class="container">
       
-    <header>
+    <header class="topHeader">
 		<div class="row">
           <div class="span2">
-            <a href="{{ PATH }}/index.html" title="Edmunds"><img width="93" src="{{ ASSET_PATH }}/img/logo.png" alt="Edmunds"></a>
+            <a href="{{ PATH }}/index.html" title="Edmunds"><img class="topLogo"src="{{ ASSET_PATH }}/img/api-logo.png" alt="Edmunds"></a>
           </div>
   
           <div class="span10 navbar">
@@ -93,10 +93,10 @@
               	{% assign pages_list = site.pages %}
 	            {% assign group = 'main navigation' %}
            		{% include JB/pages_list %}
-               <!-- <li class="active"><a href="#" title="api documentation">api documentation</a></li>
-                <li><a href="#" title="widgets and apps">widgets and apps</a></li>
-                <li><a href="#" title="showcase">showcase</a></li>
-                <li><a href="#" title="certified developers">certified developers</a></li>-->
+                <!-- <li><a href="{{ PATH }}/api-documentation.html" title="api documentation">api documentation</a></li>
+                <li><a href="{{ PATH }}/widgets_and_apps.html" title="widgets and apps">widgets and apps</a></li>
+                <li><a href="{{ PATH }}/showcase.html" title="showcase">showcase</a></li>
+                <li><a href="{{ PATH }}/certified-dev.html" title="certified developers">certified developers</a></li>-->
               </ul>
             </nav>
  
@@ -116,7 +116,7 @@
 
        </header>
       <!-- start content {{ content }}-->
-        <div class="content">
+        <div class="content " id="posElemFixedTop">
           
 
           {{content}}
@@ -130,5 +130,40 @@
 	
 	{% include themes/twitter/footer_layout.html %}
    
+   
+   
+    <!-- JS ofr retina -->
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
+    
+    
+    <!-- Scrolling -->
+    <script type="text/javascript">
+    	
+    	$('#posElemFixedTop').scroll(function () {
+			alert('kjfshf');
+		});
+    	
+    </script>
+    
+    <!--<script type="text/javascript">
+
+		$(function(){
+			
+			var navLi = $('.headerMenu').find('li');
+			
+			navLi.click(function(){
+				
+				navLi.removeClass('active');
+				$(this).addClass('active');
+				
+			});
+			
+			
+		});
+		
+	</script>-->
+    
+    
+    
   </body>
 </html>
