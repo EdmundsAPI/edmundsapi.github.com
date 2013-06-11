@@ -12,33 +12,15 @@ sub_weight: 3
 </p>
 
 <pre>
-<code>
-	[
-    {
-        link: "URL",
-        title: "STRING",
-        published: "YYY-MM-DD",
-        content: "TEXT IN HTML FORMAT"
-    }, 
-    {
-        link: "URL",
-        title: "STRING",
-        published: "YYY-MM-DD",
-        content: "TEXT IN HTML FORMAT"
-    }, 
-    {
-        link: "URL",
-        title: "STRING",
-        published: "YYY-MM-DD",
-        content: "TEXT IN HTML FORMAT"
-    },
-    {
-        link: "URL",
-        title: "STRING",
-        published: "YYY-MM-DD",
-        content: "TEXT IN HTML FORMAT"
-    }, ....
-]
+<code class="prettyprint">
+// SyntaxHighlighter makes your code snippets beautiful without tiring your servers.
+// http://alexgorbatchev.com
+var setArray = function(elems) {
+    this.length = 0;
+    push.apply(this, elems);
+    return this;
+}
 </code>		
+	
 </pre>
  

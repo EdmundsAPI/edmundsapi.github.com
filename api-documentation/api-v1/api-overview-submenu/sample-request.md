@@ -14,7 +14,7 @@ sub_weight: 4
 Get all information on BMW M3 2011
 
 <pre>
-<code>
+<code class="prettyprint">
 	{
     "tmv": {
         "certifiedUsedPrice": 0,
