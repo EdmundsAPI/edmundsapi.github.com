@@ -234,6 +234,17 @@ nav.headerLinks {
 	margin-left: 30px;
 }
 .navbar-inner {filter: none;}
+.container {
+	position: relative;
+}
+.verticalLine {
+	position:absolute;
+	left:199px;
+	top:213px;
+	bottom:0px;
+	width: 0;
+	border-left: 1px solid #ccc;
+}
 /*__End Header__*/
 
 
