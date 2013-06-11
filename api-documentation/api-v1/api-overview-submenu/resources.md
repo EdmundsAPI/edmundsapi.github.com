@@ -3,6 +3,7 @@ layout: api-documentation-overview-api-v1
 title : Resources
 header : Resources
 group: api-doc-submenu
+sub_weight: 2
 ---
 
 

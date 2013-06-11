@@ -90,10 +90,24 @@
   
             <nav class="navbar-inner headerMenu">
               <ul class="nav">
-              	{% assign pages_list = site.pages %}
+              	
+              	
+              	{% for weight in (1..10) %}
+				  {% for p in site.pages %}
+				    {% if p.weight == weight %}
+				      <li>
+				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+				          {{ p.title }}
+				        </a>
+				      </li>
+				    {% endif %}
+				  {% endfor %}
+				{% endfor %}
+
+              	<!-- {% assign pages_list = site.pages %}
 	            {% assign group = 'main navigation' %}
            		{% include JB/pages_list %}
-                <!-- <li><a href="{{ PATH }}/api-documentation.html" title="api documentation">api documentation</a></li>
+                <li><a href="{{ PATH }}/api-documentation.html" title="api documentation">api documentation</a></li>
                 <li><a href="{{ PATH }}/widgets_and_apps.html" title="widgets and apps">widgets and apps</a></li>
                 <li><a href="{{ PATH }}/showcase.html" title="showcase">showcase</a></li>
                 <li><a href="{{ PATH }}/certified-dev.html" title="certified developers">certified developers</a></li>-->
