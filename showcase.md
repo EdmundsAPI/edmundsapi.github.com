@@ -3,6 +3,7 @@ layout: page
 title: Showcase
 header: Post showcase
 group: main navigation
+weight: 3
 ---
 
 
