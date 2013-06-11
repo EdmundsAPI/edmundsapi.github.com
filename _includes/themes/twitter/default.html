@@ -16,6 +16,11 @@
 	
 	<!-- JQuery -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.js"></script>
+        
+	<!-- google-code-prettify.googlecode.com -->
+	<link href="{{ ASSET_PATH }}/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="{{ ASSET_PATH }}/js/google-code-prettify/prettify.js"></script>
+    
     
     <!-- JQuery plugin cookie -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.cookie.js"></script>
@@ -58,7 +63,7 @@
   </script>
   </head>
 
-  <body>
+  <body onload="prettyPrint()">
 
      <div class="topBlogBackground"></div>
     
@@ -90,8 +95,7 @@
   
             <nav class="navbar-inner headerMenu">
               <ul class="nav">
-              	
-              	
+
               	{% for weight in (1..10) %}
 				  {% for p in site.pages %}
 				    {% if p.weight == weight %}
@@ -130,8 +134,7 @@
 
        </header>
       <!-- start content {{ content }}-->
-        <div class="content " id="posElemFixedTop">
-          
+        <div class="content"> 
 
           {{content}}
 
@@ -148,36 +151,7 @@
    
     <!-- JS ofr retina -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
-    
-    
-    <!-- Scrolling -->
-    <script type="text/javascript">
-    	
-    	$('#posElemFixedTop').scroll(function () {
-			alert('kjfshf');
-		});
-    	
-    </script>
-    
-    <!--<script type="text/javascript">
 
-		$(function(){
-			
-			var navLi = $('.headerMenu').find('li');
-			
-			navLi.click(function(){
-				
-				navLi.removeClass('active');
-				$(this).addClass('active');
-				
-			});
-			
-			
-		});
-		
-	</script>-->
-    
-    
     
   </body>
 </html>

@@ -2,11 +2,14 @@
 
 <div class="btn-group select_version_api">
     <a class="value_selected_item btn dropdown-toggle" data-toggle="dropdown" href="#">
-    	Api version 1.0
     	<span class="carretWrapper"><span class="caret"></span></span>
+    	<span>API version 1.0</span> 
+    	
     </a>
+    
+    <span class="caret selectCaret"></span>
+    
     <ul class="htabs dropdown-menu">
-    	<span class="caret"></span>
     	<li class="tip"><span>Choose the API version you want to investigate</span></li>
 		<li><a href="{{ PATH }}/api-documentation/api-v1/api_v1.html" id="api-v1" title="Api version 1.0">Api version 1.0</a></li>
 		<li><a href="{{ PATH }}/api-documentation/api-v2/api_v2.html" id="api-v2" title="Api version 2.0">Api version 2.0</a></li>
@@ -33,25 +36,11 @@ jQuery(document).ready(function(){
 		$("#" + $.cookie(cookieName)).addClass("selected");
 	});
 	
-	$("#showCookie").click(function(e){
-		e.preventDefault();
-		$("#verbose").val("Значение куки : " + $.cookie(cookieName) + ".");
-	});
-	
-	$("#deleteCookie").click(function(e){
-		e.preventDefault();
-		$("#verbose").val("Куки 'level' со значением \"" + $.cookie(cookieName) + "\" удалено.");
-		$("#" + $.cookie(cookieName)).removeClass("selected");
-		$.cookie(cookieName, null, {path:'/'});
-	});
-	
-	
 	var count_selected = $('.selected');
 	
 	if (count_selected.length == 1) {
 		value_selected_item.html(count_selected.text() + '<span class="carretWrapper"><span class="caret"></span></span>');
 	}
-	
 	
 });
 </script>
