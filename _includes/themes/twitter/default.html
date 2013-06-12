@@ -161,6 +161,7 @@
 	<script type="text/javascript">	
 		
 		$(document).ready(function () {  
+		
 			
 		  var elemLeftMenu = $('.leftMenuFixed');
 		  var elemSubMenu = $('.headerMenuContent');
@@ -169,15 +170,15 @@
 		  var topSubMenu = elemSubMenu.offset().top;
 		  var topLeftMenu = elemLeftMenu.offset().top;
 		  
-		  var heightSubMenu = elemSubMenu.height() + 72 + "px";
+		  var heightSubMenu = elemSubMenu.height() + 35 + "px";
 		  
 		  var widthLeftMenu = elemLeftMenu.width();
 		  var widthSectionContent = elemSectionContent.width();
 		  
+		  
 		  $(window).scroll(function (event) {
 		    // what the y position of the scroll is
 		    var y = $(this).scrollTop();
-		    
 			
 
 		    // whether that's below the form
