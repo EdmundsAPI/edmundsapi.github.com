@@ -158,22 +158,17 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
 
 	<!-- Fixed left menu and submenu on the top -->
+
 	<script type="text/javascript">	
 		
 		$(document).ready(function () {  
 		
 			
 		  var elemLeftMenu = $('.leftMenuFixed');
-		  var elemSubMenu = $('.headerMenuContent');
-		  var elemSectionContent = $('.sectionContent');
 		  
-		  var topSubMenu = elemSubMenu.offset().top;
-		  var topLeftMenu = elemLeftMenu.offset().top;
-		  
-		  var heightSubMenu = elemSubMenu.height() + 35 + "px";
-		  
+		  var topLeftMenu = elemLeftMenu.offset().top - parseFloat(elemLeftMenu.css('marginTop').replace(/auto/, 0));
+		
 		  var widthLeftMenu = elemLeftMenu.width();
-		  var widthSectionContent = elemSectionContent.width();
 		  
 		  
 		  $(window).scroll(function (event) {
@@ -182,26 +177,18 @@
 			
 
 		    // whether that's below the form
-		    if (y >= topSubMenu || y >= topLeftMenu) {
+		    if (y >= topLeftMenu) {
 		      // if so, ad the fixed class
 		      
 		      elemLeftMenu.addClass('fixed');
 		      elemLeftMenu.css('width', widthLeftMenu);
 		      
-		      elemSubMenu.addClass('fixed'); 
-		      elemSubMenu.css('width', widthSectionContent);
-		      
-		      elemSectionContent.css('margin-top', heightSubMenu);
  
 		    } else {
 		      // otherwise remove it
 		      elemLeftMenu.removeClass('fixed');
 		      elemLeftMenu.removeAttr('style');
 		      
-		      elemSubMenu.removeClass('fixed');
-		      elemSubMenu.removeAttr('style');
-		      
-		      elemSectionContent.removeAttr('style');
 		      
 		    }
 		  });
