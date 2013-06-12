@@ -16,7 +16,7 @@
 	
 	<!-- JQuery -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.js"></script>
-        
+       
 	<!-- google-code-prettify.googlecode.com -->
 	<link href="{{ ASSET_PATH }}/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="{{ ASSET_PATH }}/js/google-code-prettify/prettify.js"></script>
@@ -42,6 +42,11 @@
 	<!-- Js plugins of the bootstrap -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-dropdown.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-collapse.js"></script>
+    
+    <!-- jQuery custom content scroller for left menu-->
+	<link href="{{ ASSET_PATH }}/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      
 
 
     <!-- Le fav and touch icons -->
@@ -152,6 +157,73 @@
     <!-- JS ofr retina -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
 
+	<!-- Fixed left menu and submenu on the top -->
+	<script type="text/javascript">	
+		
+		$(document).ready(function () {  
+			
+		  var elemLeftMenu = $('.leftMenuFixed');
+		  var elemSubMenu = $('.headerMenuContent');
+		  var elemSectionContent = $('.sectionContent');
+		  
+		  var topSubMenu = elemSubMenu.offset().top;
+		  var topLeftMenu = elemLeftMenu.offset().top;
+		  
+		  var heightSubMenu = elemSubMenu.height() + 72 + "px";
+		  
+		  var widthLeftMenu = elemLeftMenu.width();
+		  var widthSectionContent = elemSectionContent.width();
+		  
+		  $(window).scroll(function (event) {
+		    // what the y position of the scroll is
+		    var y = $(this).scrollTop();
+		    
+			
+
+		    // whether that's below the form
+		    if (y >= topSubMenu || y >= topLeftMenu) {
+		      // if so, ad the fixed class
+		      
+		      elemLeftMenu.addClass('fixed');
+		      elemLeftMenu.css('width', widthLeftMenu);
+		      
+		      elemSubMenu.addClass('fixed'); 
+		      elemSubMenu.css('width', widthSectionContent);
+		      
+		      elemSectionContent.css('margin-top', heightSubMenu);
+ 
+		    } else {
+		      // otherwise remove it
+		      elemLeftMenu.removeClass('fixed');
+		      elemLeftMenu.removeAttr('style');
+		      
+		      elemSubMenu.removeClass('fixed');
+		      elemSubMenu.removeAttr('style');
+		      
+		      elemSectionContent.removeAttr('style');
+		      
+		    }
+		  });
+		});
+	</script>
+	
+	<!-- Custom scrolling for left menu -->
+	<script type="text/javascript">
+		(function($){
+			
+			$(window).load(function(){
+				
+				$(".leftMenuFixed").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+					
+				});
+			
+			});
+			
+		})(jQuery); 
+	</script>	
     
   </body>
 </html>

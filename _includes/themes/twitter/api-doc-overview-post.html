@@ -1,8 +1,8 @@
-<header>
+<header class="headerMenuContent">
 	<h1>{{page.title}}</h1>
 
 	<div class="navbar">
-		<nav class="navbar-inner headerMenuContent">
+		<nav class="navbar-inner">
 		  <ul class="nav">
 		    {% for sub_weight in (1..10) %}
 				{% for p in site.pages %}
@@ -20,8 +20,11 @@
 		</nav>
 	</div>
 </header>
+
 <section>
     			
     			{{content}}
 
 </section>
+
+
