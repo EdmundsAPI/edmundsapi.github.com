@@ -1,6 +1,6 @@
 ---
 layout: api-documentation-api-v1
-title : The Vehicle API12
+title : Dealer rtings and reviews 
 header : The Vehicle API
 ---
 {% include JB/setup %}

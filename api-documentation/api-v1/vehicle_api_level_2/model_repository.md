@@ -1,6 +1,6 @@
 ---
 layout: api-documentation-api-v1
-title : The Vehicle API3
+title : Model repository 
 header : The Vehicle API
 ---
 {% include JB/setup %}
