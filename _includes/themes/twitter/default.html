@@ -104,13 +104,18 @@
 				  {% for p in site.pages %}
 				    {% if p.weight == weight %}
 				      <li>
-				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}" title="{{ p.title }}">
 				          {{ p.title }}
 				        </a>
 				      </li>
 				    {% endif %}
 				  {% endfor %}
 				{% endfor %}
+				
+				<!--<li><a href="{{ PATH }}/api-documentation/v1/overview/index.html" id="api_doc" title="API documentation">api documentation</a></li>
+                <li><a href="{{ PATH }}/widgets_and_apps.html" id="widgets" title="Widgets and apps">widgets and apps</a></li>
+                <li><a href="{{ PATH }}/showcase.html" id="showcase" title="Showcase">showcase</a></li>
+                <li><a href="{{ PATH }}/certified-dev.html" id="certified_dev" title="Certified developers">certified developers</a></li>-->
 
               </ul>
             </nav>
@@ -128,7 +133,7 @@
           	<div class="span2"></div>
           	
           </div>
-
+		
        </header>
       <!-- start content {{ content }}-->
         <div class="content"> 
@@ -150,7 +155,6 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
 
 	<!-- Fixed left menu and submenu on the top -->
-
 	<script type="text/javascript">	
 		
 		$(document).ready(function () {  
@@ -189,39 +193,49 @@
 		  });
 		});
 	</script>
-	
-	<!-- Custom scrolling for left menu -->
-	<script type="text/javascript">
-		(function($){
 			
-			$(window).load(function(){
-				
-				$(".leftMenuFixed").mCustomScrollbar({
-					scrollButtons:{
-						enable:true
-					}
-					
-				});
-			
-			});
-			
-		})(jQuery); 
-	</script>	
     
-     <!-- jQuery custom content scroller for left menu-->
-	<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      
-	
-	<!-- Set default active links for left menu, top menu, submenu of content part -->
+	<!-- Set default active links top menu -->
 	<script type="text/javascript">
-		// top menu
-		//var valueLinkHeaderMenu = $('.headerMenu').find('a.active').text().toUpperCase();
-		//var valueActiveTopMenu = $('.h1Title').find('h1').text().toUpperCase();
 		
-	//	if (valueLinkHeaderMenu == valueActiveTopMenu) alert('test');
-		
-	</script>
+
+		//top menu
+		var linkHeaderMenu = $('.headerMenu').find('a');
+		var valueActiveTopMenu = $('.h1Title').find('h1').text();
+		var amountLinks = linkHeaderMenu.length;
+		for (var i=0; i<=amountLinks; i++) {
+			var valTitle = linkHeaderMenu.eq(i).attr('title');
+			if(valTitle == valueActiveTopMenu) {
+				linkHeaderMenu.eq(i).addClass('active');
+			}
+		}
 	
+	</script>
+
+
+
+{% comment %} <!-- jQuery custom content scroller for left menu--> {% endcomment %}
+<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
+{% comment %} <!-- Custom scrolling for left menu --> {% endcomment %}
+<script type="text/javascript">
+	(function($){
+		
+		$(window).load(function(){
+			
+			$("#leftMenuFixed").mCustomScrollbar({
+				scrollButtons:{
+					enable:true
+				}
+				
+			});
+		
+		});
+		
+	})(jQuery); 
+</script>
+
+
+
 	
   </body>
 </html>

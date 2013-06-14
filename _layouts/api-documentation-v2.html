@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% include JB/setup %}
+
+<div class="verticalLine"></div>
+<div class="row"> 	 
+
+	<div class="span2 collumnMenu">
+		
+		<div id="leftMenuFixed" class="leftMenuFixed">
+			
+			{% include themes/twitter/api-doc-select-api-version.html %}
+								
+			{% include themes/twitter/api-doc-left-menu-v2.html %}
+			
+		</div>
+		
+	</div>
+
+	<div class="span10 sectionContent">
+
+		{% include themes/twitter/api-doc-content.html %}
+
+	</div>
+
+</div>
+
+
+{% comment %} <!-- jQuery custom content scroller for left menu--> {% endcomment %}
+<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+{% comment %} <!-- Set default active links for left menu, top menu, submenu of content part --> {% endcomment %}
+<script type="text/javascript">
+	//top menu
+	var linkLeftMenu = $('.multiLevelMenu').find('a');
+	var valueActiveLeftMenu = $('.h1Title').find('h1').text();
+	
+	var amountLinks = linkHeaderMenu.length;
+	
+	for (var i=0; i<=amountLinks; i++) {
+		var valTitle = linkHeaderMenu.eq(i).attr('title');
+		if(valTitle == valueActiveTopMenu) {
+			
+			linkHeaderMenu.eq(i).addClass('active');
+			console.log('bingo');
+		}
+	}
+	
+</script>
+     
+	

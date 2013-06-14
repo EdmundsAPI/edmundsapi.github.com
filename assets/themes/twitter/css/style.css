@@ -128,7 +128,7 @@ header {
 header h1 {
 	margin: 8px 0 10px 230px;
 	color:#444;
-	font: 26px/78px 'Oswald400';
+	font: 36px/78px 'Oswald400';
 	text-transform: uppercase;
 }
 
@@ -470,6 +470,14 @@ ul.multiLevelMenu {
 	width: 8px;
 	border-right: 1px solid #ccc;
 	background: #E7E7E7;
+}
+.multiLevelMenu a.active, .multiLevelMenu a.active:hover {
+	color:#BF2F37
+}
+#valActiveLeftMenu {
+	position: absolute;
+    top: 10000px;
+    visibility: hidden;
 }
  /* Large desktop */
 
