@@ -1,0 +1,19 @@
+<div class="navbar">
+	<nav class="navbar-inner">
+	  <ul class="nav">
+
+	    {% for sub_weight in (1..10) %}
+			{% for p in site.pages %}
+		    {% if p.sub_weight == sub_weight %}
+		      <li>
+		        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+		          {{ p.title }}
+		        </a>
+		      </li>
+		    {% endif %}
+		  {% endfor %}
+		{% endfor %}
+
+	  </ul>
+	</nav>
+</div>

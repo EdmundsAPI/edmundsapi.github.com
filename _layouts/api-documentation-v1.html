@@ -8,22 +8,20 @@ layout: default
 
 	<div class="span2 collumnMenu">
 		
-		<div class="leftMenuFixed">
+		<div id="leftMenuFixed" class="leftMenuFixed">
 			
 			{% include themes/twitter/api-doc-select-api-version.html %}
-						
-			{% include themes/twitter/api-doc-left-menu-api-v1.html %}
+								
+			{% include themes/twitter/api-doc-left-menu-v1.html %}
 			
 		</div>
 		
 	</div>
 
 	<div class="span10 sectionContent">
-		<section>
-			
-		{{content}}
 
-		</section>
+		{% include themes/twitter/api-doc-content.html %}
+
 	</div>
 
 </div>

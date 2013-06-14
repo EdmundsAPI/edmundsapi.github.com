@@ -1,6 +1,7 @@
 ---
-layout: api-documentation-overview-api-v1
+layout: api-documentation-v1
 title : Resources
+title_parent: Api documentation
 header : Resources
 group: api-doc-submenu
 sub_weight: 2

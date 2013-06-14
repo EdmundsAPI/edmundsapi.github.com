@@ -1,6 +1,7 @@
 ---
-layout: api-documentation-overview-api-v1
+layout: api-documentation-v1
 title : Sample Request
+title_parent: Api documentation
 header : Sample Request
 group: api-doc-submenu
 sub_weight: 4

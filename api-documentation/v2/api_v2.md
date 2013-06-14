@@ -1,8 +1,8 @@
 ---
-layout: api-documentation-overview-api-v1
+layout: api-documentation-v1
 title : API version 2
+title_parent: Api documentation
 header : API version 2
-group: version_api
 ---
 
 {{page.title}}

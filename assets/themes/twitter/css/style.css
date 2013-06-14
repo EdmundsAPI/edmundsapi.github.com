@@ -309,7 +309,9 @@ body > .container {
   border: 0;
 }
 .sectionContent header h1 {
-  margin: 0 0 35px 29px;
+  padding: 0 0 35px 29px;
+  margin:0;
+  border-bottom:1px solid #ccc;
   font: 26px/26px 'Oswald400';
   color: #444;
   text-transform: uppercase;
@@ -328,7 +330,6 @@ body > .container {
 }
 .sectionContent .navbar nav {
   border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
 }
 .sectionContent p {
   margin-bottom: 26px;
@@ -354,7 +355,6 @@ body > .container {
 }
 .leftMenuFixed {
 	overflow: hidden;
-	max-height:700px;
 }
 .select_version_api {
 	display: block;
