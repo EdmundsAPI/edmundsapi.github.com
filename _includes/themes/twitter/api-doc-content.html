@@ -1,6 +1,8 @@
 <header class="headerMenuContent">
 	
-	<h1>{{page.header_parent}}</h1>
+	<h1>{{page.title}}</h1>
+	
+	<span id="valActiveLeftMenu">{{page.title_active_left_menu}}</span>
 	
 		{% if page.level == 2 %}
 		
@@ -17,9 +19,9 @@
 </section>
 
 
-
+{% comment %} <!-- script for fix header of content in top window of brawser--> {% endcomment %}
 <script type="text/javascript">	
-	
+
 $(document).ready(function () {  
 	
 		
@@ -58,5 +60,22 @@ $(document).ready(function () {
 	  });
 });
 </script>
+
+
+{% comment %} <!-- Set default active links for left menu, top menu, submenu of content part --> {% endcomment %}
+	<script type="text/javascript">
+		//left menu
+		var linkLeftMenu = $('.multiLevelMenu').find('a');
+		var valueActiveLeftMenu = $('#valActiveLeftMenu').text();
+		var amountLinks = linkLeftMenu.length;
+		for (var i=0; i<=amountLinks; i++) {
+			var valTitle = linkLeftMenu.eq(i).attr('title');
+			if(valTitle == valueActiveLeftMenu) {
+				linkLeftMenu.eq(i).addClass('active');
+			}
+		}
+		
+	</script>
+	
 
 

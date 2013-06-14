@@ -434,7 +434,7 @@ body > .container {
 	display: none;
 }
 ul.multiLevelMenu {
-	margin: 0 20px 10px 0;
+	margin: 31px 20px 10px 0;
 }
 .multiLevelMenu li {
 	padding: 8px 0;
@@ -470,6 +470,14 @@ ul.multiLevelMenu {
 	width: 8px;
 	border-right: 1px solid #ccc;
 	background: #E7E7E7;
+}
+.multiLevelMenu a.active, .multiLevelMenu a.active:hover {
+	color:#BF2F37
+}
+#valActiveLeftMenu {
+	position: absolute;
+    top: 10000px;
+    visibility: hidden;
 }
  /* Large desktop */
 
