@@ -9,7 +9,7 @@ header : Resources
 
 group: dealer_ratings_and_reviews
 
-sub_weight: 3
+sub_weight: 2
 
 level: 2
 ---

@@ -9,7 +9,7 @@ header : Responce Format
 
 group: dealer_ratings_and_reviews
 
-sub_weight: 2
+sub_weight: 3
 
 level: 2
 ---
