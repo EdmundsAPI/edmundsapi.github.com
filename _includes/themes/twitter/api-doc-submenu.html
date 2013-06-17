@@ -8,15 +8,13 @@
 				{% for p in site.pages %}
 					{% if p.group == 'dealer_ratings_and_reviews' %}
 					{% for sub_weight in (1..4) %}
-					{% if p.sub_weight == sub_weight %}
 						<li>
 							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
 								{{ p.title }}
 							</a>
 						</li>
-					{% endif %}
 					{% endfor %}
-				{% endif %}
+					{% endif %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'incentive_repository' %}
