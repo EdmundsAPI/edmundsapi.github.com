@@ -7,11 +7,13 @@
 			
 				{% for p in site.pages %}
 					{% if p.group == 'dealer_ratings_and_reviews' %}
+						{% for p.sub_weight in (1..4) %}
 						<li>
 							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
 								{{ p.title }}
 							</a>
 						</li>
+						{% endfor %}
 					{% endif %}
 				{% endfor %}
 			  
