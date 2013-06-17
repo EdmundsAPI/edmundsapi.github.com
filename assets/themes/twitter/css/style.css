@@ -163,15 +163,15 @@ header h1 {
 	text-decoration: none;
 }
 nav.headerLinks {
-  margin: 14px 0 11px 0;
+  margin: 14px 0 13px 0;
 }
 .navbar nav.headerMenu a {
-  display: inline;
+  display: inline-block;
   padding: 0;
-  margin-right: 28px;
+  margin-right: 25px;
   color:#444;
   border-bottom: 1px solid #444;
-  font: 26px/34px 'Oswald400';
+  font: 25px/31px 'Oswald400';
   text-transform: lowercase;
 }
 .headerMenu a:hover {
@@ -193,8 +193,9 @@ nav.headerLinks {
 .linkGetStart {
 	position:absolute;
 	right:0;
+	width:180px;
   margin-top: 16px;
-  padding: 30px 15px  6px 15px;
+  padding: 30px 0  6px 0;
   color: #fff;
   font: 26px 'Oswald400';
   text-transform: lowercase;
