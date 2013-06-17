@@ -21,126 +21,155 @@
 				{% endfor %}
 			  
 			{% elsif page.group == 'incentive_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'incentive_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'make_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'make_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'model_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'model_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'model_year_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'model_year_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'photo_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'photo_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'style_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'style_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			  
 			{% elsif page.group == 'true_cost_to_own' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'true_cost_to_own' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
-				
 			  
 			{% elsif page.group == 'true_market_value' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'true_market_value' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 				
 			  
 			{% elsif page.group == 'vehicle_ratings_and_rewiews_repository' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'vehicle_ratings_and_rewiews_repository' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 				
 			  
 			{% elsif page.group == 'vin_decoder' %}
-			
+				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
 					{% if p.group == 'vin_decoder' %}
-						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
-							</a>
-						</li>
-					{% endif %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 				
 				
