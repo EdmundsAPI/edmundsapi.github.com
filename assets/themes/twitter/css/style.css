@@ -318,7 +318,7 @@ body > .container {
   text-transform: uppercase;
 }
 .sectionContent section {
-	padding: 37px 0 20px 29px;
+	padding: 37px 0 81px 29px;
 }
 .headerMenuContent a {
   padding: 15px 42px 12px 42px
@@ -346,6 +346,36 @@ body > .container {
 .headerMenuContent.fixed {
 	box-shadow: 0 2px 3px #dad8d8 ;
 }
+	/*__Start Navigation left menu "Next & Previos"__*/
+	.wrapNextPrev {
+		position:absolute;
+		bottom: 128px;
+    	left: 199px;
+    	right:0;
+		border-top:1px solid #ccc; 
+		padding: 22px 29px;
+	}
+	#prevMenuItem, #nextMenuItem {
+		display:inline-block;
+		font: 14px/38px 'Oswald400', Arial;
+		background-image: url('../img/sprite_next_prev.gif');
+		background-repeat: no-repeat;
+		text-transform: uppercase; 
+	}
+	#prevMenuItem {
+		padding:0 0 0 24px;
+		background-position: 0 0; 
+	}
+	#nextMenuItem {
+		float: right;
+		padding:0 24px 0 0; 
+		background-position: 100% -38px; 
+	}
+	#prevMenuItem:hover, #nextMenuItem:hover {
+		text-decoration: none;
+	}
+	/*__End Navigation left menu "Next & Previos"__*/
+	
 /*__End Content__*/
 
 
@@ -477,7 +507,6 @@ ul.multiLevelMenu {
 }
 #valActiveLeftMenu {
 	position: absolute;
-    top: 10000px;
     visibility: hidden;
 }
  /* Large desktop */

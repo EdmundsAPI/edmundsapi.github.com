@@ -100,7 +100,7 @@
             <nav class="navbar-inner headerMenu">
               <ul class="nav">
 
-              	{% for weight in (1..10) %}
+              	{% for weight in (1..4) %}
 				  {% for p in site.pages %}
 				    {% if p.weight == weight %}
 				      <li>
@@ -151,88 +151,24 @@
    
    
    
-    <!-- JS ofr retina -->
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
-
-	<!-- Fixed left menu and submenu on the top -->
-	<script type="text/javascript">	
-		
-		$(document).ready(function () {  
-		
-			
-		  var elemLeftMenu = $('.leftMenuFixed');
-		  
-		  var topLeftMenu = elemLeftMenu.offset().top - parseFloat(elemLeftMenu.css('marginTop').replace(/auto/, 0));
-		
-		  var widthLeftMenu = elemLeftMenu.width();
-		  
-		  
-		  $(window).scroll(function (event) {
-		    // what the y position of the scroll is
-		    var y = $(this).scrollTop();
-			
-
-		    // whether that's below the form
-		    if (y >= topLeftMenu) {
-		      // if so, ad the fixed class
-		      
-		      elemLeftMenu.addClass('fixed');
-		      elemLeftMenu.css({
-		      	width: widthLeftMenu,
-		      	top: 0
-		      });
-		      
+<!-- JS ofr retina -->
+<script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
  
-		    } else {
-		      // otherwise remove it
-		      elemLeftMenu.removeClass('fixed');
-		      elemLeftMenu.removeAttr('style');
-		      
-		      
-		    }
-		  });
-		});
-	</script>
-			
-    
-	<!-- Set default active links top menu -->
-	<script type="text/javascript">
-		
-
-		//top menu
-		var linkHeaderMenu = $('.headerMenu').find('a');
-		var valueActiveTopMenu = $('.h1Title').find('h1').text();
-		var amountLinks = linkHeaderMenu.length;
-		for (var i=0; i<=amountLinks; i++) {
-			var valTitle = linkHeaderMenu.eq(i).attr('title');
-			if(valTitle == valueActiveTopMenu) {
-				linkHeaderMenu.eq(i).addClass('active');
-			}
-		}
-	
-	</script>
-
-
-
-{% comment %} <!-- jQuery custom content scroller for left menu--> {% endcomment %}
-<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
-{% comment %} <!-- Custom scrolling for left menu --> {% endcomment %}
+<!-- Set default active links top menu -->
 <script type="text/javascript">
-	(function($){
-		
-		$(window).load(function(){
-			
-			$("#leftMenuFixed").mCustomScrollbar({
-				scrollButtons:{
-					enable:true
-				}
-				
-			});
-		
-		});
-		
-	})(jQuery); 
+	//top menu
+	var linkHeaderMenu = $('.headerMenu').find('a');
+	var valueActiveTopMenu = $('.h1Title').find('h1').text();
+	var amountLinks = linkHeaderMenu.length;
+	for (var i=0; i<=amountLinks; i++) {
+		var valTitle = linkHeaderMenu.eq(i).attr('title');
+		if(valTitle == valueActiveTopMenu) {
+			linkHeaderMenu.eq(i).addClass('active');
+		}
+	}
 </script>
+
+
 
 
 

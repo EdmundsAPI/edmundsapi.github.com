@@ -19,51 +19,8 @@
 </section>
 
 
-{% comment %} <!-- script for fix header of content in top window of brawser--> {% endcomment %}
-<script type="text/javascript">	
-
-$(document).ready(function () {  
-	
-		
-	  var elemSubMenu = $('.headerMenuContent');
-	  var elemSectionContent = $('.sectionContent');
-	  
-	  var topSubMenu = elemSubMenu.offset().top - parseFloat(elemSubMenu.css('marginTop').replace(/auto/, 0));;
-	  
-	  var heightSubMenu = elemSubMenu.height() + 35 + "px";
-	  
-	  var widthSectionContent = elemSectionContent.width();
-	  
-	  
-	  $(window).scroll(function (event) {
-	    // what the y position of the scroll is
-	    var y = $(this).scrollTop();
-		
-
-	    // whether that's below the form
-	    if (y >= topSubMenu) {
-	      // if so, ad the fixed class
-	      
-	      elemSubMenu.addClass('fixed'); 
-	      elemSubMenu.css('width', widthSectionContent);
-	      
-	      elemSectionContent.css('margin-top', heightSubMenu);
- 
-		    } else {
-		      // otherwise remove it
-	      elemSubMenu.removeClass('fixed');
-	      elemSubMenu.removeAttr('style');
-	      
-	      elemSectionContent.removeAttr('style');
-	      
-	    }
-	  });
-});
-</script>
-
-
-{% comment %} <!-- Set default active links for left menu, top menu, submenu of content part --> {% endcomment %}
-	<script type="text/javascript">
+{% comment %} <!-- Set default active links for left menu --> {% endcomment %}
+<script type="text/javascript">
 		//left menu
 		var linkLeftMenu = $('.multiLevelMenu').find('a');
 		var valueActiveLeftMenu = $('#valActiveLeftMenu').text();
@@ -75,7 +32,7 @@ $(document).ready(function () {
 			}
 		}
 		
-	</script>
+</script>
 	
 
 

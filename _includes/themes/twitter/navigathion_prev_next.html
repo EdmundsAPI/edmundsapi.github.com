@@ -1,0 +1,66 @@
+
+
+		<div class="wrapNextPrev">
+			<a href="#" id="prevMenuItem">Previos</a>
+			
+			<a href="#" id="nextMenuItem">Next</a>
+		</div>	
+
+
+
+
+{% comment %} <!-- Script for left navigation "Next" & "Previos" --> {% endcomment %}
+<script type="text/javascript">
+	$(function(){
+
+		var $arrayMenuItems = $('.multiLevelMenu').find('a');
+		var lengthItems = $arrayMenuItems.length-1
+
+		for(var i=0; i<=lengthItems; i++) {
+			if($arrayMenuItems.eq(i).hasClass('active')){
+				var activeItem = i;
+			}
+		}
+		var nextItem = $arrayMenuItems.eq(activeItem+1).attr('href');
+		var prevItem = $arrayMenuItems.eq(activeItem-1).attr('href');
+		
+		//"Next"
+		$('#nextMenuItem').bind('click.next', function(event){
+			
+			if(activeItem != lengthItems){
+				window.location.href = nextItem;
+			} else {
+				event.preventDefault();
+			}
+	
+		});
+		
+		//"Previos"
+		$('#prevMenuItem').bind('click.prev', function(event){
+			
+			if(activeItem != 0){
+				window.location.href = prevItem;
+			} else {
+				event.preventDefault();
+			}
+	
+		});
+
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+	
