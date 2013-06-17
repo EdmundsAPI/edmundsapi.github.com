@@ -11,7 +11,7 @@
 					{% if p.sub_weight == sub_weight %}
 						<li>
 							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-								{{ p.title }}
+								!!{{ p.title }}
 							</a>
 						</li>
 					{% endif %}
