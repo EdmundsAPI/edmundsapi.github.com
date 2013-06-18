@@ -2,7 +2,8 @@
 layout: page
 title : Certified developers
 header : Post Certified dev
-group: main navigation
+
+title_nav_item: Certified developers
 weight: 4
 ---
 

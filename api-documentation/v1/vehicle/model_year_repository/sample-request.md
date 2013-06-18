@@ -12,6 +12,8 @@ group: model_year_repository
 sub_weight: 4
 
 level: 2
+
+api_version: Api version 1.0
 ---
 {% include JB/setup %}
 
@@ -23,6 +25,7 @@ Get all information on BMW M3 2011
 
 <pre>
 <code class="prettyprint">
+
 	{
     "tmv": {
         "certifiedUsedPrice": 0,

@@ -2,7 +2,8 @@
 layout: page
 title: Showcase
 header: Post showcase
-group: main navigation
+
+title_nav_item: Showcase
 weight: 3
 ---
 

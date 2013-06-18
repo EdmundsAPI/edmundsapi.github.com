@@ -28,109 +28,100 @@ layout: default
 {% include themes/twitter/navigathion_prev_next.html %}
 
 
-
-
-
-{% comment %} <!-- jQuery custom content scroller for left menu--> {% endcomment %}
-<script src="{{ ASSET_PATH }}/js/jquery.mCustomScrollbar.concat.min.js"></script>
-
-
-{% comment %} <!-- Custom scrolling for left menu --> {% endcomment %}
+{% comment %}<!-- Fix left menu and header(sub menu) in the top --> {% endcomment %}
 <script type="text/javascript">
-	(function($){
+	
+	$(function(){
 		
-		$(window).load(function(){
+		var elemSubMenu = $('.headerMenuContent');
+		var elemLeftMenu = $('.leftMenuFixed');
+		
+		var topValue = elemSubMenu.offset().top;
+		
+		var widthSubMenu = elemSubMenu.width();
+		var widthLeftMenu = elemLeftMenu.width();
+			elemSubMenu.css('width', widthSubMenu);
+			elemLeftMenu.css('width', widthLeftMenu);
+
+		$(window).scroll(function(){
+		
+			var scroll = $(this).scrollTop();
 			
-			$("#leftMenuFixed").mCustomScrollbar({
-				scrollButtons:{
-					enable:true
-				}
+			if (scroll >= topValue) {
 				
-			});
-		
+				elemSubMenu.addClass('fixed');
+				elemLeftMenu.addClass('fixed');
+				
+			} else {
+				
+				elemSubMenu.removeClass('fixed');
+				elemLeftMenu.removeClass('fixed');
+				
+			}
+			
 		});
 		
-	})(jQuery); 
+	});
+	
 </script>
 
 
-{% comment %} <!-- script for fix header of content in top window of brawser--> {% endcomment %}
-<script type="text/javascript">	
 
-$(document).ready(function () {  	
-	  var elemSubMenu = $('.headerMenuContent');
-	  var elemSectionContent = $('.sectionContent');
-	  
-	  var topSubMenu = elemSubMenu.offset().top - parseFloat(elemSubMenu.css('marginTop').replace(/auto/, 0));;
-	  
-	  var heightSubMenu = elemSubMenu.height() + 35 + "px";
-	  
-	  var widthSectionContent = elemSectionContent.width();
-	  
-	  
-	  $(window).scroll(function (event) {
-	    // what the y position of the scroll is
-	    var y = $(this).scrollTop();
+{% comment %}<!-- scroll left menu --> {% endcomment %}
+<script type="text/javascript">
+	
+	$(function(){
 		
-
-	    // whether that's below the form
-	    if (y >= topSubMenu) {
-	      // if so, ad the fixed class
-	      
-	      elemSubMenu.addClass('fixed'); 
-	      elemSubMenu.css('width', widthSectionContent);
-	      
-	      elemSectionContent.css('margin-top', heightSubMenu);
- 
-		    } else {
-		      // otherwise remove it
-	      elemSubMenu.removeClass('fixed');
-	      elemSubMenu.removeAttr('style');
-	      
-	      elemSectionContent.removeAttr('style');
-
-	    }
-	  });
-});
+		
+		//console.log(heightWindow);	
+			
+		$(window).resize(function(){
+			var leftMenu = $('#leftMenuFixed');
+			var posLeftMenu = leftMenu.offset().top;
+			var scroll = $(window).scrollTop();
+			var heightWindow = $(window).height();
+			leftMenu.css('height', heightWindow - (posLeftMenu + 130 - scroll) )
+			
+			$('#leftMenuFixed').jScrollPane();
+		});
+		
+		$(window).resize();
+		
+		
+		
+	});
+	
 </script>
 
 
-{% comment %} <!-- Fixed left menu in the top window-->{% endcomment %}
-	<script type="text/javascript">	
-		
-		$(document).ready(function () {  
-		
-			
-		  var elemLeftMenu = $('.leftMenuFixed');
-		  
-		  var topLeftMenu = elemLeftMenu.offset().top - parseFloat(elemLeftMenu.css('marginTop').replace(/auto/, 0));
-		
-		  var widthLeftMenu = elemLeftMenu.width();
-		  
-		  
-		  $(window).scroll(function (event) {
-		    // what the y position of the scroll is
-		    var y = $(this).scrollTop();
-			
 
-		    // whether that's below the form
-		    if (y >= topLeftMenu) {
-		      // if so, ad the fixed class
-		      
-		      elemLeftMenu.addClass('fixed');
-		      elemLeftMenu.css({
-		      	width: widthLeftMenu,
-		      	top: 0
-		      });
-		      
- 
-		    } else {
-		      // otherwise remove it
-		      elemLeftMenu.removeClass('fixed');
-		      elemLeftMenu.removeAttr('style');
-		      
-		      
-		    }
-		  });
-		});
-	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,6 +12,8 @@ group: model_year_repository
 sub_weight: 1
 
 level: 2
+
+api_version: Api version 1.0
 ---
 
 

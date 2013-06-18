@@ -12,6 +12,8 @@ group: dealer_ratings_and_reviews
 sub_weight: 3
 
 level: 2
+
+api_version: Api version 1.0
 ---
 {% include JB/setup %}
 

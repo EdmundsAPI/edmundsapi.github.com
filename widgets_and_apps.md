@@ -2,7 +2,8 @@
 layout: page
 title : Widgets and apps
 header : Post widgets and apps
-group: main navigation
+
+title_nav_item: Widgets and apps
 weight: 2
 ---
 

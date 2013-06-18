@@ -21,10 +21,6 @@
 	<link href="{{ ASSET_PATH }}/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="{{ ASSET_PATH }}/js/google-code-prettify/prettify.js"></script>
     
-    
-    <!-- JQuery plugin cookie -->
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.cookie.js"></script>
- 
     <!-- Style dropdown -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/dropdowns.css" rel="stylesheet">
 	
@@ -36,15 +32,22 @@
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
+	<!-- styles needed by jScrollPane -->
+	<link type="text/css" href="{{ ASSET_PATH }}/css/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
 	<!-- Style Custom -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 	
 	<!-- Js plugins of the bootstrap -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-dropdown.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-collapse.js"></script>
-    
-    <!-- jQuery custom content scroller for left menu-->
-	<link href="{{ ASSET_PATH }}/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+
+	<!-- styles needed by jScrollPane -->
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/jscrollpane/jquery.mousewheel.js"></script>
+		
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
       
 
@@ -105,17 +108,12 @@
 				    {% if p.weight == weight %}
 				      <li>
 				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}" title="{{ p.title }}">
-				          {{ p.title }}
+				          {{ p.title_nav_item }}
 				        </a>
 				      </li>
 				    {% endif %}
 				  {% endfor %}
 				{% endfor %}
-				
-				<!--<li><a href="{{ PATH }}/api-documentation/v1/overview/index.html" id="api_doc" title="API documentation">api documentation</a></li>
-                <li><a href="{{ PATH }}/widgets_and_apps.html" id="widgets" title="Widgets and apps">widgets and apps</a></li>
-                <li><a href="{{ PATH }}/showcase.html" id="showcase" title="Showcase">showcase</a></li>
-                <li><a href="{{ PATH }}/certified-dev.html" id="certified_dev" title="Certified developers">certified developers</a></li>-->
 
               </ul>
             </nav>
@@ -128,9 +126,7 @@
          
           <div class="row h1Title">
           	
-          	<!--<div class="span2"></div>-->
-          	<div class="span10"><h1>{{ page.title_parent }}</h1></div>
-          	<div class="span2"></div>
+          	<div class="span12"><h1>{{ page.title_parent }}</h1></div>
           	
           </div>
 		
@@ -151,22 +147,22 @@
    
    
    
-<!-- JS ofr retina -->
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
- 
-<!-- Set default active links top menu -->
-<script type="text/javascript">
-	//top menu
-	var linkHeaderMenu = $('.headerMenu').find('a');
-	var valueActiveTopMenu = $('.h1Title').find('h1').text();
-	var amountLinks = linkHeaderMenu.length;
-	for (var i=0; i<=amountLinks; i++) {
-		var valTitle = linkHeaderMenu.eq(i).attr('title');
-		if(valTitle == valueActiveTopMenu) {
-			linkHeaderMenu.eq(i).addClass('active');
+	<!-- JS ofr retina -->
+	<script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
+	 
+	<!-- Set default active links top menu -->
+	<script type="text/javascript">
+		//top menu
+		var linkHeaderMenu = $('.headerMenu').find('a');
+		var valueActiveTopMenu = $('.h1Title').find('h1').text();
+		var amountLinks = linkHeaderMenu.length;
+		for (var i=0; i<=amountLinks; i++) {
+			var valTitle = linkHeaderMenu.eq(i).attr('title');
+			if(valTitle == valueActiveTopMenu) {
+				linkHeaderMenu.eq(i).addClass('active');
+			}
 		}
-	}
-</script>
+	</script>
 
 
 

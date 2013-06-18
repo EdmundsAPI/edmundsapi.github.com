@@ -6,6 +6,8 @@ title_active_left_menu: The Editorial API
 header : The Editorial API
 header_parent : The Editorial API
 level: 1
+
+api_version: Api version 1.0
 ---
 {% include JB/setup %}
 
