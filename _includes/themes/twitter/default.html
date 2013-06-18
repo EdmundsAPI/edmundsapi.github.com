@@ -107,7 +107,7 @@
 				  {% for p in site.pages %}
 				    {% if p.weight == weight %}
 				      <li>
-				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}" title="{{ p.title }}">
+				        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}" title="{{ p.title_parent }}">
 				          {{ p.title_nav_item }}
 				        </a>
 				      </li>
@@ -151,17 +151,26 @@
 	<script type="text/javascript" src="{{ ASSET_PATH }}/js/retina.js"></script>
 	 
 	<!-- Set default active links top menu -->
+	<!-- Set default active links top menu -->
 	<script type="text/javascript">
+		
+
 		//top menu
 		var linkHeaderMenu = $('.headerMenu').find('a');
+		
 		var valueActiveTopMenu = $('.h1Title').find('h1').text();
+		
 		var amountLinks = linkHeaderMenu.length;
+		
 		for (var i=0; i<=amountLinks; i++) {
+			
 			var valTitle = linkHeaderMenu.eq(i).attr('title');
 			if(valTitle == valueActiveTopMenu) {
+				
 				linkHeaderMenu.eq(i).addClass('active');
 			}
 		}
+	
 	</script>
 
 
