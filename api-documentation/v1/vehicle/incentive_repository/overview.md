@@ -16,28 +16,41 @@ level: 2
 api_version: Api version 1.0
 ---
 
+### Test text
 
-##Available APIs
+###JSON Format of Response
 
-The following APIs are currently available:
+In order to get a JSON object back, you need to set fmt=json in your API call. The response object will have the following format:
 
+<pre>
+<code  class="prettyprint">
+    [
+    {
+        link: "URL",
+        title: "STRING",
+        published: "YYY-MM-DD",
+        content: "TEXT IN HTML FORMAT"
+    }, 
+    {
+        link: "URL",
+        title: "STRING",
+        published: "YYY-MM-DD",
+        content: "TEXT IN HTML FORMAT"
+    }, 
+    {
+        link: "URL",
+        title: "STRING",
+        published: "YYY-MM-DD",
+        content: "TEXT IN HTML FORMAT"
+    },
+    {
+        link: "URL",
+        title: "STRING",
+        published: "YYY-MM-DD",
+        content: "TEXT IN HTML FORMAT"
+    }, ....
+]
 
-###The Vehicle API
+</code>
+</pre>
 
-Everything you need to know about a vehicle from specs, features, photos, pricing, maintenace, and incentives to vehcile ratings, reviews, and VIN decoding capabilities. 
-
-
-###The Editorial API
-
-Access to Edmunds.com's quality editorial content from editor reviews to vehicle-specific articles.
-
-
-###The Inventory API (partner-only)
-
-All the data you need to help build a meaningful automotive experience for dealerships and their customers
-
-
-
-###The Dealer API
-
-Get dealership information, ratings and reviews. All dealership details are available through this API
