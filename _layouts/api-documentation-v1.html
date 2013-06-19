@@ -34,15 +34,26 @@ layout: default
 	$(function(){
 		
 		var elemSubMenu = $('.headerMenuContent');
-		var elemLeftMenu = $('.leftMenuFixed');
+		var elemLeftMenu = $('#leftMenuFixed');
+		var sectioncontent = $('.sectionContent section');
 		
 		var topValue = elemSubMenu.offset().top;
-		
+
 		var widthSubMenu = elemSubMenu.width();
 		var widthLeftMenu = elemLeftMenu.width();
 			elemSubMenu.css('width', widthSubMenu);
 			elemLeftMenu.css('width', widthLeftMenu);
+			
+			function number(elem) {
+				var paddingTop = elem.css('padding-top');
+				var newpPaddingTop = paddingTop.substr(-0, 2);
+				return parseFloat(newpPaddingTop);
+			};
+		
+		var heightElemSubMenu = elemSubMenu.height() + number(elemSubMenu);
 
+		var sectionPadding = number(sectioncontent) + heightElemSubMenu;
+		
 		$(window).scroll(function(){
 		
 			var scroll = $(this).scrollTop();
@@ -51,11 +62,13 @@ layout: default
 				
 				elemSubMenu.addClass('fixed');
 				elemLeftMenu.addClass('fixed');
+				sectioncontent.css('padding-top', sectionPadding);
 				
 			} else {
 				
 				elemSubMenu.removeClass('fixed');
 				elemLeftMenu.removeClass('fixed');
+				sectioncontent.removeAttr('style');
 				
 			}
 			
@@ -71,9 +84,7 @@ layout: default
 <script type="text/javascript">
 	
 	$(function(){
-		
-		
-		//console.log(heightWindow);	
+	
 			
 		$(window).resize(function(){
 			var leftMenu = $('#leftMenuFixed');
@@ -92,6 +103,8 @@ layout: default
 	});
 	
 </script>
+
+
 
 
 
