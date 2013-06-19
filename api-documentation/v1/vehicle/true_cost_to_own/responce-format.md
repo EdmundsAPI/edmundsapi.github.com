@@ -1,11 +1,11 @@
 ---
 layout: api-documentation-v1
 
-title : Responce Format
+title : Response Format
 title_parent: Api documentation
 title_active_left_menu: True Cost to Own
 
-header : Responce Format
+header : Response Format
 
 group: true_cost_to_own
 

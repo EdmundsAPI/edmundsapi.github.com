@@ -1,11 +1,11 @@
 ---
 layout: api-documentation-v1
 
-title : Responce Format
+title : Response Format
 title_parent: Api documentation
 title_active_left_menu: Make Repository
 
-header : Responce Format
+header : Response Format
 
 group: make_repository
 

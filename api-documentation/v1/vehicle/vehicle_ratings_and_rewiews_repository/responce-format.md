@@ -1,11 +1,11 @@
 ---
 layout: api-documentation-v1
 
-title : Responce Format
+title : Response Format
 title_parent: Api documentation
 title_active_left_menu: Vehicle Ratings and Rewiews Repository
 
-header : Responce Format
+header : Response Format
 
 group: vehicle_ratings_and_rewiews_repository
 

@@ -1,11 +1,11 @@
 ---
 layout: api-documentation-v1
 
-title : Responce Format
+title : Response Format
 title_parent: Api documentation
 title_active_left_menu: True Market Value
 
-header : Responce Format
+header : Response Format
 
 group: true_market_value
 
