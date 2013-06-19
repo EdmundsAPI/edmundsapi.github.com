@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Showcase
+title_parent: Showcase
 header: Post showcase
 
 title_nav_item: Showcase
