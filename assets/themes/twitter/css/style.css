@@ -392,6 +392,64 @@ a.pdfLink:hover {
 	color: #90BE3F;
 	text-decoration: none;
 }	
+	/*__Start table "AVAILABLE API’S"__*/
+	.overviewTable {
+		background: #336699;
+	}
+	.overviewTableTH {
+		color: #fff;
+		text-transform: uppercase;
+		background: #444;
+	}
+	.overviewTable .odd {
+		background: #fff;
+	}
+	.overviewTable .even {
+		background: #F2F2F2;
+	}
+	.overviewTableThMob {
+		display: none;
+	}
+	.overviewTableTH {
+		border-bottom:1px solid #3d3d3d;
+		color:#fff;
+		font: 18px/39px Arial, sans-serif;
+	}
+	.parenCategory{
+		padding: 13px 21px;
+	}
+	.editorialTableTr,
+	.inventoryTableTr,
+	.dealerTableTr {
+		border-top: 1px solid #fff;
+	}
+	.parenCategory img {
+		float: left;
+		margin: 2px 0 0 0;
+	}
+	.parenCategory h2,
+	.parenCategory p,
+	.parenCategory a {
+		margin: 0 0 0 126px;
+		color: #fff;
+	}
+	.parenCategory h2 {
+		margin-bottom:14px;
+		font:700 18px/18px Arial, sans-serif; 
+	}
+	.parenCategory p,
+	.parenCategory a {
+		line-height: 15px;
+	}
+	
+	.parenCategory a {
+		border-bottom: 1px dashed #fff;
+	}
+	.parenCategory a:hover {
+		border: 0;
+		text-decoration: none;
+	}
+	/*__End table "AVAILABLE API’S"__*/
 /*__End Content__*/
 
 
