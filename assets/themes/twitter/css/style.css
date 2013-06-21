@@ -241,7 +241,7 @@ nav.headerLinks {
 
 /*__Start Footer__*/
 .footerLayout {
-	z-index: 3;
+	z-index: 101;
 }
 footer.navbar {
   height: 128px;
@@ -299,6 +299,14 @@ footer.footerLayout .nav > li > a {
 
 
 /*__Start Content__*/
+.sectionContent h1, 
+.sectionContent h2, 
+.sectionContent h3, 
+.sectionContent h4, 
+.sectionContent h5, 
+.sectionContent h6 {
+	font-family: 'Myriad Pro';
+}
 body > .container {
   position:relative;
 }
@@ -333,9 +341,11 @@ body > .container {
   border-bottom: 1px solid #ccc;
 }
 .sectionContent p {
-  margin-bottom: 26px;
+  margin-bottom: 33px;
+  font-size: 15px;
 }
 .leftMenuFixed.fixed, .headerMenuContent.fixed  {
+	z-index:100;
 	position: fixed;
 	top: 0;
 	background: #F2F2F2;
@@ -343,6 +353,71 @@ body > .container {
 .headerMenuContent.fixed {
 	box-shadow: 0 2px 3px #dad8d8 ;
 }
+.linkGetKey {
+	display:inline-block;
+	margin:0 4px 0 8px;
+	padding:0 21px;
+	color:#fff;
+	font-weight:700;
+	line-height:38px;
+	background: #bf2f37;
+}
+a.linkGetKey:hover {
+	color:#fff;
+	text-decoration: underline;
+}
+.blogGray {
+	margin:0 0 31px 0;
+	padding: 0 28px;
+	font-weight:700;
+	line-height:56px;
+	background: #dedede;
+}
+.tableDate {
+	margin: 0 0 21px 0;
+	padding:7px 25px;
+	background: #dedede;
+}
+.tableDate tr td:first-child {
+	font-weight: 700;
+}
+.tableDate tr td {
+	padding: 0 20px 9px 0;
+}
+.sectionContent h5 {
+	margin-bottom:4px;
+	font-family: Arial, sans-serif;  
+}
+	/*__start table Parametrs__*/
+	.tableParametrs {
+		margin: 0 0 30px 0; 
+	}
+	.tableParametrs th {
+		padding:0 0 0 21px;
+		color:#fff;
+		font:700 14px/40px Arial, sans-serif;
+		text-align: left;
+		background: #444;
+	}
+	.tableParametrs td {
+		padding: 18px 21px;
+		vertical-align: top;
+	}
+	.tableParametrs td {
+		border-bottom: 1px solid #dedede;
+	}
+	.tableParametrs .text-info {
+		margin: 0 0 5px 0;
+		font-weight: 700;
+	}
+	.tableParametrs p {
+		margin: 0;
+	}
+	.tableParametrs .linkGetKey {
+		margin: 0;
+	}
+	/*__end table Parametrs__*/
+	
 	/*__Start Navigation left menu "Next & Previos"__*/
 	.wrapNextPrev {
 		position:absolute;
@@ -394,7 +469,8 @@ a.pdfLink:hover {
 }	
 	/*__Start table "AVAILABLE API’S"__*/
 	.overviewTable {
-		background: #336699;
+		margin: 0 0 74px 0;
+		background: url('../img/bg_table_api.gif') left repeat-y transparent; 
 	}
 	.overviewTableTH {
 		color: #fff;
@@ -403,9 +479,6 @@ a.pdfLink:hover {
 	}
 	.overviewTable .odd {
 		background: #fff;
-	}
-	.overviewTable .even {
-		background: #F2F2F2;
 	}
 	.overviewTableThMob {
 		display: none;
@@ -425,12 +498,12 @@ a.pdfLink:hover {
 	}
 	.parenCategory img {
 		float: left;
-		margin: 2px 0 0 0;
+		margin: 2px 20px 0 0;
 	}
 	.parenCategory h2,
 	.parenCategory p,
 	.parenCategory a {
-		margin: 0 0 0 126px;
+		margin: 0;
 		color: #fff;
 	}
 	.parenCategory h2 {
@@ -439,15 +512,51 @@ a.pdfLink:hover {
 	}
 	.parenCategory p,
 	.parenCategory a {
+		font-size:12px;
 		line-height: 15px;
 	}
 	
 	.parenCategory a {
+		display:inline-block;
 		border-bottom: 1px dashed #fff;
+		color: #fff;
 	}
 	.parenCategory a:hover {
-		border: 0;
+		border-bottom: 1px dashed #336699;
 		text-decoration: none;
+	}
+	.subcategory {
+		background: #F2F2F2;
+	}
+	.subcategory a {
+		color: #336699;
+		font-size: 12px;
+	}
+	.vehicleTableTr .subcategory {
+		padding: 57px 0 0 0;
+	}
+	.subcategory .odd .span4, 
+	.subcategory .even .span4 {
+		padding: 0 0 0 29px;
+		line-height: 26px;
+	}
+	.row-fluid [class*="span"] {
+		min-height: 26px;
+	}
+	.editorialTableTr .odd .span4, 
+	.editorialTableTr .even .span4 {
+		line-height: 168px;
+	}
+	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .even .span4 {
+		line-height: 124px;
+	}
+	.dealerTableTr .odd .span4, 
+	.dealerTableTr .even .span4 {
+		line-height: 124px;
+	}
+	.overviewTableTH .span6{
+		padding-left: 21px;
 	}
 	/*__End table "AVAILABLE API’S"__*/
 /*__End Content__*/
@@ -626,3 +735,27 @@ ul.multiLevelMenu {
 	
 
 }
+
+/*
+.editorialTableTr {
+	position: relative;
+	overflow: hidden;
+}
+
+.subcategory .row-fluid .row-fluid [class^="span"]{ 
+	position: relative;
+	z-index: 2;
+}
+
+.subcategory .rename {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+	z-index: 1;
+}
+
+.subcategory .odd .rename {
+	background: #fff;
+}*/

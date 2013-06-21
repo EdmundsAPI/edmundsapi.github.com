@@ -527,7 +527,7 @@ a.text-error:hover, a.text-error:focus {
 	color:#953b39
 }
 .text-info {
-	color:#3a87ad
+	color:#bf2f37
 }
 a.text-info:hover, a.text-info:focus {
 	color:#2d6987
@@ -548,7 +548,7 @@ a.text-success:hover, a.text-success:focus {
 	text-align:center
 }
 h1, h2, h3, h4, h5, h6 {
-	margin:10px 0;
+	margin:10px 0 24px 0;
 	font-family:inherit;
 	font-weight:400;
 	line-height:20px;
@@ -570,13 +570,13 @@ h2 {
 	font-size:31.5px
 }
 h3 {
-	font-size:24.5px
+	font-size:26px
 }
 h4 {
 	font-size:17.5px
 }
 h5 {
-	font-size:14px
+	font-size:15px
 }
 h6 {
 	font-size:11.9px
@@ -717,20 +717,20 @@ address {
 	line-height:20px
 }
 code, pre {
-	padding:0 3px 2px;
+	padding:2px 9px;
 	font-family:Monaco, Menlo, Consolas, "Courier New", monospace;
-	font-size:12px;
+	font-size:16px;
 	color:#333;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px
 }
 code {
-	padding:2px 4px;
-	color:#d14;
+	padding:2px 9px;
+	color:#bf2f37;
 	white-space:nowrap;
 	background-color:#f7f7f9;
-	border:1px solid #e1e1e8
+	border:1px solid #ddd;
 }
 pre {
 	display:block;
@@ -1349,7 +1349,7 @@ table {
 	line-height:20px;
 	text-align:left;
 	vertical-align:top;
-	border-top:1px solid #ddd
+	border-top:1px solid #dedede;
 }
 .table th {
 	font-weight:bold

@@ -25,7 +25,7 @@ api_version: Api version 1.0
 Before you you will be able go use the Edmunds API, you will need to read and agree to our Terms of Use.
 
 <div class="blogGray">
-ready to rock and roll? 
+Ready to rock and roll? 
 <a class="linkGetKey" href="#" title="Get your API key">
 Get your API key
 </a>
@@ -35,12 +35,14 @@ Get your API key
 
 ###THE EDMUNDS APIs AT A GLANCE
 
+
 All our API calls have the following format:
 
-
+	http://api.edmunds.com/{version}/{call path}?{call parameters}&fmt={format}&api_key={api_key}&callback={fn}
 
 So let's break it down:
 
+<div class="tableDate">
 <table>
 	<tr>
 		<td>Base URL</td>
@@ -55,20 +57,15 @@ So let's break it down:
 		<td>JSON, JSONP</td>
 	</tr>
 </table>
-
+</div>
 
 Now let's take a look at what lies within the braces within the API call.
 
-<pre>
-<code class='prettyprint'>
-	hfgchgsdvchgvg
-</code>
-</pre>
 
-#####Common Parameters
+#####**Common Parameters**
 The following parameters may or may not be required in every single API call:
 
-<table>
+<table class="tableParametrs">
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
@@ -81,11 +78,11 @@ The following parameters may or may not be required in every single API call:
 			<code>version</code>
 		</td>
 		<td>The API version</td>
-		<td>Yes</td>
+		<td><strong>Yes</strong></td>
 		<td>
-			<span>current</span>
+			<span class="text-info">current</span>
 			<p>
-				<span>Note:</span>
+				<strong>Note:</strong>
 				If the version of a particular API is different, it will be called out on that API's documentation page
 			</p>
 		</td>
@@ -96,12 +93,12 @@ The following parameters may or may not be required in every single API call:
 			<code>format</code>
 		</td>
 		<td>The API response format</td>
-		<td>Yes</td>
+		<td><strong><strong>Yes</strong></strong></td>
 		<td>
-			<span>json</span>
+			<span class="text-info">json</span>
 			<p>
-				<span>Note:</span>
-				The format has to be always set to <span>json</span>. To return <span>jsonp</span>, you need to set the <code>fn</code> parameter  described below. 
+				<strong>Note:</strong>
+				The format has to be always set to <span class="text-info">json</span>. To return <span class="text-info">jsonp</span>, you need to set the <code>fn</code> parameter  described below. 
 			</p>
 		</td>
 	</tr>
@@ -111,13 +108,9 @@ The following parameters may or may not be required in every single API call:
 			<code>api_key</code>
 		</td>
 		<td>The API Key</td>
-		<td>Yes</td>
+		<td><strong>Yes</strong></td>
 		<td>
-			<span>json</span>
-			<p>
-				<span>Note:</span>
-				<a class="linkGetKey" href="#" title="Get your API key">Get your API key</a> 
-			</p>
+			<a class="linkGetKey" href="#" title="Get your API key">Get your API key</a> 
 		</td>
 	</tr>
 	
@@ -126,9 +119,9 @@ The following parameters may or may not be required in every single API call:
 			<code>fn</code>
 		</td>
 		<td>JSONP Callback function</td>
-		<td>No</td>
+		<td><strong>No</strong></td>
 		<td>
-			<span>json</span>
+			<span class="text-info">json</span>
 			<p>
 				Pass the name of a JavaScript function in your code and our response will be wrapped around it
 			</p>

@@ -28,9 +28,11 @@
 		$('#nextMenuItem').bind('click.next', function(event){
 			
 			if(activeItem != lengthItems){
+				$(this).removeAttr("disable").removeAttr('style');
 				window.location.href = nextItem;
 			} else {
-				event.preventDefault();
+				$(this).attr("disable", "disabled").css('color', '#bbb');
+				//event.preventDefault();
 			}
 	
 		});
@@ -39,9 +41,11 @@
 		$('#prevMenuItem').bind('click.prev', function(event){
 			
 			if(activeItem != 0){
+				$(this).removeAttr("disable").removeAttr('style');
 				window.location.href = prevItem;
 			} else {
-				event.preventDefault();
+				$(this).attr("disable", "disabled").css('color', '#bbb');
+				//event.preventDefault();
 			}
 	
 		});
