@@ -1,11 +1,11 @@
 ---
 layout: api-documentation-v1
 
-title : Resources
+title : Endpoints
 title_parent: Api documentation
 title_active_left_menu: Incentive Repository
 
-header : Resources
+header : Ednpoints
 
 group: incentive_repository
 

@@ -17,6 +17,11 @@ api_version: Api version 1.0
 {% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
 {% include themes/twitter/api_overview/table_available_api.html %}
 
+####ACCESS LEVELS EXPLAINED:
+
+* **PUBLIC**: Any developer can get access to the resource.
+* **PARTNERS**: Edmunds API Partners who are given access to the API. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
+* **EDMUNDS**: Edmunds properties, including website and mobile applications.
 
 
 
