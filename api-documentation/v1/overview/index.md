@@ -10,19 +10,20 @@ level: 1
 title_nav_item: Api documentation
 weight: 1
 
-api_version: Api version 1.0
+api_version: Version 1.0
 ---
 
+###APIS AND ACCESS LEVELS
 
-{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
-{% include themes/twitter/api_overview/table_available_api.html %}
-
-####ACCESS LEVELS EXPLAINED:
+We offer four distinct open APIs with varying degree of accessibility. The API is FREE and the following access tiers exist:
 
 * **PUBLIC**: Any developer can get access to the resource.
 * **PARTNERS**: Edmunds API Partners who are given access to the API. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
 * **EDMUNDS**: Edmunds properties, including website and mobile applications.
 
+
+{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
+{% include themes/twitter/api_overview/table_available_api.html %}
 
 
 ###GETTING STARTED
