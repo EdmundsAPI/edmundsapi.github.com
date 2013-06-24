@@ -533,7 +533,7 @@ a.pdfLink:hover {
 		font-size: 12px;
 	}
 	.vehicleTableTr .subcategory {
-		padding: 57px 0 0 0;
+		padding: 0;
 	}
 	.subcategory .odd .span4, 
 	.subcategory .even .span4 {
@@ -545,15 +545,15 @@ a.pdfLink:hover {
 	}
 	.editorialTableTr .odd .span4, 
 	.editorialTableTr .even .span4 {
-		line-height: 168px;
+		line-height: 100px;
 	}
 	.inventoryTableTr .odd .span4, 
 	.inventoryTableTr .even .span4 {
-		line-height: 124px;
+		line-height: 100px;
 	}
 	.dealerTableTr .odd .span4, 
 	.dealerTableTr .even .span4 {
-		line-height: 124px;
+		line-height: 100px;
 	}
 	.overviewTableTH .span6{
 		padding-left: 21px;

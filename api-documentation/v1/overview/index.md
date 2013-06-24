@@ -13,22 +13,28 @@ weight: 1
 api_version: Version 1.0
 ---
 
-###APIS AND ACCESS LEVELS
+{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
+{% include themes/twitter/api_overview/table_available_api.html %}
 
-We offer four distinct open APIs with varying degree of accessibility. The API is FREE and the following access tiers exist:
+###API AVAILABILITY
 
-* **PUBLIC**: Any developer can get access to the resource.
+We offer FREE access to four distinct APIs: Vehicle, Editorial, Dealer and Inventory. Although access to these APIs is free, their availability varies based on the **access tier** you're in. We currently offer three access tiers:
+
+* **PUBLIC**: Any registered developer the uses our API in accordance with our Terms and Condition.
 * **PARTNERS**: Edmunds API Partners who are given access to the API. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
 * **EDMUNDS**: Edmunds properties, including website and mobile applications.
 
+By default, all developers are automatically placed in the PUBLIC tier upon registration. If you're in the PUBLIC tier and want to become an Edmunds API Partner, please [let us know](mailto:api@edmunds.com).
 
-{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
-{% include themes/twitter/api_overview/table_available_api.html %}
+An API Partner is one of the following:
+
+* An Edmunds client with an existing contract/agreement/relationship with Edmunds.com, Inc.
+* A Certified Developer.
 
 
 ###GETTING STARTED
 
-Before you you will be able go use the Edmunds API, you will need to read and agree to our Terms of Use.
+Before you will be able go use the Edmunds API, you will need to **read** and **agree** to our Terms of Service.
 
 <div class="blogGray">
 Ready to rock and roll? 
