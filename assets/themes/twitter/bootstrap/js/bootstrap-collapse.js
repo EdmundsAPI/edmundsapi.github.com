@@ -68,6 +68,7 @@
       this.$element[dimension](0)
       this.transition('addClass', $.Event('show'), 'shown')
       this.$element[dimension](this.$element[0][scroll])
+      $(this).hide();
     }
 
   , hide: function () {
@@ -77,6 +78,7 @@
       this.reset(this.$element[dimension]())
       this.transition('removeClass', $.Event('hide'), 'hidden')
       this.$element[dimension](0)
+     
     }
 
   , reset: function (size) {

@@ -172,10 +172,11 @@
 					{% endfor %}
 				{% endfor %}
 				
-			{% elsif page.group == 'test_item1.1' %}
+				
+			{% elsif page.group == 'editor_reviews' %}
 				{% for sub_weight in (1..4) %}
 				{% for p in site.pages %}
-					{% if p.group == 'test_item1.1' %}
+					{% if p.group == 'editor_reviews' %}
 						{% if p.sub_weight == sub_weight %}
 								<li>
 									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
@@ -187,9 +188,24 @@
 					{% endfor %}
 				{% endfor %}
 	
+			{% elsif page.group == 'articles' %}
+				{% for sub_weight in (1..4) %}
+				{% for p in site.pages %}
+					{% if p.group == 'articles' %}
+						{% if p.sub_weight == sub_weight %}
+								<li>
+									<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+										{{ p.title }}
+									</a>
+								</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+	
+	
+	
 			{% endif %}
-		
-
 
 	  </ul>
 	</nav>
