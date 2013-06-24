@@ -35,35 +35,9 @@ You can use the configurator below to customize the layout and style of  True Ma
 	* `USED` - Options: 'Tradein, PrivatePArty and Dealer Retail', 'Tradein and Dealer Retail', 'Dealer Retail only'.
 * `Get Code` - Instructions to embed TMV Widget on your page.
 
+{% include themes/twitter/widgets_and_apps/acordion.html %}
 
 
-<div class="accordion" id="accordion2">
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-				HOW TO EMBED WIDGET
-			</a>
-		</div>
-		<div id="collapseOne" class="accordion-body collapse in">
-			<div class="accordion-inner">
-				Instruction (test text)...
-			</div>
-		</div>
-	</div>
-	
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-				WIDGET CUSTOM EVENTS
-			</a>
-		</div>
-		<div id="collapseTwo" class="accordion-body collapse in">
-			<div class="accordion-inner">
-				Custom events (test text)...
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="blogLinks">
 <h5>RELATED TECHNICAL DOCUMENTATION
