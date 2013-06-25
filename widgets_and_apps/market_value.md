@@ -2,10 +2,7 @@
 layout: default
 title : True market value
 title_parent: Widgets and apps
-header : Post widgets and apps
-
-title_nav_item: Widgets and apps
-weight: 2
+header : True market value
 ---
 
 {% include themes/twitter/widgets_and_apps/market_value.html %}

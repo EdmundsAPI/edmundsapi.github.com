@@ -3,7 +3,16 @@
 	
 	<a href="#" class="linkWidgets">other widgets and apps</a>
 	
-	<div class="span12"><h1>{{ page.title }}</h1></div>
+	<div class="span12">
+		<h1>
+			<a href="#" title="{{ page.title }}">
+				<span>{{ page.title }}</span>
+				<span class="mark">&#174;</span>
+			</a>
+		</h1>
+		<span class="path separator">&#47;</span>
+		<span class="path">Setup</span>
+	</div>
 	
 	<span id="h1Title">{{ page.title_parent }}</span>
 	
@@ -12,17 +21,17 @@
 </div>
 
 
+
+{% comment %}<!-- script for accordion  -->{% endcomment %}
 <script type="text/javascript">
-	
 $(function(){
 	
-	$('.accordion-toggle').on('click.accordin',function(){
+	$('.accordion-toggle').on('click.accordion',function(){
 		
 		$(this).toggleClass("active")
 		
 	});	
 	
 });
-	
 	
 </script>

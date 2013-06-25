@@ -292,14 +292,7 @@ footer.footerLayout .nav > li > a {
 
 
 /*__Start Content__*/
-.h1Title h1 {
-	margin:0;
-	padding: 8px 0 10px 230px;
-	border-bottom: 1px solid #CCC;
-	color:#444;
-	font: 36px/78px 'Oswald400';
-	text-transform: uppercase;
-}
+
 .sectionContent h1, 
 .sectionContent h2, 
 .sectionContent h3, 
@@ -365,7 +358,7 @@ body > .container {
 }
 a.linkGetKey:hover {
 	color:#fff;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .blogGray {
 	margin:0 0 31px 0;
@@ -497,9 +490,10 @@ a.pdfLink:hover {
 	.dealerTableTr {
 		border-top: 1px solid #fff;
 	}
-	.parenCategory img {
+	.parenCategory a.icons {
 		float: left;
 		margin: 2px 20px 0 0;
+		border: 0;
 	}
 	.parenCategory h2,
 	.parenCategory p,
@@ -532,6 +526,10 @@ a.pdfLink:hover {
 	.subcategory a {
 		color: #336699;
 		font-size: 12px;
+	}
+	.subcategory a:hover {
+		color: #90BE3F; 
+		text-decoration: none;
 	}
 	.vehicleTableTr .subcategory {
 		padding: 0;
