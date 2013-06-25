@@ -34,6 +34,91 @@ layout: default
 	</div>
 	{% include themes/twitter/navigathion_prev_next.html %}
 	
+	
+	
+	
+{% comment %}<!-- Fix left menu and header(sub menu) in the top --> {% endcomment %}
+<script type="text/javascript">
+	
+	$(function(){
+		
+		var widthWindow = $(window).width();
+		
+		if(widthWindow > 1151){
+		
+			var elemSubMenu = $('.headerMenuContent');
+			var elemLeftMenu = $('#leftMenuFixed');
+			var sectioncontent = $('.sectionContent section');
+			
+			var topValue = elemSubMenu.offset().top;
+	
+			var widthSubMenu = elemSubMenu.width();
+			var widthLeftMenu = elemLeftMenu.width();
+				elemSubMenu.css('width', widthSubMenu);
+				elemLeftMenu.css('width', widthLeftMenu);
+				
+				function number(elem) {
+					var paddingTop = elem.css('padding-top');
+					var newpPaddingTop = paddingTop.substr(-0, 2);
+					return parseFloat(newpPaddingTop);
+				};
+			
+			var heightElemSubMenu = elemSubMenu.height() + number(elemSubMenu);
+	
+			var sectionPadding = number(sectioncontent) + heightElemSubMenu;
+			
+			$(window).scroll(function(){
+			
+				var scroll = $(this).scrollTop();
+				
+				if (scroll >= topValue) {
+					
+					elemSubMenu.addClass('fixed');
+					elemLeftMenu.addClass('fixed');
+					sectioncontent.css('padding-top', sectionPadding);
+					
+				} else {
+					
+					elemSubMenu.removeClass('fixed');
+					elemLeftMenu.removeClass('fixed');
+					sectioncontent.removeAttr('style');
+					
+				}
+				
+			});
+		
+		}
+	});
+	
+</script>
+
+
+
+{% comment %}<!-- scroll left menu --> {% endcomment %}
+<script type="text/javascript">
+	
+	$(function(){
+	
+			
+		$(window).resize(function(){
+			var leftMenu = $('#leftMenuFixed');
+			var posLeftMenu = leftMenu.offset().top;
+			var scroll = $(window).scrollTop();
+			var heightWindow = $(window).height();
+			leftMenu.css('height', heightWindow - (posLeftMenu + 130 - scroll) )
+			
+			$('#leftMenuFixed').jScrollPane();
+		});
+		
+		$(window).resize();
+		
+		
+		
+	});
+	
+</script>
+
+	
 </div>
 
 
