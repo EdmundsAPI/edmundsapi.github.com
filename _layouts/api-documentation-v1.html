@@ -1,17 +1,16 @@
 ---
-layout: default
+layout: page
 ---
 {% include JB/setup %}
+	<div class="verticalLine"></div>
 
-<div class="verticalLine"></div>
-<div class="content">
 	
-	<div class="row h1Title">
+	<div class="row-fluid h1Title">
 		<div class="span12"><h1>{{ page.title_parent }}</h1></div>
 		<span id="h1Title">{{ page.title_parent }}</span>
 	</div>
 	
-	<div class="row"> 	 
+	<div class="row-fluid"> 	 
 	
 			<div class="span2 collumnMenu">
 			
@@ -33,11 +32,11 @@ layout: default
 	
 	</div>
 	{% include themes/twitter/navigathion_prev_next.html %}
+
 	
 	
 	
-	
-{% comment %}<!-- Fix left menu and header(sub menu) in the top --> {% endcomment %}
+{% comment %}<!-- Fix left menu and header(sub menu) in the top 
 <script type="text/javascript">
 	
 	$(function(){
@@ -91,10 +90,10 @@ layout: default
 	});
 	
 </script>
+--> {% endcomment %}
 
 
-
-{% comment %}<!-- scroll left menu --> {% endcomment %}
+{% comment %}<!-- scroll left menu
 <script type="text/javascript">
 	
 	$(function(){
@@ -117,7 +116,7 @@ layout: default
 	});
 	
 </script>
-
+ --> {% endcomment %}
 	
 </div>
 

@@ -38,12 +38,6 @@ body, html {
 	font-family:Arial, sans-serif;
 	color: #444;
 }
-body > .container {
-    min-height: 100%;
-	height: auto !important;
-    margin: 0 auto -128px;
-	
-}
 
 .push {
 	height: 128px;
@@ -415,7 +409,7 @@ a.linkGetKey:hover {
 	/*__Start Navigation left menu "Next & Previos"__*/
 	.wrapNextPrev {
 		position:absolute;
-		bottom: 128px;
+		bottom: 0;
     	left: 199px;
     	right:0;
 		border-top:1px solid #ccc; 
@@ -565,10 +559,6 @@ a.pdfLink:hover {
 
 
 /*__Left Column Menu__*/
-.span2.collumnMenu {
-	width: 199px;
-	padding-right: 1px;
-}
 .leftMenuFixed {
 	overflow: hidden;
 }
@@ -681,7 +671,7 @@ ul.multiLevelMenu {
 .verticalLine {
 	z-index:2;
 	position:absolute;
-	top: 214px;
+	top: 97px;
 	left:191px;
 	bottom:0;
 	width: 8px;

@@ -1,53 +1,153 @@
-
-<div class="row h1Title">
-	<div class="span12"><h1>{{ page.title_parent }}</h1></div>
-	<span id="h1Title">{{ page.title_parent }}</span>
+<div class="container"> 
+	<div class="row-fluid h1Title">
+		<div class="span12"><h1>{{ page.title_parent }}</h1></div>
+		<span id="h1Title">{{ page.title_parent }}</span>
+	</div>
 </div>
 
-
-<div class="wrapperTab"></div>
-	<h2>Widgets</h2>
-	<ul class="nav nav-tabs" id="myTab">
-	    <li class="active"><a href="#home">TRUE MARKET VALUE     /</a></li>
-	    <li><a href="#profile">NEW VEHICLE CONFIGURATOR    /</a></li>
-	    <li><a href="#messages">EDMUNDS AT A GLANCE</a></li>
-    </ul>
-     
-    <div class="tab-content">
-	    <div class="tab-pane active" id="home">
-			
-			<div class="row">
-				<div class="span6">
-					<a href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Learn More</a>
-					<p>
-						Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-					</p>
-				</div>
+<div id="wrapperTabs" class="marketValue">
+	<div class="container">
+		<header class="headerTabsWidgets"> 
+			<ul class="nav nav-tabs pull-right" id="myTab">
+			    <li class="active"><a href="#marketValue">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
+			    <li><a href="#vehicleConf">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
+			    <li><a href="#edmundsWidget">EDMUNDS AT A GLANCE</a></li>
+		    </ul>
+			<h2 >Widgets</h2>
+			<span class="arrow"></span>
+	    </header> 
+	    <div class="tab-content">
+	    	{% comment %}<!-- TRUE MARKET VALUE -->{% endcomment %}
+		    <div class="tab-pane active" id="marketValue">
 				
-				<div class="span6">
-					<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/market_value.png" alt="" />
+				<div class="row-fluid">
+					<div class="span6">
+						<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Learn More</a>
+						<p>
+							Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+						</p>
+						<div class="row-fluid info">
+							<div class="span3">
+								<h3>Input data</h3>
+								<ul>
+									<li>Makes</li>
+									<li>Model</li>
+									<li>Year</li>
+									<li>Styles</li>
+								</ul>
+							</div>
+							<div class="span4">
+								<h3>Output data</h3>
+								<span>&#8212; New vehicles &#8212;</span>
+								<ul>
+									<li>True Market Value&#174;</li>
+									<li>MSRP</li>
+									<li>Invoice price</li>	
+								</ul>
+								
+								<span>&#8212; Used vehicles &#8212;</span>
+								<ul>
+									<li>Tradeln</li>
+									<li>Private Party</li>
+									<li>Dealer Retail</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="span6">
+						<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/market_value.png" alt="" />
+					</div>
+				</div>
+	
+				
+			</div>
+			
+			
+			{% comment %}<!-- NEW VEHICLE CONFIGURATOR -->{% endcomment %}
+		    <div class="tab-pane" id="vehicleConf">
+				<div class="row-fluid">
+					<div class="span6">
+						<a class="linkLearMore" href="#Learn More" title="Learn More">Learn More</a>
+						<p>
+							Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+						</p>
+						<div class="row-fluid info">
+							<div class="span3">
+								<h3>Input data</h3>
+								<ul>
+									<li>Makes</li>
+									<li>Model</li>
+									<li>Year</li>
+									<li>Styles</li>
+								</ul>
+							</div>
+							<div class="span4">
+								<h3>Output data</h3>
+								<ul>
+									<li>True Market Value&#174;</li>
+									<li>MSRP</li>
+									<li>Invoice price</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="span6">
+						<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
+					</div>
 				</div>
 			</div>
-
 			
-		</div>
-	    <div class="tab-pane" id="profile">
-			<div class="row">
-				<div class="span6">
-					<a href="#Learn More" title="Learn More">Learn More</a>
+			
+			{% comment %}<!-- EDMUNDS AT A GLANCE -->{% endcomment %}
+		    <div class="tab-pane" id="edmundsWidget">
+		    	<div class="row-fluid">
+					<div class="span6">
+						<a class="linkLearMore" href="#Learn More" title="Learn More">Learn More</a>
+						<p>
+							Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+						</p>
+						<div class="row-fluid info">
+							<div class="span3">
+								<h3>Input data</h3>
+								<ul>
+									<li>Makes</li>
+									<li>Model</li>
+									<li>Year</li>
+									<li>Styles</li>
+								</ul>
+							</div>
+							<div class="span4">
+								<h3>Output data</h3>
+								<ul>
+									<li>True Market Value&#174;</li>
+									<li>MSRP</li>
+									<li>Invoice price</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="span6">
+						<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
+					</div>
 				</div>
-				
-				<div class="span6">
-					<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
-				</div>
-			</div>
-		</div>
-	    <div class="tab-pane" id="messages">testeText 3 tab ...</div>
-    </div>
-</div>     
-    <script>
-	        $('#myTab a').click(function (e) {
-			    e.preventDefault();
-			    $(this).tab('show');
-		    })
-    </script>
+		    </div>
+	    </div>
+	 </div>
+</div>
+
+{% comment %}<!-- script for tabs of widgets -->{% endcomment %}     
+<script>
+        $('#myTab a').click(function (e) {
+		    e.preventDefault();
+		    $(this).tab('show');
+	    })
+</script>
+    
+
+
+
+
+

@@ -1,0 +1,51 @@
+<div class="container">
+	<header class="topHeader">
+			<div class="row-fluid">
+	          <div class="span2">
+	            <a href="{{ PATH }}/index.html" title="Edmunds"><img class="topLogo"src="{{ ASSET_PATH }}/img/api-logo.png" alt="Edmunds"></a>
+	          </div>
+	  
+	          <div class="span10 navbar">
+	 			 
+				<a class="linkGetStart" href="#" title="Get started">Get started</a>
+			  	
+	            <nav class="navbar-inner headerLinks">
+	              <div class="register">
+	                <img src="{{ ASSET_PATH }}/img/icon_user.gif" alt="User"> 
+	                <a href="#" title="Sign in">Sign in</a>
+	                <span>or</span>
+	                <a href="#" title="Register">Register</a>
+	              </div>
+	              <ul class="nav">
+	                <li><a href="#" title="FAQ">FAQ</a></li>
+	                <li><a href="#" title="Blog">Blog</a></li>
+	                <li><a href="#" title="Forum">Forum</a></li>
+	              </ul>
+	            </nav>
+	  
+	            <nav class="navbar-inner headerMenu">
+	              <ul class="nav">
+	
+	              	{% for weight in (1..4) %}
+					  {% for p in site.pages %}
+					    {% if p.weight == weight %}
+					      <li>
+					        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}" title="{{ p.title_parent }}">
+					          {{ p.title_nav_item }}
+					        </a>
+					      </li>
+					    {% endif %}
+					  {% endfor %}
+					{% endfor %}
+	
+	              </ul>
+	            </nav>
+	 
+	          </div>
+	          
+	  
+	          
+	         </div>
+	
+	</header>
+</div>

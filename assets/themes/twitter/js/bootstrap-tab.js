@@ -41,10 +41,20 @@
         , previous
         , $target
         , e
-
+	 	
+	 	//adding class to div #wrapperTab
+	 	var wrapperTabs = $('#wrapperTabs');
+	 	wrapperTabs.removeAttr('class');
+	 	var hrefThis = $this.attr('href');
+	 	var classWrapp = hrefThis.substr(1);
+	 	wrapperTabs.addClass(classWrapp);
+	 	//alert('test1')
+	 	
+	 	
       if (!selector) {
         selector = $this.attr('href')
         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
+        //alert('test2')
       }
 
       if ( $this.parent('li').hasClass('active') ) return

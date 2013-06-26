@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title : True market value
 title_parent: Widgets and apps
 header : True market value
