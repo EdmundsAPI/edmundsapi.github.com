@@ -734,7 +734,7 @@ code {
 }
 pre {
 	display:block;
-	padding:9.5px;
+	padding:16.5px;
 	margin:0 0 10px;
 	font-size:13px;
 	line-height:20px;
@@ -2175,10 +2175,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 .fade {
 	opacity:0;
-	-webkit-transition:opacity .15s linear;
-	-moz-transition:opacity .15s linear;
-	-o-transition:opacity .15s linear;
-	transition:opacity .15s linear
+	-webkit-transition:opacity .35s linear;
+	-moz-transition:opacity .35s linear;
+	-o-transition:opacity .35s linear;
+	transition:opacity .35s linear
 }
 .fade.in {
 	opacity:1

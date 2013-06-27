@@ -295,9 +295,6 @@ footer.footerLayout .nav > li > a {
 .sectionContent h6 {
 	font-family: 'Myriad Pro';
 }
-body > .container {
-  position:relative;
-}
 .sectionContent {
 	margin-left: 0;
 }

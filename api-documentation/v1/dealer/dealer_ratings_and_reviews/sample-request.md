@@ -24,7 +24,6 @@ api_version: Api version 1.0
 Get all information on BMW M3 2011
 
 <pre>
-<code class="prettyprint">
 	{
     "tmv": {
         "certifiedUsedPrice": 0,
@@ -95,7 +94,6 @@ Get all information on BMW M3 2011
             "usedTradeIn": 0
         }
     }
-}
-</code>		
+}	
 </pre>
  

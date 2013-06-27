@@ -9,16 +9,16 @@
 	<div class="container">
 		<header class="headerTabsWidgets"> 
 			<ul class="nav nav-tabs pull-right" id="myTab">
-			    <li class="active"><a href="#marketValue">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
-			    <li><a href="#vehicleConf">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
-			    <li><a href="#edmundsWidget">EDMUNDS AT A GLANCE</a></li>
+			    <li class="active"><a href="#marketValue"  data-toggle="tab">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
+			    <li><a href="#vehicleConf"  data-toggle="tab">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
+			    <li><a href="#edmundsWidget"  data-toggle="tab">EDMUNDS AT A GLANCE</a></li>
 		    </ul>
 			<h2 >Widgets</h2>
 			<span class="arrow"></span>
 	    </header> 
-	    <div class="tab-content">
+	    <div id='myTabContent' class="tab-content">
 	    	{% comment %}<!-- TRUE MARKET VALUE -->{% endcomment %}
-		    <div class="tab-pane active" id="marketValue">
+		    <div class="tab-pane fade in active " id="marketValue">
 				
 				<div class="row-fluid">
 					<div class="span6">
@@ -65,7 +65,7 @@
 			
 			
 			{% comment %}<!-- NEW VEHICLE CONFIGURATOR -->{% endcomment %}
-		    <div class="tab-pane" id="vehicleConf">
+		    <div class="tab-pane fade in" id="vehicleConf">
 				<div class="row-fluid">
 					<div class="span6">
 						<a class="linkLearMore" href="#Learn More" title="Learn More">Learn More</a>
@@ -101,7 +101,7 @@
 			
 			
 			{% comment %}<!-- EDMUNDS AT A GLANCE -->{% endcomment %}
-		    <div class="tab-pane" id="edmundsWidget">
+		    <div class="tab-pane fade in" id="edmundsWidget">
 		    	<div class="row-fluid">
 					<div class="span6">
 						<a class="linkLearMore" href="#Learn More" title="Learn More">Learn More</a>
@@ -142,6 +142,13 @@
 <script>
         $('#myTab a').click(function (e) {
 		    e.preventDefault();
+		    //adding class to div #wrapperTab
+		 	var wrapperTabs = $('#wrapperTabs');
+		 	wrapperTabs.removeAttr('class');
+		 	var hrefThis = $(this).attr('href');
+		 	var classWrapp = hrefThis.substr(1);
+		 	wrapperTabs.addClass(classWrapp);
+	 	
 		    $(this).tab('show');
 	    })
 </script>
