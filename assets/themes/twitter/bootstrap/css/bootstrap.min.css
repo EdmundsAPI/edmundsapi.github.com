@@ -49,7 +49,7 @@ html {
 	-ms-text-size-adjust:100%
 }
 a:focus {
-	outline:thin dotted #333;
+	outline:0;
 	outline:5px auto -webkit-focus-ring-color;
 	outline-offset:-2px
 }

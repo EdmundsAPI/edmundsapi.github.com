@@ -174,8 +174,8 @@
       background:url('../img/sprite_accordion.gif') left -86px no-repeat;
       
       &.accordion-toggle {
-       padding: 0 28px;
-       line-height: 108px; 
+       padding: 41px 28px;
+       line-height: 26px; 
       }
       
       &.active {
@@ -183,6 +183,10 @@
       }
       &:hover {
         color: @color_link_hover;
+        text-decoration:none;
+      }
+      &:focus {
+        border:0;
         text-decoration:none;
       }
     }
@@ -220,11 +224,18 @@ a.blueLink {
     }
   }
 }
+.ie10 .accordion .accordion-group a {   /*for ie 10*/
+  background-position:left -92px;
+}
+
+.ie10 .accordion .accordion-group a.active {  /*for ie 10*/
+  background-position:left 40px; 
+}
 
 // start MAIN PAGE WIDGETS AND APPS
 #wrapperTabs {
    
-  .tab-content {
+  .slider-content {
     padding: 0 0 50px 39px;
     font-size:14px;
     font-family: Arial, sans-serif;
@@ -271,7 +282,7 @@ a.blueLink {
     
   }
   
-  .headerTabsWidgets {
+  .headerWidgets {
     position:relative;
     padding:44px 36px 36px 36px;
     margin:0 0 62px 0;
@@ -294,45 +305,59 @@ a.blueLink {
       padding:0;
       margin:0;
       
-      li {
+      &.carousel-indicators {
+          top: 49px;
+          right:0;
+          
+        li {
+          height:auto;
+          width:auto;
+          margin-left:0;
+          border-radius:0;
+          color:#fff;
+          font-size:26px;
+          font-family:'Oswald400',Arial,sans-serif;
+          line-height: 30px;
+          text-indent:0;
+          background:none;
+          
+           a {
+              display:inline-block;
+              padding:0;
+              margin:0;
+              border-radius:0;
+              border-width:0 0 1px 0;
+              border-style: dotted;
+              line-height: px;
+              background:none;
+  
+              &:hover {
+                text-decoration:none;
+              }
         
-        color:#fff;
-        font-size:26px;
-        font-family:'Oswald400',Arial,sans-serif;
-        line-height: 30px;
-        
-         a {
-            display:inline-block;
-            padding:0;
-            margin:0;
-            border-radius:0;
-            border-width:0 0 1px 0;
-            border-style: dotted;
-            line-height: 40px;
-            background:none;
-
-            &:hover {
-              text-decoration:none;
-            }
-      
-        }
-        
-        .separator {
-            padding:0;
-            margin:0 14px;
-        }
-        
-        &.active a {
-          border:0;
-          font-weight: 700;
-        }
-        
-        .marker {
-          margin-left: 4px;
-          font-size:19px;
-          font-family: arial, sans-serif;
-          line-height: 13px;
-          vertical-align: top;
+          }
+          
+          .separator {
+              padding:0;
+              margin:0 14px;
+          }
+          
+          &.active {
+            background-color:none;
+          }
+          
+          &.active a {
+            border:0;
+            font-weight: 400;
+          }
+          
+          .marker {
+            margin-left: 4px;
+            font-size:19px;
+            font-family: arial, sans-serif;
+            line-height: 13px;
+            vertical-align: top;
+          }
         }
       }
       
@@ -348,10 +373,13 @@ a.blueLink {
   
 }
 
+.carousel {
+  line-height:inherit;
+}
 .marketValue{
   background: #336699;
   
-  .headerTabsWidgets {
+  .headerWidgets {
     border-bottom:1px solid #6c90b3;  
     
     h2 {
@@ -361,67 +389,76 @@ a.blueLink {
     a, a:hover, a:active, a:visited, a:focus, span.separator {
       color:#fff;
       border-color:#fff;
+      text-decoration:none;
     }
   
   }
   
-  .tab-content {
+  .slider-content {
     color:#fff;
   } 
   .arrow {
-      left:380px;
+      left:434px;
       background-position:0 0;
+      transition: left 0.5s ease;
   }
 }
 
 .vehicleConf {
   
-  background: #f0f0f0;
-   
-  .headerTabsWidgets {
-    border-bottom:1px solid #bcbcbc; 
-    h2 {
-      color:#444;
-    }
-    
-    a, a:hover, a:active, a:visited, a:focus, span.separator {
-      color:#444;
-      border-color:#444;
-    }
-    .arrow {
-      left:692px;
-      background-position:0 -13px ;
-    }
-  }
   
-  .tab-content {
+  background: #f0f0f0;
+    .headerWidgets {
+      border-bottom:1px solid #bcbcbc; 
+      h2 {
+        color:#444;
+      }
+      
+      a, a:hover, a:active, a:visited, a:focus, span.separator {
+        color:#444;
+        border-color:#444;
+        text-decoration:none;
+      }
+      .arrow {
+        left:737px;
+        background-position:0 -13px ;
+        transition: left 0.5s ease;
+      }
+  }
+  .slider-content {
     color:#444;
+
   } 
+  
+  
+  
+  
 }
 
 .edmundsWidget {
   background: #444;
-    .headerTabsWidgets {
+    .headerWidgets {
       border-bottom:1px solid #787878; 
-    h2 {
-      color:#fff;
-    }
-    
-    a, a:hover, a:active, a:visited, a:focus, span.separator {
-      color:#fff;
-      border-color:#fff;
-    }
-    .arrow {
-      left:1005px;
-      background-position:0 -26px ;
-    }
+      h2 {
+        color:#fff;
+      }
+      
+      a, a:hover, a:active, a:visited, a:focus, span.separator {
+        color:#fff;
+        border-color:#fff;
+        text-decoration:none;
+      }
+      .arrow {
+        left:1040px;
+        background-position:0 -26px ;
+        transition: left 0.5s ease;
+      }
   }
-  .tab-content {
+  .slider-content {
     color:#fff;
 
   } 
 }
-
 .white {
   background: url('../img/white_btn.gif') no-repeat;
 }
@@ -471,18 +508,3 @@ a.blueLink {
       }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
