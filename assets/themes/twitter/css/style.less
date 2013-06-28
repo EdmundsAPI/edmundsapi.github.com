@@ -1,7 +1,7 @@
 @color_link_hover: #90BE3F;
 @color_link: #444;
 @color_regular_link: #336699;
-
+@color_border_btn_hover: #aaaaaa;
 
  /*__font-family__*/
 @font-face {
@@ -21,6 +21,13 @@
   font-style: normal;
   font-weight: 700;
   src: local('Oswald Bold'), local('Oswald-Bold'), url(../font-famaly/oswald/v7/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
 }
 
 #h1Title {
@@ -415,6 +422,55 @@ a.blueLink {
   } 
 }
 
+.white {
+  background: url('../img/white_btn.gif') no-repeat;
+}
+.red {
+  background: url('../img/red_btn.gif') no-repeat;
+}
+.green {
+  background: url('../img/green_btn.gif') no-repeat;
+}
+
+.wide-section {
+  h2 {
+    margin-bottom: 0;
+  }
+  .sub-header {
+    font-size: 17px;
+  }
+  .right-align {
+    text-align: right;
+  }
+  p.small-paragraph {
+    float: right;
+    width: 60%;
+    text-align: right;
+    font-size: 12px;
+    margin: 35px 0 60px;
+  }
+  .btn-control-group {
+    clear: both;
+    float: right;
+      .btn-color-selector {
+        .box-shadow(0 1px 5px rgba(0, 0, 0, .2));
+        height: 31px;
+        width: 31px;
+        display: inline-block;
+        margin: 4px 10px;
+        &:last-of-type {
+          margin-right: 4px;
+        }
+        &:hover {
+          border: 4px solid @color_border_btn_hover;
+          margin: 0 6px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+  }
+}
 
 
 
