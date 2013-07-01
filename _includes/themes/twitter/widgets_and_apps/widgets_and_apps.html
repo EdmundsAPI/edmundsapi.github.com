@@ -158,8 +158,17 @@
  
 
 <script type="text/javascript">
-
-
+		
+		$('.carousel-indicators a').bind('click.tabLink', function(){
+			
+			var wrapperTabs = $('#wrapperTabs');
+		 	var hrefThis = $(this).attr('href');
+		 	var classWrapp = hrefThis.substr(1);
+		 	wrapperTabs.removeAttr('class');
+		 	wrapperTabs.addClass(classWrapp);
+			
+		});
+		
 	    $('.carousel').carousel({
 	    	pause: true,
 			interval: false

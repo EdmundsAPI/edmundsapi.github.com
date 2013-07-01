@@ -381,12 +381,7 @@
           var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
           $nextIndicator && $nextIndicator.addClass('active')
           
-          	var wrapperTabs = $('#wrapperTabs');
-	 		
-		 	var hrefThis = $nextIndicator.find('a').attr('href');
-		 	var classWrapp = hrefThis.substr(1);
-		 	wrapperTabs.removeAttr('class');
-		 	wrapperTabs.addClass(classWrapp);
+          	
 	 	
 	 	
         })
