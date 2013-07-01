@@ -96,12 +96,13 @@
     
       <!-- start content {{ content }}-->
 	
-	
+	<div class="wrapperPage">
+	  <div class="pushTop"></div>
 	  {{content}}
-	
+	  <div class="pushBottom"></div>
+	</div>
 	
       <!-- end content -->
-	<!--<div class="push"></div>-->
 
 	
 	{% include themes/twitter/footer_layout.html %}
@@ -147,5 +148,6 @@
 
 
 	
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/sliderTMV.js"></script>
   </body>
 </html>

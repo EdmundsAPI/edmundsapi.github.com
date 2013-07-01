@@ -39,9 +39,26 @@ body, html {
 	color: #444;
 }
 
-.push {
-	height: 128px;
-	clear: both;
+
+.wrapperHeader {
+  position: relative;
+  z-index:1;
+}
+body, html {
+  height:100%;
+  background: #f2f2f2;
+}
+.pushTop {
+  height: 117px;
+}
+.pushBottom {
+  height: 128px;
+}
+.wrapperPage { 
+  position: relative;
+  height: auto !important;
+  margin: -117px auto -128px;
+  min-height: 100%;
 }
 
 .footerLayout {
@@ -49,9 +66,6 @@ body, html {
 }
 
 /* Override some defaults */
-body {
-  background: #f2f2f2;
-}
 .navbar {
   margin-bottom: 0;
 }
@@ -122,7 +136,6 @@ header {
 .topBlogBackground {
   position: absolute;
   top: 0;
-  z-index: -1;
   height: 91px;
   width: 100%;
   background: #dedede;
@@ -228,6 +241,7 @@ nav.headerLinks {
 
 /*__Start Footer__*/
 .footerLayout {
+	position: relative;
 	z-index: 101;
 }
 footer.navbar {

@@ -5,7 +5,7 @@
 	</div>
 </div>
 
-<div id="wrapperTabs" class="marketValue">
+<div id="wrapperWidget" class="marketValue">
 	
 		
 		
@@ -161,11 +161,11 @@
 		
 		$('.carousel-indicators a').bind('click.tabLink', function(){
 			
-			var wrapperTabs = $('#wrapperTabs');
+			var wrapperWidget= $('#wrapperWidget');
 		 	var hrefThis = $(this).attr('href');
 		 	var classWrapp = hrefThis.substr(1);
-		 	wrapperTabs.removeAttr('class');
-		 	wrapperTabs.addClass(classWrapp);
+		 	wrapperWidget.removeAttr('class');
+		 	wrapperWidget.addClass(classWrapp);
 			
 		});
 		

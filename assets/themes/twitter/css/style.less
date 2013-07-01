@@ -23,6 +23,9 @@
   src: local('Oswald Bold'), local('Oswald-Bold'), url(../font-famaly/oswald/v7/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
+
+
+
 // Drop shadows
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
@@ -233,15 +236,20 @@ a.blueLink {
 }
 
 // start MAIN PAGE WIDGETS AND APPS
-#wrapperTabs {
+ 
+#wrapperWidget{  
   
-  min-height:700px;
-   
+   #myCarousel {
+     min-height:700px;
+   }
   .slider-content {
-    padding: 0 0 50px 39px;
+    padding: 0;
     font-size:14px;
     font-family: Arial, sans-serif;
     
+    .item {
+      padding: 0 0 50px 39px;
+    }
     
     .linkLearMore {
       display: inline-block;
@@ -467,52 +475,262 @@ a.blueLink {
 
   } 
 }
-.white {
-  background: url('../img/white_btn.gif') no-repeat;
-}
-.red {
-  background: url('../img/red_btn.gif') no-repeat;
-}
-.green {
-  background: url('../img/green_btn.gif') no-repeat;
+
+
+
+
+
+
+
+
+
+///
+
+
+.btn-color-selector {
+  background: url('../img/widget_promo/color-buttons.gif') no-repeat;
+  &.gray {
+    background-position: 0 0;
+  }
+  &.green {
+    background-position: -64px 0;
+  }
+  &.red {
+    background-position: -128px 0;
+  }
 }
 
-.wide-section {
+.screen-bgnd {
+  background: url('../img/widget_promo/promo-screen.png') no-repeat;
+  background-position: -58px 0;
+  width: 879px;
+  height: 489px;
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+}
+.widget-bgnd {
+  display: inline-block;
+  width: 250px;
+  height: 340px;
+  position: absolute;
+  top: 66px;
+  left: 89px;
+  background: url('../img/widget_promo/sprite-widgets.png') no-repeat;
+  .box-shadow(0 1px 5px rgba(0, 0, 0, .2));
+  &.red {
+    background-position: 0 0;
+  }
+  &.gray {
+    background-position: -750px 0;
+  }
+  &.green {
+    background-position: -383px 0;
+  }
+}
+.device-bgnd {
+  background: url('../img/widget_promo/device.png') no-repeat;
+  display: inline-block;
+  margin-top: 50px;
+  width: 803px;
+  height: 346px;
+}
+
+.promo-page-header .widgetsPage .arrow {
+  bottom: -1px;
+  left: 430px;
+}
+
+
+
+.wrap-container {
+  overflow: hidden;
+  min-height: 400px;
+
+  &:nth-of-type(2) {
+    background-color: #336699;
+  }
+
+  &:nth-of-type(3) {
+    background-color: #444444;
+    color: #fff;
+    padding-top: 46px;
+    text-align: center;
+    height: 484px;
+    .h2Header {
+      text-align: center;
+      margin: 20px 0 33px;
+      h2 {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 0;
+      }
+      .logo-bgnd {
+        background: url('../img/widget_promo/logo-mobile.png') no-repeat;
+        margin-left: 35px;
+        display: inline-block;
+        width: 162px;
+        height: 41px;
+      }
+    }
+  }
+
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 43px;
+    text-transform: uppercase;
   }
   .sub-header {
-    font-size: 17px;
+    font-size: 19px;
   }
   .right-align {
     text-align: right;
   }
+
   p.small-paragraph {
     float: right;
     width: 60%;
     text-align: right;
-    font-size: 12px;
-    margin: 35px 0 60px;
+    font-size: 13px;
+    margin: 50px 0 133px;
   }
+
   .btn-control-group {
     clear: both;
     float: right;
-      .btn-color-selector {
-        .box-shadow(0 1px 5px rgba(0, 0, 0, .2));
-        height: 31px;
-        width: 31px;
-        display: inline-block;
-        margin: 4px 10px;
+    padding-right: 9px;
+    margin-bottom: 45px;
+
+    .btn-group-header {
+      font-family:'Oswald400';
+      font-size: 20px;
+      display: block;
+      margin-bottom: 23px;
+    }
+    .btn-color-selector {
+      .box-shadow(0 1px 5px rgba(0, 0, 0, .2));
+      height: 31px;
+      width: 31px;
+      display: inline-block;
+      margin: 9px 13px;
+      &:last-of-type {
+        margin-right: 9px;
+      }
+      &.selected {
+        border: 9px solid @color_border_btn_hover;
+        margin: 0 4px;
         &:last-of-type {
-          margin-right: 4px;
-        }
-        &:hover {
-          border: 4px solid @color_border_btn_hover;
-          margin: 0 6px;
-          &:last-of-type {
-            margin-right: 0;
-          }
+          margin-right: 0;
         }
       }
+    }
   }
 }
+
+// Slider of the promo Page of "True Market Value"
+.sectiobSliderTMV {
+  padding:20px 0;
+  color:#fff;
+  background:#336699;
+  
+  .wrapperSliderTMV {
+     .navig {
+        float:right;
+        
+        ul {
+          list-style:none;
+          
+           li {
+           width:10px;
+           height:8px;
+           margin:0 0 7px 0;
+           background-image: url('../img/slider_tmv/navig_TMV.png');
+           background-repeat:  no-repeat;
+           background-position: 0 -45px;
+           text-indent: -99999px;
+           
+           &#downSlide {
+             background-position: 0 -15px;
+             &:hover {
+               background-position: 0 0;
+             }
+           }
+           
+           &#upSlide {
+             background-position: 0 -59px;
+             &:hover {
+               background-position: 0 -74px;
+             }
+           }
+  
+          }  
+        }
+     }
+     
+     .sliderTMV {
+       position:relative;
+       overflow:hidden;
+       float:right;
+       width:300px;
+       height:316px;
+       background:#f5f5f5;
+       -webkit-box-shadow:0 0 20px #000;
+       -moz-box-shadow:0 0 20px #000;
+            box-shadow:0 0 20px #000;
+      ul {
+        position:absolute;
+        margin:0;
+        padding:0;
+        
+        li {
+         width:300px;
+         height:316px;
+         padding:0;
+         background-image: url('../img/slider_tmv/slides_tmv.png');
+         background-repeat:  no-repeat;
+         
+         &.slide1 {
+           background-position: 0 0;
+         }
+         
+         &.slide2 {
+           background-position: -300px 0;
+         }
+         
+         &.slide3 {
+           background-position: -600px 0;
+         }
+         
+       }
+        
+      }
+       
+       
+     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

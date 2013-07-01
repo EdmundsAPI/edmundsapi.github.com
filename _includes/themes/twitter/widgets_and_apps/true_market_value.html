@@ -1,41 +1,106 @@
-<div class="row-fluid h1Title widgetsPage">
-	
-	<a href="#" class="linkWidgets">other widgets and apps</a>
-	
-	<div class="span12">
-		<h1>
-			<a href="#" title="{{ page.title }}">
-				<span>{{ page.title }}</span>
-				<span class="mark">&#174;</span>
-			</a>
-		</h1>
+<div class="container promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">	
+		<a href="#" class="linkWidgets">other widgets and apps</a>	
+		<div class="span12">
+			<h1>
+				<a href="#" title="{{ page.title }}">
+					<span>{{ page.title }}</span>
+					<span class="mark">&#174;</span>
+				</a>
+			</h1>
+		</div>	
+		<span id="h1Title">{{ page.title_parent }}</span>	
+		<span class="arrow">&nbsp;</span>	
 	</div>
-	
-	<span id="h1Title">{{ page.title_parent }}</span>
-	
-	<span class="arrow">&nbsp;</span>
-	
 </div>
 <div>
-	<div class="wide-section row-fluid">
-		<div class="span6 right-align">
-			<h2>SEVERAL COLOR SCHEMES</h2>
-			<div class="sub-header">...for better fit your design</div>
-			<p class="small-paragraph">We have modern beautiful schemes that make your experiance...</p>
-			<div class="btn-control-group">
-				<h4>TRY THEM YOURSELF</h4>
-				<div class="btn-color-selector white">&nbsp;</div>
-				<div class="btn-color-selector green selected">&nbsp;</div>
-				<div class="btn-color-selector red">&nbsp;</div>
+	<div class="wrap-container row-fluid">
+		<div class="container">
+			<div class="span6 right-align">
+				<h2>SEVERAL COLOR SHEMES</h2>
+				<div class="sub-header">...for better fit your design</div>
+				<p class="small-paragraph">We have modern beautiful schemes that make your experiance...</p>
+				<div class="btn-control-group">
+					<span class="btn-group-header">TRY THEM YOURSELF</span>
+					<div class="btn-color-selector gray">&nbsp;</div>
+					<div class="btn-color-selector green selected">&nbsp;</div>
+					<div class="btn-color-selector red">&nbsp;</div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="screen-bgnd">
+					<div class="widget-bgnd green">&nbsp;</div>
+				</div>
 			</div>
 		</div>		
 	</div>
 
-	<div class="wide-section">&nbsp;		
+	<div class="wrap-container row-fluid sectiobSliderTMV">	
+		<div class="span6">
+			<div class="wrapperSliderTMV">
+				<div class="navig">
+					<ul>
+						<li id="downSlide">Prev</li>
+						<li data-slide="1">1</li>
+						<li  data-slide="2">2</li>
+						<li  data-slide="3">3</li>
+						<li id="upSlide">Next</li>
+					</ul>
+				</div>
+				<div class="sliderTMV">
+					<ul>
+						<li class="slide1" data-slide="1"></li>
+						<li class="slide2" data-slide="2"></li>
+						<li class="slide3" data-slide="3"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<h2>COSTOMIZE WIDGETS FOR YOUR NEEDS</h2>
+			<p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
+			
+			<h5>Select option from:</h5>
+			<ul>
+				<li>120 most popular on US market</li>
+				<li>Invoice, TMV and MSRP prices</li>
+				<li>Configure layout from vertical to horizontal</li>
+			</ul>
+		</div>
 	</div>
 
-	<div class="wide-section">&nbsp;	
-	</div>
+	<div class="wrap-container">
+		<div class="h2Header">
+			<h2>ALL MODERN MOBILE BROWSERS ARE SUPPORTED</h2>
+			<div class="logo-bgnd">&nbsp;</div>
+		</div>
 
-	<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Learn More</a>
+		<p>You can easily render the widget on a mobile device with the CSS</p>
+		<div class="device-bgnd">&nbsp;</div>
+
+	</div>
 </div>
+
+<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Learn More</a>
+
+<script type="text/javascript">
+
+	$('.btn-color-selector').on('click', function() {
+		var selectedColor;
+		$('.btn-color-selector').removeClass('selected');
+		$(this).addClass('selected');
+		if($(this).hasClass('green')) {
+			selectedColor = 'green';
+		}
+		else if($(this).hasClass('red')) {
+			selectedColor = 'red';
+		}
+		else if($(this).hasClass('gray')) {
+			selectedColor = 'gray';
+		}
+
+		$('.widget-bgnd').removeClass('red green gray').addClass(selectedColor);
+	});
+
+</script>
+
