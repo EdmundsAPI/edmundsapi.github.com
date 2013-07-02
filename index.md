@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: default
 title: Edmunds
 tagline: Supporting tagline
 ---
 
-###Welcome to the Edmunds Developer Network
 
-
-
+{% include themes/twitter/index.html %}
 
 
 
