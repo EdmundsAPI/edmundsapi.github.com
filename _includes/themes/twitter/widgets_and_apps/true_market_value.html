@@ -3,10 +3,10 @@
 		<a href="#" class="linkWidgets">other widgets and apps</a>	
 		<div class="span12">
 			<h1>
-				<a href="#" title="{{ page.title }}">
+				<div>
 					<span>{{ page.title }}</span>
 					<span class="mark">&#174;</span>
-				</a>
+				</div>
 			</h1>
 		</div>	
 		<span id="h1Title">{{ page.title_parent }}</span>	
@@ -22,9 +22,9 @@
 				<p class="small-paragraph">We have modern beautiful schemes that make your experiance...</p>
 				<div class="btn-control-group">
 					<span class="btn-group-header">TRY THEM YOURSELF</span>
-					<div class="btn-color-selector gray">&nbsp;</div>
-					<div class="btn-color-selector green selected">&nbsp;</div>
-					<div class="btn-color-selector red">&nbsp;</div>
+					<div class="btn-color-selector gray"><div class="btn-color-inner">&nbsp;</div></div>
+					<div class="btn-color-selector green selected"><div class="btn-color-inner">&nbsp;</div></div>
+					<div class="btn-color-selector red"><div class="btn-color-inner">&nbsp;</div></div>
 				</div>
 			</div>
 			<div class="span6">
@@ -54,6 +54,31 @@
 						<li class="slide3" data-slide="3"></li>
 					</ul>
 				</div>
+				
+				<div class="markers">
+
+					<span data-num="1" class="markerConf mark1">&nbsp;</span>
+					<span data-num="2" class="markerConf mark2">&nbsp;</span>
+					<span data-num="3" class="markerConf mark3">&nbsp;</span>
+					<span data-num="4" class="markerConf mark4">&nbsp;</span>
+					
+					
+					<span data-slide="1" data-num="1" class="tips tip1">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="1" data-num="2" class="tips tip2">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="1" data-num="3" class="tips tip3">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="1" data-num="4" class="tips tip4">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					
+					<span data-slide="2" data-num="1" class="tips tip1">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="2" data-num="2" class="tips tip2">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="2" data-num="3" class="tips tip3">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					
+					<span data-slide="3" data-num="1" class="tips tip1">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="3" data-num="2" class="tips tip2">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span data-slide="3" data-num="3" class="tips tip3">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					
+				</div>
+			
+				
 			</div>
 		</div>
 		<div class="span6">
@@ -81,26 +106,57 @@
 	</div>
 </div>
 
-<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Learn More</a>
+<div class="wrap-container footer-section fixed">
+	<div class="container">
+		<span>You shouldn't go pro in developing!</span>&ndash;&mdash;&mdash;
+		<a href="{{ PATH }}/widgets_and_apps/market_value.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>Get a simple code and paste it on your site</span>
+		<div class="quick-start-TMV">
+			<div class="quick-start-header">Quick Start</div>
+			<span>View how it works</span>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript">
+	   $(function() {
+      var footerHeight = $('.footerLayout').height(),
+       footer = $('.footerLayout'),
+   fixedPanel = $('.footer-section'),
+   height;
 
-	$('.btn-color-selector').on('click', function() {
-		var selectedColor;
-		$('.btn-color-selector').removeClass('selected');
-		$(this).addClass('selected');
-		if($(this).hasClass('green')) {
-			selectedColor = 'green';
-		}
-		else if($(this).hasClass('red')) {
-			selectedColor = 'red';
-		}
-		else if($(this).hasClass('gray')) {
-			selectedColor = 'gray';
-		}
+  fixedPanel.removeClass('fixed');
+  height = $(document).height();
+  fixedPanel.addClass('fixed');
 
-		$('.widget-bgnd').removeClass('red green gray').addClass(selectedColor);
-	});
+  $(window).scroll(function() {
+   var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+   if(scrollBottom > footerHeight) {
+    fixedPanel.addClass('fixed');
+    footer.addClass('hide');
+   }
+   else {
+    fixedPanel.removeClass('fixed');
+    footer.removeClass('hide');
+   }
+  });
 
+  $('.btn-color-selector').on('click', function() {
+   var selectedColor;
+   $('.btn-color-selector').removeClass('selected');
+   $(this).addClass('selected');
+   if($(this).hasClass('green')) {
+    selectedColor = 'green';
+   }
+   else if($(this).hasClass('red')) {
+    selectedColor = 'red';
+   }
+   else if($(this).hasClass('gray')) {
+    selectedColor = 'gray';
+   }
+
+   $('.widget-bgnd').removeClass('red green gray').addClass(selectedColor);
+  });
+    });
 </script>
 

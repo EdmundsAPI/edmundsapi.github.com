@@ -69,6 +69,23 @@
       text-transform: uppercase;
   } 
 }
+
+.standart-btn {
+  display: inline-block;
+  padding: 0 21px;
+  color: #FFFFFF;
+  font-size:15px;
+  font-weight:700;
+  line-height: 38px;
+  background: #BF2F37;
+      
+  &:hover {
+    text-decoration:none;
+    color: #FFFFFF;
+  }
+}
+
+
 .widgetsPage {  
   position:relative;
   margin: 0 0 67px 0;
@@ -82,7 +99,7 @@
     padding:0;
     display: inline-block;
 
-    a {
+    a{
       color: @color_link;
         
       &:hover{
@@ -113,10 +130,28 @@
         &:hover {
           border:0;
         }
-      }
-      
-      
+      }      
     }
+
+    // new start
+    div{
+      color: @color_link;        
+      span {
+        &:first-child {
+          display:inline-block;
+          font-size:52px;
+          line-height:54px;
+        }
+      }      
+      span.mark {
+        border-bottom:0;
+        font-size:35px;
+        line-height:8px;
+        vertical-align:top;
+      }      
+    }
+    // new end
+
   }
   
   .path {
@@ -132,7 +167,7 @@
   .arrow {
     position:absolute;
     left:790px;
-    bottom:-1px;
+    bottom:-2px;
     width: 20px;
     height: 13px;
     background: url('../img/arrow.gif') no-repeat;
@@ -489,6 +524,7 @@ a.blueLink {
 
 .btn-color-selector {
   background: url('../img/widget_promo/color-buttons.gif') no-repeat;
+  position: relative;
   &.gray {
     background-position: 0 0;
   }
@@ -497,6 +533,23 @@ a.blueLink {
   }
   &.red {
     background-position: -128px 0;
+  }
+  .btn-color-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('http://localhost:4000/assets/themes/twitter/css/../img/widget_promo/color-picker.png') no-repeat;
+    background-position: 50% 250%;
+    -webkit-transition: background-position 250ms ease-out;
+    -moz-transition: background-position 250ms ease-out;
+    -o-transition: background-position 250ms ease-out;
+    transition: background-position 250ms ease-out;
+    background-size: 50%;
+    &:hover {
+      background-position: 50% 50%;
+    }
   }
 }
 
@@ -537,7 +590,7 @@ a.blueLink {
 }
 
 .promo-page-header .widgetsPage .arrow {
-  bottom: -1px;
+  bottom: -2px;
   left: 430px;
 }
 
@@ -545,8 +598,6 @@ a.blueLink {
 
 .wrap-container {
   overflow: hidden;
-  min-height: 400px;
-
   &:nth-of-type(2) {
     background-color: #336699;
   }
@@ -572,6 +623,48 @@ a.blueLink {
         width: 162px;
         height: 41px;
       }
+    }
+  }
+  &.footer-section {
+    padding: 21px 0 20px;
+    position: relative;
+    text-align: center;
+    color: #777;
+    span {
+      margin: 0 14px;
+      font-style: italic;
+    }
+    .standart-btn {
+      font-family:'Oswald400';
+      font-size: 24px;
+      padding: 14px 51px;
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+    .quick-start-TMV {
+      display: inline-block;
+      text-transform: uppercase;
+      position: absolute;
+      top: 18px;
+      right: -25px;
+      .quick-start-header {
+        color: #BF2F37;
+        font-family:'Oswald400';
+        font-size: 20px;        
+      }
+      span {
+        margin: 0;
+        font-style: normal;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+    &.fixed {
+      position: fixed;
+      bottom: 0;
+      background-color: #F2F2F2;
+      border-top: 1px dotted #ccc;
+      width: 100%;
     }
   }
 
@@ -623,9 +716,17 @@ a.blueLink {
           margin-right: 0;
         }
       }
+      // new
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
+.hide {
+  display:none;
+}
+
 
 // Slider of the promo Page of "True Market Value"
 .sectiobSliderTMV {
@@ -635,6 +736,8 @@ a.blueLink {
   
   .wrapperSliderTMV {
      .navig {
+        position:relative;
+        z-index:3;
         float:right;
         
         ul {
@@ -683,6 +786,7 @@ a.blueLink {
         padding:0;
         
         li {
+         position:relative;
          width:300px;
          height:316px;
          padding:0;
@@ -700,14 +804,80 @@ a.blueLink {
          &.slide3 {
            background-position: -600px 0;
          }
-         
+
        }
         
       }
        
        
      }
-  }
+     
+     .markers {
+       position:relative;
+       
+       // Markers
+       .markerConf {
+           position:absolute;
+           right:323px;
+           width:15px;
+           height:15px;
+           background: url('../img/slider_tmv/marker_tmv.png') 0 0 no-repeat;
+           cursor:pointer;
+           
+            &.active {
+             background-position:0 -15px;
+           }
+           
+         }
+         .mark1 {
+             top:73px;
+         }
+         
+         .mark2 {
+           top:138px;
+         }
+         
+         .mark3 {
+           top:199px;
+         }
+         
+         .mark4 {
+           top:260px;
+         }
+         
+       // Tips
+       .tips {
+         position:absolute;
+         right:338px;
+         display:none;
+         max-width:226px;
+         padding: 0 86px 0 0;
+         line-height: 17px;
+         background: url('../img/slider_tmv/markerLine.png') right 14px no-repeat;
+         
+         &.active {
+           display:block;
+         }
+       }
+       
+       .tip1 {
+         top:66px;
+       }
+       
+       .tip2 {
+         top:131px;
+       }
+       
+       .tip3 {
+         top:192px;
+       }
+       
+       .tip4 {
+         top:253px;
+       }
+     }
+    }
+
 }
 
 

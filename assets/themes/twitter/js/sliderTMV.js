@@ -42,6 +42,91 @@
 
 	});
 	
+	var $markers = $('.markerConf');
+	var $tips = $('.tips');
+	
+	// Click to markers
+	$markers.click(function(){
+		
+		var thisMark = $(this); 
+		
+		
+		if(thisMark.hasClass('active')){
+			
+			thisMark.removeClass('active');
+
+		} else {
+					
+			$markers.each(function(){
+				$(this).removeClass('active');
+			});
+			
+			thisMark.addClass('active');
+			
+			var indexThis = thisMark.attr('data-num'); //data-num
+			
+			$tips.fadeOut(200);
+			
+			$tips.each(function(){
+				var attrDataSlide = $(this).attr('data-slide'); //data-slide
+				var attrDataNum = $(this).attr('data-num'); //data-num'
+
+				if(attrDataSlide == count && attrDataNum == indexThis) {
+					
+					$(this).fadeIn(500);
+				} 
+				
+			});
+
+			
+		}
+		
+	});
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
