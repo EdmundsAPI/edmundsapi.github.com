@@ -1,17 +1,154 @@
-<div>
-	<div class="section1">&nbsp;</div>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<h1 class="titleMainPage">EDMUNDS DEVELOPER NETWORK</h1>
+		</div>
+	</div>
+</div>
 
-	<div class="section2">&nbsp;</div>
+<div class="wrapperMainPage">
+	<div class="section1">
+
+			<div class="container">
+				<div class="VideoPlayer">
+					&nbsp;
+				</div>
+				<div class="row">
+					<div class="span6">
+						<p>
+							Application Programming Interfaces, or APIs, allow web developers and application engineers to programmatically access Edmunds data for use in their own applications. 
+						</p>
+						<h3>get connected in <span>3 steps for free!</span></h3>
+						<ul class="steps clearfix">
+							<li><a href="#" title="">
+								1
+								<span>
+									Register for a user accounter
+								</span>
+							</a></li>
+							<li><a href="#" title="">
+								2
+								<span>
+									Apply for an API key 
+								</span>
+							</a></li>
+							<li><a href="#" title="">
+								3
+								<span>
+									Browse the documentation
+								</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="span6">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="section2">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="wrapperIcons">
+						    <ul class="nav nav-tabs" id="myTab">
+							    <li class="active">
+							    	<a href="#vehical">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/iconTabVehical.png" alt="Vehical API" />
+							    		Vehical API
+							    	</a>
+							    </li>
+							    <li>
+							    	<a href="#editorial">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/iconTabEditorial.png" alt="Editorial API" />
+							    		Editorial API
+							    	</a>
+							    </li>
+							    <li>
+							    	<a href="#dealer">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/iconTabDealer.png" alt="Dealer API" />
+							    		Dealer API
+							    	</a>
+							    </li>
+							    <li>
+							    	<a href="#inventory">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/iconTabInventory.png" alt="Inventory API" />
+							    		Inventory API
+							    	</a>
+							    </li>
+						    </ul>
+						    <span class="arrow">&nbsp;</span>
+					     </div>
+					    <div class="tab-content">
+						    <div class="tab-pane fade in active" id="vehical">
+						    	<p>Detailed information about a vehicles as defined by Make, Model, and Model Year. Also, the Vehicle API provides information about a vehicle’s Style, Pricing, Incentives, Rebates, Maintenance and media, such as Photos. The API also offers a VIN Decoder to make it easier to get vehicle  information.</p>
+						    	<div class="moreInf"><a href="#" title="Vehical API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="Public"/> Public</div>
+						    </div>
+						    <div class="tab-pane fade" id="editorial">
+						    	<p>Detailed information about a vehicles as defined by Make, Model, and Model Year. Also, the Vehicle API provides information about a vehicle’s Style, Pricing, Incentives, Rebates, Maintenance and media, such as Photos.</p>
+						    	<div class="moreInf"><a href="#" title="Editorial API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="Public"/>  Public</div> 
+						    </div>
+						    <div class="tab-pane fade" id="dealer">
+						    	<p>Also, the Vehicle API provides information about a vehicle’s Style, Pricing, Incentives, Rebates, Maintenance and media, such as Photos. The API also offers a VIN Decoder to make it easier to get vehicle  information.</p>
+						    	<div class="moreInf"><a href="#" title="Dealer API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="Public"/>  Public</div>
+						    </div>
+						    <div class="tab-pane fade" id="inventory">
+						    	<p>Detailed information about a vehicles as defined by Make, Model, and Model Year.The API also offers a VIN Decoder to make it easier to get vehicle  information.</p>
+						    	<div class="moreInf"><a href="#" title="Inventory API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="Public"/>  Public</div>
+						    </div>
+					    </div>
+					     
+					    <script>
+					        $('#myTab a').click(function (e) {
+							    e.preventDefault();
+							    $(this).tab('show');
+						    })
+					    </script>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<div class="section3 row-fluid">
 		<div class="container">
-			<div class="span6">&nbsp;</div>
+			<div class="span6">
+				<div class="app-picture pic-slide0 active" data-slide-number="0">&nbsp;</div>
+				<div class="app-picture pic-slide1" data-slide-number="1">&nbsp;</div>
+				<div class="app-picture pic-slide2" data-slide-number="2">&nbsp;</div>					
+			</div>
+
 			<div class="span6">
 				<h2>What can be built with APIs?</h2>
-				<p class="slide-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium dolor eget condimentum lobortis. Ut et nisl rutrum, lacinia ligula quis, feugiat tellus. Duis lobortis quam ut gravida laoreet. In adipiscing neque non felis scelerisque, eu euismod massa porttitor. Sed in odio a orci elementum ultricies.
-				</p>
-				<a href="#" class="standart-btn">Learn More</a>
+
+				<div id="myCarousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="active item" data-item-number="0">
+							<p class="slide-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium dolor eget condimentum lobortis. Ut et nisl rutrum, lacinia ligula quis, feugiat tellus. Duis lobortis quam ut gravida laoreet. In adipiscing neque non felis scelerisque, eu euismod massa porttitor. Sed in odio a orci elementum ultricies.
+							</p>
+							<a href="#" class="standart-btn">Learn More</a>
+						</div>
+						<div class="item" data-item-number="1">
+							<p class="slide-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium dolor eget condimentum lobortis. Ut et nisl rutrum, lacinia ligula quis, feugiat tellus. Duis lobortis quam ut gravida laoreet. In adipiscing neque non felis scelerisque, eu euismod massa porttitor. Sed in odio a orci elementum ultricies.
+							</p>
+							<a href="#" class="standart-btn">Learn More</a>
+						</div>
+						<div class="item" data-item-number="2">
+							<p class="slide-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium dolor eget condimentum lobortis. Ut et nisl rutrum, lacinia ligula quis, feugiat tellus. Duis lobortis quam ut gravida laoreet. In adipiscing neque non felis scelerisque, eu euismod massa porttitor. Sed in odio a orci elementum ultricies.
+							</p>
+							<a href="#" class="standart-btn">Learn More</a>
+						</div>
+					</div>
+
+					<a class="carousel-button left" href="#myCarousel" data-slide="prev">&nbsp;</a>
+  					<a class="carousel-button right" href="#myCarousel" data-slide="next">&nbsp;</a>
+					<ol class="carousel-indicators">
+					  	<li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
+					  	<li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
+					   	<li data-target="#myCarousel" data-slide-to="2">&nbsp;</li>
+					</ol>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -73,15 +210,16 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<h2>What's new?</h2>
+					<a href="#" class="twitter-btn"><span class="wrap-icon"><i class="twitter-icon">&nbsp;</i></span>Follow</a>	
 				</div>
 
 				<div class="span6">
 					<h2>Most popular faqs</h2>
 					<ul class="faq-links">
-						<li>What is an API?</li>
-						<li>Why has Edmunds decided to make its content/data available for outside users?</li>
-						<li>Do I have to pay to use the Edmunds API?</li>
-						<li>Can I use the Edmunds API for my business?</li>
+						<li><a href="#">What is an API?</a></li>
+						<li><a href="#">Why has Edmunds decided to make its content/data available for outside users?</a></li>
+						<li><a href="#">Do I have to pay to use the Edmunds API?</a></li>
+						<li><a href="#">Can I use the Edmunds API for my business?</a></li>
 					</ul>
 					<a href="#" class="standart-btn">View All</a>
 				</div>
@@ -89,3 +227,21 @@
 		</div>		
 	</div>
 </div>
+
+<script type="text/javascript">
+		
+    $('.carousel').carousel({
+	    pause: true,
+		interval: false
+    });
+
+    $('.carousel').on('slide', function(event) {
+    	var slideNumber = $(event.relatedTarget).data('itemNumber');
+    	$('.app-picture.active').fadeOut(500, function() {
+    		$(this).removeClass('active');
+    		$('[data-slide-number="'+ slideNumber +'"]').addClass('active');    			
+    	});
+    	$('[data-slide-number="'+ slideNumber +'"]').fadeIn(500);
+    });
+
+</script>
