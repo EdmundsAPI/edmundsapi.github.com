@@ -9,47 +9,63 @@
 	
 	var count = 1;
 	
+	
+	
+	
+	
+	
+	
+		
+		//setInterval(function(){
+		//	var sliderAuto = true;
+			
+	//		$('.sliderTMV').bind('mouseover',function(event){
+	 // 			console.log(sliderAuto);
+				
+	//			sliderAuto = false;  
+				
+	//			console.log(sliderAuto);
+				
+	//			return sliderAuto;
+//			});
+//			
+//			if (sliderAuto == true) {
+//				downSlide();
+//			} else {
+//				return false;
+//			}
+			
+			
+//		}, 20000);
+	
+	
+	
+
+	
+
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
 	$('#downSlide').click(function(){
 		
-		closeAll ();
-		
-		
-		if (count < amountSlides) {
-			
-			$slides.animate({top: '+=' + step + ''}, 400);
-			count++;
-
-		} else {
-			
-			$slides.animate({top: 0}, 400);
-			count = 1;
-			
-		};	
-		
-		moveMark()
+		downSlide();
 		
 	});
 	
 	
 	$('#upSlide').click(function(){
 		
-		closeAll ();
+		upSlider();
 		
-		
-		if (count > 1) {
-			
-			$slides.animate({top: '-=' + step + ''}, 400);
-			count--;
-			
-		} else {
-			
-			$slides.animate({top: -632}, 400);
-			count = amountSlides;
-			
-		};
-		
-		moveMark()
-
 	});
 	
 	var $markers = $('.markerConf');
@@ -66,7 +82,6 @@
 			thisMark.removeClass('active');
 
 		} else {
-			
 					
 			$markers.each(function(){
 				$(this).removeClass('active');
@@ -127,6 +142,10 @@
 				$('.tip3').css('top', '192px');
 				$('.tip4').css('top', '253px');
 				
+				$('.slidePoint1').css('background-position', '0 -30px');
+				$('.slidePoint2').css('background-position', '0 -45px');
+				$('.slidePoint3').css('background-position', '0 -45px');
+				
 				break
 				
 			case 2:
@@ -139,6 +158,10 @@
 				$('.tip1').css('top', '-2px');
 				$('.tip2').css('top', '107px');
 				$('.tip3').css('top', '180px');
+				
+				$('.slidePoint1').css('background-position', '0 -45px');
+				$('.slidePoint2').css('background-position', '0 -30px');
+				$('.slidePoint3').css('background-position', '0 -45px');
 				break
 				
 			case 3:
@@ -151,6 +174,10 @@
 				$('.tip1').css('top', '11px');
 				$('.tip2').css('top', '72px');
 				$('.tip3').css('top', '137px');
+				
+				$('.slidePoint1').css('background-position', '0 -45px');
+				$('.slidePoint2').css('background-position', '0 -45px');
+				$('.slidePoint3').css('background-position', '0 -30px');
 				break
 			
 		};
@@ -158,7 +185,45 @@
 	};
 
 
+	function upSlider() {
+		closeAll ();
+		
+		if (count < amountSlides) {
+			
+			$slides.animate({top: '+=' + step + ''}, 400);
+			count++;
 
+		} else {
+			
+			$slides.animate({top: 0}, 400);
+			count = 1;
+			
+		};	
+		
+		
+		moveMark()
+
+	};
+	
+	function downSlide() {
+		closeAll ();
+		
+		
+		if (count > 1) {
+			
+			$slides.animate({top: '-=' + step + ''}, 400);
+			count--;
+			
+		} else {
+			
+			$slides.animate({top: -632}, 400);
+			count = amountSlides;
+			
+		};
+		
+		
+		moveMark()
+	};
 
 
 
