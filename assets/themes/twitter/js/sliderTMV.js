@@ -5,71 +5,58 @@
 	
 	var amountSlides = $slides.find('li').length;
 	
-	//console.log(amountSlides);
-	
 	var count = 1;
 	
-	
-	
-	
-	
-	
-	
+	var timeInterval = 3000;
 		
-		//setInterval(function(){
-		//	var sliderAuto = true;
-			
-	//		$('.sliderTMV').bind('mouseover',function(event){
-	 // 			console.log(sliderAuto);
-				
-	//			sliderAuto = false;  
-				
-	//			console.log(sliderAuto);
-				
-	//			return sliderAuto;
-//			});
-//			
-//			if (sliderAuto == true) {
-//				downSlide();
-//			} else {
-//				return false;
-//			}
-			
-			
-//		}, 20000);
+	var $markers = $('.markerConf');
+	
+	var $tips = $('.tips');
+	
+	var sliderHover = $('.sliderTMV, .markerConf, .tips');
 	
 	
+	// autoSlide
+	var intervalID;
 	
-
+	function interval(timeInterval){
+		intervalID = setInterval(function(){		
+			upSlider();
+		}, timeInterval);
+	}
 	
-
-	
-	
-	
-
-
-	
-	
-	
-	
-	
-	
-	
-	$('#downSlide').click(function(){
+	interval(timeInterval); //autoStart
 		
-		downSlide();
+	sliderHover.mouseenter(function(){  //stop
+
+		clearInterval(intervalID); 			
+		
+	});
+
+	sliderHover.mouseout(function(){  //start
+		
+		interval(timeInterval);
+		
+	});
+
+
+	// click on the arrows
+	
+	$('#downSlide').click(function(){ //down Slide
+		
+		downSlider();
 		
 	});
 	
 	
-	$('#upSlide').click(function(){
+	$('#upSlide').click(function(){ //up Slide
 		
 		upSlider();
 		
 	});
 	
-	var $markers = $('.markerConf');
-	var $tips = $('.tips');
+	
+	// Markers and tips
 	
 	// Click to markers
 	$markers.click(function(event){
@@ -80,11 +67,15 @@
 		if(thisMark.hasClass('active')){
 			
 			thisMark.removeClass('active');
+			
+			$tips.fadeOut(200);
 
 		} else {
 					
 			$markers.each(function(){
+				
 				$(this).removeClass('active');
+				
 			});
 			
 			thisMark.addClass('active');
@@ -94,7 +85,9 @@
 			$tips.fadeOut(200);
 			
 			$tips.each(function(){
+				
 				var attrDataSlide = $(this).attr('data-slide'); //data-slide
+				
 				var attrDataNum = $(this).attr('data-num'); //data-num'
 
 				if(attrDataSlide == count && attrDataNum == indexThis) {
@@ -112,72 +105,73 @@
 	
 	
 	// clear
-	$('body').click(function(){
-		closeAll ();
-	});
-	
 	function closeAll (){
 		$tips.fadeOut(200);
 		$markers.removeClass('active');
 	};
 	
+	$('body').click(function(){
+		closeAll ();
+	});
+	
+	
+	
+	// Moving Markers (animate)
+	
+	function animateMarkers(mark1Top, mark2Top, mark3Top, mark4Top, tip1Top, tip2Top, tip3Top, tip4Top, slidePoint1, slidePoint2, slidePoint3) {
+		
+		var mark1 = $('.mark1');
+	    var mark2 = $('.mark2');
+	    var mark3 = $('.mark3');
+	    var mark4 = $('.mark4');
+	    
+	    var tip1 = $('.tip1');
+      	var tip2 = $('.tip2');
+      	var tip3 = $('.tip3');
+      	var tip4 = $('.tip4');
+      	
+      	var slidePoint1 = $('.slidePoint1');
+		var slidePoint2 = $('.slidePoint2');
+		var slidePoint3 = $('.slidePoint3');
+			
+		mark1.animate({top: mark1Top}, 700);
+		mark2.animate({top: mark2Top}, 700);
+		mark3.animate({top: mark3Top}, 700);
+		if(count == 1) {
+			mark4.fadeIn(1000).animate({top: mark4Top});
+		} else {
+			mark4.fadeOut(1000);
+		}
+		
+		
+		tip1.css('top', tip1Top);
+		tip2.css('top', tip2Top);
+		tip3.css('top', tip3Top);
+		tip4.css('top', tip4Top);
+		
+		slidePoint1.css('background-position', '0 -'+ slidePoint1 +'px' );
+		slidePoint2.css('background-position', '0 -'+ slidePoint2 +'px');
+		slidePoint3.css('background-position', '0 -'+ slidePoint3 +'px');
+
+	};
 	
 	function moveMark(){
-		
-		var mark4 = $('.mark4');
-		
+
 		switch  (count) {
 			
 			case 1:
-				//console.log(count==1);
-				$('.mark1').animate({top: '73px'}, 700);
-				$('.mark2').animate({top: '138px'}, 700);
-				$('.mark3').animate({top: '199px'}, 700);
-				if(mark4.css('display') == 'none') {
-					$('.mark4').fadeIn(1000).animate({top: '260px'});
-				}
-				
-				$('.tip1').css('top', '66px');
-				$('.tip2').css('top', '131px');
-				$('.tip3').css('top', '192px');
-				$('.tip4').css('top', '253px');
-				
-				$('.slidePoint1').css('background-position', '0 -30px');
-				$('.slidePoint2').css('background-position', '0 -45px');
-				$('.slidePoint3').css('background-position', '0 -45px');
-				
+			
+				animateMarkers(73, 138, 199, 260, 66, 131, 192, 253, 30, 45, 45);
 				break
 				
 			case 2:
-				//console.log(count==2);
-				$('.mark1').animate({top: '5px'}, 700);
-				$('.mark2').animate({top: '114px'}, 700);
-				$('.mark3').animate({top: '187px'}, 700);
-				$('.mark4').fadeOut(1000);
-				
-				$('.tip1').css('top', '-2px');
-				$('.tip2').css('top', '107px');
-				$('.tip3').css('top', '180px');
-				
-				$('.slidePoint1').css('background-position', '0 -45px');
-				$('.slidePoint2').css('background-position', '0 -30px');
-				$('.slidePoint3').css('background-position', '0 -45px');
+			
+				animateMarkers(5, 114, 187, undefined, -2, 107, 180, undefined, 45, 30, 45);
 				break
 				
 			case 3:
-				//console.log(count==3);
-				$('.mark1').animate({top: '18px'}, 700);
-				$('.mark2').animate({top: '79px'}, 700);
-				$('.mark3').animate({top: '144px'}, 700);
-				$('.mark4').fadeOut(1000);
 				
-				$('.tip1').css('top', '11px');
-				$('.tip2').css('top', '72px');
-				$('.tip3').css('top', '137px');
-				
-				$('.slidePoint1').css('background-position', '0 -45px');
-				$('.slidePoint2').css('background-position', '0 -45px');
-				$('.slidePoint3').css('background-position', '0 -30px');
+				animateMarkers(18, 79, 144, undefined, 11, 72, 137, undefined, 45, 45, 30);
 				break
 			
 		};
@@ -205,7 +199,7 @@
 
 	};
 	
-	function downSlide() {
+	function downSlider() {
 		closeAll ();
 		
 		

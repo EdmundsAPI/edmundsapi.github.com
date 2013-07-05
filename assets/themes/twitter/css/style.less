@@ -73,6 +73,7 @@
   } 
 }
 
+//change
 .standart-btn {
   display: inline-block;
   padding: 0 21px;
@@ -82,7 +83,7 @@
   line-height: 38px;
   background: @color_red_blok;
       
-  &:hover {
+ &:hover, &:focus {
     text-decoration:none;
     color: #FFFFFF;
   }
@@ -651,9 +652,14 @@ a.blueLink {
       top: 18px;
       right: -25px;
       .quick-start-header {
+        display:block;
         color: @color_red_blok;
         font-family:'Oswald400';
-        font-size: 20px;        
+        font-size: 20px;
+         
+        &:hover {
+          text-decoration:none;
+        }       
       }
       span {
         margin: 0;
@@ -990,12 +996,14 @@ i[class^="icon-"] {
         text-decoration:none;
       }
     }
+// Change
     .app-picture {
       display: none;
       width: 480px;
       height: 322px;
       position: absolute;
       bottom: 0;
+  margin-left: 38px;
       &.active {
         display: inline-block;
       }
@@ -1137,7 +1145,7 @@ i[class^="icon-"] {
 
 /// start Top section of mane page
 .titleMainPage {
-  margin: 74px 0 27px 0;
+  margin: 74px 0 27px 38px;
   font-size: 52px;
   line-height: 52px;
 }
@@ -1162,12 +1170,12 @@ i[class^="icon-"] {
     }
     p {
       color: #333;
-      margin: 0 0 25px 0; 
+      margin: 0 0 25px 38px; 
       font-weight:700;
     }
     
     h3 {
-      margin: 0 0 20px 0;
+      margin: 0 0 20px 38px;
       color: #333;
       font-size: 28px;
       font-family: 'Oswald';
@@ -1188,9 +1196,13 @@ i[class^="icon-"] {
       
       li {
         float:left;
-        margin: 0 0 0 26px;
+        margin: 0 0 0 23px;
         padding: 25px 0;
-        line-height: 84px;   
+        line-height: 84px;  
+        
+        &:first-child {
+          margin:0 0 0 38px;
+        } 
         
         &:last-child {
            a, a:hover, a:focus, a:active {
@@ -1212,7 +1224,7 @@ i[class^="icon-"] {
           span {
             float:right;
             width:110px;
-            margin:0 0 0 16px;
+            margin:0 0 0 13px;
             padding: 0 28px 0 0;
             font-family: Arial;
             font-size:14px;  
@@ -1236,12 +1248,27 @@ i[class^="icon-"] {
       
       .arrow {
         position:absolute;
-        left:790px;
+        left:12.5%;
         bottom:0;
         width: 20px;
         height: 13px;
+        margin: 0 0 0 -10px;
         background: url('../img/slider_widgets/arrows.gif') no-repeat;
         transition: left 0.5s ease 0s;
+        
+        &.vehical {
+          left:12.5%;
+        }
+        &.editorial {
+          left:37.5%;
+        }
+        &.dealer {
+          left:62.5%;
+        }
+        &.inventory {
+          left:87.5%;
+        }
+        
       }
     }
     
@@ -1284,6 +1311,7 @@ i[class^="icon-"] {
     
     .tab-content {
       color: #fff;
+      padding: 0 0 0 38px;
       
       p {
         margin: 0 0 26px 0;
@@ -1318,6 +1346,7 @@ i[class^="icon-"] {
   
 }
 /// end Top section of mane page
+
 
 
 

@@ -1,0 +1,60 @@
+<div class="container promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">	
+		<a href="#" class="linkWidgets hide">other widgets and apps</a>	
+		<div class="span12">
+			<h1>
+				<div>
+					<span>{{ page.title }}</span>
+					<span class="mark">&#174;</span>
+				</div>
+			</h1>
+		</div>	
+		<span id="h1Title">{{ page.title_parent }}</span>	
+		<span class="arrow">&nbsp;</span>	
+	</div>
+</div>
+
+<div style="min-height: 400px;">
+	&nbsp;
+</div>
+
+<div class="wrap-container footer-section fixed">
+	<div class="container">
+		<span>You shouldn't go pro in developing!</span>&ndash;&mdash;&mdash;
+		<a href="#get widget" title="get widget" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>Get a simple code and paste it on your site</span>
+		<div class="quick-start-TMV">
+			<div class="quick-start-header">Quick Start</div>
+			<span>View how it works</span>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+	    var footerHeight = $('.footerLayout').height(),
+	       	footer = $('.footerLayout'),
+	   		fixedPanel = $('.footer-section'),
+	   		height;
+
+	  	fixedPanel.removeClass('fixed');
+	  	height = $(document).height();	  	
+	  	console.log('document height: ' + height);
+	  	console.log('window height: ' + $(window).height());
+	  	if((height - $(window).height()) > footerHeight) {
+	  		fixedPanel.addClass('fixed');
+	  	}
+
+	  	$(window).scroll(function() {
+	   		var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+	   		if(scrollBottom > footerHeight) {
+	    		fixedPanel.addClass('fixed');
+	    		footer.addClass('hide');
+			}
+			else {
+	    		fixedPanel.removeClass('fixed');
+	    		footer.removeClass('hide');
+	   		}
+	  	});
+    });
+</script>

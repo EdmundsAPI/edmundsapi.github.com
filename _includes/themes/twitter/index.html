@@ -21,22 +21,13 @@
 						<h3>get connected in <span>3 steps for free!</span></h3>
 						<ul class="steps clearfix">
 							<li><a href="#" title="">
-								1
-								<span>
-									Register for a user accounter
-								</span>
+								1<span>Register for a user accounter</span>
 							</a></li>
 							<li><a href="#" title="">
-								2
-								<span>
-									Apply for an API key 
-								</span>
+								2<span>Apply for an API key</span>
 							</a></li>
 							<li><a href="#" title="">
-								3
-								<span>
-									Browse the documentation
-								</span>
+								3<span>Browse the documentation</span>
 							</a></li>
 						</ul>
 					</div>
@@ -101,7 +92,23 @@
 					        $('#myTab a').click(function (e) {
 							    e.preventDefault();
 							    $(this).tab('show');
+							    
+							    //moving arrow
+							    
+							    var hrefLink = $(this).attr('href');
+							    
+							    var classArrow = hrefLink.substr(1);
+
+								var arrow = $('.arrow');							    
+
+							   	arrow.removeAttr('class');
+							    
+							    arrow.addClass('arrow '+ classArrow +'');
+							    
+							    
 						    })
+						    
+					
 					    </script>
 					</div>
 				</div>
@@ -211,6 +218,10 @@
 				<div class="span6">
 					<h2>What's new?</h2>
 					<a href="#" class="twitter-btn"><span class="wrap-icon"><i class="twitter-icon">&nbsp;</i></span>Follow</a>	
+					<div>
+						<a class="twitter-timeline" href="https://twitter.com/edmunds" height="320" data-show-replies="false" data-chrome="nofooter noheader noborders" data-widget-id="353051505659633664">Tweets by @edmunds</a>
+					    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
 				</div>
 
 				<div class="span6">
