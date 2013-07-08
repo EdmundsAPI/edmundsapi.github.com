@@ -129,11 +129,6 @@
       	var tip2 = $('.tip2');
       	var tip3 = $('.tip3');
       	var tip4 = $('.tip4');
-      	
-      	var slidePoint1 = $('.slidePoint1');
-		var slidePoint2 = $('.slidePoint2');
-		var slidePoint3 = $('.slidePoint3');
-			
 		mark1.animate({top: mark1Top}, 700);
 		mark2.animate({top: mark2Top}, 700);
 		mark3.animate({top: mark3Top}, 700);
@@ -149,29 +144,46 @@
 		tip3.css('top', tip3Top);
 		tip4.css('top', tip4Top);
 		
-		slidePoint1.css('background-position', '0 -'+ slidePoint1 +'px' );
-		slidePoint2.css('background-position', '0 -'+ slidePoint2 +'px');
-		slidePoint3.css('background-position', '0 -'+ slidePoint3 +'px');
+		//slidePoint1.css('background-position', '0 -'+ slidePoint1);
+		//slidePoint2.css('background-position', '0 -'+ slidePoint2);
+		//slidePoint3.css('background-position', '0 -'+ slidePoint3);
 
 	};
 	
 	function moveMark(){
+      	
+      	var slidePoint1 = $('.slidePoint1');
+		var slidePoint2 = $('.slidePoint2');
+		var slidePoint3 = $('.slidePoint3');
+			
 
 		switch  (count) {
 			
 			case 1:
 			
 				animateMarkers(73, 138, 199, 260, 66, 131, 192, 253, 30, 45, 45);
+				
+				slidePoint1.css({'background-position': '0 -30px'});
+				slidePoint2.css({'background-position': '0 -45px'});
+				slidePoint3.css({'background-position': '0 -45px'});
 				break
 				
 			case 2:
 			
 				animateMarkers(5, 114, 187, undefined, -2, 107, 180, undefined, 45, 30, 45);
+				
+				slidePoint1.css({'background-position': '0 -45px'});
+				slidePoint2.css({'background-position': '0 -30px'});
+				slidePoint3.css({'background-position': '0 -45px'});
 				break
 				
 			case 3:
 				
 				animateMarkers(18, 79, 144, undefined, 11, 72, 137, undefined, 45, 45, 30);
+				
+				slidePoint1.css({'background-position': '0 -45px'});
+				slidePoint2.css({'background-position': '0 -45px'});
+				slidePoint3.css({'background-position': '0 -30px'});
 				break
 			
 		};

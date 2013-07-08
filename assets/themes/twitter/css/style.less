@@ -280,6 +280,7 @@ a.blueLink {
   
    #myCarousel {
      min-height:700px;
+margin-bottom: 0;
    }
   .slider-content {
     padding: 0;
@@ -380,8 +381,10 @@ a.blueLink {
               line-height: px;
               background:none;
   
+
               &:hover {
                 text-decoration:none;
+                border: 0;
               }
         
           }
@@ -599,6 +602,15 @@ a.blueLink {
 }
 
 
+div[class*="promo-section"] {
+  height: 484px; 
+}
+.promo-section2 {
+  background-color: #336699;
+}
+.promo-section3 {
+  background-color: #444444;
+}
 
 .wrap-container {
   overflow: hidden;
@@ -1116,6 +1128,13 @@ i[class^="icon-"] {
   .standart-btn {
     padding: 0 28px;
   }
+.twitter-follow-button {
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 0;
+    margin-right: 30px;
+  }
   .twitter-btn {
     display: inline-block;
     position: absolute;
@@ -1138,6 +1157,14 @@ i[class^="icon-"] {
       left: 12px;
     }
   }
+  .twitter-wrap {
+    padding-right: 30px;
+  }
+
+  iframe.twitter-timeline {
+    width: 100%;
+    background-color: #e5e5e5;
+  }
 }
 
 
@@ -1159,6 +1186,10 @@ i[class^="icon-"] {
       width: 796px;
       height: 411px;
       background: url('../img/minitor.png') no-repeat;
+      
+      .wrapperVideo {
+        padding:26px 0 0 101px;
+      }
     }
     
 
@@ -1213,13 +1244,17 @@ i[class^="icon-"] {
           }        
         }
         
-        a, a:hover, a:focus, a:active {
+
+        a, a:focus, a:active {
           display: block;
           color: @color_regular_link;
           font-family: 'Oswald400';
           font-size: 42px;
           line-height: 29px;
-          text-decoration:none;
+          text-decoration:none;          
+          &:hover {
+            color: @color_link_hover;
+          }
           
           span {
             float:right;
@@ -1254,8 +1289,10 @@ i[class^="icon-"] {
         height: 13px;
         margin: 0 0 0 -10px;
         background: url('../img/slider_widgets/arrows.gif') no-repeat;
-        transition: left 0.5s ease 0s;
-        
+        -webkit-transition: left 0.5s ease;
+         -moz-transition: left 0.5s ease;
+          transition: left 0.5s ease;
+          
         &.vehical {
           left:12.5%;
         }
