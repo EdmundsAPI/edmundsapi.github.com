@@ -35,6 +35,11 @@
      -moz-box-shadow: @shadow;
           box-shadow: @shadow;
 }
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
 #h1Title {
   display:none;
@@ -170,28 +175,90 @@
   
   .arrow {
     position:absolute;
-    left:790px;
-    bottom:-2px;
+    left:781px;
+    bottom:-1px;
     width: 20px;
     height: 13px;
     background: url('../img/arrow.gif') no-repeat;
   }
   .linkWidgets {
     position:absolute;
-    right:5px;
+    right:0;
     top:59px;
-    border-bottom:1px dashed @color_link;
     color: @color_link;
     font-family: 'Oswald';
-    font-size: 23px;
+    font-size: 22px;
     line-height:29px;
     text-transform: lowercase;
     
-    &:hover {
-      border-bottom:1px dashed @color_link_hover;
-      color: @color_link_hover;
-      text-decoration: none;
+    a.dropdown-toggle {
+       display:block;
+       margin:0 0 2px 0;
+       border-bottom:1px dotted @color_link;
+      .border-radius(0);
+      
+      &:hover {
+        border-bottom:1px dotted @color_link_hover;
+        color: @color_link_hover;
+        text-decoration: none;
+      }
+      &:focus {
+        color:@color_link;
+        text-decoration:none;
+        .box-shadow(none)
+      }
     }  
+    
+    ul.dropdown-menu {
+      left:-62px;
+      padding:0;
+      margin:0;
+      border:0;
+      .border-radius(0);
+      .box-shadow(none);
+      background:none;
+      
+      li {
+        background:#8fc033;
+        
+        &:first-child {
+          line-height:8px;
+          text-align:right;
+          background: none;
+          
+          .caret {
+            margin:0 22px 0 0;
+            border-top:0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #8fc033;
+            vertical-align:bottom;
+          }
+        }
+        a {
+          border:0;
+          padding:0 24px;
+          color:#fff;
+          font-size:17px;
+          font-family: arial;
+          line-height:55px;
+          text-transform: none;
+          
+          &:hover, &:focus {
+            background: #2d9a00
+          }
+          .marker {
+            margin:4px;
+            font-size:12px;
+            vertical-align: top;
+            line-height:47px;
+          }
+        }
+      }
+    }
+    
+    
+    
   }
   
 }
@@ -538,7 +605,7 @@ margin-bottom: 0;
   &.green {
     background-position: -64px 0;
   }
-  &.red {
+&.yellow {
     background-position: -128px 0;
   }
   .btn-color-inner {
@@ -561,33 +628,24 @@ margin-bottom: 0;
 }
 
 .screen-bgnd {
-  background: url('../img/widget_promo/promo-screen.png') no-repeat;
+  background: url('../img/widget_promo/sprite-promo-widgets.png') no-repeat;
   background-position: -58px 0;
   width: 879px;
   height: 489px;
   position: absolute;
   top: 6px;
   bottom: 0;
-}
-.widget-bgnd {
-  display: inline-block;
-  width: 250px;
-  height: 340px;
-  position: absolute;
-  top: 66px;
-  left: 89px;
-  background: url('../img/widget_promo/sprite-widgets.png') no-repeat;
-  .box-shadow(0 1px 5px rgba(0, 0, 0, .2));
-  &.red {
-    background-position: 0 0;
-  }
   &.gray {
-    background-position: -750px 0;
+    background-position: -58px 0;
   }
   &.green {
-    background-position: -383px 0;
+    background-position: -58px -794px;
+  }
+  &.yellow {
+    background-position: -58px -1571px;
   }
 }
+
 .device-bgnd {
   background: url('../img/widget_promo/device.png') no-repeat;
   display: inline-block;
@@ -597,7 +655,7 @@ margin-bottom: 0;
 }
 
 .promo-page-header .widgetsPage .arrow {
-  bottom: -2px;
+  bottom: -1px;
   left: 430px;
 }
 
@@ -1181,7 +1239,7 @@ i[class^="icon-"] {
     
     .VideoPlayer {
       position:absolute;
-      right: -157px;
+      right: -101px;
       top:0;
       width: 796px;
       height: 411px;
@@ -1201,12 +1259,12 @@ i[class^="icon-"] {
     }
     p {
       color: #333;
-      margin: 0 0 25px 38px; 
+      margin: 0 27px 25px 38px; 
       font-weight:700;
     }
     
     h3 {
-      margin: 0 0 20px 38px;
+      margin: 0 27px 20px 38px;
       color: #333;
       font-size: 28px;
       font-family: 'Oswald';
@@ -1219,7 +1277,7 @@ i[class^="icon-"] {
     }
     
     ul.steps {
-      margin:0;
+      margin:0 30px 0 0;
       padding:0;
       list-style:none;
       border-top: 1px solid #dedede;
@@ -1227,7 +1285,7 @@ i[class^="icon-"] {
       
       li {
         float:left;
-        margin: 0 0 0 23px;
+        margin: 0 0 0 15px;
         padding: 25px 0;
         line-height: 84px;  
         
@@ -1260,7 +1318,7 @@ i[class^="icon-"] {
             float:right;
             width:110px;
             margin:0 0 0 13px;
-            padding: 0 28px 0 0;
+            padding: 0 15px 0 0;
             font-family: Arial;
             font-size:14px;  
             font-weight:700;
@@ -1387,23 +1445,93 @@ i[class^="icon-"] {
 
 
 
+// start API page
+.apiPage {
+  .headerMenuContent {  
+    background-color: #e9e9e9;
+    .span2 {
+      padding-top: 25px;
+    }
+    .span10 {
+      border-left: 1px solid #c5c5c5;
+    }
+    h1 {
+      padding: 25px 0 18px 29px;
+      margin:0;
+      font: 26px/26px 'Oswald400';
+      color: #444;
+      text-transform: uppercase;
+    }  
+  }
 
+  .api-header.h1Title {
+    border-bottom: 1px solid #dedede;
+  }
+  .apiTopSection {
+    background-color: #e9e9e9;
+  }
+  .api-header-row1 {
+    position: relative;
+    .bgnd {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      .span6:nth-of-type(1) {
+        background-color: #F2F2F2;
+      }
+      .span6:nth-of-type(2) {
+        background-color: #e9e9e9;
+      }
+    }
+    .span2 {
+      background-color: #F2F2F2;
+    }
+    .span10 {
+      background-color: #e9e9e9;
+    }
+  }
+  .api-header-row2 {
+    position: relative;
+    .bgnd {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      .span6:nth-of-type(1) {
+        background-color: #F2F2F2;
+      }
+      .span6:nth-of-type(2) {
+        background-color: #c13b39;
+      }
+    }
+    .span2 {
+      background-color: #F2F2F2;
+    }
+    .span10 {
+      background-color: #c13b39;
+    }
+  }
+  .tab {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 26px;
+    &.active {
+      background-color: #c13b39;
+      color: #fff;
+    }
+    &:last-of-type {
+      border-right: 1px solid #c5c5c5;
+    }
+  }
+  .api-table {
+    margin-top: -40px;
+    .multiLevelMenu {
+      margin-top: 0;
+    }
+    .navbar {
+      margin-top: 40px;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// end API page

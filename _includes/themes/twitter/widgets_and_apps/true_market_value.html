@@ -1,6 +1,7 @@
 <div class="container promo-page-header">
 	<div class="row-fluid h1Title widgetsPage">	
-		<a href="#" class="linkWidgets hide">other widgets and apps</a>	
+		
+		{% include themes/twitter/widgets_and_apps/drop-down.html %}
 		<div class="span12">
 			<h1>
 				<div>
@@ -24,13 +25,11 @@
 					<span class="btn-group-header">TRY THEM YOURSELF</span>
 					<div class="btn-color-selector gray"><div class="btn-color-inner">&nbsp;</div></div>
 					<div class="btn-color-selector green selected"><div class="btn-color-inner">&nbsp;</div></div>
-					<div class="btn-color-selector red"><div class="btn-color-inner">&nbsp;</div></div>
+<div class="btn-color-selector yellow"><div class="btn-color-inner">&nbsp;</div></div>
 				</div>
 			</div>
 			<div class="span6">
-				<div class="screen-bgnd">
-					<div class="widget-bgnd green">&nbsp;</div>
-				</div>
+				<div class="screen-bgnd green">&nbsp;</div>
 			</div>
 		</div>		
 	</div>
@@ -154,14 +153,14 @@
 		   	if($(this).hasClass('green')) {
 		    	selectedColor = 'green';
 		   	}
-		   	else if($(this).hasClass('red')) {
-		    	selectedColor = 'red';
+else if($(this).hasClass('yellow')) {
+		    	selectedColor = 'yellow';
 		   	}
 		   	else if($(this).hasClass('gray')) {
 		    	selectedColor = 'gray';
 		   	}
 
-		   	$('.widget-bgnd').removeClass('red green gray').addClass(selectedColor);
+		   	$('.screen-bgnd').removeClass('yellow green gray').addClass(selectedColor);
 		 });
 	});
 </script>
