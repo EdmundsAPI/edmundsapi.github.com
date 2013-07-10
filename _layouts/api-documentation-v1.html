@@ -25,38 +25,9 @@ layout: default
 		</div>
 	</div>
 	
-	<div class="api-header-row1">
-		<div class="row-fluid bgnd">
-			<div class="span6">&nbsp;</div>
-			<div class="span6">&nbsp;</div>
-		</div>
-		<div class="container">
-			<div class="row-fluid overlay">
-				<div class="span2">&nbsp;</div>			
-				<div class="span10">		
-					<div class="tab active">v2</div>
-					<div class="tab">v1</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="api-header-row2">
-		<div class="row-fluid bgnd">
-			<div class="span6">&nbsp;</div>
-			<div class="span6">&nbsp;</div>
-		</div>
-
-		<div class="container">
-			<div class="row-fluid overlay">
-				<div class="span2">&nbsp;</div>		
-				<div class="span10">	
-				</div>
-			</div>
-		</div>
-	</div>
+	{% if page.level == 2 %}		
+		{% include themes/twitter/api-version-bar.html %}					  
+	{% endif %}
 
 	<div class="container api-table">
 		<div class="row-fluid">
