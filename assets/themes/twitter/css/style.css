@@ -286,6 +286,7 @@ footer.navbar .footerLinks .nav {
   line-height: 36px;
 }
 footer.navbar .social {
+	float:right;
   margin: 40px 0 0 0;
 }
 footer.footerLayout .nav > li > a {

@@ -39,9 +39,9 @@ You can use the configurator below to customize the layout and style of  True Ma
 <div class="blogLinks">
 <h5>RELATED TECHNICAL DOCUMENTATION
 </h5> 
-<a class='blueLink' href='#' title=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<a class='blueLink' href='{{ PATH }}/under_construction.html' title=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </a>
 </br>
-<a class='blueLink' href='#' title=''>Donec tincidunt auctor tellus at condimentum.
+<a class='blueLink' href='{{ PATH }}/under_construction.html' title=''>Donec tincidunt auctor tellus at condimentum.
 </a>
 </div>

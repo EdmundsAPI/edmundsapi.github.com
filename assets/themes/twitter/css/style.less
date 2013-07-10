@@ -639,10 +639,10 @@ margin-bottom: 0;
     background-position: -58px 0;
   }
   &.green {
-    background-position: -58px -794px;
+    background-position: -58px -792px;
   }
   &.yellow {
-    background-position: -58px -1571px;
+    background-position: -58px -1570px;
   }
 }
 
@@ -709,9 +709,9 @@ div[class*="promo-section"] {
       font-style: italic;
     }
     .standart-btn {
-      font-family:'Oswald400';
-      font-size: 24px;
-      padding: 14px 51px;
+      font-family:'Oswald';
+      font-size: 27px;
+      padding: 14px 49px;
       margin: 0 15px;
       vertical-align: middle;
     }
@@ -720,7 +720,7 @@ div[class*="promo-section"] {
       text-transform: uppercase;
       position: absolute;
       top: 18px;
-      right: -25px;
+      right: 0;
       .quick-start-header {
         display:block;
         color: @color_red_blok;
@@ -732,11 +732,14 @@ div[class*="promo-section"] {
         }       
       }
       span {
+        display:block;
         margin: 0;
+        color:#252324;
+        font-family: arial;
         font-style: normal;
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 11px;
       }
+      
     }
     &.fixed {
       z-index:100;
@@ -807,7 +810,9 @@ div[class*="promo-section"] {
   display:none;
 }
 
-
+.ie10 .wrap-container.footer-section .quick-start-TMV span {
+  font-size:10px;
+}
 // Slider of the promo Page of "True Market Value"
 .sectiobSliderTMV {
   padding:58px 0 28px 0;
@@ -1259,7 +1264,7 @@ i[class^="icon-"] {
     }
     p {
       color: #333;
-      margin: 0 27px 25px 38px; 
+      margin: 0 64px 25px 38px; 
       font-weight:700;
     }
     
