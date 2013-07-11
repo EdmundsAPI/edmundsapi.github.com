@@ -1,6 +1,8 @@
 <div class="container promo-page-header">
 	<div class="row-fluid h1Title widgetsPage">	
-		<a href="#" class="linkWidgets hide">other widgets and apps</a>	
+		
+		{% include themes/twitter/widgets_and_apps/drop-down.html %}
+
 		<div class="span12">
 			<h1>
 				<div>
@@ -8,7 +10,8 @@
 					<span class="mark">&#174;</span>
 				</div>
 			</h1>
-		</div>	
+		</div>
+
 		<span id="h1Title">{{ page.title_parent }}</span>	
 		<span class="arrow">&nbsp;</span>	
 	</div>
@@ -28,7 +31,7 @@
 		<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
 		<span>Get a simple code and paste it on your site</span>
 		<div class="quick-start-TMV">
-			<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" class="quick-start-header">Quick Start<span>View how it works</span></a>
+			<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html#quick_start" class="quick-start-header">Quick Start<span>View how it works</span></a>
 			
 		</div>
 	</div>

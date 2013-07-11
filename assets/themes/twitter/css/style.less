@@ -5,6 +5,7 @@
 @color_border_btn_hover: #aaaaaa;
 @color_red: #BF2E37;
 @color_red_blok: #bf2f37;
+@color_default_background: #F2F2F2;
 
  /*__font-family__*/
 @font-face {
@@ -272,12 +273,31 @@
     border-width:0 0 1px 0;
     border-color:#ccc;
     border-radius:0;
+
+    .nav-tabs li.active a, .nav-tabs li a:active {  
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      .border-radius(4px 0 0 4px);
+
+    }
       
     &:first-child {
       border-top-width:1px;
     }
-    
     a {
+      color: @color_regular_link;
+      &:hover {
+        color: @color_link_hover;
+        text-decoration:none;
+      }
+      &:focus {
+        border:0;
+        color: @color_regular_link;
+        text-decoration:none;
+      }
+    }
+    a.accordion-header {
       color: @color_regular_link;
       font-size:26px;
       font-family: 'Myriad Pro';
@@ -303,6 +323,9 @@
     .accordion-inner a {
       font-size:14px;
       font-family:Arial, sans-serif;
+    }
+    .nav-tabs .active a, .nav-tabs .active a:hover {
+      background-color: @color_default_background;
     }
   }
   
@@ -334,12 +357,19 @@ a.blueLink {
     }
   }
 }
-.ie10 .accordion .accordion-group a {   /*for ie 10*/
+.ie10 .accordion .accordion-group a{   /*for ie 10*/
   background-position:left -92px;
 }
 
 .ie10 .accordion .accordion-group a.active {  /*for ie 10*/
   background-position:left 40px; 
+}
+
+.ie10 .accordion .accordion-group .nav-tabs li.active a {  /*for ie 10*/
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  .border-radius(4px 0 0 4px);
 }
 
 // start MAIN PAGE WIDGETS AND APPS
@@ -1448,7 +1478,9 @@ i[class^="icon-"] {
 }
 /// end Top section of mane page
 
-
+.vehicleConfigSetup.h1Title .arrow {
+  left: 860px;
+} 
 
 
 // start API page
@@ -1489,7 +1521,7 @@ i[class^="icon-"] {
         background-color: #e9e9e9;
       }
     }
-[class^="span"] {
+    [class^="span"] {
       height: 29px;
     }
     .span2 {
@@ -1512,7 +1544,7 @@ i[class^="icon-"] {
         background-color: #c13b39;
       }
     }
-[class^="span"] {
+    [class^="span"] {
       height: 45px;
     }
     .span2 {
@@ -1529,6 +1561,7 @@ i[class^="icon-"] {
       line-height: 29px;
       background-color: #a62429;      
       color: #fff;
+      cursor: pointer;
       .border-radius(3px);
     }
     .wrap-icon {
@@ -1559,6 +1592,10 @@ i[class^="icon-"] {
       color: #fff;
       border: 0;
     }
+    &:hover, &:focus {
+      text-decoration: none;
+      color: @color_link_hover;
+    }
   }
 
   .dropdown {    
@@ -1579,6 +1616,7 @@ i[class^="icon-"] {
       color: #fff;
       text-decoration: none;
       cursor: pointer;
+      font-weight: normal;
       .dropdown-btn {
         background: url('../img/sprite-dropdown-button.png') no-repeat;
         display: inline-block;
@@ -1594,14 +1632,25 @@ i[class^="icon-"] {
     ul.dropdown-menu {
       width: 100%;
       padding: 0;
+      margin-top: 0;
       .border-radius(0px);
+      border: 0;
       li {
-      background-color: #8fc033;
+        background-color: #8fc033;
+        border-top: 1px solid #B3D07C;
         a {
           font-weight: bold;
           background: none;
+          padding: 8px 20px;
           &:hover, &:focus {
             background-color: #2d9a00;
+            border: 0;
+          }
+        }
+        &:hover {
+          border-color: #2d9a00;
+          &+li {
+            border-color: #2d9a00;
           }
         }
       }
@@ -1614,6 +1663,11 @@ i[class^="icon-"] {
     }
 
     &.open {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;      
+    }
+
+    &.open, &:hover {
       background-color: #8fc033;
       .dropdown-btn {
         background-position: -39px 0;

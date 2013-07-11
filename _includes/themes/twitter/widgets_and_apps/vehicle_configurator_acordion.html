@@ -1,0 +1,129 @@
+<a name="quick_start">&nbsp;</a>
+<div class="accordion" id="accordion2">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle accordion-header" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+				HOW TO EMBED WIDGET
+			</a>
+		</div>
+		<div id="collapseOne" class="accordion-body collapse in">
+			<div class="accordion-inner">
+<p>To embed Vehicle Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
+        <h4>Example scenario:</h4>
+        <ol>
+            <li>
+                <p>Add the following JavaScript files to your page. It's preferably to add them at the bottom of your page for best page performance:</p>
+                <pre>&lt;script src="http://widgets.edmunds.com/js/edm/sdk.js"&gt;&lt;/script&gt;
+&lt;script src="http://widgets.edmunds.com/js/carconfig/carconfig.js"&gt;&lt;/script&gt;</pre> 
+            </li>
+            <li>
+                <p>Create new instance of the Widget:</p>
+                <pre>var widget = new EDM.NVC(vehicleApikey, dealerApiKey, {root: 'nvcwidget', baseClass: 'nvcwidget'});</pre> 
+            </li>
+            <li>
+                <p>Widget initialisation:</p>
+                <pre>widget.init({"includedMakes":"all","showVehicles":"ALL","zip":"12345"});</pre> 
+            </li>
+            <li>
+                <p>Widget rendering:</p>
+                <pre>widget.render();</pre> 
+            </li>
+            <li>
+                <p>Add the CSS files to your page. It's preferably to add them at the head of your page:</p>
+                <pre>&lt;link rel="stylesheet" href="http://widgets.edmunds.com/css/carconfig/simple-light.css"&gt;
+&lt;style&gt;
+.nvcwidget{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border-width:1px;width:248px;}.nvcwidget .nvcwidget-header{-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topleft:5px;border-top-left-radius:5px;}
+&lt;/style&gt;</pre> 
+            </li>
+        </ol> 			
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle accordion-header" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				WIDGET CUSTOM EVENTS
+			</a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse in">
+			<div class="accordion-inner">
+                <p>Vehicle widget provides the next methods for working with custom events:</p>
+                <br>
+                <p><code>on()</code> - Binds a callback function to an object. The callback will be invoked whenever the event is fired.</p>
+                <pre>// External usage example:
+widget.componentName.on('complete', function(options) {
+    // this code is executed when the change event is fired by the widget
+});
+
+// Internal usage example:
+this.componentName.on('complete, function(options) {
+    // this code is executed when the change event is fired by the widget
+});</pre>
+                <br>
+                <p><code>off()</code> - Removes a previously-bound callback function from an object. If no event name is specified, all callbacks will be removed.</p>
+                <pre>// External usage example:
+widget.componentName.off('complete');
+
+// Internal usage example:
+this.componentName.off('complete');</pre>
+                <br>
+                <p><code>trigger()</code> - Trigger callbacks for the given event. Subsequent arguments to trigger will be passed along to the event callbacks.</p>
+                <pre>this.componentName.trigger('complete', options);</pre>
+                <br>
+                <p><code>componentName</code> - this is one component of Vehicle Widget. All list of <a href="#Components_List" name="components-link">components</a> is below.</p>
+			</div>
+		</div>
+	</div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle accordion-header" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" name="Components_List">
+                COMPONENTS LIST
+            </a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse in">
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#StyleConfigurator-tab" data-toggle="tab">StyleConfigurator</a></li>
+                    <li class=""><a href="#ZipUpdate-tab" data-toggle="tab">ZipUpdate</a></li>
+                    <li class=""><a href="#VehiclePhotos-tab" data-toggle="tab">VehiclePhotos</a></li>
+                    <li class=""><a href="#VehicleDetails-tab" data-toggle="tab">VehicleDetails</a></li>
+                    <li class=""><a href="#VehicleOptions-tab" data-toggle="tab">VehicleOptions</a></li>
+                    <li class=""><a href="#ZipLocation-tab" data-toggle="tab">ZipLocation</a></li>
+                    <li class=""><a href="#OptionsList-tab" data-toggle="tab">OptionsList</a></li>
+                    <li class=""><a href="#VehiclePrice-tab" data-toggle="tab">VehiclePrice</a></li>
+                    <li class=""><a href="#ZipMiField-tab" data-toggle="tab">ZipMiField</a></li>
+                    <li class=""><a href="#VehicleDealers-tab" data-toggle="tab">VehicleDealers</a></li>
+                    <li class=""><a href="#VehicleForm-tab" data-toggle="tab">VehicleForm</a></li>
+                    <li class=""><a href="#MessageDialog-tab" data-toggle="tab">MessageDialog</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="StyleConfigurator-tab"><p>Vehicle configurator: Make, Model, Year, Style.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/StyleConfigurator.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehiclePhotos-tab"><p>View vehicle photo.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehiclePhotos.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehicleDetails-tab"><p>View vehicle details.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehicleDetails.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehicleOptions-tab"><p>View vehicle options.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehicleOptions.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="ZipUpdate-tab"><p>View zip code field with update opportunity.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/ZipUpdate.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehiclePrice-tab"><p>View price.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehiclePrice.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehicleDealers-tab"><p>View dealers list.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehicleDealers.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="MessageDialog-tab"><p>View dialog message after form submit.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/MessageDialog.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="ZipMiField-tab"><p>View zip code field and radius field with update opportunity.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/ZipMiField.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="ZipLocation-tab"><p>View zip code field and location with update opportunity.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/ZipLocation.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="OptionsList-tab"><p>View selected options list.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/OptionsList.jpg" alt=""></p></div>
+                    <div class="tab-pane" id="VehicleForm-tab"><p>View form for submit.</p><p><img src="{{ PATH }}/assets/themes/twitter/img/setup_components/VehicleForm.jpg" alt=""></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $('[name="components-link"]').on('click', function() {
+            if(!$('#collapseThree').hasClass('in')) {
+                $('[name="Components_List"]').click();
+            }
+        });
+    });
+</script>

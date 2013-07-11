@@ -28,8 +28,11 @@ You can use the configurator below to customize the layout and style of  True Ma
 * `Show vehicled` - specifies what type of vehicles to display on widget. Options: 'All' - both new and used cars, `NEW` - only new cars, `USED` - only used cars.
 * `Default Zip Code` - the zip code to display by default in ZIP field.
 * `Price to display` - the set of prices to display. Depends from `Show vehicles`.
+
 	* `All` or `NEW` - Options: 'invoice, TMV and MSRP', 'Invoice and TMV', 'TMV only'.
+
 	* `USED` - Options: 'Tradein, PrivatePArty and Dealer Retail', 'Tradein and Dealer Retail', 'Dealer Retail only'.
+
 * `Get Code` - Instructions to embed TMV Widget on your page.
 
 {% include themes/twitter/widgets_and_apps/acordion.html %}
