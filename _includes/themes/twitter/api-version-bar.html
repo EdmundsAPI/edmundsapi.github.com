@@ -30,19 +30,26 @@
 				<div class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown"><span class="selected-option">Select endpoint</span><span class="dropdown-btn">&nbsp;</span></a>
 					
+					
+					
+					
+				
+					
+					
+					
+					
+					
 					<ul class="dropdown-menu">
-						<li name="endpoint"><a href="#">
-							<div class="option-value">/api/vehicle/v2/{make}/{model}/years</div>
-							<div class="option-description">Get makes by ID</div></a>
-						</li>
-						<li name="endpoint"><a href="#">
-							<div class="option-value">/api/vehicle/v2/{make}/{model}/{year}</div>
-							<div class="option-description">Get makes by ID</div></a>
-						</li>
-						<li name="endpoint"><a href="#">
-							<div class="option-value">/api/vehicle/v2/{make}/years</div>
-							<div class="option-description">Get makes by ID</div></a>
-						</li>
+					{% for p in  site.pages %} 
+						{% if p.title == page.title %}
+							{% if p.level == 3 %}
+							<li name="endpoint"><a href="{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ p.version }}/{{ p.title-endpoint }}/index.html">
+								<div class="option-value">{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ p.version }}/{{ p.title-endpoint }}/index.html</div>
+								<div class="option-description">Get makes by ID  - {{ p.endpoint }}</div></a>
+							</li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
 					</ul>
 
 				</div>

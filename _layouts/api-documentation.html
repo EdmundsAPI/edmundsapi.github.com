@@ -25,7 +25,7 @@ layout: default
 		</div>
 	</div>
 	
-	{% if page.level == 2 %}		
+	{% if page.level >= 2 %}		
 		{% include themes/twitter/api-version-bar.html %}					  
 	{% endif %}
 
@@ -40,7 +40,7 @@ layout: default
 			</div>
 
 			<div class="span10 sectionContent">	
-				{% if page.level == 2 %}		
+				{% if page.level == 3 %}		
 					{% include themes/twitter/api-doc-submenu.html %}					  
 				{% endif %}	
 

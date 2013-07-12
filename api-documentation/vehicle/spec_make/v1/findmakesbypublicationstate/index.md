@@ -1,17 +1,17 @@
 ---
+
 layout: api-documentation
 
 title : Spec Make
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
-level: 2
+level: 3
 
-endpoint: true
+
+title-endpoint: findmakesbypublicationstate
+version: v1
+spec: spec_make
+api: vehicle
 
 ---
-
-
-### Test page {{page.title_active_left_menu}}: {{page.title}}
-
-

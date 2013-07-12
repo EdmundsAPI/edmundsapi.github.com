@@ -42,6 +42,13 @@
           border-radius: @radius;
 }
 
+.box-sizing(@value) {
+  -webkit-box-sizing: @value;
+     -moz-box-sizing: @value;
+      -ms-box-sizing: @value;
+          box-sizing: @value;
+}
+
 #h1Title {
   display:none;
 }
@@ -1602,7 +1609,7 @@ i[class^="icon-"] {
     display: inline-block;
     position: relative;
     padding: 0 27px 0 17px;
-    width: 238px;
+    min-width: 238px;
     color: #fff;
     font-size: 13px;
     font-weight: bold;
@@ -1634,6 +1641,7 @@ i[class^="icon-"] {
       padding: 0;
       margin-top: 0;
       .border-radius(0px);
+      .box-shadow(none);
       border: 0;
       li {
         background-color: #8fc033;
@@ -1678,10 +1686,41 @@ i[class^="icon-"] {
     .multiLevelMenu {
       margin-top: 0;
     }
-    .navbar {
-      margin-top: 40px;
+    .sectionContent section {
+      padding-top: 0;
+    }
+    .endpoint-submenu {
+      margin-top: 13px;
+      .nav {
+        width: 100%;
+        li {
+          .box-sizing(border-box);
+          width: 25%;
+          text-align: center;
+          border-right: 1px solid #dedede;
+          &:last-of-type {
+            border: 0;
+          }
+          a {
+            border: 0;
+            padding: 2px;
+            font-size: 13px;
+            &:hover, &:focus {
+              color: inherit;
+              background-color: inherit;
+            }
+          }
+        }
+        li.active a {
+          background-color: inherit;
+          cursor: pointer;
+          border: 0;
+          color: @color_red;
+        }
+      }
     }
   }
 }
+
 
 // end API page
