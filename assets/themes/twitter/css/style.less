@@ -1644,12 +1644,13 @@ i[class^="icon-"] {
       }
     }
     ul.dropdown-menu {
-      width: 100%;
+      min-width:350px;
       padding: 0;
       margin-top: 0;
       .border-radius(0px);
       .box-shadow(none);
       border: 0;
+      background:none;
       li {
         background-color: #8fc033;
         border-top: 1px solid #B3D07C;
@@ -1667,6 +1668,12 @@ i[class^="icon-"] {
           &+li {
             border-color: #2d9a00;
           }
+        }
+        &:first-child {
+          .border-radius(0 5px 0 0);
+        }
+        &:last-child {
+          .border-radius(0 0 5px 5px);
         }
       }
       .option-value {
