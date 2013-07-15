@@ -1,7 +1,9 @@
 ---
 title : Response format
 
-endpoint: endpoint1
+title-endpoint: make
 ---
 
 ###Response format
+
+##test content : {{page.title-endpoint}} 

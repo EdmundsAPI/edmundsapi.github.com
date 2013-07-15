@@ -1,7 +1,9 @@
 ---
-title : Sample request
+title : Sample Request
 
-endpoint: endpoint1
+title-endpoint: makes_count
 ---
 
-###Sample request
+###Sample Request
+
+##test content : {{page.title-endpoint}} 

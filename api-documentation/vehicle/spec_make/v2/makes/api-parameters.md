@@ -1,7 +1,9 @@
 ---
 title : Parameters
 
-endpoint: endpoint1
+title-endpoint: makes
 ---
 
 ###Parameters
+
+##test content : {{page.title-endpoint}} 

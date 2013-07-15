@@ -7,7 +7,7 @@ header : Vehicle configurator
 
 {% include themes/twitter/widgets_and_apps/vehicle_configurator_setup.html %}
 
-<iframe src="http://widgets.edmunds.com/carconfig/v1" width="100%" height="1180" align="left" class="iframeWidget">
+<iframe src="http://edmundswidgets-staging.herokuapp.com/carconfig/v1?portal=true" width="100%" height="1180" align="left" class="iframeWidget">
 </iframe>
 
 #####ATTRIBUTES

@@ -1,7 +1,9 @@
 ---
 title : Description
 
-endpoint: endpoint1
+title-endpoint: makes
 ---
 
 ###Description
+
+##test content : {{page.title-endpoint}} 

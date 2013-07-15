@@ -7,8 +7,18 @@
 		<div class="row-fluid overlay">
 			<div class="span2">&nbsp;</div>			
 			<div class="span10">		
-				<div class="tab active">v2</div>
-				<div class="tab">v1</div>
+			
+				
+
+						{% if page.amount_version == 1 %}
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/index.html">v1</a>
+						{% elsif page.amount_version == 2 %}
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/index.html">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/index.html">v1</a>
+						{% endif%}
+
+
+				
 			</div>
 		</div>
 	</div>
@@ -24,32 +34,35 @@
 		<div class="row-fluid overlay">
 			<div class="span2">&nbsp;</div>		
 			<div class="span10">
-				<div class="version-bar-block">Overview</div>
+				<a class="version-bar-block" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/index.html" title="Overview">Overview</a>
 				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
 
 				<div class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown"><span class="selected-option">Select endpoint</span><span class="dropdown-btn">&nbsp;</span></a>
-					
-					
-					
-					
-				
-					
-					
-					
-					
-					
+					<a class="dropdown-toggle" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
+
+									
+									
+									
 					<ul class="dropdown-menu">
-					{% for p in  site.pages %} 
-						{% if p.title == page.title %}
-							{% if p.level == 3 %}
-							<li name="endpoint"><a href="{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ p.version }}/{{ p.title-endpoint }}/index.html">
-								<div class="option-value">{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ p.version }}/{{ p.title-endpoint }}/index.html</div>
-								<div class="option-description">Get makes by ID  - {{ p.endpoint }}</div></a>
-							</li>
+						
+						{% for p in  site.pages %} 
+							{% if p.spec == page.spec %}
+								{% if p.level == 3 %}
+									{% if p.version == page.version %}
+									
+										<li name="endpoint">
+											<a href="{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ page.version }}/{{ p.title-endpoint }}/index.html">
+											<div class="option-value">{{ p.dropdown-link }}</div>
+											<div class="option-description">Get makes by ID  - {{ p.level }}</div></a>
+										</li>
+									
+									{% endif %}
+									
+								{% endif %}
 							{% endif %}
-						{% endif %}
-					{% endfor %}
+						{% endfor %}
+					
+					
 					</ul>
 
 				</div>
