@@ -21,28 +21,30 @@
 <div class="tab-content">	
 	
 		{% for p in site.pages %}
-			{% if p.title-endpoint == page.title-endpoint %}
+	
 			
-				{% if p.title == "Description" %}
+				{% if p.title == "Description" and p.title-endpoint == page.title-endpoint%}
 					<div class="tab-pane active" id="description">
-						sdfsdf
+						 1tab 
 						{{ p.content }}
 					</div>
-				{% elsif p.title == "Parameters" %}
+				{% elsif p.title == "Parameters" and p.title-endpoint == page.title-endpoint %}
 					<div class="tab-pane" id="parameters">
+						2 tab 
 						{{ p.content }}
 					</div>
-				{% elsif p.title == "Response format" %}
+				{% elsif p.title == "Response format" and p.title-endpoint == page.title-endpoint %}
 					<div class="tab-pane" id="responce">
+						3 tab 
 						{{ p.content }}
 					</div>
-				{% elsif p.title == "Sample Request" %}
+				{% elsif p.title == "Sample Request" and p.title-endpoint == page.title-endpoint %}
 					<div class="tab-pane" id="request">
+						4 tab 
 						{{ p.content }}
 					</div>
-				{% endif %}
 				
-			{% endif %}
+				{% endif %}
 		{% endfor %}
 	
 </div>
