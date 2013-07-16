@@ -22,4 +22,5 @@ number: 1
 
 ###Test page (Description)
 
+tab: {{page.number}}
 

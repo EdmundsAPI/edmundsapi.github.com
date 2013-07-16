@@ -22,3 +22,5 @@ number: 2
 ###Parameters
 
 ##test content : {{page.title-endpoint}} 
+
+tab: {{page.number}}

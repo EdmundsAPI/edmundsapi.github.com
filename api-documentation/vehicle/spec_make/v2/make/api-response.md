@@ -22,3 +22,5 @@ number: 3
 ###Response format
 
 ##test content : {{page.title-endpoint}} 
+
+tab: {{page.number}}

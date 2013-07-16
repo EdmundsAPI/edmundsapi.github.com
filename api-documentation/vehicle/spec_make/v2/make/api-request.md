@@ -22,3 +22,5 @@ number: 4
 ###Sample Request
 
 ##test content : {{page.title-endpoint}} 
+
+tab: {{page.number}} 
