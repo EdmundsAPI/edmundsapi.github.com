@@ -19,47 +19,30 @@
 
 
 <div class="tab-content">	
-	<div class="tab-pane active" id="description">
+	
 		{% for p in site.pages %}
-			{% if p.title = "Description" and p.title-endpoint = page.title-endpoint %}
-				
-				  {{ p.content }}
+			{% if p.title-endpoint == page.title-endpoint %}
+				{% elsif p.title == "Description" %}
+					<div class="tab-pane active" id="description">
+						sdfsdf
+						{{ p.content }}
+					</div>
+				{% elsif p.title == "Parameters" %}
+					<div class="tab-pane" id="parameters">
+						{{ p.content }}
+					</div>
+				{% elsif p.title == "Response format" %}
+					<div class="tab-pane" id="responce">
+						{{ p.content }}
+					</div>
+				{% elsif p.title == "Sample Request" %}
+					<div class="tab-pane" id="request">
+						{{ p.content }}
+					</div>
 				
 			{% endif %}
 		{% endfor %}
-	</div>
+	
 
-	<div class="tab-pane" id="parameters">
-
-		{% for p in site.pages %}
-			{% if p.title = "Parameters" and p.title-endpoint = page.title-endpoint%}
-				
-				  {{ p.content }}
-				
-			{% endif %}
-		{% endfor %}
-
-	</div>
-
-	<div class="tab-pane " id="responce">
-		{% for p in site.pages %}
-			{% if p.title = "Response format" and p.title-endpoint = page.title-endpoint%}
-				
-				  {{ p.content }}
-				
-			{% endif %}
-		{% endfor %}
-
-	</div>
-
-	<div class="tab-pane " id="request">
-		{% for p in site.pages %}
-			{% if p.title = "Sample Request" and p.title-endpoint = page.title-endpoint %}
-				
-				  {{ p.content }}
-				
-			{% endif %}
-		{% endfor %}
-
-	</div>
+	
 </div>
