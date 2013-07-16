@@ -1,9 +1,10 @@
 ---
 title : Parameters
+test: 2
 
 title-endpoint: make
 ---
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
+{{page.test}} 

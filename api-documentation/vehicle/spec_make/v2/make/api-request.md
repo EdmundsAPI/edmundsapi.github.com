@@ -1,9 +1,10 @@
 ---
 title : Sample Request
+test: 3
 
 title-endpoint: make
 ---
 
 ###Sample Request
 
-##test content : {{page.title-endpoint}} 
+{{page.test}} 
