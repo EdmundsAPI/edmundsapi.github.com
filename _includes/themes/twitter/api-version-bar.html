@@ -44,9 +44,7 @@
 				<div class="dropdown">
 				
 					<a class="dropdown-toggle {% if page.dropdown-link != 'Select endpoint' %} active {% endif %}" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
-
-									
-									
+			
 									
 					<ul class="dropdown-menu">
 						
@@ -84,3 +82,44 @@
 		});
 	});
 </script>
+
+
+
+<script type="text/javascript">
+
+	$(function(){
+		var select = $('.apiPage').find('.dropdown');
+		var selectWidth = select.width();
+		var list = $('.apiPage .dropdown-menu').find('li:first-child');
+		var listWidth = $('.apiPage').find('.dropdown-menu').width(); 
+		
+		var value = listWidth - selectWidth - 44;
+		console.log(value);
+		
+		if(value > 0) {
+			console.log('1');
+			list.css('border-radius', '0 5px 0 0');
+		} else {
+		  list.css('border-radius', '0');
+		}
+		
+	});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

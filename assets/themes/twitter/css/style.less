@@ -245,6 +245,18 @@
             vertical-align:bottom;
           }
         }
+        &.first {
+          .border-radius(5px 5px 0 0);
+          &:hover, a:hover {
+            .border-radius(5px 5px 0 0)
+          }
+        }
+        &:last-child {
+          .border-radius(0 0 5px 5px);
+          &:hover, a:hover {
+            .border-radius(0 0 5px 5px)
+          }
+        }
         a {
           border:0;
           padding:0 24px;
@@ -1661,7 +1673,7 @@ i[class^="icon-"] {
       }
     }
     ul.dropdown-menu {
-      min-width:350px;
+      min-width:282px;
       padding: 0;
       margin-top: 0;
       .border-radius(0px);
@@ -1687,9 +1699,9 @@ i[class^="icon-"] {
           }
         }
         &:first-child {
-          .border-radius(0 5px 0 0);
+          .border-radius(0);
           a:hover {
-            .border-radius(0 5px 0 0);
+            .border-radius(inherit);
           }
         }
         &:last-child {
