@@ -4,15 +4,17 @@
 		
 		
 		{% for p in site.pages %}
-		
-			{% if p.title-endpoint == page.title-endpoint %}
 			
-				<li {% if p.url == page.url %} class="active"{% endif %}>
-					<a href="{{p.url}}" title="{{p.title_md}}">{{p.title_md}}</a>
-				</li>
+				{% if p.title-endpoint == page.title-endpoint %}
+					{% for number in (1..4) %}
+						{% if p.number == number %}
+							<li {% if p.url == page.url %} class="active"{% endif %}>
+								<a href="{{p.url}}" title="{{p.title_md}}">{{p.title_md}}</a>
+							</li>
+						{% endif %}
+					{% endfor%}
+				{% endif %}
 			
-			{% endif %}
-		
 		{% endfor %}
 		
 		
