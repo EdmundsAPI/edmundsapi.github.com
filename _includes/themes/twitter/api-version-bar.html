@@ -34,11 +34,16 @@
 		<div class="row-fluid overlay">
 			<div class="span2">&nbsp;</div>		
 			<div class="span10">
-				<a class="version-bar-block" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/index.html" title="Overview">Overview</a>
+				{% for p in  site.pages %} 
+					{% if p.spec == page.spec and p.overview == 'page'  %}
+						<a class="version-bar-block {% if p.url == page.url %} active {% endif %}" href="{{ p.url }}" title="Overview">Overview</a>
+					{% endif %}
+				{% endfor %}	
 				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
 
 				<div class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
+				
+					<a class="dropdown-toggle {% if page.dropdown-link != 'Select endpoint' %} active {% endif %}" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
 
 									
 									
@@ -46,19 +51,14 @@
 					<ul class="dropdown-menu">
 						
 						{% for p in  site.pages %} 
-							{% if p.spec == page.spec %}
-								{% if p.level == 3 %}
-									{% if p.version == page.version %}
+							{% if p.spec == page.spec and p.level == 3 and p.version == page.version%}
 									
-										<li name="endpoint">
-											<a href="{{ PATH }}/api-documentation/{{ p.api }}/{{ p.spec }}/{{ page.version }}/{{ p.title-endpoint }}/index.html">
-											<div class="option-value">{{ p.dropdown-link }}</div>
-											<div class="option-description">Get makes by ID  - {{ p.level }}</div></a>
-										</li>
-									
-									{% endif %}
-									
-								{% endif %}
+								<li name="endpoint">
+									<a href="{{ p.url }}">
+									<div class="option-value">{{ p.dropdown-link }}</div>
+									<div class="option-description">Get makes by ID  - {{ p.level }}</div></a>
+								</li>
+
 							{% endif %}
 						{% endfor %}
 					

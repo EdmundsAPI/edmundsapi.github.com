@@ -6,6 +6,7 @@
 @color_red: #BF2E37;
 @color_red_blok: #bf2f37;
 @color_default_background: #F2F2F2;
+@color_green: #8FC033;
 
  /*__font-family__*/
 @font-face {
@@ -228,7 +229,7 @@
       background:none;
       
       li {
-        background:#8fc033;
+        background:@color_green;
         
         &:first-child {
           line-height:8px;
@@ -240,7 +241,7 @@
             border-top:0;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
-            border-bottom: 8px solid #8fc033;
+            border-bottom: 8px solid @color_green;
             vertical-align:bottom;
           }
         }
@@ -1478,10 +1479,15 @@ i[class^="icon-"] {
           text-decoration:none;
         }
         
+        
+  
       }
     } 
   }
   
+}
+.multiLevelMenu a.active {
+  font-weight:700;
 }
 /// end Top section of mane page
 
@@ -1562,17 +1568,24 @@ i[class^="icon-"] {
       padding: 8px 27px;
     }
     .version-bar-block {
-      padding: 0 17px;
+      padding: 0 22px;
       font-size: 13px;
       display: inline-block;
       line-height: 29px;
       background-color: #a62429;      
-      color: #fff;
+      color: #eee;
       cursor: pointer;
       .border-radius(3px);
       
       &:hover {
+        color:#fff;
         text-decoration:none;
+        background-color: @color_green;  
+      }
+      &.active {
+        padding: 0 17px;
+        font-weight:700;
+        color: #fff;
       }
     }
     .wrap-icon {
@@ -1627,10 +1640,14 @@ i[class^="icon-"] {
     .dropdown-toggle {
       display: inline-block;      
       width: 100%;
-      color: #fff;
+      color: #eee;
       text-decoration: none;
       cursor: pointer;
       font-weight: normal;
+      &.active {
+        font-weight:700;
+        color: #fff;
+      }
       .dropdown-btn {
         background: url('../img/sprite-dropdown-button.png') no-repeat;
         display: inline-block;
@@ -1652,7 +1669,7 @@ i[class^="icon-"] {
       border: 0;
       background:none;
       li {
-        background-color: #8fc033;
+        background-color: @color_green;
         border-top: 1px solid #B3D07C;
         a {
           font-weight: bold;
@@ -1671,9 +1688,15 @@ i[class^="icon-"] {
         }
         &:first-child {
           .border-radius(0 5px 0 0);
+          a:hover {
+            .border-radius(0 5px 0 0);
+          }
         }
         &:last-child {
           .border-radius(0 0 5px 5px);
+          a:hover {
+            .border-radius(0 0 5px 5px);
+          }
         }
       }
       .option-value {
@@ -1690,7 +1713,7 @@ i[class^="icon-"] {
     }
 
     &.open, &:hover {
-      background-color: #8fc033;
+      background-color: @color_green;
       .dropdown-btn {
         background-position: -39px 0;
       }
