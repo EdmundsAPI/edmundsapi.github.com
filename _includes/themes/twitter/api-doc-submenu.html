@@ -19,37 +19,47 @@
 
 
 <div class="tab-content">	
-	
+	<div class="tab-pane active" id="description">
 		{% for p in site.pages %}
-	
-			{% if p.title-endpoint == page.title-endpoint %}
-			
-				{% if p.test == 1 %}
-					<div class="tab-pane active" id="description">
-						 1tab 
-						{{ p.content }}
-					</div>
-				{% elsif p.test == 2 %}
-					<div class="tab-pane" id="parameters">
-						2 tab 
-						{{ p.content }}
-					</div>
-				{% elsif p.test == 3 %}
-					<div class="tab-pane" id="responce">
-						3 tab 
-						{{ p.content }}
-					</div>
-				{% elsif p.test == 4 %}
-					<div class="tab-pane" id="request">
-						4 tab 
-						{{ p.content }}
-					</div>
-				
+			{% if p.title == "Description" %}
+				{% if p.title-endpoint == page.title-endpoint %}
+				  {{ p.content }}
 				{% endif %}
-				
-				
-			{% endif %}	
-				
+			{% endif %}
 		{% endfor %}
-	
+	</div>
+
+	<div class="tab-pane" id="parameters">
+
+		{% for p in site.pages %}
+			{% if p.title == "Parameters" %}
+				{% if p.title-endpoint == page.title-endpoint %}
+				  {{ p.content }}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+
+	</div>
+
+	<div class="tab-pane " id="responce">
+		{% for p in site.pages %}
+			{% if p.title == "Response format" %}
+				{% if p.title-endpoint == page.title-endpoint %}
+				  {{ p.content }}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+
+	</div>
+
+	<div class="tab-pane " id="request">
+		{% for p in site.pages %}
+			{% if p.title == "Sample Request" %}
+				{% if p.title-endpoint == page.title-endpoint %}
+				  {{ p.content }}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+
+	</div>
 </div>
