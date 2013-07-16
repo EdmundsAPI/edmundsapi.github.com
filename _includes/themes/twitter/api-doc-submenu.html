@@ -21,7 +21,7 @@
 <div class="tab-content">	
 	<div class="tab-pane active" id="description">
 		{% for p in site.pages %}
-			{% if p.title == "Description" and p.title-endpoint == page.title-endpoint %}
+			{% if p.title = "Description" and p.title-endpoint = page.title-endpoint %}
 				
 				  {{ p.content }}
 				
@@ -32,7 +32,7 @@
 	<div class="tab-pane" id="parameters">
 
 		{% for p in site.pages %}
-			{% if p.title == "Parameters" and p.title-endpoint == page.title-endpoint%}
+			{% if p.title = "Parameters" and p.title-endpoint = page.title-endpoint%}
 				
 				  {{ p.content }}
 				
@@ -43,7 +43,7 @@
 
 	<div class="tab-pane " id="responce">
 		{% for p in site.pages %}
-			{% if p.title == "Response format" and p.title-endpoint == page.title-endpoint%}
+			{% if p.title = "Response format" and p.title-endpoint = page.title-endpoint%}
 				
 				  {{ p.content }}
 				
@@ -54,7 +54,7 @@
 
 	<div class="tab-pane " id="request">
 		{% for p in site.pages %}
-			{% if p.title == "Sample Request" and p.title-endpoint == page.title-endpoint %}
+			{% if p.title = "Sample Request" and p.title-endpoint = page.title-endpoint %}
 				
 				  {{ p.content }}
 				
