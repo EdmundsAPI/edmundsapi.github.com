@@ -1,65 +1,26 @@
 
 <div class="endpoint-submenu">
 	<ul class="nav nav-tabs">
-		<li class="active">
-			<a href="#description" data-toggle="tab">Description</a>
-		</li>
-		<li>
-			<a href="#parameters" data-toggle="tab">Parameters</a>
-		</li>
-		<li>
-			<a href="#responce" data-toggle="tab">Response Format</a>
-		</li>
-		<li>
-			<a href="#request" data-toggle="tab">Sample Request</a>
-		</li>
+		
+		
+		{% for p in site.pages %}
+		
+			{% if p.title-endpoint == page.title-endpoint %}
+			
+				<li {% if p.url == page.url %} class="active"{% endif %}>
+					<a href="{{p.url}}" title="{{p.title_md}}">{{p.title_md}}</a>
+				</li>
+			
+			{% endif %}
+		
+		{% endfor %}
+		
+		
+		
+		
 	</ul>
 
 </div>
 
 
-<div class="tab-content">	
-	<div class="tab-pane active" id="description">
-		{% for p in site.pages %}
-			{% if p.title == "Description" %}
-				{% if p.title-endpoint == page.title-endpoint %}
-				  {{ p.content }}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-	</div>
 
-	<div class="tab-pane" id="parameters">
-
-		{% for p in site.pages %}
-			{% if p.title == "Parameters" %}
-				{% if p.title-endpoint == page.title-endpoint %}
-				  {{ p.content }}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-
-	</div>
-
-	<div class="tab-pane " id="responce">
-		{% for p in site.pages %}
-			{% if p.title == "Response format" %}
-				{% if p.title-endpoint == page.title-endpoint %}
-				  {{ p.content }}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-
-	</div>
-
-	<div class="tab-pane " id="request">
-		{% for p in site.pages %}
-			{% if p.title == "Sample Request" %}
-				{% if p.title-endpoint == page.title-endpoint %}
-				  {{ p.content }}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-
-	</div>
-</div>
