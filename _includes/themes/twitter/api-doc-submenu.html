@@ -22,7 +22,8 @@
 	
 		{% for p in site.pages %}
 			{% if p.title-endpoint == page.title-endpoint %}
-				{% elsif p.title == "Description" %}
+			
+				{% if p.title == "Description" %}
 					<div class="tab-pane active" id="description">
 						sdfsdf
 						{{ p.content }}
@@ -39,10 +40,9 @@
 					<div class="tab-pane" id="request">
 						{{ p.content }}
 					</div>
+				{% endif %}
 				
 			{% endif %}
 		{% endfor %}
-	
-
 	
 </div>
