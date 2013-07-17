@@ -4,7 +4,6 @@ layout: api-documentation
 title : API Overview
 title_parent: Api documentation
 title_active_left_menu: API Overview
-header_parent : API Overview
 
 level: 1
 weight: 1

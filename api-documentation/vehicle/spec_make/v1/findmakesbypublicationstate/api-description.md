@@ -9,7 +9,7 @@ title-endpoint: findmakesbypublicationstate
 spec: spec_make
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v1/findmakesbypublicationstate'
+dropdown-link: 'v1/api/vehicle/makerepository/findmakesbypublicationstate'
 
 
 level: 3

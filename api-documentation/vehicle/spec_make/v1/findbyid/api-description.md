@@ -9,7 +9,7 @@ title-endpoint: findbyid
 spec: spec_make
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v1/findbyid'
+dropdown-link: 'v1/api/vehicle/makerepository/findbyid'
 
 
 level: 3

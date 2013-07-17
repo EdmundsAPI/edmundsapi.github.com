@@ -9,7 +9,7 @@ title-endpoint: findnewmakes
 spec: spec_make
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v1/findnewmakes'
+dropdown-link: 'v1/api/vehicle/makerepository/findnewmakes'
 
 
 level: 4

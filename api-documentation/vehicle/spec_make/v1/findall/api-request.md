@@ -9,7 +9,7 @@ title-endpoint: findall
 spec: spec_make
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v1/findall'
+dropdown-link: 'v1/api/vehicle/makerepository/findall'
 
 
 level: 4

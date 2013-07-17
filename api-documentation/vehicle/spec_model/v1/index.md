@@ -1,3 +1,21 @@
 ---
+layout: api-documentation
+title : 'Spec: Model'
+title_active_left_menu: Spec Model
+title_parent: Api documentation
+
+amount_version: 2
+spec: spec_model
+version: v1
+api: vehicle
+dropdown-link: 'Select endpoint'
+
+
+level: 2
 
 ---
+
+
+### Test page {{page.version}}
+
+

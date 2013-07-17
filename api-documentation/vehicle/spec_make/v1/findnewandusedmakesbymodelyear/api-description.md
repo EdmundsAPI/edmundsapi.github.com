@@ -9,7 +9,7 @@ title-endpoint: findnewandusedmakesbymodelyear
 spec: spec_make
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v1/findnewandusedmakesbymodelyear'
+dropdown-link: 'v1/api/vehicle/makerepository/findnewandusedmakesbymodelyear'
 
 
 level: 3
