@@ -49,10 +49,10 @@
 					<ul class="dropdown-menu">
 						
 						{% for p in  site.pages %} 
-							{% if p.spec == page.spec and p.level == 3 and p.version == page.version%}
+							{% if p.spec == page.spec and p.version == page.version and p.level == 3 %}
 									
 								<li name="endpoint">
-									<a href="{{ p.url }}">
+									<a href="{{ p.url }}" title="">
 									<div class="option-value">{{ p.dropdown-link }}</div>
 									<div class="option-description">{{ p.description_edpoint }}</div></a>
 								</li>
