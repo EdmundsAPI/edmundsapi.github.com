@@ -3,11 +3,13 @@ layout: page
 title : Vehicle configurator
 title_parent: Widgets and apps
 header : Vehicle configurator
+
+class_page: pageWidgetSetup
 ---
 
 {% include themes/twitter/widgets_and_apps/vehicle_configurator_setup.html %}
 
-<iframe src="http://edmundswidgets-staging.herokuapp.com/carconfig/v1?portal=true" width="100%" height="1180" align="left" class="iframeWidget">
+<iframe src="http://edmundswidgets-staging.herokuapp.com/carconfig/v1?portal=true" width="100%" height="1000" align="left" class="iframeWidget">
 </iframe>
 
 #####ATTRIBUTES

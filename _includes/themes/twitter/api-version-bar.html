@@ -73,7 +73,6 @@
 <script type="text/javascript">
 	$(function(){
 		$('[name="endpoint"]').on('click', function() {
-			console.log('click option');
 			$('.selected-option').html($(this).find('.option-value').text());
 		});
 		$('.tab').on('click', function() {
@@ -94,10 +93,8 @@
 		var listWidth = $('.apiPage').find('.dropdown-menu').width(); 
 		
 		var value = listWidth - selectWidth - 44;
-		console.log(value);
 		
 		if(value > 0) {
-			console.log('1');
 			list.css('border-radius', '0 5px 0 0');
 		} else {
 		  list.css('border-radius', '0');

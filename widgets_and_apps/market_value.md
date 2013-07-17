@@ -3,6 +3,8 @@ layout: page
 title : True market value
 title_parent: Widgets and apps
 header : True market value
+
+class_page: pageWidgetSetup
 ---
 
 {% include themes/twitter/widgets_and_apps/market_value.html %}
@@ -12,12 +14,12 @@ The True Market Value®  is a simple widget that will let people quickly ...
 You can use the configurator below to customize the layout and style of  True Market Value® widget, and grab a small snippet of code to insert into your HTML pages to implement the widget in minutes..
 
 
-<iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1180" align="left" class="iframeWidget">
+<iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1031" align="left" class="iframeWidget">
 </iframe>
 
 #####ATTRIBUTES
 
-* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Admunds Developer Portal'>Admunds Developer Portal</a>
+* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Edmunds Developer Portal'>Admunds Developer Portal</a>
 * `Theme` - the theme for the Widget. Options: 'Theme 1', 'Theme 2', 'Theme 3'.
 * `Color Scheme` - the color schemefor the Widget. Option: 'Light', 'Dark'.
 * `Layout` - sets the layout of the Widget. Options: 'Vertical', 'Horizontal'.

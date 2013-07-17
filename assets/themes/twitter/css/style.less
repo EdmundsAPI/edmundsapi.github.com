@@ -81,7 +81,7 @@
       padding: 8px 0 10px 230px;
       color: @color_link;
       font-size:36px;
-      font-family:'Oswald400';
+      font-family:'Oswald400', Arial, sans-serif;
       line-height: 78px;
       text-transform: uppercase;
   } 
@@ -175,7 +175,7 @@
   .path {
     font-size:52px;
     line-height:54px;
-    font-family:'Oswald400';
+    font-family:'Oswald400', Arial, sans-serif;
     
     &.separator {
       margin-right: 17px;
@@ -195,7 +195,7 @@
     right:0;
     top:59px;
     color: @color_link;
-    font-family: 'Oswald';
+    font-family: 'Oswald', Arial, sans-serif;
     font-size: 22px;
     line-height:29px;
     text-transform: lowercase;
@@ -230,8 +230,18 @@
       
       li {
         background:@color_green;
+        border-top:1px solid #B3D07C;
+        
+        &:hover {
+          border-top-color:#2D9A00;
+          &+li {
+            border-top-color:#2D9A00;
+          }
+        }
+        
         
         &:first-child {
+          border-top:0;
           line-height:8px;
           text-align:right;
           background: none;
@@ -247,6 +257,7 @@
         }
         &.first {
           .border-radius(5px 5px 0 0);
+          border-top:0;
           &:hover, a:hover {
             .border-radius(5px 5px 0 0)
           }
@@ -262,12 +273,12 @@
           padding:0 24px;
           color:#fff;
           font-size:17px;
-          font-family: arial;
+          font-family: Arial, sans-serif;
           line-height:55px;
           text-transform: none;
           
           &:hover, &:focus {
-            background: #2d9a00
+            background: #2d9a00;
           }
           .marker {
             margin:4px;
@@ -285,14 +296,27 @@
   
 }
 
+.pageWidgetSetup {
+  ul {
+    margin-bottom: 42px;
+    ul {
+      margin-bottom:0;
+    }
+  }
+  h5 {
+    font-size:18px;
+  }
+}
 
 .accordion {
-  margin-bottom:39px;
+  margin-bottom:36px;
+  border-top:1px solid #ccc;
   
   .accordion-group {
     border-width:0 0 1px 0;
     border-color:#ccc;
     border-radius:0;
+    
 
     .nav-tabs li.active a, .nav-tabs li a:active {  
       border-top: 1px solid #ddd;
@@ -302,9 +326,6 @@
 
     }
       
-    &:first-child {
-      border-top-width:1px;
-    }
     a {
       color: @color_regular_link;
       &:hover {
@@ -320,16 +341,17 @@
     a.accordion-header {
       color: @color_regular_link;
       font-size:26px;
-      font-family: 'Myriad Pro';
-      background:url('../img/sprite_accordion.gif') left -86px no-repeat;
+      font-family: 'Oswald400', arial, sans-serif;
+      text-transform: uppercase;
+      background:url('../img/sprite_accordion.gif') left 44px no-repeat;
       
       &.accordion-toggle {
        padding: 41px 28px;
        line-height: 26px; 
       }
       
-      &.active {
-        background-position:left 46px;
+      &.collapsed {
+        background-position:left -88px;
       }
       &:hover {
         color: @color_link_hover;
@@ -348,6 +370,7 @@
       background-color: @color_default_background;
     }
   }
+  
   
 }
 .iframeWidget {
@@ -369,8 +392,13 @@ a.blueLink {
 .blogLinks {
   margin:0 0 123px 0;
   
+  h5 {
+    margin-bottom:16px;
+  }
+  
   a {
     color:@color_regular_link;
+    line-height:34px;
     
     &:hover {
       color: @color_link_hover;
@@ -760,7 +788,7 @@ div[class*="promo-section"] {
       font-style: italic;
     }
     .standart-btn {
-      font-family:'Oswald';
+      font-family:'Oswald', Arial, sans-serif;
       font-size: 27px;
       padding: 14px 49px;
       margin: 0 15px;
@@ -775,7 +803,7 @@ div[class*="promo-section"] {
       .quick-start-header {
         display:block;
         color: @color_red_blok;
-        font-family:'Oswald400';
+        font-family:'Oswald400', Arial, sans-serif;
         font-size: 20px;
          
         &:hover {
@@ -786,7 +814,7 @@ div[class*="promo-section"] {
         display:block;
         margin: 0;
         color:#252324;
-        font-family: arial;
+        font-family: Arial, sans-serif;
         font-style: normal;
         font-size: 11px;
       }
@@ -818,7 +846,7 @@ div[class*="promo-section"] {
     float: right;
     width: 60%;
     text-align: right;
-    font-size: 13px;
+    font-size: 14px;
     margin: 50px 0 133px;
   }
 
@@ -829,7 +857,7 @@ div[class*="promo-section"] {
     margin-bottom: 45px;
 
     .btn-group-header {
-      font-family:'Oswald400';
+      font-family:'Oswald400', Arial, sans-serif;
       font-size: 20px;
       display: block;
       margin-bottom: 23px;
@@ -1041,7 +1069,9 @@ div[class*="promo-section"] {
   }
   h5 {
     margin:0 0 17px 33px;
+    font-family: arial,sans-serif;
     font-size: 14px;
+    font-weight: 700;
   }
   p {
     margin:0 0 37px 33px;
@@ -1213,7 +1243,7 @@ i[class^="icon-"] {
       vertical-align: bottom;
       display: inline;
       font-size: 26px;
-      font-family:'Oswald';
+      font-family:'Oswald', Arial, sans-serif;
     }
     p {
       line-height: 22px;
@@ -1323,7 +1353,7 @@ i[class^="icon-"] {
       margin: 0 27px 20px 38px;
       color: #333;
       font-size: 28px;
-      font-family: 'Oswald';
+      font-family: 'Oswald', Arial, sans-serif;
       
       span {
         color: @color_red;
@@ -1362,7 +1392,7 @@ i[class^="icon-"] {
         a, a:focus, a:active {
           display: block;
           color: @color_regular_link;
-          font-family: 'Oswald400';
+          font-family: 'Oswald400', Arial, sans-serif;
           font-size: 42px;
           line-height: 29px;
           text-decoration:none;          
@@ -1375,7 +1405,7 @@ i[class^="icon-"] {
             width:110px;
             margin:0 0 0 13px;
             padding: 0 15px 0 0;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             font-size:14px;  
             font-weight:700;
             line-height: 16px;
@@ -1521,7 +1551,7 @@ i[class^="icon-"] {
     h1 {
       padding: 25px 0 18px 29px;
       margin:0;
-      font: 26px/26px 'Oswald400';
+      font: 26px/26px 'Oswald400', Arial;
       color: #444;
       text-transform: uppercase;
     }  
@@ -1694,9 +1724,6 @@ i[class^="icon-"] {
         }
         &:hover {
           border-color: #2d9a00;
-          &+li {
-            border-color: #2d9a00;
-          }
         }
         &:first-child {
           .border-radius(0);
