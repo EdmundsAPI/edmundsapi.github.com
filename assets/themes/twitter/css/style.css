@@ -1,11 +1,8 @@
 /*__style of Retina__*/
 
 .topLogo {
-  display:inline-block;
-  height: 103px;
-  width: 93px;
   background-image: url('../img/api-logo.png');
-  background-repeat: no-repeat;
+  background-size: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
        only screen and (min-resolution: 1.5dppx), 
