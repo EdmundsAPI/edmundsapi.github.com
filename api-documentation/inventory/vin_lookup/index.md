@@ -1,12 +1,11 @@
 ---
 layout: api-documentation
 
-title : Overview
+title : Inventory API
 title_active_left_menu: VIN Lookup
 title_parent: Api documentation
 
-level: 2
-overview: page
+level: 1
 
 ---
 

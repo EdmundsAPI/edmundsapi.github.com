@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Spec: Model'
-title_active_left_menu: Spec Model
+title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
 amount_version: 2

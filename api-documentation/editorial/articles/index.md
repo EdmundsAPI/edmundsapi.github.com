@@ -1,14 +1,14 @@
 ---
 layout: api-documentation
 
-title : Overview
+title : Editorial API
 title_active_left_menu: Articles
 title_parent: Api documentation
 
-level: 2
-overview: page
-
+level: 1
 ---
 
 
 ### Test page {{page.title_active_left_menu}}: {{page.title}}
+
+

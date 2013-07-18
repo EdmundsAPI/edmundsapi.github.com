@@ -4,9 +4,9 @@ title : 'Price: True Market Value'
 title_active_left_menu: 'Price: True Market Value'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: price_tmv
-version: v2
+version: v1
 api: vehicle
 dropdown-link: 'Select endpoint'
 

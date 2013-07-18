@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Spec: Model'
-title_active_left_menu: Spec Model
+title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
 amount_version: 2
@@ -12,7 +12,7 @@ dropdown-link: 'Select endpoint'
 
 
 level: 2
-overview: page
+overview: page_version
 
 ---
 
