@@ -15,7 +15,9 @@
     background-size: 186px 206px;
   }
 }
-
+.topLogo:hover {
+	text-decoration: none;
+}
  /*__font-family__*/
 @font-face {
   font-family: 'Oswald';
