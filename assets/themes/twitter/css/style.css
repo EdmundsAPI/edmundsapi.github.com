@@ -10,12 +10,12 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
        only screen and (min-resolution: 1.5dppx), 
        only screen and (-o-min-device-pixel-ratio: 3/2) {
-  .topLogo{
+  .topLogo {
     background-image: url('../img/api-logo@2x.png');
     background-size: 186px 206px;
   }
 }
-.topLogo:hover {
+a.topLogo:hover {
 	text-decoration: none;
 }
  /*__font-family__*/
