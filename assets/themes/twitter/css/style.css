@@ -6,14 +6,13 @@
   width: 93px;
   background-image: url('../img/api-logo.png');
   background-repeat: no-repeat;
-  background-size: 93px 103px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
        only screen and (min-resolution: 1.5dppx), 
        only screen and (-o-min-device-pixel-ratio: 3/2) {
   .topLogo {
     background-image: url('../img/api-logo@2x.png');
-    background-size: 186px 206px;
+    background-size: 93px 103px;
   }
 }
 a.topLogo:hover {
