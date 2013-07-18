@@ -1,13 +1,17 @@
 /*__style of Retina__*/
 
 .topLogo {
-  background-image: url('/api-logo.png');
+  display:inline-block;
+  height: 103px;
+  width: 93px;
+  background-image: url('../img/api-logo.png');
+  background-repeat: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
        only screen and (min-resolution: 1.5dppx), 
        only screen and (-o-min-device-pixel-ratio: 3/2) {
-  .class-image {
-    background-image: url('/api-logo@2x.png');
+  .topLogo{
+    background-image: url('../img/api-logo@2x.png');
     background-size: 186px 206px;
   }
 }

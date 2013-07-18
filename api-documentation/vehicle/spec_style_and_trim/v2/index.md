@@ -1,17 +1,18 @@
 ---
 layout: api-documentation
-title : 'Spec: Make'
-title_active_left_menu: Spec Make
+title : 'Spec: Style and Trim'
+title_active_left_menu: "Spec: Style and Trim"
 title_parent: Api documentation
 
 amount_version: 2
-spec: spec_make
+spec: spec_style_and_trim
 version: v2
 api: vehicle
 dropdown-link: 'Select endpoint'
 
 
 level: 2
+overview: page
 
 ---
 

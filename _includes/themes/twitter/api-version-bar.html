@@ -34,11 +34,9 @@
 		<div class="row-fluid overlay">
 			<div class="span2">&nbsp;</div>		
 			<div class="span10">
-				{% for p in  site.pages %} 
-					{% if p.spec == page.spec and p.overview == 'page'  %}
-						<a class="version-bar-block {% if p.url == page.url %} active {% endif %}" href="{{ p.url }}" title="Overview">Overview</a>
-					{% endif %}
-				{% endfor %}	
+			
+				<a class="version-bar-block {% if page.overview == 'page' %} active {% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/index.html" title="Overview">Overview</a>
+			
 				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
 
 				<div class="dropdown">
