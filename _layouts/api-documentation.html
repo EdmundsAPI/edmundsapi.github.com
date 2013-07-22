@@ -12,25 +12,25 @@ layout: default
 			<span id="h1Title">{{ page.title_parent }}</span>
 		</div>
 	</div>
-	
-	<div class="headerMenuContent">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="span2"><a href="#" title="Download" class="pdfLink">PDF (320 KB)</a></div>
-				<div class="span10">
-					<h1>{{page.title}}</h1>	
-					<span id="valActiveLeftMenu">{{page.title_active_left_menu}}</span>	
+	<div class="wrapperHeader">
+		<div class="headerMenuContent">
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span2"><a href="#" title="Download" class="pdfLink">PDF (320 KB)</a></div>
+					<div class="span10">
+						<h1>{{page.title}}</h1>	
+						<span id="valActiveLeftMenu">{{page.title_active_left_menu}}</span>	
+					</div>
 				</div>
 			</div>
 		</div>
+		
+		{% if page.level >= 2 %}		
+			{% include themes/twitter/api-version-bar.html %}					  
+		{% endif %}
 	</div>
-	
-	{% if page.level >= 2 %}		
-		{% include themes/twitter/api-version-bar.html %}					  
-	{% endif %}
-
 	<div class="container api-table">
-		<div class="row-fluid">
+		<div class="row">
 
 			<div class="span2 collumnMenu">
 				<div id="leftMenuFixed" class="leftMenuFixed">					
@@ -54,64 +54,111 @@ layout: default
 </div>
 	
 	
-{% comment %}<!-- Fix left menu and header(sub menu) in the top 
+{% comment %}<!-- Fix left menu and header(sub menu) in the top --> {% endcomment %}
+
+<style>
+	.fixElem .wrapperHeader,
+	.fixElem .endpoint-submenu,
+	.fixElem #leftMenuFixed  {
+		position: fixed;
+		z-index: 100;
+	}
+	.fixElem .wrapperHeader {
+		top:0;
+		width:100%;
+	}
+	.fixElem .endpoint-submenu {
+		top:143px;
+		width:970px;	
+		background: #F2F2F2;
+	}
+	.fixElem .apiPage .api-table .endpoint-submenu {
+    	padding-top: 13px;
+    	margin-top: 0;
+   }
+   .fixElem .endpoint-submenu .nav {
+   		margin-bottom: 0;
+   }
+   .fixElem #leftMenuFixed {
+   		top:143px;
+   }
+   .fixElem .sectionContent {
+   		margin-top:200px;
+   }
+}
+</style>
 <script type="text/javascript">
 	
 	$(function(){
+		var body = $('body');
+		var wrapperHeader = $('.wrapperHeader');
+		var subMenu =$('.endpoint-submenu');
+		var leftMenu = $('#leftMenuFixed')
 		
-		var widthWindow = $(window).width();
 		
-		if(widthWindow > 1151){
-		
-			var elemSubMenu = $('.headerMenuContent');
-			var elemLeftMenu = $('#leftMenuFixed');
-			var sectioncontent = $('.sectionContent section');
+		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
+
+		$(window).scroll(function(){
 			
-			var topValue = elemSubMenu.offset().top;
-	
-			var widthSubMenu = elemSubMenu.width();
-			var widthLeftMenu = elemLeftMenu.width();
-				elemSubMenu.css('width', widthSubMenu);
-				elemLeftMenu.css('width', widthLeftMenu);
-				
-				function number(elem) {
-					var paddingTop = elem.css('padding-top');
-					var newpPaddingTop = paddingTop.substr(-0, 2);
-					return parseFloat(newpPaddingTop);
-				};
-			
-			var heightElemSubMenu = elemSubMenu.height() + number(elemSubMenu);
-	
-			var sectionPadding = number(sectioncontent) + heightElemSubMenu;
-			
-			$(window).scroll(function(){
-			
-				var scroll = $(this).scrollTop();
-				
-				if (scroll >= topValue) {
-					
-					elemSubMenu.addClass('fixed');
-					elemLeftMenu.addClass('fixed');
-					sectioncontent.css('padding-top', sectionPadding);
-					
-				} else {
-					
-					elemSubMenu.removeClass('fixed');
-					elemLeftMenu.removeClass('fixed');
-					sectioncontent.removeAttr('style');
-					
+			var win = $(this);
+			var scrollWindow = win.scrollTop();
+
+			//add, remove Class of body
+			if (scrollWindow >= topPadding) {
+				body.addClass('fixElem');
+			} else {
+				if(body.hasClass('fixElem')) {
+					body.removeClass('fixElem');	
 				}
-				
-			});
+			};
+ 
+		});
 		
-		}
+			
+		
 	});
 	
 </script>
---> {% endcomment %}
 
 
-{% comment %}<!-- scroll left menu
+{% comment %}<!-- 
+$(function(){
+		var body = $('body');
+		var wrapperHeader = $('.wrapperHeader');
+		var subMenu =$('.endpoint-submenu');
+		var leftMenu = $('#leftMenuFixed')
+		
+		
+		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
+			
+		var widthSubmenu = 970;
+	
+		 
+		console.log(widthSubmenu);
+		
+		$(window).scroll(function(){
+			
+			var win = $(this);
+			var scrollWindow = win.scrollTop();
+
+			//add, remove Class of body
+			if (scrollWindow >= topPadding) {
+				body.addClass('fixElem');
+			} else {
+				if(body.hasClass('fixElem')) {
+					body.removeClass('fixElem');	
+				}
+			};
+			
+			
+			
+		});
+		
+		
+	});	
+-->
+{% endcomment %}
+{% comment %}<!-- scroll left menu --> {% endcomment %}
 <script type="text/javascript">
 	
 	$(function(){
@@ -134,7 +181,7 @@ layout: default
 	});
 	
 </script>
- --> {% endcomment %}
+
 	
 </div>
 

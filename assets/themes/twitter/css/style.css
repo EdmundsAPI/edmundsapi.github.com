@@ -45,11 +45,6 @@ body, html {
 	color: #444;
 }
 
-
-.wrapperHeader {
-  position: relative;
-  z-index:1;
-}
 body, html {
   height:100%;
   background: #f2f2f2;
@@ -61,7 +56,6 @@ body, html {
   height: 128px;
 }
 .wrapperPage { 
-  position: relative;
   height: auto !important;
   margin: -117px auto -128px;
   min-height: 100%;
@@ -583,6 +577,9 @@ a.pdfLink:hover {
 .select_version_api {
 	display: block;
 	margin: 29px 20px 0 0;
+}
+.span2.collumnMenu, #leftMenuFixed {
+	width:200px;
 }
 .collumnMenu .select_version_api a.value_selected_item,
 .collumnMenu .select_version_api.open .btn.dropdown-toggle  {
