@@ -80,23 +80,48 @@ layout: default
    		margin-bottom: 0;
    }
    .fixElem #leftMenuFixed {
-   		top:143px;
+   		top:69px;
    }
    .fixElem .sectionContent {
-   		margin-top:200px;
+   		margin-top:83px;
    }
-}
+   .fixElem .endpointPage {
+   		margin-top:69px;
+   }
+   .overviewPage.fixElem .sectionContent {
+   		margin-top:143px;
+   }
+   .endpointPage.fixElem .sectionContent {
+   	margin-top:200px;
+   }
+	.overviewPage #leftMenuFixed,
+	.endpointPage #leftMenuFixed {
+	  margin-top:-74px;
+	}
+	.overviewPage.fixElem #leftMenuFixed,
+	.endpointPage.fixElem #leftMenuFixed {
+	  margin-top:0;
+	}
 </style>
 <script type="text/javascript">
 	
 	$(function(){
 		var body = $('body');
 		var wrapperHeader = $('.wrapperHeader');
-		var subMenu =$('.endpoint-submenu');
+		var panelTabs = $('.api-header-row1').hasClass('api-header-row1');
+		var subMenu =$('.endpoint-submenu').hasClass('endpoint-submenu');
 		var leftMenu = $('#leftMenuFixed')
 		
 		
 		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
+		
+		if (subMenu) {
+			body.addClass('endpointPage');
+		} else if (panelTabs && !subMenu) {
+			body.addClass('overviewPage');
+		}
+		
+		
 
 		$(window).scroll(function(){
 			
@@ -121,63 +146,45 @@ layout: default
 </script>
 
 
-{% comment %}<!-- 
-$(function(){
-		var body = $('body');
-		var wrapperHeader = $('.wrapperHeader');
-		var subMenu =$('.endpoint-submenu');
-		var leftMenu = $('#leftMenuFixed')
-		
-		
-		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
-			
-		var widthSubmenu = 970;
-	
-		 
-		console.log(widthSubmenu);
-		
-		$(window).scroll(function(){
-			
-			var win = $(this);
-			var scrollWindow = win.scrollTop();
-
-			//add, remove Class of body
-			if (scrollWindow >= topPadding) {
-				body.addClass('fixElem');
-			} else {
-				if(body.hasClass('fixElem')) {
-					body.removeClass('fixElem');	
-				}
-			};
-			
-			
-			
-		});
-		
-		
-	});	
--->
-{% endcomment %}
 {% comment %}<!-- scroll left menu --> {% endcomment %}
 <script type="text/javascript">
 	
 	$(function(){
-	
+		
+ 		function heightLeftMenu() {
+ 			
+ 			var leftMenu = $('#leftMenuFixed');
+ 			var posLeftMenu = leftMenu.offset().top;
+ 			var scroll = $(window).scrollTop();
+ 			var heightWindow = $(window).height();
+ 			
+ 			var heightDocum = $(document).height();
+ 			
+ 			var heightFooter = $('.footerLayout').height();
+ 			
+ 			var bottomPad = heightDocum - (scroll + heightWindow);
+ 			
+ 			if(bottomPad < heightFooter) {
+ 				var q = heightFooter - bottomPad; 
+
+ 				leftMenu.height(heightWindow - (posLeftMenu-scroll) - q );
+ 			} else {
+ 				leftMenu.height(heightWindow - (posLeftMenu-scroll));
+ 			}
+ 			
+ 			$('#leftMenuFixed').jScrollPane({
+ 				mouseWheelSpeed: 30
+ 			});
+ 		};
+ 		
+		heightLeftMenu();
+		
+		$(window).bind('scroll resize', function(){
 			
-		$(window).resize(function(){
-			var leftMenu = $('#leftMenuFixed');
-			var posLeftMenu = leftMenu.offset().top;
-			var scroll = $(window).scrollTop();
-			var heightWindow = $(window).height();
-			leftMenu.css('height', heightWindow - (posLeftMenu + 130 - scroll) )
-			
-			$('#leftMenuFixed').jScrollPane();
+			heightLeftMenu();
+
 		});
-		
-		$(window).resize();
-		
-		
-		
+
 	});
 	
 </script>
