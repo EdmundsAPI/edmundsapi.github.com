@@ -14,15 +14,26 @@
 	$(function(){
 
 		var $arrayMenuItems = $('.multiLevelMenu').find('a');
-		var lengthItems = $arrayMenuItems.length-1
+		var lengthItems = $arrayMenuItems.length-1;
 
 		for(var i=0; i<=lengthItems; i++) {
 			if($arrayMenuItems.eq(i).hasClass('active')){
 				var activeItem = i;
 			}
 		}
+		
+		var indexParent = $('.multiLevelMenu').find('a.active').parent('li').index();
+		
+		if(indexParent == lengthItems) {
+			$('#nextMenuItem').attr("disable", "disabled").css('color', '#bbb');
+		} else if(indexParent == 0) {
+			$('#prevMenuItem').attr("disable", "disabled").css('color', '#bbb');
+		}
+				
 		var nextItem = $arrayMenuItems.eq(activeItem+1).attr('href');
 		var prevItem = $arrayMenuItems.eq(activeItem-1).attr('href');
+		
+		
 		
 		//"Next"
 		$('#nextMenuItem').bind('click.next', function(event){

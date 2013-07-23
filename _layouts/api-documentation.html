@@ -44,12 +44,14 @@ layout: default
 					{% include themes/twitter/api-doc-submenu.html %}					  
 				{% endif %}	
 
-				{% include themes/twitter/api-doc-content.html %}		
+				{% include themes/twitter/api-doc-content.html %}	
+				
+					
 			</div>	
 		</div>
 	</div>
 	
-	{% comment %}{% include themes/twitter/navigathion_prev_next.html %}{% endcomment %}
+	
 
 </div>
 	
@@ -103,6 +105,8 @@ layout: default
 	  margin-top:0;
 	}
 </style>
+
+{% comment %}<!-- Fix left menu and sub menu (tabs of versions, endpoints ...) in top window -->{% endcomment %}
 <script type="text/javascript">
 	
 	$(function(){
