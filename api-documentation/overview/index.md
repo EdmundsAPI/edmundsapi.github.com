@@ -11,11 +11,6 @@ weight: 1
 ---
 
 
-### Test page {{page.title_active_left_menu}}
-
-
-
-
 {% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
 {% include themes/twitter/api_overview/table_available_api.html %}
 

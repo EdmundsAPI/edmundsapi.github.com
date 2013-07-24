@@ -1,11 +1,12 @@
 ---
-layout: page
-title: Showcase
+layout: default
+title: The Showcase
 title_parent: Showcase
 
 weight: 3
 ---
 
+{% include themes/twitter/title-page.html %}
 
-###Welcome to the page {{page.title}}
+{% include themes/twitter/showcase/filter-showcase.html %}
 
