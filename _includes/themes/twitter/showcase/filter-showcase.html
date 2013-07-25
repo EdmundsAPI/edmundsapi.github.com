@@ -192,6 +192,7 @@
 </div>
 
 
+
 {% comment %}<!-- script for calculate height of tag aside -->{% endcomment %}
 <script type="text/javascript">
 	
@@ -219,73 +220,7 @@
 </script>
 
 
-<script type="text/javascript">
-	
-	$(function(){
-		
-		var $linksFilter = $('.multiLevelMenu').find('a');  
-		var $allCompany = $('.wrapperResultFilter').find('li'); 
-		
-		
-		//click
-		$linksFilter.bind('click', function(event){
-			
-			var thisLink = $(this);
-			
-			var hasClassActive = thisLink.hasClass('active');
-			
-			var actLink = $('.active');
-			
-			var dataLink = thisLink.data('filter')
 
-			if(!hasClassActive) {
-				//alert('test')
-				actLink.removeClass('active');  // remove class .active
-				thisLink.addClass('active');  // add class .actove
-			} else {
-				//event.preventDefault();
-				//event.stopPropagation();
-				return false;
-			}
-			
-			$allCompany.animate({
-				'margin-top': '-30px',
-				'opacity':0
-			}, 300).fadeOut(0);
-			
-			
-
-			$allCompany.each(function(){
-				
-				var hasFilterName = $(this).hasClass(dataLink);
-				
-				//$(this).hide();
-				/**/
-				if(hasFilterName) {
-					
-					$(this).fadeIn(0).animate({
-						'margin-top': 0,
-						'opacity': 1
-					}, 300);
-					
-
-				} else {
-					
-
-				}
-				
-				
-				
-			});
-			
-			
-			
-			
-		});
-	});
-	
-	
-</script>
 
 {% comment %}<!-- end filter-showcase.html -->{% endcomment %}
 
