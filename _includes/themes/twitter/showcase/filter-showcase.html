@@ -8,26 +8,26 @@
 				{% comment %}<!-- Start Items of filter  -->{% endcomment %}
 				
 				<ul class="multiLevelMenu">
-					<li class="">
-						<a href="" title="All">All</a>
+					<li>
+						<a data-filter="company" class="active" href="#" title="All">All</a>
 					</li>
 					<li>
-						<a href="" title="Enterprise">Enterprise</a>
+						<a data-filter="enterprise" href="#" title="Enterprise">Enterprise</a>
 					</li>
 					<li>
-						<a href="" title="Startups">Startups</a>
+						<a data-filter="startups" href="#" title="Startups">Startups</a>
 					</li>
 					<li>
-						<a href="" title="Dealerships">Dealerships</a>
+						<a data-filter="dealerships" href="#" title="Dealerships">Dealerships</a>
 					</li>
 					<li>
-						<a href="" title="OEMs">OEMs</a>
+						<a data-filter="oems" href="#" title="OEMs">OEMs</a>
 					</li>
 					<li>
-						<a href="" title="Solution Providers">Solution Providers</a>
+						<a data-filter="solutionProviders" href="#" title="Solution Providers">Solution Providers</a>
 					</li>
 					<li>
-						<a href="" title="Individuals">Individuals</a>
+						<a data-filter="individuals" href="#" title="Individuals">Individuals</a>
 					</li>
 				</ul>
 				
@@ -37,21 +37,7 @@
 			<div class="verticalLine">&nbsp;</div>
 			<div class="span10">
 				
-				{% comment %}<!-- Start content of filter  
-					
-								<span>Leverages:</span>
-								<a class="tagsCompany" href"api-documentation/vehicle/index.html" title="Vehicle API">Vehicle API</a>
-								<a class="tagsCompany" href"api-documentation/editorial/index.html" title="Editorial API">Editorial API</a>
-								<a class="tagsCompany" href"api-documentation/dealer/index.html" title="Dealer API">Dealer API</a>
-								<a class="tagsCompany" href"api-documentation/inventory/index.html" title="Inventory API">Inventory API</a>
-								
-								<div class="linkCompany">
-									<h2 class="titleCompanyH2" >Edmunds.com</h2>
-									<a href="http://www.edmunds.com/" title="Edmunds.com">website</a>
-									<a href="" title="Edmunds.com" title="app">app</a>
-								</div>
-					
-					-->{% endcomment %}
+				{% comment %}<!-- Start content of filter -->{% endcomment %}
 				
 				<section>
 					<p>Here you can find a sample of websites and apps using the Edmunds API.</p>
@@ -59,7 +45,7 @@
 					
 					<ul class="wrapperResultFilter">
 								
-						<li class="">
+						<li class="company enterprise startups dealerships oems solutionProviders individuals">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/InControl_Pro.png" alt="InControl Pro">			
 							</figure>
@@ -70,7 +56,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company startups dealerships oems">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/edmunds.png" alt="Edmunds.com">			
 							</figure>
@@ -88,7 +74,7 @@
 							</aside>
 						</li>
 												
-						<li class="">
+						<li class="company oems solutionProviders individuals">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/CarHound.png" alt="CarHound.com">			
 							</figure>
@@ -101,7 +87,7 @@
 							</aside>
 						</li>
 												
-						<li class="">
+						<li class="company enterprise startups">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/FindACar.png" alt="FindACar.us">			
 							</figure>
@@ -115,7 +101,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company startups dealerships oems solutionProviders">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/RelayRides.png" alt="RelayRides.com">			
 							</figure>
@@ -127,7 +113,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company dealerships oems solutionProviders individuals">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/CarChat24.png" alt="CarChat24.com">			
 							</figure>
@@ -139,7 +125,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company solutionProviders">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/Jack_of_Cars.png" alt="Jack of Cars">			
 							</figure>
@@ -151,7 +137,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company dealerships oems solutionProviders individuals">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/Vinsnap.png" alt="Vinsnap.com">			
 							</figure>
@@ -165,7 +151,7 @@
 							</aside>
 						</li>
 						
-						<li class="">
+						<li class="company dealerships oems">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/Toyota.png" alt="Toyota.com">			
 							</figure>
@@ -179,7 +165,7 @@
 							</aside>
 						</li>
 
-						<li class="">
+						<li class="company dealerships oems solutionProviders individuals">
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/InControl_Pro1.png" alt="AutoNation.com">			
 							</figure>
@@ -215,25 +201,89 @@
 		
 		var amountAside = aside.lenght;
 		
-		console.log(amountAside);
-		
 		var arrayHeight = [];
 		
 		aside.each(function(){
 			arrayHeight.push($(this).height());
 			arrayHeight.sort();
-			
 		});
 		
 		var arrLength = arrayHeight.length - 1;
 		
 		var heightAside = arrayHeight[arrLength];
 		
-		console.log(heightAside);
-		
 		aside.css('height', heightAside);
 		
 	});
+	
+</script>
+
+
+<script type="text/javascript">
+	
+	$(function(){
+		
+		var $linksFilter = $('.multiLevelMenu').find('a');  
+		var $allCompany = $('.wrapperResultFilter').find('li'); 
+		
+		
+		//click
+		$linksFilter.bind('click', function(event){
+			
+			var thisLink = $(this);
+			
+			var hasClassActive = thisLink.hasClass('active');
+			
+			var actLink = $('.active');
+			
+			var dataLink = thisLink.data('filter')
+
+			if(!hasClassActive) {
+				//alert('test')
+				actLink.removeClass('active');  // remove class .active
+				thisLink.addClass('active');  // add class .actove
+			} else {
+				//event.preventDefault();
+				//event.stopPropagation();
+				return false;
+			}
+			
+			$allCompany.animate({
+				'margin-top': '-30px',
+				'opacity':0
+			}, 300).fadeOut(0);
+			
+			
+
+			$allCompany.each(function(){
+				
+				var hasFilterName = $(this).hasClass(dataLink);
+				
+				//$(this).hide();
+				/**/
+				if(hasFilterName) {
+					
+					$(this).fadeIn(0).animate({
+						'margin-top': 0,
+						'opacity': 1
+					}, 300);
+					
+
+				} else {
+					
+
+				}
+				
+				
+				
+			});
+			
+			
+			
+			
+		});
+	});
+	
 	
 </script>
 
