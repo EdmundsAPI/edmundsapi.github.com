@@ -1762,9 +1762,6 @@ i[class^="icon-"] {
     .multiLevelMenu {
       margin-top: 0;
     }
-    .sectionContent section {
-      padding-top: 0;
-    }
     .endpoint-submenu {
       padding-top: 13px;
       .nav {
@@ -1840,46 +1837,14 @@ i[class^="icon-"] {
             }
           }
           
-          figure {
-            position:relative;
-            border-right:1px solid #e1e1e1;  
-            padding: 12px;
+          figure { 
+            padding: 0;
             margin:0;
             background:#fff; 
-            
-            .overlay {
-              z-index: 50;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              top: 0;
-              display: block;
-              opacity: 0;
-              -webkit-transition: opacity 150ms ease 0s;
-              -moz-transition: opacity 150ms ease 0s;
-              transition: opacity 150ms ease 0s;
-              background: #000;
-            }
           }
           
           aside {
-            position:relative;
-            padding: 8px 10px 0 10px;
-            
-            .background {
-                z-index: 5;
-                position:absolute;
-                top:0;
-                left:0;
-                width: 100%;
-                height: 0;
-                opacity: 0;
-                -webkit-transition: opacity 350ms ease 0s, height 150ms ease 0s;
-                -moz-transition: opacity 350ms ease 0s, height 150ms ease 0s;
-                transition: opacity 350ms ease 0s, height 150ms ease 0s;
-                background:#ccc;
-              }
+            padding: 8px 0 0 0;
             
             span {
               position:relative;
@@ -1889,11 +1854,7 @@ i[class^="icon-"] {
               line-height:11px;
             }
             
-            a {
-              
-              position:relative;
-              z-index:8;
-             
+            a {             
              
              &.titleCompany {
                 display:block;
@@ -1922,7 +1883,7 @@ i[class^="icon-"] {
               }
               
               &:hover {
-               color: #000;
+               color: @color_green;
                text-decoration:none;
               }
              
@@ -1930,6 +1891,42 @@ i[class^="icon-"] {
                  color: @color_green;
                  text-decoration:none
                }
+            }
+            
+            .linkCompany {
+              margin: 0 0 2px 0;
+              padding:0;
+              line-height: 15px;
+              
+              h2 {
+                display:inline-block;
+                margin:0 9px 0 0;
+                padding:0;
+                color: @color_text;
+                font-size: 15px;
+                font-weight:700;
+                font-family: Arial, sans-serif;
+                line-height: 15px;
+              }
+              
+              a {
+                color: @color_regular_link;
+                font-size: 10px;
+                font-weight: 700;
+                line-height:10px;
+                
+                &:hover {
+                  color:@color_green;
+                }
+                
+              }
+              
+              .separCompany {
+                color: @color_text;
+                font-size: 10px;
+                line-height:10px;
+              }
+              
             }
             
           }
