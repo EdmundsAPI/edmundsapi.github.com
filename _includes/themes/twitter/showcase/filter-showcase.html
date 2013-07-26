@@ -1,4 +1,4 @@
-
+<div id="verticalLine" class="verticalLine">&nbsp;</div>
 {% comment %}<!-- start filter-showcase.html -->{% endcomment %}
 <div class="container contentShowcase">
 	<div class="row-fluid">
@@ -34,7 +34,7 @@
 				{% comment %}<!-- End Items of filter  -->{% endcomment %}
 
 			</div>
-			<div class="verticalLine">&nbsp;</div>
+			{% comment %}<!--<div class="verticalLine">&nbsp;</div>-->{% endcomment %}
 			<div class="span10">
 				
 				{% comment %}<!-- Start content of filter -->{% endcomment %}
@@ -251,6 +251,27 @@
 
 </script>
 
+
+<script type="text/javascript">
+	$(function(){
+		var contentShowcase = $('.contentShowcase .span10');
+		var verticalLine = $('#verticalLine');
+		
+		function coordLine(){
+			
+			var leftPos = contentShowcase.offset().left;
+			
+			verticalLine.css('left', leftPos - 9);
+		};
+		coordLine();
+		
+		$(document).resize(function(){
+			coordLine();
+		});
+
+		
+	});
+</script>
 {% comment %}<!-- end filter-showcase.html -->{% endcomment %}
 
 
