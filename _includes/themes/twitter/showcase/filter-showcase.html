@@ -46,6 +46,7 @@
 					<ul class="wrapperResultFilter">
 								
 						<li class="company enterprise startups dealerships oems solutionProviders individuals">
+							<img class="iconNew" data-date="2013, 7, 22" src="{{ PATH }}/assets/themes/twitter/img/showcase/icon_new.png" alt=""/>
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/InControl_Pro.png" alt="InControl Pro">			
 							</figure>
@@ -57,6 +58,7 @@
 						</li>
 						
 						<li class="company startups dealerships oems">
+							<img class="iconNew"  data-date="2013, 6, 20" src="{{ PATH }}/assets/themes/twitter/img/showcase/icon_new.png" alt=""/>
 							<figure>
 								<img src="{{ PATH }}/assets/themes/twitter/img/showcase/edmunds.png" alt="Edmunds.com">			
 							</figure>
@@ -219,8 +221,37 @@
 	
 </script>
 
+{% comment %}<!-- checking icon "NEW" -->{% endcomment %}
+<script type="text/javascript">
+	
+	var today = new Date();
+	
+	var todayNumber = today.getDate();
+	
+	var $imgNew = $('.iconNew');
+	
+	var count = 30;
+	
+	$imgNew.each(function(){
+	    var thisLi = $(this);
+	    
+	    var number = thisLi.data('date');
+	    
+	    var thisToday = new Date(number);
+	    
+	    var thisNumber = thisToday.getDate();
+	    
 
+	    var balance = (today.setDate(todayNumber) - thisToday.setDate(thisNumber))/86400000;
+	    
+	    if(balance > count){
+	    	thisLi.hide();
+	    }
+	    
+	
+	});
 
+</script>
 
 {% comment %}<!-- end filter-showcase.html -->{% endcomment %}
 

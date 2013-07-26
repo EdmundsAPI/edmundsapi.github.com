@@ -10,3 +10,7 @@ weight: 3
 
 {% include themes/twitter/showcase/filter-showcase.html %}
 
+
+{% comment %}<!-- filter of showcase -->{% endcomment %}
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/filter_showcase.js">
+</script>

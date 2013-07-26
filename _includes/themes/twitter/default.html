@@ -57,8 +57,7 @@
 	<!-- Bootstrap bootstrap-tab.js -->
 	<script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-tab.js"></script>
 	
-	<!-- filter of showcase -->
-	<script type="text/javascript" src="{{ ASSET_PATH }}/js/filter_showcase.js"></script>
+
 	
       
 	<!--[if IE]><link href="{{ ASSET_PATH }}/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
@@ -111,43 +110,13 @@
    
    
 	
-	 
-	<!-- Set default active links top menu -->
-	<script type="text/javascript">
-		
-
-		//top menu
-		var linkHeaderMenu = $('.headerMenu').find('a');
-		
-		var valueActiveTopMenu = $('#h1Title').text();
-		
-		var amountLinks = linkHeaderMenu.length;
-		
-		for (var i=0; i<=amountLinks; i++) {
-			
-			var valTitle = linkHeaderMenu.eq(i).attr('title');
-			if(valTitle == valueActiveTopMenu) {
-				
-				linkHeaderMenu.eq(i).addClass('active');
-			}
-		}
+	<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/other_scripts.js"></script> 
 	
-	</script>
-	
-	
-	<!-- color code -->
-	<script type="text/javascript">
-		$(function(){
-			$('pre').addClass('prettyprint');
-			$('pre').addClass('linenums');
-		});
-	</script>
-
 	
 	<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/sliderTMV.js"></script>
 
 	<!-- JS of retina -->
 	<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/retina.js"></script>
-	
+
   </body>
 </html>

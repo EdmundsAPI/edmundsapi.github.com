@@ -5,7 +5,7 @@ $(function(){
 	
 	
 
-	$linksFilter.bind('click', function(event){
+		$linksFilter.bind('click', function(event){
 		
 		var thisLink = $(this);
 		
