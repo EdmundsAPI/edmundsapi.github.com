@@ -11,7 +11,7 @@ $(function(){
 		
 		var hasClassActive = thisLink.hasClass('active');
 		
-		var actLink = $('.active');
+		var actLink = $linksFilter.filter('.active');
 		
 		var dataLink = thisLink.data('filter');
 

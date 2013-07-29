@@ -689,9 +689,7 @@ ul.multiLevelMenu {
 	top: 97px;
 	left:191px;
 	bottom:0;
-	width: 8px;
 	border-right: 1px solid #ccc;
-	background: #E7E7E7;
 }
 .multiLevelMenu a.active, .multiLevelMenu a.active:hover {
 	color:#BF2F37

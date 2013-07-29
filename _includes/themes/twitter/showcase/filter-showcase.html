@@ -1,4 +1,5 @@
 <div id="verticalLine" class="verticalLine">&nbsp;</div>
+
 {% comment %}<!-- start filter-showcase.html -->{% endcomment %}
 <div class="container contentShowcase">
 	<div class="row-fluid">
@@ -269,6 +270,9 @@
 			coordLine();
 		});
 
+		window.onresize = function() {
+			coordLine();
+		}
 		
 	});
 </script>
