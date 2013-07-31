@@ -2,7 +2,10 @@
 layout: default
 ---
 {% include JB/setup %}
+
 	{% comment %}<!-- <div class="verticalLine"></div>--> {% endcomment %}
+
+
 
 <div class="apiPage">
 
@@ -30,8 +33,13 @@ layout: default
 		{% endif %}
 	</div>
 	<div class="container api-table">
+		
+		<div class="row lineVertical">
+			<div class="span2">&nbsp;</div>
+			<div class="span10">&nbsp;</div>
+		</div>
+		
 		<div class="row">
-
 			<div class="span2 collumnMenu">
 				<div id="leftMenuFixed" class="leftMenuFixed">					
 					{% comment %} <!--{% include themes/twitter/api-doc-select-api-version.html %}--> {% endcomment %}								
@@ -60,12 +68,11 @@ layout: default
 
 <style>
 	.fixElem .wrapperHeader,
-	.fixElem .endpoint-submenu,
-	.fixElem #leftMenuFixed  {
+	.fixElem .endpoint-submenu {
 		position: fixed;
-		z-index: 100;
 	}
 	.fixElem .wrapperHeader {
+		z-index: 101;
 		top:0;
 		width:100%;
 	}
@@ -80,9 +87,6 @@ layout: default
    }
    .fixElem .endpoint-submenu .nav {
    		margin-bottom: 0;
-   }
-   .fixElem #leftMenuFixed {
-   		top:69px;
    }
    .fixElem .sectionContent {
    		margin-top:73px;
@@ -99,13 +103,23 @@ layout: default
 	.overviewPage #leftMenuFixed,
 	.endpointPage #leftMenuFixed {
 	  margin-top:-74px;
-	}
-	.overviewPage.fixElem #leftMenuFixed,
-	.endpointPage.fixElem #leftMenuFixed {
-	  margin-top:0;
+	  padding-top:20px;
 	}
 	#leftMenuFixed {
 		border-right:1px solid #c5c5c5;
+	}
+	.fixElem #leftMenuFixed {
+		margin-top: 69px;
+	}
+	.endpoint-submenu,
+	.apiPage .api-header-row1 .span10,
+	.apiPage .api-header-row2 .span10 {
+		border-left: 1px solid transparent;
+	}
+	.fixElem .endpoint-submenu,
+	.fixElem .apiPage .api-header-row1 .span10,
+	.fixElem .apiPage .api-header-row2 .span10 {
+		border-left:1px solid #C5C5C5;
 	}
 </style>
 
@@ -117,7 +131,7 @@ layout: default
 		var wrapperHeader = $('.wrapperHeader');
 		var panelTabs = $('.api-header-row1').hasClass('api-header-row1');
 		var subMenu =$('.endpoint-submenu').hasClass('endpoint-submenu');
-		var leftMenu = $('#leftMenuFixed')
+		//var leftMenu = $('#leftMenuFixed')
 		
 		
 		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
@@ -153,7 +167,7 @@ layout: default
 </script>
 
 
-{% comment %}<!-- scroll left menu --> {% endcomment %}
+{% comment %}<!-- scroll left menu 
 <script type="text/javascript">
 	
 	$(function(){
@@ -194,7 +208,7 @@ layout: default
 
 	});
 	
-</script>
+</script>--> {% endcomment %}
 
 	
 </div>

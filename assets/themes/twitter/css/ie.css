@@ -5,4 +5,7 @@
 .accordion .accordion-group a.active {
 	background-position:left 40px; 
 }
+a:active, a:links, a:focus {
+	background: none;
+}
 

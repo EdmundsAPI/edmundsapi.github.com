@@ -234,9 +234,7 @@ nav.headerLinks {
 	margin-left: 30px;
 }
 .navbar-inner {filter: none;}
-.container {
-	position: relative;
-}
+
 /*__End Header__*/
 
 
@@ -423,7 +421,7 @@ a.linkGetKey:hover {
 	.wrapNextPrev {
 		position:absolute;
 		bottom: 0;
-    	left: 199px;
+    	left: 230px;
     	right:0;
 		border-top:1px solid #ccc; 
 		padding: 22px 29px;
@@ -689,7 +687,9 @@ ul.multiLevelMenu {
 	top: 97px;
 	left:191px;
 	bottom:0;
+	width: 8px;
 	border-right: 1px solid #ccc;
+	background: #E7E7E7;
 }
 .multiLevelMenu a.active, .multiLevelMenu a.active:hover {
 	color:#BF2F37
