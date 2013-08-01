@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 
-### Car Makes Simplified
+### Car Makes Simplified 
 
 We made getting a list of car makes, or brands, as simple as possible compared to what it was in version 1. We no longer have many endpoints to choose from (YAY!). In this version, you can get a list of car makes and their relevant data through the following endpoints (accessible from the dropdown above):
 
