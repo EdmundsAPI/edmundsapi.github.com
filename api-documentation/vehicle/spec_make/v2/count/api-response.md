@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Spec: Make'
+title : 'Make Specification Resource: api/vehicle/v2/makes/count Endpoint'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
