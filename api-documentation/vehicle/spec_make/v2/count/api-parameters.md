@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Make Specification Resource: api/vehicle/v2/makes/count Endpoint'
+title : 'Get Total Count of Car Makes/Brands'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
@@ -20,7 +20,9 @@ number: 2
 
 ###Parameters
 
-Parameter | Description                | Possible Values   | Default Value | Required
------------------------------------------------------------------------------------
-state     | The state of the car makes | new, used         |               | No
-year      | The year of the car makes  | 1990-current year |               | No
+| Parameter  | Description                | Possible Values   | Default Value | Required |
+|:----------:|:---------------------------|:----------------- |:------------- |:-------- |
+| state      | The state of the car makes | new, used         |               | No       |
+| year       | The year of the car makes  | 1990-current year |               | No       |
+| fmt        | Response format            | json              | json          | Yes      |
+| api_key    | vehicle api key            |                   |               | Yes      |

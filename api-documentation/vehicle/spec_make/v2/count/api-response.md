@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Make Specification Resource: api/vehicle/v2/makes/count Endpoint'
+title : 'Get Total Count of Car Makes/Brands'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
@@ -20,4 +20,13 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
+#### JSON Response
+
+	{
+		"makesCount": [integer]
+	}
+
+
+| Property      | Description                         | Visibility                |
+|:-------------:|:------------------------------------|:------------------------- |
+| makesCount    | The total count of car makes/brands | Edmunds, Partners, Public |

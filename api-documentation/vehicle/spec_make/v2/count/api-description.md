@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Make Specification Resource: api/vehicle/v2/makes/count Endpoint'
+title : 'Get Total Count of Car Makes/Brands'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
@@ -45,7 +45,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 		    	// Instantiate the SDK
 				var res = new EDMUNDSAPI('YOUR VEHICLE API KEY');
 
-				// Get articles
+				// Optional parameters
 				var options = {
 					"state": "new"
 				};

@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Spec: Make'
+title : 'Get details for a specific car make/brand'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
@@ -13,7 +13,7 @@ dropdown-link: 'api/vehicle/v2/{make}'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get details for a specific car make/brand'
 title_md : Parameters
 number: 2
 
@@ -21,6 +21,8 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  	| Description                | Possible Values   | Default Value | Required |
+|:-------------:|:---------------------------|:----------------- |:------------- |:-------- |
+| state			| Response format            | json              | json          | Yes      |
+| view			| Response detail level      | json              | json          | Yes      |
+| api_key    	| vehicle api key            |                   |               | Yes      |

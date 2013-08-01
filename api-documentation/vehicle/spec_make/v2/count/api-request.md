@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Make Specification Resource: api/vehicle/v2/makes/count Endpoint'
+title : 'Get Total Count of Car Makes/Brands'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
@@ -18,6 +18,30 @@ title_md : Sample Request
 number: 4
 ---
 
-###Sample Request
+###Sample Request 1
 
-##test content : {{page.title-endpoint}} 
+Get the total amount of car makes/brands in the system
+
+#### URL
+
+	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key=xxxxx
+	
+#### Response
+
+	{
+		"makesCount": 60
+	}
+	
+###Sample Request 2
+
+Get the total number of car makes/brands in the system that labeled __NEW__
+
+#### URL
+
+	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&state=new&api_key=xxxxx
+
+#### Response
+
+	{
+		"makesCount": 60
+	}

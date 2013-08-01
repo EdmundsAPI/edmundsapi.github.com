@@ -21,11 +21,11 @@ overview: page_version
 
 We made getting a list of car makes, or brands, as simple as possible compared to what it was in version 1. We no longer have many endpoints to choose from (YAY!). In this version, you can get a list of car makes and their relevant data through the following endpoints (accessible from the dropdown above):
 
-1. **Get a list of car makes**: You can get the entire list of car makes or use some basic filters to return the array of car makes you're interested in.
+1. **Get Total Count of Car Makes/Brands**: Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
 
-2. **Get details on a specific car make**: Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
+2. **Get a list of car makes**: You can get the entire list of car makes or use some basic filters to return the array of car makes you're interested in.
 
-3. **Get a count of available car makes**: Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
+3. **Get details on a specific car make**: Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
 
 These three endpoints provide all the necessary data points.
 
