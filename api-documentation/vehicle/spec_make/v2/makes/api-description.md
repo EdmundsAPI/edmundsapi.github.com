@@ -12,7 +12,7 @@ api: vehicle
 dropdown-link: 'api/vehicle/v2/makes'
 
 level: 3
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get all car makes/brands'
 title_md : Description
 number: 1
 ---

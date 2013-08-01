@@ -13,7 +13,7 @@ dropdown-link: 'api/vehicle/v2/{make}'
 
 
 level: 3
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get details for a specific car make/brand'
 title_md : Description
 number: 1
 
@@ -23,4 +23,3 @@ number: 1
 ###Test page (Description)
 
 tab: {{page.number}}
-
