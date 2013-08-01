@@ -9,6 +9,6 @@ level: 1
 ---
 
 
-### Test page {{page.title_active_left_menu}}
+### Test page {{page.title_active_left_menu}}.
 
 
