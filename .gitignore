@@ -1,5 +1,6 @@
 _site/*
 _theme_packages/*
+_includes/themes/twitter/_site
 
 Thumbs.db
 .DS_Store
@@ -8,3 +9,5 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+*.swp
+
