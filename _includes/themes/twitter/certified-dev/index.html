@@ -1,15 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<h1 class="titleMainPage">EDMUNDS CERTIFIED DEVELOPER PROGRAM</h1>
+		</div>
+	</div>
+</div>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<title>index</title>
+<div class="wrapperMainPage">
+	<div class="section1">
+			<div class="container">
+				
+				<p class="contentBold">
+					The Edmunds Certified Developer Program (CDP) program is a community of best-in-class developers who understand Edmunds API and data very well that they can built automotive experiences with ease and competence.
+				</p>
+				<p>
+					CDPs are the experts at the forefront of helping customers...<br>
+					CDPs build apps, optimize ..., measure performance and develop effective marketing strategies for Edmunds. These people work with Edmunds to:
+				</p>
+				<ul>
+					<li>Innovate on the Edmunds platform</li>
+					<li>Build useful, scalable custom tools and features</li>
+					<li>Provide the right management tools, services and development resources</li>
+				</ul>
+				
+			</div>
+		</div>
 	
-</head>
+	<div class="section2">
+		<div class="container">
+			<div class="blokBusinessOwner">Business Owner</div>
+			<div class="blokBusinessOwner">Certified developer</div>
+		</div>
+	</div>
+	
+	<div class="section3">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="wrapperIcons">
+						    <ul class="nav nav-tabs" id="myTab">
+							    <li class="active">
+							    	<a href="#modile">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
+							    	</a>
+							    </li>
+							    <li>
+							    	<a href="#socialShopping">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
+							    	</a>
+							    </li>
+							    <li>
+							    	<a href="#analitics">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
+							    	</a>
+							    </li>
 
-<body>
+						    </ul>
+						    <span class="arrow">&nbsp;</span>
+					     </div>
+					    <div class="tab-content">
+						    <div class="tab-pane  in active" id="modile">
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus nibh, dictum vel ornare at, aliquet ac libero. Fusce sed mattis libero.  Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    </div>
+						    <div class="tab-pane " id="socialShopping">
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus nibh, dictum vel ornare at, aliquet ac libero. Fusce sed mattis libero.</p>
+						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    </div>
+						    <div class="tab-pane " id="analitics">
+						    	<p>Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    </div>
+					    </div>
+					     
+					     
+					    <script>
+					        $('#myTab a').click(function (e) {
+							    e.preventDefault();
+							    $(this).tab('show');
+							    
+							    //moving arrow
+							    
+							    var hrefLink = $(this).attr('href');
+							    
+							    var classArrow = hrefLink.substr(1);
+
+								var arrow = $('.arrow');							    
+
+							   	arrow.removeAttr('class');
+							    
+							    arrow.addClass('arrow '+ classArrow +'');
+							    
+							    
+						    })
+						    
+					
+					    </script>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="section4">
+		
+	</div>
 
 
-</body>
-</html>
+</div>
+
+<script type="text/javascript">
+		
+    $('.carousel').carousel({
+	    pause: true,
+		interval: false
+    });
+
+    $('.carousel').on('slide', function(event) {
+    	var slideNumber = $(event.relatedTarget).data('itemNumber');
+    	$('.app-picture.active').fadeOut(500, function() {
+    		$(this).removeClass('active');
+    		$('[data-slide-number="'+ slideNumber +'"]').addClass('active');    			
+    	});
+    	$('[data-slide-number="'+ slideNumber +'"]').fadeIn(500);
+    });
+
+</script>

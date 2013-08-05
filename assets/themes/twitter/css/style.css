@@ -38,7 +38,13 @@ a.topLogo:hover {
   src: local('Oswald Bold'), local('Oswald-Bold'), url(../font-famaly/oswald/v7/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 /*__end font-family__*/
-h1,h2,h3,h4,h5,h6 {font-family: 'Oswald400';}
+h1,h2,h3,h4,h5,h6 {
+	margin-top:0;
+	font-family: 'Oswald400';
+	}
+h3 {
+	line-height:23px;
+}
 body, html {
 	height:100%;
 	font-family:Arial, sans-serif;
@@ -325,7 +331,7 @@ footer.footerLayout .nav > li > a {
   text-transform: uppercase;
 }
 .sectionContent section {
-	padding: 37px 0 81px 29px;
+	padding: 45px 0 81px 29px;
 }
 .headerMenuContent a {
   padding: 15px 42px 12px 42px
