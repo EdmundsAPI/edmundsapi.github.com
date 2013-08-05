@@ -1,8 +1,9 @@
 <div class="container">
-	<div class="row">
+	<div class="row-fluid h1Title">
 		<div class="span12">
 			<h1 class="titleMainPage">EDMUNDS CERTIFIED DEVELOPER PROGRAM</h1>
 		</div>
+		<span id="h1Title">{{ page.title_parent }}</span>
 	</div>
 </div>
 
@@ -27,9 +28,18 @@
 		</div>
 	
 	<div class="section2">
+		
+		<div class="bgBlock bgDeveloper">&nbsp;</div>
+		<div class="bgBlock bgBusinessOwner">&nbsp;</div>
+		
 		<div class="container">
-			<div class="blokBusinessOwner">Business Owner</div>
-			<div class="blokBusinessOwner">Certified developer</div>
+			<h3 class="titleDeveloper">Certified developer</h3>
+			<h3 class="titleBusinessOwner">Business Owner</h3>
+			<div class="linksSection2">
+				<span class="linkBusOwnBlok">work with Edmunds Certified Developers on a custom solution</span> 
+				<span class="simbol">&amp;</span> 
+				<span class="linkDevBlok">they help you build automative experiencewith Edmund API</span>
+			</div>
 		</div>
 	</div>
 	
@@ -38,10 +48,11 @@
 				<div class="row">
 					<div class="span12">
 						<div class="wrapperIcons">
+							<h3 class="titelSection">Badges</h3>
 						    <ul class="nav nav-tabs" id="myTab">
-							    <li class="active">
-							    	<a href="#modile">
-							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
+							    <li>
+							    	<a href="#analitics">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 							    	</a>
 							    </li>
 							    <li>
@@ -49,9 +60,9 @@
 							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
 							    	</a>
 							    </li>
-							    <li>
-							    	<a href="#analitics">
-							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
+							    <li class="active">
+							    	<a href="#modile">
+							    		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 							    	</a>
 							    </li>
 
@@ -59,43 +70,22 @@
 						    <span class="arrow">&nbsp;</span>
 					     </div>
 					    <div class="tab-content">
-						    <div class="tab-pane  in active" id="modile">
-						    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus nibh, dictum vel ornare at, aliquet ac libero. Fusce sed mattis libero.  Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    <div class="tab-pane " id="analitics">
+						    	<p>Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
 						    <div class="tab-pane " id="socialShopping">
 						    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus nibh, dictum vel ornare at, aliquet ac libero. Fusce sed mattis libero.</p>
-						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
-						    <div class="tab-pane " id="analitics">
-						    	<p>Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-						    	<div class="moreInf"><a href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a></div>
+						    <div class="tab-pane  in active" id="modile">
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus nibh, dictum vel ornare at, aliquet ac libero. Fusce sed mattis libero.  Aliquam vitae eros ante. Duis fermentum aliquam nisi. Nullam in nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
 					    </div>
 					     
 					     
-					    <script>
-					        $('#myTab a').click(function (e) {
-							    e.preventDefault();
-							    $(this).tab('show');
-							    
-							    //moving arrow
-							    
-							    var hrefLink = $(this).attr('href');
-							    
-							    var classArrow = hrefLink.substr(1);
-
-								var arrow = $('.arrow');							    
-
-							   	arrow.removeAttr('class');
-							    
-							    arrow.addClass('arrow '+ classArrow +'');
-							    
-							    
-						    })
-						    
-					
-					    </script>
+					    
 					</div>
 				</div>
 			</div>
@@ -123,5 +113,30 @@
     	});
     	$('[data-slide-number="'+ slideNumber +'"]').fadeIn(500);
     });
+
+</script>
+
+
+{% comment %}<!-- Arrow section3 -->{% endcomment %}
+<script type="text/javascript">
+    $('#myTab a').click(function (e) {
+	    e.preventDefault();
+	    $(this).tab('show');
+	    
+	    //moving arrow
+	    
+	    var hrefLink = $(this).attr('href');
+	    
+	    var classArrow = hrefLink.substr(1);
+
+		var arrow = $('.arrow');							    
+
+	   	arrow.removeAttr('class');
+	    
+	    arrow.addClass('arrow '+ classArrow +'');
+	    
+	    
+    })
+    
 
 </script>
