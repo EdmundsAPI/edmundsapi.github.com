@@ -2015,7 +2015,7 @@ i[class^="icon-"] {
     
   h1.titleMainPage {
     font-size: 52px;
-    padding: 31px 0 26px 230px;
+    padding: 31px 0 26px 35px;
   }
     
   .section1 {
@@ -2036,7 +2036,7 @@ i[class^="icon-"] {
     }
     
     ul {
-      margin: 0 0 0 85px;
+      margin: 0 0 0 52px;
     }
     
   }
@@ -2045,10 +2045,78 @@ i[class^="icon-"] {
     height:668px;
     background: #fc6431;
     
+
+      
+    
+    
     .bgBlock {
         position:absolute;
         width:50%;
         height:100%;
+        
+        .moreInf {
+          position: absolute;
+          bottom: 62px;
+          left: 50px;
+          background: #BF2F37;
+          color: #FFF;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 37px;
+          padding: 0px 24px;
+          
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        .discriptBlokBisOwner {
+          position:absolute;
+          z-index:-1;
+          left:0;
+          height: 100%;
+          max-width:548px;
+          background: transparent url('../img/certified_developer/bg_blok_hover_bs_owner.png');
+          
+          ul {
+            color:#fff;
+            font-size: 18px;
+            margin: 65px 0 258px 67px;
+            padding: 0 25px 0 0;
+            
+            li {
+              margin: 0 0 16px;
+              padding: 0 0 0 4px;
+              line-height: 26px;
+            }
+          }
+        }
+        
+      .discriptBlokDev {
+        position:absolute;
+        z-index:-1;
+        right:0;
+        height: 100%;
+        max-width:548px;
+        background: transparent url('../img/certified_developer/bg_blok_hover_dev.png');
+        
+        ul {
+          color:#fff;
+          font-size: 18px;
+          margin: 65px 67px 0 0;
+          padding: 0 0 0 20px;
+          
+          li {
+            margin: 0 0 16px 0;
+            padding: 0 25px 0 4px;
+            line-height: 26px;
+          }
+        }
+        
+        .moreInf {
+          left: 7px;
+        }
+      }
         
       &.bgBusinessOwner {
         left:0;
@@ -2085,7 +2153,7 @@ i[class^="icon-"] {
       
       .linksSection2 {
         display: inline-block;
-        margin: 477px 0 0 41px;
+        margin: 477px 0 0 39px;
 
         span {
           padding:0;
@@ -2112,9 +2180,46 @@ i[class^="icon-"] {
       }
     }
     
+    &.busOwnerActive {
+      
+      .discriptBlokBisOwner {
+        z-index: 1;
+      }
+      
+      h3.titleBusinessOwner {
+        color:#fff;
+      }
+      .simbol {
+        visibility: hidden;
+      }
+      
+      .bgDeveloper {
+        background: #FC6431;
+      }
+    }
+    
+    
+    &.developerActive {
+      .discriptBlokDev {
+          z-index: 1;
+        }
+        
+        h3.titleDeveloper {
+          color:#fff;
+        }
+        .simbol {
+          visibility: hidden;
+        }
+        
+        .bgBusinessOwner {
+          background: #F5712D;
+        }
+     }
     
 
   }
+  
+  
   .section3{
     position:relative;
     height: 464px;
@@ -2134,7 +2239,7 @@ i[class^="icon-"] {
       
       h3.titelSection {
         position:absolute;
-        left: 35px;
+        left: 36px;
         top: 106px;
         font-size: 38px;
         line-height: 38px;
@@ -2165,9 +2270,10 @@ i[class^="icon-"] {
       
       a.moreInf {
         display: inline-block;
-        padding: 0 21px;
+        margin: 0 0 0 1px;
+        padding: 0 16px;
         color: #FFF;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 700;
         line-height: 38px;
         background: #BF2F37;
@@ -2184,7 +2290,9 @@ i[class^="icon-"] {
       left: 671px;
       margin: 0 0 0 -10px;
       position: absolute;
-      transition: left 0.5s ease 0s;
+      -webkit-transition: left 0.5s ease;
+         -moz-transition: left 0.5s ease;
+          transition: left 0.5s ease;
       width: 20px;
       
       &.modile {
@@ -2200,6 +2308,40 @@ i[class^="icon-"] {
     
     
   }
+  
+  .section4 {
+    padding-top: 81px;
+    
+    .container {
+      border:0;
+    }
+    
+    h3.titelSection {
+      margin-bottom: 13px;
+      font-size: 37px;
+      line-height: 37px;
+    }
+    
+    ul {
+      margin: 0; 
+      padding: 0 154px 0 0;
+      list-style: none;
+      
+      li {
+        line-height: 23px;
+        
+        a {
+          color:@color_regular_link;
+          &:hover {
+            color:@color_link_hover;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+    
+    
+   }
 }
 
 //end Showcase page
