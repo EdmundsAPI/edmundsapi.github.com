@@ -56,6 +56,8 @@
 
 		<div class="container">
 			
+			<div class="blokHover block2">&nbsp;</div>
+			<div class="blokHover block1">&nbsp;</div>
 			
 			<h3 class="titleDeveloper">Certified developer</h3>
 			<h3 class="titleBusinessOwner">Business Owner</h3>
@@ -183,7 +185,7 @@
 {% comment %}<!-- Script for show hover block of section2 "Certified Developer" page -->{% endcomment %}
 <script type="text/javascript">
     
-    $(function(){
+  /* $(function(){
     	
     	var linkBusOwnBlok = $('.linkBusOwnBlok');
     	var linkDevBlok = $('.linkDevBlok');
@@ -236,7 +238,6 @@
 				
 				setTimeout(function(){
 					
-					//onMouseOverblokDev();
 					blok.on('mouseover', onMouseOverblokDev);
 					
 					if(isOver == false) {
@@ -257,7 +258,71 @@
 				
 
 			
+    }); */
+   
+   
+   $(function(){
+    	
+    	var discriptBlokBisOwner = $('.discriptBlokBisOwner');
+    	var discriptBlokDev = $('.discriptBlokDev');
+    	
+    	var blokHover = $('.blokHover');
+    	var section2 = $('.section2');
+    	
+    	var isOver = false;
+    	
+    	function onMouseOver(){
+    		
+    		isOver = true;
+    		
+    		var thisClass = $(this).hasClass('block1');
+    		
+    		if (thisClass){
+    			section2.addClass('busOwnerActive');
+    		} else {
+    			section2.addClass('developerActive');
+    		}
+    		
+    	};
+    	
+    	function onMouseLeave(){
+    		
+    		isOver = false;
+    		
+    		
+    		
+    		
+    		
+    		setTimeout(function(){
+    			$('.discriptBlokBisOwner, .discriptBlokDev').on('mouseover', function(){
+	    			 isOver = true;
+	    		});
+	    		
+	    		if(isOver == false){
+	    			section2.removeClass('developerActive');
+	    			section2.removeClass('busOwnerActive');
+	    		}
+	    		
+	    		
+    		}, 200);
+    		
+    		
+    	};
+    	
+    	blokHover.on('mouseover', onMouseOver).on('mouseleave', onMouseLeave);
+    	
+    	$('.discriptBlokBisOwner, .discriptBlokDev').on('mouseleave', function(){
+    		section2.removeClass('developerActive');
+	    	section2.removeClass('busOwnerActive');
+    	});
+    	
     });
+   
+   
+   
+   
+   
+  
    
 </script>
 
