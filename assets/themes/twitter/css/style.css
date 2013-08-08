@@ -40,7 +40,7 @@ a.topLogo:hover {
 /*__end font-family__*/
 h1,h2,h3,h4,h5,h6 {
 	margin-top:0;
-	font-family: 'Oswald400';
+	font-family: 'Oswald400', Arial,sans-serif;
 	}
 h3 {
 	line-height:23px;

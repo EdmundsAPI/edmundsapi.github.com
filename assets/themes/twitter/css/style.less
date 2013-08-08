@@ -49,6 +49,28 @@
       -ms-box-sizing: @value;
           box-sizing: @value;
 }
+.redButton {
+    margin: 0 0 31px;
+    padding: 0 21px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 38px;
+    background: #BF2F37;
+    
+    &:hover {
+      color:#fff;
+      text-decoration:none;
+    }
+    &:focus {
+      color:#fff;
+    }
+    &:active {
+      color:#fff;
+    }
+}
+
 
 #h1Title {
   display:none;
@@ -1829,7 +1851,7 @@ i[class^="icon-"] {
   #verticalLine {
       top:214px;
     }
-  .contentShowcase {
+  .contentPage {
     
     .verticalLine {
       top:0;
@@ -1993,7 +2015,7 @@ i[class^="icon-"] {
     border-left:1px solid #C5C5C5;
   }  
 }
-.contentShowcase .lineVertical {
+.contentPage .lineVertical {
   z-index:0;
   top: 213px;
 }
@@ -2005,7 +2027,11 @@ i[class^="icon-"] {
 .api-header-row1 .container {
     position: relative;
 }
-//start Showcase page
+
+
+
+
+//start Certified Developers page
 
 .pageCertDev {
   
@@ -2017,7 +2043,8 @@ i[class^="icon-"] {
     font-size: 52px;
     padding: 31px 0 26px 35px;
   }
-    
+  
+  // page "CDP overview"
   .section1 {
     min-height: 175px;
     padding: 0 0 38px;
@@ -2355,9 +2382,160 @@ i[class^="icon-"] {
     
     
    }
+   
+   // start page "How do I get started?"
+   
+   .contentPage {
+     border-top: 1px solid #CCC;
+     
+     section.cdp_section {
+       position:relative;
+       z-index:1;
+       
+       .toggleLinks {
+         margin:2px 0 45px 0;
+         text-align: center;
+         
+         div {
+           float:left;
+           width:50%;
+           text-align: right;
+           
+           &:first-child {
+             float: right;
+             text-align: left;
+             background: url('../img/certified_developer/get_started/bg_border_line.gif') left repeat-y;
+             
+             a {
+              margin: 19px 0 8px 17px;
+              
+              &.activeToggle {
+                margin: 11px 0 10px 17px;
+              }
+             }
+           }
+           
+         }
+         a {
+           display: inline-block;
+           margin: 0 17px 0 0;
+           border-bottom: 1px solid @color_regular_link;
+           color: @color_regular_link;
+           text-transform: uppercase;
+           font: 400 26px/30px 'Oswald400',Arial,sans-serif;
+           text-decoration: none;
+           
+           &:hover {
+             color:@color_green;
+             border-color: @color_green;
+           }
+           
+           &.activeToggle {
+             margin: 11px 17px 0 17px;
+             font: 400 37px/37px 'Oswald400',Arial,sans-serif;
+             color: @color_link;
+             border:0;
+             cursor:default;
+             
+             &:hover {
+               color: @color_link;
+             }
+           }
+           
+         }
+       }
+       
+       .wrapperStep {
+         margin: 0 0 120px 0; 
+         padding:0 116px 0 110px;
+         
+         a {
+          color: @color_regular_link;    
+         }
+         
+         img.imgStep {
+           display: block;
+           margin: 0 0 6px 0;
+         }
+         
+         .stepNumber {
+           display: block;
+           margin: 0 0 3px 0;
+           color:#FE6614;
+           font: 700 26px/43px Arial,sans-serif;
+           text-align: center;
+           text-transform: uppercase;
+           
+           span {
+             padding: 0 10px;
+             margin: 0 8px 0 0;
+             border: 3px solid #FE6614;
+             .border-radius(50%); 
+             font-size: 29px;
+             font-family: 'Myriad Pro', Arial,sans-serif;
+           }
+         }
+         
+         h2 {
+           margin: 0 0 28px 0;
+           font: 700 26px/26px Arial,sans-serif;
+           text-align: center;
+         }
+         
+         h4 {
+           margin: 0 0 21px 0;
+           font: 700 15px/15px Arial,sans-serif;
+           text-align: center;
+         }
+         
+         table {
+           margin: 0 0 0 8px;
+           
+           tr {  
+             border-top:1px solid #c5c5c5;
+              
+             td {
+               padding: 13px 10px 19px 0;
+               vertical-align: top;
+               font-size: 15px;
+               line-height: 22px;
+               
+               &:first-child {
+                 padding-left: 3px;
+                 min-width: 136px;
+               }
+             }
+           }
+           
+           
+         }
+         
+         p {
+           padding: 0;
+           line-height: 21px;
+         }
+         
+         .redButton {
+           margin: 14px 0 0 0;
+           color:#fff;
+         }
+         
+         &.step2BS {
+           h2 {
+             margin: 0 0 31px;
+           }
+         }
+         &.step4BS {
+           margin:0;
+         }
+       }
+     }
+     
+   }
+   
 }
 
-//end Showcase page
+//end Certified Developers page
 
 
 
