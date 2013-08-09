@@ -1859,10 +1859,10 @@ i[class^="icon-"] {
     }
     
     section {
-      padding: 0 0 81px 29px;
+      padding: 27px 0 81px 29px;
       
       p {
-        padding:34px 0 31px 0;
+        padding:7px 0 31px 0;
       }
     
       .wrapperResultFilter {
@@ -2382,11 +2382,20 @@ i[class^="icon-"] {
     
     
    }
-   
+   ul.multiLevelMenu {
+        margin-top: 120px;
+        li {
+          line-height: 12px;
+          margin-bottom: 12px;
+        }
+   }
    // start page "How do I get started?"
    
    .contentPage {
      border-top: 1px solid #CCC;
+     
+     
+     
      
      section.cdp_section {
        position:relative;
@@ -2529,14 +2538,138 @@ i[class^="icon-"] {
            margin:0;
          }
        }
+       
+       
+       
+       
+       
      }
      
+     //page CDP Badge 
+       
+       .cdpBdge {
+         
+         .wrapperAnchors {
+             margin: 0 0 14px;
+             
+             a {
+               display: inline-block;
+               margin:0 52px 0 0;
+               
+               &:hover {
+                 text-decoration: none;
+               }
+             }
+           }
+         
+           h3 {
+             margin: 50px 0 23px;
+           }
+           
+           p {
+             padding-bottom: 14px;
+             line-height: 22px;
+           }
+           
+           .discriptionBadge {
+             border-top: 1px solid #C5C5C5;
+              margin: 28px 0 35px;
+              padding: 21px 0 0;
+             
+             img {
+               margin: 0 0 10px;
+               display: block;
+             }
+             
+             &.last{
+               margin-bottom: 0;
+               padding-bottom: 20px;
+               border-bottom: 1px solid #C5C5C5;
+             }
+           }
+           
+           .additionalInf {
+             margin: 42px 0 0;
+             padding: 20px 26px;
+             background: #dedede;
+             
+             p {
+               margin:0;
+               padding:0;
+               color:#525252;
+               font-weight:700;
+               
+               &:first-child {
+                 margin: 0 0 7px;
+               }
+               
+             }
+           }
+       }
+       
+       
+       // page Policie
+       .cdpPolice {
+         .wrapperAnchors {
+           padding: 0 0 28px;
+           margin: 0 0 36px; 
+           border-bottom:1px solid #c5c5c5;
+         }
+         h4 {
+           margin-bottom: 16px;
+           font: 700 15px/15px Arial,sans-serif;
+         }
+         
+         h3 {
+           margin-bottom: 30px;
+           text-transform:uppercase;
+         }
+         
+         p {
+           line-height: 29px;
+         }
+         ol {
+           color: @color_regular_link;
+           
+           li {
+             margin: 0 0 17px;
+             
+             a {
+               font-size:15px;
+               color: @color_regular_link;
+               
+               &:hover {
+                 color: @color_green;
+                 text-decoration:none;
+               }
+             }
+           
+           }
+           
+         }
+       }
+     
    }
+   
+   
+   
+   
    
 }
 
 //end Certified Developers page
-
+.tittleContent {
+  padding: 37px 28px;
+  border-bottom: 1px solid #C5C5C5;
+  
+  h2 {
+    margin:0;
+    padding:0;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
 
 
 
