@@ -11,16 +11,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 
 <div id="menu" class="toggleLinks clearfix ">	
 	<div>
-		<a href="#/certified_developer">Certified Developer</a>
+		<a href="#certified_developer">Certified Developer</a>
 	</div>
 	<div>
-		<a class="activeToggle" href="#/business_owner">Business Owner</a>
+		<a class="activeToggle" href="#business_owner">Business Owner</a>
 	</div>
 </div>
 
 <div id="result">
 	<div id="content">
-		<div id="contentBusOwner" class="contentBusOwner">
+		<div id="business_owner" class="contentBusOwner" style="display: block;">
 			
 			<div class="wrapperStep step1BS">
 			
@@ -94,7 +94,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 		
 		
 		
-		<div id="contentDevr" class="contentDevr">
+		<div id="certified_developer" class="contentDevr" style="display: none;">
 			
 			<div class="wrapperStep">
 			
@@ -154,6 +154,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/jquery.history.js">
 </script>
 
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
+</script>
 
 
 
