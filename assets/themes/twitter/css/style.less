@@ -7,6 +7,7 @@
 @color_red_blok: #bf2f37;
 @color_default_background: #F2F2F2;
 @color_green: #8FC033;
+@color_gray_line: #C5C5C5;
 
  /*__font-family__*/
 @font-face {
@@ -1841,7 +1842,6 @@ i[class^="icon-"] {
   }
 }
 
-
 // end API page
 
 
@@ -2655,10 +2655,6 @@ i[class^="icon-"] {
      
    }
    
-   
-   
-   
-   
 }
 
 //end Certified Developers page
@@ -2676,14 +2672,72 @@ i[class^="icon-"] {
 }
 
 
+.verticalLinePage {  
+  .innerContentPage .span10 {
+    z-index: 1;
+    position: relative;
+    padding: 30px 0 30px 25px;
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+    p {
+      margin: 0 45px 25px 0;
+      line-height: 26px;
+    }
+    h3 {
+      text-transform: uppercase;
+      margin: 35px 0 33px;
+    }
+    hr {
+      border-top: 0;
+      border-color: @color_gray_line;
+    }    
+  }
+}
+
+// start 'Terms of Uses' page
+
+.termsOfUses {
+  .innerContentPage .span10 {
+    ul {
+      list-style: none;
+      margin: 0 45px 25px 0;
+        li {
+          line-height: 26px; 
+      }
+    }
+  }
+}
+
+// end 'Terms of Uses' page
 
 
+// start 'FAQ' page
 
+.faqPage {
+  .verticalLinePage .innerContentPage .span10 {
+    padding-top: 0;
+    ul {
+      list-style: none;
+      margin: 0 45px 25px 0;    
+      li {
+        line-height: 45px;
+        a {
+          color: #336699;
+          &:hover {
+            color: #90BE3F; 
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .question-header {
+      font-weight: bold;
+    }
+  }
+}
 
-
-
-
-
+// end 'FAQ' page
 
 
 
