@@ -1,0 +1,75 @@
+
+<style type="text/css" media="screen">
+	  body { background: #EEF0F7; }
+	 .layout { padding: 50px; font-family: Georgia, serif; }
+	 .layout-slider { margin-bottom: 60px; width: 50%; }
+	 .layout-slider-settings { font-size: 12px; padding-bottom: 10px; }
+	 .layout-slider-settings pre { font-family: Courier; }
+	 .jslider {
+	 	top: 2.6em;
+	 	height: 5em;
+	 }
+	</style>
+
+<ul class="nav nav-tabs" id="myTab">
+    <li class="active">
+    	<a href="#qualification">Qualification</a>
+    </li>
+    <li>
+    	<a href="#cost_of_work">Cost of work</a>
+    </li>
+    <li>
+    	<a href="#location">Location</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane  in active" id="qualification">
+    	
+		<label><input type="checkbox" checked="checked"/>Social shopping</label>
+		<label><input type="checkbox" checked="checked"/>Mobile</label>
+		<label><input type="checkbox" checked="checked"/>Analytics</label>
+		
+	</div>
+    <div class="tab-pane " id="cost_of_work">
+    	
+		<div class="layout-slider" style="width: 100%; display: none;">
+	      <span style="display: inline-block; width: 400px; padding: 0 5px;"><input id="Slider3" type="text" name="area" value="25;75" /></span> 
+	    </div>
+	    <a href="#" id="trigger">Show/Hide</a> 
+	
+	    <script type="text/javascript" charset="utf-8">
+	      var layout = $(".layout-slider"),
+	      trigger = $("#trigger");
+	      
+	      jQuery("#Slider3").slider({ from: 0, to: 500, heterogeneity: ['50/100', '75/250'], scale: [0, '|', 50, '|', '100', '|', 250, '|', 500], limits: false, step: 1, dimension: '&nbsp;$', skin: "plastic" });
+	      
+	      $(trigger).click( function(){
+	        layout.slideToggle("fast");
+	        $("#Slider3").slider().update();
+	      });
+	    </script>
+	
+    </div>
+    <div class="tab-pane " id="location">
+
+		<label><input type="checkbox" checked=""/>Santa Monica, CA</label>
+		<label><input type="checkbox" checked=""/>New York</label>
+		<label><input type="checkbox" checked=""/>San Francisco</label>
+
+	</div>
+	
+	
+</div>
+Country …….State…….City…….ZIP……Region					     
+
+
+{% comment %}<!-- script show tabs -->{% endcomment %}					     
+<script type="text/javascript">
+    $('#myTab a').click(function (e) {
+	    e.preventDefault();
+	    $(this).tab('show');
+    })
+</script>
+
+
