@@ -9,7 +9,7 @@ cdp_class_page: cdpBdge
 ---
   
 <div class="wrapperAnchors">
-	<a href="#modile" title="">
+	<a href="#mobile" title="">
 		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 	</a>
 	<a href="#socialShopping" title="">
@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.
 
 <div class="discriptionBadge">
-<a id="modile" title="">
+<a name="mobile" title="">
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 </div>
 
 <div class="discriptionBadge">
-<a id="socialShopping" title="">
+<a name="socialShopping" title="">
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
 
@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 </div>
 
 <div class="discriptionBadge last">
-<a id="analitics" title="">
+<a name="analitics" title="">
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 
@@ -61,19 +61,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 
 
 {% comment %}<!-- Smooth scroll to -->{% endcomment %}
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js">
+</script>
 <script type="text/javascript">
 	$(function(){
 	
-		$(".wrapperAnchors a").click(function () {  
-		
-			var elementClick = $(this).attr("href");
-			
-			var destination = $(elementClick).offset().top;
-			
-			$("html").animate({ scrollTop: destination}, 500 );
-			
-			return false;
-			
+		$(".wrapperAnchors a").on('click', function (element) { 
+			var thisLink = $(this);
+			scrollTo(thisLink);
 		});
 	
 	});

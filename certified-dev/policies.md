@@ -19,7 +19,7 @@ cdp_class_page: cdpPolice
 	</ol>
 </div>
 
-<a id="general_guidelines">
+<a name="general_guidelines">
 </a>
 ###General Guidelines
 
@@ -27,21 +27,21 @@ Please find below the PMD Program policies. If you violate any of the applicable
 
 
 
-<a id="badge_use_policies">
+<a name="badge_use_policies">
 </a>
 ###Badge Use Policies
 
 Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
 
 
-<a id="press_policies">
+<a name="press_policies">
 </a>
 ###Press Policies
 
 Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
 
 
-<a id="compliance_policies">
+<a name="compliance_policies">
 </a>
 ###Compliance Policies
 
@@ -49,19 +49,14 @@ Please find below the PMD Program policies. If you violate any of the applicable
 
 
 {% comment %}<!-- Smooth scroll to -->{% endcomment %}
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js">
+</script>
 <script type="text/javascript">
 	$(function(){
 	
-		$("ol a").click(function () {  
-		
-			var elementClick = $(this).attr("href");
-			
-			var destination = $(elementClick).offset().top;
-			
-			$("html").animate({ scrollTop: destination}, 500 );
-			
-			return false;
-			
+		$("ol a").on('click', function (element) { 
+			var thisLink = $(this);
+			scrollTo(thisLink);
 		});
 	
 	});
