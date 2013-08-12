@@ -2717,22 +2717,26 @@ i[class^="icon-"] {
 .faqPage {
   .verticalLinePage .innerContentPage .span10 {
     padding-top: 0;
+    a {
+      color: #336699;
+      &:hover {
+        color: #90BE3F; 
+        text-decoration: none;
+      }
+    }
     ul {
       list-style: none;
       margin: 0 45px 25px 0;    
       li {
-        line-height: 45px;
-        a {
-          color: #336699;
-          &:hover {
-            color: #90BE3F; 
-            text-decoration: none;
-          }
-        }
+        line-height: 45px;        
       }
     }
     .question-header {
       font-weight: bold;
+      padding-top: 5px;
+      &:hover {
+        color: inherit;
+      }
     }
   }
 }
