@@ -1,0 +1,21 @@
+<ul class="blog-menu">
+	<li><span>Categories</span>
+		<ul>
+	  	  {% assign categories_list = site.categories %}  
+	  	  {% include JB/categories_list %}
+	  	</ul>
+	</li>
+	<li><span>Tags</span>
+		<ul>
+			{% assign tags_list = site.tags %}
+      		{% include JB/tags_list %}
+		</ul>
+	</li>
+	<li><span>Archive</span>
+		<ul>
+			<li>July (1)</li>
+			<li>June (3)</li>
+			<li>May (2)</li>
+		</ul>
+	</li>
+</ul>

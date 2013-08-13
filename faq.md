@@ -24,13 +24,13 @@ class_page: faqPage
 
 <span class="question-header" name='faq-1'>What is an API?
 </span> 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante leo, semper non mauris non, ultrices sagittis augue. Suspendisse egestas odio in nunc aliquam, imperdiet fermentum sem egestas. Phasellus ullamcorper mattis massa at gravida. Mauris sit amet magna et sapien venenatis auctor ac non odio. Aenean ut scelerisque enim. Donec volutpat aliquet leo, sit amet adipiscing est pulvinar non. Sed feugiat eros lorem, id condimentum libero suscipit in. Sed urna libero, porttitor at ullamcorper vitae, volutpat vel lacus. Nulla eget arcu rhoncus, accumsan ipsum sed, dignissim lectus.
+Application Programming Interfaces, or APIs, allow web developers and application engineers to programmatically access Edmunds data for use in their own applications. Our goal is to provide a way by which developers and engineers can access our data to create innovative and new experiences for their users.
 
 [Back to top](#top)
 
 <span class="question-header" name='faq-2'>Why has Edmunds decided to make its content/data available for outside users?
 </span>
-Aliquam laoreet viverra lorem, in venenatis elit pulvinar in. Suspendisse potenti. Aliquam sit amet nisl vitae mi blandit pulvinar eget ut odio. In hac habitasse platea dictumst. Fusce imperdiet lacus tellus, vel placerat quam posuere sit amet. Mauris egestas convallis vestibulum. Pellentesque eget massa purus. Aliquam erat volutpat. Phasellus elementum nisl elit. Aenean sit amet placerat elit. Quisque dapibus suscipit arcu, vitae auctor dolor fermentum vel. Aliquam porttitor enim vel hendrerit posuere. Duis bibendum sodales sapien nec dignissim.
+We here at Edmunds believe strongly that innovation is fostered best through openness and transparency. We're opening up our data because we want to give you, the developer, the ability to explore its potential. You can use the breadth and detail of the automotive information available through the Edmunds' API to create mashups, mobile apps, visualizations and other data consuming applications that will provide an added dimension of user experience for the automotive consumer. Edmunds is committed to helping automotive consumers ind the car that meets their every need. Providing our data to other developers interested in automative data is a key component to achieving our goal.
 
 [Back to top](#top)
 
@@ -72,6 +72,7 @@ Aliquam laoreet viverra lorem, in venenatis elit pulvinar in. Suspendisse potent
 
 
 <script type="text/javascript">
+
  $(function(){
 
  	function scrollTo(element){
@@ -82,10 +83,11 @@ Aliquam laoreet viverra lorem, in venenatis elit pulvinar in. Suspendisse potent
 		return false;
 	};
  
-  $("a").on('click', function (element) { 
-   var thisLink = $(this);
-   scrollTo(thisLink);
-  });
- 
+  	$("a").on('click', function (element) { 
+   		var thisLink = $(this);
+   		scrollTo(thisLink);
+  	});
+
  });
+
 </script>
