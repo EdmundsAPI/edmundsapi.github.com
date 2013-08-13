@@ -85,7 +85,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber"><span>4</span>Step.</span>
 				
-				<h2>Business Owner works with Сertified Developer </br> on a custom solution</h2>
+				<h2>Business Owner works with Certified Developer </br> on a custom solution</h2>
 		
 			</div>
 			
@@ -142,7 +142,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber"><span>4</span>Step.</span>
 				
-				<h2>Сertified Developer works with Business Owner to help </br> him build automative experiencewith Edmund API</h2>
+				<h2>Сertified Developer works with Business Owner to help </br> him build automative experience with Edmund API</h2>
 				
 			</div>
 	

@@ -23,29 +23,82 @@ cdp_class_page: cdpPolice
 </a>
 ###General Guidelines
 
-Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
-
-
+* Please find below the Edmunds Certified Developer Network policies. If you violate any of the applicable policies, you may be notified by a "ECD Network Policy Warning" email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the ECD Network from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
+* Edmunds.com, Inc. reserves the right to grant or remove access to the Platform or ECD Network at its sole discretion.
+* Every ECD must provide ECD Team members with login credentials upon request.
 
 <a name="badge_use_policies">
 </a>
 ###Badge Use Policies
 
-Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
+In order to use the badge, you must follow the badge use policies outlined below, as well as adhere to all of [Edmunds.com, Inc's terms](http://edmunds.com).
+
+#### ECD badge
+
+The ECD badge allows you to promote your status as a Certified Developer in online and offline materials.
+
+#### Using the ECD badge
+
+* You may use the badge only if you have been recognized as a PMD by the Facebook PMD Team
+* You may only display each qualification area (Pages, Ads, Apps, Insights) once you have been recognized by the PMD team as having met the requirements for that qualification. If you lose qualification in any area, you must immediately remove the corresponding graphic from your badges in all locations
+* In online materials, the badge must hyperlink to one of the following: the PMD Program Page, the PMD Center, or your profile page in the PMD Center
+* In offline materials, you must include a printed URL to developer.edmunds.com/certified-dev.html immediately adjacent to the badge
+* You must keep sufficient space around the badge so it appears clean and uncluttered
+* You may not modify or alter the badge in any way, such as changing its design or color, or combining the badge with any other words or images
+* Your own brand or personal identity must be the predominant identity whenever the badge is displayed
+* You may not use the badge as a profile image or incorporate the badge into any profile image
+* You may not use this badge in any way that implies that you are an employee or agent of Edmunds.com, or that Edmunds.com, Inc. endorses, sponsors, or is responsible for your services
+* You may not use this badge in a way that is deceptive, harmful, obscene, or otherwise objectionable to Edmunds.com, Inc.
+
+These policies are limited to the ECD badge. Edmunds.com’s Brand Usage Guidelines, apply to any other use of Edmunds.com logos, trademarks or screenshots. To incorporate Edmunds.com logos, trademarks or screenshots into your materials, you must submit a request for permission via the Permissions Request Form. Edmunds.com reserves the right to terminate or modify your permission to use the badge at any time, at its sole discretion.
 
 
 <a name="press_policies">
 </a>
 ###Press Policies
 
-Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
+In addition to the below guidelines, the Edmunds Developer PR Guidelines must be observed when discussing the program publicly (press releases, articles, blog posts, etc.). Failure to do so may result in retraction of public materials or removal from the program.
+
+You will find the Edmunds Developer PR Guidelines at the bottom of this page. All ECD press releases must be sent to ecd-pr@edmunds.com for review and approval.
+
+#### General language
+
+Developers will not use any terms or phrases that refer to exclusivity, partnership, advance access, or a special relationship with Edmunds.com. Examples of prohibited words and phrases not to be used regarding Edmunds.com and your company include, but are not limited to:
+
+* partnership
+* strategic
+* commitment
+* collaboration
+* worked together
+* exclusive
+* continued relationship with Edmunds.com
+* special/advance/early access
+* whitelist
+* trusted
+* verified
+* recommended
+
+Developers may use “preferred” or "certified" or “ECD qualified” when describing your services - for example: “We are a Preferred Marketing Developer, qualified by the PMD program in Ads and Pages.” Developers may not describe participation in the PMD program as “preferred” or “qualified” “by Facebook”; the relationship is with the Preferred Marketing Developer (or ECD) team.
+
+#### Edmunds Certified Developer Network style guide
+
+* Edmunds Certified Developer is in initial caps, and may not be abbreviated as ECD upon first reference
+* Edmunds.com API are in initial caps as formal products
+
+#### Beta products
+
+Product discussions with Facebook regarding new or existing products are considered confidential. Developers are not to discuss non-public products or plans unless provided explicit permission from Edmunds.com even if public documentation exists. This includes, but is not limited to, products described as “alpha,” “beta,” and tests.
+
+#### Approved Edmunds.com language
+
+The Facebook Preferred Marketing Developer Program recognizes companies that have developed technologies in one or more of the following specialty areas: Page management solutions, ads management solutions, services and platforms for building socially enabled integrations, and/or tools for Page Insights analysis.
 
 
 <a name="compliance_policies">
 </a>
 ###Compliance Policies
 
-Please find below the PMD Program policies. If you violate any of the applicable policies, you may be notified by a “PMD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the PMD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
+Please find below the ECD Program policies. If you violate any of the applicable policies, you may be notified by a “ECD Program Policy Warning” email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the ECD Program from a minimum period of 6 months, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
 
 
 {% comment %}<!-- Smooth scroll to -->{% endcomment %}

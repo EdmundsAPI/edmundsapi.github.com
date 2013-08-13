@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Certified developers
-title_parent: Certified developers
+title_parent: Certified Developers
 header : Post Certified dev
 title_active_left_menu: 'CDP Overview'
 
