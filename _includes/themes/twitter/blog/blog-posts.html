@@ -1,0 +1,14 @@
+<ul class="blog-posts">
+	{% for post in site.posts %}
+	<li class="blog-post">
+	    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	    <div class="post-header">
+	      	<span class="author"> {{ post.by }}</span>
+	      	<span class="date"><i class="icon-time">&nbsp;</i>{{ post.date | date: "%b %d, %Y" }}</span>
+	      	<span class="category"><i class="icon-globe">&nbsp;</i>{{ post.category }}</span>
+	    </div>
+	    <p>{{ post.excerpt }}</p>
+	    <a class="standart-btn" href="{{ post.url }}">Read More...</a>
+	</li>
+	{% endfor %}
+</ul>
