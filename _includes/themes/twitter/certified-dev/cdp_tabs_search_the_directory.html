@@ -9,6 +9,9 @@
 	 	top: 2.6em;
 	 	height: 5em;
 	 }
+	 .jslider .jslider-value {
+	 	color:#000;
+	 }
 	</style>
 
 <ul class="nav nav-tabs" id="myTab">
@@ -24,11 +27,11 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane  in active" id="qualification">
+    <div class="tab-pane  in active qualification">
     	
-		<label><input type="checkbox" checked="checked"/>Social shopping</label>
-		<label><input type="checkbox" checked="checked"/>Mobile</label>
-		<label><input type="checkbox" checked="checked"/>Analytics</label>
+		<label class="social_shopping"><input type="checkbox" />Social shopping</label>
+		<label class="mibile"><input type="checkbox" />Mobile</label>
+		<label class="analytics"><input type="checkbox" />Analytics</label>
 		
 	</div>
     <div class="tab-pane " id="cost_of_work">
@@ -51,17 +54,20 @@
 	    </script>
 	
     </div>
+    
     <div class="tab-pane " id="location">
 
-		<label><input type="checkbox" checked=""/>Santa Monica, CA</label>
-		<label><input type="checkbox" checked=""/>New York</label>
-		<label><input type="checkbox" checked=""/>San Francisco</label>
+		<label>Country&nbsp;.</label>
+		<label>State&nbsp;.</label>
+		<label>City&nbsp;.</label>
+		<label>ZIP&nbsp;.</label>
+		<label>Region&nbsp;.</label>
 
 	</div>
-	
-	
+
 </div>
-Country …….State…….City…….ZIP……Region					     
+
+<div class="optionFilter">Showing <span id="amountDev">4</span> developers providing <span id="selectedQual"><span class="itemFilterBadge">Social shopping<span class="removeOptionFilter">&nbsp;</span></span></span> with cost of work <span id="selectedCost">$<span class="minCost">10</span>-<span class="maxCost">50</span>/ hour <span class="removeOptionFilter">&nbsp;</span></span></div>				     
 
 
 {% comment %}<!-- script show tabs -->{% endcomment %}					     

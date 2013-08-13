@@ -2655,6 +2655,183 @@ i[class^="icon-"] {
      
    }
    
+   // page Search the directory 
+   
+   section.sdpDirectory {
+     
+     p {
+       padding: 0 0 36px;
+     }
+     
+     a.linkAboutSDP {
+       float: right;
+       color: @color_regular_link;
+     }
+     
+     ul.nav-tabs {
+       border:0;
+       margin:0;
+       
+         li {
+           margin-bottom: 0;
+           
+           &:first-child {
+             a {
+               padding:12px 52px 12px 34px;
+             }
+           }
+           
+           &:last-child {
+             a {
+               border-left:1px solid #DEDEDE;
+             }
+           }
+           a {
+             padding: 12px 45px;
+             border-radius:0;
+             font: 12px Arial,sans-serif;
+             text-transform: uppercase;
+           }
+           
+           &.active {
+             
+             a {
+               color: #fff;
+               background: #444;
+             }
+             &+li a {
+              border-color:transparent;
+             }
+             
+           }
+           &.active a:last-child {
+             border-color:transparent;
+           }
+         }
+      }
+      
+      .tab-content {
+        min-height:20px;
+        margin-bottom: 62px;
+        padding: 22px 31px 15px;
+        color:#fff;
+        background: #444;
+        
+        label {
+          float: left;
+          margin: 0 35px 0 0;
+          color:#fff;
+          font-size: 15px;
+          
+          input {
+            margin: 0 10px 3px 0;
+          }
+        }
+      }
+      
+      .optionFilter {
+        margin-bottom: 33px;
+        font-size:15px;
+        color: #525252;
+        .itemFilterBadge, #selectedCost {
+          position:relative;
+          margin: 0 11px 0 3px;
+          padding: 7px 35px 7px 10px;
+          background: #DEDEDE; 
+        }
+        #selectedCost {
+          padding-left: 21px;
+          margin-left: 4px;
+        }
+        .removeOptionFilter {
+            position: absolute;
+            top:10px;
+            right:8px;
+            width:15px;
+            height:14px;
+            background: url('../img/certified_developer/search_the_directory/cross_option_filter.png/') center no-repeat;
+            cursor: pointer;
+          }
+      }
+      
+      // resul filter developers
+      .wrapperResultFilterDevelop {
+        .wrapperDeveloper {
+          position: relative;
+          height:113px;
+          margin: 0  0 23px 0;
+          padding: 23px 26px 23px 21px;
+          border-right: 1px solid #dedede;
+          border-bottom: 2px solid #dedede;
+          background: #fff;
+          
+          .lineRuseltBlock {
+            position:absolute;
+            top:27px;
+            bottom:25px;
+            right: 254px;
+            width:1px;
+            background: #525252;
+          }
+          
+          .iconDeveloper {
+            display: inline-block;
+          }
+          
+          .discriptDeveloper {
+            .nameDeveloper {
+              margin: 7px 0 10px 0;
+              display: inline-block;
+              color:@color_regular_link;
+              font-size: 21px;
+              font-weight: bold;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            ul {
+              margin: 0 0 19px;
+              list-style: none;
+              li {
+                float:left;
+                padding: 0 11px 0 0;
+                margin: 0 12px 0 0;
+                border-right: 1px solid #CCC;
+                line-height: 14px;
+                
+                &:last-child {
+                  padding: 0 0 0 17px;
+                  border: 0;
+                  background: url('../img/certified_developer/search_the_directory/mark_location.png') left bottom no-repeat;
+                }
+              }
+            }
+            p {
+              margin:0;
+              padding:0;
+              line-height: 18px;  
+            }
+          }
+          
+          .iconBadges {
+            ul {
+              margin:23px 0 0;
+              list-style: none;
+              li {
+                float:right;
+                width:53px;
+                margin: 0 21px 0 0;
+                &:first-child {
+                  margin:0;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+   }
+   
 }
 
 //end Certified Developers page
