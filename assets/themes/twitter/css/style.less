@@ -2686,7 +2686,7 @@ i[class^="icon-"] {
     }
     h3 {
       text-transform: uppercase;
-      margin: 35px 0 33px;
+      margin: 35px 0 30px;
     }
     hr {
       border-top: 0;
@@ -2717,11 +2717,17 @@ i[class^="icon-"] {
 .faqPage {
   .verticalLinePage .innerContentPage .span10 {
     padding-top: 0;
+    p {
+      margin-bottom: 13px;
+    }
     a {
       color: #336699;
       &:hover {
         color: #90BE3F; 
         text-decoration: none;
+      }
+      &[name="top"] {
+        float: left;
       }
     }
     ul {
@@ -2733,7 +2739,8 @@ i[class^="icon-"] {
     }
     .question-header {
       font-weight: bold;
-      padding-top: 5px;
+      padding-top: 12px;
+      display: inline-block;
       &:hover {
         color: inherit;
       }
