@@ -5,6 +5,22 @@ tagline: "hackomotive 2013"
 tags : [Hackomotive]
 title: 'Hackomotive 2013: Reinventing The Car Shopping Experience Hackathon'
 by: 'Ismail Elshareef'
+author_url: 'https://twitter.com/ielshareef'
+
+links: [
+		{
+			name: 'Hackomotive.com',
+			url: 'http://www.Hackomotive.com'
+		},
+		{
+			name: 'Widget not working?',
+			url: 'http://www.Hackomotive.com'
+		},
+		{
+			name: 'Get latest news from Hackomotive',
+			url: 'http://www.Hackomotive.com'
+		}
+	]
 
 page_title: 'Developer Blog'
 ---

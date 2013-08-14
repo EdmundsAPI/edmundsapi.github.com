@@ -2970,12 +2970,18 @@ div[class*="promo-section"] {
       span {
         margin-right: 15px;
         i {
-          margin-right: 5px;
           vertical-align: text-bottom;
+          &.icon-time {
+            margin-right: 5px;
+          }
         }
       }
-      .author {
+      .author a {
         color: @color_regular_link;
+        &:hover, &:focus {
+          text-decoration: none;
+          color: @color_link_hover;
+        }
         &:before {
           content: "by ";
           color: @color_text;
@@ -2992,10 +2998,35 @@ div[class*="promo-section"] {
     .post-panel {
       display: inline-block;
       width: 150px;
-      padding: 25px 15px;
+      padding: 28px 15px 10px;
       margin-top: 40px;
       background: #DFDFDF;
       float: right;
+      h5 {
+        font-family: Arial,sans-serif;
+        margin-bottom: 7px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      ul {
+        list-style: none;
+        margin-left: 10px;
+        &.links-list {
+          padding-top: 9px;
+        }
+        li {
+          background: url('../img/list-marker.png') no-repeat 0 9px;
+          padding-left:10px;
+          padding-bottom: 10px;
+        }
+        a {
+          color: @color_regular_link;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: @color_link_hover;
+          }
+        }
+      }
     }
     .blog-post {
       padding-right: 205px;

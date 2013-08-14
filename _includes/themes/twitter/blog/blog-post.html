@@ -1,9 +1,17 @@
 <div class="post-panel">
+  <h5>Tags</h5>
   {% unless page.tags == empty %}
-    <h5>Tags</h5>
-    <ul class="tag_box inline">
+    <ul>
       {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
+      {% include JB/custom_tags_list %}
+    </ul>
+  {% endunless %}  
+  <h5>What links here</h5>
+  {% unless page.links == empty %}
+    <ul class="links-list">
+      {% for link in page.links %} 
+      <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
     </ul>
   {% endunless %}  
 </div>
@@ -11,22 +19,21 @@
 <div class="blog-post">
   <h3>{{ page.title }}</h3>
   <div class="post-header">
-    <span class="author"> {{ page.by }}</span>
+    <span class="author"><a href="{{ page.author_url }} ">{{ page.by }}</a></span>
     <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
-    <span class="category"><i class="icon-globe">&nbsp;</i>{{ page.category }}</span>
+    <span class="category">
+      {% if page.category == 'Engineering' %}
+      <i class="icon-cog">&nbsp;</i>
+      {% else %}
+      <i class="icon-globe">&nbsp;</i>
+      {% endif %}
+
+      {{ page.category }}
+    </span>
   </div>
   <div class="content">
     {{ content }}
   </div>
-
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
-
 
 </div> 
 
