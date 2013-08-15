@@ -82,34 +82,7 @@
 	    }
 	    
 	    $container.append(
-			'<li class="blog-post">'
-	      	+ '<h3><a href="'
-	      	+ post.href
-	      	+ '">'
-	      	+ post.title
-	      	+ '</a></h3>'
-	      	+ '<div class="post-header">'
-			+ '<span class="author">'
-			+ '<a href="'
-			+ post.author_url
-			+ '">'
-			+ post.by
-			+ '</a>'
-			+ '</span>'
-			+ '<span class="date"><i class="icon-time">&nbsp;</i>'
-			+ post.date
-			+ '</span>'
-			+ '<span class="category"><i class="icon-cog">&nbsp;</i>'
-			+ post.category
-			+ '</span>'
-			+ '</div>'
-			+ '<p>'
-			+ post.excerpt
-			+ '</p>'
-			+ '<a class="standart-btn" href="'
-	      	+ post.href
-	      	+ '">Read More...</a>'
-	        + '</li>'
+			'<li class="blog-post">Post!!!!!</li>'
 	    );
 	  }
 	}
@@ -123,6 +96,7 @@
 	  var txt = "We couldn't find anything associated with '" + value + "' here.";
 	  $container.find('p.nadda').text(txt);
 	};
+	
 
 	$(function() {
 	  var map = {
