@@ -10,7 +10,7 @@
   {% unless page.links == empty %}
     <ul class="links-list">
       {% for link in page.links %} 
-      <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+      <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
     {% endfor %}
     </ul>
   {% endunless %}  
@@ -19,7 +19,7 @@
 <div class="blog-post">
   <h3>{{ page.title }}</h3>
   <div class="post-header">
-    <span class="author"><a href="{{ page.author_url }} ">{{ page.by }}</a></span>
+    <span class="author"><a href="{{ page.author_url }} " target="_blank">{{ page.by }}</a></span>
     <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
     <span class="category">
       {% if page.category == 'Engineering' %}
