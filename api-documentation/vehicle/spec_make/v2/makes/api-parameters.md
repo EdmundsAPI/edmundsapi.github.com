@@ -12,11 +12,17 @@ api: vehicle
 dropdown-link: 'api/vehicle/v2/makes'
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get a List of Car Makes'
 title_md : Parameters
 number: 2
 ---
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
+| Parameter  	| Description                | Possible Values   | Default Value | Required |
+|:-------------:|:---------------------------|:----------------- |:------------- |:-------- |
+| state			| Response format            | new, used, future | 	             | No       |
+| year       	| The year of the car makes	 | 1990-current year |               | No       |
+| view			| Response detail level      | basic, full       | basic         | No       |
+| fmt			| Response detail level      | json              | json          | Yes      |
+| api_key    	| vehicle api key            |                   |               | Yes      |

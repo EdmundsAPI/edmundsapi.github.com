@@ -13,20 +13,44 @@ dropdown-link: 'api/vehicle/v2/makes/count'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get Total Count of Car Makes'
 title_md : Response format
 number: 3
 ---
 
 ###Response format
 
-#### JSON Response
+#### JSON Response w/ view=basic (default)
 
 	{
-		"makesCount": [integer]
+		"makesCount": {integer}
 	}
 
 
 | Property      | Description                         | Visibility                |
 |:-------------:|:------------------------------------|:------------------------- |
 | makesCount    | The total count of car makes/brands | Edmunds, Partners, Public |
+
+#### JSON Response w/ view=full
+
+	{
+	   "makes":[
+	      {
+	         "modelsCount": {integer},
+	         "niceName": {string}
+	      },
+	      {
+	         "modelsCount": {integer},
+	         "niceName": {string}
+	      },
+	      ...
+	   ],
+	   "makesCount": {integer}
+	}
+	
+| Property      | Description                         	| Visibility                |
+|:-------------:|:--------------------------------------|:------------------------- |
+| makes		    | The total count of car makes			| Edmunds, Partners, Public |
+| modelsCount	| The total count of this model		 	| Edmunds, Partners, Public |
+| niceName	    | The URL-friendly name of this model 	| Edmunds, Partners, Public |
+| makesCount    | The total count of car makes			| Edmunds, Partners, Public |

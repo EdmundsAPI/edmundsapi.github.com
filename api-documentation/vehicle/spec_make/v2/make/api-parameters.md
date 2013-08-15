@@ -13,7 +13,7 @@ dropdown-link: 'api/vehicle/v2/{make}'
 
 
 level: 4
-description_edpoint: 'Get details for a specific car make/brand'
+description_edpoint: 'Get Details on a Specific Car Make'
 title_md : Parameters
 number: 2
 
@@ -23,6 +23,8 @@ number: 2
 
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:-------------:|:---------------------------|:----------------- |:------------- |:-------- |
-| state			| Response format            | json              | json          | Yes      |
-| view			| Response detail level      | json              | json          | Yes      |
+| state			| Response format            | new, used, future | 	             | No       |
+| year       	| The year of the car makes	 | 1990-current year |               | No       |
+| view			| Response detail level      | basic, full       | basic         | No       |
+| fmt			| Response detail level      | json              | json          | Yes      |
 | api_key    	| vehicle api key            |                   |               | Yes      |

@@ -13,14 +13,14 @@ dropdown-link: 'api/vehicle/v2/makes/count'
 
 
 level: 3
-description_edpoint: 'Get total count of car makes/brands'
+description_edpoint: 'Get Total Count of Car Makes'
 title_md : Description
 number: 1
 ---
 
 ### Description
 
-Get the total number of car makes/brands. 
+Get the total number of car makes.
 
 ### URL
 

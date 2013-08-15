@@ -13,7 +13,7 @@ dropdown-link: 'api/vehicle/v2/{make}'
 
 
 level: 3
-description_edpoint: 'Get details for a specific car make/brand'
+description_edpoint: 'Get Details on a Specific Car Make'
 title_md : Description
 number: 1
 
@@ -22,7 +22,7 @@ number: 1
 
 ### Description
 
-Get the list of models and model/year IDs belonging to a specific car make/brand
+Get the list of models and model/year IDs belonging to a specific car make.
 
 ### URL
 
@@ -53,7 +53,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = res.makesCount;
+					body.innerHTML = res.models[0].name;
 				}
 
 				// Oops, Houston we have a problem!

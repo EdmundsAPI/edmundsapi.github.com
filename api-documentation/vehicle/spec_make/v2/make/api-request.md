@@ -13,13 +13,13 @@ dropdown-link: 'api/vehicle/v2/{make}'
 
 
 level: 4
-description_edpoint: 'Get details for a specific car make/brand'
+description_edpoint: 'Get Details on a Specific Car Make'
 title_md : Sample Request
 number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the list of models and model/year IDs for __NEW__ Lexus cars
 
@@ -64,7 +64,7 @@ Get the list of models and model/year IDs for __NEW__ Lexus cars
 		"niceName": "lexus"
 	}
 	
-###Sample Request 2
+### Sample Request 2
 
 Get the list of models and model/year IDs and their states (i.e. new, used, future) for __NEW__ Lexus cars
 
