@@ -50,7 +50,7 @@
 	    var post = posts[i],
 	        prop = post[property];
 	    
-	    //post.tags.pop();
+	    post.tags.pop();
 	    
 	    if (prop.constructor == String) {
 	      if (prop.toLowerCase() == value.toLowerCase()) {
@@ -76,17 +76,39 @@
 	  
 	  for (var i in posts) {
 	    var tagsList = '',
-	        post     = posts[i]/*,
-	        tags     = post.tags*/;
+	        post     = posts[i],
+	        tags     = post.tags;
 	        
-	    /*for (var j in tags) {
+	    for (var j in tags) {
 	      tagsList +=  tags[j].toLowerCase() ;
-	    }*/
+	    }
 	    
 	    $container.append(
 			'<li class="blog-post">'
-			+ post.title
-			+'</li>'
+	      	+ '<h3><a href="'
+	      	+ post.href
+	      	+ '">'
+	      	+ post.title
+	      	+ '</a></h3>'
+	      	+ '<div class="post-header">'
+			+ '<span class="author">'
+			+ '<a href="'
+			+ post.author_url
+			+ '">'
+			+ post.by
+			+ '</a>'
+			+ '</span>'
+			+ '<span class="date"><i class="icon-time">&nbsp;</i>'
+			+ post.date
+			+ '</span>'
+			+ '<span class="category"><i class="icon-cog">&nbsp;</i>'
+			+ post.category
+			+ '</span>'
+			+ '</div>'
+			+ '<a class="standart-btn" href="'
+	      	+ post.href
+	      	+ '">Read More...</a>'
+	        + '</li>'
 	    );
 	  }
 	}
