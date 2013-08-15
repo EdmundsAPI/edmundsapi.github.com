@@ -39,7 +39,7 @@
 		<div class="row-fluid overlay">
 			<div class="span2">&nbsp;</div>		
 			<div class="span10">
-				
+				{% if page.dropdown-link != '' %}
 				{% if page.overview == 'page' %}
 					<a class="version-bar-block {% if page.overview == 'page' %} active {% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/index.html" title="Overview">Overview</a>
 				{% elsif page.overview == 'page_version' %}
@@ -47,6 +47,7 @@
 				{% else  %}
 					<a class="version-bar-block" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/{{ page.version }}/index.html" title="Overview">Overview</a>
 				{% endif %}
+				
 				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
 
 				<div class="dropdown">
@@ -72,7 +73,7 @@
 					</ul>
 
 				</div>
-
+				{% endif %}
 			</div>
 		</div>
 	</div>

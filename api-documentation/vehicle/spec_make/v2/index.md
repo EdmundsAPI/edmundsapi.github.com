@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Vehicle API: Make Specification Resource v2'
+title : 'Spec: Make'
 title_active_left_menu: Spec Make
 title_parent: Api documentation
 
