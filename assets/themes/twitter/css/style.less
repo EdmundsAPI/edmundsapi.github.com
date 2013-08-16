@@ -2659,12 +2659,6 @@ div[class*="promo-section"] {
                padding:12px 52px 12px 34px;
              }
            }
-           
-           &:last-child {
-             a {
-               border-left:1px solid #DEDEDE;
-             }
-           }
            a {
              padding: 12px 45px;
              border-radius:0;
@@ -2673,18 +2667,11 @@ div[class*="promo-section"] {
            }
            
            &.active {
-             
              a {
+               border-color: transparent;
                color: #fff;
                background: #444;
-             }
-             &+li a {
-              border-color:transparent;
-             }
-             
-           }
-           &.active a:last-child {
-             border-color:transparent;
+             }      
            }
          }
       }
@@ -2697,14 +2684,14 @@ div[class*="promo-section"] {
         background: #444;
         
         label {
-          float: left;
+          display: inline;
           margin: 0 35px 0 0;
           color:#fff;
           font-size: 15px;
-          
-          input {
-            margin: 0 10px 3px 0;
-          }
+        }
+        
+        input {
+          margin: 0 10px 3px 0;
         }
       }
       

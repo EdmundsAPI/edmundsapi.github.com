@@ -19,9 +19,6 @@
     	<a href="#qualification">Qualification</a>
     </li>
     <li>
-    	<a href="#cost_of_work">Cost of work</a>
-    </li>
-    <li>
     	<a href="#location">Location</a>
     </li>
 </ul>
@@ -29,39 +26,16 @@
 <div class="tab-content">
     <div class="tab-pane  in active" id="qualification">
     	
-		<label class="social_shopping"><input type="checkbox" />Social shopping</label>
-		<label class="mibile"><input type="checkbox" />Mobile</label>
-		<label class="analytics"><input type="checkbox" />Analytics</label>
+		<input id="social_shopping" type="checkbox" /><label>Social shopping</label>
+		<input id="mobile" type="checkbox" /><label>Mobile</label>
+		<input id="analytics" type="checkbox" /><label>Analytics</label>
 		
 	</div>
-    <div class="tab-pane " id="cost_of_work">
-    	
-		<div class="layout-slider" style="width: 100%; display: none;">
-	      <span style="display: inline-block; width: 400px; padding: 0 5px;"><input id="Slider3" type="text" name="area" value="25;75" /></span> 
-	    </div>
-	    <a href="#" id="trigger">Show/Hide</a> 
-	
-	    <script type="text/javascript" charset="utf-8">
-	      var layout = $(".layout-slider"),
-	      trigger = $("#trigger");
-	      
-	      jQuery("#Slider3").slider({ from: 0, to: 500, heterogeneity: ['50/100', '75/250'], scale: [0, '|', 50, '|', '100', '|', 250, '|', 500], limits: false, step: 1, dimension: '&nbsp;$', skin: "plastic" });
-	      
-	      $(trigger).click( function(){
-	        layout.slideToggle("fast");
-	        $("#Slider3").slider().update();
-	      });
-	    </script>
-	
-    </div>
     
     <div class="tab-pane " id="location">
 
-		<label>Country&nbsp;.</label>
-		<label>State&nbsp;.</label>
-		<label>City&nbsp;.</label>
-		<label>ZIP&nbsp;.</label>
-		<label>Region&nbsp;.</label>
+		<input id="santa_monica" type="checkbox" /><label>Santa Monica</label>
+		<input id="san_francisco" type="checkbox" /><label>San Francisco</label>
 
 	</div>
 
