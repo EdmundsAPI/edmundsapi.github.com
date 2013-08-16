@@ -8,7 +8,7 @@ amount_version: 2
 spec: spec_model_year
 version: v1
 api: vehicle
-dropdown-link: 'Select endpoint'
+dropdown-link: ''
 
 
 level: 2
@@ -16,7 +16,20 @@ overview: page_version
 
 ---
 
+### This version has been deprecated
 
-### Test page {{page.version}}
+#### Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The following endpoints will be discontinued then:
 
-
+* v1/api/vehicle/modelyearrepository/findbyid
+* v1/api/vehicle/modelyearrepository/finddistinctyearwithnew
+* v1/api/vehicle/modelyearrepository/finddistinctyearwithneworused
+* v1/api/vehicle/modelyearrepository/finddistinctyearwithused
+* v1/api/vehicle/modelyearrepository/findfuturemodelyearsbymodelid
+* v1/api/vehicle/modelyearrepository/findmodelyearsbymakeandyear
+* v1/api/vehicle/modelyearrepository/findmodelyearsbymakemodel
+* v1/api/vehicle/modelyearrepository/findnewandusedmodelyearsbymakeidandyear
+* v1/api/vehicle/modelyearrepository/findnewmodelyearsbymodelid
+* v1/api/vehicle/modelyearrepository/findusedmodelyearsbymodelid
+* v1/api/vehicle/modelyearrepository/findyearsbycategoryandpublicationstate
+* v1/api/vehicle/modelyearrepository/formodelid
+* v1/api/vehicle/modelyearrepository/foryearmakemodel
