@@ -77,8 +77,12 @@
 	  for (var i in posts) {
 	    var tagsList = '',
 	        post     = posts[i],
-	        tags     = post.tags;
-	        
+	        tags     = post.tags,
+	        queryString = window.location.search.substring(1),
+	        iconClass;
+
+	    iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
+
 	    for (var j in tags) {
 	      tagsList +=  tags[j].toLowerCase() ;
 	    }
@@ -87,6 +91,8 @@
 			'<li class="blog-post">'
 	      	+ '<h3><a href="'
 	      	+ post.href
+	      	+ '?'
+	      	+ queryString
 	      	+ '">'
 	      	+ post.title
 	      	+ '</a></h3>'
@@ -101,7 +107,9 @@
 			+ '<span class="date"><i class="icon-time">&nbsp;</i>'
 			+ post.date
 			+ '</span>'
-			+ '<span class="category"><i class="icon-cog">&nbsp;</i>'
+			+ '<span class="category"><i class="'
+			+ iconClass
+			+ '">&nbsp;</i>'
 			+ post.category
 			+ '</span>'
 			+ '</div>'
@@ -110,6 +118,8 @@
 			+ '</p>'
 			+ '<a class="standart-btn" href="'
 	      	+ post.href
+	      	+ '?'
+	      	+ queryString
 	      	+ '">Read More...</a>'
 	        + '</li>'
 	    );
@@ -127,15 +137,25 @@
 	  $container.find('p.nadda').text(txt);
 	};
 
+	var highlightMenuItem = function(type, value) {
+		var list = $('[name="' + type +'"]'),
+			listItem;
+		list.find('li').removeClass('active');
+		listItem = list.find('[name="' + value +'"]');
+		listItem.addClass('active');
+
+	};
 
 	$(function() {
 	  var map = {
 	    'category' : getParam('category'),
-	    'tags' : getParam('tag')
+	    'tags' : getParam('tag'),
+	    'archive' : getParam('date')
 	  };
 
 	  $.each(map, function(type, value) {
 	    if (value !== null) {
+	      highlightMenuItem(type, value);
 	      $.getJSON('/search.json', function(data) {
 	        posts = filterPostsByPropertyValue(data, type, value);
 	        if (posts.length === 0) {

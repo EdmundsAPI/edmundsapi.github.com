@@ -1,18 +1,18 @@
 <ul class="blog-menu">
 	<li><span>Categories</span>
-		<ul>
+		<ul name="category">
 	  	  {% assign categories_list = site.categories %}  
 	  	  {% include JB/categories_list %}
 	  	</ul>
 	</li>
 	<li><span>Tags</span>
-		<ul>
+		<ul name="tags">
 			{% assign tags_list = site.tags %}
       		{% include JB/tags_list %}
 		</ul>
 	</li>
 	<li><span>Archive</span>
-		<ul>
+		<ul name="archive">
     {% assign posts_collate = site.posts %}
     {% include JB/posts_collate %}
 		</ul>
