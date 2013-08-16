@@ -3057,12 +3057,13 @@ div[class*="promo-section"] {
       a {
         color: @color_text;
         &:hover {
+          color: @color_link_hover;
           cursor: pointer;
         }
         &.disable {
           color: #bbb;
           &:hover {
-            cursor: auto;
+            cursor: default;
           }
         }
       }
