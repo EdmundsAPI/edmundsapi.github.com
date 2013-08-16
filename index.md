@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Edmunds
+title: Edmunds Developer Network - Welcome to the Edmunds API
 tagline: Supporting tagline
 ---
 
