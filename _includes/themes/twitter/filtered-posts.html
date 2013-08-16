@@ -43,7 +43,6 @@
 	};
 
 	var filterPostsByPropertyValue = function(posts, property, value) {
-	  console.log("filterPostsByPropertyValue, property = " + property + '; value = ' + value);
 	  var filteredPosts = [];
 	  posts.pop();
 	  for (var i in posts) {
@@ -69,7 +68,6 @@
 	};
 
 	var layoutResultsPage = function(property, value, posts) {
-	  console.log('start function layoutResultsPage()');
 	  var $container = $('#search-results');
 	  if ($container.length == 0) return;
 	  
@@ -127,7 +125,6 @@
 	}
 
 	var noResultsPage = function(property, value) {
-	  console.log('start function noResultPage()');
 	  var $container = $('#search-results');
 	  if ($container.length == 0) return;
 	  

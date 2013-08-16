@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: blog
 title: Developer Blog
+
+page_size: 3
 
 class_page: blogPage
 ---
-
-{% include themes/twitter/blog/index.html %}
