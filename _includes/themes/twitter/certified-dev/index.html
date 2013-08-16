@@ -57,7 +57,15 @@
 		<div class="container">
 			
 			<div class="blokHover block2">&nbsp;</div>
-			<div class="blokHover block1">&nbsp;</div>
+			<div class="blokHover block1 leftBlock1">&nbsp;</div>
+			
+			<div class="blokHover topBlock1 leftBlock1"> &nbsp;</div>
+			<div class="blokHover bottomBlock1 leftBlock1">&nbsp;</div>
+			
+			<div class="blokHover topBlock2">&nbsp;</div>
+			<div class="blokHover bottomBlock2">&nbsp;</div>
+
+			
 			
 			<h3 class="titleDeveloper">Certified developer</h3>
 			<h3 class="titleBusinessOwner">Business Owner</h3>
@@ -98,15 +106,15 @@
 					    <div class="tab-content">
 						    <div class="tab-pane " id="analitics">
 						    	<p>Going beyond what you see in the data. </p>
-						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
+						    	<a class="moreInf" href="{{ PATH }}/certified-dev/cdp_badge.html#analitics" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
 						    <div class="tab-pane " id="socialShopping">
 						    	<p>Creating automotive experiences that are social in nature. Facebook apps and Twitter integration are some of the things this developer can do. </p>
-						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
+						    	<a class="moreInf" href="{{ PATH }}/certified-dev/cdp_badge.html#socialShopping" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
 						    <div class="tab-pane  in active" id="modile">
 						    	<p>Mobile web and native mobile application developer. Expertise is building out automotive solutions for the small screens.</p>
-						    	<a class="moreInf" href="{{ PATH }}/under_construction.html" title="Discover what is CDP badge">Discover what is CDP badge</a>
+						    	<a class="moreInf" href="{{ PATH }}/certified-dev/cdp_badge.html#mobile" title="Discover what is CDP badge">Discover what is CDP badge</a>
 						    </div>
 					    </div>
 					     
@@ -203,7 +211,7 @@
     		
     		isOver = true;
     		
-    		var thisClass = $(this).hasClass('block1');
+    		var thisClass = $(this).hasClass('leftBlock1');
     		
     		if (thisClass){
     			
@@ -231,13 +239,13 @@
 	    		
 	    		if(isOver == false){
 	    			
-	    			section2.removeClass('developerActive');
+	    			section2.removeClass('busOwnerActive developerActive');
 	    			
-	    			section2.removeClass('busOwnerActive');
+	    			//section2.removeClass('busOwnerActive');
 	    			
 	    		}
 	    		
-    		}, 200);
+    		}, 100);
     		
     	};
     	
