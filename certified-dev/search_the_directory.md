@@ -9,8 +9,11 @@ cdp_class_page: sdpDirectory
 ---
 
 
-<a class="linkAboutSDP" href="#" title="About Certified Developer Directory">About Certified Developer Directory
-</a>
+<a href="#myModal" role="button" class="btn linkAboutSDP" data-toggle="modal" title="About Certified Developer Directory">About Certified Developer Directory</a>
+ 
+
+
+
 <p>This is the definitive directory of developers working with Edmunds API.
 </p>
 

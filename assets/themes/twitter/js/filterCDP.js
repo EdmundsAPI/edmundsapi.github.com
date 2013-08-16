@@ -1,12 +1,22 @@
+(function() {
+	
+
 var $inputList = $('#qualification, #location').find('input');
 
 var $developers = $('.wrapperDeveloper');
 
-var wrapperButtons = $('#selectedQual');	
+var wrapperButtons = $('#selectedQual');
+
+var $inputLocation = $('#location');	
 
 	function init(){
 		
+		//count Result
+		countResult();
 		
+		//count location developers
+		countLocationDev();
+
 		//checkbox is default
 		$inputList.each(function(){
 
@@ -21,12 +31,43 @@ var wrapperButtons = $('#selectedQual');
 	
 	//count Result
 	function countResult(){
+		var countDev = 0;
 		
-		var anountResult = $('.wrapperDeveloper').length;
+		$developers.each(function(){
+			
+			if(!$(this).hasClass('hide')){
+				countDev++;
+			}
+			
+		});
 		
-		var wrappResult =  $('#amountDev');
+		$('#amountDev').text(countDev);
+	};
+	
+	//count location developers
+	function countLocationDev(){
 		
-		wrappResult.text(anountResult);
+		$inputLocation.find('input').each(function(){
+			
+			var valueID = $(this).attr('id');
+			
+			var countLocation = 0;
+			
+			$developers.each(function(){
+				
+				if(!$(this).hasClass('hide') && $(this).data('location') == valueID){
+					
+					countLocation++;
+					
+				}
+				return countLocation;
+			});
+			
+			$('label[for="'+ valueID +'"]').find('.amountCityDev').text(countLocation);
+			
+		});
+		
+		
 		
 	};
 	
@@ -35,7 +76,7 @@ var wrapperButtons = $('#selectedQual');
 		
 		var checkbox = $(this);
 		
-		var nameLabel = $('.tab-content label[name="'+ checkboxID +'"]').text();
+		var nameLabel = $('.tab-content label[for="'+ checkboxID +'"]').text();
 			
 		wrapperButtons.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
 
@@ -54,22 +95,27 @@ var wrapperButtons = $('#selectedQual');
 		
 	};
 	
-	// delete: click selected markers
-	$('.removeOptionFilter').on('click', function(){
-		
-		alert('test');
+	// delete: click selected markers  (.removeOptionFilter)
+	$(document).on('click','.removeOptionFilter', function(){
 		
 		var cross = $(this);
 		
 		var arrClass = cross.parent('.itemFilterBadge').attr('class').split(' ');
 		
-		console.log(arrClass);
+		var class2 = arrClass[1];
+		
+		$('#'+ class2 +'').prop("checked", false);
+		
+		cross.parent('.itemFilterBadge').remove();
+		
+		// check	
+		check();
 		
 	});
 	
-
+	// check
 	function check(event){
-
+			
 			amountCheck = $('#qualification, #location').find('input:checked').length;
 
 			inputID = $(this).attr('id');
@@ -98,7 +144,8 @@ var wrapperButtons = $('#selectedQual');
 			// count Result
 			countResult();
 			
-			//event.preventDefault();
+			//count location developers
+			countLocationDev();
 
 	};
 
@@ -176,5 +223,4 @@ var wrapperButtons = $('#selectedQual');
 	//initialization
 	init();
 
-
-	
+}());

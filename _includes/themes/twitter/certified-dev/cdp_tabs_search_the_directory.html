@@ -1,19 +1,4 @@
 
-<style type="text/css" media="screen">
-	  body { background: #EEF0F7; }
-	 .layout { padding: 50px; font-family: Georgia, serif; }
-	 .layout-slider { margin-bottom: 60px; width: 50%; }
-	 .layout-slider-settings { font-size: 12px; padding-bottom: 10px; }
-	 .layout-slider-settings pre { font-family: Courier; }
-	 .jslider {
-	 	top: 2.6em;
-	 	height: 5em;
-	 }
-	 .jslider .jslider-value {
-	 	color:#000;
-	 }
-	</style>
-
 <ul class="nav nav-tabs" id="myTab">
     <li class="active">
     	<a href="#qualification">Qualification</a>
@@ -26,16 +11,16 @@
 <div class="tab-content">
     <div class="tab-pane  in active" id="qualification">
     	
-		<input id="social_shopping" type="checkbox" /><label name="social_shopping">Social shopping</label>
-		<input id="mobile" type="checkbox" /><label name="mobile">Mobile</label>
-		<input id="analytics" type="checkbox" /><label name="analytics">Analytics</label>
+		<input id="social_shopping" type="checkbox" /><label for="social_shopping">Social shopping</label>
+		<input id="mobile" type="checkbox" /><label for="mobile">Mobile</label>
+		<input id="analytics" type="checkbox" /><label for="analytics">Analytics</label>
 		
 	</div>
     
     <div class="tab-pane " id="location">
 
-		<input id="santa_monica" type="checkbox" /><label name="santa_monica">Santa Monica</label>
-		<input id="san_francisco" type="checkbox" /><label name="san_francisco">San Francisco</label>
+		<input id="santa_monica" type="checkbox" /><label for="santa_monica">Santa Monica, CA (<span class="amountCityDev">0</span>)</label>
+		<input id="san_francisco" type="checkbox" /><label for="san_francisco">San Francisco, CA (<span class="amountCityDev">0</span>)</label>
 
 	</div>
 
@@ -49,7 +34,7 @@
     $('#myTab a').click(function (e) {
 	    e.preventDefault();
 	    $(this).tab('show');
-    })
+    });
 </script>
 
 

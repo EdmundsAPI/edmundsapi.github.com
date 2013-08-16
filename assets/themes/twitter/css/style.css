@@ -157,7 +157,9 @@ header {
   margin: 0 7px 0 0;
   vertical-align: baseline;
 }
-.register a {
+.register a:active, 
+.register a:link,
+.register a:focus {
   color: #BF2F37;
 }
 .headerLinks a, .headerLinks span {
@@ -677,7 +679,11 @@ ul.multiLevelMenu {
 .multiLevelMenu > li > a {
 	font-weight: 700;
 }
-.multiLevelMenu a {
+.multiLevelMenu a,
+.multiLevelMenu a:link,
+.multiLevelMenu a:active,
+.multiLevelMenu a:focus {
+	color:#444;
 	font-size: 13px;
 }
 .multiLevelMenu a:hover {
