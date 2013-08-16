@@ -1,6 +1,7 @@
 <div class="container contentPage">
 
 	{% include themes/twitter/title-page.html %}
+	<input type="hidden" name="page-size" value="{{ page.page_size }}" />
 
 	<div class="row lineVertical">
 		<div class="span2">&nbsp;</div>
@@ -13,11 +14,124 @@
 				{% include themes/twitter/blog/blog-menu.html %}
 			</div>
 			<div class="span10">
-				{% include themes/twitter/blog/blog-posts.html %}
+				<ul class="blog-posts" id="search-results">&nbsp;</ul>
 
-        		{% include themes/twitter/blog/blog-paginator.html %}
-        		
+				<div class="wrapNextPrev">
+					<a id="prevMenuItem">Previous</a>
+					<a id="nextMenuItem">Next</a>
+				</div>
+
 			</div>
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+
+	$(function() {
+	  	var prevButton = $('#prevMenuItem'),
+	  		nextButton = $('#nextMenuItem'),
+	  		activPage = 0,
+	  		pageSize,
+	  		pages, 
+	  		posts,
+	  		totalPosts;
+
+	  	$('#prevMenuItem').on('click', function() {
+	  		if ($(this).hasClass('disable')) {
+	  			return;
+	  		}
+	  		activPage--;
+	  		$('#nextMenuItem').removeClass('disable');  		
+		    if (activPage == 0) {
+		    	prevButton.addClass('disable');
+		    }
+		    drawPostList();
+			$("html, body").animate({ scrollTop: 0}, 300 );
+	  	});
+
+	  	$('#nextMenuItem').on('click', function() {
+	  		if ($(this).hasClass('disable')) {
+	  			return;
+	  		}
+	  		activPage++;
+	  		$('#prevMenuItem').removeClass('disable'); 
+		    if (activPage == pages - 1) {
+		    	nextButton.addClass('disable');
+		    }
+		    drawPostList();
+			$("html, body").animate({ scrollTop: 0}, 300 );
+	  	});
+
+	  	var drawPostList = function() {
+			var $container = $('#search-results'),
+				firstPost,
+				lastPost;
+			if ($container.length == 0) return;
+
+	    	$container.html('');
+
+			firstPost = activPage * pageSize;
+			lastPost = ((activPage + 1 ) * pageSize <= posts.length ) ? (activPage + 1 ) * pageSize : posts.length ;
+
+			for (var i = firstPost; i < lastPost; i++) {
+			  	var post = posts[i],
+			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
+
+			    $container.append(
+					'<li class="blog-post">'
+			      	+ '<h3><a href="'
+			      	+ post.href
+			      	+ '">'
+			      	+ post.title
+			      	+ '</a></h3>'
+			      	+ '<div class="post-header">'
+					+ '<span class="author">'
+					+ '<a href="'
+					+ post.author_url
+					+ '">'
+					+ post.by
+					+ '</a>'
+					+ '</span>'
+					+ '<span class="date"><i class="icon-time">&nbsp;</i>'
+					+ post.date
+					+ '</span>'
+					+ '<span class="category"><i class="'
+					+ iconClass
+					+ '">&nbsp;</i>'
+					+ post.category
+					+ '</span>'
+					+ '</div>'
+					+ '<p>'
+					+ post.excerpt
+					+ '</p>'
+					+ '<a class="standart-btn" href="'
+			      	+ post.href
+			      	+ '">Read More...</a>'
+			        + '</li>'
+			    );
+			}
+		}
+
+		var initializePaging = function() {
+			pageSize = $('[name="page-size"]').val();
+		    pages = Math.ceil(posts.length / pageSize);
+
+		    if (activPage == 0) {
+		    	prevButton.addClass('disable');
+		    }
+		    if (activPage == pages - 1) {
+		    	nextButton.addClass('disable');
+		    }
+
+		}
+
+	  	$.getJSON('/search.json', function(data) {
+		    data.pop();
+		    posts = data;	    
+		    initializePaging();
+		    drawPostList();
+		});
+	});
+
+</script>
