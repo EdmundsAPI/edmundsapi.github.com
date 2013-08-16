@@ -29,6 +29,13 @@
   src: local('Oswald Bold'), local('Oswald-Bold'), url(../font-famaly/oswald/v7/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
+a, a:link, a:active, a:focus {
+  color: @color_regular_link;
+}
+a:hover {
+  color: @color_green;
+  text-decoration: none;
+}
 
 // Drop shadows
 .box-shadow(@shadow) {
@@ -2769,12 +2776,12 @@ div[class*="promo-section"] {
                 padding: 0 11px 0 0;
                 margin: 0 12px 0 0;
                 border-right: 1px solid #CCC;
-                line-height: 14px;
+                line-height: 16px;
                 
                 &:last-child {
                   padding: 0 0 0 17px;
                   border: 0;
-                  background: url('../img/certified_developer/search_the_directory/mark_location.png') left bottom no-repeat;
+                  background: url('../img/sprite_icons.png') left 0 no-repeat;
                 }
               }
             }
@@ -3063,3 +3070,206 @@ div[class*="promo-section"] {
     }
   }
 // end 'Blog' page
+
+
+// start Profile page 
+
+.pageProfileDevelop {
+  width:1184px;
+  margin:0 auto;
+  padding: 25px 0 0;
+  
+  header {
+    margin: 0 0 28px;
+    padding: 0;
+    
+    h1 {
+      margin: 0 0 12px;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+    
+    .standart-btn {
+      float:right;
+      padding: 0 41px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 51px;
+    }
+    p {
+      max-width: 780px;
+      color: #525252;
+    }
+  }
+  
+  section.inform {
+    .blockGeneralExampl {
+      height: 156px;
+      margin:0 0 8px 0;
+      border-right: 1px solid #dedede;
+      border-bottom: 2px solid #dedede;
+      background: #fff;
+    }
+    .blockContactReviews {
+      height: 156px;
+      border-right: 1px solid #dedede;
+      border-bottom: 2px solid #dedede;
+      background: #fff;
+    }
+    .iconDeveloper {
+      background: #555;
+    }
+    .blockInform  {
+      float:left;
+      width: 365px;
+      padding:18px 0 0 35px;
+      &:last-child {
+        float:right;
+        padding-right:36px;
+        text-align: right;
+      } 
+       
+      h3 {
+        margin: 0 0 10px;
+        font-size:21px;
+        text-transform: uppercase;
+      }
+      
+    }
+      
+     // General
+     .wrapperGeneral {
+        ul.addInf {
+          margin:0 0 14px 0; 
+          list-style: none;
+          li {
+            float:left;
+            color: #666;
+            font-size: 12px;
+            line-height: 18px;
+            &:first-child {
+              padding:0 12px 0 0;
+              margin:0 12px 0 0;
+              border-right: 1px solid #666;
+            }
+          }
+        }
+        .badges {
+          span {
+            float: left;
+            display: inline-block;
+            margin: 0 8px 0 0;
+            line-height:61px;
+          }
+          ul {
+            list-style: none;
+            li {
+              float:left;
+              margin: 0 10px 0 0;
+              a {
+                display: inline-block;
+                width:53px;
+                height: 61px;
+                background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png/loader.gif');
+                background-repeat: no-repeat;  
+                
+                &.badge-social-shopping {
+                  background-position: 0 0;
+                }
+                &.badge-mobile {
+                  background-position: 0 -61px;
+                }
+                &.badge-analytics {
+                  background-position: 0 -122px;
+                }
+              }
+              
+              
+            }
+          }
+        }
+      }
+      
+      // Contacts
+      .wrapperContsnts {
+        ul {
+          margin:0;
+          padding:0;
+          list-style: none;
+          
+          li {
+            margin: 0 0 9px;
+          }
+          
+          span {
+            margin: 0 12px 0 0;
+            background-image: url('../img/sprite_icons.png');
+            background-repeat: no-repeat;
+            padding: 0 0 0 22px;
+          }
+          
+          .location {
+            background-position: 0 3px;
+          }
+          .email {
+            background-position: 0 -24px;
+          }
+          .phone {
+            background-position: 0 -52px;
+          }
+          .skype {
+            background-position: 0 -76px;
+          }
+          .twitter {
+            background-position: 0 -100px;
+          }
+        }
+      }
+      
+      //WORK EXAMPLES
+      .wrapperExamples {
+        
+        span {
+          display: block;
+          margin: 0 0 5px 0;
+          color: #666;
+          font-size: 12px;
+        }
+        ul {
+          list-style: none; 
+          a {
+            font-size: 15px;
+          }
+        }
+        
+      }
+      
+      
+  }
+ 
+}
+
+// end Profile page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
