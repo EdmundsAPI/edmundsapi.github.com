@@ -157,6 +157,7 @@ header {
   margin: 0 7px 0 0;
   vertical-align: baseline;
 }
+.register a,
 .register a:active, 
 .register a:link,
 .register a:focus {
