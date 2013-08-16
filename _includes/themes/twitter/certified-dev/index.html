@@ -185,88 +185,16 @@
 {% comment %}<!-- Script for show hover block of section2 "Certified Developer" page -->{% endcomment %}
 <script type="text/javascript">
     
-  /* $(function(){
-    	
-    	var linkBusOwnBlok = $('.linkBusOwnBlok');
-    	var linkDevBlok = $('.linkDevBlok');
-    	
-    	var blokDev = $('.discriptBlokDev');
-    	var blokBisOwner = $('.discriptBlokBisOwner');
-    	var linkHover = $('.linkDevBusOwn');
-
-    	var section2 = $('.section2');
-    	
-    	linkHover.on('mouseover', function(){
-    		var element = $(this);
-
-    		var hasDataClass = element.data('class');
-    		
-    		console.log(hasDataClass);
-    		
-    		if(hasDataClass == 'linkBusOwnBlok') {
-    			
-    			var classBlok = 'busOwnerActive';
-    			var blok = $('.discriptBlokBisOwner');
-    			section2.addClass(classBlok);
-    			
-    		} else if (hasDataClass == 'linkDevBlok') {
-    			
-    			classBlok = 'developerActive'
-    			blok = $('.discriptBlokDev');
-    			section2.addClass(classBlok);
-    			
-    		}
-    		
-    		var isOver = false;
-    		
-    		function onMouseOverblokDev(){
-				return isOver = true;
-			}
-			
-			function onMouseLeaveblokDev(){
-				section2.removeClass(classBlok);
-			};
-			
-			function onMouseOver(){
-				isOver = true;
-				section2.addClass(classBlok);
-			};
-			
-			function onMouseLeave() {
-					
-				isOver = false;
-				
-				setTimeout(function(){
-					
-					blok.on('mouseover', onMouseOverblokDev);
-					
-					if(isOver == false) {
-						section2.removeClass(classBlok);
-					}
-					
-				}, 500);
-			};
-			
-			element.on('mouseover', onMouseOver)
-							.on('mouseleave', onMouseLeave);
-
-			blok.on('mouseover', onMouseOverblokDev)
-						.on('mouseleave', onMouseLeaveblokDev);
-    		
-    });
-
-				
-
-			
-    }); */
-   
+  
    
    $(function(){
     	
     	var discriptBlokBisOwner = $('.discriptBlokBisOwner');
+    	
     	var discriptBlokDev = $('.discriptBlokDev');
     	
     	var blokHover = $('.blokHover');
+    	
     	var section2 = $('.section2');
     	
     	var isOver = false;
@@ -278,9 +206,13 @@
     		var thisClass = $(this).hasClass('block1');
     		
     		if (thisClass){
+    			
     			section2.addClass('busOwnerActive');
+    			
     		} else {
+    			
     			section2.addClass('developerActive');
+    			
     		}
     		
     	};
@@ -288,32 +220,35 @@
     	function onMouseLeave(){
     		
     		isOver = false;
-    		
-    		
-    		
-    		
-    		
+
     		setTimeout(function(){
+    			
     			$('.discriptBlokBisOwner, .discriptBlokDev').on('mouseover', function(){
+    				
 	    			 isOver = true;
+	    			 
 	    		});
 	    		
 	    		if(isOver == false){
+	    			
 	    			section2.removeClass('developerActive');
+	    			
 	    			section2.removeClass('busOwnerActive');
+	    			
 	    		}
 	    		
-	    		
     		}, 200);
-    		
     		
     	};
     	
     	blokHover.on('mouseover', onMouseOver).on('mouseleave', onMouseLeave);
     	
     	$('.discriptBlokBisOwner, .discriptBlokDev').on('mouseleave', function(){
+    		
     		section2.removeClass('developerActive');
+    		
 	    	section2.removeClass('busOwnerActive');
+	    	
     	});
     	
     });
