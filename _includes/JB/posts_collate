@@ -15,7 +15,7 @@ Usage:
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
         
--->{% endcomment %}
+
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
@@ -49,6 +49,40 @@ Usage:
           <ul>
         {% endif %}
       {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign posts_collate = nil %}
+
+
+-->{% endcomment %}
+
+
+
+{% if site.JB.posts_collate.provider == "custom" %}
+  {% include custom/posts_collate %}
+{% else %}
+  {% for post in posts_collate  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+  
+    {% if forloop.first %}
+      <li><a href="{{ BASE_PATH }}{{{ site.JB.archive_path }}">{{this_month}} ({{this_year}})</a></li>
+    {% endif %}
+  
+   {% if forloop.last %}
+    {% else %}
+
+    {% if this_year != next_year %}
+      <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">{{next_month}} ({{next_year}})</a></li>
+    {% else %}    
+      {% if this_month != next_month %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">{{next_month}} ({{this_year}})</a></li>
+      {% endif %}
+    {% endif %}
+
     {% endif %}
   {% endfor %}
 {% endif %}
