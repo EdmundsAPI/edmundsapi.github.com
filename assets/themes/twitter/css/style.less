@@ -2905,42 +2905,6 @@ div[class*="promo-section"] {
         .blog-posts {
           list-style: none;
           margin-left: 0;
-          /*h3 {
-            font-family:'Oswald700', Arial, sans-serif;
-            font-weight: bold;
-            margin-bottom: 13px;
-            a:hover, a:focus {
-              text-decoration: none;
-            }
-          }
-          li {
-            padding: 40px 0 26px 25px;
-            border-bottom: 1px solid @color_gray_line;
-            .standart-btn {
-              margin: 15px 0;
-              font-size: 14px;
-              padding: 0 17px;
-            }
-          }
-        }
-        .post-header {
-          font-size: 12px;
-          color: #6A6A6A;
-          margin-bottom: 30px;
-          span {
-            margin-right: 15px;
-            i {
-              margin-right: 5px;
-              vertical-align: text-bottom;
-            }
-          }
-          .author {
-            color: @color_regular_link;
-            &:before {
-              content: "by ";
-              color: @color_text;
-            }
-          }*/
         }
       }      
     }  
@@ -2949,18 +2913,24 @@ div[class*="promo-section"] {
   .blog-post {
     padding: 40px 0 26px 25px;
     border-bottom: 1px solid @color_gray_line;
+    color: @color_text;
     h3 {
       font-family:'Oswald700', Arial, sans-serif;
       font-weight: bold;
       margin-bottom: 13px;
-      a:hover, a:focus {
-        text-decoration: none;
+      a {
+        color: inherit;
+        &:hover, &:focus {
+          color: @color_link_hover;
+          text-decoration: none;
+        }
       }
     }
     .standart-btn {
       margin: 15px 0;
       font-size: 14px;
       padding: 0 17px;
+      color: white;
     }
     .post-header {
       font-size: 12px;
@@ -3043,6 +3013,7 @@ div[class*="promo-section"] {
     font-size: 12px;
     padding-top: 40px;
     list-style: none;
+    color: @color_text;
     &>li>span {
       font-weight: bold;
       display: inline-block;
@@ -3060,7 +3031,9 @@ div[class*="promo-section"] {
         text-transform: capitalize;
         line-height: 34px;
         a {
+          color: inherit;
           &:hover, &:focus {
+            color: @color_link_hover;
             text-decoration: none;
           }
           span {
