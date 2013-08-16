@@ -197,7 +197,10 @@ nav.headerLinks {
   background: none;
   box-shadow: none;
 }
-.linkGetStart {
+.navbar a.linkGetStart {
+	color: #fff;
+}
+a.linkGetStart {
 	position:absolute;
 	right:0;
 	width:180px;
