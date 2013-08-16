@@ -3080,6 +3080,19 @@ div[class*="promo-section"] {
       position: relative;
       left: 0;
       border-top: 0;
+      a {
+        color: @color_text;
+        &:hover {
+          color: @color_link_hover;
+          cursor: pointer;
+        }
+        &.disable {
+          color: #bbb;
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
     }
   }
 
