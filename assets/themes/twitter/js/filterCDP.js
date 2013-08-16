@@ -2,10 +2,11 @@ var $inputList = $('#qualification, #location').find('input');
 
 var $developers = $('.wrapperDeveloper');
 
-	
+var wrapperButtons = $('#selectedQual');	
 
 	function init(){
-
+		
+		
 		//checkbox is default
 		$inputList.each(function(){
 
@@ -17,19 +18,74 @@ var $developers = $('.wrapperDeveloper');
 		$inputList.on('click', check);
 
 	};
+	
+	//count Result
+	function countResult(){
+		
+		var anountResult = $('.wrapperDeveloper').length;
+		
+		var wrappResult =  $('#amountDev');
+		
+		wrappResult.text(anountResult);
+		
+	};
+	
+	// create button 
+	function createButton(checkboxID){
+		
+		var checkbox = $(this);
+		
+		var nameLabel = $('.tab-content label[name="'+ checkboxID +'"]').text();
+			
+		wrapperButtons.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
 
-	function check(){
+	};
+	
+	// delete button 
+	function deleteButton(checkboxID) {
+		
+		var checkbox = $(this);
+		
+		if(!this.checked) {
+			
+			$('#selectedQual').find('.'+ checkboxID +'').detach();
+			
+		}
+		
+	};
+	
+	// delete: click selected markers
+	$('.removeOptionFilter').on('click', function(){
+		
+		alert('test');
+		
+		var cross = $(this);
+		
+		var arrClass = cross.parent('.itemFilterBadge').attr('class').split(' ');
+		
+		console.log(arrClass);
+		
+	});
+	
+
+	function check(event){
 
 			amountCheck = $('#qualification, #location').find('input:checked').length;
 
 			inputID = $(this).attr('id');
 
 			if(this.checked){
+				
+				// create button 
+				createButton(inputID);
 
 				//developers prthing
 				$developers.each(developerParthADD);
 
 			} else {
+				
+				// delete button 
+				deleteButton(inputID);
 
 				if(amountCheck == 0) {
 
@@ -38,11 +94,16 @@ var $developers = $('.wrapperDeveloper');
 
 				$developers.each(developerParthDelete);	
 			}
+			
+			// count Result
+			countResult();
+			
+			//event.preventDefault();
 
 	};
 
 	//developerParthADD
-	function developerParthADD(){
+	function developerParthADD(event){
 
 		///data-badge
 		var arrDataBadge = $(this).data('badge').split(';');
@@ -68,6 +129,8 @@ var $developers = $('.wrapperDeveloper');
 				}
 
 			}
+			
+		//event.preventDefault();
 		
 	};
 
@@ -104,6 +167,8 @@ var $developers = $('.wrapperDeveloper');
 			$(this).removeClass('hide');
 
 		}
+	
+		//event.preventDefault();
 		
 	};
 
