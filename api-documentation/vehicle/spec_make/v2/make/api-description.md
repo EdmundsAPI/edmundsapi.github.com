@@ -53,7 +53,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = res.models[0].name;
+					body.innerHTML = "The first model name for Lexus in the response is " + res.models[0].name;
 				}
 
 				// Oops, Houston we have a problem!

@@ -20,7 +20,7 @@ number: 3
 
 ###Response format
 
-#### JSON Response w/ view=basic (default)
+#### JSON Response w/ <code>view=basic</code> (default)
 
 	{
 		"makesCount": {integer}
@@ -28,10 +28,10 @@ number: 3
 
 
 | Property      | Description                         | Visibility                |
-|:-------------:|:------------------------------------|:------------------------- |
+|:--------------|:------------------------------------|:------------------------- |
 | makesCount    | The total count of car makes/brands | Edmunds, Partners, Public |
 
-#### JSON Response w/ view=full
+#### JSON Response w/ <code>view=full</code>
 
 	{
 	   "makes":[
@@ -49,7 +49,7 @@ number: 3
 	}
 	
 | Property      | Description                         	| Visibility                |
-|:-------------:|:--------------------------------------|:------------------------- |
+|:--------------|:--------------------------------------|:------------------------- |
 | makes		    | The total count of car makes			| Edmunds, Partners, Public |
 | modelsCount	| The total count of this model		 	| Edmunds, Partners, Public |
 | niceName	    | The URL-friendly name of this model 	| Edmunds, Partners, Public |

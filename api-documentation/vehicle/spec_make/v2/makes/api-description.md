@@ -50,7 +50,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = res.makes[0].name;
+					body.innerHTML = "The first make in the response is " + res.makes[0].name;
 				}
 
 				// Oops, Houston we have a problem!

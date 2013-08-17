@@ -10,70 +10,30 @@ weight: 1
 
 ---
 
+Edmunds.com offers _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is provided further down this page.
 
-{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
-{% include themes/twitter/api_overview/table_available_api.html %}
+This API Overview covers the core concepts that you need to know before you could use the APIs. You will be able to dig deeper by visiting each API's overview page to learn more about specifics related to that particular API.
 
-###API AVAILABILITY
+### DATA HIERARCHY
 
-We offer FREE access to four distinct APIs: Vehicle, Editorial, Dealer and Inventory. Although access to these APIs is free, their availability varies based on the **access tier** you're in. We currently offer three access tiers:
+Exploring a new API could be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
-* **PUBLIC**: Any registered developer the uses our API in accordance with our Terms and Condition.
-* **PARTNERS**: Edmunds API Partners who are given access to the API. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
-* **EDMUNDS**: Edmunds properties, including website and mobile applications.
+In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the **car Style ID** or the **car Model Year ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
-By default, all developers are automatically placed in the PUBLIC tier upon registration. If you're in the PUBLIC tier and want to become an Edmunds API Partner, please [let us know](mailto:api@edmunds.com).
+_Car Make –> Car Model –> **Car Model Year** –> Car Trim –> **Car Style**_
 
-An API Partner is one of the following:
+In the _Useful API Calls_ section below, we'll show you how to get both IDs in one API call!
 
-* An Edmunds client with an existing contract/agreement/relationship with Edmunds.com, Inc.
-* A Certified Developer.
+* **Car Make:** It's either the name of the car's manufacturer or, if the manufacturer has more than one operating unit, the name of that unit.
+* **Car Model:** A specific vehicle brand identified by a name or number (and which is usually further classified by trim or style level).
+* **Car Model Year:** For a vehicle model, the calendar year designation assigned by the manufacturer to the annual version of that model.
+* **Car Style:** A style is the specific version of a particular model. Each style offers different levels of equipment and a unique price point. Manufacturers have their own way of determining styles and these are not necessarily comparable across models.
 
+[Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/).
 
-###GETTING STARTED
+### URI Format
 
-Before you will be able go use the Edmunds API, you will need to **read** and **agree** to our Terms of Service.
-
-<div class="blogGray">
-Ready to rock and roll? 
-<a class="linkGetKey" href="#" title="Get your API key">
-Get your API key
-</a>
-  before diving
-</div>
-
-
-###THE EDMUNDS APIs AT A GLANCE
-
-
-All our API calls have the following format:
-
-	http://api.edmunds.com/{version}/{call path}?{call parameters}&fmt={format}&api_key={api_key}&callback={fn}
-
-So let's break it down:
-
-<div class="tableDate">
-<table>
-	<tr>
-		<td>Base URL</td>
-		<td>http://api.edmunds.com/{version}/</td>
-	</tr>
-	<tr>
-		<td>HTTP method</td>
-		<td>GET</td>
-	</tr>
-	<tr>
-		<td>Response Format</td>
-		<td>JSON, JSONP</td>
-	</tr>
-</table>
-</div>
-
-Now let's take a look at what lies within the braces within the API call.
-
-
-#####**Common Parameters**
-The following parameters may or may not be required in every single API call:
+All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}**?fmt=**{response format}**&api\_key=**{API key}**_
 
 <table class="tableParametrs">
 	<tr>
@@ -85,77 +45,188 @@ The following parameters may or may not be required in every single API call:
 	
 	<tr>
 		<td>
-			<code>version</code>
+			<code>protocol</code>
 		</td>
-		<td>The API version</td>
+		<td>HTTP/HTTPS</td>
 		<td><strong>Yes</strong></td>
 		<td>
-			<span class="text-info">current</span>
+			<span class="text-info">http | https</span>
 			<p>
 				<strong>Note:</strong>
-				If the version of a particular API is different, it will be called out on that API's documentation page
+				We recommend using the **https** when possible for extra security.
 			</p>
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<code>format</code>
+			<code>endpoint</code>
 		</td>
-		<td>The API response format</td>
+		<td>Path to API method</td>
+		<td><strong>Yes</strong></td>
+		<td>
+			<span class="text-info">varies per API call</span>
+			<p>
+				<strong>Note:</strong>
+				Endpoints are documented under each API's resources and will include the endpoint's version as well as the API method
+			</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<code>response format</code>
+		</td>
+		<td>API response format</td>
 		<td><strong><strong>Yes</strong></strong></td>
 		<td>
-			<span class="text-info">json</span>
+			<span class="text-info">json | XML</span>
 			<p>
 				<strong>Note:</strong>
-				The format has to be always set to <span class="text-info">json</span>. To return <span class="text-info">jsonp</span>, you need to set the <code>fn</code> parameter  described below. 
+				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string as set it to the Javascript function that's you have defined to handle the **json** response.
 			</p>
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<code>api_key</code>
+			<code>API key</code>
 		</td>
-		<td>The API Key</td>
+		<td>Authorized API Key</td>
 		<td><strong>Yes</strong></td>
 		<td>
 			<a class="linkGetKey" href="#" title="Get your API key">Get your API key</a> 
 		</td>
 	</tr>
-	
-	<tr>
-		<td>
-			<code>fn</code>
-		</td>
-		<td>JSONP Callback function</td>
-		<td><strong>No</strong></td>
-		<td>
-			<span class="text-info">json</span>
-			<p>
-				Pass the name of a JavaScript function in your code and our response will be wrapped around it
-			</p>
-		</td>
-	</tr>
+
 </table>
 
-The {call path} and {call parameters} are specific to the API endpoints and will be called out explicitly for each endpoint.
+### URI Examples
 
+_**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
+_**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&callback=**myFunction**_
+_https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&**state=new&view=full**_
 
+### Rate Limit
 
+All API keys are issued with a _default quota_ of **2 API calls/sec** and **5000 API calls/day**. We do increase rate limits on case-by-case basis. In order to increase the rate limit for a particular application, we need to verify the following:
 
+1. The application is in compliance with our [Terms of Service](/terms_of_service/)
+2. The application is in compliance with our [branding guide](/api_branding_guide/)
 
+Once these two criteria are verified, the rate limit is increased to what Edmunds and developer determine to be appropriate. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com)**. _No monetary compensation is expected in exchange for the rate limit increase_.
 
+### Available Resources
 
+{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
+{% include themes/twitter/api_overview/table_available_api.html %}
+Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer _three access tiers_:
 
+* **PUBLIC**: All registered developers using the Edmunds.com data and content according to our [Terms of Service](/terms_of_service/).
+* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
+* **EDMUNDS**: Edmunds.com employees and contractors using the API to build out the Edmunds.com apps and websites.
 
+Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).
 
+### Error Codes and Handling
 
+API errors occur for several reasons. Here's a list of **common errors** and ways to troubleshoot them.
 
+| HTTP Status	| Description                           | Troubleshooting																|
+|:-------------:|:--------------------------------------|:------------------------------------------------------------------------------|
+| 400    		| Bad Request				            | Check the URL to make sure it has proper syntax								|
+| 401   		| Unauthorized				            | You are using the **wrong API key** or the key **isn't active** 				|
+| 403 			| Forbidden							    | You are not authorized to access this resource. Sorry.						|
+| 404 			| Not Found							    | Check the URL path for typos								 					|
+| 502    		| Bad Gateway	                        | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
+| 503     	   	| Service Unavailable 					| If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
+| 504     	   	| Gateway Timeout                       | f this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
 
+If an error persists and you can't resolve it, please [email us](mailto:api@edmunds.com) and let us know.
 
+When an error occurs, you should get the following response:
 
+	{"error": {"code": xxx, "message":"some message"}}
+	
+Your code should always be looking for the root key <code>error</code> in the API response.
 
+### Static Datasets
+
+Some of our datasets are static and don't change often (if at all.) Here's the most common static datasets you will need to make API calls and understand API response.
+
+####Vehicle Types
+
+|		|		|		|		|			|
+|:------|:------|:------|:------|:----------|
+| Car	| Truck	| SUV	| Van	| Minivan	|
+
+#### Vehicle Categories
+
+|						|					|						|					|
+|:----------------------|:------------------|:----------------------|:------------------|
+| 4dr Hatchback			| 2dr Hatchback		| 2dr SUV 				| 4dr SUV			|
+| Cargo Minivan			| Cargo Van			| Convertible			| Convertible SUV	|
+| Coup					| Crew Cab Pickup	| Extended Cab Pickup 	| Passenger Minivan	|
+| Passenger Van 		| Regular Cab Pickup| Sedan				 	| Wagon				|
+
+#### Vehicle Sizes
+
+|			|			|		|
+|:----------|:----------|:------|
+| Compact	| Midsize	| Large	|
+
+#### Useful API Calls
+
+As mentioned above, car _style IDs_ and _Model Year IDs_ are important to retrieve other datasets in the API. 
+
+To get the _Model Year IDs_ for all _new_ makes, use the following API call:
+	
+	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api\_key=**{your vehicle api key}
+	
+In the **response** of that call, you will find the following object:
+
+	{
+		"id": 100538949,
+		"year": 2013
+	}
+
+The **id** key in this object is the _Model Year ID_.
+
+To get the _style IDs_ for a specific car make, let's use Lexus as an example, use the following API call:
+
+	http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api\_key=**{your vehicle api key}
+	
+In the **response** of that call, you will find the following object:
+
+	{
+		"id": 101286113,
+		"name": "4dr Hatchback (1.8L 4cyl gas/electric hybrid CVT)",
+		"submodel": {
+			"body": "Hatchback",
+			"modelName": "CT 200h Hatchback"
+		},
+		"trim": "Base"
+	}
+	
+The **id** key in this object is the _Style ID_.
+
+More on these endpoints in the _Make_ and _Model_ **Spec** resources under the Vehicle API.
+
+### SDKs and Code Samples
+
+Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.
+
+### Pedal to The Metal!
+
+If you've made it this far, **congratulations!** You're way on your way to rock the API! 
+
+This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key(s), <a class="linkGetKey" href="http://edmunds.mashery.com/member/register" title="Get your API key" target="_blank">get them now</a> so you can rock 'n' roll in no time!
+
+All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Serious. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
+
+Once you're comfortable with our APIs, you could now start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
+
+Still have questions? Don't hesitate to [tweet us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com) or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: vertical-line-page
-title: Edmunds API terms of use
+title: The Edmunds API Terms of Service
 
 class_page: termsOfUses
 ---

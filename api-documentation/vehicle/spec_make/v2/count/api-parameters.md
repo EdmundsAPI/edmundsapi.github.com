@@ -21,7 +21,7 @@ number: 2
 ###Parameters
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:----------:|:--------------------------------------|:----------------- |:------------- |:-------- |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | state      | The state of the car makes            | new, used, future |               | No       |
 | year       | The year of the car makes             | 1990-current year |               | No       |
 | view       | the level of details in the response  | basic, full		 | basic         | No       |

@@ -55,6 +55,12 @@ body, html {
   height:100%;
   background: #f2f2f2;
 }
+
+ul, ol {
+	padding: 0;
+	margin: 0 0 20px 20px;
+}
+
 .pushTop {
   height: 117px;
 }
@@ -352,7 +358,7 @@ footer.footerLayout .nav > li > a {
   border-bottom: 1px solid #ccc;
 }
 .sectionContent p {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
 .leftMenuFixed.fixed, .headerMenuContent.fixed  {
@@ -400,9 +406,11 @@ a.linkGetKey:hover {
 	font-family: Arial, sans-serif;  
 }
 	/*__start table Parametrs__*/
+	table,
 	.tableParametrs {
 		margin: 0 0 30px 0; 
 	}
+	table th,
 	.tableParametrs th {
 		padding:0 0 0 21px;
 		color:#fff;
@@ -410,20 +418,22 @@ a.linkGetKey:hover {
 		text-align: left;
 		background: #444;
 	}
+	table td,
 	.tableParametrs td {
 		padding: 18px 21px;
 		vertical-align: top;
-	}
-	.tableParametrs td {
 		border-bottom: 1px solid #dedede;
 	}
+	table .text-info,
 	.tableParametrs .text-info {
 		margin: 0 0 5px 0;
 		font-weight: 700;
 	}
+	table p,
 	.tableParametrs p {
 		margin: 0;
 	}
+	table .linkGetKey,
 	.tableParametrs .linkGetKey {
 		margin: 0;
 	}
@@ -438,7 +448,7 @@ a.linkGetKey:hover {
 		border-top:1px solid #ccc; 
 		padding: 22px 29px;
 	}
-	#prevMenuItem, #nextMenuItem {
+	#prevMenuItem, #nextMenuItem { 
 		display:inline-block;
 		font: 14px/38px 'Oswald400', Arial;
 		background-image: url('../img/sprite_next_prev.gif');
@@ -479,7 +489,7 @@ a.pdfLink:hover {
 }	
 	/*__Start table "AVAILABLE API’S"__*/
 	.overviewTable {
-		margin: 0 0 74px 0;
+		margin: 0 0 40px 0;
 		background: url('../img/bg_table_api.gif') left repeat-y transparent; 
 	}
 	.overviewTableTH {
