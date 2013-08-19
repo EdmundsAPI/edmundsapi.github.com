@@ -37,27 +37,27 @@
 	  		posts,
 	  		totalPosts;
 
-	  	$('#prevMenuItem').on('click', function() {
+	  	nextButton.on('click', function() {
 	  		if ($(this).hasClass('disable')) {
 	  			return;
 	  		}
 	  		activPage--;
-	  		$('#nextMenuItem').removeClass('disable');  		
+	  		prevButton.removeClass('disable');
 		    if (activPage == 0) {
-		    	prevButton.addClass('disable');
+		    	nextButton.addClass('disable');
 		    }
 		    drawPostList();
 			$("html, body").animate({ scrollTop: 0}, 300 );
 	  	});
 
-	  	$('#nextMenuItem').on('click', function() {
+	  	prevButton.on('click', function() {
 	  		if ($(this).hasClass('disable')) {
 	  			return;
 	  		}
 	  		activPage++;
-	  		$('#prevMenuItem').removeClass('disable'); 
+	  		nextButton.removeClass('disable'); 
 		    if (activPage == pages - 1) {
-		    	nextButton.addClass('disable');
+		    	prevButton.addClass('disable');
 		    }
 		    drawPostList();
 			$("html, body").animate({ scrollTop: 0}, 300 );
@@ -89,7 +89,7 @@
 					+ '<span class="author">'
 					+ '<a href="'
 					+ post.author_url
-					+ '">'
+					+ '" target="_blank">'
 					+ post.by
 					+ '</a>'
 					+ '</span>'
@@ -118,17 +118,17 @@
 		    pages = Math.ceil(posts.length / pageSize);
 
 		    if (activPage == 0) {
-		    	prevButton.addClass('disable');
+		    	nextButton.addClass('disable');
 		    }
 		    if (activPage == pages - 1) {
-		    	nextButton.addClass('disable');
+		    	prevButton.addClass('disable');
 		    }
 
 		}
 
 	  	$.getJSON('/search.json', function(data) {
 		    data.pop();
-		    posts = data;	    
+		    posts = data;
 		    initializePaging();
 		    drawPostList();
 		});

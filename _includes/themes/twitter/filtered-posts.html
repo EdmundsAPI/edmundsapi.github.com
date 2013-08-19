@@ -2,6 +2,8 @@
 
 	{% include themes/twitter/title-page.html %}
 
+	<input type="hidden" name="page-size" value="{{ page.page_size }}" />
+
 	<div class="row lineVertical">
 		<div class="span2">&nbsp;</div>
 		<div class="span10">&nbsp;</div>
@@ -14,6 +16,11 @@
 			</div>
 			<div class="span10">
 				<ul class="blog-posts" id="search-results"></ul>
+
+				<div class="wrapNextPrev">
+					<a id="prevMenuItem">Previous</a>
+					<a id="nextMenuItem">Next</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -67,23 +74,23 @@
 	  return filteredPosts;
 	};
 
-	var layoutResultsPage = function(property, value, posts) {
-	  var $container = $('#search-results');
+	var layoutResultsPage = function(posts, activPage, pageSize) {
+	  var $container = $('#search-results'),
+				firstPost,
+				lastPost;
 	  if ($container.length == 0) return;
 	  
+	  $container.html('');
 	  
-	  for (var i in posts) {
-	    var tagsList = '',
-	        post     = posts[i],
-	        tags     = post.tags,
+
+	  firstPost = activPage * pageSize;
+	  lastPost = ((activPage + 1 ) * pageSize <= posts.length ) ? (activPage + 1 ) * pageSize : posts.length ;
+
+	  for (var i = firstPost; i < lastPost; i++) {
+	    var post     = posts[i],
 	        queryString = window.location.search.substring(1),
-	        iconClass;
+	        iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
 
-	    iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
-
-	    for (var j in tags) {
-	      tagsList +=  tags[j].toLowerCase() ;
-	    }
 	    
 	    $container.append(
 			'<li class="blog-post">'
@@ -98,7 +105,7 @@
 			+ '<span class="author">'
 			+ '<a href="'
 			+ post.author_url
-			+ '">'
+			+ '"  target="_blank">'
 			+ post.by
 			+ '</a>'
 			+ '</span>'
@@ -128,7 +135,7 @@
 	  var $container = $('#search-results');
 	  if ($container.length == 0) return;
 	  
-	  $container.find('h1').text('No Results Found.').after('<p class="nadda"></p>');
+	  $container.after('<p class="nadda"></p>');
 	  
 	  var txt = "We couldn't find anything associated with '" + value + "' here.";
 	  $container.find('p.nadda').text(txt);
@@ -144,21 +151,71 @@
 	};
 
 	$(function() {
-	  var map = {
-	    'category' : getParam('category'),
-	    'tags' : getParam('tag'),
-	    'archive' : getParam('date')
-	  };
+	    var map = {
+		    'category' : getParam('category'),
+		    'tags' : getParam('tag'),
+		    'archive' : getParam('date')
+		  },
+		  prevButton = $('#prevMenuItem'),
+	  	  nextButton = $('#nextMenuItem'),
+	  	  activPage = 0,
+	  	  pageSize,
+	  	  pages, 
+	  	  posts,
+	   	  totalPosts;
+
+	  	nextButton.on('click', function() {
+	  		if ($(this).hasClass('disable')) {
+	  			return;
+	  		}
+	  		activPage--;
+	  		prevButton.removeClass('disable');
+		    if (activPage == 0) {
+		    	nextButton.addClass('disable');
+		    }
+		    
+	        layoutResultsPage(posts, activPage, pageSize);
+			$("html, body").animate({ scrollTop: 0}, 300 );
+	  	});
+
+	  	prevButton.on('click', function() {
+	  		if ($(this).hasClass('disable')) {
+	  			return;
+	  		}
+	  		activPage++;
+	  		nextButton.removeClass('disable'); 
+		    if (activPage == pages - 1) {
+		    	prevButton.addClass('disable');
+		    }
+
+	        layoutResultsPage(posts, activPage, pageSize);
+			$("html, body").animate({ scrollTop: 0}, 300 );
+	  	});
+
+
+		var initializePaging = function() {
+			pageSize = $('[name="page-size"]').val();
+		    pages = Math.ceil(posts.length / pageSize);
+
+		    if (activPage == 0) {
+		    	nextButton.addClass('disable');
+		    }
+		    if (activPage == pages - 1 || pages === 0) {
+		    	prevButton.addClass('disable');
+		    }
+
+		}
 
 	  $.each(map, function(type, value) {
 	    if (value !== null) {
 	      highlightMenuItem(type, value);
 	      $.getJSON('/search.json', function(data) {
 	        posts = filterPostsByPropertyValue(data, type, value);
+		    initializePaging();
 	        if (posts.length === 0) {
 	          noResultsPage(type, value);
 	        } else {
-	          layoutResultsPage(type, value, posts);
+	          layoutResultsPage(posts, activPage, pageSize);
 	        }
 	      });
 	    }
