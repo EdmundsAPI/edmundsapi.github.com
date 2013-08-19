@@ -80,7 +80,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 		<td>API response format</td>
 		<td><strong><strong>Yes</strong></strong></td>
 		<td>
-			<span class="text-info">json | XML</span>
+			<span class="text-info">json | xml</span>
 			<p>
 				<strong>Note:</strong>
 				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string as set it to the Javascript function that's you have defined to handle the <strong>json</strong> response.
@@ -103,9 +103,9 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 ### URI Examples
 
-_**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
-_**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&callback=**myFunction**_
-_https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&**state=new&view=full**_
+* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
+* _**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&callback=**myFunction**_
+* _https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&**state=new&view=full**_
 
 ### Rate Limit
 
