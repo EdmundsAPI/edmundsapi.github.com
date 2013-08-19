@@ -113,6 +113,7 @@ All API keys are issued with a _default quota_ of **2 API calls/sec** and **5000
 
 1. The application is in compliance with our [Terms of Service](/terms_of_service/)
 2. The application is in compliance with our [branding guide](/api_branding_guide/)
+3. The application is representing the Edmunds data properly
 
 Once these two criteria are verified, the rate limit is increased to what Edmunds and developer determine to be appropriate. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com)**. _No monetary compensation is expected in exchange for the rate limit increase_.
 
