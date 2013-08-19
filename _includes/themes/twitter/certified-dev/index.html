@@ -205,11 +205,14 @@
     	
     	var section2 = $('.section2');
     	
-    	var isOver = false;
+    	var isOver = true;
+    	console.log("isOVER start = " + isOver)
     	
     	function onMouseOver(){
     		
-    		isOver = true;
+    		isOver = false;
+    		
+    	console.log("isOVER onMouseOver start = " + isOver)
     		
     		var thisClass = $(this).hasClass('leftBlock1');
     		
@@ -217,9 +220,13 @@
     			
     			section2.addClass('busOwnerActive');
     			
+    			console.log("isOVER onMouseOver if==hasClass = " + isOver)
+    			
     		} else {
     			
     			section2.addClass('developerActive');
+    			
+    			console.log("isOVER onMouseOver if!=hasClass = " + isOver)
     			
     		}
     		
@@ -228,12 +235,16 @@
     	function onMouseLeave(){
     		
     		isOver = false;
+    		console.log("isOVER onMouseLeave finish = " + isOver)
 
-    		setTimeout(function(){
+    		var timeoutID = setTimeout(function(){
     			
     			$('.discriptBlokBisOwner, .discriptBlokDev').on('mouseover', function(){
     				
 	    			 isOver = true;
+	    			 
+	    			 
+    				console.log("isOVER onMouseLeave 'mouseover in disription' finish = " + isOver)
 	    			 
 	    		});
 	    		
@@ -245,7 +256,9 @@
 	    			
 	    		}
 	    		
-    		}, 100);
+    		}, 400);
+    		
+    		clearTimeout(timeoutID);
     		
     	};
     	
