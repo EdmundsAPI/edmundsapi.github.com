@@ -4,9 +4,7 @@
   "tags"     : [{% for tag in post.tags %}"{{ tag }}",{% endfor %} null],
   "href"     : "{{ post.url }}",
   "by"		 : "{{ post.by }}",
-  "author_url" : "{{ post.author_url }}",
   "excerpt"  : "{{ post.excerpt }}",
   "date"     : "{{ post.date | date: '%b %d, %Y' }}",
-  "archive" : "{{ post.date | date: '%Y-%m' }}",
-  "full_date" : "{{ post.date }}"
+  "archive" : "{{ post.date | date: '%Y-%m' }}" 
 }

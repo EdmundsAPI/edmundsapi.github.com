@@ -37,27 +37,27 @@
 	  		posts,
 	  		totalPosts;
 
-	  	nextButton.on('click', function() {
+	  	$('#prevMenuItem').on('click', function() {
 	  		if ($(this).hasClass('disable')) {
 	  			return;
 	  		}
 	  		activPage--;
-	  		prevButton.removeClass('disable');
+	  		$('#nextMenuItem').removeClass('disable');  		
 		    if (activPage == 0) {
-		    	nextButton.addClass('disable');
+		    	prevButton.addClass('disable');
 		    }
 		    drawPostList();
 			$("html, body").animate({ scrollTop: 0}, 300 );
 	  	});
 
-	  	prevButton.on('click', function() {
+	  	$('#nextMenuItem').on('click', function() {
 	  		if ($(this).hasClass('disable')) {
 	  			return;
 	  		}
 	  		activPage++;
-	  		nextButton.removeClass('disable'); 
+	  		$('#prevMenuItem').removeClass('disable'); 
 		    if (activPage == pages - 1) {
-		    	prevButton.addClass('disable');
+		    	nextButton.addClass('disable');
 		    }
 		    drawPostList();
 			$("html, body").animate({ scrollTop: 0}, 300 );
@@ -76,8 +76,7 @@
 
 			for (var i = firstPost; i < lastPost; i++) {
 			  	var post = posts[i],
-			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe',
-			  		authorLink = post.author_url ? '<a href="' + post.author_url +'" target="_blank">' + post.by + '</a>' : '<span>' + post.by + '</span>';
+			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
 
 			    $container.append(
 					'<li class="blog-post">'
@@ -87,19 +86,23 @@
 			      	+ post.title
 			      	+ '</a></h3>'
 			      	+ '<div class="post-header">'
-					+ '<span class="author">by '
-					+ authorLink
+					+ '<span class="author">'
+					+ '<a href="'
+					+ post.author_url
+					+ '">'
+					+ post.by
+					+ '</a>'
 					+ '</span>'
 					+ '<span class="date"><i class="icon-time">&nbsp;</i>'
 					+ post.date
 					+ '</span>'
 					+ '<span class="category"><i class="'
 					+ iconClass
-					+ '">&nbsp;</i> '
+					+ '">&nbsp;</i>'
 					+ post.category
 					+ '</span>'
 					+ '</div>'
-					+ '<p class="excerpt">'
+					+ '<p>'
 					+ post.excerpt
 					+ '</p>'
 					+ '<a class="standart-btn" href="'
@@ -115,17 +118,17 @@
 		    pages = Math.ceil(posts.length / pageSize);
 
 		    if (activPage == 0) {
-		    	nextButton.addClass('disable');
+		    	prevButton.addClass('disable');
 		    }
 		    if (activPage == pages - 1) {
-		    	prevButton.addClass('disable');
+		    	nextButton.addClass('disable');
 		    }
 
 		}
 
 	  	$.getJSON('/search.json', function(data) {
 		    data.pop();
-		    posts = data;
+		    posts = data;	    
 		    initializePaging();
 		    drawPostList();
 		});

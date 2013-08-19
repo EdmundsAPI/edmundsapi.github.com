@@ -32,10 +32,6 @@
 a, a:link, a:active, a:focus {
   color: @color_regular_link;
 }
-a.standart-btn, 
-a, a.standart-btn:link, 
-a.standart-btn:active, 
-a.standart-btn:focus,
 
 .slide-text a, 
 .slide-text a:link,
@@ -1188,12 +1184,12 @@ div[class*="promo-section"] {
     .slide-text {
       line-height: 22px;
       font-size: 15px;
-      height: 125px;
     }
     .standart-btn {
       margin-top: 10px;
       font-size: 14px;
       padding: 0 15px;
+      color: #fff;
       
       &:focus {
         color: inherit;
@@ -2420,7 +2416,9 @@ div[class*="promo-section"] {
      border-top: 1px solid #CCC;
      
      
-     
+     #menu {
+       padding: 0 0 0 72px;
+     }
      
      section.cdp_section {
        position:relative;
@@ -2432,33 +2430,22 @@ div[class*="promo-section"] {
          
          div {
            float:left;
+           height: 60px;
            width:50%;
            text-align: right;
            
            &:first-child {
              float: right;
              text-align: left;
-             background: url('../img/certified_developer/get_started/bg_border_line.gif') left repeat-y;
-             
-             a {
-              margin: 19px 0 8px 17px;
-              
-              &.activeToggle {
-                margin: 11px 0 10px 17px;
-              }
-             }
+             .box-shadow(-1px 0 0 0 #C5C5C5);
+
            }
-           
-           &:last-child {
-             a{
-               margin: 19px 17px 8px 0;
-             }
-           }
+
            
          }
          a {
            display: inline-block;
-           margin: 0 17px 0 0;
+           margin: 19px 17px 0 17px;
            border-bottom: 1px solid @color_regular_link;
            color: @color_regular_link;
            text-transform: uppercase;
@@ -2480,22 +2467,64 @@ div[class*="promo-section"] {
              &:hover {
                color: @color_link;
              }
+            
            }
-           
+           &.active {
+              font: 400 37px/37px 'Oswald400',Arial,sans-serif;
+               color: @color_link;
+               border:0;
+               cursor:default;
+               
+               &:hover {
+                 color: @color_link;
+               }
+            }
          }
        }
        
        .wrapperStep {
          margin: 0 0 120px 0; 
-         padding:0 116px 0 110px;
+         padding:0 0 0 110px;
          
          a {
           color: @color_regular_link;    
          }
          
-         img.imgStep {
-           display: block;
+         .imgStep {
+           width: 835px;
            margin: 0 0 6px 0;
+           background-image: url('../img/certified_developer/get_started/steps_images.png');
+           background-repeat: no-repeat;
+            
+           &.step1BOwner {
+             height: 462px;
+             background-position: 0 -2795px;
+           }
+           &.step2BOwner {
+             height: 351px;
+             background-position: 0 -363px;
+           }
+           &.step3BOwner {
+             height: 351px;
+             background-position: 0 -1882px;
+           }
+           &.step4DevBOwn {
+             height: 467px;
+             background-position: 0 -2289px;
+           }
+
+           &.step1Dev {
+             height: 462px;
+             background-position: 0 -3282px;
+           }
+           &.step2Dev {
+             height: 351px;
+             background-position: 0 0;
+           }
+           &.step3Dev {
+             height: 351px;
+             background-position: 0 -1514px;
+           }
          }
          
          .stepNumber {
@@ -2506,13 +2535,26 @@ div[class*="promo-section"] {
            text-align: center;
            text-transform: uppercase;
            
+           &.step1 span{
+             background-position: 0 0;
+           }
+           &.step2 span{
+             background-position: 0 -41px;
+           }
+           &.step3 span{
+             background-position: 0 -82px;
+           }
+           &.step4 span{
+             background-position: 0 -123px;
+           }
+           
            span {
-             padding: 0 10px;
+             display: inline-block;
+             width: 40px;
+             height:41px;
              margin: 0 8px 0 0;
-             border: 3px solid #FE6614;
-             .border-radius(50%); 
-             font-size: 29px;
-             font-family: 'Myriad Pro', Arial,sans-serif;
+             background-image: url('../img/certified_developer/get_started/steps_number.png');
+             background-repeat: no-repeat;
            }
          }
          
@@ -2957,20 +2999,12 @@ div[class*="promo-section"] {
     padding: 40px 0 26px 25px;
     border-bottom: 1px solid @color_gray_line;
     color: @color_text;
-    .content, .excerpt {
-      a:visited {
-        color: @color_regular_link;
-      }
-      a:hover {
-        color: @color_link_hover;
-      }      
-    }
     h3 {
       font-family:'Oswald700', Arial, sans-serif;
       font-weight: bold;
       margin-bottom: 13px;
       a {
-        color: @color_text;
+        color: inherit;
         &:hover, &:focus {
           color: @color_link_hover;
           text-decoration: none;
@@ -2981,7 +3015,7 @@ div[class*="promo-section"] {
       margin: 15px 0;
       font-size: 14px;
       padding: 0 17px;
-      color: #fff;
+      color: white;
     }
     .post-header {
       font-size: 12px;
@@ -2996,13 +3030,15 @@ div[class*="promo-section"] {
           }
         }
       }
-      .author {
-        a {
-          color: @color_regular_link;
-          &:hover, &:focus {
-            text-decoration: none;
-            color: @color_link_hover;
-          }
+      .author a {
+        color: @color_regular_link;
+        &:hover, &:focus {
+          text-decoration: none;
+          color: @color_link_hover;
+        }
+        &:before {
+          content: "by ";
+          color: @color_text;
         }
       }
     }
@@ -3170,7 +3206,6 @@ div[class*="promo-section"] {
       background: #555;
     }
     .blockInform  {
-      float:left;
       width: 365px;
       padding:18px 0 0 35px;
       &:last-child {

@@ -1,0 +1,23 @@
+<ul class="blog-posts">
+	{% for post in site.posts %}
+	<li class="blog-post">
+	    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	    <div class="post-header">
+	      	<span class="author"><a href="{{ post.author_url }}" target="_blank">{{ post.by }}</a></span>
+	      	<span class="date"><i class="icon-time">&nbsp;</i>{{ post.date | date: "%b %d, %Y" }}</span>
+	      	<span class="category">
+
+	      		{% if post.category == 'Engineering' %}
+			    	<i class="icon-cog">&nbsp;</i>
+			    {% else %}
+			      	<i class="icon-globe">&nbsp;</i>
+			    {% endif %}
+
+				{{ post.category }}
+	      	</span>
+	    </div>
+	    <p>{{ post.excerpt }}</p>
+	    <a class="standart-btn" href="{{ post.url }}">Read More...</a>
+	</li>
+	{% endfor %}
+</ul>

@@ -8,7 +8,10 @@ cdp_weight: 4
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar. Donec sed nisl non massa dignissim ullamcorper id sit amet metus. Vivamus in fermentum ante, id auctor libero. Morbi sit amet nibh at justo malesuada volutpat a et augue. In hac habitasse platea dictumst. Integer nec metus nec tellus elementum porttitor. Aenean eget nisl consectetur, tempus lacus ut, placerat mauris. Quisque sed erat ac velit vestibulum consequat ut vitae purus. Sed dolor velit, tincidunt id bibendum ac, scelerisque vel dolor. Duis a urna eget erat mollis rhoncus sit amet sit amet leo. Cras sapien leo, tristique pulvinar lectus id, lobortis dictum odio. Aliquam erat volutpat.
-
+<a name="certified_developer">
+</a>
+<a name="business_owner">
+</a>
 <div id="menu" class="toggleLinks clearfix ">	
 	<div>
 		<a href="#certified_developer">Certified Developer</a>
@@ -20,13 +23,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 
 <div id="result">
 	<div id="content">
-		<div id="business_owner" class="contentBusOwner" style="display: block;">
+		<div data-block="business_owner" class="contentBusOwner business_owner"  style="display: block;">
 			
 			<div class="wrapperStep step1BS">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step1_busOwner.png" alt="" />
+				<div class="imgStep step1BOwner">&nbsp;</div>
 				
-				<span class="stepNumber"><span>1</span>Step.</span>
+				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner thinking of a custom solution</h2>
 				<h4>Featured Use Cases</h4>
@@ -53,24 +56,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 			
 			<div class="wrapperStep step2BS">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step2_busOwner.png" alt="" />
+				<div class="imgStep step2BOwner">&nbsp;</div>
 				
-				<span class="stepNumber"><span>2</span>Step.</span>
+				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner goes on Edmunds API Portal</h2>
 				
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
 				
-				<a class="redButton" href="/certified-dev/search_the_directory.html" title="View Certified Developers Directory">View Certified Developers Directory</a>
-		
+				<div style="text-align: center">
+					<a class="redButton" href="/certified-dev/search_the_directory.html" title="View Certified Developers Directory">View Certified Developers Directory</a>
+				</div>
 			</div>
 			
 			<div class="wrapperStep step3BS">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step3_busOwner.png" alt="" />
+				<div class="imgStep step3BOwner">&nbsp;</div>
 				
-				<span class="stepNumber"><span>3</span>Step.</span>
+				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner negotiates with Edmunds </br> Certified Developer</h2>
 				
@@ -81,9 +85,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 			
 			<div class="wrapperStep step4BS">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step4.png" alt="" />
+				<div class="imgStep step4DevBOwn">&nbsp;</div>
 				
-				<span class="stepNumber"><span>4</span>Step.</span>
+				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner works with Certified Developer </br> on a custom solution</h2>
 		
@@ -94,13 +98,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 		
 		
 		
-		<div id="certified_developer" class="contentDevr" style="display: none;">
+		<div data-block="certified_developer" class="contentDev certified_developer" style="display: none;">
 			
 			<div class="wrapperStep">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step1_Dev.png" alt="" />
+				<div class="imgStep step1Dev">&nbsp;</div>
 				
-				<span class="stepNumber"><span>1</span>Step.</span>
+				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Developer builds an application </br> with Edmunds API </h2>
 				
@@ -112,23 +116,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 			
 			<div class="wrapperStep">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step2_Dev.png" alt="" />
+				<div class="imgStep step2Dev">&nbsp;</div>
 				
-				<span class="stepNumber"><span>2</span>Step.</span>
+				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Developer developer passes Edmunds API test</h2>
 				
 				<p><a href="#" title="Register for a user account">Register for a user account</a> on developer.edmunds.com </br> Build something awesome with Edmunds API.</p>
 				<p>There are 3 qualification areas. You will get official <a href="#" title="">Edmunds Certified Developer logo</a> specific to the API for which qualification was obtained, and which can be displayed on a website to showcase the developer’s skills and help attract clients.</p>
-				<a class="redButton" href="#" title="Take Edmunds API test now">Take Edmunds API test now</a>
+				<div style="text-align: center">
+					<a class="redButton" href="#" title="Take Edmunds API test now">Take Edmunds API test now</a>
+				</div>
 			</div>
 			
 			
 			<div class="wrapperStep">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step3_Dev.png" alt="" />
+				<div class="imgStep step3Dev">&nbsp;</div>
 				
-				<span class="stepNumber"><span>3</span>Step.</span>
+				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Developer completes certification process</h2>
 				
@@ -138,9 +144,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 			
 			<div class="wrapperStep">
 			
-				<img class="imgStep" src="{{ PATH }}/assets/themes/twitter/img/certified_developer/get_started/step4.png" alt="" />
+				<div class="imgStep step4DevBOwn">&nbsp;</div>
 				
-				<span class="stepNumber"><span>4</span>Step.</span>
+				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Сertified Developer works with Business Owner to help </br> him build automative experience with Edmund API</h2>
 				
@@ -157,6 +163,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
 </script>
 
+<script type="text/javascript" charset="utf-8">
+	/*$(function(){
+	
+		var currentHash = window.location.hash;
+		
+ 		console.log(currentHash)
+ 		
+		$('#menu').find('div:first a').addClass('activeToggle');
+		
+		if(currentHash == ''){
+		
+			//$('#menu').find('a[href="#business_owner"]').addClass('activeToggle');
+			console.log('1')
+			
+		} else {
+		
+			$('#menu').find('a[href='+ currentHash +']').addClass('activeToggle');
+			console.log('2')
+			
+		}
+	});	*/
+</script>
 
 
 
