@@ -76,7 +76,8 @@
 
 			for (var i = firstPost; i < lastPost; i++) {
 			  	var post = posts[i],
-			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe';
+			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe',
+			  		authorLink = post.author_url ? '<a href="' + post.author_url +'" target="_blank">' + post.by + '</a>' : '<span>' + post.by + '</span>';
 
 			    $container.append(
 					'<li class="blog-post">'
@@ -86,19 +87,15 @@
 			      	+ post.title
 			      	+ '</a></h3>'
 			      	+ '<div class="post-header">'
-					+ '<span class="author">'
-					+ '<a href="'
-					+ post.author_url
-					+ '" target="_blank">'
-					+ post.by
-					+ '</a>'
+					+ '<span class="author">by '
+					+ authorLink
 					+ '</span>'
 					+ '<span class="date"><i class="icon-time">&nbsp;</i>'
 					+ post.date
 					+ '</span>'
 					+ '<span class="category"><i class="'
 					+ iconClass
-					+ '">&nbsp;</i>'
+					+ '">&nbsp;</i> '
 					+ post.category
 					+ '</span>'
 					+ '</div>'

@@ -2,7 +2,13 @@
 
   <div class="container">
     <div class="row-fluid h1Title">
-      <div class="span12"><h1>{{ page.page_title }}</h1></div>
+      <div class="span12">
+      {% if page.page_title %}
+        <h1>{{ page.page_title }}</h1>
+      {% else %}
+        <h1>Developer Blog</h1>
+      {% endif %}
+      </div>
     </div>
   </div>
 
@@ -20,8 +26,8 @@
         {% include themes/twitter/blog/blog-post.html %}
 
         <div class="wrapNextPrev">
-          <a id="prevMenuItem">Previous</a>
-          <a id="nextMenuItem">Next</a>
+          <a id="prevMenuItem" class="disable">Previous</a>
+          <a id="nextMenuItem" class="disable">Next</a>
         </div>
 
       </div>
@@ -111,17 +117,13 @@
       };
 
       if (currentIndex >= 0) {
-        if (prevIndex >= posts.length) {
-          prevButton.addClass('disable');
-        }
-        else {
+        if (prevIndex < posts.length) {
+          prevButton.removeClass('disable');
           prevButton.attr('href', posts[prevIndex].href + queryString);
         }
 
-        if (nextIndex < 0) {
-          nextButton.addClass('disable');
-        }
-        else {
+        if (nextIndex >= 0) {
+          nextButton.removeClass('disable');
           nextButton.attr('href', posts[nextIndex].href + queryString);
         }
       }

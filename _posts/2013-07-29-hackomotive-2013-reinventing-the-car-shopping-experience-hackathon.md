@@ -1,7 +1,6 @@
 ---
 layout: post
 category : Communication
-tagline: "hackomotive 2013"
 tags : [Hackomotive]
 title: 'Hackomotive 2013: Reinventing The Car Shopping Experience Hackathon'
 by: 'Ismail Elshareef'
