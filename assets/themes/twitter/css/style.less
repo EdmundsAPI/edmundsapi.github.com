@@ -32,6 +32,21 @@
 a, a:link, a:active, a:focus {
   color: @color_regular_link;
 }
+a.standart-btn, 
+a, a.standart-btn:link, 
+a.standart-btn:active, 
+a.standart-btn:focus,
+
+.slide-text a, 
+.slide-text a:link,
+.slide-text a:active {
+  color: #fff;  
+}
+
+.slide-text a:hover {
+  color: @color_green;
+}
+
 a:hover {
   color: @color_green;
   text-decoration: none;
@@ -1246,9 +1261,10 @@ div[class*="promo-section"] {
 
 .section4 {
   padding-top: 58px;  
+  margin-bottom: 45px;
   .container {
     border-bottom: 1px solid #ccc;
-    height: 248px;
+    min-height: 248px;
   }
   .column-head {
     margin-bottom: 17px;
