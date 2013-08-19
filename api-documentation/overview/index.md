@@ -10,11 +10,11 @@ weight: 1
 
 ---
 
-Edmunds.com offers _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is provided further down this page.
+Edmunds.com offers _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
 
-This API Overview covers the core concepts that you need to know before you could use the APIs. You will be able to dig deeper by visiting each API's overview page to learn more about specifics related to that particular API.
+This overview covers the core concepts that you need to know before you could fully use the APIs to their potential. Once you have a good understanding of the API core concepts, you can then dig deeper into each API by visiting its dedicated overview page.
 
-### DATA HIERARCHY
+### Data Hierarchy
 
 Exploring a new API could be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
@@ -53,7 +53,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 			<span class="text-info">http | https</span>
 			<p>
 				<strong>Note:</strong>
-				We recommend using the **https** when possible for extra security.
+				We recommend using the <strong><em>https</em></strong> when possible for extra security.
 			</p>
 		</td>
 	</tr>
@@ -83,7 +83,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 			<span class="text-info">json | XML</span>
 			<p>
 				<strong>Note:</strong>
-				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string as set it to the Javascript function that's you have defined to handle the **json** response.
+				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string as set it to the Javascript function that's you have defined to handle the <strong>json</strong> response.
 			</p>
 		</td>
 	</tr>
@@ -154,7 +154,7 @@ Your code should always be looking for the root key <code>error</code> in the AP
 
 Some of our datasets are static and don't change often (if at all.) Here's the most common static datasets you will need to make API calls and understand API response.
 
-####Vehicle Types
+#### Vehicle Types
 
 |		|		|		|		|			|
 |:------|:------|:------|:------|:----------|
@@ -220,7 +220,7 @@ Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great wa
 
 If you've made it this far, **congratulations!** You're way on your way to rock the API! 
 
-This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key(s), <a class="linkGetKey" href="http://edmunds.mashery.com/member/register" title="Get your API key" target="_blank">get them now</a> so you can rock 'n' roll in no time!
+This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key(s),<a class="linkGetKey" href="http://edmunds.mashery.com/member/register" title="Get your API key" target="_blank">get API key(s)</a> now so you can rock 'n' roll in no time!
 
 All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Serious. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
 
