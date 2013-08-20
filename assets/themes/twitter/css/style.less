@@ -1184,6 +1184,7 @@ div[class*="promo-section"] {
     .slide-text {
       line-height: 22px;
       font-size: 15px;
+      height: 125px;
     }
     .standart-btn {
       margin-top: 10px;
@@ -2999,12 +3000,20 @@ div[class*="promo-section"] {
     padding: 40px 0 26px 25px;
     border-bottom: 1px solid @color_gray_line;
     color: @color_text;
+    .content, .excerpt {
+      a:visited {
+        color: @color_regular_link;
+      }
+      a:hover {
+        color: @color_link_hover;
+      }      
+    }
     h3 {
       font-family:'Oswald700', Arial, sans-serif;
       font-weight: bold;
       margin-bottom: 13px;
       a {
-        color: inherit;
+        color: @color_text;
         &:hover, &:focus {
           color: @color_link_hover;
           text-decoration: none;
@@ -3015,7 +3024,7 @@ div[class*="promo-section"] {
       margin: 15px 0;
       font-size: 14px;
       padding: 0 17px;
-      color: white;
+      color: #fff;
     }
     .post-header {
       font-size: 12px;
@@ -3030,15 +3039,13 @@ div[class*="promo-section"] {
           }
         }
       }
-      .author a {
-        color: @color_regular_link;
-        &:hover, &:focus {
-          text-decoration: none;
-          color: @color_link_hover;
-        }
-        &:before {
-          content: "by ";
-          color: @color_text;
+      .author {
+        a {
+          color: @color_regular_link;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: @color_link_hover;
+          }
         }
       }
     }

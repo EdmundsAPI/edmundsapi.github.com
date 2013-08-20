@@ -2,7 +2,13 @@
 
   <div class="container">
     <div class="row-fluid h1Title">
-      <div class="span12"><h1>{{ page.page_title }}</h1></div>
+      <div class="span12">
+      {% if page.page_title %}
+        <h1>{{ page.page_title }}</h1>
+      {% else %}
+        <h1>Developer Blog</h1>
+      {% endif %}
+      </div>
     </div>
   </div>
 
@@ -17,10 +23,12 @@
         {% include themes/twitter/blog/blog-menu.html %}
       </div>
       <div class="span10">
- 
         {% include themes/twitter/blog/blog-post.html %}
 
-        {% include themes/twitter/blog/blog-paginator.html %}
+        <div class="wrapNextPrev">
+          <a id="prevMenuItem" class="disable">Previous</a>
+          <a id="nextMenuItem" class="disable">Next</a>
+        </div>
 
       </div>
     </div>
@@ -28,3 +36,122 @@
 </div>
 
 
+<script type="text/javascript">
+
+  var getParam = function(param) {
+    var queryString = window.location.search.substring(1),
+        queries = queryString.split("&");
+    for (var i in queries) {
+      var pair = queries[i].split("=");
+      if (pair[0] == param) {
+        return pair[1];
+      }
+    }
+    return null;
+  };
+
+  var filterPostsByPropertyValue = function(posts, property, value) {
+    var filteredPosts = [];
+    posts.pop();
+    for (var i in posts) {
+      var post = posts[i],
+          prop = post[property];
+      
+      post.tags.pop();
+      
+      if (prop.constructor == String) {
+        if (prop.toLowerCase() == value.toLowerCase()) {
+          filteredPosts.push(post);
+        }
+      } else if (prop.constructor == Array) {
+        for (var j in prop) {
+          if (prop[j].toLowerCase() == value.toLowerCase()) {
+            filteredPosts.push(post);
+          }
+        }
+      }
+    }
+    
+    return filteredPosts;
+  };
+
+  var highlightMenuItem = function(type, value) {
+    var list = $('[name="' + type +'"]'),
+      listItem;
+    list.find('li').removeClass('active');
+    listItem = list.find('[name="' + value +'"]');
+    listItem.addClass('active');
+
+  };
+
+  $(function() {
+    var  map = {
+        'category' : getParam('category'),
+        'tags' : getParam('tag'),
+        'archive' : getParam('date')
+      },
+      prevButton = $('#prevMenuItem'),
+      nextButton = $('#nextMenuItem'),
+      posts,
+      hasFilter = false,
+      mapCount = 0;
+
+
+    var initializePaging = function() {
+      var path = window.location.pathname,
+          queryString = window.location.search.substring(1),
+          currentIndex = -1,
+          prevIndex,
+          nextIndex;
+
+      queryString = queryString.length === 0 ? '' : '?' + queryString;
+
+      for (var i = 0; i < posts.length; i++) {
+        var href = posts[i].href + '/';
+        if(href === path) {
+          currentIndex = i;
+          prevIndex = currentIndex + 1;
+          nextIndex = currentIndex - 1;
+          break;
+        }
+      };
+
+      if (currentIndex >= 0) {
+        if (prevIndex < posts.length) {
+          prevButton.removeClass('disable');
+          prevButton.attr('href', posts[prevIndex].href + queryString);
+        }
+
+        if (nextIndex >= 0) {
+          nextButton.removeClass('disable');
+          nextButton.attr('href', posts[nextIndex].href + queryString);
+        }
+      }
+    }
+
+    for(var key in map) {
+      if(map.hasOwnProperty(key)) {
+        mapCount++;
+      }
+    }
+
+    $.each(map, function(type, value) {
+      if (value !== null) {
+        hasFilter = true;
+        highlightMenuItem(type, value);
+        $.getJSON('/search.json', function(data) {
+          posts = filterPostsByPropertyValue(data, type, value);          
+          initializePaging();
+        });
+      }
+      if (--mapCount === 0 && hasFilter === false) {
+        $.getJSON('/search.json', function(data) {
+          data.pop();
+          posts = data;
+          initializePaging();
+        });
+      }
+    });
+  });
+
+</script>

@@ -1,17 +1,18 @@
 <div class="post-panel">
-  <h5>Tags</h5>
   {% unless page.tags == empty %}
+    <h5>Tags</h5>
     <ul>
       {% assign tags_list = page.tags %}
       {% include JB/custom_tags_list %}
     </ul>
   {% endunless %}  
-  <h5>What links here</h5>
+
   {% unless page.links == empty %}
+    <h5>What links here</h5>
     <ul class="links-list">
       {% for link in page.links %} 
-      <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
-    {% endfor %}
+        <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+      {% endfor %}
     </ul>
   {% endunless %}  
 </div>
@@ -19,7 +20,13 @@
 <div class="blog-post">
   <h3>{{ page.title }}</h3>
   <div class="post-header">
-    <span class="author"><a href="{{ page.author_url }} " target="_blank">{{ page.by }}</a></span>
+    <span class="author">by
+    {% if page.author_url %}
+    <a href="{{ page.author_url }} " target="_blank">{{ page.by }}</a>
+    {% else %}
+    <span>{{ page.by }}</span>
+    {% endif %}
+    </span>
     <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
     <span class="category">
       {% if page.category == 'Engineering' %}
@@ -36,43 +43,3 @@
   </div>
 
 </div> 
-
-
-<script type="text/javascript">
-
-  var getParam = function(param) {
-    var queryString = window.location.search.substring(1),
-        queries = queryString.split("&");
-    for (var i in queries) {
-      var pair = queries[i].split("=");
-      if (pair[0] == param) {
-        return pair[1];
-      }
-    }
-    return null;
-  };
-
-  var highlightMenuItem = function(type, value) {
-    var list = $('[name="' + type +'"]'),
-      listItem;
-    list.find('li').removeClass('active');
-    listItem = list.find('[name="' + value +'"]');
-    listItem.addClass('active');
-
-  };
-
-  $(function() {
-    var map = {
-      'category' : getParam('category'),
-      'tags' : getParam('tag'),
-      'archive' : getParam('date')
-    };
-
-    $.each(map, function(type, value) {
-      if (value !== null) {
-        highlightMenuItem(type, value);        
-      }
-    });
-  });
-
-</script>
