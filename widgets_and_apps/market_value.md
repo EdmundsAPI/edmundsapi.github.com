@@ -13,7 +13,7 @@ The True Market Value®  is a simple widget that will let people quickly ...
 
 You can use the configurator below to customize the layout and style of  True Market Value® widget, and grab a small snippet of code to insert into your HTML pages to implement the widget in minutes..
 
-<div class="pre-loader" style="height: 1031px;">&nbsp;</div>
+<div class="pre-loader" style="height: 200px;">&nbsp;</div>
 <iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1031" align="left" class="iframeWidget">	
 </iframe>
 
