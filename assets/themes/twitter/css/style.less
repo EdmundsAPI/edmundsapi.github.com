@@ -66,6 +66,14 @@ a:hover {
       -ms-box-sizing: @value;
           box-sizing: @value;
 }
+
+.transform-rotate(@transform){
+  -webkit-transform:@transform;
+  -moz-transform:@transform;
+  -o-transform:@transform;
+  transform:@transform;
+}
+
 .redButton {
     margin: 0 0 31px;
     padding: 0 21px;
@@ -2833,6 +2841,15 @@ div[class*="promo-section"] {
           
           .iconDeveloper {
             display: inline-block;
+            overflow: hidden;
+            width: 116px;
+            height: 116px;
+            background: url('../img/certified_developer/search_the_directory/frame.png') no-repeat transparent;
+            
+            img {
+              width: 116px;
+              height: 116px;
+            }
           }
           
           .discriptDeveloper {
@@ -3167,182 +3184,369 @@ div[class*="promo-section"] {
 
 // start Profile page 
 
-.pageProfileDevelop {
+.wrapperProfile {
   width:1184px;
   margin:0 auto;
-  padding: 25px 0 0;
-  
-  header {
-    margin: 0 0 28px;
-    padding: 0;
+  padding: 25px 0 50px;
     
-    h1 {
-      margin: 0 0 12px;
-      font-size: 36px;
-      text-transform: uppercase;
-    }
-    
-    .standart-btn {
-      float:right;
-      padding: 0 41px;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 51px;
-    }
-    p {
-      max-width: 780px;
-      color: #525252;
-    }
-  }
-  
-  section.inform {
-    .blockGeneralExampl {
-      height: 156px;
-      margin:0 0 8px 0;
-      border-right: 1px solid #dedede;
-      border-bottom: 2px solid #dedede;
-      background: #fff;
-    }
-    .blockContactReviews {
-      height: 156px;
-      border-right: 1px solid #dedede;
-      border-bottom: 2px solid #dedede;
-      background: #fff;
-    }
-    .iconDeveloper {
-      background: #555;
-    }
-    .blockInform  {
-      width: 365px;
-      padding:18px 0 0 35px;
-      &:last-child {
-        float:right;
-        padding-right:36px;
-        text-align: right;
-      } 
-       
-      h3 {
-        margin: 0 0 10px;
-        font-size:21px;
+    header {
+      margin: 0 0 28px;
+      padding: 0;
+      
+      .iconClose {
+        position: absolute;
+        top:4px;
+        left:-76px;
+        width:37px;
+        height:37px;
+        background: url('../img/certified_developer/icon_close.png') center no-repeat;
+        cursor: pointer;
+      }
+      
+      h1 {
+        margin: 0 0 12px;
+        font-size: 36px;
         text-transform: uppercase;
       }
       
+      .standart-btn {
+        float:right;
+        padding: 0 41px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 51px;
+      }
+      p {
+        max-width: 780px;
+        margin: 0 0 0 5px;
+        color: #525252;
+        line-height: 21px;
+      }
     }
+    
+    section.inform {
+      position: relative;
+      margin: 0 0 56px;
       
-     // General
-     .wrapperGeneral {
-        ul.addInf {
-          margin:0 0 14px 0; 
-          list-style: none;
-          li {
-            float:left;
-            color: #666;
-            font-size: 12px;
-            line-height: 18px;
-            &:first-child {
-              padding:0 12px 0 0;
-              margin:0 12px 0 0;
-              border-right: 1px solid #666;
-            }
-          }
+      .blockGeneralExampl {
+        height: 155px;
+        margin:0 0 9px 0;
+        border-right: 1px solid #dedede;
+        border-bottom: 2px solid #dedede;
+        background: #fff;
+      }
+      .blockContactReviews {
+        height: 155px;
+        border-right: 1px solid #dedede;
+        border-bottom: 2px solid #dedede;
+        background: #fff;
+      }
+      .iconDeveloper {
+        background: #555;
+      }
+      .blockInform  {
+        float: left;
+        width: 359px;
+        padding:16px 0 0 38px;
+        &:first-child {
+          float:right;
+          padding-right:34px;
+          text-align: right;
+        } 
+         
+        h3 {
+          margin: 0 0 10px;
+          font-size:21px;
+          text-transform: uppercase;
         }
-        .badges {
-          span {
-            float: left;
+        
+      }
+        
+       // General
+       .wrapperGeneral {
+          ul.addInf {
             display: inline-block;
-            margin: 0 8px 0 0;
-            line-height:61px;
-          }
-          ul {
+            margin:0 0 9px; 
             list-style: none;
             li {
               float:left;
-              margin: 0 10px 0 0;
-              a {
-                display: inline-block;
-                width:53px;
-                height: 61px;
-                background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
-                background-repeat: no-repeat;  
-                
-                &.badge-social-shopping {
-                  background-position: 0 0;
-                }
-                &.badge-mobile {
-                  background-position: 0 -61px;
-                }
-                &.badge-analytics {
-                  background-position: 0 -122px;
-                }
+              color: #666;
+              font-size: 12px;
+              line-height: 18px;
+              &:first-child {
+                padding:0 12px 0 0;
+                margin:0 12px 0 0;
+                border-right: 1px solid #666;
               }
-              
-              
+            }
+          }
+          .badges {
+            span {
+              float: left;
+              display: inline-block;
+              margin: 0 8px 0 0;
+              line-height:61px;
+            }
+            ul {
+              list-style: none;
+              li {
+                float:left;
+                margin: 0 10px 0 0;
+                a {
+                  display: inline-block;
+                  width:53px;
+                  height: 61px;
+                  background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
+                  background-repeat: no-repeat;  
+                  
+                  &.badge-social-shopping {
+                    background-position: 0 0;
+                  }
+                  &.badge-mobile {
+                    background-position: 0 -61px;
+                  }
+                  &.badge-analytics {
+                    background-position: 0 -122px;
+                  }
+                }
+                
+                
+              }
             }
           }
         }
-      }
-      
-      // Contacts
-      .wrapperContsnts {
-        ul {
-          margin:0;
-          padding:0;
-          list-style: none;
-          
-          li {
-            margin: 0 0 9px;
+        
+        // Contacts
+        .wrapperContsnts {
+          ul {
+            margin:0;
+            padding:0;
+            list-style: none;
+            
+            li {
+              margin: 0 0 9px;
+            }
+            
+            span {
+              margin: 0 12px 0 0;
+              background-image: url('../img/sprite_icons.png');
+              background-repeat: no-repeat;
+              padding: 0 0 0 22px;
+            }
+            
+            .location {
+              background-position: 0 0;
+            }
+            .email {
+              background-position: 0 -24px;
+            }
+            .phone {
+              background-position: 0 -52px;
+            }
+            .skype {
+              background-position: 0 -77px;
+            }
+            .twitter {
+              background-position: 0 -100px;
+            }
           }
+        }
+        
+        //WORK EXAMPLES
+        .wrapperExamples {
           
           span {
-            margin: 0 12px 0 0;
-            background-image: url('../img/sprite_icons.png');
-            background-repeat: no-repeat;
-            padding: 0 0 0 22px;
+            display: block;
+            margin: 0 0 5px 0;
+            color: #666;
+            font-size: 12px;
+          }
+          ul {
+            list-style: none; 
+            a {
+              font-size: 15px;
+            }
           }
           
-          .location {
-            background-position: 0 3px;
+        }
+        
+        // REVIEWS
+        .wrapperReviews {
+          position: relative;
+          
+          #chart {
+            position: absolute;
+            right: 233px;
+            top: 21px;
           }
-          .email {
-            background-position: 0 -24px;
+          
+          .resultRating {
+            margin: 0 0 13px;
+            
+            ul{
+              list-style: none;
+            }
+            
+            .amoutStars {
+              color: #525252;
+              font: 700 13px/13px Arial, sans-serif;
+            }     
+               
+            ul.ratingStar {
+              display: inline-block;
+              margin: 0 6px 0 4px;
+              
+    
+              
+              li {
+                float: left;
+                width:10px;
+                height: 10px;
+                margin: 0 3px 0 0;
+                background: url('../img/certified_developer/rating_star.png') no-repeat transparent;
+              }
+            }
+            
+            
           }
-          .phone {
-            background-position: 0 -52px;
+          
+        }
+        
+        
+        // icon of the developer
+        
+        .wrapperIconDeveloper {
+          display: inline-block;
+          overflow: hidden;
+          margin: -15px 0 0;
+          width:352px;
+          height:352px;
+          background-image: url('../img/certified_developer/search_the_directory/sprite_frame_big_icons_dev.png');
+          background-color: transparent;
+          background-repeat: no-repeat;
+          
+          &.iconBadges1 {
+             background-position: 0 0;
           }
-          .skype {
-            background-position: 0 -76px;
+          &.iconBadges2 {
+             background-position: 0 -352px;
           }
-          .twitter {
-            background-position: 0 -100px;
+          &.iconBadges3 {
+             background-position: 0 -704px;
           }
+          
+        }
+        
+        
+    }
+    
+    .wrapperComments {
+      
+      h2 {
+        margin: 0 0 23px 4px;
+        font-size: 26px;
+        text-transform: uppercase;  
+      }
+      
+      .resultRating {
+        margin: 0 0 13px;
+        
+        ul{
+          list-style: none;
+        }
+        
+        .amoutStars {
+          color: #525252;
+          font: 700 13px/13px Arial, sans-serif;
+        }     
+           
+        ul.ratingStar {
+          display: inline-block;
+          margin: 0 6px 0 6px;
+          
+
+          
+          li {
+            float: left;
+            width:10px;
+            height: 10px;
+            margin: 0 3px 0 0;
+            background: url('../img/certified_developer/rating_star.png') 0 -11px no-repeat transparent;
+          }
+        }
+        
+        
+      }
+      
+      .blogRating {
+        border-bottom: 1px solid #c5c5c5;
+        margin-bottom: 31px;
+        
+        h4 {
+          margin: 0 0 9px 5px;
+          color: #525252;
+          font: 700 15px Arial, sans-serif;
+        }
+        .rating {
+          float:left;
+          width: 187px;
+          
+          ul, li {
+            list-style: none;
+          } 
+          
+          ul {
+            margin:0 0 0 7px;
+            padding:0;
+            
+            li {
+              margin: 0 0 7px;
+              color:#000;
+              font: 400 12px/12px Arial, sans-serif;
+              
+              ul.ratingSquare {
+                display: inline-block;
+                margin: 0 10px 0 0;
+                
+                li {
+                  float: left;
+                  width:10px;
+                  height: 10px;
+                  margin:0 2px 0 0;
+                  background:#FF8000;
+                  background:#ccc;
+                 
+                 &.active {
+                   background:#FF8000;
+                 }
+                }
+              }
+            }
+          }
+          
+        }
+        
+        .discription {
+          overflow: hidden;
+          line-height: 16px;
+        }
+        .annotator {
+          clear: both;
+          padding:3px 0 21px;
+          text-align: right;
+          font: 700 15px Arial, sans-serif;
         }
       }
       
-      //WORK EXAMPLES
-      .wrapperExamples {
-        
-        span {
-          display: block;
-          margin: 0 0 5px 0;
-          color: #666;
-          font-size: 12px;
-        }
-        ul {
-          list-style: none; 
-          a {
-            font-size: 15px;
-          }
-        }
-        
+      .standart-btn {
+        font: 400 14px/38px Arial, sans-serif;
+        padding: 0 15px;
       }
-      
-      
-  }
- 
-}
+    }
+} 
+
 
 // end Profile page
-
 
 
 

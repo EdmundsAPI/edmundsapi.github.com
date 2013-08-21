@@ -10,6 +10,7 @@ email: siarhei.mikulich@gmail.com
 phone: +1(310) 200-1111
 skype: smikulich
 twitter: smikulich
+image_icon_developer: siarhei_mikulich.png
 ---
 
 
@@ -20,29 +21,12 @@ twitter: smikulich
 		<a href="#" class="standart-btn">Contact {{page.name}}</a>
 		<h1>{{page.name_developer}}</h1>
 		<p>I will provide safe outsourcing services, secure processes, and top quality results for your business. I believe that everyone deserves high quality services.  For any type of customer I guarantee whatever they need.</p>
-		
+		<div class="iconClose">&nbsp;</div>
 	</header>
 	
 	<section class="inform">
 		
 		<div class="blockGeneralExampl clearfix">
-			<!-- General -->
-			<div class="blockInform wrapperGeneral">
-				<h3>General</h3>
-				<ul class="clearfix addInf">
-					<li>Individual</li>
-					<li>Certified since {{page.certified_since}}</li>
-				</ul>
-				<div class="badges">
-					<span>Qualification:</span>
-					<ul class="clearfix">
-						<li><a class="badge-mobile" href="/certified-dev/cdp_badge.html#mobile"></a></li>
-						<li><a class="badge-analytics" href="/certified-dev/cdp_badge.html#analitics"></a></li>
-						<li><a class="badge-social-shopping" href="/certified-dev/cdp_badge.html#socialShopping"></a></li>
-					</ul>
-				</div>
-			</div>
-			
 			<!-- WORK EXAMPLES -->
 			<div class="blockInform wrapperExamples">
 				<h3>WORK EXAMPLES</h3>
@@ -53,10 +37,50 @@ twitter: smikulich
 				</ul>
 			</div>
 			
+					
+			<!-- Icon of the developer -->
+			<div class="wrapperIconDeveloper">
+				
+				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
+
+			</div>
 			
+			<!-- General -->
+			<div class="blockInform wrapperGeneral">
+				<h3>General</h3>
+				<ul class="clearfix addInf">
+					<li>Individual</li>
+					<li>Certified since {{page.certified_since}}</li>
+				</ul>
+				<div class="badges">
+					<span>Qualification:</span>
+					<ul id="iconBadge" class="clearfix">
+						<li><a data-badge="mobile" class="badge-mobile" href="/certified-dev/cdp_badge.html#mobile"></a></li>
+						<li><a data-badge="analitycs" class="badge-analytics" href="/certified-dev/cdp_badge.html#analitics"></a></li>
+						<li><a data-badge="social shopping" class="badge-social-shopping" href="/certified-dev/cdp_badge.html#socialShopping"></a></li>
+					</ul>
+				</div>
+			</div>
+
 		</div>
 		
 		<div class="blockContactReviews clearfix">
+			<!-- REVIEWS -->
+			<div class="blockInform wrapperReviews">
+				<h3>Reviews</h3>
+				<div class="resultRating">
+					<ul class="ratingStar">
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+					</ul>
+					<span class="amoutStars">0.0</span>
+				</div>
+				<div id="chart">&nbsp;</div>
+			</div>
+			
 			<!-- Contacts -->
 			<div class="blockInform wrapperContsnts">
 				<h3>Contacts</h3>
@@ -68,21 +92,439 @@ twitter: smikulich
 						<span class="skype">{{page.skype}}</span>
 						<span class="twitter">{{page.twitter}}</span>
 					</li>
-					
 				</ul>
-			</div>
-
-			<!-- REVIEWS -->
-			<div class="blockInform wrapperReviews">
-				
-				<h3>Reviews</h3>
-				
 			</div>
 			
 		</div>
 		
-		<div class="iconDeveloper"></div>
-		
+
+
 	</section>
 	
+	<div class="wrapperComments">
+			
+			<h2>Feedback comments</h2>
+			
+			<!-- Start row of comments -->
+			<div class="row-fluid">
+				<div class="span6 blogRating">
+					
+					<h4>UI work for TMV Widget</h4>
+					<div class="resultRating">
+						
+						<ul class="ratingStar">
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+						</ul>
+						
+						<span class="amoutStars">0.0</span>
+						
+					</div>
+					<div data-rating="5;5;3;5;4;5" class="rating">
+						
+						<ul>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Quality
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Expertise
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Cost
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Schedule
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Response
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Professional
+							</li>
+						</ul>
+						
+					</div>
+					<p class="discription">
+						“Excellent work so far! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum dolor et velit tincidunt mollis. Quisque pretium malesuada nisl, ac lobortis magna commodo id. Cras sit amet diam nulla, quis scelerisque mauris. Pellentesque eros justo, venenatis in congue ac, sodales in lorem” 
+					</p>
+					<div class="annotator">- Client</div>
+					
+				</div>
+				<div class="span6 blogRating">
+					
+					<h4>UI work for New Vehicle Configurator Widget</h4>
+					<div class="resultRating">
+						
+						<ul class="ratingStar">
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+						</ul>
+						
+						<span class="amoutStars">0.0</span>
+						
+					</div>
+					<div data-rating="5;5;3;5;4;5"  class="rating">
+						
+						<ul>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Quality
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Expertise
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Cost
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Schedule
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Response
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Professional
+							</li>
+						</ul>
+						
+					</div>
+					<p class="discription">
+						“Excellent work so far! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum dolor et velit tincidunt mollis. Quisque pretium malesuada nisl, ac lobortis magna commodo id. Cras sit amet diam nulla, quis scelerisque mauris. Pellentesque eros justo, venenatis in congue ac, sodales in lorem” 
+					</p>
+					<div class="annotator">- Client</div>
+				</div>
+			</div>
+			<!-- End row of comments -->
+			
+			<!-- Start row of comments -->
+			<div class="row-fluid">
+				<div class="span6 blogRating">
+					
+					<h4>UI work for TMV Widget</h4>
+					<div class="resultRating">
+						
+						<ul class="ratingStar">
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+						</ul>
+						
+						<span class="amoutStars">0.0</span>
+						
+					</div>
+					<div data-rating="5;5;3;5;4;5" class="rating">
+						
+						<ul>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Quality
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Expertise
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Cost
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Schedule
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Response
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Professional
+							</li>
+						</ul>
+						
+					</div>
+					<p class="discription">
+						“Excellent work so far! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum dolor et velit tincidunt mollis. Quisque pretium malesuada nisl, ac lobortis magna commodo id. Cras sit amet diam nulla, quis scelerisque mauris. Pellentesque eros justo, venenatis in congue ac, sodales in lorem” 
+					</p>
+					<div class="annotator">- Client</div>
+					
+				</div>
+				<div class="span6 blogRating">
+					
+					<h4>UI work for New Vehicle Configurator Widget</h4>
+					<div class="resultRating">
+						
+						<ul class="ratingStar">
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+						</ul>
+						
+						<span class="amoutStars">0.0</span>
+						
+					</div>
+					<div data-rating="5;5;3;5;4;5"  class="rating">
+						
+						<ul>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Quality
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Expertise
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Cost
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Schedule
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Response
+							</li>
+							<li>
+								<ul class="ratingSquare">
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								</ul>
+								Professional
+							</li>
+						</ul>
+						
+					</div>
+					<p class="discription">
+						“Excellent work so far! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum dolor et velit tincidunt mollis. Quisque pretium malesuada nisl, ac lobortis magna commodo id. Cras sit amet diam nulla, quis scelerisque mauris. Pellentesque eros justo, venenatis in congue ac, sodales in lorem” 
+					</p>
+					<div class="annotator">- Client</div>
+				</div>
+			</div>
+			<!-- End row of comments -->
+			
+			
+			<a class="standart-btn" href="#" title="Send us feetback about developer">Send us feetback about developer</a>
+			
+		</div>
+	
 </div>
+
+
+
+<!-- Script for changing frame of the icon of the developrt -->
+<script type="text/javascript">
+	
+	$(function(){
+		
+		var $iconBadge = $('#iconBadge').find('li a');
+		
+		var amountBadge = $iconBadge.length;
+		
+		var wrappIconDev = $('.wrapperIconDeveloper');
+
+		wrappIconDev.addClass('iconBadges'+ amountBadge +'');
+		
+		
+		// setting height for blog comment
+		
+		var blogRating = $('.blogRating');
+		
+		
+		
+		
+	});
+	
+</script>
+
+
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/radar_chart_d3/d3.v3.min.js"></script>
+<script type="text/javascript"  src="{{ PATH }}/assets/themes/twitter/js/radar_chart_d3/radar_chart_d3.js"></script>
+
+<script type="text/javascript">
+	
+	d = [
+     [
+       {axis: "Quality", value: 5}, 
+       {axis: "Expertise", value: 5}, 
+       {axis: "Cost", value: 3},  
+       {axis: "Schedule", value: 5},  
+       {axis: "Response", value: 4}, 
+       {axis: "Professional", value: 5}
+      ]
+];
+
+RadarChart.draw("#chart", d);
+
+
+</script>
+
+
+
+
+
+
+
+
