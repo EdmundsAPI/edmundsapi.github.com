@@ -88,6 +88,9 @@ a:hover {
     }
 }
 
+body .container {
+  min-width: 1150px;
+}
 
 #h1Title {
   display:none;
@@ -1545,7 +1548,7 @@ div[class*="promo-section"] {
       }
       
       .moreInf {
-        float:left;
+        display: inline-block;
         padding: 0 16px 0 0;
         color:#fff;
         font-size: 13px;
@@ -1590,9 +1593,12 @@ div[class*="promo-section"] {
     background-color: #e9e9e9;
     .span2 {
       padding-top: 25px;
+      min-width: 200px;
     }
     .span10 {
       border-left: 1px solid #c5c5c5;
+      margin-left: 0px;
+      margin-right: -5px;
     }
     h1 {
       padding: 25px 0 18px 29px;
@@ -1806,6 +1812,15 @@ div[class*="promo-section"] {
   }
   .api-table {
     
+    .lineVertical {
+      .span2 {
+        min-width: 200px;
+      }
+      .span10 {
+        margin-left: 0;
+        width: 100px;
+      }
+    }
     
     .multiLevelMenu {
       margin-top: 0;
@@ -2009,7 +2024,6 @@ div[class*="promo-section"] {
   bottom:0;
   z-index:-1;
   .span10 {
-    width: 969px;
     height:100%;
     border-left:1px solid #C5C5C5;
   }  
