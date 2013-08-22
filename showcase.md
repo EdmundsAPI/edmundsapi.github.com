@@ -4,6 +4,7 @@ title: The Showcase
 title_parent: Showcase
 
 weight: 3
+class_page: showcasePage
 ---
 
 {% include themes/twitter/title-page.html %}
