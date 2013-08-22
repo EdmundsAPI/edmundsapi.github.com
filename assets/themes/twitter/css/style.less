@@ -3246,7 +3246,7 @@ div[class*="promo-section"] {
       }
       .blockInform  {
         float: left;
-        width: 359px;
+        width: 358px;
         padding:16px 0 0 38px;
         &:first-child {
           float:right;
@@ -3403,7 +3403,14 @@ div[class*="promo-section"] {
                 width:10px;
                 height: 10px;
                 margin: 0 3px 0 0;
-                background: url('../img/certified_developer/rating_star.png') no-repeat transparent;
+                background-image: url('../img/certified_developer/rating_star.png');
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: 0 -11px;
+                
+                &.active {
+                  background-position: 0 0;
+                }
               }
             }
             
@@ -3416,14 +3423,27 @@ div[class*="promo-section"] {
         // icon of the developer
         
         .wrapperIconDeveloper {
+          position: relative;
           display: inline-block;
           overflow: hidden;
           margin: -15px 0 0;
           width:352px;
           height:352px;
-          background-image: url('../img/certified_developer/search_the_directory/sprite_frame_big_icons_dev.png');
-          background-color: transparent;
-          background-repeat: no-repeat;
+          
+          .imgFrame {
+            position: absolute;
+            z-index:2;
+            width:352px;
+            height:352px;
+            background-image: url('../img/certified_developer/search_the_directory/sprite_frame_big_icons_dev.png');
+            background-color: transparent;
+            background-repeat: no-repeat; 
+          }
+          
+          img {
+            position: absolute;
+            z-index:0;
+          }
           
           &.iconBadges1 {
              background-position: 0 0;
@@ -3463,22 +3483,27 @@ div[class*="promo-section"] {
         ul.ratingStar {
           display: inline-block;
           margin: 0 6px 0 6px;
-          
 
-          
           li {
             float: left;
             width:10px;
             height: 10px;
             margin: 0 3px 0 0;
-            background: url('../img/certified_developer/rating_star.png') 0 -11px no-repeat transparent;
+            background-image: url('../img/certified_developer/rating_star.png');
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-position: 0 -11px;
+            
+            &.active {
+              background-position: 0 0;
+            }
           }
         }
         
         
       }
       
-      .blogRating {
+      .blockRating {
         border-bottom: 1px solid #c5c5c5;
         margin-bottom: 31px;
         
@@ -3544,7 +3569,6 @@ div[class*="promo-section"] {
       }
     }
 } 
-
 
 // end Profile page
 
