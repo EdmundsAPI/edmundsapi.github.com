@@ -25,7 +25,7 @@
 					<span class="btn-group-header">TRY THEM YOURSELF</span>
 					<div class="btn-color-selector gray"><div class="btn-color-inner">&nbsp;</div></div>
 					<div class="btn-color-selector green selected"><div class="btn-color-inner">&nbsp;</div></div>
-<div class="btn-color-selector yellow"><div class="btn-color-inner">&nbsp;</div></div>
+					<div class="btn-color-selector yellow"><div class="btn-color-inner">&nbsp;</div></div>
 				</div>
 			</div>
 			<div class="span6">
@@ -144,24 +144,7 @@
 		    	fixedPanel.removeClass('fixed');
 		    	footer.removeClass('hide');
 		   }
-		 });
-
-		$('.btn-color-selector').on('click', function() {
-		   	var selectedColor;
-		   	$('.btn-color-selector').removeClass('selected');
-		   	$(this).addClass('selected');
-		   	if($(this).hasClass('green')) {
-		    	selectedColor = 'green';
-		   	}
-else if($(this).hasClass('yellow')) {
-		    	selectedColor = 'yellow';
-		   	}
-		   	else if($(this).hasClass('gray')) {
-		    	selectedColor = 'gray';
-		   	}
-
-		   	$('.screen-bgnd').removeClass('yellow green gray').addClass(selectedColor);
-		 });
+		 });		
 	});
 </script>
 
