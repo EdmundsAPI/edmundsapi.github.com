@@ -18,10 +18,10 @@ image_icon_developer: siarhei_mikulich.png
 	
 	<header>
 		
-		<a href="#" class="standart-btn">Contact {{page.name}}</a>
+		<a href="mailto:{{page.email}}" class="standart-btn">Contact {{page.name}}</a>
 		<h1>{{page.name_developer}}</h1>
 		<p>I will provide safe outsourcing services, secure processes, and top quality results for your business. I believe that everyone deserves high quality services.  For any type of customer I guarantee whatever they need.</p>
-		<div class="iconClose">&nbsp;</div>
+		<a href="/certified-dev/search_the_directory.html" title="Close" class="iconClose">&nbsp;</a>
 	</header>
 	
 	<section class="inform">
@@ -40,7 +40,7 @@ image_icon_developer: siarhei_mikulich.png
 					
 			<!-- Icon of the developer -->
 			<div class="wrapperIconDeveloper">
-				
+				<div class="imgFrame">&nbsp;</div>
 				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
 
 			</div>
@@ -76,7 +76,7 @@ image_icon_developer: siarhei_mikulich.png
 						<li>&nbsp;</li>
 						<li>&nbsp;</li>
 					</ul>
-					<span class="amoutStars">0.0</span>
+					<span class="amoutStars"><span class="number">0</span>.0</span>
 				</div>
 				<div id="chart">&nbsp;</div>
 			</div>
@@ -107,7 +107,7 @@ image_icon_developer: siarhei_mikulich.png
 			
 			<!-- Start row of comments -->
 			<div class="row-fluid">
-				<div class="span6 blogRating">
+				<div class="span6 blockRating">
 					
 					<h4>UI work for TMV Widget</h4>
 					<div class="resultRating">
@@ -120,10 +120,10 @@ image_icon_developer: siarhei_mikulich.png
 							<li>&nbsp;</li>
 						</ul>
 						
-						<span class="amoutStars">0.0</span>
+						<span class="amoutStars"><span class="number">0</span>.0</span>
 						
 					</div>
-					<div data-rating="5;5;3;5;4;5" class="rating">
+					<div data-rating="1;2;3;4;5;2" class="rating">
 						
 						<ul>
 							<li>
@@ -195,7 +195,7 @@ image_icon_developer: siarhei_mikulich.png
 					<div class="annotator">- Client</div>
 					
 				</div>
-				<div class="span6 blogRating">
+				<div class="span6 blockRating">
 					
 					<h4>UI work for New Vehicle Configurator Widget</h4>
 					<div class="resultRating">
@@ -208,10 +208,10 @@ image_icon_developer: siarhei_mikulich.png
 							<li>&nbsp;</li>
 						</ul>
 						
-						<span class="amoutStars">0.0</span>
+						<span class="amoutStars"><span class="number">0</span>.0</span>
 						
 					</div>
-					<div data-rating="5;5;3;5;4;5"  class="rating">
+					<div data-rating="5;3;1;5;2;5"  class="rating">
 						
 						<ul>
 							<li>
@@ -287,7 +287,7 @@ image_icon_developer: siarhei_mikulich.png
 			
 			<!-- Start row of comments -->
 			<div class="row-fluid">
-				<div class="span6 blogRating">
+				<div class="span6 blockRating">
 					
 					<h4>UI work for TMV Widget</h4>
 					<div class="resultRating">
@@ -300,10 +300,10 @@ image_icon_developer: siarhei_mikulich.png
 							<li>&nbsp;</li>
 						</ul>
 						
-						<span class="amoutStars">0.0</span>
+						<span class="amoutStars"><span class="number">0</span>.0</span>
 						
 					</div>
-					<div data-rating="5;5;3;5;4;5" class="rating">
+					<div data-rating="5;5;5;3;4;1" class="rating">
 						
 						<ul>
 							<li>
@@ -375,7 +375,7 @@ image_icon_developer: siarhei_mikulich.png
 					<div class="annotator">- Client</div>
 					
 				</div>
-				<div class="span6 blogRating">
+				<div class="span6 blockRating">
 					
 					<h4>UI work for New Vehicle Configurator Widget</h4>
 					<div class="resultRating">
@@ -388,10 +388,10 @@ image_icon_developer: siarhei_mikulich.png
 							<li>&nbsp;</li>
 						</ul>
 						
-						<span class="amoutStars">0.0</span>
+						<span class="amoutStars"><span class="number">0</span>.0</span>
 						
 					</div>
-					<div data-rating="5;5;3;5;4;5"  class="rating">
+					<div data-rating="5;5;5;5;4;5"  class="rating">
 						
 						<ul>
 							<li>
@@ -487,14 +487,6 @@ image_icon_developer: siarhei_mikulich.png
 
 		wrappIconDev.addClass('iconBadges'+ amountBadge +'');
 		
-		
-		// setting height for blog comment
-		
-		var blogRating = $('.blogRating');
-		
-		
-		
-		
 	});
 	
 </script>
@@ -520,6 +512,172 @@ RadarChart.draw("#chart", d);
 
 
 </script>
+
+
+
+<script type="text/javascript">
+	
+	$(function(){
+		
+		var blockRating = $('.blockRating');
+		
+		var wrapperReviews = $('.wrapperReviews');
+
+		blockRating.each(function(){  //1
+			
+			var dataRating = $(this).find('.rating').data('rating').split(';'); 
+			
+			var lengthDataRating = dataRating.length; 
+			
+			// start raring Square
+			var $arrUl = $(this).find('.ratingSquare'); // array ul
+			
+			$arrUl.each(function(indx){
+				
+				var $arrLi = $(this).find('li');
+				
+				var index = $arrUl.index();
+				
+				var dataValue = dataRating[indx];
+				
+				for(var i=0; i<dataValue; i++){
+					
+					$arrLi.eq(i).addClass('active');
+					
+				}
+				
+			});
+			// end raring Square
+			
+			
+			// start raring Stars
+			
+			starRating(dataRating);   //function summation stars
+			
+			$(this).find('.number').text(result);
+			
+			var stars = $(this).find('.ratingStar li');
+			
+			//showing stars
+			showStars(stars);
+			
+			stars.each(function(indx){
+				
+				 if(indx < result){
+				
+					$(this).addClass('active');
+					
+				}
+				
+			});
+
+			// end raring Stars
+			
+		});
+		
+		//showing stars
+		function showStars(element){
+			
+			element.each(function(indx){
+				
+				 if(indx < result){
+				
+					$(this).addClass('active');
+					
+				}
+				
+			});
+
+		};
+		
+		//function summation stars
+		function starRating(arr){
+				
+			var a = arr;
+			
+			var li = a.length;
+			
+			for(var sun = 0, i = 0; i < li; i++){
+				
+			 	var value = parseInt(a[i]);
+			 	
+				sun += value;
+			}  
+			
+			resultSun = sun / li;
+			
+			result = Math.round(resultSun);
+
+			return result;
+		};
+		
+		
+		//start Global sum
+		function globalSum(){
+			
+			var globalArrStars = [];
+			
+			blockRating.find('.number').each(function(){
+				
+				globalArrStars.push($(this).text());
+				
+			});
+
+			return globalArrStars;
+			
+		};
+		
+		var arrGlobalSum = globalSum();
+		
+		var resultGlobalSumStars = starRating(arrGlobalSum);
+		
+		wrapperReviews.find('.number').text(resultGlobalSumStars);
+		
+		var globalStars = wrapperReviews.find('.ratingStar li');
+
+		//showing stars
+		showStars(globalStars);
+		//End Global sum
+		
+	});
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
