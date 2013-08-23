@@ -356,8 +356,7 @@ a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus
           }
         }
       }
-    }
-    
+    }  
     
     
   }
@@ -1212,6 +1211,8 @@ a.blueLink {
     }
     .carousel-wrap {
       position: relative;
+      width: 1050px;
+      margin: 0 auto;
     }
     .carousel {
       position: relative;
@@ -1267,21 +1268,22 @@ a.blueLink {
       }
     }
     .prev {
-      left: -35px;
+      left: -400px;
     }
     .next {
-      right: -15px;
+      right: -325px;
     }
     .nvc-pager {
       li {
         position: absolute;
+        background-color: #fff;
         top: 250px;
         z-index: 1;
         &.left {
-
+          left: 10px;
         }
         &.right {
-
+          right: 10px;
         }
       }
       a {
@@ -1291,10 +1293,28 @@ a.blueLink {
         width: 30px;
       }
       .left a {
-        background-position: 0 -30px;        
+        background-position: 0 -64px;        
       }
       .right a {
         background-position: 0 0;
+      }
+    }
+
+    .paginator {
+      position: absolute;
+      bottom: 40px;
+      right: 456px;
+      z-index: 2;
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        background: url('../img/slider_nvc/navig-nvc.png') no-repeat;
+        background-position: 0 -152px;
+        width: 20px;
+        height: 20px;
+        &.active {
+          background-position: 0 -114px;
+        }
       }
     }
 
