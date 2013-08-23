@@ -1183,14 +1183,121 @@ a.blueLink {
   .promo-section-label {
     display: inline-block;    
     position: absolute;
-    border: 1px solid;
+    border: 1px solid #ccc;
     width: 108px;
     padding: 7px 0;
     text-transform: uppercase;
     text-align: center;
   }
   .promo-section1 {
-    height: 400px;
+    height: 693px;
+    ul {
+      list-style: none;
+    }
+    .section-header {
+      margin-left: 230px;
+      margin-bottom: 37px;
+    }
+    .step-header {
+      display: none;
+      h2 {
+        margin-bottom: 10px;
+      }
+      &.active {
+        display: block;
+      }
+    }
+    .sub-header {
+      max-width: 800px;
+    }
+    .carousel-wrap {
+      position: relative;
+    }
+    .carousel {
+      position: relative;
+      z-index: 1;
+      width: 924px;
+      height: 613px;
+      margin: 0 auto;
+      background: url('../img/slider_nvc/screen.png') no-repeat;
+      [class*="step"] {
+        background: url('../img/slider_nvc/sprite-widget-big.png') no-repeat;
+        position: absolute;
+        display: none;
+        width: 653px;
+        height: 439px;
+        &.active {
+          display: block;
+          top: 55px;
+          left: 48px;
+          border: 2px solid #c9c9c9;
+          .border-radius(5px);
+        }
+      }
+      .step1 {
+        background-position: 0 0;
+      }
+      .step2 {
+        background-position: 0 -600px;
+      }
+      .step3 {
+        background-position: 0 -1200px;
+      }
+    }
+    .prev, .next {
+      position: absolute;
+      top: 56px;
+      [class*="step"] {
+        background: url('../img/slider_nvc/sprite-widget-small.png') no-repeat;
+        display: none;
+        width: 468px;
+        height: 440px;
+        &.active {
+          display: block;
+        }
+      }
+      .step1 {
+        background-position: 0 0;
+      }
+      .step2 {        
+        background-position: 0 -520px;
+      }
+      .step3 {        
+        background-position: 0 -1040px;
+      }
+    }
+    .prev {
+      left: -35px;
+    }
+    .next {
+      right: -15px;
+    }
+    .nvc-pager {
+      li {
+        position: absolute;
+        top: 250px;
+        z-index: 1;
+        &.left {
+
+        }
+        &.right {
+
+        }
+      }
+      a {
+        background: url('../img/slider_nvc/navig-nvc.png') no-repeat;
+        display: block;
+        height: 30px;
+        width: 30px;
+      }
+      .left a {
+        background-position: 0 -30px;        
+      }
+      .right a {
+        background-position: 0 0;
+      }
+    }
+
   }
   .promo-section2 {
     padding:58px 0 28px 0;
@@ -1199,7 +1306,6 @@ a.blueLink {
     background-image: url('../img/widget_promo/bg-grid.png');
     background-repeat: repeat;
     .promo-section-label {
-      border-color: #ccc;
       top: -41px;
       right: 453px;
     }
@@ -1280,7 +1386,7 @@ a.blueLink {
             height:383px;
             padding:0;
             margin:0;
-            background-image: url('../img/slider_nvc/slides_nvc.png');
+            background-image: url('../img/slider_nvc/slides-nvc.png');
             background-repeat:  no-repeat;
            
             &.slide1 {
