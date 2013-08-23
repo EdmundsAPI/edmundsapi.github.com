@@ -3,11 +3,12 @@ layout: certified_dev
 title: Certified developers
 title_parent: Certified developers
 title_active_left_menu: 'CDP Badge'
+title_h1: 'CDP Badge'
 
 cdp_weight: 5
 cdp_class_page: cdpBdge
 ---
-  
+
 <div class="wrapperAnchors">
 	<a href="#mobile" title="">
 		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
@@ -65,11 +66,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 </script>
 <script type="text/javascript">
 	$(function(){
-	
-		$(".wrapperAnchors a").on('click', function (element) { 
+
+		$(".wrapperAnchors a").on('click', function (element) {
 			var thisLink = $(this);
 			scrollTo(thisLink);
 		});
-	
+
 	});
 </script>

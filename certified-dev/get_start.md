@@ -3,6 +3,7 @@ layout: certified_dev
 title: Certified developers
 title_parent: Certified developers
 title_active_left_menu: 'How do I get started?'
+title_h1: 'How do I get started?'
 
 cdp_weight: 4
 ---
@@ -12,7 +13,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 </a>
 <a name="business_owner">
 </a>
-<div id="menu" class="toggleLinks clearfix ">	
+<div id="menu" class="toggleLinks clearfix ">
 	<div>
 		<a href="#certified_developer">Certified Developer</a>
 	</div>
@@ -24,18 +25,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 <div id="result">
 	<div id="content">
 		<div data-block="business_owner" class="contentBusOwner business_owner"  style="display: block;">
-			
+
 			<div class="wrapperStep step1BS">
-			
+
 				<div class="imgStep step1BOwner">&nbsp;</div>
-				
+
 				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Business Owner thinking of a custom solution</h2>
 				<h4>Featured Use Cases</h4>
-				
+
 				<table>
-					
+
 					<tr>
 						<td>Social shopping</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. </td>
@@ -48,112 +49,112 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 						<td>Analytics</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. </td>
 					</tr>
-				
+
 				</table>
-			
+
 			</div>
-			
-			
+
+
 			<div class="wrapperStep step2BS">
-			
+
 				<div class="imgStep step2BOwner">&nbsp;</div>
-				
+
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Business Owner goes on Edmunds API Portal</h2>
-				
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
-				
+
 				<div style="text-align: center">
 					<a class="redButton" href="/certified-dev/search_the_directory.html" title="View Certified Developers Directory">View Certified Developers Directory</a>
 				</div>
 			</div>
-			
+
 			<div class="wrapperStep step3BS">
-			
+
 				<div class="imgStep step3BOwner">&nbsp;</div>
-				
+
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Business Owner negotiates with Edmunds </br> Certified Developer</h2>
-				
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
-				
+
 			</div>
-			
+
 			<div class="wrapperStep step4BS">
-			
+
 				<div class="imgStep step4DevBOwn">&nbsp;</div>
-				
+
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Business Owner works with Certified Developer </br> on a custom solution</h2>
-		
+
 			</div>
-			
-		
+
+
 		</div>
-		
-		
-		
+
+
+
 		<div data-block="certified_developer" class="contentDev certified_developer" style="display: none;">
-			
+
 			<div class="wrapperStep">
-			
+
 				<div class="imgStep step1Dev">&nbsp;</div>
-				
+
 				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Developer builds an application </br> with Edmunds API </h2>
-				
+
 				<p><a href="#" title="Register for a user account">Register for a user account</a> on developer.edmunds.com </br> Build something awesome with Edmunds API.</p>
 				<p>During development if you have any questions you can post them to our <a href="#" title="Forum">Forum</a>, browse our <a href="api-documentation/overview/index.html" title="API documentation">API documentation</a> or send us an email.</p>
-			
+
 			</div>
-			
-			
+
+
 			<div class="wrapperStep">
-			
+
 				<div class="imgStep step2Dev">&nbsp;</div>
-				
+
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Developer developer passes Edmunds API test</h2>
-				
+
 				<p><a href="#" title="Register for a user account">Register for a user account</a> on developer.edmunds.com </br> Build something awesome with Edmunds API.</p>
 				<p>There are 3 qualification areas. You will get official <a href="#" title="">Edmunds Certified Developer logo</a> specific to the API for which qualification was obtained, and which can be displayed on a website to showcase the developer’s skills and help attract clients.</p>
 				<div style="text-align: center">
 					<a class="redButton" href="#" title="Take Edmunds API test now">Take Edmunds API test now</a>
 				</div>
 			</div>
-			
-			
+
+
 			<div class="wrapperStep">
-			
+
 				<div class="imgStep step3Dev">&nbsp;</div>
-				
+
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Developer completes certification process</h2>
-				
+
 				<p>When you receive passing scores on test, you’ll get an email from Edmunds, asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer logo"> Edmunds Certified Developer logo</a>, which you can display on your personal website, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developer partners in our directory.</p>
-				
+
 			</div>
-			
+
 			<div class="wrapperStep">
-			
+
 				<div class="imgStep step4DevBOwn">&nbsp;</div>
-				
+
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
-				
+
 				<h2>Сertified Developer works with Business Owner to help </br> him build automative experience with Edmund API</h2>
-				
+
 			</div>
-	
+
 		</div>
-		
+
 	</div>
 </div>
 
@@ -165,23 +166,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 
 <script type="text/javascript" charset="utf-8">
 	/*$(function(){
-	
+
 		var currentHash = window.location.hash;
-		
+
  		console.log(currentHash)
- 		
+
 		$('#menu').find('div:first a').addClass('activeToggle');
-		
+
 		if(currentHash == ''){
-		
+
 			//$('#menu').find('a[href="#business_owner"]').addClass('activeToggle');
 			console.log('1')
-			
+
 		} else {
-		
+
 			$('#menu').find('a[href='+ currentHash +']').addClass('activeToggle');
 			console.log('2')
-			
+
 		}
 	});	*/
 </script>

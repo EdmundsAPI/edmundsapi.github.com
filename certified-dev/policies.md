@@ -3,6 +3,7 @@ layout: certified_dev
 title: Certified developers
 title_parent: Certified developers
 title_active_left_menu: 'Policies'
+title_h1: 'Policies'
 
 cdp_weight: 3
 cdp_class_page: cdpPolice
@@ -10,7 +11,7 @@ cdp_class_page: cdpPolice
 
 <div class="wrapperAnchors">
 	<h4>The ECD Network Policies include 4 sections:</h4>
-	
+
 	<ol>
 	  <li><a href="#general_guidelines" title="General Guidelines">General Guidelines</a></li>
 	  <li><a href="#badge_use_policies" title="Badge Use Policies">Badge Use Policies</a></li>
@@ -93,9 +94,9 @@ The Edmunds Certified Developer Network recognizes companies that have developed
 
 ###Compliance Policies
 
-Edmunds.com’s Certified Developer Network helps developers create products that create effective automotive experiences. To ensure a positive and consistent experience, Edmunds.com has outlined a set of compliance policies that govern users of our APIs. These policies are also used to assess applications for Facebook’s Preferred Marketing Developer program, badges, and directory. 
+Edmunds.com’s Certified Developer Network helps developers create products that create effective automotive experiences. To ensure a positive and consistent experience, Edmunds.com has outlined a set of compliance policies that govern users of our APIs. These policies are also used to assess applications for Facebook’s Preferred Marketing Developer program, badges, and directory.
 
-Please review these policies carefully. Violations may result in suspension from Facebook’s Preferred Marketing Developer directory, suspended access to Facebook’s Ads API, disabling of advertising accounts, revocation of previously awarded Preferred Marketing Developer badges, and other sanctions. We reserve the right to request documentation from you to ensure your compliance with this policy. 
+Please review these policies carefully. Violations may result in suspension from Facebook’s Preferred Marketing Developer directory, suspended access to Facebook’s Ads API, disabling of advertising accounts, revocation of previously awarded Preferred Marketing Developer badges, and other sanctions. We reserve the right to request documentation from you to ensure your compliance with this policy.
 
 In addition to the policy below, Preferred Marketing Developers must also adhere to all Facebook policies, including (but not limited to) the following ones:
 
@@ -124,12 +125,12 @@ In addition to the policy below, Preferred Marketing Developers must also adhere
 </script>
 <script type="text/javascript">
 	$(function(){
-	
-		$("ol a").on('click', function (element) { 
+
+		$("ol a").on('click', function (element) {
 			var thisLink = $(this);
 			scrollTo(thisLink);
 		});
-	
+
 	});
 </script>
 
