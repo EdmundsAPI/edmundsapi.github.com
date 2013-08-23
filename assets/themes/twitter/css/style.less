@@ -806,12 +806,17 @@ a.blueLink {
 .promo-section3 {
   background-color: #444444;
   color: #fff;
-  padding-top: 46px;
+  padding-top: 90px;
   text-align: center;
-  height: 484px;
+  p {
+    font-size: 16px;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 38px;
+  }
   .h2Header {
     text-align: center;
-    margin: 20px 0 33px;
     h2 {
       display: inline-block;
       vertical-align: bottom;
@@ -827,193 +832,7 @@ a.blueLink {
   }
 }
 
-.vehicle-conf-promo {
-  .promo-section2 {
-    padding:58px 0 28px 0;
-    color:#fff;
-    background:#336699;
 
-  .inrustrSliderNVC{
-    display:block;
-    float: right;
-    text-align:right;
-    padding:0 0 0 25px;
-    margin:0 90px 0 0;
-    font-size:12px;
-    font-style:italic;
-    background: url('../img/slider_tmv/iconMarkerInstr.png') left no-repeat;
-  }
-  
-  .wrapperSliderNVC {
-    margin-top:11px;
-      .navig {
-        position:relative;
-        z-index:3;
-        float:right;
-        margin:121px 0 0 0;
-        
-        ul {
-          list-style:none;
-          margin-left:35px;
-          
-          li {
-            width:10px;
-            height:8px;
-            margin:0 0 7px 0;
-            list-style:none;
-            background-image: url('../img/slider_tmv/navig_TMV.png');
-            background-repeat:  no-repeat;
-            background-position: 0 -45px;
-            text-indent: -99999px;
-           
-            &#downSlide {
-              background-position: 0 -15px;
-              &:hover {
-                background-position: 0 0;
-              }
-            }
-           
-            &#upSlide {
-              background-position: 0 -59px;
-              &:hover {
-                background-position: 0 -74px;
-              }
-            }
-           
-            &.slidePoint1 {
-              background-position: 0 -30px;
-            }  
-          }  
-        }
-     }
-     
-    .sliderTMV {
-       position:relative;
-       overflow:hidden;
-       float:right;
-       width:300px;
-       height:316px;
-       margin:0 0 29px 0;
-       background:#f5f5f5;
-       -webkit-box-shadow:0 0 20px #234668;
-       -moz-box-shadow:0 0 20px #234668;
-            box-shadow:0 0 20px #234668;
-      ul {
-        position:absolute;
-        margin:0;
-        padding:0;
-        
-        li {
-          position:relative;
-          width:300px;
-          height:316px;
-          padding:0;
-          margin:0;
-          background-image: url('../img/slider_tmv/slides_tmv.png');
-          background-repeat:  no-repeat;
-         
-          &.slide1 {
-            background-position: 0 0;
-          }
-         
-          &.slide2 {
-            background-position: -300px 0;
-          }
-         
-          &.slide3 {
-            background-position: -600px 0;
-          }
-        }        
-      } 
-    }
-     
-    .markers {
-      position:relative;
-       
-      // Markers
-      .markerConf {
-        position:absolute;
-        right:338px;
-        width:15px;
-        height:15px;
-        background: url('../img/slider_tmv/marker_tmv.png') 0 0 no-repeat;
-        cursor:pointer;
-           
-        &.active {
-          background-position:0 -15px;
-        }           
-      }
-      .mark1 {
-        top:73px;
-      }
-         
-      .mark2 {
-        top:138px;
-      }
-         
-      .mark3 {
-        top:199px;
-      }
-         
-      .mark4 {
-        top:260px;
-      }
-         
-       // Tips
-      .tips {
-        position:absolute;
-        right:353px;
-        display:none;
-        max-width:226px;
-        padding: 0 86px 0 0;
-        line-height: 17px;
-        background: url('../img/slider_tmv/markerLine.png') right 14px no-repeat;
-         
-        &.active {
-          display:block;
-        }
-      }
-       
-      .tip1 {
-        top:66px;
-      }
-       
-      .tip2 {
-        top:131px;
-      }
-       
-      .tip3 {
-        top:192px;
-      }
-       
-      .tip4 {
-        top:253px;
-      }
-    }
-  }
-
-    h2 {
-      margin:0 0 37px 33px;
-      line-height: 58px;
-    }
-    h5 {
-      margin:0 0 17px 33px;
-      font-family: arial,sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-    }
-    p {
-      margin:0 0 37px 33px;
-    }
-    ul {
-      margin:0 0 0 48px;
-      li {
-        margin:0 0 14px 0;
-        list-style: square;
-      }    
-    }
-  }
-}
 
 .wrap-container {
   overflow: hidden;
@@ -1360,7 +1179,202 @@ a.blueLink {
 }
 
 
+.vehicle-conf-promo {
+  .promo-section2 {
+    padding:58px 0 28px 0;
+    color:#fff;
+    background:#336699;
 
+    .inrustrSliderNVC{
+      display:block;
+      float: right;
+      text-align:right;
+      padding:0 0 0 25px;
+      margin:0 90px 0 0;
+      font-size:12px;
+      font-style:italic;
+      background: url('../img/slider_tmv/iconMarkerInstr.png') left no-repeat;
+    }
+    
+    .wrapperSliderNVC {
+      margin-top:11px;
+        .navig {
+          position:relative;
+          z-index:3;
+          float:right;
+          margin:121px 0 0 0;
+          
+          ul {
+            list-style:none;
+            margin-left:35px;
+            
+            li {
+              width:10px;
+              height:8px;
+              margin:0 0 7px 0;
+              list-style:none;
+              background-image: url('../img/slider_tmv/navig_TMV.png');
+              background-repeat:  no-repeat;
+              background-position: 0 -45px;
+              text-indent: -99999px;
+             
+              &#downSlide {
+                background-position: 0 -15px;
+                &:hover {
+                  background-position: 0 0;
+                }
+              }
+             
+              &#upSlide {
+                background-position: 0 -59px;
+                &:hover {
+                  background-position: 0 -74px;
+                }
+              }
+             
+              &.slidePoint1 {
+                background-position: 0 -30px;
+              }  
+            }  
+          }
+       }
+       
+      .sliderTMV {
+         position:relative;
+         overflow:hidden;
+         float:right;
+         width:300px;
+         height:316px;
+         margin:0 0 29px 0;
+         background:#f5f5f5;
+         -webkit-box-shadow:0 0 20px #234668;
+         -moz-box-shadow:0 0 20px #234668;
+              box-shadow:0 0 20px #234668;
+        ul {
+          position:absolute;
+          margin:0;
+          padding:0;
+          
+          li {
+            position:relative;
+            width:300px;
+            height:316px;
+            padding:0;
+            margin:0;
+            background-image: url('../img/slider_tmv/slides_tmv.png');
+            background-repeat:  no-repeat;
+           
+            &.slide1 {
+              background-position: 0 0;
+            }
+           
+            &.slide2 {
+              background-position: -300px 0;
+            }
+           
+            &.slide3 {
+              background-position: -600px 0;
+            }
+          }        
+        } 
+      }
+       
+      .markers {
+        position:relative;
+         
+        // Markers
+        .markerConf {
+          position:absolute;
+          right:338px;
+          width:15px;
+          height:15px;
+          background: url('../img/slider_tmv/marker_tmv.png') 0 0 no-repeat;
+          cursor:pointer;
+             
+          &.active {
+            background-position:0 -15px;
+          }           
+        }
+        .mark1 {
+          top:73px;
+        }
+           
+        .mark2 {
+          top:138px;
+        }
+           
+        .mark3 {
+          top:199px;
+        }
+           
+        .mark4 {
+          top:260px;
+        }
+           
+         // Tips
+        .tips {
+          position:absolute;
+          right:353px;
+          display:none;
+          max-width:226px;
+          padding: 0 86px 0 0;
+          line-height: 17px;
+          background: url('../img/slider_tmv/markerLine.png') right 14px no-repeat;
+           
+          &.active {
+            display:block;
+          }
+        }
+         
+        .tip1 {
+          top:66px;
+        }
+         
+        .tip2 {
+          top:131px;
+        }
+         
+        .tip3 {
+          top:192px;
+        }
+         
+        .tip4 {
+          top:253px;
+        }
+      }
+    }
+
+      h2 {
+        margin:0 0 37px 33px;
+        line-height: 58px;
+      }
+      h5 {
+        margin:0 0 17px 33px;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      p {
+        margin:0 0 37px 33px;
+      }
+      ul {
+        margin:0 0 0 48px;
+        li {
+          margin:0 0 14px 0;
+          list-style: square;
+        }    
+      }
+  }
+  .promo-section3 {
+    height: 564px;
+    .h2Header {
+      margin: 0;
+      padding: 20px 75px 33px;
+      display: inline-block;
+      border-top: 1px solid #666;
+    }
+  }
+}
 // Home Page
 
 [class^="section"] {
