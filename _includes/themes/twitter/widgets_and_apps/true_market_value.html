@@ -144,7 +144,26 @@
 		    	fixedPanel.removeClass('fixed');
 		    	footer.removeClass('hide');
 		   }
-		 });		
+		 });
+		$('.btn-color-selector').on('click', function() {
+			var selectedColor;
+			$('.btn-color-selector').removeClass('selected');
+			$(this).addClass('selected');
+			if($(this).hasClass('green')) {
+				selectedColor = 'green';
+			}
+			else if($(this).hasClass('yellow')) {
+			selectedColor = 'yellow';
+			}
+			else if($(this).hasClass('gray')) {
+				selectedColor = 'gray';
+			}
+		
+			$('.screen-bgnd').removeClass('yellow green gray').addClass(selectedColor);
+		});
+		
+
+		interval(timeInterval); 
 	});
 </script>
 

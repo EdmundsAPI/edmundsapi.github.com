@@ -18,21 +18,24 @@
 </div>
 
 <div>
-	<div class="wrap-container promo-section1">&nbsp;</div>
+	<div class="wrap-container promo-section1">
+		<div class="promo-section-label">User</div>
+	</div>
 
 	<div class="wrap-container row-fluid promo-section2">
 		<div class="span6">
 			<div class="clearfix wrapperSliderNVC">
+				<div class="promo-section-label">Client</div>
 				<div class="navig">
 					<ul>
-						<li id="downSlide">Prev</li>
+						<li id="downSlideNVC">Prev</li>
 						<li class="slidePoint1">1</li>
 						<li class="slidePoint2">2</li>
 						<li class="slidePoint3">3</li>
-						<li id="upSlide">Next</li>
+						<li id="upSlideNVC">Next</li>
 					</ul>
 				</div>
-				<div class="sliderTMV">
+				<div class="sliderNVC">
 					<ul>
 						<li class="slide1" data-slide="1"></li>
 						<li class="slide2" data-slide="2"></li>
@@ -46,20 +49,22 @@
 					<span data-num="2" class="markerConf mark2">&nbsp;</span>
 					<span data-num="3" class="markerConf mark3">&nbsp;</span>
 					<span data-num="4" class="markerConf mark4">&nbsp;</span>
+					<span data-num="5" class="markerConf mark5">&nbsp;</span>
 					
 					
-					<span data-slide="1" data-num="1" class="tips tip1">Slide 1 Tip 1</span>
-					<span data-slide="1" data-num="2" class="tips tip2">Slide 1 Tip 2</span>
-					<span data-slide="1" data-num="3" class="tips tip3">Slide 1 Tip 3</span>
-					<span data-slide="1" data-num="4" class="tips tip4">Slide 1 Tip 4</span>
+					<span data-slide="1" data-num="1" class="tips tip1">Vehicle API key</span>
+					<span data-slide="1" data-num="2" class="tips tip2">Dealer API key</span>
+					<span data-slide="1" data-num="3" class="tips tip3">Theme</span>
+					<span data-slide="1" data-num="4" class="tips tip4">Color scheme</span>
+					<span data-slide="1" data-num="5" class="tips tip5">Width</span>
 					
-					<span data-slide="2" data-num="1" class="tips tip1">Slide 2 Tip 1</span>
-					<span data-slide="2" data-num="2" class="tips tip2">Slide 2 Tip 2</span>
-					<span data-slide="2" data-num="3" class="tips tip3">Slide 2 Tip 3</span>
+					<span data-slide="2" data-num="1" class="tips tip1">Border radius</span>
+					<span data-slide="2" data-num="2" class="tips tip2">Tabs to display</span>
+					<span data-slide="2" data-num="3" class="tips tip3">Included Makes</span>
 					
-					<span data-slide="3" data-num="1" class="tips tip1">Slide 3 Tip 1</span>
-					<span data-slide="3" data-num="2" class="tips tip2">Slide 3 Tip 2</span>
-					<span data-slide="3" data-num="3" class="tips tip3">Slide 3 Tip 3</span>
+					<span data-slide="3" data-num="1" class="tips tip1">Included makes</span>
+					<span data-slide="3" data-num="2" class="tips tip2">Default ZIP code</span>
+					<span data-slide="3" data-num="3" class="tips tip3">Dealer Keywords</span>
 					
 				</div>
 
@@ -130,5 +135,9 @@
 	    		footer.removeClass('hide');
 	   		}
 	  	});
+
+	var slider = new Slider();
+	slider.start();
+
     });
 </script>

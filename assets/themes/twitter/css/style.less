@@ -801,7 +801,7 @@ a.blueLink {
 }*/
 
 .promo-section2 {
-  background-color: #336699;
+  background: url('../img/widget_promo/bg-grid.png') repeat-x;
 }
 .promo-section3 {
   background-color: #444444;
@@ -1180,11 +1180,29 @@ a.blueLink {
 
 
 .vehicle-conf-promo {
+  .promo-section-label {
+    display: inline-block;    
+    position: absolute;
+    border: 1px solid;
+    width: 108px;
+    padding: 7px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .promo-section1 {
+    height: 400px;
+  }
   .promo-section2 {
     padding:58px 0 28px 0;
     color:#fff;
-    background:#336699;
-
+    background-color:#336699;
+    background-image: url('../img/widget_promo/bg-grid.png');
+    background-repeat: repeat;
+    .promo-section-label {
+      border-color: #ccc;
+      top: -41px;
+      right: 453px;
+    }
     .inrustrSliderNVC{
       display:block;
       float: right;
@@ -1198,6 +1216,7 @@ a.blueLink {
     
     .wrapperSliderNVC {
       margin-top:11px;
+      position: relative;      
         .navig {
           position:relative;
           z-index:3;
@@ -1218,14 +1237,14 @@ a.blueLink {
               background-position: 0 -45px;
               text-indent: -99999px;
              
-              &#downSlide {
+              &#downSlideNVC {
                 background-position: 0 -15px;
                 &:hover {
                   background-position: 0 0;
                 }
               }
              
-              &#upSlide {
+              &#upSlideNVC {
                 background-position: 0 -59px;
                 &:hover {
                   background-position: 0 -74px;
@@ -1239,12 +1258,12 @@ a.blueLink {
           }
        }
        
-      .sliderTMV {
+      .sliderNVC {
          position:relative;
          overflow:hidden;
          float:right;
          width:300px;
-         height:316px;
+         height:383px;
          margin:0 0 29px 0;
          background:#f5f5f5;
          -webkit-box-shadow:0 0 20px #234668;
@@ -1258,22 +1277,22 @@ a.blueLink {
           li {
             position:relative;
             width:300px;
-            height:316px;
+            height:383px;
             padding:0;
             margin:0;
-            background-image: url('../img/slider_tmv/slides_tmv.png');
+            background-image: url('../img/slider_nvc/slides_nvc.png');
             background-repeat:  no-repeat;
            
             &.slide1 {
-              background-position: 0 0;
+              background-position: -1px 0;
             }
            
             &.slide2 {
-              background-position: -300px 0;
+              background-position: -303px 0;
             }
            
             &.slide3 {
-              background-position: -600px 0;
+              background-position: -603px -6px;
             }
           }        
         } 
@@ -1296,19 +1315,23 @@ a.blueLink {
           }           
         }
         .mark1 {
-          top:73px;
+          top:66px;
         }
            
         .mark2 {
-          top:138px;
+          top:131px;
         }
            
         .mark3 {
-          top:199px;
+          top:196px;
         }
            
         .mark4 {
-          top:260px;
+          top:257px;
+        }
+
+        .mark5 {
+          top: 318px;
         }
            
          // Tips
@@ -1327,19 +1350,23 @@ a.blueLink {
         }
          
         .tip1 {
-          top:66px;
+          top:59px;
         }
          
         .tip2 {
-          top:131px;
+          top:124px;
         }
          
         .tip3 {
-          top:192px;
+          top:189px;
         }
          
         .tip4 {
-          top:253px;
+          top:250px;
+        }
+
+        .tip5 {
+          top:311px;
         }
       }
     }
@@ -1443,7 +1470,7 @@ a.blueLink {
       height: 322px;
       position: absolute;
       bottom: 0;
-    margin-left: 38px;
+      margin-left: 38px;
       &.active {
         display: inline-block;
       }
