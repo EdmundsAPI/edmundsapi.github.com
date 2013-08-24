@@ -15,9 +15,11 @@ level: 2
 overview: page_version
 ---
 
+#### Get an inventory listing by VIN.
 
+To learn more about car VINs, check out this [Wikipedia page](http://en.wikipedia.org/wiki/Vehicle_Identification_Number). The VINs that are expected are:
 
+1. 17 characters long.
+2. The last 5 characters are *numeric*.
 
-### Test page {{page.version}}
-
-
+This resource is **not** meant to be a *VIN Decoder*. For VIN decoding, please see [this resource](/api-documentation/vehicle/vin_decoding/v1/).

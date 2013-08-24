@@ -10,7 +10,7 @@ level: 1
 
 ### Overview
 
-The Inventory API provides access to the *vehicle inventories* available on Edmunds.com. Due to the nature of this data, it's only available to API Partners. If you're interested in becoming an API Partner, please [email us](mailto:api@edmunds.com)
+The Inventory API provides access to the *vehicle inventories* (or *cars for sale*) available at dealerships with a relationship with Edmunds.com. Due to the nature of this data, it's only available to **API Partners** and **Edmunds Developers**. If you're interested in becoming an API Partner, please [email us](mailto:api@edmunds.com)
 
 If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.
 
@@ -44,7 +44,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 2: Get available *NEW* cars for sale at a specific dealership
 
-	http://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
+	https://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
 
 ### API Uses
 
