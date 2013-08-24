@@ -1,0 +1,27 @@
+---
+layout: api-documentation
+title : 'Dealer Ratings and Reviews by Dealer Make and Zipcode'
+title_active_left_menu: 'Ratings and Reviews'
+title_parent: Api documentation
+
+amount_version: 1
+title-endpoint: 'Get review by dealer make and zip'
+spec: ratings_and_reviews
+version: v1
+api: dealer
+dropdown-link: 'v1/api/test_api/spec_test/endpoint1_v1'
+
+
+level: 4
+description_edpoint: 'Get review by dealer id'
+title_md : Description
+number: 2
+
+---
+
+
+###Parameters
+
+##test content : {{page.title-endpoint}} 
+
+tab: {{page.number}}
