@@ -3,8 +3,13 @@
 
 <div class="clearfix wrapperBlock wrapCustomerBlock">
 
-	<aside class="wrapSlider">
-
+	<aside class="blockSlider">
+		<h4>See what our customers have built</h4>
+		<div class="wrapSlider">
+			{% include themes/twitter/showcase/showcase-items.html %}
+		</div>
+		<span class="buttonSlider linkBack">&nbsp;</span>
+		<span class="buttonSlider linkNext">&nbsp;</span>
 	</aside>
 
 	<article>
@@ -48,3 +53,90 @@
 	</article>
 
 </div>
+
+
+
+
+{% comment %}<!-- start script slider of the customer -->{% endcomment %}
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/slidersSDP.js">
+</script>
+{% comment %}<!-- end script slider of the customer -->{% endcomment %}
+
+
+
+
+
+<div class="blockBottomSlider clearfix">
+
+		<div class="blockDiscription1">
+			<div class="app-picture pic-slide0 active" data-slide-number="0">
+				<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/why_build/busOwner1.jpg" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. </p>
+			</div>
+			<div class="app-picture pic-slide1" data-slide-number="1" style="display: none;">
+				<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/why_build/busOwner2.jpg" />
+				<p>Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. </p>
+			</div>
+			<div class="app-picture pic-slide2" data-slide-number="2" style="display: none;">
+				<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/why_build/busOwner3.jpg" />
+				<p>Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. </p>
+			</div>
+		</div>
+
+		<div class="blockDiscription2">
+
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="active item" data-item-number="0">
+						<span class="name">John Doe</span>
+						<p class="slide-text">
+							Head of Product Management, EPAM Systems
+						</p>
+					</div>
+					<div class="item" data-item-number="1">
+						<span class="name">Sveta Kruglova</span>
+						<p class="slide-text">
+							UI Designer, EPAM Systems
+						</p>
+					</div>
+					<div class="item" data-item-number="2">
+						<span class="name">Frank Doe</span>
+						<p class="slide-text">
+							Head of Product Management, EPAM Systems
+						</p>
+					</div>
+				</div>
+
+				<a class="carousel-button left" href="#myCarousel" data-slide="prev">&nbsp;</a>
+				<a class="carousel-button right" href="#myCarousel" data-slide="next">&nbsp;</a>
+				<ol class="carousel-indicators">
+				  	<li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
+				  	<li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
+				   	<li data-target="#myCarousel" data-slide-to="2">&nbsp;</li>
+				</ol>
+			</div>
+		</div>
+
+
+</div>
+
+<script type="text/javascript">
+
+    $('.carousel').carousel({
+	    pause: false,
+		interval: false
+    });
+
+    $('.carousel').on('slide', function(event) {
+    	var slideNumber = $(event.relatedTarget).data('itemNumber');
+    	$('.app-picture.active').hide().removeClass('active');
+    	$('[data-slide-number="'+ slideNumber +'"]').addClass('active');
+    	$('[data-slide-number="'+ slideNumber +'"]').show();
+    });
+
+</script>
+
+
+
+
+
