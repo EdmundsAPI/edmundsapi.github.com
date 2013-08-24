@@ -72,26 +72,26 @@ number: 3
 	  ]
 	}
 
-| Property      				| Description                         						| Visibility    	|
-|:------------------------------|:----------------------------------------------------------|:----------------- |
-| dealerID				   		| The dealer ID. This is also the *Franchise* ID			| Edmunds, Partners |
-| locationId    		    	| The dealer's location ID									| Edmunds, Partners |
-| dealerName    		    	| The dealership name			 							| Edmunds, Partners |
-| dealerAddress	    		   	| The dealership Address									| Edmunds, Partners |
-| dealerContactInfo		     	| The dealership contact info						 		| Edmunds, Partners |
-| salesReviews		     		| The sales review for this dealership (see below)	 		| Edmunds, Partners |
-| serviceReviews		     	| The service review for this dealership (see below)		| Edmunds, Partners |
+| Property      				| Description                         						| Visibility    			|
+|:------------------------------|:----------------------------------------------------------|:--------------------------|
+| dealerID				   		| The dealer ID. This is also the *Franchise* ID			| Edmunds, Partners, public |
+| locationId    		    	| The dealer's location ID									| Edmunds, Partners, public |
+| dealerName    		    	| The dealership name			 							| Edmunds, Partners, public |
+| dealerAddress	    		   	| The dealership Address									| Edmunds, Partners, public |
+| dealerContactInfo		     	| The dealership contact info						 		| Edmunds, Partners, public |
+| salesReviews		     		| The sales review for this dealership (see below)	 		| Edmunds, Partners, public |
+| serviceReviews		     	| The service review for this dealership (see below)		| Edmunds, Partners, public |
 
 
 #### Review Properties
 
-| Property      				| Description                         						| Visibility    	|
-|:------------------------------|:----------------------------------------------------------|:----------------- |
-| averageRating	    		   	| Average rating for this dealer	 						| Edmunds, Partners |
-| title		    	    		| Title of the review										| Edmunds, Partners |
-| reviewBody	    		   	| The consumer review										| Edmunds, Partners |
-| consumerName	    		   	| The name of the consumer submitting the review			| Edmunds, Partners |
-| date		    		  		| The date the review was submitted						 	| Edmunds, Partners |
-| totalRating		    		| Total rating given by the consumer						| Edmunds, Partners |
-| recommendedDealer	    	  	| Yes or No		 											| Edmunds, Partners |
-| comments		    	    	| Any comments on the review by the dealership				| Edmunds, Partners |
+| Property      				| Description                         						| Visibility    			|
+|:------------------------------|:----------------------------------------------------------|:--------------------------|
+| averageRating	    		   	| Average rating for this dealer	 						| Edmunds, Partners, public |
+| title		    	    		| Title of the review										| Edmunds, Partners, public |
+| reviewBody	    		   	| The consumer review										| Edmunds, Partners, public |
+| consumerName	    		   	| The name of the consumer submitting the review			| Edmunds, Partners, public |
+| date		    		  		| The date the review was submitted						 	| Edmunds, Partners, public |
+| totalRating		    		| Total rating given by the consumer						| Edmunds, Partners, public |
+| recommendedDealer	    	  	| Yes or No		 											| Edmunds, Partners, public |
+| comments		    	    	| Any comments on the review by the dealership				| Edmunds, Partners, public |
