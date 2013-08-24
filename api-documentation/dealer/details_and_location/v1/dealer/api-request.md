@@ -1,11 +1,11 @@
 ---
 layout: api-documentation
-title : 'Dealer Details'
+title : 'Get Dealer Details'
 title_active_left_menu: Details and Location
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get dealer details'
+title-endpoint: 'Get Dealer Details'
 spec: details_and_location
 version: v1
 api: dealer
@@ -13,7 +13,7 @@ dropdown-link: 'dealer'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get Dealer Details'
 title_md : Sample Request
 number: 4
 

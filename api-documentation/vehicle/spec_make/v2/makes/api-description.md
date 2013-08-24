@@ -23,7 +23,7 @@ Get the list of car makes.
 
 ### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={vehicle api key}
+	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -42,7 +42,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 		<script>
 		  	window.sdkAsyncInit = function() {
 		    	// Instantiate the SDK
-				var res = new EDMUNDSAPI('YOUR VEHICLE API KEY');
+				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
 				var options = {};
