@@ -74,6 +74,13 @@ a:hover {
   transform:@transform;
 }
 
+.transition(@duration, @timing-function, @prop) {
+  -webkit-transition: @duration @timing-function @prop;
+     -moz-transition: @duration @timing-function @prop;
+       -o-transition: @duration @timing-function @prop;
+          transition: @duration @timing-function @prop;
+}
+
 .redButton {
     margin: 0 0 31px;
     padding: 0 21px;
@@ -356,8 +363,7 @@ a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus
           }
         }
       }
-    }
-    
+    }  
     
     
   }
@@ -1178,7 +1184,7 @@ a.blueLink {
   
 }
 
-
+// Promo page NVC
 .vehicle-conf-promo {
   .promo-section-label {
     display: inline-block;    
@@ -1197,6 +1203,8 @@ a.blueLink {
     .section-header {
       margin-left: 230px;
       margin-bottom: 37px;
+      height: 90px;
+      overflow: hidden;
     }
     .step-header {
       display: none;
@@ -1212,30 +1220,63 @@ a.blueLink {
     }
     .carousel-wrap {
       position: relative;
+      width: 1050px;
+      margin: 0 auto;
     }
-    .carousel {
+    .screen-wrap {
       position: relative;
       z-index: 1;
-      width: 924px;
+      padding: 0 28px;
+      width: 868px;
       height: 613px;
       margin: 0 auto;
       background: url('../img/slider_nvc/screen.png') no-repeat;
+    }
+    .carousel {
+      overflow: hidden;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      right: 28px;
+      left: 28px;
       [class*="step"] {
         background: url('../img/slider_nvc/sprite-widget-big.png') no-repeat;
         position: absolute;
         display: none;
         width: 653px;
         height: 439px;
-        &.active {
+        border: 2px solid #c9c9c9;
+        .border-radius(5px);
+        .transition(0.6s, ease-in-out, left);
+
+        &.next, &.prev, &.active {
           display: block;
-          top: 55px;
-          left: 48px;
-          border: 2px solid #c9c9c9;
-          .border-radius(5px);
+          top: 55px;          
+        }
+        &.next, &.active.right {
+          left: 100%;
+        }
+        &.prev, &.active.left {
+          left: -100%;
+        }
+        &.next.left, &.prev.right {
+          left: 18px;
+        }
+        &.active {
+          left: 18px;
         }
       }
       .step1 {
         background-position: 0 0;
+        .marker1 {
+          top: 100px;
+          right: 80px;
+        }
+        .marker2 {
+          top: 233px;
+          left: 400px;
+        }
       }
       .step2 {
         background-position: 0 -600px;
@@ -1243,18 +1284,71 @@ a.blueLink {
       .step3 {
         background-position: 0 -1200px;
       }
+      [class*="marker"] {        
+        background: url('../img/slider_nvc/marker.png') no-repeat;
+        position: absolute;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+      }
+      .info-popup {
+        display: none;
+        position: absolute;
+        top: -1px;
+        right: -175px;
+        width: 190px;
+        padding: 20px;
+        background: #fff;
+        font-size: 12px;
+        line-height: 15px;
+        .popup-header {
+          font-weight: bold;
+          padding-bottom: 10px;
+          padding-right: 25px;
+        }
+        .close-btn {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          background: url('../img/slider_nvc/close-btn.png') no-repeat;
+          width: 21px;
+          height: 21px;
+          cursor: pointer;
+        }
+      }
     }
     .prev, .next {
       position: absolute;
       top: 56px;
       [class*="step"] {
+        cursor: pointer;
         background: url('../img/slider_nvc/sprite-widget-small.png') no-repeat;
+      }
+      li {
         display: none;
+        position: absolute;
         width: 468px;
         height: 440px;
-        &.active {
+        .transition(0.6s, ease-in-out, left);
+        &.active, &.next, &.prev {
+          top: 0;
           display: block;
         }
+        &.next, &.active.right {
+          left: 468px;
+        }
+        &.prev, &.active.left {
+          left: -468px;
+        }
+        &.next.left, &.prev.right {
+          left: 0;
+        }
+        &.active {
+          left: 0;
+        }
+      }
+      .empty {
+        background-color: #f2f2f2;
       }
       .step1 {
         background-position: 0 0;
@@ -1267,21 +1361,22 @@ a.blueLink {
       }
     }
     .prev {
-      left: -35px;
+      left: -400px;
     }
     .next {
-      right: -15px;
+      right: 145px;
     }
     .nvc-pager {
       li {
         position: absolute;
+        background-color: #fff;
         top: 250px;
         z-index: 1;
         &.left {
-
+          left: 10px;
         }
         &.right {
-
+          right: 10px;
         }
       }
       a {
@@ -1291,10 +1386,29 @@ a.blueLink {
         width: 30px;
       }
       .left a {
-        background-position: 0 -30px;        
+        background-position: 0 -64px;        
       }
       .right a {
         background-position: 0 0;
+      }
+    }
+
+    .paging-indicators {
+      position: absolute;
+      bottom: 60px;
+      right: 473px;
+      z-index: 2;
+      li {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 4px;
+        background: url('../img/slider_nvc/navig-nvc.png') no-repeat;
+        background-position: 0 -152px;
+        width: 20px;
+        height: 20px;
+        &.active {
+          background-position: 0 -114px;
+        }
       }
     }
 
@@ -1508,6 +1622,8 @@ a.blueLink {
     }
   }
 }
+//end 
+
 // Home Page
 
 [class^="section"] {

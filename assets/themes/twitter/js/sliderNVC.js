@@ -102,7 +102,6 @@ function Slider() {
 	// Moving Markers (animate)
 	
 	var animateMarkers = function(mark1Top, mark2Top, mark3Top, mark4Top, mark5Top, tip1Top, tip2Top, tip3Top, tip4Top, tip5Top, slidePoint1, slidePoint2, slidePoint3) {
-		console.log("NVC animate markers");	
 		var mark1 = $('.mark1');
 	    var mark2 = $('.mark2');
 	    var mark3 = $('.mark3');
