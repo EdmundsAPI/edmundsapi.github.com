@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Dealer Ratings and Reviews by Dealer Make and Zipcode'
-title_active_left_menu: 'Ratings and Reviews'
+title : 'Vehicle Inventory VIN Lookup'
+title_active_left_menu: 'VIN Lookup'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get review by dealer make and zip'
-spec: ratings_and_reviews
+title-endpoint: 'Get Inventory by VIN'
+spec: vin_lookup
 version: v1
-api: dealer
+api: inventory
 dropdown-link: 'v1/api/test_api/spec_test/endpoint1_v1'
 
 
 level: 4
-description_edpoint: 'Get review by dealer id'
+description_edpoint: 'Get Inventory by VIN'
 title_md : Sample Request
 number: 4
 

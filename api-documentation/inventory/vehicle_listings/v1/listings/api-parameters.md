@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Dealer Ratings and Reviews by Dealer ID'
-title_active_left_menu: 'Ratings and Reviews'
+title : 'Vehicle Inventory Listings'
+title_active_left_menu: 'Vehicle Listings'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get review by dealer id'
-spec: ratings_and_reviews
+title-endpoint: 'Get Inventory Listings'
+spec: vehicle_listings
 version: v1
-api: dealer
+api: inventory
 dropdown-link: 'v1/api/test_api/spec_test/endpoint1_v1'
 
 
 level: 4
-description_edpoint: 'Get review by dealer id'
+description_edpoint: 'Get Inventory Listings'
 title_md : Parameters
 number: 2
 

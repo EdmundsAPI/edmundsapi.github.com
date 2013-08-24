@@ -14,7 +14,7 @@ dropdown-link: 'v1/api/test_api/spec_test/endpoint1_v1'
 
 level: 4
 description_edpoint: 'Get review by dealer id'
-title_md : Description
+title_md : Response Format
 number: 3
 
 ---
