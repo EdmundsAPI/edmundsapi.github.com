@@ -25,7 +25,8 @@ $(function(){
 
     var maxHeight = arrHeightComp[0];
 
-    wrapSlider.height(maxHeight);
+    //wrapSlider.height(maxHeight);
+    wrapSlider.height(214);
 
     // click buttonSlider
     function stepNext(){
