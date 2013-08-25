@@ -138,9 +138,9 @@ We have broken down the process for both business owners and developers below. T
 				
 				<h2>Developer completes certification process</h2>
 				
-				<p>When you receive passing scores on test and the interview goes well, you’ll get an email from Edmunds.com asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer logo"> Edmunds Certified Developer logo</a>, which you can display on your personal and professional websites, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developers in our directory.</p>
+				<p>When you receive passing scores on test and the interview goes well, you’ll get an email from Edmunds.com asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer badge"> Edmunds Certified Developer badge</a>, which you can display on your personal and professional websites, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developers in our directory.</p>
 				
-				<p>There are 4 qualification areas. You will get official <a href="#" title="">Edmunds Certified Developer logo</a> specific to the API for which qualifications were granted, and which can be displayed on your website to showcase the developer’s skills and help attract clients.</p>
+				<p>There are 4 qualification areas. You will get your official <a href="#" title=""><strong>Edmunds Certified Developer badge</strong></a> specific to the APIs for which qualifications were granted to you, and which can be displayed on your website to showcase the developer’s skills and help attract clients.</p>
 				
 			</div>
 			
