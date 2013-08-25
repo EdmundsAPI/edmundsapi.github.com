@@ -32,21 +32,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner thinking of a custom solution</h2>
-				<h4>Featured Use Cases</h4>
 				
 				<table>
-					
 					<tr>
-						<td>Social shopping</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. </td>
+						<td>Web</td>
+						<td>All web-based solutions that are meant to be viewed primarily on the desktop. This includes widgets and brand new website development.</td>
 					</tr>
 					<tr>
 						<td>Mobile</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. </td>
+						<td>All mobile solutions (web or native). That includes iOS, android and HTML5 development.</td>
+					</tr>
+					<tr>
+						<td>Social</td>
+						<td>All web and mobile solutions with primary focus on social networking integration. This includes Facebook apps, Pinterest, Twitter and Google+ development.</td>
 					</tr>
 					<tr>
 						<td>Analytics</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. </td>
+						<td>All solutions that are back office or insight tools. This includes dashboard development.</td>
 					</tr>
 				
 				</table>
@@ -62,8 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<h2>Business Owner goes on Edmunds API Portal</h2>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
+				<p>You browse through the list of available Certified Developers. You could contact developers directly.</p>
 				
 				<div style="text-align: center">
 					<a class="redButton" href="/certified-dev/search_the_directory.html" title="View Certified Developers Directory">View Certified Developers Directory</a>
@@ -76,10 +77,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Business Owner negotiates with Edmunds </br> Certified Developer</h2>
+				<h2>Business Owner negotiates with </br> Certified Developer</h2>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Vivamus ornare feugiat nunc, in convallis ante convallis in. Aenean dictum mattis lectus id pulvinar.</p>
+				<p>You and the developer have to come to an agreement that suits you both to carry out the project. Edmunds.com will not be part of this negotiation process. </p>
+				<p>This portal acts as a directory that helps business find developers that know the Edmunds API well. Edmunds.com's involvement doesn't go beyond that.</p>
 				
 			</div>
 			
@@ -89,7 +90,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Business Owner works with Certified Developer </br> on a custom solution</h2>
+				<h2>Business Owner works with Certified Developer </br> on a custom solution!</h2>
 		
 			</div>
 			
@@ -108,8 +109,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<h2>Developer builds an application </br> with Edmunds API </h2>
 				
-				<p><a href="#" title="Register for a user account">Register for a user account</a> on developer.edmunds.com </br> Build something awesome with Edmunds API.</p>
-				<p>During development if you have any questions you can post them to our <a href="#" title="Forum">Forum</a>, browse our <a href="api-documentation/overview/index.html" title="API documentation">API documentation</a> or send us an email.</p>
+				<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
+				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="api-documentation/overview/" title="API documentation">API documentation</a> or [tweet us](http://twitter.com/edmundsapi).</p>
 			
 			</div>
 			
@@ -120,12 +121,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Developer developer passes Edmunds API test</h2>
+				<h2>Developer passes Edmunds API Test</h2>
 				
-				<p><a href="#" title="Register for a user account">Register for a user account</a> on developer.edmunds.com </br> Build something awesome with Edmunds API.</p>
-				<p>There are 3 qualification areas. You will get official <a href="#" title="">Edmunds Certified Developer logo</a> specific to the API for which qualification was obtained, and which can be displayed on a website to showcase the developer’s skills and help attract clients.</p>
+				<p>Once you have built a rockin' application with the Edmunds API, [email us](http://formsite.com) to let us know. Make sure you include a link to the application on github or somewhere where we can view it and test it.</p>
+				<p>From there, we will <strong>set up a phone interview</strong> to further discuss the API and to <strong>give you a simple programming test</strong>.</p>
+
 				<div style="text-align: center">
-					<a class="redButton" href="#" title="Take Edmunds API test now">Take Edmunds API test now</a>
+					<a class="redButton" href="#" title="Take Edmunds API test now">Check Out Our Code Academy Course</a>
 				</div>
 			</div>
 			
@@ -138,7 +140,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<h2>Developer completes certification process</h2>
 				
-				<p>When you receive passing scores on test, you’ll get an email from Edmunds, asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer logo"> Edmunds Certified Developer logo</a>, which you can display on your personal website, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developer partners in our directory.</p>
+				<p>When you receive passing scores on test and the interview goes well, you’ll get an email from Edmunds.com asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer logo"> Edmunds Certified Developer logo</a>, which you can display on your personal and professional websites, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developers in our directory.</p>
+				
+				<p>There are 4 qualification areas. You will get official <a href="#" title="">Edmunds Certified Developer logo</a> specific to the API for which qualifications were granted, and which can be displayed on your website to showcase the developer’s skills and help attract clients.</p>
 				
 			</div>
 			
@@ -148,7 +152,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Сertified Developer works with Business Owner to help </br> him build automative experience with Edmund API</h2>
+				<h2>Certified Developer works with Business Owner to </br> build automative experiences with Edmund API</h2>
 				
 			</div>
 	
