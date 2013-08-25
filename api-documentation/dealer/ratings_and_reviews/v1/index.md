@@ -7,7 +7,7 @@ title_parent: Api documentation
 amount_version: 1
 spec: rating_and_reviews
 version: v1
-api: test_api
+api: dealer
 dropdown-link: 'Select endpoint'
 
 
