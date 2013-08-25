@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Showcase
+title: The Edmunds API in Action – Applications Built with The Edmunds API
 title_parent: Showcase
 
 weight: 3

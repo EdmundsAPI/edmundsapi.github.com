@@ -26,7 +26,7 @@ Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) with
 
 #### URL
 
-		https://api.edmunds.com/api/inventory/v1/getall?range=100&zipcode=90019&make=Hyundai&basicFilter=make:Hyundai&pageSize=1
+	https://api.edmunds.com/api/inventory/v1/getall?range=100&zipcode=90019&make=Hyundai&basicFilter=make:Hyundai&pageSize=1
 	
 #### Response
 
