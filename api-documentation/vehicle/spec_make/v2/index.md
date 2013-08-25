@@ -8,7 +8,7 @@ amount_version: 2
 spec: spec_make
 version: v2
 api: vehicle
-dropdown-link: 'Select an Endpoint'
+dropdown-link: 'Select endpoint'
 
 
 level: 2
