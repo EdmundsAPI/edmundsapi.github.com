@@ -2515,7 +2515,7 @@ a.blueLink {
 }
 .contentPage .lineVertical {
   z-index:0;
-  top: 213px;
+  top: 291px;
 }
 .collumnMenu, .multiLevelMenu {
   position:relative;
@@ -4294,7 +4294,59 @@ a.blueLink {
 
       }
 
+    .titleBottomSlider {
+        margin: 0 0 20px;
+        font-size: 21px;
+        font-family: 'Oswald400',Arial,sans-serif;
+        text-transform: uppercase;
 
+        ul.nav-tabs {
+          display: inline-block;
+          border: 0;
+          margin: 0 0 -10px 0;
+
+          li {
+            width: 221px;
+            margin:0;
+            padding: 0;
+            text-align: left;
+
+            &:first-child {
+              text-align: right;
+             .box-shadow(1px 0 0 0 #C5C5C5);
+            }
+
+            a {
+              border: 0;
+              border-bottom: 1px dotted #444;
+              padding: 0;
+              color: #336699;
+              display: inline-block;
+              font: 400 21px/26px 'Oswald400',Arial,sans-serif;
+              margin: 6px 13px 0;
+              text-decoration: none;
+              text-transform: uppercase;
+              white-space: nowrap;
+
+              &:hover {
+                background: none;
+              }
+            }
+
+            &.active a {
+              border: 0;
+              color: #444;
+              cursor: default;
+              font: 400 26px/30px 'Oswald400',Arial,sans-serif;
+              margin: 3px 13px 6px 13px;
+              background: none;
+            }
+            
+          }
+        }
+      }
   }
+
+
 
 
