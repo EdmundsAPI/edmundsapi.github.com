@@ -63,9 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
 				
 				<h2>Business Owner goes on Edmunds API Portal</h2>
-				
-				<p>You browse through the list of available Certified Developers. You could contact developers directly.</p>
-				
+
 				<div style="text-align: center">
 					<a class="redButton" href="/certified-dev/search_the_directory.html" title="View Certified Developers Directory">View Certified Developers Directory</a>
 				</div>
@@ -79,7 +77,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<h2>Business Owner negotiates with </br> Certified Developer</h2>
 				
-				<p>You and the developer have to come to an agreement that suits you both to carry out the project. Edmunds.com will not be part of this negotiation process. </p>
+				<p>You and the developer have to come to an agreement that suits you both to carry out the project. <em>Edmunds.com will not be part of this negotiation process.</em> </p>
 				<p>This portal acts as a directory that helps business find developers that know the Edmunds API well. Edmunds.com's involvement doesn't go beyond that.</p>
 				
 			</div>
@@ -110,7 +108,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				<h2>Developer builds an application </br> with Edmunds API </h2>
 				
 				<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
-				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="api-documentation/overview/" title="API documentation">API documentation</a> or [tweet us](http://twitter.com/edmundsapi).</p>
+				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
 			
 			</div>
 			
@@ -123,11 +121,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac euismod ante. Viv
 				
 				<h2>Developer passes Edmunds API Test</h2>
 				
-				<p>Once you have built a rockin' application with the Edmunds API, [email us](http://formsite.com) to let us know. Make sure you include a link to the application on github or somewhere where we can view it and test it.</p>
+				<p>Once you have built a rockin' application with the Edmunds API, <a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">email us</a> to let us know. Make sure you include a link to the application on github or somewhere where we can view it and test it.</p>
 				<p>From there, we will <strong>set up a phone interview</strong> to further discuss the API and to <strong>give you a simple programming test</strong>.</p>
 
 				<div style="text-align: center">
-					<a class="redButton" href="#" title="Take Edmunds API test now">Check Out Our Code Academy Course</a>
+					<a class="redButton" href="http://www.codecademy.com/courses/javascript-beginner-en-7UosP" title="Take Edmunds API test now" target="_blank">Check Out Our Code Academy Course</a>
 				</div>
 			</div>
 			
