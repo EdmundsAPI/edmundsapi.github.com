@@ -1,19 +1,21 @@
 (function() {
-	
+
 
 var $inputList = $('#qualification, #location').find('input');
 
 var $developers = $('.wrapperDeveloper');
 
-var wrapperButtons = $('#selectedQual');
+var wrapperButtonsQual = $('#selectedQual');
 
-var $inputLocation = $('#location');	
+var wrapperButtonsLoc = $('#selectedLoc');
+
+var $inputLocation = $('#location');
 
 	function init(){
-		
+
 		//count Result
 		countResult();
-		
+
 		//count location developers
 		countLocationDev();
 
@@ -28,109 +30,174 @@ var $inputLocation = $('#location');
 		$inputList.on('click', check);
 
 	};
-	
+
 	//count Result
 	function countResult(){
 		var countDev = 0;
-		
+
 		$developers.each(function(){
-			
+
 			if(!$(this).hasClass('hide')){
 				countDev++;
 			}
-			
+
 		});
-		
+
 		$('#amountDev').text(countDev);
 	};
-	
+
 	//count location developers
 	function countLocationDev(){
-		
+
 		$inputLocation.find('input').each(function(){
-			
+
 			var valueID = $(this).attr('id');
-			
+
 			var countLocation = 0;
-			
+
 			$developers.each(function(){
-				
+
 				if(!$(this).hasClass('hide') && $(this).data('location') == valueID){
-					
+
 					countLocation++;
-					
+
 				}
 				return countLocation;
 			});
-			
+
 			$('label[for="'+ valueID +'"]').find('.amountCityDev').text(countLocation);
-			
+
 		});
-		
-		
-		
-	};
-	
-	// create button 
-	function createButton(checkboxID){
-		
-		var checkbox = $(this);
-		
-		var nameLabel = $('.tab-content label[for="'+ checkboxID +'"]').text();
-			
-		wrapperButtons.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
 
 	};
-	
-	// delete button 
-	function deleteButton(checkboxID) {
-		
-		var checkbox = $(this);
-		
-		if(!this.checked) {
-			
-			$('#selectedQual').find('.'+ checkboxID +'').detach();
-			
-		}
-		
+
+	// create button
+	function createButton(checkboxID){
+
+		var nameLabel = $('.tab-content label[for="'+ checkboxID +'"]').text();
+
+		var parent = $('#'+ checkboxID);
+
+		var idParent = parent.parent().attr('id');
+
+        if (idParent == 'location'){
+
+           wrapperButtonsLoc.removeClass('hide');
+
+           wrapperButtonsLoc.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
+
+
+        } else if (idParent == 'qualification'){
+
+           wrapperButtonsQual.removeClass('hide');
+
+           wrapperButtonsQual.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
+
+        }
+
+
+
 	};
-	
+
+	// delete button
+	function deleteButton(checkboxID) {
+
+		if(!this.checked) {
+
+			//$('#selectedQual').find('.'+ checkboxID +'').detach();
+			var parent = $('#'+ checkboxID);
+
+			var idParent = parent.parent().attr('id');
+
+			if (idParent == 'location'){
+
+                wrapperButtonsLoc.find('.'+ checkboxID +'').detach();
+
+                var lengthChild =  wrapperButtonsLoc.children().length;
+
+                if(lengthChild == 0) {
+
+                    wrapperButtonsLoc.addClass('hide');
+
+                }
+
+            } else if (idParent == 'qualification'){
+
+                wrapperButtonsQual.find('.'+ checkboxID +'').detach();
+
+                var lengthChild =  wrapperButtonsQual.children().length;
+
+                if(lengthChild == 0) {
+
+                    wrapperButtonsQual.addClass('hide');
+
+                }
+            }
+		}
+
+	};
+
+
 	// delete: click selected markers  (.removeOptionFilter)
 	$(document).on('click','.removeOptionFilter', function(){
-		
+
 		var cross = $(this);
-		
+
 		var arrClass = cross.parent('.itemFilterBadge').attr('class').split(' ');
-		
+
 		var class2 = arrClass[1];
-		
+
 		$('#'+ class2 +'').prop("checked", false);
-		
+
 		cross.parent('.itemFilterBadge').remove();
-		
-		// check	
+
+		// check
 		check();
-		
+
+		//var idParent = $(this).closest('div').css( "background-color", "red" );
+
+		/*if (idParent.hasClass == 'location'){
+
+            var lengthChild =  wrapperButtonsLoc.children().length;
+
+            if(lengthChild == 0) {
+
+                wrapperButtonsLoc.addClass('hide');
+
+            }
+
+        } else if (idParent == 'qualification'){
+
+            var lengthChild =  wrapperButtonsQual.children().length;
+
+            if(lengthChild == 0) {
+
+                wrapperButtonsQual.addClass('hide');
+
+            }
+        }*/
+
+
 	});
-	
+
 	// check
 	function check(event){
-			
+
 			amountCheck = $('#qualification, #location').find('input:checked').length;
 
 			inputID = $(this).attr('id');
 
 			if(this.checked){
-				
-				// create button 
+
+				// create button
 				createButton(inputID);
 
 				//developers prthing
 				$developers.each(developerParthADD);
 
 			} else {
-				
-				// delete button 
+
+				// delete button
 				deleteButton(inputID);
 
 				if(amountCheck == 0) {
@@ -138,12 +205,12 @@ var $inputLocation = $('#location');
 					$developers.removeClass('hide');
 				}
 
-				$developers.each(developerParthDelete);	
+				$developers.each(developerParthDelete);
 			}
-			
+
 			// count Result
 			countResult();
-			
+
 			//count location developers
 			countLocationDev();
 
@@ -160,12 +227,12 @@ var $inputLocation = $('#location');
 			if($(this).hasClass('hide') == false){
 
 				for(var i=0, count=0; i<3; i++){
-				
+
 					if (arrDataBadge[i] == inputID) {
 
 						count = 1;
 
-					} 
+					}
 
 				}
 
@@ -176,9 +243,7 @@ var $inputLocation = $('#location');
 				}
 
 			}
-			
-		//event.preventDefault();
-		
+
 	};
 
 	//developerParthDelete
@@ -192,7 +257,7 @@ var $inputLocation = $('#location');
 			if($(this).hasClass('hide') == true){
 
 				for(var i=0, count=0; i<3; i++){
-					
+
 					$inputList.each(function(){
 
 						var id = $(this).attr('id');
@@ -202,9 +267,9 @@ var $inputLocation = $('#location');
 							count++;
 
 						}
-						
+
 					});
-					 
+
 				}
 
 			}
@@ -214,9 +279,7 @@ var $inputLocation = $('#location');
 			$(this).removeClass('hide');
 
 		}
-	
-		//event.preventDefault();
-		
+
 	};
 
 

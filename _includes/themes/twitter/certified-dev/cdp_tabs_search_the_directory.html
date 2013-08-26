@@ -10,13 +10,13 @@
 
 <div class="tab-content">
     <div class="tab-pane  in active" id="qualification">
-    	
+
 		<input id="social_shopping" type="checkbox" /><label for="social_shopping">Social shopping</label>
 		<input id="mobile" type="checkbox" /><label for="mobile">Mobile</label>
 		<input id="analytics" type="checkbox" /><label for="analytics">Analytics</label>
-		
+
 	</div>
-    
+
     <div class="tab-pane " id="location">
 
 		<input id="santa_monica" type="checkbox" /><label for="santa_monica">Santa Monica, CA (<span class="amountCityDev">0</span>)</label>
@@ -26,10 +26,10 @@
 
 </div>
 
-<div class="optionFilter">Showing <span id="amountDev">0</span> developers providing <span id="selectedQual"></span></div>				     
+<div class="optionFilter">Showing <span id="amountDev">0</span> developers <span id="selectedQual" class="hide">providing:</span><span id="selectedLoc" class="hide">from location:</span></div>
 
 
-{% comment %}<!-- script show tabs -->{% endcomment %}					     
+{% comment %}<!-- script show tabs -->{% endcomment %}
 <script type="text/javascript">
     $('#myTab a').click(function (e) {
 	    e.preventDefault();

@@ -21,7 +21,7 @@ $(function(){
 
     });
     // sort array
-    arrHeightComp.sort(function(a,b){return b-a});
+    arrHeightComp.sort();
 
     var maxHeight = arrHeightComp[0];
 
