@@ -134,7 +134,7 @@ Regardless of access tier, all developers using the Edmunds API need to **read**
 API errors occur for several reasons. Here's a list of **common errors** and ways to troubleshoot them.
 
 | HTTP Status	| Description                           | Troubleshooting																|
-|:-------------:|:--------------------------------------|:------------------------------------------------------------------------------|
+|:--------------|:--------------------------------------|:------------------------------------------------------------------------------|
 | 400    		| Bad Request				            | Check the URL to make sure it has proper syntax								|
 | 401   		| Unauthorized				            | You are using the **wrong API key** or the key **isn't active** 				|
 | 403 			| Forbidden							    | You are not authorized to access this resource. Sorry.						|

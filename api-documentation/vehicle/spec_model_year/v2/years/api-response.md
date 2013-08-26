@@ -28,7 +28,7 @@ number: 3
 	}
 
 | Property      | Description                                              | Visibility                |
-|:-------------:|:---------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------|:------------------------- |
 | years   		| An array of objects describing car mode years            | Edmunds, Partners, Public |
 | yearsCount 	| Total number of car models							   | Edmunds, Partners, Public |
 
@@ -44,7 +44,7 @@ Each element in the <code>years</code> array follows this format:
 	}
 
 | Property      | Description                                               | Visibility                |
-|:-------------:|:----------------------------------------------------------|:------------------------- |
+|:--------------|:----------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
 | make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
 | model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
@@ -62,7 +62,7 @@ Each element in the <code>styles</code> array follows this format:
 	}
 	
 | Property      | Description                                                    | Visibility                |
-|:-------------:|:---------------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car style 		                         | Edmunds, Partners, Public |
 | name	        | The car style name										     | Edmunds, Partners, Public |
 | submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |

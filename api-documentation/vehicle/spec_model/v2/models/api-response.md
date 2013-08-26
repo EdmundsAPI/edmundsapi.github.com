@@ -27,7 +27,7 @@ number: 3
 	}
 
 | Property      | Description                                              | Visibility                |
-|:-------------:|:---------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------|:------------------------- |
 | models   		| An array of objects describing car models                | Edmunds, Partners, Public |
 | modelsCount 	| Total number of car models							   | Edmunds, Partners, Public |
 
@@ -42,7 +42,7 @@ Each element in the <code>models</code> array follows this format:
 	}
 	
 | Property      | Description                                              | Visibility                |
-|:-------------:|:---------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car model                         | Edmunds, Partners, Public |
 | years         | List of model years and styles (see below)    		   | Edmunds, Partners, Public |
 | name          | The name of this car model                               | Edmunds, Partners, Public |
@@ -59,7 +59,7 @@ Each element in the <code>years</code> array follows this format:
 	}
 
 | Property      | Description                                                    | Visibility                |
-|:-------------:|:---------------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car model year                          | Edmunds, Partners, Public |
 | states        | The state of this model/year (e.g. NEW, USED, FUTURE)       	 | Edmunds, Partners, Public |
 | styles        | List of styles belonging to this model year (see below)    	 | Edmunds, Partners, Public |
@@ -75,7 +75,7 @@ Each element in the <code>styles</code> array follows this format:
 	}
 	
 | Property      | Description                                                    | Visibility                |
-|:-------------:|:---------------------------------------------------------------|:------------------------- |
+|:--------------|:---------------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car style 		                         | Edmunds, Partners, Public |
 | name	        | The car style name										     | Edmunds, Partners, Public |
 | submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |

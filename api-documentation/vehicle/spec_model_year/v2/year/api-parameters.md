@@ -22,7 +22,7 @@ number: 2
 ###Parameters
 
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
-|:-------------:|:---------------------------|:----------------- |:------------- |:-------- |
+|:--------------|:---------------------------|:----------------- |:------------- |:-------- |
 | view			| Response detail level      | basic, full       | basic         | No       |
 | fmt			| Response detail level      | json              | json          | Yes      |
 | api_key    	| vehicle api key            |                   |               | Yes      |
