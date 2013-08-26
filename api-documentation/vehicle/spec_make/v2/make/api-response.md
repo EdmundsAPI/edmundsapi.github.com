@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get details for a specific car make/brand'
-title_active_left_menu: Spec Make
+title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
 amount_version: 2

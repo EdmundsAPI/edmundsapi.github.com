@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Total Count of Car Makes/Brands'
-title_active_left_menu: Spec Make
+title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
 amount_version: 2
@@ -50,7 +50,7 @@ number: 3
 	
 | Property      | Description                         	| Visibility                |
 |:--------------|:--------------------------------------|:------------------------- |
-| makes		    | The total count of car makes			| Edmunds, Partners, Public |
+| makes		    | Array of model count objects			| Edmunds, Partners, Public |
 | modelsCount	| The total count of this model		 	| Edmunds, Partners, Public |
 | niceName	    | The URL-friendly name of this model 	| Edmunds, Partners, Public |
 | makesCount    | The total count of car makes			| Edmunds, Partners, Public |

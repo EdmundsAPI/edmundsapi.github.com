@@ -1,11 +1,11 @@
 ---
 layout: api-documentation
-title : 'Spec: Model'
+title : 'Get Total Count of Car Models for Specific Car Make'
 title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'models/count'
+title-endpoint: 'Get Total Count of Car Models for Specific Car Make'
 spec: spec_model
 version: v2
 api: vehicle
@@ -13,14 +13,44 @@ dropdown-link: 'api/vehicle/v2/{make}/models/count'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get Total Count of Car Models for Specific Car Make'
 title_md : Response format
 number: 3
-
 ---
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
+#### JSON Response w/ <code>view=basic</code> (default)
 
-tab: {{page.number}}
+	{
+		"modelsCount": {integer}
+	}
+
+
+| Property      | Description                         					| Visibility                |
+|:--------------|:------------------------------------------------------|:------------------------- |
+| modelsCount   | The total count of car models for a specific car make	| Edmunds, Partners, Public |
+
+#### JSON Response w/ <code>view=full</code>
+
+	{
+	   "models":[
+	      {
+	         "yearsCount": {integer},
+	         "niceName": {string}
+	      },
+	      {
+	         "modelsCount": {integer},
+	         "niceName": {string}
+	      },
+	      ...
+	   ],
+	   "modelsCount": {integer}
+	}
+	
+| Property      | Description                         					| Visibility                |
+|:--------------|:------------------------------------------------------|:------------------------- |
+| models	    | Array of model year counts and model name objects		| Edmunds, Partners, Public |
+| yearsCount	| The total number of model years for this model		| Edmunds, Partners, Public |
+| niceName	    | The URL-friendly name of this model 					| Edmunds, Partners, Public |
+| modelsCount   | The total count of car models for a specific car make	| Edmunds, Partners, Public |
