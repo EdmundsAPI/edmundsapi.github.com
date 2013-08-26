@@ -25,7 +25,7 @@ Get dealerships within the 2-mile radius of the **90019** area.
 
 #### URL
 
-		https://api.edmunds.com/v1/api/dealer?zipcode=90019&radius=2&fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/api/dealer?zipcode=90019&radius=2&fmt=json&api_key={api key}
 	
 #### Response
 

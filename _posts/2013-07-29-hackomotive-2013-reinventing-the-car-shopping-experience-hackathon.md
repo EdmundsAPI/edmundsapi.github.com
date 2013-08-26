@@ -21,7 +21,7 @@ links: [
 		}
 	]
 
-page_title: 'Developer Blog'
+page_title: 'The Edmunds API Blog'
 
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante leo, semper non mauris non, ultrices sagittis augue. Suspendisse egestas odio in nunc aliquam, imperdiet fermentum sem egestas. Phasellus ullamcorper mattis massa at gravida. Mauris sit amet magna et sapien venenatis auctor ac non odio. Aenean ut scelerisque enim. Donec volutpat aliquet leo, sit amet adipiscing est pulvinar non. Sed feugiat eros lorem, id condimentum libero suscipit in. Sed urna libero, porttitor at ullamcorper vitae, volutpat vel lacus. Nulla eget arcu rhoncus, accumsan ipsum sed, dignissim lectus. Nullam felis augue, ullamcorper in sodales nec, adipiscing ut dui. Sed a erat sagittis, iaculis justo vel, malesuada purus. Cras laoreet quis metus tristique sodales..."
 ---

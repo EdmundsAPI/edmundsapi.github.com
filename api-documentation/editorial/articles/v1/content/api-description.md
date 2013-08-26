@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Dealer Details and Location'
-title_active_left_menu: 'Details and Location'
+title : 'Get Edmunds Articles by Category and/or car make/model/year'
+title_active_left_menu: 'Articles'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Dealer Details and Location'
-spec: details_and_location
+title-endpoint: 'Get Edmunds Articles by Category and/or car make/model/year'
+spec: articles
 version: v1
-api: dealer
-dropdown-link: 'v1/api/dealer'
+api: editorial
+dropdown-link: 'v1/content'
 
 
 level: 3
-description_edpoint: 'Get Dealer Details and Location'
+description_edpoint: 'Get Edmunds Articles by Category and/or car make/model/year'
 title_md : Description
 number: 1
 
@@ -22,11 +22,11 @@ number: 1
 
 ### Description
 
-Get Dealerships details and information by zipcode **or** car make/mode **or** car style ID
+Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
 
 ### URL
 
-	https://api.edmunds.com/v1/api/dealer?zipcode={zipcode}&fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/content/?category={category}&fmt=json&api_key={API key}
 	
 ### Code Example
 
@@ -49,13 +49,13 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-					"zipcode": "90019"
+					"category": "car news"
 				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "This dealer's name is : " + res.dealerHolder[0].name;
+					body.innerHTML = res[0].content;
 				}
 
 				// Oops, Houston we have a problem!
@@ -64,7 +64,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/dealer', options, success, fail);
+				res.api('/v1/content', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

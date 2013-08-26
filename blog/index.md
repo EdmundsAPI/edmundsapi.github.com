@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 'Developer Blog'
+title: 'The Edmunds API Blog'
 
-page_size: 3
+page_size: 10
 ---

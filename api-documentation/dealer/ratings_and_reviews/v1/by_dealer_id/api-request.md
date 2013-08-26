@@ -26,7 +26,7 @@ Get ratings and reviews for the dealership with ID **26811**
 
 #### URL
 
-		https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=26811&fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=26811&fmt=json&api_key={api key}
 	
 #### Response
 
