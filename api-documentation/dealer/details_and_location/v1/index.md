@@ -8,7 +8,7 @@ amount_version: 1
 spec: details_and_location
 version: v1
 api: dealer
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2

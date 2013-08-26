@@ -8,7 +8,7 @@ amount_version: 3
 spec: spec_test
 version: v2
 api: test_api
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2

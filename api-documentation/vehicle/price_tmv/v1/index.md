@@ -8,7 +8,7 @@ amount_version: 2
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2

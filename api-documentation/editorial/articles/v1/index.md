@@ -8,7 +8,7 @@ amount_version: 1
 spec: articles
 version: v1
 api: editorial
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2

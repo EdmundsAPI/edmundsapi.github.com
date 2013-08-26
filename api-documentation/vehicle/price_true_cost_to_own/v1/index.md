@@ -8,7 +8,7 @@ amount_version: 2
 spec: price_true_cost_to_own
 version: v1
 api: vehicle
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2

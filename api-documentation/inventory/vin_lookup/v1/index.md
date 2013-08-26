@@ -8,7 +8,7 @@ amount_version: 1
 spec: vin_lookup
 version: v1
 api: inventory
-dropdown-link: 'Select endpoint'
+dropdown-link: 'Select an Endpoint'
 
 
 level: 2
