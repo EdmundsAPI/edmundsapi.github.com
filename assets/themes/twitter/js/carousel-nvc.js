@@ -64,11 +64,13 @@ var CarouselNVC = function(element, indicators, header) {
 	          $next.removeClass([type, direction].join(' ')).addClass('active');
 	          $active.removeClass(['active', direction].join(' '));
 	          that.sliding = false;
+	          that.$element.trigger('slid');
 	        })
 	    } else {
 	        $active.removeClass('active');
 	        $next.addClass('active');
 	        that.sliding = false;
+	        this.$element.trigger('slid');
 	    }
 
       	return that;
