@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Model Year Details for a Car Make/Model'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -20,11 +20,11 @@ number: 1
 
 ### Description
 
-Get the list of car makes.
+Get model year details, including styles and trims, for a specific car make/model.
 
 ### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={api key}
+	http://api.edmunds.com/api/vehicle/v2/{make}/{model}/years?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -46,12 +46,14 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {};
+				var options = {
+					"state": "new"
+				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first make in the response is " + res.makes[0].name;
+					body.innerHTML = "The model year for a new Honda Civic is " + res.years[0].year;
 				}
 
 				// Oops, Houston we have a problem!
@@ -60,7 +62,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/makes', options, success, fail);
+				res.api('/api/vehicle/v2/honda/civic/years', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

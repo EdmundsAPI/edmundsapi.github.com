@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Model Year Details for a Car Make/Model'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -23,59 +23,46 @@ number: 3
 #### JSON Response
 
 	{
-		"makes": {array of objects},
-		"makesCount": {integer}
+		"models": {array of objects},
+		"modelsCount": {integer}
 	}
 
 | Property      | Description                                              | Visibility                |
 |:-------------:|:---------------------------------------------------------|:------------------------- |
-| makes    		| An array of objects describing car makes                 | Edmunds, Partners, Public |
-| makesCount 	| Total number of car makes								   | Edmunds, Partners, Public |
+| years   		| An array of objects describing car mode years            | Edmunds, Partners, Public |
+| yearsCount 	| Total number of car models							   | Edmunds, Partners, Public |
 
-Each element in the <code>makes</code> array follows this format:
-
-	{
-		"id": {integer},
-		"models":{array of objects},
-		"name": {string},
-		"niceName": {string}
-	}
-	
-| Property      | Description                                              | Visibility                |
-|:-------------:|:---------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car make                          | Edmunds, Partners, Public |
-| models        | List of models belonging to this car make (see below)    | Edmunds, Partners, Public |
-| name          | The name of this car make                                | Edmunds, Partners, Public |
-| niceName      | URL-friendly car make name	                           | Edmunds, Partners, Public |
-	
-Each element in the <code>models</code> array follows this format:
-
-	{
-		"id": {string},
-		"name":	{string},
-		"niceName": {string},
-		"states": {array of strings}, // only when view=full
-		"years":{array of objects}
-	}
-
-| Property      | Description                                                    | Visibility                |
-|:-------------:|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car model                               | Edmunds, Partners, Public |
-| name          | The name of this car model                                     | Edmunds, Partners, Public |
-| niceName      | URL-friendly car model name                                    | Edmunds, Partners, Public |
-| states        | The state of this model/year (e.g. NEW, USED, or FUTURE)       | Edmunds, Partners, Public |
-| years         | List of model/years belonging to this car model (see below)    | Edmunds, Partners, Public |
-		
 Each element in the <code>years</code> array follows this format:
 
 	{
 		"id": {integer},
 		"states": {array of strings}, // only when view=full
+		"styles":{array of objects},
 		"year": {integer}
+	}
+
+| Property      | Description                                               | Visibility                |
+|:-------------:|:----------------------------------------------------------|:------------------------- |
+| id            | The Edmunds ID for the car model year                     | Edmunds, Partners, Public |
+| id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
+| make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
+| model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
+| states        | The state of this model/year (e.g. NEW, USED, or FUTURE) 	| Edmunds, Partners, Public |
+| year		    | The model year				                         	| Edmunds, Partners, Public |
+| styles        | List of styles belonging to this model year (see below)   | Edmunds, Partners, Public |
+		
+Each element in the <code>styles</code> array follows this format:
+
+	{
+		"id": {integer},
+		"name": {string},
+		"submodel": {object},
+		"trim": {string}
 	}
 	
 | Property      | Description                                                    | Visibility                |
 |:-------------:|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car model/year                          | Edmunds, Partners, Public |
-| states        | The state of this model/year (e.g. NEW, USED, or FUTURE)       | Edmunds, Partners, Public |
-| year          | The four digit year of this car model                          | Edmunds, Partners, Public |
+| id            | The Edmunds ID for the car style 		                         | Edmunds, Partners, Public |
+| name	        | The car style name										     | Edmunds, Partners, Public |
+| submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |
+| trim      	| The vehicle trim for this car style 			                 | Edmunds, Partners, Public |

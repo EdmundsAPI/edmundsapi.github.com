@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Model Year Details for a Car Make/Model'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2

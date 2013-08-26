@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Style Details for a Car Make/Model/Year'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -26,7 +26,7 @@ Get the list of models and model/year IDs belonging to a specific car make.
 
 ### URL
 
-	http://api.edmunds.com/api/vehicle/v2/{make}?fmt=json&api_key={api key}
+	http://api.edmunds.com/api/vehicle/v2/{make}/{model}/{year}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -53,7 +53,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first model name for Lexus in the response is " + res.models[0].name;
+					body.innerHTML = "The first style for the 2011 Lexus RX-350 " + res.styles[0].name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -62,7 +62,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/lexus', options, success, fail);
+				res.api('/api/vehicle/v2/lexus/rx350/2011', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

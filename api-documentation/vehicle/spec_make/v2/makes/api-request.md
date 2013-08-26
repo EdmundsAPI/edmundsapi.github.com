@@ -17,13 +17,13 @@ title_md : Sample Request
 number: 4
 ---
 
-### Sample Request 2
+### Sample Request 1
 
-Get the list of all _NEW_ car makes in a _full_ view
+Get the list of all **new** car makes with <code>view=full</code>
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new&view=full
+	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new&view=full
 	
 #### Response
 
@@ -124,13 +124,13 @@ Get the list of all _NEW_ car makes in a _full_ view
 	   "makesCount":46
 	}
 	
-### Sample Request 1
+### Sample Request 2
 
-Get the list of all _NEW_ car makes
+Get the list of all **new** car makes
 
 #### URL
 
-http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new
+	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new
 
 #### Response
 

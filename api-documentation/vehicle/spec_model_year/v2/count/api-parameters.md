@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Total Count of Car Model Years'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -23,7 +23,6 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | state      | The state of the car makes            | new, used, future |               | No       |
-| year       | The year of the car makes             | 1990-current year |               | No       |
 | view       | the level of details in the response  | basic, full		 | basic         | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |

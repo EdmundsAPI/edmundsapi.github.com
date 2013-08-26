@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get List of Car Models for a Car Make'
-title_active_left_menu: 'Spec Model'
+title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
 amount_version: 2

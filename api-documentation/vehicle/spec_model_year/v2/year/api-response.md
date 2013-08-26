@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Style Details for a Car Make/Model/Year'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -25,46 +25,35 @@ number: 3
 
 	{
 		"id": {integer},
-		"models":{array of objects},
-		"name": {string},
-		"niceName": {string}
+		"make": {object},
+		"model": {object},
+		"states" {array of strings},
+		"styles":{array of objects},
+		"year": {integer}
 	}
 	
-| Property      | Description                                              | Visibility                |
-|:-------------:|:---------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car make/brand                    | Edmunds, Partners, Public |
-| models        | List of models belonging to this car make (see below)    | Edmunds, Partners, Public |
-| name          | The name of this car make                                | Edmunds, Partners, Public |
-| niceName      | URL-friendly car make/brand name                         | Edmunds, Partners, Public |
+| Property      | Description                                              	| Visibility                |
+|:-------------:|:----------------------------------------------------------|:------------------------- |
+| id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
+| make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
+| model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
+| states        | The state of this model/year (e.g. NEW, USED, or FUTURE) 	| Edmunds, Partners, Public |
+| year		    | The model year				                         	| Edmunds, Partners, Public |
 	
-Each element in the <code>models</code> array follows this format:
+Each element in the <code>styles</code> array follows this format:
 
 	{
 		"id": {string},
 		"name":	{string},
-		"niceName": {string},
-		"states": {array of strings}, // only when view=full
-		"years":{array of objects}
+		"submodel": {object},
+		"trim": {string}
 	}
 
 | Property      | Description                                                    | Visibility                |
 |:-------------:|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car model                               | Edmunds, Partners, Public |
-| name          | The name of this car model                                     | Edmunds, Partners, Public |
-| niceName      | URL-friendly car model name                                    | Edmunds, Partners, Public |
-| states        | The state of this model/year (e.g. NEW, USED, or FUTURE)       | Edmunds, Partners, Public |
-| years         | List of model/years belonging to this car model (see below)    | Edmunds, Partners, Public |
+| id            | The Edmunds ID for the car style 	                             | Edmunds, Partners, Public |
+| name          | The style name			                                     | Edmunds, Partners, Public |
+| submodel      | Car submodel details (body, modelName, ...etc)                 | Edmunds, Partners, Public |
+| trim	        | The car trim associated with this style 				         | Edmunds, Partners, Public |
+
 		
-Each element in the <code>years</code> array follows this format:
-
-	{
-		"id": {integer},
-		"states": {array of strings}, // only when view=full
-		"year": {integer}
-	}
-	
-| Property      | Description                                                    | Visibility                |
-|:-------------:|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car model/year                          | Edmunds, Partners, Public |
-| states        | The state of this model/year (e.g. NEW, USED, or FUTURE)       | Edmunds, Partners, Public |
-| year          | The four digit year of this car model                          | Edmunds, Partners, Public |

@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Style Details for a Car Make/Model/Year'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -23,8 +23,6 @@ number: 2
 
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:-------------:|:---------------------------|:----------------- |:------------- |:-------- |
-| state			| Response format            | new, used, future | 	             | No       |
-| year       	| The year of the car makes	 | 1990-current year |               | No       |
 | view			| Response detail level      | basic, full       | basic         | No       |
 | fmt			| Response detail level      | json              | json          | Yes      |
 | api_key    	| vehicle api key            |                   |               | Yes      |

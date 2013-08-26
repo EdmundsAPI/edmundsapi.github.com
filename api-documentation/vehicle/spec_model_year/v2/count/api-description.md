@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Total Count of Car Model Years'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -20,11 +20,11 @@ number: 1
 
 ### Description
 
-Get the total number of car makes.
+Get the total number of model years for a car make/model.
 
 ### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key={api key}
+	http://api.edmunds.com/api/vehicle/v2/{make}/{model}/years/count?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -53,7 +53,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total Number of New Makes is: " + res.makesCount;
+					body.innerHTML = "Total number of new Acura MDXs is: " + res.yearsCount;
 				}
 
 				// Oops, Houston we have a problem!
@@ -62,7 +62,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/makes/count', options, success, fail);
+				res.api('/api/vehicle/v2/acura/mdx/years/count', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

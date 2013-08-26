@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get List of Car Models for a Car Make'
-title_active_left_menu: 'Spec Model'
+title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
 amount_version: 2
@@ -23,7 +23,7 @@ Get the list of all ***new*** 2013 car models for Lexus
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key=xxxxx&state=new&year=2013
+	https://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key=xxxxx&state=new&year=2013
 	
 #### Response
 

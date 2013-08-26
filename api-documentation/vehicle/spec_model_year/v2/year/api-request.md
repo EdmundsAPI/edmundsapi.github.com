@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Style Details for a Car Make/Model/Year'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -21,94 +21,83 @@ number: 4
 
 ### Sample Request 1
 
-Get the list of models and model/year IDs for __NEW__ Lexus cars
+Get style details for the 2011 Lexus RX-350
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key=xxxxx&state=new
+	https://api.edmunds.com/api/vehicle/v2/lexus/rx350/2011?fmt=json&api_key={api key}
 	
 #### Response
 
 	{
-		"id": 200001623,
-		"models":[{
-			"id": "Lexus_CT_200h",
-			"name":	"CT 200h",
-			"niceName": "ct200h",
-			"years":[{
-				"id": 100531231,
-				"year": 2011
-			},
-			....
-			{
-				"id": 100537990,
-				"year": 2012
-			}]
-		},
-		....
-		{
-			"id": "Lexus_ES_250",
-			"name": "ES 250",
-			"niceName": "es250",
-			"years": [{
-				"id": 2029,
-				"year": 1990
-			},
-			....
-			{
-				"id": 2030, 
-				"year": 1991
-			}]
-		}],
-		"name": "Lexus",
-		"niceName": "lexus"
+	  "id": 100533091,
+	  "year": 2011,
+	  "styles": [
+	    {
+	      "id": 101353968,
+	      "name": "4dr SUV AWD (3.5L 6cyl 6A)",
+	      "submodel": {
+	        "body": "SUV",
+	        "modelName": "RX 350 SUV"
+	      },
+	      "trim": "Base"
+	    },
+	    {
+	      "id": 101353967,
+	      "name": "4dr SUV (3.5L 6cyl 6A)",
+	      "submodel": {
+	        "body": "SUV",
+	        "modelName": "RX 350 SUV"
+	      },
+	      "trim": "Base"
+	    }
+	  ]
 	}
 	
 ### Sample Request 2
 
-Get the list of models and model/year IDs and their states (i.e. new, used, future) for __NEW__ Lexus cars
+Get style details for the 2011 Lexus RX-350 with <code>view=full</code>
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key=xxxxx&state=new&view=full
+	http://api.edmunds.com/api/vehicle/v2/lexus/rx350/2011?view=full&fmt=json&api_key={api key}
 
 #### Response
 
 	{
-		"id": 200001623,
-		"models":[{
-			"id": "Lexus_CT_200h",
-			"name":	"CT 200h",
-			"niceName": "ct200h",
-			"years":[{
-				"id": 100531231,
-				"states": ["USED"],
-				"year": 2011
-			},
-			....
-			{
-				"id": 100537990,
-				"states": ["USED"],
-				"year": 2012
-			}]
-		},
-		....
-		{
-			"id": "Lexus_ES_250",
-			"name": "ES 250",
-			"niceName": "es250",
-			"years": [{
-				"id": 2029,
-				"states": ["USED"],
-				"year": 1990
-			},
-			....
-			{
-				"id": 2030,
-				"states": ["USED"],
-				"year": 1991
-			}]
-		}],
-		"name": "Lexus",
-		"niceName": "lexus"
+	  "id": 100533091,
+	  "make": {
+	    "id": 200001623,
+	    "name": "Lexus",
+	    "niceName": "lexus"
+	  },
+	  "model": {
+	    "id": "Lexus_RX_350",
+	    "name": "RX 350",
+	    "niceName": "rx350"
+	  },
+	  "year": 2011,
+	  "styles": [
+	    {
+	      "id": 101353968,
+	      "name": "4dr SUV AWD (3.5L 6cyl 6A)",
+	      "submodel": {
+	        "body": "SUV",
+	        "modelName": "RX 350 SUV"
+	      },
+	      "trim": "Base"
+	    },
+	    {
+	      "id": 101353967,
+	      "name": "4dr SUV (3.5L 6cyl 6A)",
+	      "submodel": {
+	        "body": "SUV",
+	        "modelName": "RX 350 SUV"
+	      },
+	      "trim": "Base"
+	    }
+	  ],
+	  "states": [
+	    "USED"
+	  ]
 	}

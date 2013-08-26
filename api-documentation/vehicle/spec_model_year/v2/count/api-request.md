@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Total Count of Car Model Years'
-title_active_left_menu: 'Spec: Model/Year'
+title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
@@ -20,11 +20,11 @@ number: 4
 
 ###Sample Request 1
 
-Get the total amount of car makes in the system
+Get the total number of **new** model years for **Acura MDX**
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key=xxxxx
+	http://api.edmunds.com/api/vehicle/v2/acura/mdx/years/count?fmt=json&state=new&api_key={api key}
 	
 #### Response
 
@@ -34,201 +34,87 @@ Get the total amount of car makes in the system
 	
 ###Sample Request 2
 
-Get the total number of _NEW_ car makes and the breakdown of their models and the model counts
+Get the total number of model years and the breakdown of their style count for **Acura MDX**
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&view=full&state=new&api_key=xxxxx
+	http://api.edmunds.com/api/vehicle/v2/acura/mdx/years/count?fmt=json&view=full&api_key={api key}
 
 #### Response
 
 	{
-	   "makes":[
-	      {
-	         "modelsCount":15,
-	         "niceName":"hyundai"
-	      },
-	      {
-	         "modelsCount":23,
-	         "niceName":"chevrolet"
-	      },
-	      {
-	         "modelsCount":7,
-	         "niceName":"volvo"
-	      },
-	      {
-	         "modelsCount":6,
-	         "niceName":"jeep"
-	      },
-	      {
-	         "modelsCount":9,
-	         "niceName":"mazda"
-	      },
-	      {
-	         "modelsCount":2,
-	         "niceName":"mclaren"
-	      },
-	      {
-	         "modelsCount":9,
-	         "niceName":"mitsubishi"
-	      },
-	      {
-	         "modelsCount":8,
-	         "niceName":"kia"
-	      },
-	      {
-	         "modelsCount":20,
-	         "niceName":"audi"
-	      },
-	      {
-	         "modelsCount":2,
-	         "niceName":"ferrari"
-	      },
-	      {
-	         "modelsCount":20,
-	         "niceName":"bmw"
-	      },
-	      {
-	         "modelsCount":9,
-	         "niceName":"acura"
-	      },
-	      {
-	         "modelsCount":8,
-	         "niceName":"ram"
-	      },
-	      {
-	         "modelsCount":13,
-	         "niceName":"cadillac"
-	      },
-	      {
-	         "modelsCount":5,
-	         "niceName":"buick"
-	      },
-	      {
-	         "modelsCount":1,
-	         "niceName":"fisker"
-	      },
-	      {
-	         "modelsCount":3,
-	         "niceName":"chrysler"
-	      },
-	      {
-	         "modelsCount":1,
-	         "niceName":"lotus"
-	      },
-	      {
-	         "modelsCount":6,
-	         "niceName":"mini"
-	      },
-	      {
-	         "modelsCount":23,
-	         "niceName":"ford"
-	      },
-	      {
-	         "modelsCount":15,
-	         "niceName":"volkswagen"
-	      },
-	      {
-	         "modelsCount":13,
-	         "niceName":"infiniti"
-	      },
-	      {
-	         "modelsCount":3,
-	         "niceName":"fiat"
-	      },
-	      {
-	         "modelsCount":5,
-	         "niceName":"scion"
-	      },
-	      {
-	         "modelsCount":9,
-	         "niceName":"dodge"
-	      },
-	      {
-	         "modelsCount":7,
-	         "niceName":"bentley"
-	      },
-	      {
-	         "modelsCount":1,
-	         "niceName":"smart"
-	      },
-	      {
-	         "modelsCount":4,
-	         "niceName":"jaguar"
-	      },
-	      {
-	         "modelsCount":4,
-	         "niceName":"rollsroyce"
-	      },
-	      {
-	         "modelsCount":12,
-	         "niceName":"honda"
-	      },
-	      {
-	         "modelsCount":1,
-	         "niceName":"tesla"
-	      },
-	      {
-	         "modelsCount":12,
-	         "niceName":"gmc"
-	      },
-	      {
-	         "modelsCount":23,
-	         "niceName":"toyota"
-	      },
-	      {
-	         "modelsCount":8,
-	         "niceName":"subaru"
-	      },
-	      {
-	         "modelsCount":3,
-	         "niceName":"maserati"
-	      },
-	      {
-	         "modelsCount":22,
-	         "niceName":"nissan"
-	      },
-	      {
-	         "modelsCount":18,
-	         "niceName":"lexus"
-	      },
-	      {
-	         "modelsCount":1,
-	         "niceName":"saab"
-	      },
-	      {
-	         "modelsCount":4,
-	         "niceName":"suzuki"
-	      },
-	      {
-	         "modelsCount":5,
-	         "niceName":"lincoln"
-	      },
-	      {
-	         "modelsCount":5,
-	         "niceName":"porsche"
-	      },
-	      {
-	         "modelsCount":5,
-	         "niceName":"landrover"
-	      },
-	      {
-	         "modelsCount":16,
-	         "niceName":"mercedesbenz"
-	      },
-	      {
-	         "modelsCount":6,
-	         "niceName":"astonmartin"
-	      },
-	      {
-	         "modelsCount":2,
-	         "niceName":"lamborghini"
-	      },
-	      {
-	         "modelsCount":3,
-	         "niceName":"maybach"
-	      }
-	   ],
-	   "makesCount":46
+	  "yearsCount": 14,
+	  "years": [
+	    {
+	      "year": 2014,
+	      "stylesCount": 8,
+	      "id": 200465929
+	    },
+	    {
+	      "year": 2004,
+	      "stylesCount": 5,
+	      "id": 100503653
+	    },
+	    {
+	      "year": 2007,
+	      "stylesCount": 5,
+	      "id": 100507584
+	    },
+	    {
+	      "year": 2008,
+	      "stylesCount": 7,
+	      "id": 100524172
+	    },
+	    {
+	      "year": 2003,
+	      "stylesCount": 5,
+	      "id": 100502711
+	    },
+	    {
+	      "year": 2002,
+	      "stylesCount": 4,
+	      "id": 100000530
+	    },
+	    {
+	      "year": 2010,
+	      "stylesCount": 5,
+	      "id": 100530869
+	    },
+	    {
+	      "year": 2005,
+	      "stylesCount": 5,
+	      "id": 100504946
+	    },
+	    {
+	      "year": 2012,
+	      "stylesCount": 5,
+	      "id": 100538329
+	    },
+	    {
+	      "year": 2006,
+	      "stylesCount": 5,
+	      "id": 100506940
+	    },
+	    {
+	      "year": 2001,
+	      "stylesCount": 4,
+	      "id": 100000009
+	    },
+	    {
+	      "year": 2009,
+	      "stylesCount": 5,
+	      "id": 100525749
+	    },
+	    {
+	      "year": 2013,
+	      "stylesCount": 5,
+	      "id": 200434553
+	    },
+	    {
+	      "year": 2011,
+	      "stylesCount": 5,
+	      "id": 100533210
+	    }
+	  ]
 	}
 
