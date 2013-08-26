@@ -1,18 +1,19 @@
 ---
 layout: api-documentation
-title : 'Spec: Make'
-title_active_left_menu: Spec Make
+title : 'Get Model Year Details for a Car Make/Model'
+title_active_left_menu: 'Spec: Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: makes
-spec: spec_make
+title-endpoint: 'Get Model Year Details for a Car Make/Model'
+spec: spec_model_year
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/makes'
+dropdown-link: 'api/vehicle/v2/{make}/{model}/years'
+
 
 level: 3
-description_edpoint: 'Get a List of Car Makes'
+description_edpoint: 'Get Model Year Details for a Car Make/Model'
 title_md : Description
 number: 1
 ---

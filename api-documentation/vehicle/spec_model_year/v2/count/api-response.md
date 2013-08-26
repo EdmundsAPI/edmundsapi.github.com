@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Total Count of Car Makes/Brands'
-title_active_left_menu: Spec Make
+title : 'Get Total Count of Car Model Years'
+title_active_left_menu: 'Spec: Model/Year'
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'makes/count'
-spec: spec_make
+title-endpoint: 'Get Total Count of Car Model Years'
+spec: spec_model_year
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/makes/count'
+dropdown-link: 'api/vehicle/v2/{make}/{model}/years/count'
 
 
 level: 4
-description_edpoint: 'Get Total Count of Car Makes'
+description_edpoint: 'Get Total Count of Car Model Years'
 title_md : Response format
 number: 3
 ---
