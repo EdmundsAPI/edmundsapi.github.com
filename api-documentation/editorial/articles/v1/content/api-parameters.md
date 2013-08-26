@@ -25,7 +25,7 @@ number: 2
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required                                                  |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:----------------------------------------------------------|
 | category	 	| The article category          		| (see below)			| 		        | Yes/No (Not required in car make/model/year is supplied)  |
-| fmt        	| Response format                       | json              	| json          | Yes                                                       |
+| fmt        	| Response format                       | json | xml         	| json          | Yes                                                       |
 | make  	 	| The car make                  		| 						| 		        | No                                                        |
 | model		 	| The car model                     	| 						| 		        | No                                                        |
 | year  	 	| The car year                      	| 						| 		        | No                                                        |
