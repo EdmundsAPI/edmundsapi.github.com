@@ -511,8 +511,8 @@ a.blueLink {
       .item {
         padding: 0 0 50px 39px;
       }
-
-      .linkLearMore {
+  
+      .linkLearMore, .configureBtn {
         display: inline-block;
         margin: 0 0 31px 0;
         padding: 0 21px;
@@ -524,7 +524,19 @@ a.blueLink {
 
         &:hover {
           text-decoration:none;
-        }
+        }        
+      }
+
+      .linkLearMore {
+        color: #FFFFFF;
+        background: @color_red_blok;
+      }
+
+      .configureBtn {
+        margin-left: 10px;
+        padding: 0 14px;
+        color: @color_text;
+        background: #D1D1D1;
       }
 
       .info {
@@ -3610,6 +3622,7 @@ a.blueLink {
     }
     .blog-post {
       padding-right: 205px;
+      min-height: 260px;
       h3 {
         font-size: 24px;
         line-height: 30px;
