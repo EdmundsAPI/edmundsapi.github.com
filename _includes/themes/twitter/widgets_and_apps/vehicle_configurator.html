@@ -7,7 +7,6 @@
 			<h1>
 				<div>
 					<span>{{ page.title }}</span>
-					<span class="mark">&#174;</span>
 				</div>
 			</h1>
 		</div>
@@ -27,12 +26,12 @@
 					<div class="sub-header">We give people the ability to customize a car, choosing interior and exterior color, wheels, roof options and more.</div>
 				</div>
 				<div class="step-header">
-					<h2>Step2</h2>
+					<h2>Step2: TRUE MARKET VALUE <span class="marker">®</span></h2>
 					<div class="sub-header">We let you know what others are paying for this car based on actual sales data from your region</div>
 				</div>
 				<div class="step-header">
-					<h2>Step3: Configure your vehicle</h2>
-					<div class="sub-header">We connect you with dealers sending information about the car that you has configured. No commitment. You can choose the best offer...</div>
+					<h2>Step3: Get free dealer price quotes</h2>
+					<div class="sub-header">We connect you with dealers sending information about the car that you has configured. No commitment. Request free quotes and have dealers competing for your business.</div>
 				</div>
 			</div>
 		</div>
@@ -41,29 +40,78 @@
 				<div class="screen-wrap">
 					<ul class="carousel" name="main-carousel">
 						<li class="step1 active">
-							<div data-marker="1" class="marker1">&nbsp;</div>
-							<div data-marker="2" class="marker2">&nbsp;</div>
-							<div data-marker="1" class="info-popup">
-								<div class="close-btn">&nbsp;</div>
-								<div class="popup-header">Information popup</div>
-								<div class="popup-content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at turpis eget elit dictum tincidunt. 
-									Morbi vulputate eleifend nisl sit amet sagittis. Curabitur hendrerit ultricies nisl. Donec rutrum ut nisi in porttitor.
-								</div>
-							</div>
-							<div data-marker="2" class="info-popup">
-								<div class="close-btn">&nbsp;</div>
-								<div class="popup-header">Information popup</div>
-								<div class="popup-content">
-									Phasellus sodales libero et dolor laoreet congue et ac leo. Sed vestibulum quis enim quis tincidunt.
-								</div>
-							</div>
+							<div data-marker="1" data-step="1" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="1" class="marker2">&nbsp;</div>
 						</li>
-						<li class="step2">&nbsp;</li>
-						<li class="step3">&nbsp;</li>
+						<li class="step2">
+							<div data-marker="1" data-step="2" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="2" class="marker2">&nbsp;</div>
+							<div data-marker="3" data-step="2" class="marker3">&nbsp;</div>
+						</li>
+						<li class="step3">
+							<div data-marker="1" data-step="3" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="3" class="marker2">&nbsp;</div>
+						</li>
 					</ul>
+				<div class="popup-container">
+
+					<div data-marker="1" data-step="1" class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at turpis eget elit dictum tincidunt. 
+							Morbi vulputate eleifend nisl sit amet sagittis. Curabitur hendrerit ultricies nisl. Donec rutrum ut nisi in porttitor.
+						</div>
+					</div>
+					<div data-marker="2" data-step="1" class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							1 Phasellus sodales libero et dolor laoreet congue et ac leo. Sed vestibulum quis enim quis tincidunt.
+						</div>
+					</div>
+
+					<div data-marker="1" data-step="2" class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at turpis eget elit dictum tincidunt. 
+							Morbi vulputate eleifend nisl sit amet sagittis. Curabitur hendrerit ultricies nisl. Donec rutrum ut nisi in porttitor.
+						</div>
+					</div>
+					<div data-marker="2" data-step="2"  class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							2 Phasellus sodales libero et dolor laoreet congue et ac leo. Sed vestibulum quis enim quis tincidunt.
+						</div>
+					</div>
+					<div data-marker="3" data-step="2"  class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							2 Phasellus sodales libero et dolor laoreet congue et ac leo. Sed vestibulum quis enim quis tincidunt. Sed vestibulum quis enim quis tincidunt. Sed vestibulum quis enim quis tincidunt.
+						</div>
+					</div>
+
+					<div data-marker="1" data-step="3" class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at turpis eget elit dictum tincidunt. 
+							Morbi vulputate eleifend nisl sit amet sagittis. Curabitur hendrerit ultricies nisl. Donec rutrum ut nisi in porttitor.
+						</div>
+					</div>
+					<div data-marker="2" data-step="3" class="info-popup">
+						<div class="close-btn">&nbsp;</div>
+						<div class="popup-header">Information popup</div>
+						<div class="popup-content">
+							3 Phasellus sodales libero et dolor laoreet congue et ac leo. Sed vestibulum quis enim quis tincidunt.
+						</div>
+					</div>
 				</div>
-				<ul class="prev" name="left-carousel">				
+				</div>
+				<ul class="prev" name="left-carousel">
 					<li data-step="-1" class="empty active">&nbsp;</li>
 					<li data-step="0" class="step1">&nbsp;</li>
 					<li data-step="1" class="step2">&nbsp;</li>
@@ -300,14 +348,16 @@
 		$marker.on('click', function(event) {
 			var $el = $(this),
 				markerNumber = $el.data('marker'),
-				$stepPopups = $el.parent().find('.info-popup');
+				curStep = $el.data('step'),
+				$allPopups = $('.popup-container').find('.info-popup');
 
 			event.stopPropagation();
 
-			$stepPopups.fadeOut(500);
-			$stepPopups.each(function() {
-				var thisNumber = $(this).data('marker');
-				if(thisNumber === markerNumber) {					
+			$allPopups.fadeOut(500);
+			$allPopups.each(function() {
+				var thisNumber = $(this).data('marker'),
+					thisStep = $(this).data('step');
+				if(thisNumber === markerNumber && thisStep === curStep ) {					
 					$(this).fadeIn(400);
 				}
 			});

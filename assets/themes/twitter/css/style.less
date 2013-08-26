@@ -1208,26 +1208,35 @@ a.blueLink {
     text-align: center;
   }
   .promo-section1 {
-    height: 693px;
+    height: 705px;
+    .promo-section-label {
+      top: 5px;
+    }
     ul {
       list-style: none;
     }
     .section-header {
       margin-left: 230px;
       margin-bottom: 37px;
-      height: 90px;
+      height: 102px;
       overflow: hidden;
     }
     .step-header {
       display: none;
+      padding-top: 5px;
       h2 {
         margin-bottom: 10px;
       }
       &.active {
         display: block;
       }
+      .marker {
+        vertical-align: top;
+        line-height: 12px;
+      }
     }
     .sub-header {
+      line-height: 24px;
       max-width: 800px;
     }
     .carousel-wrap {
@@ -1248,35 +1257,35 @@ a.blueLink {
       overflow: hidden;
       position: absolute;
       margin: 0;
-      top: 0;
-      bottom: 0;
-      right: 28px;
-      left: 28px;
+      top: 55px;
+      bottom: 116px;
+      right: 222px;
+      left: 46px;
+      border: 2px solid #c9c9c9;
+      .border-radius(5px);
       [class*="step"] {
         background: url('../img/slider_nvc/sprite-widget-big.png') no-repeat;
         position: absolute;
         display: none;
         width: 653px;
         height: 439px;
-        border: 2px solid #c9c9c9;
-        .border-radius(5px);
         .transition(0.6s, ease-in-out, left);
 
         &.next, &.prev, &.active {
           display: block;
-          top: 55px;
+          top: 0;
         }
         &.next, &.active.right {
-          left: 863px;
+          left: 657px;
         }
         &.prev, &.active.left {
-          left: -863px
+          left: -657px
         }
         &.next.left, &.prev.right {
-          left: 18px;
+          left: 0;
         }
         &.active {
-          left: 18px;
+          left: 0;
         }
       }
       .step1 {
@@ -1292,41 +1301,36 @@ a.blueLink {
       }
       .step2 {
         background-position: 0 -600px;
+        .marker1 {
+          top: 130px;
+          right: 170px;
+        }
+        .marker2 {
+          top: 260px;
+          right: 101px;
+        }
+        .marker3 {
+          top: 180px;
+          left: 223px;
+        }
       }
       .step3 {
         background-position: 0 -1200px;
+        .marker1 {
+          top: 130px;
+          left: 134px;
+        }
+        .marker2 {
+          top: 327px;
+          left: 375px;
+        }
       }
       [class*="marker"] {
         background: url('../img/slider_nvc/marker.png') no-repeat;
         position: absolute;
         cursor: pointer;
-        width: 35px;
-        height: 35px;
-      }
-      .info-popup {
-        display: none;
-        position: absolute;
-        top: -1px;
-        right: -175px;
-        width: 190px;
-        padding: 20px;
-        background: #fff;
-        font-size: 12px;
-        line-height: 15px;
-        .popup-header {
-          font-weight: bold;
-          padding-bottom: 10px;
-          padding-right: 25px;
-        }
-        .close-btn {
-          position: absolute;
-          top: 18px;
-          right: 18px;
-          background: url('../img/slider_nvc/close-btn.png') no-repeat;
-          width: 21px;
-          height: 21px;
-          cursor: pointer;
-        }
+        width: 37px;
+        height: 37px;
       }
     }
     .prev, .next {
@@ -1339,7 +1343,7 @@ a.blueLink {
       li {
         display: none;
         position: absolute;
-        width: 468px;
+        width: 653px;
         height: 440px;
         .transition(0.6s, ease-in-out, left);
         &.active, &.next, &.prev {
@@ -1347,10 +1351,10 @@ a.blueLink {
           display: block;
         }
         &.next, &.active.right {
-          left: 468px;
+          left: 653px;
         }
         &.prev, &.active.left {
-          left: -468px;
+          left: -653px;
         }
         &.next.left, &.prev.right {
           left: 0;
@@ -1373,15 +1377,14 @@ a.blueLink {
       }
     }
     .prev {
-      left: -400px;
+      left: -460px;
     }
     .next {
-      right: 145px;
+      right: 196px;
     }
     .nvc-pager {
       li {
         position: absolute;
-        background-color: #fff;
         top: 250px;
         z-index: 1;
         &.left {
@@ -1421,6 +1424,34 @@ a.blueLink {
         &.active {
           background-position: 0 -114px;
         }
+      }
+    }
+    .popup-container {
+      position: absolute;
+      width: 190px;
+      top: 56px;
+      right: 49px;
+    }
+    .info-popup {
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #fff;
+      font-size: 12px;
+      line-height: 15px;
+      .popup-header {
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-right: 25px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        background: url('../img/slider_nvc/close-btn.png') no-repeat;
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
       }
     }
 
@@ -3622,7 +3653,7 @@ a.blueLink {
     }
     .blog-post {
       padding-right: 205px;
-      min-height: 260px;
+      min-height: 300px;
       h3 {
         font-size: 24px;
         line-height: 30px;

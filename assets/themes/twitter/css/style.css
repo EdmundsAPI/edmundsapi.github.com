@@ -480,11 +480,11 @@ a.linkGetKey:hover {
 	/*__End style code*/
 	
 a.pdfLink {
-	padding: 4px 26px 0 20px;
+	padding: 5px 26px 0 20px;
 	color: #336699;
 	font: 11px/18px Arial, sans-serif;
 	text-transform: uppercase;
-	background: url('../img/pdf_link.gif') left center no-repeat;
+	background: url('../img/pdf-link.png') left center no-repeat;
 }
 a.pdfLink:hover {
 	color: #90BE3F;
