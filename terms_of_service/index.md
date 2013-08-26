@@ -38,3 +38,142 @@ By submitting an Application for API Keys, you acknowledge and agree that (i) yo
 + **“End Users”** means the individuals who view and/or use your Developer Site and/or your Developer Application.
 + **“Photos”** means the photographs that are included from time to time as a part of the Data.
 + **“Third-Party Photos”** means the Photos that are owned by third parties and provided to Edmunds, which can be identified because they are assigned the value "OEM" in their "source" attribute.
+
+---
+
+### 3. Enrollment in the Edmunds Developer Program.
+
+**3.1** To apply for enrollment in the Edmunds Developer Network, you must complete the Application for API Keys.  Once enrolled, your participation may rescinded by Edmunds for any reason whatsoever, in Edmunds' sole discretion, including but not limited to a determination that you or your Developer Site or Developer Application is in violation of this Agreement, is unsuitable for or incompatible with the Edmunds Developer Network, or competes wth Edmunds in a manner that Edmunds finds unacceptable.
+
+**3.2** Edmunds reserves the right to change the contents of the Edmunds Data including, but not limited to, excluding categories from such Edmunds Data from time to time in its sole discretion without notice to you.  Edmunds also reserves the right to modify the functionality of any API at any time. 
+
+---
+
+### 4. Limited License; Ownership by Edmunds.
+
+**4.1**  License. On the terms and subject to the conditions set forth in this Agreement, and conditioned on Edmunds’ acceptance of your Application for API Keys, Edmunds grants you a limited, non-exclusive, non-assignable, non-transferable, non-sublicensable, royalty-free (i) license during the Term to use the the Edmunds Materials (other than the Third-Party Photos) in your Developer Application and Developer Application, solely in connection with the exercise of your rights under this Agreement (the “License”), and (ii) the ability to access Third-Party Photos through the Edmunds APIs.  The provisions of this Agreement will be applicable to all updates, revisions or substitutions of the Edmunds APIs, and any copies of the Edmunds APIs made by or for you. All rights not expressly granted to you are reserved by Edmunds.
+
+**4.2**  Ownership. You acknowledge that Edmunds now and at all times hereafter is the exclusive owner of all right, title and interest in and to all Edmunds Materials other than the Third-Party Photos; and that you receive and acquire no licenses with respect to any Edmunds Materials except as expressly granted in this Agreement. You agree that you will not assert any copyright, trademark or other intellectual property ownership or other proprietary rights in or to any Edmunds Materials, or any part of these items or in any derivative work of these items.  Except for the right to use the Edmunds Materials as set forth in this Agreement, nothing contained in this Agreement shall be construed to grant you any right, title or interest in or to any intellectual property of Edmunds, and you are prohibited from making any use thereof of any nature except as expressly authorized in this Agreement.  You agree that you will not adopt, use or attempt to register any trademarks or trade names that are confusingly similar to the Edmunds Marks (as determined by Edmunds in the exercise of its reasonable business judgment) or in such a way as to create combination marks.  You acknowledge and agree that Edmunds is advising you that Edmunds obtains the Third-Party Photos from third parties, and that your right to use the Third-Party Photos are subject to the rights of those third parties and any limitations or conditions they elect to impose on the use of the photos they provide. 
+
+**4.3**  Use of Edmunds Marks. Under no circumstances may you use any Edmunds Marks for any purpose other than the placement of Edmunds Links on your Developer Site or Developer Application in accordance with this Agreement.  You specifically acknowledge that entry into any agreement with a third party for the purchase of traffic involving keywords that are identical to or similar to any of Edmunds's Marks will constitute a breach of this Agreement and will, whether occurring during or following the Term, also constitute trademark infringement.
+
+---
+
+### 5. Attribution.
+
+Additionally, please follow the [API Branding Guideline] and use of the approved logos in it to link back to http://www.edmunds.com.
+
+**Do Not:**
+
+* Change, alter or modify in any way the image of the Edmunds Web Badge — including colors, language, appearance or animations.
+* Make the Web Badge bigger than your Developer Site’s or Developer Application’s name and branding.
+* Use the Web Badge to suggest that Edmunds is responsible for, or endorses or recommends, your Developer Site's or Developer Application’s content, design, language or topic.
+
+---
+
+### 6. Certain Developer Representations and Warranties.
+
+You represent and warrant that you have full power and authority to enter into this Agreement and that, as of the time you accept this Agreement and for the duration of your use of the Edmunds APIs:
+
+**6.1**  You are in compliance with all applicable laws, rules and regulations, if any, related to the performance of your obligations under this Agreement and the operation of your Developer Site and your Developer Application;
+
+**6.2**  You fully own and control all of the development, maintenance and operation of, and content on, your Developer Site and your Developer Application (other than Edmunds Materials);
+
+**6.3**  All content and materials on your Developer Site and Developer Application is owned or validly licensed for use by you or is in the public domain;
+
+**6.4**  None of the content on your Developer Site or your Developer Application is defamatory, constitutes obscenity, or violates any law or regulation, any right of any person, including but not limited to intellectual property rights, rights of privacy or publicity;
+
+**6.5**  None of the content and materials on your Developer Site or your Developer Application constitutes or results in any consumer fraud, product liability, breach of contract to which you are a party or which cause injury to any third party;
+
+**6.6**  Your Developer Site and your Developer Application do not contain or directly link to any objectionable material, as determined by Edmunds in its sole discretion, but which includes pornography, obscene language or other obscene content, or support for violent or hate groups, or content that is abusive, illegal, hateful, harmful, harassing, or racially or ethnically discriminatory; and
+
+**6.7**  Your Developer Site is not an incentive-based web site, such as a lottery or sweepstakes site which rewards End Users for clicking on links;
+
+---
+
+### 7. Certain Developer Covenants.
+
+You acknowledge and agree that:
+
+**7.1**   Access to the Edmunds APIs and other Edmunds Materials shall be solely through the Developer Application and displayed only to End Users. The Edmunds API results shall not be permitted or facilitated through any other web site or means, whether under Developer's ownership and control or otherwise. No sub-licensing, re-packaging, or other use (including "service bureau" use) is permitted.
+
+**7.2**   You will comply with the “Special Requirements for the Display of True Market Value® Prices or True Cost to Own® Data,” and the “Special Requirements for the Display of Edmunds.com Visitor Vehicle Ratings and Reviews,” and "Special Requirements for the display ofEdmunds.com Editorial Content," as well as any other special requirements, set forth in the API Documentation, if applicable.
+
+**7.3**  Queries to the Edmunds API must contain all required parameters.
+
+**7.4**   Edmunds may limit the number API queries that may be submitted by your Developer Application per day.
+
+**7.5**   You must include the Edmunds Web Badge on the Developer Site and the Developer Application displaying Edmunds Data.
+
+**7.6 **  You will not include rel="nofollow" when rendering hyperlinked Edmunds Data returned by an Edmunds API.
+
+**7.7**  No substitution shall be made for page URLs included in the Edmunds Materials, and the Edmunds Links shall convey End Users directly to such page URLs within the same browser window and without any framing, redirection (with the exception of redirection through a tracking system), or interstitial advertising (including pop-up or pop-under ads).
+
+**7.8**   You may cache and thus store Edmunds Data on your system for up to 24 hours, after which such cached Edmunds Data must be purged.  Subject to that exception, you will not copy, store, archive, distribute to any third party (other than to End Users as contemplated in this Agreement), alter or modify in any fashion, any Edmunds Data, any metadata or any Link.  You agree that any cached Edmunds Data will be used by you only for the purpose of populating the Developer Application.
+
+**7.9**   You will not, in connection with any display of any item of Edmunds Data that relates to a vehicle, make any factual misrepresentation with respect to such item or the vehicle to which it pertains.
+
+**7.10** You will not display the name, logo, trademark or other identifier of another person (except Edmunds or you) on your Developer Site or Developer Application in such a manner as to give End Users the impression that such other person is a source, publisher or distributor of the Edmunds Data.
+
+**7.11** You will not sell, lease, share, transfer, or sublicense the Edmunds API Keys, whether for direct commercial or monetary gain or otherwise, without Edmunds’ prior, express, written permission.
+
+**7.12** You will not use the APIs in connection with or to promote any products, services, or materials that constitute, promote or are used primarily for the purpose of dealing in: spyware, adware, or other malicious programs or code, counterfeit goods, items subject to US embargo, hate materials (e.g. Nazi memorabilia) or materials urging acts of terrorism or violence, goods made from protected animal/plant species, recalled goods, hacking/surveillance/interception/ descrambling equipment, cigarettes, illegal drugs and paraphernalia, unlicensed sale of prescription drugs and medical devices, pornography, prostitution, body parts and bodily fluids, stolen products and items used for theft, fireworks, explosives, and hazardous materials, government IDs, police items, unlicensed trade or dealing in stocks and securities, gambling items, professional services regulated by state licensing regimes, non-transferable items such as airline tickets or event tickets, non-packaged food items, weapons and accessories.
+
+**7.13 **You will not influence any search engine's results in a way that violates such search engine's published policies, including its "spam" policy.
+
+**7.14** You will ensure that the use or display of the Edmunds Materials does not suggest that Edmunds promotes or endorses you or any third party or the causes, ideas, web sites, products or services of you or any third party.
+
+---
+
+#### 8. Indemnification. 
+
+You agree to defend, indemnify and hold Edmunds, its parent company and any affiliate entities, and its and their directors, officers, employees, agents and assigns, harmless from and against any and all losses, costs, claims, liabilities, damages, suits, actions or expenses (including, without limitation, reasonable attorneys' fees) arising from or in connection with (i) any breach of these representations, warranties and covenants, or your performance or failure to perform any of your obligations under this Agreement.
+
+---
+ 
+### 9. Disclaimer of Warranties.
+
+EDMUNDS EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF ANY KIND OR NATURE, WHETHER EXPRESS, IMPLIED OR STATUTORY, RELATING TO THE EDMUNDS WEB SITE, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. In addition, Edmunds makes no representation or warranty that the Edmunds Links, the operation of the Edmunds Web Site, or the Edmunds APIs will be uninterrupted or error-free, and Edmunds will not be liable for the consequences of any interruptions or errors.
+
+---
+
+### 10. Limitation of Liability.
+
+EDMUNDS WILL NOT BE LIABLE FOR ANY LOST PROFITS OR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES, INCLUDING DAMAGES FOR LOST DATA, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, INCLUDING BUT NOT LIMITED TO CONTRACT, PRODUCTS LIABILITY, STRICT LIABILITY AND NEGLIGENCE, AND WHETHER OR NOT EDMUNDS WAS OR SHOULD HAVE BEEN AWARE OR ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+---
+
+### 11. Term and Termination. 
+
+**11.1**    Term. The term of the License (the "Term") shall commence on the date your Application for API Keys is accepted by Edmunds and shall continue until terminated by either party.  Either party may terminate the Term by giving notice of such termination to the party, and such termination may be for any for any reason the terminating party elects (for example, Edmunds may designate such termination as being for breach of this Agreement by Developer), or for no reason other than the terminating party’s convenience.  A termination by Edmunds of Developer’s access to the APIs shall be deemed a termination of the Term by Edmunds, and the complete discontinuation of the use of all Edmunds APIs and Edmunds Materials by you shall be deemed a termination of the Term by you.  Edmunds may condition your continued use of the Edmunds Materials, and thus its agreement not to exercise its right to terminate the Term, on your compliance with additional conditions or requirements that are not set forth in this Agreement and that may not be applicable to other licensees of the Edmunds Materials. 
+
+**11.2 **   Effect of Termination. Upon the termination of the Term for any reason, the License shall terminate immediately, and if not already done you shall immediately cease use of the Edmunds APIs and other Edmunds Materials.  All of the provisions of this Agreement other than the License shall survive the termination of the License.
+
+---
+
+### 12. Miscellaneous. 
+
+**12.1**   Chrysler Information.  CHRYSLER GROUP LLC ("CHRYSLER") PROVIDES CERTAIN DATA, INFORMATION AND IMAGES TO EDMUNDS (THE "CHRYSLER INFORMATION").  THE CHRYSLER INFORMATION IS PROVIDED BY CHRYSLER "AS IS" AND CHRYSLER MAKES NO WARRANTIES, EITHER EXPRESSED OR IMPLIED, OF ANY KIND RESPECTING THE CHRYSLER INFORMATION, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE CHRYSLER INFORMATION IS NOT WARRANTED TO BE ERROR- OR VIRUS-FREE.  CHRYSLER IS NOT LIABLE FOR ANY DAMAGES IN CONNECTION WITH THE USE OF THE CHRYSLER INFORMATION, INCLUDING WITHOUT LIMITATION, ANY LOSS OF PROFIT, USE, GOODWILL, OR ANY WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, INTERRUPTION OF BUSINESS, OR ANY DIRECT, INDIRECT, SPECIAL, EXEMPLARY, INCIDENTAL OR CONSEQUENTIAL DAMAGES IN CONNECTION WITH, RELATED TO, OR ARISING OUT OF THE USE OF CHRYSLER INFORMATION.
+
+**12.2**   Assignment. Only Edmunds may assign its rights or delegate its obligations under this Agreement.  You may not assign this Agreement or any of your rights or delegate any of your obligations.
+
+**12.3**   No Third Party Beneficiaries. All rights and obligations of the parties hereunder are personal to them.  This Agreement is not intended to benefit, nor shall it be deemed to give rise to, any rights in any third party.
+
+**12.4**   Publicity. Other than as otherwise specifically permitted by this Agreement, you may not create, publish, or distribute any item (e.g. press release) that references Edmunds without first submitting those items to Edmunds for approval and receiving Edmunds's written consent.
+
+**12.5**   Governing Law; Venue. This Agreement shall be governed by and construed in accordance with the laws of the State of California, excluding its conflicts of law rules. You agree that, unless expressly waived by Edmunds or Edmunds brings an action in a different jurisdiction, the exclusive jurisdiction for any claim or action arising out of or relating to this Agreement or your use of the Edmunds APIs shall be in the state or federal courts located in the County of Los Angeles, State of California, and you further agree and submit to the exercise of personal jurisdiction of such courts for the purpose of litigating any such claim or action.
+
+**12.6**   Legal Fees.  If any dispute arises between the parties with respect to the matters covered by this Agreement which leads to a proceeding to resolve such dispute, the prevailing party in such proceeding shall be entitled to receive its reasonable attorneys’ fees, expert witness fees and out-of-pocket costs incurred in connection with such proceeding, in addition to any other relief it may be awarded.
+
+**12.7**   Independent Contractors. The parties are independent contractors. This Agreement shall not be construed to create a joint venture or partnership between the parties. Neither party shall be deemed to be an employee, agent, partner or legal representative of the other for any purpose and neither shall have any right, power or authority to create any obligation or responsibility on behalf of the other.
+
+**12.8**   Entire Agreement. This Agreement and the Visitor Agreement constitute the entire agreement between the parties with respect to the subject matter hereof.  This Agreement supersedes, and the terms of this Agreement govern, any other prior or collateral agreements with respect to the subject matter hereof.
+
+**12.9**  Severability. If any provision of this Agreement shall be held or made invalid or unenforceable for any reason, such invalidity shall not affect the remainder of this Agreement, and the invalid or unenforceable provisions shall be replaced by a mutually acceptable provision, which being valid, legal and enforceable comes closest to the original intentions of the parties hereto and has like economic effect.
+
+**12.10**   Section Headings. The section headings contained herein are for reference purposes only and shall not in any way affect the meaning or interpretation of this Agreement.
+
+IN ADDITION TO ALL OTHER CRITERIA CONSIDERED BY EDMUNDS WITH RESPECT TO THE APPLICATION FOR API KEYS, NO APPLICANT SHALL BE ADMITTED TO THE EDMUNDS DEVELOPER NETWORK UNLESS SUCH APPLICANT'S SITE AND DEVELOPER APPLICATION ARE MARKETED AND DIRECTED SOLELY TO RESIDENTS OF THE UNITED STATES OF AMERICA OR CANADA, AS DETERMINED BY EDMUNDS IN ITS SOLE DISCRETION.
+
+
+
