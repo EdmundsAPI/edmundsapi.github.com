@@ -23,8 +23,8 @@ number: 3
 #### JSON Response
 
 	{
-		"models": {array of objects},
-		"modelsCount": {integer}
+		"years": {array of objects},
+		"yearsCount": {integer}
 	}
 
 | Property      | Description                                              | Visibility                |
@@ -36,6 +36,8 @@ Each element in the <code>years</code> array follows this format:
 
 	{
 		"id": {integer},
+		"make": {object},
+		"model": {object},
 		"states": {array of strings}, // only when view=full
 		"styles":{array of objects},
 		"year": {integer}
@@ -43,7 +45,6 @@ Each element in the <code>years</code> array follows this format:
 
 | Property      | Description                                               | Visibility                |
 |:-------------:|:----------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car model year                     | Edmunds, Partners, Public |
 | id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
 | make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
 | model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
