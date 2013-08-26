@@ -20,7 +20,7 @@ number: 4
 
 ### Sample Request 1
 
-Get the list of model years and their styles and trims for all ***New* Honda Civics**
+Get the list of model years and their styles and trims for all **New Honda Civics** 
 
 #### URL
 
@@ -61,7 +61,7 @@ Get the list of model years and their styles and trims for all ***New* Honda Civ
 	
 ### Sample Request 2
 
-Get the list of model years and their styles and trims for all ***New* Honda Civics** with <code>view=full</code>
+Get the list of model years and their styles and trims for all **New Honda Civics** with <code>view=full</code>
 
 #### URL
 
