@@ -1246,7 +1246,7 @@ a.blueLink {
     }
     .screen-wrap {
       position: relative;
-      z-index: 1;
+      z-index: 3;
       padding: 0 28px;
       width: 868px;
       height: 613px;
@@ -1333,9 +1333,41 @@ a.blueLink {
         height: 37px;
       }
     }
-    .prev, .next {
+    .prev-wrap, .next-wrap {
       position: absolute;
       top: 56px;
+      width: 653px;
+      height: 440px;
+      &.empty-nav {
+        cursor: default;
+        .white-shadow {
+          display: none;
+        }
+      }
+    }
+    .prev-wrap {
+      left: -460px;
+      .white-shadow {
+        left: 225px;
+      }
+    }
+    .next-wrap {
+      right: -435px;
+    }
+    .white-shadow {
+      background: url('../img/slider_nvc/white-shadow.png') no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;      
+      cursor: pointer;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
       [class*="step"] {
         cursor: pointer;
         background: url('../img/slider_nvc/sprite-widget-small.png') no-repeat;
@@ -1376,17 +1408,11 @@ a.blueLink {
         background-position: 0 -1040px;
       }
     }
-    .prev {
-      left: -460px;
-    }
-    .next {
-      right: 196px;
-    }
     .nvc-pager {
       li {
         position: absolute;
         top: 250px;
-        z-index: 1;
+        z-index: 2;
         &.left {
           left: 10px;
         }
@@ -1412,7 +1438,7 @@ a.blueLink {
       position: absolute;
       bottom: 60px;
       right: 473px;
-      z-index: 2;
+      z-index: 3;
       li {
         display: inline-block;
         cursor: pointer;
@@ -1420,7 +1446,7 @@ a.blueLink {
         background: url('../img/slider_nvc/navig-nvc.png') no-repeat;
         background-position: 0 -152px;
         width: 20px;
-        height: 20px;
+        height: 21px;
         &.active {
           background-position: 0 -114px;
         }
