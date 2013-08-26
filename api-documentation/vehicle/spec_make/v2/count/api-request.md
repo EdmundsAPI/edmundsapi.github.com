@@ -24,7 +24,7 @@ Get the total amount of car makes in the system
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key=xxxxx
+	https://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key=xxxxx
 	
 #### Response
 
@@ -38,7 +38,7 @@ Get the total number of _NEW_ car makes and the breakdown of their models and th
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&view=full&state=new&api_key=xxxxx
+	https://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&view=full&state=new&api_key=xxxxx
 
 #### Response
 
