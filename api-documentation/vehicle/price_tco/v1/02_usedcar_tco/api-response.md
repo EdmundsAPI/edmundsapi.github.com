@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Price: True Cost to Own'
+title : 'Get TCO® for a Used Car'
 title_active_left_menu: 'Price: True Cost to Own'
 title_parent: Api documentation
 
-amount_version: 2
-title-endpoint: usedtruecosttoownbystyleidandzip
-spec: price_true_cost_to_own
+amount_version: 1
+title-endpoint: 'Get TCO® for a Used Car'
+spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/usedtruecosttoownbystyleidandzip'
+dropdown-link: 'v1/api/tco/usedtruecosttoownbystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get TCO® for a Used Car'
 title_md : Response format
 number: 3
 
@@ -21,6 +21,10 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+	{
+	    "value": {float}
+	}
+	
+| Property      | Description                                              	| Visibility                |
+|:--------------|:----------------------------------------------------------|:------------------------- |
+| value         | The TCO® total value					                   	| Edmunds, Partners, Public |

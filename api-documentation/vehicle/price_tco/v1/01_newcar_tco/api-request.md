@@ -9,7 +9,7 @@ title-endpoint: 'Get TCO® for a New Car'
 spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip'
+dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
@@ -19,8 +19,16 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
-##test content : {{page.title-endpoint}} 
+Get TCO® for style ID **101426944** in zip code **90019**
 
-tab: {{page.number}} 
+#### URL
+
+	https://api.edmunds.com/v1/api/tco/newtruecosttoownbystyleidandzip/101426944/90019?fmt=json&api_key={api key}
+	
+#### Response
+
+	{
+	    "value": 12937.0
+	}

@@ -9,7 +9,7 @@ title-endpoint: 'Get TCO® for a New Car'
 spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip'
+dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
@@ -21,6 +21,7 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| fmt        | Response format                       | json              | json          | Yes      |
+| api_key    | vehicle api key                       |                   |               | Yes      |

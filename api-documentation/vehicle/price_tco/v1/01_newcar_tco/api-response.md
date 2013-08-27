@@ -9,7 +9,7 @@ title-endpoint: 'Get TCO® for a New Car'
 spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip'
+dropdown-link: 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
@@ -21,6 +21,10 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+	{
+	    "value": {float}
+	}
+	
+| Property      | Description                                              	| Visibility                |
+|:--------------|:----------------------------------------------------------|:------------------------- |
+| value         | The TCO® total value					                   	| Edmunds, Partners, Public |
