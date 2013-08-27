@@ -3399,6 +3399,28 @@ a.blueLink {
           border-bottom: 2px solid #dedede;
           background: #fff;
 
+          .iconDev {
+            position: relative;
+            float: left;
+            width: 150px;
+
+            .iconDeveloper {
+              position: relative;
+              z-index: 2;
+              display: inline-block;
+              width: 116px;
+              height: 116px;
+              background: url('../img/certified_developer/search_the_directory/frame.png') no-repeat transparent;
+            }
+
+            img {
+              position: absolute;
+              z-index: 1;
+              width: 116px;
+              height: 116px;
+            }
+          }
+
           .lineRuseltBlock {
             position:absolute;
             top:27px;
@@ -3408,20 +3430,10 @@ a.blueLink {
             background: #525252;
           }
 
-          .iconDeveloper {
-            display: inline-block;
-            overflow: hidden;
-            width: 116px;
-            height: 116px;
-            background: url('../img/certified_developer/search_the_directory/frame.png') no-repeat transparent;
 
-            img {
-              width: 116px;
-              height: 116px;
-            }
-          }
 
           .discriptDeveloper {
+            overflow: hidden;
             .nameDeveloper {
               margin: 7px 0 10px 0;
               display: inline-block;
@@ -3457,6 +3469,8 @@ a.blueLink {
           }
 
           .iconBadges {
+            float: right;
+            width: 254px;
             ul {
               margin:23px 0 0;
               list-style: none;

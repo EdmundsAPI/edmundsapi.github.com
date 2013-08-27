@@ -149,33 +149,42 @@ var $inputLocation = $('#location');
 
 		$('#'+ class2 +'').prop("checked", false);
 
-		cross.parent('.itemFilterBadge').remove();
 
-		// check
-		check();
 
-		//var idParent = $(this).closest('div').css( "background-color", "red" );
 
-		/*if (idParent.hasClass == 'location'){
+		var idParent = cross.parents('#selectedQual, #selectedLoc').attr('id');
+
+		//console.log(idParent);
+
+		if (idParent == 'selectedLoc'){
 
             var lengthChild =  wrapperButtonsLoc.children().length;
 
-            if(lengthChild == 0) {
+            console.log(lengthChild);
+
+            if(lengthChild == 1) {
 
                 wrapperButtonsLoc.addClass('hide');
 
             }
 
-        } else if (idParent == 'qualification'){
+        } else if (idParent == 'selectedQual'){
 
             var lengthChild =  wrapperButtonsQual.children().length;
 
-            if(lengthChild == 0) {
+            console.log(lengthChild);
+
+            if(lengthChild == 1) {
 
                 wrapperButtonsQual.addClass('hide');
 
             }
-        }*/
+        }
+
+        cross.parent('.itemFilterBadge').remove();
+
+        // check
+        check();
 
 
 	});
