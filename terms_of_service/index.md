@@ -125,7 +125,7 @@ You acknowledge and agree that:
 
 ---
 
-#### 8. Indemnification. 
+### 8. Indemnification. 
 
 You agree to defend, indemnify and hold Edmunds, its parent company and any affiliate entities, and its and their directors, officers, employees, agents and assigns, harmless from and against any and all losses, costs, claims, liabilities, damages, suits, actions or expenses (including, without limitation, reasonable attorneys' fees) arising from or in connection with (i) any breach of these representations, warranties and covenants, or your performance or failure to perform any of your obligations under this Agreement.
 

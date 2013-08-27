@@ -108,7 +108,7 @@ We have broken down the process for both business owners and developers below. T
 				<h2>Developer builds an application </br> with Edmunds API </h2>
 				
 				<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
-				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
+				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="/api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
 			
 			</div>
 			
