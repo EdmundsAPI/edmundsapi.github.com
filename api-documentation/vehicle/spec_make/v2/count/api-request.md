@@ -25,13 +25,13 @@ Get the total amount of car makes in the system
 #### URL
 
 	https://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key=xxxxx
-	
+
 #### Response
 
 	{
 		"makesCount": 60
 	}
-	
+
 ###Sample Request 2
 
 Get the total number of _NEW_ car makes and the breakdown of their models and the model counts

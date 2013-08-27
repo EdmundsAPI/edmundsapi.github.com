@@ -25,7 +25,7 @@ Get the total number of car makes.
 ### URL
 
 	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&api_key={api key}
-	
+
 ### Code Example
 
 You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-sdk) to run this example.

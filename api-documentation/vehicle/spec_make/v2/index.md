@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Spec: Make'
-title_active_left_menu: Spec Make
+title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
 amount_version: 2
@@ -28,13 +28,13 @@ A vehicle _make_ is either the name of its manufacturer or, if the manufacturer 
 These three endpoints provide all the necessary data points.
 
 #### Example 1: Get relevant information for all car makes that were active in 1995
-	
+
 	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&year=1995&api_key={vehicle api key}
-	
+
 #### Example 2: Get information on _USED_ Hondas
 
 	http://api.edmunds.com/api/vehicle/v2/honda?fmt=json&state=used&api_key={vehicle api key}
-	
+
 #### Example 3: Get the total number of car makes that are listed as __New__
 
 	http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&state=new&api_key={vehicle api key}

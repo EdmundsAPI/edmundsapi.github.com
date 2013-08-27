@@ -29,14 +29,14 @@ number: 3
 		"name": {string},
 		"niceName": {string}
 	}
-	
+
 | Property      | Description                                              | Visibility                |
 |:--------------|:---------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car make/brand                    | Edmunds, Partners, Public |
 | models        | List of models belonging to this car make (see below)    | Edmunds, Partners, Public |
 | name          | The name of this car make                                | Edmunds, Partners, Public |
 | niceName      | URL-friendly car make/brand name                         | Edmunds, Partners, Public |
-	
+
 Each element in the <code>models</code> array follows this format:
 
 	{
@@ -54,7 +54,7 @@ Each element in the <code>models</code> array follows this format:
 | niceName      | URL-friendly car model name                                    | Edmunds, Partners, Public |
 | states        | The state of this model/year (e.g. NEW, USED, or FUTURE)       | Edmunds, Partners, Public |
 | years         | List of model/years belonging to this car model (see below)    | Edmunds, Partners, Public |
-		
+
 Each element in the <code>years</code> array follows this format:
 
 	{
@@ -62,7 +62,7 @@ Each element in the <code>years</code> array follows this format:
 		"states": {array of strings}, // only when view=full
 		"year": {integer}
 	}
-	
+
 | Property      | Description                                                    | Visibility                |
 |:--------------|:---------------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car model/year                          | Edmunds, Partners, Public |

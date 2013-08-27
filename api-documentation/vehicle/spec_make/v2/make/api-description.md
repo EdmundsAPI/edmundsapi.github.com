@@ -27,7 +27,7 @@ Get the list of models and model/year IDs belonging to a specific car make.
 ### URL
 
 	http://api.edmunds.com/api/vehicle/v2/{make}?fmt=json&api_key={api key}
-	
+
 ### Code Example
 
 You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-sdk) to run this example.
