@@ -754,6 +754,7 @@ ul.multiLevelMenu {
 	.overviewTable .parenCategory {
 		padding: 13px 5px;
 	}
+	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
@@ -780,6 +781,8 @@ ul.multiLevelMenu {
 /*-----------------@media (min-width: 768px) and (max-width: 979px)-----------------*/
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+
+	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 { width: 200px; float: left;	}
 	.row-fluid .span10,

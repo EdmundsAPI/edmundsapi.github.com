@@ -152,14 +152,14 @@ function Slider() {
 				slidePoint3.css({'background-position': '0 -45px'});
 				break				
 			case 2:			
-				animateMarkers(46, 119, 307, undefined, undefined, 40, 113, 300, undefined, undefined, 45, 30, 45);
+				animateMarkers(46, 119, 307, undefined, undefined, 39, 112, 300, undefined, undefined, 45, 30, 45);
 				
 				slidePoint1.css({'background-position': '0 -45px'});
 				slidePoint2.css({'background-position': '0 -30px'});
 				slidePoint3.css({'background-position': '0 -45px'});
 				break				
 			case 3:				
-				animateMarkers(8, 210, 275, undefined, undefined, 3, 203, 268, undefined, undefined, 45, 45, 30);
+				animateMarkers(8, 210, 275, undefined, undefined, 1, 203, 268, undefined, undefined, 45, 45, 30);
 				
 				slidePoint1.css({'background-position': '0 -45px'});
 				slidePoint2.css({'background-position': '0 -45px'});
