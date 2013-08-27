@@ -525,6 +525,9 @@ a.pdfLink:hover {
 		margin: 2px 20px 0 0;
 		border: 0;
 	}
+	.overviewTable .parenCategory a {
+		color: #fff;
+	}
 	.parenCategory h2,
 	.parenCategory p,
 	.parenCategory a {
