@@ -34,6 +34,10 @@
 
 	sliderHover.mouseout(function(){  //start
 		
+		if(intervalID) {
+			clearInterval(intervalID); 	
+		}
+		
 		interval(timeInterval);
 		
 	});
@@ -118,7 +122,6 @@
 	// Moving Markers (animate)
 	
 	function animateMarkers(mark1Top, mark2Top, mark3Top, mark4Top, tip1Top, tip2Top, tip3Top, tip4Top, slidePoint1, slidePoint2, slidePoint3) {
-		console.log('TMV animate markers');
 		var mark1 = $('.mark1');
 	    var mark2 = $('.mark2');
 	    var mark3 = $('.mark3');
