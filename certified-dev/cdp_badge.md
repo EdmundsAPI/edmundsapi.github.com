@@ -7,8 +7,11 @@ title_active_left_menu: 'CDP Badge'
 cdp_weight: 5
 cdp_class_page: cdpBdge
 ---
-  
+
 <div class="wrapperAnchors">
+	<a href="#web" title="">
+		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_web.png" alt="Mobile" />
+	</a>
 	<a href="#mobile" title="">
 		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 	</a>
@@ -24,6 +27,14 @@ The CDP Badge is awarded to developers that have demonstrated value-added capabi
 ###CDPs AND CANDIDATES MUST HAVE
 
 coming soon...
+
+<div class="discriptionBadge">
+<a name="web" title="">
+</a>
+<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_web.png" alt="Web" />
+
+<p>Coming soon...</p>
+</div>
 
 <div class="discriptionBadge">
 <a name="mobile" title="">
@@ -63,11 +74,11 @@ coming soon...
 </script>
 <script type="text/javascript">
 	$(function(){
-	
-		$(".wrapperAnchors a").on('click', function (element) { 
+
+		$(".wrapperAnchors a").on('click', function (element) {
 			var thisLink = $(this);
 			scrollTo(thisLink);
 		});
-	
+
 	});
 </script>

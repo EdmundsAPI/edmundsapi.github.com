@@ -280,6 +280,7 @@ a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus
        margin:0 0 2px 0;
        border-bottom:1px dotted @color_link;
       .border-radius(0);
+       color: #000;
 
       &:hover {
         border-bottom:1px dotted @color_link_hover;
@@ -2925,7 +2926,7 @@ a.blueLink {
       background: url('../img/slider_widgets/arrows.gif') no-repeat 0 -26px transparent;
       bottom: 0;
       height: 13px;
-      left: 671px;
+      left: 1065px;
       margin: 0 0 0 -10px;
       position: absolute;
       -webkit-transition: left 0.5s ease;
@@ -2933,14 +2934,17 @@ a.blueLink {
           transition: left 0.5s ease;
       width: 20px;
 
-      &.modile {
-        left: 671px;
+      &.web {
+        left: 450px;
+      }
+      &.mobile {
+        left: 655px;
       }
       &.socialShopping {
-       left: 870px;
+       left: 860px;
       }
       &.analitics {
-        left: 1069px;
+        left: 1065px;
       }
     }
   }
@@ -3884,13 +3888,16 @@ a.blueLink {
                   background-repeat: no-repeat;
 
                   &.badge-social-shopping {
-                    background-position: 0 0;
+                    background-position: 0 1px;
                   }
                   &.badge-mobile {
-                    background-position: 0 -61px;
+                    background-position: 0 -60px;
                   }
                   &.badge-analytics {
-                    background-position: 0 -122px;
+                    background-position: 0 -121px;
+                  }
+                  &.badge-web {
+                    background-position: 0 -181px;
                   }
                 }
 
