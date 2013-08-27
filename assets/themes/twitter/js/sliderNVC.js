@@ -32,7 +32,10 @@ function Slider() {
 			
 		});
 
-		sliderHover.mouseout(function(){  //start		
+		sliderHover.mouseout(function(){  //start
+			if(intervalID) {
+				clearInterval(intervalID); 	
+			}
 			interval(timeInterval);		
 		});
 
