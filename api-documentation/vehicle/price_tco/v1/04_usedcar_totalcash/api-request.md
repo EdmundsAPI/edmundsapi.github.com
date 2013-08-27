@@ -4,9 +4,9 @@ title : 'Price: True Cost to Own'
 title_active_left_menu: 'Price: True Cost to Own'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: usedtotalcashpricebystyleidandzip
-spec: price_true_cost_to_own
+spec: price_tco
 version: v1
 api: vehicle
 dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip'
@@ -15,12 +15,20 @@ dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip'
 level: 4
 description_edpoint: 'Get makes by ID'
 title_md : Sample Request
-number: 4
+number: 3
 
 ---
 
-###Sample Request
+### Sample Request
 
-##test content : {{page.title-endpoint}} 
+Get TCO® for style ID **2898** in zip code **90404**
 
-tab: {{page.number}} 
+#### URL
+
+	https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/2898/90404?fmt=json&api_key={api key}
+	
+#### Response
+
+	{
+	    "value": 939.0
+	}

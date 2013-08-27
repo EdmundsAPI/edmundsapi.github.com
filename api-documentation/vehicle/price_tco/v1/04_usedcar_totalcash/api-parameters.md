@@ -4,9 +4,9 @@ title : 'Price: True Cost to Own'
 title_active_left_menu: 'Price: True Cost to Own'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: usedtotalcashpricebystyleidandzip
-spec: price_true_cost_to_own
+spec: price_tco
 version: v1
 api: vehicle
 dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip'
@@ -21,6 +21,7 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| fmt        | Response format                       | json              | json          | Yes      |
+| api_key    | vehicle api key                       |                   |               | Yes      |
