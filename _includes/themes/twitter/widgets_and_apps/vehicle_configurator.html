@@ -118,7 +118,7 @@
 						<li data-step="1" class="step2">&nbsp;</li>
 						<li data-step="2" class="step3">&nbsp;</li>
 					</ul>
-					<div class="white-shadow">&nbsp;</div>
+					<div class="white-shadow" style="display: none;">&nbsp;</div>
 				</div>
 				<div class="next-wrap">
 					<ul class="next" name="right-carousel">
@@ -275,15 +275,18 @@
 				rightIndex = $next.find('.active').data('step');
 
 			event.preventDefault();
+			if( leftIndex==0 ) {
+				$pagerLeft[0].style.display = "none";
+				$prevWrap.addClass('empty-nav');
+				$prevShadow.fadeOut(600);
+			}
+			if(rightIndex == -1) {
+				$nextShadow.fadeIn(600);
+			}
 			carousel.prev();
 			leftCarousel.prev();
 			rightCarousel.prev();
-			if( leftIndex==0 ) {
-				$prev.one('slid', function() {
-					$pagerLeft[0].style.display = "none";
-					$prevWrap.addClass('empty-nav');
-				});
-			}
+
 			$pagerRight[0].style.display = "";
 			$nextWrap.removeClass('empty-nav');
 	  	}
@@ -292,16 +295,19 @@
 				rightIndex = $next.find('.active').data('step');
 
 			event.preventDefault();
+			if( rightIndex==2 ) {
+				$pagerRight[0].style.display = "none";
+				$nextWrap.addClass('empty-nav');
+
+				$nextShadow.fadeOut(600);
+			}
+			if(leftIndex == -1) {
+				$prevShadow.fadeIn(600);
+			}
 			carousel.next();
 
 			rightCarousel.next();
 			leftCarousel.next();
-			if( rightIndex==2 ) {
-				$next.one('slid', function() {
-					$pagerRight[0].style.display = "none";
-					$nextWrap.addClass('empty-nav');
-				});
-			}
 			$pagerLeft[0].style.display = "";
 			$prevWrap.removeClass('empty-nav');
 	  	}
@@ -362,7 +368,10 @@
 			}
 		});
 		$pager.find('.left').on('click', function(event) {
-			movePrev(event);
+	  		var active = $prev.find('.active').data('step');
+	  		if(active >= 0) {
+				movePrev(event);
+			}
 		});
 		$nextWrap.on('click', function(event) {
 	  		var active = $next.find('.active').data('step');
@@ -371,11 +380,39 @@
 			}
 		});
 		$pager.find('.right').on('click', function(event) {
-			moveNext(event);
+	  		var active = $next.find('.active').data('step');
+	  		if(active >= 0) {
+				moveNext(event);
+			}
 		});
 		$pagingIndicators.on('click', 'li', function() {
 			var $el = $(this),
-				toStep = $el.data('step');
+				toStep = $el.data('step'),
+				activeStep = $('[name="main-carousel"]').find('.active').data('step'),
+				leftIndex = $prev.find('.active').data('step'),
+				rightIndex = $next.find('.active').data('step');
+
+			hideElement($pagerRight);
+			hideElement($pagerLeft);
+
+			if(toStep === activeStep) return;
+
+			if(rightIndex === -1) {
+				$nextShadow.fadeIn(600);
+				$pagerRight[0].style.display = "";
+			}			
+			if(leftIndex === -1) {
+				$prevShadow.fadeIn(600);
+				$pagerLeft[0].style.display = "";
+			}
+			if(toStep === 0) {
+				$prevShadow.fadeOut(600);
+				$pagerLeft[0].style.display = "none";
+			}
+			if(toStep === 2) {
+				$nextShadow.fadeOut(600);
+				$pagerRight[0].style.display = "none";
+			}
 			leftCarousel.to(toStep);
 			carousel.to(toStep);
 			rightCarousel.to(toStep + 1);
@@ -394,8 +431,10 @@
 			$allPopups.each(function() {
 				var thisNumber = $(this).data('marker'),
 					thisStep = $(this).data('step');
-				if(thisNumber === markerNumber && thisStep === curStep ) {					
-					$(this).fadeIn(400);
+				if(thisNumber === markerNumber) {
+					if(thisStep === curStep ) {					
+						$(this).fadeIn(400);
+					}
 				}
 			});
 		});
