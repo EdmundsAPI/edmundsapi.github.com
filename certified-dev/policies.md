@@ -27,15 +27,21 @@ cdp_class_page: cdpPolice
 * Edmunds.com, Inc. reserves the right to grant or remove access to the Platform or ECD Network at its sole discretion.
 * Every ECD must provide ECD Team members with login credentials upon request.
 
+---
+
 <a name="badge_use_policies">
 </a>
 ###Badge Use Policies
 
 In order to use the badge, you must follow the badge use policies outlined below, as well as adhere to all of our [Terms of Service](http://edmunds.com).
 
+---
+
 #### ECD badge
 
 The ECD badge allows you to promote your status as an Edmunds Certified Developer in online and offline materials.
+
+---
 
 #### Using the ECD badge
 
@@ -52,6 +58,8 @@ The ECD badge allows you to promote your status as an Edmunds Certified Develope
 
 These policies are limited to the ECD badge. Edmunds.com’s [Brand Usage Guidelines](/api_branding_guide/), apply to any other use of Edmunds.com logos, trademarks or screenshots. To incorporate Edmunds.com logos, trademarks or screenshots into your materials, you must submit a request for permission via the Permissions Request Form. Edmunds.com reserves the right to terminate or modify your permission to use the badge at any time, at its sole discretion.
 
+---
+
 <a name="press_policies">
 </a>
 ###Press Policies
@@ -60,9 +68,13 @@ In addition to the below guidelines, the **Edmunds Developer PR Guidelines** mus
 
 You will find the Edmunds Developer PR Guidelines at the bottom of this page. All ECD press releases must be sent to **api@edmunds.com** for review and approval.
 
+---
+
 #### Beta products
 
 Product discussions with Edmunds.com regarding new or existing products are considered confidential. Developers are not to discuss non-public products or plans unless provided explicit permission from Edmunds.com even if public documentation exists. This includes, but is not limited to, products described as “alpha,” “beta,” and tests.
+
+---
 
 <a name="compliance_policies">
 </a>

@@ -23,16 +23,14 @@ The CDP Badge is awarded to developers that have demonstrated value-added capabi
 
 ###CDPs AND CANDIDATES MUST HAVE
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.
+coming soon...
 
 <div class="discriptionBadge">
 <a name="mobile" title="">
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.</p>
+<p>Coming soon...</p>
 </div>
 
 <div class="discriptionBadge">
@@ -40,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.</p>
+<p>Coming soon...</p>
 </div>
 
 <div class="discriptionBadge last">
@@ -49,7 +47,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper conva
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper convallis neque, vitae rutrum quam tempor nec. Praesent eget mi urna, in varius eros. Praesent sem nibh, vestibulum vel interdum et, vulputate sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae sapien orci, at facilisis mi. Vivamus blandit turpis magna. Aliquam egestas adipiscing vulputate. Donec nulla felis, ultricies sed aliquet et, venenatis a lorem. Mauris eget erat justo, ut consectetur mauris. Aenean fringilla pulvinar dignissim.</p>
+<p>Coming soon...</p>
 </div>
 
 <div class="additionalInf">
