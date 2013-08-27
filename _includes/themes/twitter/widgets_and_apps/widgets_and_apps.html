@@ -2,12 +2,12 @@
 {% include themes/twitter/title-page.html %}
 
 <div id="wrapperWidget" class="marketValue">
-	
-		
-		
+
+
+
 		        <div id="myCarousel" class="carousel slide">
 		        	<div class="container">
-			        	<header class="headerWidgets"> 
+			        	<header class="headerWidgets">
 							<ul class="carousel-indicators">
 							    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#marketValue">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
 							    <li data-target="#myCarousel" data-slide-to="1"><a href="#vehicleConf">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
@@ -15,16 +15,16 @@
 						    </ul>
 							<h2 >Widgets</h2>
 							<span class="arrow"></span>
-					    </header> 
+					    </header>
 
 				    </div>
 				    {% comment %}<!-- Carousel items -->{% endcomment %}
 				    <div class="carousel-inner slider-content">
-				    	
+
 				    	{% comment %}<!-- TRUE MARKET VALUE -->{% endcomment %}
 					    <div class="active item">
 					    	<div class="slide1 container active">
-				
+
 								<div class="row-fluid">
 									<div class="span6">
 										<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/true_market_value.html" title="Learn More">Learn More</a>
@@ -48,19 +48,19 @@
 												<ul>
 													<li>True Market Value&#174;</li>
 													<li>MSRP</li>
-													<li>Invoice price</li>	
+													<li>Invoice price</li>
 												</ul>
-												
+
 												<span>&#8212; Used vehicles &#8212;</span>
 												<ul>
 													<li>Tradeln</li>
 													<li>Private Party</li>
-													<li>Dealer Retail</li>	
+													<li>Dealer Retail</li>
 												</ul>
 											</div>
 										</div>
 									</div>
-									
+
 									<div class="span6">
 										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/market_value.png" alt="" />
 									</div>
@@ -68,7 +68,7 @@
 
 							</div>
 					    </div>
-					    
+
 						{% comment %}<!-- NEW VEHICLE CONFIGURATOR -->{% endcomment %}
 					    <div class="item">
 							<div class="slide2 container">
@@ -77,7 +77,7 @@
 										<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/vehicle_configurator.html" title="Learn More">Learn More</a>
 										<a class="configureBtn" href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" title="Learn More">Configure Now</a>
 										<p>
-											Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+											Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
 										</p>
 										<div class="row-fluid info">
 											<div class="span3">
@@ -94,80 +94,51 @@
 												<ul>
 													<li>True Market Value&#174;</li>
 													<li>MSRP</li>
-													<li>Invoice price</li>	
+													<li>Invoice price</li>
 												</ul>
 											</div>
 										</div>
 									</div>
-									
+
 									<div class="span6">
 										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
 									</div>
 								</div>
-							</div>	
+							</div>
 						</div>
-						
+
 						{% comment %}<!-- EDMUNDS AT A GLANCE -->{% endcomment %}
 					    <div class="item">
 							<div class="slide3 container">
 						    	<div class="row-fluid">
-									<div class="span6">
-										<a class="linkLearMore" href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance.html" title="Learn More">Learn More</a>
-										<a class="configureBtn" href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance_setup.html" title="Learn More">Configure Now</a>
-										<p>
-											Here goes some text about API, Widgets and APPs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-										</p>
-										<div class="row-fluid info">
-											<div class="span3">
-												<h3>Input data</h3>
-												<ul>
-													<li>Makes</li>
-													<li>Model</li>
-													<li>Year</li>
-													<li>Styles</li>
-												</ul>
-											</div>
-											<div class="span4">
-												<h3>Output data</h3>
-												<ul>
-													<li>True Market Value&#174;</li>
-													<li>MSRP</li>
-													<li>Invoice price</li>	
-												</ul>
-											</div>
-										</div>
-									</div>
-									
-									<div class="span6">
-										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
-									</div>
+									<div class="span12"><h1>Coming soon</h1></div>
 								</div>
 						    </div>
 						</div>
-						
+
 				    </div>
 
 			    </div>
-		
-		
-		
 
-	 
+
+
+
+
 </div>
- 
+
 
 <script type="text/javascript">
-		
+
 		$('.carousel-indicators a').bind('click.tabLink', function(){
-			
+
 			var wrapperWidget= $('#wrapperWidget');
 		 	var hrefThis = $(this).attr('href');
 		 	var classWrapp = hrefThis.substr(1);
 		 	wrapperWidget.removeAttr('class');
 		 	wrapperWidget.addClass(classWrapp);
-			
+
 		});
-		
+
 	    $('.carousel').carousel({
 	    	pause: true,
 			interval: false
