@@ -61,7 +61,7 @@ By submitting an Application for API Keys, you acknowledge and agree that (i) yo
 
 ### 5. Attribution.
 
-Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the approved logos in it to link back to http://www.edmunds.com.
+Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the *approved logos* in it to link back to **http://www.edmunds.com**.
 
 **Do Not:**
 

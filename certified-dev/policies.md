@@ -21,7 +21,7 @@ cdp_class_page: cdpPolice
 
 <a name="general_guidelines">
 </a>
-###General Guidelines
+#### General Guidelines
 
 * Please find the Edmunds Certified Developer Network policies below. If you violate any of the applicable policies, you may be notified by a *warning* email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the Edmunds Certified Developer Network, or ECD Network, from a *minimum period of 6 months*, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
 * Edmunds.com, Inc. reserves the right to grant or remove access to the Platform or ECD Network at its sole discretion.
@@ -31,7 +31,7 @@ cdp_class_page: cdpPolice
 
 <a name="badge_use_policies">
 </a>
-###Badge Use Policies
+#### Badge Use Policies
 
 In order to use the badge, you must follow the badge use policies outlined below, as well as adhere to all of our [Terms of Service](http://edmunds.com).
 
@@ -62,7 +62,7 @@ These policies are limited to the ECD badge. Edmunds.com’s [Brand Usage Guidel
 
 <a name="press_policies">
 </a>
-###Press Policies
+#### Press Policies
 
 In addition to the below guidelines, the **Edmunds Developer PR Guidelines** must be observed when discussing the program publicly (press releases, articles, blog posts, etc.). Failure to do so may result in retraction of public materials or removal from the program.
 
@@ -79,7 +79,7 @@ Product discussions with Edmunds.com regarding new or existing products are cons
 <a name="compliance_policies">
 </a>
 
-###Compliance Policies
+#### Compliance Policies
 
 Edmunds.com’s Certified Developer Network helps developers create products that create effective automotive experiences. To ensure a positive and consistent experience, Edmunds.com has outlined a set of compliance policies that govern users of our APIs. These policies are also used to assess applications for Edmunds.com’s Certified Developer Network program, badges, and directory. 
 

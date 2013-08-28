@@ -10,7 +10,16 @@ weight: 1
 
 ---
 
-Edmunds.com offers _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
+**Welcome!** To get you started, let's go over the automotive datasets we've made available for you through the Edmunds API. Once you [register for a key](http://edmunds.mashery.com/member/register), you will be able to access the following datasets:
+
+* **Vehicle Specs**: Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, ...etc.
+* **Vehicle Pricing**: Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, ...etc.
+* **Vehicle Service**: Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, ...etc.
+* **Vehicle Content**: Consumer reviews, editorial reviews, editorial articles, ...etc.
+* **Vehicle Media**: Vehicle photos.
+* **Dealership Content**: Dealership info, consumer reviews, list of cars for sale, dealer pricing, ...etc.
+
+These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
 
 This overview covers the core concepts that you need to know before you could fully use the APIs to their potential. Once you have a good understanding of the API core concepts, you can then dig deeper into each API by visiting its dedicated overview page.
 
@@ -115,7 +124,7 @@ All API keys are issued with a _default quota_ of **2 API calls/sec** and **5000
 2. The application is in compliance with our [branding guide](/api_branding_guide/)
 3. The application is representing the Edmunds data properly
 
-Once these two criteria are verified, the rate limit is increased to what Edmunds and developer determine to be appropriate. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com)**. _No monetary compensation is expected in exchange for the rate limit increase_.
+Once these three criteria are verified, the rate limit is increased to what Edmunds and developer determine to be appropriate. Please note that you **do not have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions aforementioned. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com)**. _No monetary compensation is expected in exchange for the rate limit increase_.
 
 ### Available Resources
 
