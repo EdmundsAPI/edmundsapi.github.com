@@ -4463,23 +4463,61 @@ a.blueLink {
 .pageBrGuide {
   h3 {
     clear: both;
-    padding: 15px 0;
+    padding: 15px 0 0;
   }
   h4 {
     clear: both;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
     font-size: 16px;
-    padding-bottom: 5px;
-    padding-top: 15px;
+    padding: 10px 0 5px;
+    margin-bottom: 18px;
     border-bottom: 1px solid #000;
   }
   ul.logos {
     list-style: none;
+    overflow: hidden;
     margin-left: 0;
     margin-right: -22px;
+    &.improper {
+      margin-top: 50px;
+      li {
+        margin-bottom: 60px;
+      }
+    }
     li {
       float: left;
-      min-width: 300px;
-      margin-right: 22px;
+      min-width: 304px;
+      margin-right: 18px;
+    }
+  }
+  .logo[class*="improper"] {
+    background: url('../img/branding-guide/sprite-improper-logo.png') no-repeat;
+    min-width: 304px;
+    height: 100px;
+    &.improper1 {
+      background-position: 0 0;
+    }
+    &.improper2 {
+      background-position: 0 -128px;
+    }
+    &.improper3 {
+      background-position: 0 -246px;
+    }
+    &.improper4 {
+      background-position: 0 -376px;
+    }
+    &.improper5 {
+      background-position: 0 -495px;
+    }
+    &.improper6 {
+      background-position: 0 -624px;
+    }
+    &.improper7 {
+      background-position: 0 -745px;
+    }
+    &.improper8 {
+      background-position: 0 -873px;
     }
   }
   .horizontal-300 .logo {
@@ -4524,6 +4562,9 @@ a.blueLink {
       background-position: 0 -160px;
     }
   }
+  .square-100 {
+    margin-bottom: 95px;
+  }
   .square-100 .logo {
     background: url('../img/branding-guide/sprite-100-square.png') no-repeat;
     width: 100px;
@@ -4538,9 +4579,21 @@ a.blueLink {
       background-position: 0 -272px;
     }
   }
+
   .logo {
     display: inline-block;
   }
+  .logo-descr {
+    color: #666;
+    padding: 13px 0 0 7px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .logo-save-link {
+     padding-left: 7px;
+  }
+  .verticalLinePage .innerContentPage .span10 p {line-height: 23px; margin-bottom: 11px; }
+  .verticalLinePage .innerContentPage .span10 h3  { margin: 0 0 18px 0;}
 }
 
 // end Branding Guide
