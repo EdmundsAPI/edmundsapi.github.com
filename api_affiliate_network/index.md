@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Edmunds API Affiliate Network
+title: The API affiliate NETWORK
 
 ---
 

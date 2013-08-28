@@ -2,15 +2,15 @@
 layout: default_profile
 title: Profile developer
 
-name_developer: Siarhei Mikulich
-name: Siarhei
+name_developer: Nick Sergeant
+name: Nick
 certified_since: 05/05/2013
 location: Santa Monica, CA
-email: siarhei.mikulich@gmail.com
+email: nick.sergeant@gmail.com
 phone: +1(310) 200-1111
-skype: smikulich
-twitter: smikulich
-image_icon_developer: siarhei_mikulich.png
+skype: nsergeant
+twitter: nsergeant
+image_icon_developer: nick-sergeant.png
 ---
 
 
@@ -41,7 +41,7 @@ image_icon_developer: siarhei_mikulich.png
 			<!-- Icon of the developer -->
 			<div class="wrapperIconDeveloper">
 				<div class="imgFrame">&nbsp;</div>
-				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
+				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
 
 			</div>
 
@@ -55,8 +55,8 @@ image_icon_developer: siarhei_mikulich.png
 				<div class="badges">
 					<span>Qualification:</span>
 					<ul id="iconBadge" class="clearfix">
-						<li><a data-badge="mobile" class="badge-mobile" href="/certified-dev/cdp_badge.html#mobile"></a></li>
 						<li><a data-badge="analitycs" class="badge-analytics" href="/certified-dev/cdp_badge.html#analitics"></a></li>
+						<li><a data-badge="mobile" class="badge-mobile" href="/certified-dev/cdp_badge.html#mobile"></a></li>
 						<li><a data-badge="social shopping" class="badge-social-shopping" href="/certified-dev/cdp_badge.html#socialShopping"></a></li>
 					</ul>
 				</div>
@@ -78,7 +78,7 @@ image_icon_developer: siarhei_mikulich.png
 					</ul>
 					<span class="amoutStars">0.0</span>
 				</div>
-				<div id="chart">&nbsp;</div>
+				<canvas id="canvas" height="231" width="231">&nbsp;</canvas>
 			</div>
 
 			<!-- Contacts -->
@@ -123,7 +123,7 @@ image_icon_developer: siarhei_mikulich.png
 						<span class="amoutStars">0.0</span>
 
 					</div>
-					<div data-rating="1;2;3;4;5;2" class="rating">
+					<div data-rating="5;5;3;4;5;2" class="rating">
 
 						<ul>
 							<li>
@@ -211,7 +211,7 @@ image_icon_developer: siarhei_mikulich.png
 						<span class="amoutStars">0.0</span>
 
 					</div>
-					<div data-rating="5;3;1;5;2;5"  class="rating">
+					<div data-rating="5;3;5;5;4;5"  class="rating">
 
 						<ul>
 							<li>
@@ -303,7 +303,7 @@ image_icon_developer: siarhei_mikulich.png
 						<span class="amoutStars">0.0</span>
 
 					</div>
-					<div data-rating="5;5;5;3;4;1" class="rating">
+					<div data-rating="5;5;5;3;4;2" class="rating">
 
 						<ul>
 							<li>
@@ -391,7 +391,7 @@ image_icon_developer: siarhei_mikulich.png
 						<span class="amoutStars">0.0</span>
 
 					</div>
-					<div data-rating="5;5;5;5;4;5"  class="rating">
+					<div data-rating="5;5;5;5;5;5"  class="rating">
 
 						<ul>
 							<li>
@@ -475,7 +475,6 @@ image_icon_developer: siarhei_mikulich.png
 
 
 <!-- Script for changing frame of the icon of the developrt -->
-
 <script type="text/javascript">
 
 	$(function(){
@@ -493,8 +492,10 @@ image_icon_developer: siarhei_mikulich.png
 </script>
 
 
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/radar_chart_d3/d3.v3.min.js"></script>
-<script type="text/javascript"  src="{{ PATH }}/assets/themes/twitter/js/radar_chart_d3/radar_chart_d3.js"></script>
+
+<script type="text/javascript"  src="{{ PATH }}/assets/themes/twitter/js/chart_diagram/chart.js"></script>
+<!--[if lte IE 8]>
+	<script src="{{ PATH }}/assets/themes/twitter/js/chart_diagram/excanvas.js"></script>
+<![endif]-->
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/profile_rating.js"></script>
-
