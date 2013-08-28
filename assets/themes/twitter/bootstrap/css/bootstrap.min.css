@@ -3709,7 +3709,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
 	opacity:0
 }
 .modal-backdrop, .modal-backdrop.fade.in {
-	opacity:.8;
+	opacity:0.4;
 	filter:alpha(opacity=80)
 }
 .modal {
