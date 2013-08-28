@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Price: True Cost to Own'
+title : 'Get TCO® Details for New Car'
 title_active_left_menu: 'Price: True Cost to Own'
 title_parent: Api documentation
 
-amount_version: 2
-title-endpoint: usedratesbystyleidandzip
-spec: price_true_cost_to_own
+amount_version: 1
+title-endpoint: 'Get TCO® Details for New Car'
+spec: price_tco_cats
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/depreciation/usedratesbystyleidandzip'
+dropdown-link: 'api/tco/v1/details/new'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get TCO® Details for New Car'
 title_md : Parameters
 number: 2
 

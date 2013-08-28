@@ -12,14 +12,14 @@
 						{% comment %}<!-- Tabs of the versions -->{% endcomment %}
 						
 						{% if page.amount_version == 1 %}
-							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/index.html">v1</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
 						{% elsif page.amount_version == 2 %}
-							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/index.html">v2</a>
-							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/index.html">v1</a>
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
 							{% elsif page.amount_version == 3 %}
-							<a class="tab {% if page.version == 'v3' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v3/index.html">v3</a>
-							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/index.html">v2</a>
-							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/index.html">v1</a>
+							<a class="tab {% if page.version == 'v3' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v3/">v3</a>
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
 						{% endif%}
 
 
@@ -57,7 +57,7 @@
 									
 					<ul class="dropdown-menu">
 						
-						{% for p in  site.pages %} 
+						{% for p in site.pages | sort:path %} 
 							{% if p.spec == page.spec and p.version == page.version and p.level == 3 %}
 									
 								<li name="endpoint">
@@ -67,9 +67,7 @@
 								</li>
 
 							{% endif %}
-						{% endfor %}
-					
-					
+						{% endfor %}		
 					</ul>
 
 				</div>
@@ -112,20 +110,3 @@
 	});
 
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

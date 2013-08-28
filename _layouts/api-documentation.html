@@ -58,9 +58,6 @@ layout: default
 			</div>	
 		</div>
 	</div>
-	
-	
-
 </div>
 	
 	
@@ -159,90 +156,7 @@ layout: default
 			};
  
 		});
-		
-			
-		
 	});
 	
 </script>
-
-
-{% comment %}<!-- scroll left menu 
-<script type="text/javascript">
-	
-	$(function(){
-		
- 		function heightLeftMenu() {
- 			
- 			var leftMenu = $('#leftMenuFixed');
- 			var posLeftMenu = leftMenu.offset().top;
- 			var scroll = $(window).scrollTop();
- 			var heightWindow = $(window).height();
- 			
- 			var heightDocum = $(document).height();
- 			
- 			var heightFooter = $('.footerLayout').height();
- 			
- 			var bottomPad = heightDocum - (scroll + heightWindow);
- 			
- 			if(bottomPad < heightFooter) {
- 				var q = heightFooter - bottomPad; 
-
- 				leftMenu.height(heightWindow - (posLeftMenu-scroll) - q );
- 			} else {
- 				leftMenu.height(heightWindow - (posLeftMenu-scroll));
- 			}
- 			
- 			$('#leftMenuFixed').jScrollPane({
- 				mouseWheelSpeed: 30
- 			});
- 		};
- 		
-		heightLeftMenu();
-		
-		$(window).bind('scroll resize', function(){
-			
-			heightLeftMenu();
-
-		});
-
-	});
-	
-</script>--> {% endcomment %}
-
-	
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

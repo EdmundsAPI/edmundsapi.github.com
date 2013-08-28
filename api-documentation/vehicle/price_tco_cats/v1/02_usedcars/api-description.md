@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : ''
-title_active_left_menu: 'Price: True Cost to Own'
+title : 'Get TCO® Details for Used Car'
+title_active_left_menu: 'Price: True Cost to Own® Categories'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: ''
-spec: price_tco
+title-endpoint: 'Get TCO® Details for Used Car'
+spec: price_tco_cats
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/resalevaluesbystyleidandzip'
+dropdown-link: 'api/tco/v1/details/used'
 
 
 level: 3
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get TCO® Details for Used Car'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get the True Cost to Own® **details** for a **used** car.
 
 ### URL
 
-	https://api.edmunds.com/ ?fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/', options, success, fail);
+				res.api('/v1/api/tco/newtruecosttoownbystyleidandzip/101426944/90019', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
