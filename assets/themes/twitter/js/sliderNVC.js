@@ -18,13 +18,17 @@ function Slider() {
 	}
 	
 	var addEventHandlers = function() {
-		$('#downSlideNVC').click(function(){ //down Slide		
+		$('#downSlideNVC').click(function(){ //down Slide	
+			clearInterval(intervalID);	
 			downSlider();
+			interval(timeInterval);	
 		});
 		
 		
-		$('#upSlideNVC').click(function(){ //up Slide		
+		$('#upSlideNVC').click(function(){ //up Slide
+			clearInterval(intervalID); 		
 			upSlider();
+			interval(timeInterval);	
 		});
 
 		sliderHover.mouseenter(function(){  //stop
