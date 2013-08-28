@@ -46,15 +46,16 @@
 	// click on the arrows
 	
 	$('#downSlide').click(function(){ //down Slide
-		
+		clearInterval(intervalID);	
 		downSlider();
-		
+		interval(timeInterval);	
 	});
 	
 	
 	$('#upSlide').click(function(){ //up Slide
-		
+		clearInterval(intervalID); 			
 		upSlider();
+		interval(timeInterval);
 		
 	});
 	
