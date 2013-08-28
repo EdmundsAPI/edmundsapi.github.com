@@ -1,9 +1,8 @@
 ---
 layout: vertical-line-page
-title: API Branding Guide
+title: Edmunds API Branding Guide
 
 class_page: pageBrGuide
 ---
 
-
-###{{page.title}}
+{% include themes/twitter/branding-guide/index.html %}

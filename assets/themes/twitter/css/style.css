@@ -513,7 +513,7 @@ a.pdfLink:hover {
 		font: 18px/39px Arial, sans-serif;
 	}
 	.parenCategory{
-		padding: 13px 21px;
+		padding: 20px;
 	}
 	.editorialTableTr,
 	.inventoryTableTr,
@@ -577,15 +577,15 @@ a.pdfLink:hover {
 	}
 	.editorialTableTr .odd .span4, 
 	.editorialTableTr .even .span4 {
-		line-height: 100px;
+		line-height: 83px;
 	}
 	.inventoryTableTr .odd .span4, 
 	.inventoryTableTr .even .span4 {
-		line-height: 100px;
+		line-height: 69px;
 	}
 	.dealerTableTr .odd .span4, 
 	.dealerTableTr .even .span4 {
-		line-height: 100px;
+		line-height: 69px;
 	}
 	.subcategory .rowCostCategory .span8 .span4 {
 		line-height: 53px;
@@ -751,6 +751,18 @@ ul.multiLevelMenu {
 }
 /*-----------------@media (max-width: 1200px)-----------------*/
 @media (min-width: 980px) and (max-width: 1200px) { 
+	.editorialTableTr .odd .span4, 
+	.editorialTableTr .even .span4 {
+		line-height: 92px;
+	}
+	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .even .span4 {
+		line-height: 78px;
+	}
+	.dealerTableTr .odd .span4, 
+	.dealerTableTr .even .span4 {
+		line-height: 78px;
+	}
 	.overviewTable .parenCategory {
 		padding: 13px 5px;
 	}
@@ -781,7 +793,18 @@ ul.multiLevelMenu {
 /*-----------------@media (min-width: 768px) and (max-width: 979px)-----------------*/
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-
+	.editorialTableTr .odd .span4, 
+	.editorialTableTr .even .span4 {
+		line-height: 100px;
+	}
+	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .even .span4 {
+		line-height: 78px;
+	}
+	.dealerTableTr .odd .span4, 
+	.dealerTableTr .even .span4 {
+		line-height: 78px;
+	}
 	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 { width: 200px; float: left;	}
@@ -818,6 +841,18 @@ ul.multiLevelMenu {
 /*-----------------@media (max-width: 767px)-----------------*/
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+	.editorialTableTr .odd .span4, 
+	.editorialTableTr .even .span4 {
+		line-height: 100px;
+	}
+	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .even .span4 {
+		line-height: 78px;
+	}
+	.dealerTableTr .odd .span4, 
+	.dealerTableTr .even .span4 {
+		line-height: 78px;
+	}
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
 		width: 200px;
@@ -870,6 +905,18 @@ ul.multiLevelMenu {
 /*-----------------@media (max-width: 480px)-----------------*/
 /* Landscape phones and down */
 @media (max-width: 480px) { 
+	.editorialTableTr .odd .span4, 
+	.editorialTableTr .even .span4 {
+		line-height: 100px;
+	}
+	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .even .span4 {
+		line-height: 78px;
+	}
+	.dealerTableTr .odd .span4, 
+	.dealerTableTr .even .span4 {
+		line-height: 78px;
+	}
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
 		width: 200px;
