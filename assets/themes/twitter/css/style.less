@@ -113,6 +113,9 @@ body .container, .wrap-container, .pageCertDev .wrapperMainPage, .apiPage {
 a:focus {
   text-decoration: none;
 }
+.container section {
+  padding: 27px 0;
+}
 .pre-loader {
   background:url('../img/loader.gif') no-repeat;
   background-position: center;
@@ -657,11 +660,8 @@ a.blueLink {
 
   }
   .slide3 {
-      h1{
-        text-align: center;
-        margin-top: 100px;
-        font-family: 'Oswald',Arial,sans-serif;
-        text-transform: uppercase;
+      h3{
+        line-height: 32px;
       }
     }
 }
@@ -3378,7 +3378,7 @@ a.blueLink {
       }
 
       .optionFilter {
-        margin-bottom: 33px;
+        margin-bottom: 20px;
         font-size:15px;
         color: #525252;
         line-height: 46px;
@@ -3410,8 +3410,8 @@ a.blueLink {
         .wrapperDeveloper {
           position: relative;
           height:113px;
-          margin: 0  0 23px 0;
-          padding: 23px 26px 23px 21px;
+          margin: 0  0 20px 0;
+          padding: 25px;
           border-right: 1px solid #dedede;
           border-bottom: 2px solid #dedede;
           background: #fff;
@@ -3442,7 +3442,7 @@ a.blueLink {
             position:absolute;
             top:27px;
             bottom:25px;
-            right: 254px;
+            right: 321px;
             width:1px;
             background: #525252;
           }
@@ -3459,6 +3459,7 @@ a.blueLink {
               font-weight: bold;
               &:hover {
                 text-decoration: none;
+                color:@color_green;
               }
             }
             ul {
@@ -3487,7 +3488,7 @@ a.blueLink {
 
           .iconBadges {
             float: right;
-            width: 254px;
+            width: 300px;
             ul {
               margin:23px 0 0;
               list-style: none;
@@ -3945,7 +3946,7 @@ a.blueLink {
               background-position: 0 -24px;
             }
             .phone {
-              background-position: 0 -52px;
+              background-position: 0 -50px;
             }
             .skype {
               background-position: 0 -77px;
@@ -3978,10 +3979,10 @@ a.blueLink {
         .wrapperReviews {
           position: relative;
 
-          #chart {
+          #canvas {
             position: absolute;
-            right: 233px;
-            top: 21px;
+            right: 185px;
+            top: -38px;
           }
 
           .resultRating {
