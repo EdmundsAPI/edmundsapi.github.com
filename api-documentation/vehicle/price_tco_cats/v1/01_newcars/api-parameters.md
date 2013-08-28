@@ -9,7 +9,7 @@ title-endpoint: 'Get TCO® Details for New Car'
 spec: price_tco_cats
 version: v1
 api: vehicle
-dropdown-link: 'api/tco/v1/details/new'
+dropdown-link: 'api/tco/v1/details/allnewtcobystyleidzipandstate'
 
 
 level: 4
@@ -21,6 +21,7 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| fmt        | Response format                       | json              | json          | Yes      |
+| api_key    | vehicle api key                       |                   |               | Yes      |
