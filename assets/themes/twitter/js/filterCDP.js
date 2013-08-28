@@ -231,11 +231,15 @@ var $inputLocation = $('#location');
 		///data-badge
 		var arrDataBadge = $(this).data('badge').split(';');
 
-		var pushed = arrDataBadge.push($(this).data('location'));
+		arrDataBadge.push($(this).data('location'));
+
+		var length = arrDataBadge.length;
+
+		console.log(arrDataBadge +"  "+ length);
 
 			if($(this).hasClass('hide') == false){
 
-				for(var i=0, count=0; i<3; i++){
+				for(var i=0, count=0; i<length; i++){
 
 					if (arrDataBadge[i] == inputID) {
 
@@ -261,11 +265,13 @@ var $inputLocation = $('#location');
 		///data-badge
 		var arrDataBadge = $(this).data('badge').split(';');
 
-		var pushed = arrDataBadge.push($(this).data('location'));
+		arrDataBadge.push($(this).data('location'));
+
+		var length = arrDataBadge.length;
 
 			if($(this).hasClass('hide') == true){
 
-				for(var i=0, count=0; i<3; i++){
+				for(var i=0, count=0; i<length; i++){
 
 					$inputList.each(function(){
 
