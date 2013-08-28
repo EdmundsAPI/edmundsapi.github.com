@@ -590,6 +590,9 @@ a.pdfLink:hover {
 	.subcategory .rowCostCategory .span8 .span4 {
 		line-height: 53px;
 	}
+	.subcategory .rowRatingReview .span8 .span4 {
+		line-height: 53px;
+	}
 	.overviewTableTH .span6{
 		padding-left: 21px;
 	}
