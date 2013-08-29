@@ -1,8 +1,8 @@
 ---
 layout: default
-title : Edmunds at a glance
+title : 'Edmunds at a Glance - An Edmunds API Widget'
 title_parent: Widgets and apps
-header : Edmunds at a glance
+header : Edmunds at a Glance
 
 ---
 

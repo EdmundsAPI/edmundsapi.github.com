@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Service: Maintenance'
+title : 'Get Maintenance Action by ID'
 title_active_left_menu: 'Service: Maintenance'
 title_parent: Api documentation
 
-amount_version: 2
-title-endpoint: action
+amount_version: 1
+title-endpoint: 'Get Maintenance Action by ID'
 spec: service_maintenance
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/action'
+dropdown-link: 'v1/api/maintenance/action/{id}'
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Get Maintenance Action by ID'
 title_md : Response format
 number: 3
 

@@ -1,6 +1,6 @@
 ---
 layout: certified_dev
-title: Edmunds Certified Developer Badges
+title: 'Edmunds Certified Developer Network - ECD Badges'
 title_parent: Certified developers
 title_active_left_menu: 'ECD Badge'
 

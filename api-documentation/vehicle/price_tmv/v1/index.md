@@ -1,10 +1,10 @@
 ---
 layout: api-documentation
-title : 'Price: True Market Value'
+title : 'Price: True Market Value®'
 title_active_left_menu: 'Price: True Market Value'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: price_tmv
 version: v1
 api: vehicle
