@@ -6,7 +6,7 @@ title_parent: Api documentation
 
 amount_version: 2
 spec: content_ratings_and_reviews
-version: v1
+version: v2
 api: vehicle
 dropdown-link: 'Select an Endpoint'
 
