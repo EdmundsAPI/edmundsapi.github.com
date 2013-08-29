@@ -125,7 +125,7 @@ We have broken down the process for both business owners and developers below. T
 				<p>From there, we will <strong>set up a phone interview</strong> to further discuss the API and to <strong>give you a simple programming test</strong>.</p>
 
 				<div style="text-align: center">
-					<a class="redButton" href="http://www.codecademy.com/courses/javascript-beginner-en-7UosP" title="Take Edmunds API test now" target="_blank">Check Out Our Code Academy Course</a>
+					<a class="redButton" href="http://www.codecademy.com/courses/javascript-beginner-en-7UosP" title="Take Edmunds API test now" target="_blank">Check Out Our Codecademy Course</a>
 				</div>
 			</div>
 			
