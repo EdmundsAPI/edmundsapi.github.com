@@ -10,7 +10,7 @@ author_description: 'Senior Director, Open Platform initiative, '
 links: [
 		{
 			name: 'API Overview',
-			url: '/api-documentation/'
+			url: '/api-documentation/overview/'
 		},
 		{
 			name: 'Edmunds Certified Developer Network',
@@ -36,7 +36,7 @@ We're very excited to unveil our new **Edmunds Developer Network Portal**. The n
 
 We have a ton of new goodies available to you in this new portal. Let's get right into it:
 
-* **Brand New Docs:** [Our docs](/api-documentation/) are much more detailed with examples and response object definitions. Some of our APIs have new versions as well. The Vehicle Spec resources (make, model, model year, style, options, equipment, ...etc) have been completely revamped to reflect the community's suggestions and pain points.
+* **Brand New Docs:** [Our docs](/api-documentation/overview/) are much more detailed with examples and response object definitions. Some of our APIs have new versions as well. The Vehicle Spec resources (make, model, model year, style, options, equipment, ...etc) have been completely revamped to reflect the community's suggestions and pain points.
 
 * **The API Affiliate Network:** API developers can start **making money** right now by registering for the [Edmunds API Affiliate Network](/api_affiliate_program/). Developers will get paid **$5** for *every new car lead form completed on the Edmunds.com site* because of their referrals. [Learn more](/api_affiliate_program/).
 
