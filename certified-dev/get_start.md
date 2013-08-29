@@ -75,7 +75,7 @@ We have broken down the process for both business owners and developers below. T
 				
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Business Owner negotiates with </br> Certified Developer</h2>
+				<h2>Business Owner negotiates with Certified Developer</h2>
 				
 				<p>You and the developer have to come to an agreement that suits you both to carry out the project. <em>Edmunds.com will not be part of this negotiation process.</em> </p>
 				<p>This portal acts as a directory that helps business find developers that know the Edmunds API well. Edmunds.com's involvement doesn't go beyond that.</p>
@@ -105,7 +105,7 @@ We have broken down the process for both business owners and developers below. T
 				
 				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
 				
-				<h2>Developer builds an application </br> with Edmunds API </h2>
+				<h2>Developer builds an application with Edmunds API </h2>
 				
 				<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
 				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="/api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
