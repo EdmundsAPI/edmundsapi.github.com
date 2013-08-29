@@ -1,6 +1,6 @@
 
 
-<div class="container contentPage">
+<div class="container contentPage {{ page.cdp_global_class_page}}">
 	<div class="row lineVertical">
 		<div class="span2">&nbsp;</div>
 		<div class="span10">&nbsp;</div>
@@ -10,25 +10,25 @@
 			<div class="span2">
 
 				{% comment %}<!-- Start left navigationr  -->{% endcomment %}
-				
+
 				{% include themes/twitter/certified-dev/cdp_left_menu.html %}
-				
+
 				{% comment %}<!-- End left navigation  -->{% endcomment %}
 
 			</div>
 
 			<div class="span10">
-				
+
 				{% include themes/twitter/certified-dev/cdp_template_title_content.html %}
-				
+
 				<section class="cdp_section {{ page.cdp_class_page }}">
-					
+
 					{{ content }}
-					
+
 				</section>
-				
-				
-				
+
+
+
 			</div>
 		</div>
 	</div>

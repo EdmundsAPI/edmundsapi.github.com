@@ -80,7 +80,7 @@ $(function(){
 
             for(var sun = 0, i = 0; i < li; i++){
 
-                var value = parseInt(a[i]);
+                var value = parseFloat(a[i]);
 
                 sun += value;
             }
@@ -88,7 +88,7 @@ $(function(){
             resultSun = sun / li;
 
             //result = Math.round(resultSun);
-            result = (resultSun).toPrecision(2);
+            result = (resultSun).toFixed(1);
 
             return result;
         };
@@ -109,7 +109,25 @@ $(function(){
 
         };
 
-        var arrGlobalSum = globalSum();
+
+        function showGlobalStars(element){
+
+            element.each(function(indx){
+
+                 if(indx < Math.round(resultGlobalSumStars)){
+
+                    $(this).addClass('active');
+
+                }
+
+            });
+
+        };
+
+        //start setting result rating
+        var arrGlobalSum = globalSum();  //["4.8", "3.5"]
+
+        //console.log(arrGlobalSum);  //["4.8", "3.5"]
 
         var resultGlobalSumStars = starRating(arrGlobalSum);
 
@@ -118,9 +136,11 @@ $(function(){
         var globalStars = wrapperReviews.find('.ratingStar li');
 
         //showing stars
-        showStars(globalStars);
-        //End Global sum
+        showGlobalStars(globalStars);
 
+        //start setting result rating
+
+        //End Global sum
 
 
         //start create parameters for diagram
@@ -134,8 +154,6 @@ $(function(){
 
 
         var arrRating = blockRating.find('.rating');
-
-        //console.log(arrRating);
 
         arrRating.each(function(){
 

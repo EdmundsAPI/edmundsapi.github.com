@@ -6,6 +6,7 @@ title_active_left_menu: 'Search the directory'
 
 cdp_weight: 6
 cdp_class_page: sdpDirectory
+cdp_global_class_page: pageSearchDir
 ---
 
 <a href="#myModal" role="button" class="btn linkAboutSDP" data-toggle="modal" title="About Certified Developer Directory">About Certified Developer Directory</a>
