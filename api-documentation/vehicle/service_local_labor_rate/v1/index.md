@@ -5,7 +5,7 @@ title_active_left_menu: 'Service: Local Labor Rate'
 title_parent: Api documentation
 
 amount_version: 1
-spec: service_maintenance
+spec: service_local_labor_rate
 version: v1
 api: vehicle
 dropdown-link: 'Select an Endpoint'

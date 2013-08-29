@@ -4,7 +4,7 @@ title : 'Price: Incentives and Rebates'
 title_active_left_menu: 'Price: Incentives and Rebates'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: price_incentives_and_rebates
 version: v1
 api: vehicle

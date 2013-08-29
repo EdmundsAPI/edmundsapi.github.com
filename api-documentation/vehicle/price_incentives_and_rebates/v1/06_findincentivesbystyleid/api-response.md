@@ -4,7 +4,7 @@ title : 'Get Vehicle Incentives and Rebates by Vehicle Style ID'
 title_active_left_menu: 'Price: Incentives and Rebates'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Vehicle Incentives and Rebates by Vehicle Style ID'
 spec: price_incentives_and_rebates
 version: v1
