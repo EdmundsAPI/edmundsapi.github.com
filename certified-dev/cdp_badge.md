@@ -28,7 +28,7 @@ The ECD Badge is awarded to developers that have demonstrated value-added capabi
 
 ECDs must show the following badge box on their site:
 
-	**badge box goes here**
+<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/badges.png" alt="" />
 
 <div class="discriptionBadge">
 <a name="web" title="">

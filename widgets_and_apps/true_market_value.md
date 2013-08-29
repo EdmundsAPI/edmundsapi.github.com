@@ -1,6 +1,6 @@
 ---
 layout: default
-title : 'The TMV® Widget - The Edmunds API'
+title : 'The TMV Widget - The Edmunds API'
 title_parent: Widgets and apps
 header : True market value
 
