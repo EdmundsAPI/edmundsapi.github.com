@@ -1,6 +1,6 @@
 ---
 layout: page
-title : 'The TMV® Widget - The Edmunds API'
+title : 'The TMV Widget - The Edmunds API'
 title_parent: Widgets and apps
 header : True market value
 
@@ -14,7 +14,7 @@ The TMV® Widget allows consumers to get an idea of how much a new car costs and
 You can use the widget configurator below to customize the layout and style of the widget, and grab a small snippet of code to insert into your HTML pages to implement the widget.
 
 <div class="pre-loader" style="height: 200px;">&nbsp;</div>
-<iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1031" align="left" class="iframeWidget">	
+<iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1031" align="left" class="iframeWidget">
 </iframe>
 
 

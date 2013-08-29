@@ -7,8 +7,8 @@
   background-image: url('../img/api-logo.png');
   background-repeat: no-repeat;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
-       only screen and (min-resolution: 1.5dppx), 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 1.5dppx),
        only screen and (-o-min-device-pixel-ratio: 3/2) {
   .topLogo {
     background-image: url('../img/api-logo@2x.png');
@@ -42,6 +42,16 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top:0;
 	font-family: 'Oswald400', Arial,sans-serif;
 	}
+
+
+table h1, table h2, table h3, table h4, table h5, table h6 {
+	margin: 10px 0 24px;
+}
+table ol, table p {
+	margin-bottom:22px;
+}
+
+
 h3 {
 	line-height:23px;
 }
@@ -67,7 +77,7 @@ ul, ol {
 .pushBottom {
   height: 128px;
 }
-.wrapperPage { 
+.wrapperPage {
 	position:relative;
   height: auto !important;
   margin: -117px auto -128px;
@@ -139,7 +149,7 @@ ul, ol {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
 /*__Start Header__*/
 header {
   position:relative;
@@ -164,7 +174,7 @@ header {
   vertical-align: baseline;
 }
 .register a,
-.register a:active, 
+.register a:active,
 .register a:link,
 .register a:focus {
   color: #BF2F37;
@@ -225,8 +235,8 @@ a.linkGetStart {
 	color:#fff;
 	text-decoration: none;
 }
-.navbar .nav a.active, 
-.navbar .nav a.active:hover, 
+.navbar .nav a.active,
+.navbar .nav a.active:hover,
 .navbar .nav a.active:focus {
   border-bottom: 0;
   color: #bf2f37;
@@ -294,7 +304,7 @@ footer  .social nav .nav li a {
   margin: 0 20px 0 0;
 }
 .social nav .nav li:last-child a {
-  margin: 0; 
+  margin: 0;
 }
 footer.navbar .footerLinks {
   margin: 45px 0 0 0;
@@ -319,11 +329,11 @@ footer.footerLayout .nav > li > a {
 
 /*__Start Content__*/
 
-.sectionContent h1, 
-.sectionContent h2, 
-.sectionContent h3, 
-.sectionContent h4, 
-.sectionContent h5, 
+.sectionContent h1,
+.sectionContent h2,
+.sectionContent h3,
+.sectionContent h4,
+.sectionContent h5,
 .sectionContent h6 {
 	font-family: 'Oswald400', Arial, sans-serif;
 }
@@ -348,8 +358,8 @@ footer.footerLayout .nav > li > a {
 .headerMenuContent a {
   padding: 15px 42px 12px 42px
 }
-.headerMenuContent .navbar .nav a.active, 
-.headerMenuContent .navbar .nav a.active:hover, 
+.headerMenuContent .navbar .nav a.active,
+.headerMenuContent .navbar .nav a.active:hover,
 .headerMenuContent .navbar .nav a.active:focus {
   border-bottom: 3px solid #bf2f37;
   color: #444;
@@ -406,7 +416,7 @@ a.linkGetKey:hover {
 }
 .sectionContent h5 {
 	margin-bottom:4px;
-	font-family: Arial, sans-serif;  
+	font-family: Arial, sans-serif;
 }
 	/*__start table Parametrs__*/
 	table,
@@ -433,7 +443,6 @@ a.linkGetKey:hover {
 		margin: 0 0 5px 0;
 		font-weight: 700;
 	}
-	table p,
 	.tableParametrs p {
 		margin: 0;
 	}
@@ -442,44 +451,44 @@ a.linkGetKey:hover {
 		margin: 0;
 	}
 	/*__end table Parametrs__*/
-	
+
 	/*__Start Navigation left menu "Next & Previos"__*/
 	.wrapNextPrev {
 		position:absolute;
 		bottom: 0;
     	left: 230px;
     	right:0;
-		border-top:1px solid #ccc; 
+		border-top:1px solid #ccc;
 		padding: 22px 29px;
 	}
-	#prevMenuItem, #nextMenuItem { 
+	#prevMenuItem, #nextMenuItem {
 		display:inline-block;
 		font: 14px/38px 'Oswald400', Arial;
 		background-image: url('../img/sprite_next_prev.gif');
 		background-repeat: no-repeat;
-		text-transform: uppercase; 
+		text-transform: uppercase;
 	}
 	#prevMenuItem {
 		padding:0 0 0 24px;
-		background-position: 0 0; 
+		background-position: 0 0;
 	}
 	#nextMenuItem {
 		float: right;
-		padding:0 24px 0 0; 
-		background-position: 100% -38px; 
+		padding:0 24px 0 0;
+		background-position: 100% -38px;
 	}
 	#prevMenuItem:hover, #nextMenuItem:hover {
 		text-decoration: none;
 	}
 	/*__End Navigation left menu "Next & Previos"__*/
-	
+
 	/*__Start style code__*/
 	pre {
-		margin-bottom: 33px; 
+		margin-bottom: 33px;
 		background: #333;
-	}	
+	}
 	/*__End style code*/
-	
+
 a.pdfLink {
 	padding: 5px 26px 0 20px;
 	color: #336699;
@@ -490,11 +499,11 @@ a.pdfLink {
 a.pdfLink:hover {
 	color: #90BE3F;
 	text-decoration: none;
-}	
+}
 	/*__Start table "AVAILABLE API’S"__*/
 	.overviewTable {
 		margin: 0 0 40px 0;
-		background: url('../img/bg_table_api.gif') left repeat-y transparent; 
+		background: url('../img/bg_table_api.gif') left repeat-y transparent;
 	}
 	.overviewTableTH {
 		color: #fff;
@@ -536,14 +545,14 @@ a.pdfLink:hover {
 	}
 	.parenCategory h2 {
 		margin-bottom:14px;
-		font:700 18px/18px Arial, sans-serif; 
+		font:700 18px/18px Arial, sans-serif;
 	}
 	.parenCategory p,
 	.parenCategory a {
 		font-size:12px;
 		line-height: 15px;
 	}
-	
+
 	.parenCategory a {
 		display:inline-block;
 		border-bottom: 1px dashed #fff;
@@ -561,13 +570,13 @@ a.pdfLink:hover {
 		font-size: 12px;
 	}
 	.subcategory a:hover {
-		color: #90BE3F; 
+		color: #90BE3F;
 		text-decoration: none;
 	}
 	.vehicleTableTr .subcategory {
 		padding: 0;
 	}
-	.subcategory .odd .span4, 
+	.subcategory .odd .span4,
 	.subcategory .even .span4 {
 		padding: 0 0 0 29px;
 		line-height: 26px;
@@ -575,15 +584,15 @@ a.pdfLink:hover {
 	.row-fluid [class*="span"] {
 		min-height: 26px;
 	}
-	.editorialTableTr .odd .span4, 
+	.editorialTableTr .odd .span4,
 	.editorialTableTr .even .span4 {
 		line-height: 83px;
 	}
-	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .odd .span4,
 	.inventoryTableTr .even .span4 {
 		line-height: 69px;
 	}
-	.dealerTableTr .odd .span4, 
+	.dealerTableTr .odd .span4,
 	.dealerTableTr .even .span4 {
 		line-height: 69px;
 	}
@@ -666,7 +675,7 @@ a.pdfLink:hover {
 .collumnMenu .select_version_api.open .dropdown-menu a {
 	display:block;
 	padding: 13px 16px;
-} 
+}
 .collumnMenu .select_version_api.open .dropdown-menu a:hover {
 	color:#90be3f;
 	background: #fff;
@@ -749,20 +758,20 @@ ul.multiLevelMenu {
 
 /*-----------------@media (min-width: 1200px)-----------------*/
 
-@media (min-width: 1200px) { 
-	
+@media (min-width: 1200px) {
+
 }
 /*-----------------@media (max-width: 1200px)-----------------*/
-@media (min-width: 980px) and (max-width: 1200px) { 
-	.editorialTableTr .odd .span4, 
+@media (min-width: 980px) and (max-width: 1200px) {
+	.editorialTableTr .odd .span4,
 	.editorialTableTr .even .span4 {
 		line-height: 92px;
 	}
-	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .odd .span4,
 	.inventoryTableTr .even .span4 {
 		line-height: 78px;
 	}
-	.dealerTableTr .odd .span4, 
+	.dealerTableTr .odd .span4,
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
@@ -796,15 +805,15 @@ ul.multiLevelMenu {
 /*-----------------@media (min-width: 768px) and (max-width: 979px)-----------------*/
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-	.editorialTableTr .odd .span4, 
+	.editorialTableTr .odd .span4,
 	.editorialTableTr .even .span4 {
 		line-height: 100px;
 	}
-	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .odd .span4,
 	.inventoryTableTr .even .span4 {
 		line-height: 78px;
 	}
-	.dealerTableTr .odd .span4, 
+	.dealerTableTr .odd .span4,
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
@@ -839,20 +848,20 @@ ul.multiLevelMenu {
 	.api-header-row2 .row-fluid .span10 { margin-left: 0; }
 	.api-header-row2 .row-fluid .span6 { margin-left: 0; }
 }
- 
+
 
 /*-----------------@media (max-width: 767px)-----------------*/
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-	.editorialTableTr .odd .span4, 
+@media (max-width: 767px) {
+	.editorialTableTr .odd .span4,
 	.editorialTableTr .even .span4 {
 		line-height: 100px;
 	}
-	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .odd .span4,
 	.inventoryTableTr .even .span4 {
 		line-height: 78px;
 	}
-	.dealerTableTr .odd .span4, 
+	.dealerTableTr .odd .span4,
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
@@ -907,16 +916,16 @@ ul.multiLevelMenu {
 
 /*-----------------@media (max-width: 480px)-----------------*/
 /* Landscape phones and down */
-@media (max-width: 480px) { 
-	.editorialTableTr .odd .span4, 
+@media (max-width: 480px) {
+	.editorialTableTr .odd .span4,
 	.editorialTableTr .even .span4 {
 		line-height: 100px;
 	}
-	.inventoryTableTr .odd .span4, 
+	.inventoryTableTr .odd .span4,
 	.inventoryTableTr .even .span4 {
 		line-height: 78px;
 	}
-	.dealerTableTr .odd .span4, 
+	.dealerTableTr .odd .span4,
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
@@ -972,7 +981,7 @@ ul.multiLevelMenu {
 	overflow: hidden;
 }
 
-.subcategory .row-fluid .row-fluid [class^="span"]{ 
+.subcategory .row-fluid .row-fluid [class^="span"]{
 	position: relative;
 	z-index: 2;
 }
