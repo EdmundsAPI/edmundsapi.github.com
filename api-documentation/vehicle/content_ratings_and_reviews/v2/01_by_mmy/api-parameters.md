@@ -7,7 +7,7 @@ title_parent: Api documentation
 amount_version: 2
 title-endpoint: 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
 spec: content_ratings_and_reviews
-version: v1
+version: v2
 api: vehicle
 dropdown-link: 'api/vehiclereviews/v2/{make}/{model}/{year}'
 
