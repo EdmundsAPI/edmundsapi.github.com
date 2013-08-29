@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get TCO® Details for Used Car'
-title_active_left_menu: 'Price: True Cost to Own® Categories'
+title : 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
+title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 1
-title-endpoint: 'Get TCO® Details for Used Car'
-spec: price_tco_cats
+amount_version: 2
+title-endpoint: 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
+spec: content_ratings_and_reviews
 version: v1
 api: vehicle
-dropdown-link: 'api/tco/v1/details/allusedtcobystyleidzipandstate'
+dropdown-link: 'api/vehiclereviews/v2/{make}/{model}/{year}'
 
 
 level: 3
-description_edpoint: 'Get TCO® Details for Used Car'
+description_edpoint: 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-Get the True Cost to Own® **details** for a **used** car.
+Get the consumer ratings and reviews for a specific vehicle by its make/model/year information.
 
 ### URL
 
-	https://api.edmunds.com/api/tco/v1/details/allusedtcobystyleidzipandstate/{style ID}/{zipcode}/{US State Code}?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehiclereviews/v2/{make}/{model}/{year}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first year will cost in fuel: " + res.fuel.values[0];
+					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/tco/v1/details/allusedtcobystyleidzipandstate/2898/90019/ca', options, success, fail);
+				res.api('/api/vehiclereviews/v2/honda/accord/2012', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

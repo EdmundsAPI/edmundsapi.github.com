@@ -1,8 +1,8 @@
 ---
 layout: certified_dev
-title: Certified developers
+title: Edmunds Certified Developer Badges
 title_parent: Certified developers
-title_active_left_menu: 'CDP Badge'
+title_active_left_menu: 'ECD Badge'
 
 cdp_weight: 5
 cdp_class_page: cdpBdge
@@ -22,18 +22,20 @@ cdp_class_page: cdpBdge
 		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 	</a>
 </div>
-The CDP Badge is awarded to developers that have demonstrated value-added capabilities in one or more of the following qualification areas: Social Shopping, Mobile, Analytics. These developers are not directly endorsed by Edmunds, but have clearly demonstrated unique capabilities that help customers build efficiency.... Developers that hold the CDP Badge are reviewed periodically by Edmunds, and must demonstrate an ongoing high-standard of excellence. All candidates and CDPs must be aligned with the general section at the top, as well as the below sections that apply to their Qualification(s).
+The ECD Badge is awarded to developers that have demonstrated value-added capabilities in one or more of the following qualification areas: Web, Social, Mobile, Analytics. These developers **are not directly endorsed** by Edmunds.com, Inc, but have clearly demonstrated unique capabilities that help customers build efficient applications using the Edmunds API. Developers that hold the ECD Badge are reviewed periodically by Edmunds.com, Inc, and must demonstrate an ongoing high-standard of excellence. All candidates and ECDs must be aligned with the general section at the top, as well as the below sections that apply to their Qualification(s).
 
-###CDPs AND CANDIDATES MUST HAVE
+###ECDs AND CANDIDATES MUST HAVE
 
-coming soon...
+ECDs must show the following badge box on their site:
+
+	**badge box goes here**
 
 <div class="discriptionBadge">
 <a name="web" title="">
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_web.png" alt="Web" />
 
-<p>Coming soon...</p>
+<p>Desktop web and widget application developer. Expertise is building out automotive solutions for the typical desktop browser.</p>
 </div>
 
 <div class="discriptionBadge">
@@ -41,7 +43,7 @@ coming soon...
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 
-<p>Coming soon...</p>
+<p>Mobile web and native mobile application developer. Expertise is building out automotive solutions for the small screens.</p>
 </div>
 
 <div class="discriptionBadge">
@@ -49,7 +51,7 @@ coming soon...
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
 
-<p>Coming soon...</p>
+<p>Creating automotive experiences that are social in nature. Facebook apps and Twitter integration are some of the things this developer can do.</p>
 </div>
 
 <div class="discriptionBadge last">
@@ -58,12 +60,11 @@ coming soon...
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 
 
-<p>Coming soon...</p>
+<p>Going beyond what you see in the data. Finding insights and deriving new value from the data.</p>
 </div>
 
 <div class="additionalInf">
-	<p>If you wish to apply for the CDP badge then take the test. </p>
-	<p>CDP Team member will be in touch within ... if your score....</p>
+	<p>If you wish to apply for the ECD badge, <a href="/certified-dev/get_start.html#certified_developer">follow this process</a></p>
 </div>
 
 

@@ -8,17 +8,10 @@ cdp_weight: 6
 cdp_class_page: sdpDirectory
 ---
 
-
 <a href="#myModal" role="button" class="btn linkAboutSDP" data-toggle="modal" title="About Certified Developer Directory">About Certified Developer Directory</a>
- 
-
-
 
 <p>This is the definitive directory of developers working with Edmunds API.
 </p>
-
-
-
 
 {% include themes/twitter/certified-dev/cdp_tabs_search_the_directory.html %}
 {% include themes/twitter/certified-dev/result_filter_developer.html %}

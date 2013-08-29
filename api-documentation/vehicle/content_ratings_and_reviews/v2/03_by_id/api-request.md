@@ -6,7 +6,7 @@ title_parent: Api documentation
 
 amount_version: 2
 title-endpoint: 'Get Car Consumer Ratings and Reviews by Review ID'
-spec: ratings_and_reviews
+spec: content_ratings_and_reviews
 version: v1
 api: vehicle
 dropdown-link: 'api/vehiclereviews/v2/{review ID}'

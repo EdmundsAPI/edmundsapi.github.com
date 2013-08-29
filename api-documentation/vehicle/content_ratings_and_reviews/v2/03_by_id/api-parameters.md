@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get TCO® Details for Used Car'
-title_active_left_menu: 'Price: True Cost to Own® Categories'
+title : 'Get Car Consumer Ratings and Reviews by Review ID'
+title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 1
-title-endpoint: 'Get TCO® Details for Used Car'
-spec: price_tco_cats
+amount_version: 2
+title-endpoint: 'Get Car Consumer Ratings and Reviews by Review ID'
+spec: content_ratings_and_reviews
 version: v1
 api: vehicle
-dropdown-link: 'api/tco/v1/details/allusedtcobystyleidzipandstate'
+dropdown-link: 'api/vehiclereviews/v2/{review ID}'
 
 
 level: 4
-description_edpoint: 'Get TCO® Details for Used Car'
+description_edpoint: 'Get Car Consumer Ratings and Reviews by Review ID'
 title_md : Parameters
 number: 2
 

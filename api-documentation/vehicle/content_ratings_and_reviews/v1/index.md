@@ -1,11 +1,11 @@
 ---
 layout: api-documentation
-title : 'Vehicle Ratings and Reviews'
+title : 'Car Consumer Ratings and Reviews'
 title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
 amount_version: 2
-spec: ratings_and_reviews
+spec: content_ratings_and_reviews
 version: v1
 api: vehicle
 dropdown-link: ''
