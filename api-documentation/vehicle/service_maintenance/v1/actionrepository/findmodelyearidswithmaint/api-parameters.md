@@ -1,11 +1,11 @@
 ---
 layout: api-documentation
-title : 'Service: Maintenance'
+title : 'Find Car Model Year IDs with Maintenance Schedules'
 title_active_left_menu: 'Service: Maintenance'
 title_parent: Api documentation
 
-amount_version: 2
-title-endpoint: 'actionrepository/findmodelyearidswithmaintenanceschedule'
+amount_version: 1
+title-endpoint: 'Find Car Model Year IDs with Maintenance Schedules'
 spec: service_maintenance
 version: v1
 api: vehicle
@@ -13,7 +13,7 @@ dropdown-link: 'v1/api/maintenance/actionrepository/findmodelyearidswithmaintena
 
 
 level: 4
-description_edpoint: 'Get makes by ID'
+description_edpoint: 'Find Car Model Year IDs with Maintenance Schedules'
 title_md : Parameters
 number: 2
 

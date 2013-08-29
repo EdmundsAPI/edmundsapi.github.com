@@ -1,9 +1,9 @@
 ---
 layout: default
-title : Certified developers
+title : 'Edmunds Certified Developer Network - Overview'
 title_parent: Certified Developers
 header : Post Certified dev
-title_active_left_menu: 'CDP Overview'
+title_active_left_menu: 'Program Overview'
 
 weight: 4
 cdp_weight: 1

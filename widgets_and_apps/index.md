@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Widgets and apps
+title : 'The Edmunds API - Widgets'
 title_parent: Widgets and apps
 header : Widgets and apps
 

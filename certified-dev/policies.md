@@ -1,6 +1,6 @@
 ---
 layout: certified_dev
-title: Certified developers
+title: 'Edmunds Certified Developer Network - Policies'
 title_parent: Certified developers
 title_active_left_menu: 'Policies'
 

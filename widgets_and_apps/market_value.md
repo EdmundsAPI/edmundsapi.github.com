@@ -1,6 +1,6 @@
 ---
 layout: page
-title : True market value
+title : 'The TMV® Widget - The Edmunds API'
 title_parent: Widgets and apps
 header : True market value
 
@@ -9,9 +9,9 @@ class_page: pageWidgetSetup
 
 {% include themes/twitter/widgets_and_apps/market_value.html %}
 
-The True Market Value®  is a simple widget that will let people quickly ...
+The TMV® Widget allows consumers to get an idea of how much a new car costs and how much an old car could be traded in for at the dealership. The TMV® price shown is always based on the base style of the vehicle selected. Options and colors adjustments aren't taken into consideration.
 
-You can use the configurator below to customize the layout and style of  True Market Value® widget, and grab a small snippet of code to insert into your HTML pages to implement the widget in minutes..
+You can use the widget configurator below to customize the layout and style of the widget, and grab a small snippet of code to insert into your HTML pages to implement the widget.
 
 <div class="pre-loader" style="height: 200px;">&nbsp;</div>
 <iframe src="http://edmundswidgets-staging.herokuapp.com/tmv/v2?portal=true" width="100%" height="1031" align="left" class="iframeWidget">	
@@ -39,15 +39,3 @@ You can use the configurator below to customize the layout and style of  True Ma
 * `Get Code` - Instructions to embed TMV Widget on your page.
 
 {% include themes/twitter/widgets_and_apps/acordion.html %}
-
-
-
-<div class="blogLinks">
-<h5>RELATED TECHNICAL DOCUMENTATION
-</h5> 
-<a class='blueLink' href='{{ PATH }}/under_construction.html' title=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</a>
-</br>
-<a class='blueLink' href='{{ PATH }}/under_construction.html' title=''>Donec tincidunt auctor tellus at condimentum.
-</a>
-</div>

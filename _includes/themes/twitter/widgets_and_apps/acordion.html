@@ -8,11 +8,11 @@
 		</div>
 		<div id="collapseOne" class="accordion-body collapse in">
 			<div class="accordion-inner">
-<p>To embed TMV Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
+<p>To embed the TMV Widget in your page, follow the instructions from <code>Get Code</code> popup.</p>
         <h4>Example scenario:</h4>
         <ol>
             <li>
-                <p>Add the following JavaScript files to your page. It's preferably to add them at the bottom of your page for best page performance:</p>
+                <p>Add the following JavaScript files to your page. It's preferable to add them at the bottom of your page for best page performance:</p>
                 <pre>&lt;script src="http://tmv.herokuapp.com/js/edm/sdk.js"&gt;&lt;/script&gt;
 &lt;script src="http://tmv.herokuapp.com/js/edm/tmvwidget.js"&gt;&lt;/script&gt;</pre> 
             </li>
@@ -29,7 +29,7 @@
                 <pre>widget.render();</pre> 
             </li>
             <li>
-                <p>Add the CSS files to your page. It's preferably to add them at the head of your page:</p>
+                <p>Add the CSS files to your page. It's preferable to add them at the top of your page within the <strong>head</strong> tag:</p>
                 <pre>&lt;link rel="stylesheet" href="http://tmv.herokuapp.com/css/simple-light.css"&gt;
 &lt;style&gt;
 .tmvwidget{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border-width:1px;width:248px;}.tmvwidget .tmvwidget-header{-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topleft:5px;border-top-left-radius:5px;}
@@ -48,7 +48,7 @@
 		</div>
 		<div id="collapseTwo" class="accordion-body collapse in">
 			<div class="accordion-inner">
-<p>TMV widget provides the next methods for working with custom events:</p>
+<p>The TMV widget provides the following methods for working with custom events:</p>
         <br>
         <p><code>on()</code> - Binds a callback function to an object. The callback will be invoked whenever the event is fired. (<a href="http://widgets.edmunds.com/docs/tmv/classes/EDM.Observable.html#method_on" target="_blank">More details</a>)</p>
         <pre>// External usage example:
@@ -71,7 +71,7 @@ this.off('change:make');</pre>
         <p><code>trigger()</code> - Trigger callbacks for the given event. Subsequent arguments to trigger will be passed along to the event callbacks. (<a href="http://widgets.edmunds.com/docs/tmv/classes/EDM.Observable.html#method_trigger" target="_blank">More details</a>)</p>
         <pre>this.trigger('change:make', makeId);</pre>
         <h4>Events</h4>
-        <p>You can read all list of events <a href="http://widgets.edmunds.com/docs/tmv/classes/EDM.TMV.html#event_calculate" target="_blank">here</a>.</p>
+        <p>You can read the entire list of events <a href="http://widgets.edmunds.com/docs/tmv/classes/EDM.TMV.html#event_calculate" target="_blank">here</a>.</p>
 
 			</div>
 		</div>
