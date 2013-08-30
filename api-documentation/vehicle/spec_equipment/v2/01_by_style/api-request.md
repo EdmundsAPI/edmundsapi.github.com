@@ -25,7 +25,7 @@ Get equipment details for car style ID **101353967**
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/styles/101353967/equipment7?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/styles/101353967/equipment?fmt=json&api_key={api key}
 	
 #### Response
 	

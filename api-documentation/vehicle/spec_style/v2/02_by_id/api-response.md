@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Car Style Details by Car Style ID'
-title_active_left_menu: "Spec: Style and Trim"
+title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
 amount_version: 2

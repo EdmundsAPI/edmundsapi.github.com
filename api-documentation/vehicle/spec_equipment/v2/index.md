@@ -20,62 +20,79 @@ The vehicle equipment is everything that exists within a car from options, engin
 
 ### Equipment Response Formats
 
-This resource returns a list of equipment that either comes standard or optional with a car. The response describes these equipment in three different ways:
+This resource returns a list of equipment that either comes standard or optional with a car. The response describes these equipment in **four different ways**:
 
 #### 1) Typical equipment description:
 
 	{
-      "id": {integer},
-      "name": {string},
-      "equipmentType": {string},
-      "availability": {string},
-      "attributes": [
-        {
-          "name": {string},
-          "value": {string}
-        }
-      ]
+		"id": {integer},
+		"name": {string},
+		"equipmentType": {string},
+		"availability": {string},
+		"attributes": [{
+			"name": {string},
+			"value": {string}
+		}]
     }
 
 #### 2) Engine description:
 
 	{
 		"id": {string},
-	    "name": {string},
+		"name": {string},
 		"equipmentType": "ENGINE",
-	    "availability": {string},
-	    "compressionRatio": {float},
-	    "cylinder": {integer},
-	    "size": {float},
-	    "displacement": {integer},
-	    "configuration": {string},
-	    "fuelType": {string},
-	    "horsepower": {integer},
-	    "torque": {integer},
-	    "totalValves": {integer},
-	    "manufacturerEngineCode": {string},
-	    "type": {string},
-	    "code": {string},
-	    "compressorType": {string}
+		"availability": {string},
+		"compressionRatio": {float},
+		"cylinder": {integer},
+		"size": {float},
+		"displacement": {integer},
+		"configuration": {string},
+		"fuelType": {string},
+		"horsepower": {integer},
+		"torque": {integer},
+		"totalValves": {integer},
+		"manufacturerEngineCode": {string},
+		"type": {string},
+		"code": {string},
+		"compressorType": {string}
 	}
 
 #### 3) Transmission description:
 
 	{
 		"id": {integer},
-    	"name": {string},
+		"name": {string},
 		"equipmentType": "TRANSMISSION",
-	    "availability": {string},
-    	"automaticType": {string},
-    	"transmissionType": {string},
-    	"numberOfSpeeds": {integer}
+		"availability": {string},
+		"automaticType": {string},
+		"transmissionType": {string},
+		"numberOfSpeeds": {integer}
 	}
 
-These three formats will be returned in the endpoint responses you will get. Make sure you parse them appropriately.
+#### 4) Color description
+
+	{
+		"id": {string},
+		"name": {string},
+		"equipmentType": "COLOR",
+		"manufactureOptionName": {string},
+		"manufactureOptionCode": {string},
+		"category": {string},
+		"colorChips": {
+			"primary": {
+				"r": {integer},
+				"g": {integer},
+				"b": {integer},
+				"hex": {string}
+			}
+		}
+	}
+
+When you parse an equipment object, make sure you look for the <code>equipmentType</code> value first to see how to process it. If it's anything other than **COLOR**, **ENGINE** or **TRANSMISSION**, then treat it as a *typical equipment*. 
 
 ### Static Datasets
 
-In the response objects you will get back, you will come across things like <code>equipmentType</code> and <code>availaility</code>. To understand those better, here's a list of all possible values for both properties:
+In the response objects you will get back, you will come across things like <code>equipmentType</code> and <code>availability</code>. To understand those better, here's a list of all possible values for both properties:
 
 #### equipmentType
 
@@ -111,6 +128,7 @@ In the response objects you will get back, you will come across things like <cod
 * Misc. Interior Features
 * Mobile Connectivity
 * Navigation System
+* Option
 * Parking Aid
 * Power Outlets
 * Seatbelts

@@ -21,6 +21,5 @@ overview: page_version
 
 #### Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The following endpoints will be discontinued then:
 
-* v1/api/vehicle/stylerepository/findbyid
-* v1/api/vehicle/stylerepository/findstylesbymakemodelyear
-* v1/api/vehicle/stylerepository/findstylesbymodelyearid
+* v1/api/vehicle-directory-ajax/vehicle-options/options
+* v1/api/vehicle-directory-ajax/vehicle-options/colors

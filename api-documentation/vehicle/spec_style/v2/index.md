@@ -56,6 +56,7 @@ In the response objects you will get back, you will come across things like <cod
 * Misc. Interior Features
 * Mobile Connectivity
 * Navigation System
+* Option
 * Parking Aid
 * Power Outlets
 * Seatbelts

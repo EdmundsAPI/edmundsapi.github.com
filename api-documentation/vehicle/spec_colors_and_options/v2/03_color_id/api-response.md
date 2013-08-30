@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Option Details by ID'
+title : 'Get Color Details by ID'
 title_active_left_menu: "Spec: Colors and Options"
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Get Option Details by ID'
+title-endpoint: 'Get Colors Details by ID'
 spec: spec_colors_and_options
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/options/{id}'
+dropdown-link: 'api/vehicle/v2/colors/{id}'
 
 
 level: 4
-description_edpoint: 'Get Option Details by ID'
+description_edpoint: 'Get Colors Details by ID'
 title_md : Response format
 number: 3
 
@@ -39,14 +39,13 @@ number: 3
 
 | Property      | Description                         					| Visibility                |
 |:--------------|:------------------------------------------------------|:------------------------- |
-| id		    				| The option ID											| Edmunds, Partners, Public |
-| name		    				| The option name										| Edmunds, Partners, Public |
-| equipmentType 				| Equipment type. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/)	| Edmunds, Partners, Public |
-| availability  				| Option availability									| Edmunds, Partners, Public |
-| manufactureOptionName		    | Manufacturer name										| Edmunds, Partners, Public |
-| manufactureOptionCode			| Manufacturer code										| Edmunds, Partners, Public |
-| equipment	    				| Equipment objects. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/) | Edmunds, Partners, Public |
-| category	    				| The option category (see overview)					| Edmunds, Partners, Public |
+| id		    			| The color ID								| Edmunds, Partners, Public |
+| name		    			| The color name							| Edmunds, Partners, Public |
+| equipmentType 			| Always set to "COLOR"						| Edmunds, Partners, Public |
+| manufactureOptionName		| Manufacturer name							| Edmunds, Partners, Public |
+| manufactureOptionCode		| Manufacturer code							| Edmunds, Partners, Public |
+| colorChips	    		| Color RGB and HEX values					| Edmunds, Partners, Public |
+| category	    			| The color category (exterior or interior)	| Edmunds, Partners, Public |
 | make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
 | model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
 | year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |

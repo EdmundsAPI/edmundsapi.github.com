@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get All Options for a Car Style'
-title_active_left_menu: "Spec: Colors and Option"
+title_active_left_menu: "Spec: Colors and Options"
 title_parent: Api documentation
 
 amount_version: 2
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, ...etc) by the vehicle's Make/Mode/Year information. The style ID of a vehicle is **available** in the responses of the *model* and *model year* endpoints.
+Get the vehicle options for a particular vehicle style. This will return all available options and their equipment details.
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/{make}/{model}/{year}/styles?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/styles/{style ID}/options?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first style name is: " + res.styles[0].name;
+					body.innerHTML = "The first option name is: " + res.options[0].name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/lexus/rx350/2011/styles', options, success, fail);
+				res.api('/api/vehicle/v2/styles/200477947/options', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

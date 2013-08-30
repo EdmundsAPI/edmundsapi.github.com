@@ -16,13 +16,79 @@ overview: page_version
 
 ---
 
-The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style.
+This resource provides access to vehicle options and colors. For vehicle options, the data returns will always include an array of [equipment](//api-documentation/vehicle/spec_equipment/v2/) that exist within each option. Equipment comes in four distinct formats:
 
-### Static Datasets
+#### 1) Typical equipment description:
 
-In the response objects you will get back, you will come across things like <code>equipmentType</code> and <code>optionType</code>. To understand those better, here's a list of all possible values for both properties:
+	{
+		"id": {integer},
+		"name": {string},
+		"equipmentType": {string},
+		"availability": {string},
+		"attributes": [{
+			"name": {string},
+			"value": {string}
+		}]
+    }
 
-#### optionType
+#### 2) Engine description:
+
+	{
+		"id": {string},
+		"name": {string},
+		"equipmentType": "ENGINE",
+		"availability": {string},
+		"compressionRatio": {float},
+		"cylinder": {integer},
+		"size": {float},
+		"displacement": {integer},
+		"configuration": {string},
+		"fuelType": {string},
+		"horsepower": {integer},
+		"torque": {integer},
+		"totalValves": {integer},
+		"manufacturerEngineCode": {string},
+		"type": {string},
+		"code": {string},
+		"compressorType": {string}
+	}
+
+#### 3) Transmission description:
+
+	{
+		"id": {integer},
+		"name": {string},
+		"equipmentType": "TRANSMISSION",
+		"availability": {string},
+		"automaticType": {string},
+		"transmissionType": {string},
+		"numberOfSpeeds": {integer}
+	}
+
+#### 4) Color description
+
+	{
+		"id": {string},
+		"name": {string},
+		"equipmentType": "COLOR",
+		"manufactureOptionName": {string},
+		"manufactureOptionCode": {string},
+		"category": {string},
+		"colorChips": {
+			"primary": {
+				"r": {integer},
+				"g": {integer},
+				"b": {integer},
+				"hex": {string}
+			}
+		}
+	}
+
+When you parse an equipment object, make sure you look for the <code>equipmentType</code> value first to see how to process it. If it's anything other than **COLOR**, **ENGINE** or **TRANSMISSION**, then treat it as a *typical equipment*. 
+
+### Option Types
+
+Option types are always one of these values:
 
 * INTERIOR
 * EXTERIOR
