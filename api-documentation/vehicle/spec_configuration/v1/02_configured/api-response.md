@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Option Details by ID'
-title_active_left_menu: "Spec: Colors and Options"
+title : 'Get configured vehicle w/ Options by style ID and Zip Code'
+title_active_left_menu: "Spec: Configuration"
 title_parent: Api documentation
 
-amount_version: 2
-title-endpoint: 'Get Option Details by ID'
-spec: spec_colors_and_options
-version: v2
+amount_version: 1
+title-endpoint: 'Get configured vehicle w/ Options by style ID and Zip Code'
+spec: spec_configuration
+version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v2/options/{id}'
+dropdown-link: 'v1/api/configurator/withOptions'
 
 
 level: 4
-description_edpoint: 'Get Option Details by ID'
+description_edpoint: 'Get configured vehicle w/ Options by style ID and Zip Code'
 title_md : Response format
 number: 3
 

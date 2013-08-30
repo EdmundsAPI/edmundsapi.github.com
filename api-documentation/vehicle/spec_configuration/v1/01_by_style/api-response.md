@@ -24,19 +24,19 @@ number: 3
 #### JSON Response
 
 	{
-	    "id": 200443450,
+	    "id": {integer},
 	    "longName": {string},
 	    "pricingAttributeGroup": {
-	        "id": 3,
+	        "id": {integer},
 	        "name": {string},
 	        "attributes": {object}
 	    },
 	    "featuresMap": {
 	        {option ID}: {
 	            "equipment": {object},
-	            "id": "200443482",
-	            "modelYearId": 200442557,
-	            "styleId": 0,
+	            "id": {integer},
+	            "modelYearId": {integer},
+	            "styleId": {integer},
 	            "name": {string},
 	            "attributeGroups": {object},
 	            "equipmentClass": {string},
@@ -46,11 +46,11 @@ number: 3
 	            "endDate": {date}
 	        }
 	    },
-	    "furtherAdditions": [],
-	    "furtherRemovals": [],
-	    "requiredItems": [],
-	    "includedItems": [],
-	    "excludedItems": [],
+	    "furtherAdditions": {arra},
+	    "furtherRemovals": {arra},
+	    "requiredItems": {arra},
+	    "includedItems": {arra},
+	    "excludedItems": {arra},
 	    "name": {string},
 	    "tmv": {object}
 	}
