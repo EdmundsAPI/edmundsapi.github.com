@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Vehicle Details by Squish VIN'
-title_active_left_menu: "Spec: Squish VIN"
+title : 'Get Letter Grade Rating by Car Style ID'
+title_active_left_menu: "Content: Letter Grade Rating"
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Vehicle Details by Squish VIN'
-spec: spec_squishvin
+title-endpoint: 'Get Letter Grade Rating by Car Style ID'
+spec: content_letter_grade
 version: v1
 api: vehicle
-dropdown-link: 'api/vehicle/v2/squishvins/{squish VIN}/'
+dropdown-link: 'api/vehicle/v2/grade/{style ID}'
 
 
 level: 4
-description_edpoint: 'Get Vehicle Details by Squish VIN'
+description_edpoint: 'Get Letter Grade Rating by Car Style ID'
 title_md : Parameters
 number: 2
 

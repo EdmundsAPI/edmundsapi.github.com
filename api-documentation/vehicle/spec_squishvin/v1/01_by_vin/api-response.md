@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Vehicle Details by Squish VIN'
-title_active_left_menu: "Spec: VIN Decoding"
+title_active_left_menu: "Spec: Squish VIN"
 title_parent: Api documentation
 
 amount_version: 1

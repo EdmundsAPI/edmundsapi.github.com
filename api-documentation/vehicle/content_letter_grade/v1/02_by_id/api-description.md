@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Vehicle Details Through VIN Decoding'
-title_active_left_menu: "Spec: VIN Decoding"
+title : 'Get Letter Grade Rating by Car Style ID'
+title_active_left_menu: "Content: Letter Grade Rating"
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Vehicle Details Through VIN Decoding'
-spec: spec_vin_decoding
+title-endpoint: 'Get Letter Grade Rating by Car Style ID'
+spec: content_letter_grade
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/toolsrepository/vindecoder'
+dropdown-link: 'api/vehicle/v2/grade/{style ID}'
 
 
 level: 3
-description_edpoint: 'Get Vehicle Details Through VIN Decoding'
+description_edpoint: 'Get Letter Grade Rating by Car Style ID'
 title_md : Description
 number: 1
 
@@ -21,13 +21,11 @@ number: 1
 
 ### Description
 
-Decode the supplied VIN to its most basic vehicle specs (i.e. make, model, year, style, trim, engine and transmission details.)
-
-**Please note** that this resource is ***not*** a *VIN Lookup*. Manufacturers can do the VIN lookup on their own vehicles, but since we cover all manufacturers and makes and models, we can reliably *look up* a vehicle by just its VIN. So what we do is reduce the VIN to a **Squish VIN**, or VIN prefix, which is basically **the first 11 digits of the VIN minus the 9th digit which is a check digit**.
+Get the Edmunds.com **Letter Grade Car Rating** by the car style ID.
 
 ### URL
 
-	https://api.edmunds.com/v1/api/toolsrepository/vindecoder?vin={car VIN}&fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/grade/{style ID}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -49,14 +47,12 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {
-					"vin": "1N4AL3AP4DC295509"
-				};
+				var options = {};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The car make is: " + res.styleHolder[0].makeName;
+					body.innerHTML = "The style name for this vehicle is: " + res.style;
 				}
 
 				// Oops, Houston we have a problem!
@@ -65,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/toolsrepository/vindecoder', options, success, fail);
+				res.api('/api/vehicle/v2/grade/200434856', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
