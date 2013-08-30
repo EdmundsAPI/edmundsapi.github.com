@@ -25,3 +25,6 @@ number: 2
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
+| sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). Default: created:DESC                       | json              | json          | No	    |
+| pagenum    | The page number of the paginated result. Default: 1       | json              | json          | No      |
+| pagesize   | The maximum number of returned reviews. Default: 10       | json              | json          | No      |

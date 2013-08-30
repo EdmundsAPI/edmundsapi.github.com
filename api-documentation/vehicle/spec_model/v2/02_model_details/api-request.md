@@ -25,7 +25,7 @@ Get the list of model years and styles for ***used*** Honda Civics
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/honda/civic?state=used&fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/honda/civic?state=used&fmt=json&api_key={api key}
 	
 #### Response
 
@@ -103,7 +103,7 @@ Get the list of model year and style details and their states (i.e. new, used, f
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/bmw/x5?year=2103&view=full&fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/bmw/x5?year=2103&view=full&fmt=json&api_key={api key}
 
 #### Response
 

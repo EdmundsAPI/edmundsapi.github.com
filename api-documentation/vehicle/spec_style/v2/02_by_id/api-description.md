@@ -1,30 +1,31 @@
 ---
 layout: api-documentation
-title : 'Get Total Count of Car Models for Specific Car Make'
-title_active_left_menu: 'Spec: Model'
+title : 'Get Car Style Details by Car Style ID'
+title_active_left_menu: "Spec: Style and Trim"
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Get Total Count of Car Models for Specific Car Make'
-spec: spec_model
+title-endpoint: 'Get Car Style Details by Car Style ID'
+spec: spec_style
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/{make}/models/count'
+dropdown-link: 'api/vehicle/{vehicle}/styles/{id}'
 
 
 level: 3
-description_edpoint: 'Get Total Count of Car Models for Specific Car Make'
+description_edpoint: 'Get Car Style Details by Car Style ID'
 title_md : Description
 number: 1
+
 ---
 
 ### Description
 
-Get the total number of all Lexus models available in the API.
+Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, ...etc) by the vehicle's style ID. The style ID of a vehicle is **available** in the responses of the *model* and *model year* endpoints.
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/lexus/models/count?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/styles/{style ID}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -51,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total number of Lexus models are: " + res.modelsCount;
+					body.innerHTML = "The style name is: " + res.name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -60,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/lexus/models/count', options, success, fail);
+				res.api('/api/vehicle/v2/styles/101353967', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

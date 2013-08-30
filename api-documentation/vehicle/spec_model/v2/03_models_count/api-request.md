@@ -24,7 +24,7 @@ Get the total ***new*** Toyota models
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/toyota/models/count?state=new&fmt=json&api_key=xxxxx
+	https://api.edmunds.com/api/vehicle/v2/toyota/models/count?state=new&fmt=json&api_key={api key}
 	
 #### Response
 
@@ -38,7 +38,7 @@ Get the total ***new*** Toyota models ***and*** the breakdown of their model yea
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/toyota/models/count?view=full&state=new&fmt=json&api_key=xxxxx
+	https://api.edmunds.com/api/vehicle/v2/toyota/models/count?view=full&state=new&fmt=json&api_key={api key}
 
 #### Response
 

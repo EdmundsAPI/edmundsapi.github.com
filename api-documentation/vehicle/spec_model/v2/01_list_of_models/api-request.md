@@ -23,7 +23,7 @@ Get the list of all ***new*** 2013 car models for Lexus
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key=xxxxx&state=new&year=2013
+	https://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key={api key}&state=new&year=2013
 	
 #### Response
 

@@ -23,7 +23,7 @@ Get the list of all **new** car makes with <code>view=full</code>
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new&view=full
+	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={api key}&state=new&view=full
 	
 #### Response
 

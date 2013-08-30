@@ -1,30 +1,31 @@
 ---
 layout: api-documentation
-title : 'Get Total Count of Car Models for Specific Car Make'
-title_active_left_menu: 'Spec: Model'
+title : 'Get Car Style Details by Car Make/Model/Year'
+title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Get Total Count of Car Models for Specific Car Make'
-spec: spec_model
+title-endpoint: 'Get Car Style Details by Car Make/Model/Year'
+spec: spec_style
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/{make}/models/count'
+dropdown-link: 'api/vehicle/{version}/{make}/{model}/{year}/styles'
 
 
 level: 3
-description_edpoint: 'Get Total Count of Car Models for Specific Car Make'
+description_edpoint: 'Get Car Style Details by Car Make/Model/Year'
 title_md : Description
 number: 1
+
 ---
 
 ### Description
 
-Get the total number of all Lexus models available in the API.
+Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, ...etc) by the vehicle's Make/Mode/Year information. The style ID of a vehicle is **available** in the responses of the *model* and *model year* endpoints.
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/lexus/models/count?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/{make}/{model}/{year}/styles?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -51,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total number of Lexus models are: " + res.modelsCount;
+					body.innerHTML = "The first style name is: " + res.styles[0].name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -60,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/lexus/models/count', options, success, fail);
+				res.api('/api/vehicle/v2/lexus/rx350/2011/styles', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

@@ -25,7 +25,7 @@ Get the list of models and model/year IDs for __NEW__ Lexus cars
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key=xxxxx&state=new
+	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key={api key}&state=new
 
 #### Response
 
@@ -70,7 +70,7 @@ Get the list of models and model/year IDs and their states (i.e. new, used, futu
 
 #### URL
 
-	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key=xxxxx&state=new&view=full
+	http://api.edmunds.com/api/vehicle/v2/lexus?fmt=json&api_key={api key}&state=new&view=full
 
 #### Response
 
