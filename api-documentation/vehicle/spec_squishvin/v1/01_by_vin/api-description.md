@@ -12,7 +12,7 @@ api: vehicle
 dropdown-link: 'api/vehicle/v2/squishvins/{squish VIN}/'
 
 
-level: 4
+level: 3
 description_edpoint: 'Get Vehicle Details by Squish VIN'
 title_md : Description
 number: 1
