@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Car Style Details by Car Style ID'
-title_active_left_menu: "Spec: Style and Trim"
+title : 'Get All Options for a Car Style'
+title_active_left_menu: "Spec: Colors and Option"
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Get Car Style Details by Car Style ID'
-spec: spec_style
+title-endpoint: 'Get All Options for a Car Style'
+spec: spec_colors_and_options
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/styles/{id}'
+dropdown-link: 'api/vehicle/v2/styles/{style ID}/options'
 
 
 level: 4
-description_edpoint: 'Get Car Style Details by Car Style ID'
+description_edpoint: 'Get All Options for a Car Style'
 title_md : Response format
 number: 3
 
@@ -24,27 +24,31 @@ number: 3
 #### JSON Response w/ <code>view=basic</code> (default)
 
 	{
-	  "id": {integer},
-	  "name": {string},
-	  "make": {
-	    "id": {integer},
-	    "name": {string},
-	    "niceName": {string}
-	  },
-	  "model": {
-	    "id": {string},
-	    "name": {string},
-	    "niceName": {string}
-	  },
-	  "year": {
-	    "id": {integer},
-	    "year": {integer}
-	  },
-	  "submodel": {
-	    "body": {string},
-	    "modelName": {string}
-	  },
-	  "trim": {string}
+	  "styles": [{  	
+	  	"id": {integer},
+		  "name": {string},
+		  "make": {
+		    "id": {integer},
+		    "name": {string},
+		    "niceName": {string}
+		  },
+		  "model": {
+		    "id": {string},
+		    "name": {string},
+		    "niceName": {string}
+		  },
+		  "year": {
+		    "id": {integer},
+		    "year": {integer}
+		  },
+		  "submodel": {
+		    "body": {string},
+		    "modelName": {string}
+		  },
+		  "trim": {string}
+		},
+		...
+	  }]
 	}
 
 The *make*, *model*, *year* and *submodel* objects are identical to what's returned in the Make and Model specs.
@@ -62,43 +66,47 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 #### JSON Response w/ <code>view=full</code>
 
 	{
-	  "id": {integer},
-      "name": {string},
-	  "make": {
-	    "id": {integer},
-	    "name": {string},
-	    "niceName": {string}
-	  },
-	  "model": {
-	    "id": {string},
-	    "name": {string},
-	    "niceName": {string}
-	  },
-	  "year": {
-	    "id": {integer},
-	    "year": {integer}
-	  },
-	  "submodel": {
-	    "body": {string},
-	    "modelName": {string}
-	  },
-	  "trim": {string},
-	  "states": {array},
-	  "engine": {object},
-	  "transmission": {object},
-	  "options": [
-	    {
-	      "category": {string},
-	      "options": {array}
-	    }
-	  ],
-	  "colors": [
-	    {
-	      "category": {string},
-	      "options": {array}
-	    }
-	  ],
-	  "squishVins": {array}
+	  "styles": [{
+	  	"id": {integer},
+	      "name": {string},
+		  "make": {
+		    "id": {integer},
+		    "name": {string},
+		    "niceName": {string}
+		  },
+		  "model": {
+		    "id": {string},
+		    "name": {string},
+		    "niceName": {string}
+		  },
+		  "year": {
+		    "id": {integer},
+		    "year": {integer}
+		  },
+		  "submodel": {
+		    "body": {string},
+		    "modelName": {string}
+		  },
+		  "trim": {string},
+		  "states": {array},
+		  "engine": {object},
+		  "transmission": {object},
+		  "options": [
+		    {
+		      "category": {string},
+		      "options": {array}
+		    }
+		  ],
+		  "colors": [
+		    {
+		      "category": {string},
+		      "options": {array}
+		    }
+		  ],
+		  "squishVins": {array}
+		},
+		...
+	  }]
 	}
 
 | Property      | Description                         					| Visibility                |
@@ -220,5 +228,4 @@ Each element in the ***colors*** <code>options</code> array follows this format:
 | category				    | The option category. **Interior** OR **Exterior**		| Edmunds, Partners, Public |
 | colorChips			    | Primary and Secondary colors. Each with RGB and Hex values	| Edmunds, Partners, Public |
 | fabricType			    | The fabric type for interior							| Edmunds, Partners, Public |
-	
 	

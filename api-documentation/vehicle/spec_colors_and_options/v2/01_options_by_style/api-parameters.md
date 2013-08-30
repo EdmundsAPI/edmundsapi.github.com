@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Car Style Details by Car Make/Model/Year'
-title_active_left_menu: "Spec: Style"
+title : 'Get All Options for a Car Style'
+title_active_left_menu: "Spec: Colors and Option"
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Get Car Style Details by Car Make/Model/Year'
-spec: spec_style
+title-endpoint: 'Get All Options for a Car Style'
+spec: spec_colors_and_options
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/v2/{make}/{model}/{year}/styles'
+dropdown-link: 'api/vehicle/v2/styles/{style ID}/options'
 
 
 level: 4
-description_edpoint: 'Get Car Style Details by Car Make/Model/Year'
+description_edpoint: 'Get All Options for a Car Style'
 title_md : Parameters
 number: 2
 

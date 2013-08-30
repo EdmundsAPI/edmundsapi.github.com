@@ -9,7 +9,7 @@ title-endpoint: 'Get Car Style Details by Car Make/Model/Year'
 spec: spec_style
 version: v2
 api: vehicle
-dropdown-link: 'api/vehicle/{version}/{make}/{model}/{year}/styles'
+dropdown-link: 'api/vehicle/v2/{make}/{model}/{year}/styles'
 
 
 level: 3

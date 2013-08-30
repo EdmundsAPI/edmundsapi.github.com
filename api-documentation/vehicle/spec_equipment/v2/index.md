@@ -1,0 +1,140 @@
+---
+layout: api-documentation
+title : 'Spec: Equipment'
+title_active_left_menu: "Spec: Equipment"
+title_parent: Api documentation
+
+amount_version: 2
+spec: spec_equipment
+version: v2
+api: vehicle
+dropdown-link: 'Select an Endpoint'
+
+
+level: 2
+overview: page_version
+
+---
+
+The vehicle equipment is everything that exists within a car from options, engine, transmission, colors, ...etc. 
+
+### Equipment Response Formats
+
+This resource returns a list of equipment that either comes standard or optional with a car. The response describes these equipment in three different ways:
+
+#### 1) Typical equipment description:
+
+	{
+      "id": {integer},
+      "name": {string},
+      "equipmentType": {string},
+      "availability": {string},
+      "attributes": [
+        {
+          "name": {string},
+          "value": {string}
+        }
+      ]
+    }
+
+#### 2) Engine description:
+
+	{
+		"id": {string},
+	    "name": {string},
+		"equipmentType": "ENGINE",
+	    "availability": {string},
+	    "compressionRatio": {float},
+	    "cylinder": {integer},
+	    "size": {float},
+	    "displacement": {integer},
+	    "configuration": {string},
+	    "fuelType": {string},
+	    "horsepower": {integer},
+	    "torque": {integer},
+	    "totalValves": {integer},
+	    "manufacturerEngineCode": {string},
+	    "type": {string},
+	    "code": {string},
+	    "compressorType": {string}
+	}
+
+#### 3) Transmission description:
+
+	{
+		"id": {integer},
+    	"name": {string},
+		"equipmentType": "TRANSMISSION",
+	    "availability": {string},
+    	"automaticType": {string},
+    	"transmissionType": {string},
+    	"numberOfSpeeds": {integer}
+	}
+
+These three formats will be returned in the endpoint responses you will get. Make sure you parse them appropriately.
+
+### Static Datasets
+
+In the response objects you will get back, you will come across things like <code>equipmentType</code> and <code>availaility</code>. To understand those better, here's a list of all possible values for both properties:
+
+#### equipmentType
+
+* 1st Row Seats
+* 2nd Row Seats
+* 3rd Row Seats
+* 4th Row Seats
+* 5th Row Seats
+* Air Conditioning
+* Airbags
+* Audio System
+* Brake System
+* Cargo Dimensions
+* Child Safety
+* Color
+* Collision Safety System
+* Convertible Roof
+* Crash Test Ratings
+* Differential
+* Doors
+* Drive Type
+* Driver Seat
+* Engine
+* Engine Features
+* Exterior Dimensions
+* Exterior Lights
+* Front Passenger Seat
+* Instrumentation
+* Interior Dimensions
+* Interior Trim
+* Mirrors
+* Misc. Exterior Features
+* Misc. Interior Features
+* Mobile Connectivity
+* Navigation System
+* Parking Aid
+* Power Outlets
+* Seatbelts
+* Seating Configuration
+* Security
+* Spare Tire/Wheel
+* Specification
+* Steering
+* Steering Wheel
+* Storage
+* Sunroof
+* Suspension
+* Tires
+* Traction/Stability Control
+* Trailer Towing Equipment
+* Transmission
+* Transmission Features
+* Truck Bed
+* Trunk
+* Video System
+* Wheels
+* Windows
+
+#### Equipment Availability
+
+* Standard
+* Optional

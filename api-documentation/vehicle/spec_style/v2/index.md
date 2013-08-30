@@ -43,6 +43,7 @@ In the response objects you will get back, you will come across things like <cod
 * Doors
 * Drive Type
 * Driver Seat
+* Engine
 * Engine Features
 * Exterior Dimensions
 * Exterior Lights
@@ -61,6 +62,7 @@ In the response objects you will get back, you will come across things like <cod
 * Seating Configuration
 * Security
 * Spare Tire/Wheel
+* Specification
 * Steering
 * Steering Wheel
 * Storage
@@ -69,6 +71,7 @@ In the response objects you will get back, you will come across things like <cod
 * Tires
 * Traction/Stability Control
 * Trailer Towing Equipment
+* Transmission
 * Transmission Features
 * Truck Bed
 * Trunk
