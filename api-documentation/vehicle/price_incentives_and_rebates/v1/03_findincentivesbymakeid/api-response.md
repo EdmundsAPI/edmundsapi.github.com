@@ -21,6 +21,48 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+	{
+	    "incentiveHolder": [{
+	        "rebateAmount": {float},
+	        "termMonths": {integer},
+	        "apr": {float},
+	        "creditRatingTier": {string},
+	        "id": {integer},
+	        "type": {string},
+	        "contentType": {string},
+	        "sourceType": {string},
+	        "subprogramId": {integer},
+	        "startDate": {date},
+	        "endDate": {date},
+	        "comments": "",
+	        "restrictions": {string},
+	        "name": {string},
+	        "primary": {boolean},
+	        "incentiveVehicles": [{
+	            "link": {URI}
+	        }],
+	        "zipcodeExceptions": {array},
+	        "categories": {array},
+	        "regions": ["i397"],
+	        "incentiveType": {string},
+	        "optionIds": {array},
+	        "makeIds": [{
+	            "link": {URI}
+	        }],
+	        "styleIds": [{
+	            "link": {URI}
+	        }]
+	    }]
+	}
+	
+| Property      | Description                         					| Visibility                |
+|:--------------|:------------------------------------------------------|:------------------------- |
+| id		    | The style ID											| Edmunds, Partners, Public |
+| name		    | The style name										| Edmunds, Partners, Public |
+| make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
+| model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
+| year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
+| submodel	    | Car submode details									| Edmunds, Partners, Public |
+| trim		    | The car trim											| Edmunds, Partners, Public |
+	
+	

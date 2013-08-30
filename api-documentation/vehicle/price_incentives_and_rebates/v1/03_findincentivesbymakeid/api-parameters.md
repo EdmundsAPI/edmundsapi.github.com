@@ -21,6 +21,8 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| makeid     | The car make ID                       | json              | json          | Yes      |
+| fmt        | Response format                       | json              | json          | Yes      |
+| api_key    | vehicle api key                       |                   |               | Yes      |

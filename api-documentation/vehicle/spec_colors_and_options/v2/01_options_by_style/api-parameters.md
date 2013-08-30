@@ -19,6 +19,8 @@ number: 2
 
 ---
 
+###Parameters
+
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | fmt        | Response format                       | json              | json          | Yes      |
