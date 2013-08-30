@@ -160,32 +160,7 @@ When an error occurs, you should get the following response:
 	
 Your code should always be looking for the root key <code>error</code> in the API response.
 
-### Static Datasets
-
-Some of our datasets are static and don't change often (if at all). Here are the most common static datasets you will need to make API calls and understand API responses.
-
-#### Vehicle Types
-
-|		|		|		|		|			|
-|:------|:------|:------|:------|:----------|
-| Car	| Truck	| SUV	| Van	| Minivan	|
-
-#### Vehicle Categories
-
-|						|					|						|					|
-|:----------------------|:------------------|:----------------------|:------------------|
-| 4dr Hatchback			| 2dr Hatchback		| 2dr SUV 				| 4dr SUV			|
-| Cargo Minivan			| Cargo Van			| Convertible			| Convertible SUV	|
-| Coup					| Crew Cab Pickup	| Extended Cab Pickup 	| Passenger Minivan	|
-| Passenger Van 		| Regular Cab Pickup| Sedan				 	| Wagon				|
-
-#### Vehicle Sizes
-
-|			|			|		|
-|:----------|:----------|:------|
-| Compact	| Midsize	| Large	|
-
-#### Useful API Calls
+### Useful API Calls
 
 As mentioned above, car _style IDs_ and _Model Year IDs_ are important to retrieve other datasets in the API. 
 
@@ -220,7 +195,7 @@ In the **response** of that call, you will find the following object:
 	
 The **id** key in this object is the _Style ID_.
 
-More on these endpoints in the [_Spec: Make_](http://edmundsapi.github.io/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](http://edmundsapi.github.io/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.
+More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.
 
 ### SDKs and Code Samples
 
