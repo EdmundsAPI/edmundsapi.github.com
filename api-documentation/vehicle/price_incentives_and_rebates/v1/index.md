@@ -18,7 +18,7 @@ overview: page_version
 
 This resource is about getting incentives and rebates for vehicles.
 
-### Incentives Source Type
+### Incentives Source Type (i.e. *sourceType*)
 
 * AAA
 * AARP
@@ -51,7 +51,7 @@ This resource is about getting incentives and rebates for vehicles.
 * Texas Coastal Conservation Association
 * Trade Assistance
 
-### Incentives Content Type
+### Incentives Content Type (i.e. *content_type*)
                                                                                           
 | content_type      		| Description                         																		|
 |:--------------------------|:----------------------------------------------------------------------------------------------------------|

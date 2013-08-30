@@ -20,7 +20,7 @@ The Photos Resource has only one endpoint right now (we're working hard on versi
 
 A few things to note about the responses you will get back when you make calls to the endpoint available above:
 
-### Photo Shot Types
+### Photo Shot Types (i.e. *shotTypeAbbreviation*)
 
 Our photos are diverse in terms of the perspective from which they were taken. Here's a list of the all available shot types, which you will find in the API response as the value of the property **shotTypeAbbreviation**:
 

@@ -96,63 +96,60 @@ In the response objects you will get back, you will come across things like <cod
 
 #### equipmentType
 
-* 1st Row Seats
-* 2nd Row Seats
-* 3rd Row Seats
-* 4th Row Seats
-* 5th Row Seats
-* Air Conditioning
-* Airbags
-* Audio System
-* Brake System
-* Cargo Dimensions
-* Child Safety
-* Color
-* Collision Safety System
-* Convertible Roof
-* Crash Test Ratings
-* Differential
-* Doors
-* Drive Type
-* Driver Seat
-* Engine
-* Engine Features
-* Exterior Dimensions
-* Exterior Lights
-* Front Passenger Seat
-* Instrumentation
-* Interior Dimensions
-* Interior Trim
-* Mirrors
-* Misc. Exterior Features
-* Misc. Interior Features
-* Mobile Connectivity
-* Navigation System
-* Option
-* Parking Aid
-* Power Outlets
-* Seatbelts
-* Seating Configuration
-* Security
-* Spare Tire/Wheel
-* Specification
-* Steering
-* Steering Wheel
-* Storage
-* Sunroof
-* Suspension
-* Tires
-* Traction/Stability Control
-* Trailer Towing Equipment
-* Transmission
-* Transmission Features
-* Truck Bed
-* Trunk
-* Video System
-* Wheels
-* Windows
+* 1ST_ROW_SEATS
+* 2ND_ROW_SEATS
+* 3RD_ROW_SEATS
+* 4TH_ROW_SEATS
+* 5TH_ROW_SEATS
+* AIR_CONDITIONING
+* AIRBAGS
+* AUDIO_SYSTEM
+* BRAKE_SYSTEM
+* CARGO_DIMENSIONS
+* COLLISION_SAFETY_SYSTEM
+* COLOR
+* CONVERTIBLE_ROOF
+* DIFFERENTIAL
+* DOORS
+* DRIVE_TYPE
+* DRIVER_SEAT
+* ENGINE
+* EXTERIOR_DIMENSIONS
+* EXTERIOR_LIGHTS
+* FRONT_PASSENGER_SEAT
+* INSTRUMENTATION
+* INTERIOR_DIMENSIONS
+* LEGACY
+* MANUFACTURER
+* MIRRORS
+* MOBILE_CONNECTIVITY
+* NAVIGATION_SYSTEM
+* OPTION
+* PARKING_AID
+* POWER_OUTLETS
+* SEATBELTS
+* SEATING_CONFIGURATION
+* SECURITY
+* SPARE_TIRE/WHEEL
+* SPECIFICATIONS
+* STEERING
+* STEERING_WHEEL
+* STORAGE
+* SUNROOF
+* SUSPENSION
+* TECHNOLOGY_FEATURE
+* TELEMATICS
+* TIRES
+* TRAILER_TOWING_EQUIPMENT
+* TRANSMISSION
+* TRUCK_BED
+* TRUNK
+* VIDEO_SYSTEM
+* WARRANTY
+* WHEELS
+* WINDOWS
 
-#### Equipment Availability
+#### availability
 
 * Standard
 * Optional

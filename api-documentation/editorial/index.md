@@ -34,23 +34,21 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 Edmunds.com’s Editorial Content consists of articles (“Articles”) that are the copyright property of Edmunds.com, Inc., and we have special requirements for the use of the Articles.
 
-* The following **meta tag** should be added to all of your pages that display an Article:
+#### The following **meta tag** should be added to all of your pages that display an Article:
 
-    <code><link href="/URL SUPPLIED WITH THE ARTICLE" rel="canonical" /></code>
-
-    The URL SUPPLIED WITH THE ARTICLE is the URL of the content you’re displaying on your site. The URL is provided in the response object you’ll receive when you make a REST call request.
-
-    The meta tag needs to exist in the <code>header</code> section of your page.
+	<code><link href="/URL SUPPLIED WITH THE ARTICLE" rel="canonical" /></code>
+    <!-- The URL SUPPLIED WITH THE ARTICLE is the URL of the content you’re displaying on your site. The URL is provided in the response object you’ll receive when you make a REST call request. -->
+    <!-- The meta tag needs to exist in the <code>header</code> section of your page. -->
  
-* Each Article you elect to display **must be displayed in the form it is provided**, i.e., it may not be edited, supplemented or abridged.
+#### Each Article you elect to display **must be displayed in the form it is provided**, i.e., it may not be edited, supplemented or abridged.
  
-* The “date published” and/or “date revised” that accompanies each Article may not be removed or altered, and should be displayed above the Article.
+#### The “date published” and/or “date revised” that accompanies each Article may not be removed or altered, and should be displayed above the Article.
 
-* Each Article should be accredited as follows: "From Edmunds.com" at the top of the article (i.e., below the article’s title and above the “date published”), in a font size not smaller than the font size that you use for the text of the Article.
+#### Each Article should be accredited as follows: "From Edmunds.com" at the top of the article (i.e., below the article’s title and above the “date published”), in a font size not smaller than the font size that you use for the text of the Article.
 
-* The following notice should be affixed to the end of each Article: Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc.
+#### The following notice should be affixed to the end of each Article: Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc.
 
-* Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.
+#### Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.
 
 
 ### Available Article Categories
