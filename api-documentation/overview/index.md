@@ -92,7 +92,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 			<span class="text-info">json | xml</span>
 			<p>
 				<strong>Note:</strong>
-				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string as set it to the Javascript function that's you have defined to handle the <strong>json</strong> response.
+				All API calls support <span class="text-info">json</span> as the default response format. XML support is limited and will be noted in the endpoint documentation if the response format also supports XML. For <span class="text-info">JSONP</span> support, you will need to add <code>callback=</code> to the query string and set it to the Javascript function that you have defined to handle the <strong>json</strong> response.
 			</p>
 		</td>
 	</tr>
@@ -114,17 +114,17 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 * _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
 * _**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&callback=**myFunction**_
-* _https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&**state=new&view=full**_
+* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state=new&view=full**_
 
 ### Rate Limit
 
-All API keys are issued with a _default quota_ of **2 API calls/sec** and **5000 API calls/day**. We do increase rate limits on case-by-case basis. In order to increase the rate limit for a particular application, we need to verify the following:
+All API keys are issued with a _default quota_ of **2 API calls/second** and **5000 API calls/day**. We do increase rate limits on case-by-case basis. In order to increase the rate limit for a particular application, we need to verify the following:
 
 1. The application is in compliance with our [Terms of Service](/terms_of_service/)
 2. The application is in compliance with our [branding guide](/api_branding_guide/)
 3. The application is representing the Edmunds data properly
 
-Once these three criteria are verified, the rate limit is increased to what Edmunds and developer determine to be appropriate. Please note that you **do not have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions aforementioned. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com)**. _No monetary compensation is expected in exchange for the rate limit increase_.
+Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com?subject=API%20Rate%20Limit%20Increase)**. _No monetary compensation is expected in exchange for the rate limit increase_.
 
 ### Available Resources
 
@@ -133,7 +133,7 @@ Once these three criteria are verified, the rate limit is increased to what Edmu
 Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer _three access tiers_:
 
 * **PUBLIC**: All registered developers using the Edmunds.com data and content according to our [Terms of Service](/terms_of_service/).
-* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com)
+* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please [email us](mailto:api@edmunds.com?subject=API%20Partner%20Inquiry)
 * **EDMUNDS**: Edmunds.com employees and contractors using the API to build out the Edmunds.com apps and websites.
 
 Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).
@@ -146,13 +146,13 @@ API errors occur for several reasons. Here's a list of **common errors** and way
 |:--------------|:--------------------------------------|:------------------------------------------------------------------------------|
 | 400    		| Bad Request				            | Check the URL to make sure it has proper syntax								|
 | 401   		| Unauthorized				            | You are using the **wrong API key** or the key **isn't active** 				|
-| 403 			| Forbidden							    | You are not authorized to access this resource. Sorry.						|
+| 403 			| Forbidden							    | You are not authorized to access this resource, sorry.						|
 | 404 			| Not Found							    | Check the URL path for typos								 					|
 | 502    		| Bad Gateway	                        | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
 | 503     	   	| Service Unavailable 					| If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
-| 504     	   	| Gateway Timeout                       | f this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
+| 504     	   	| Gateway Timeout                       | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
 
-If an error persists and you can't resolve it, please [email us](mailto:api@edmunds.com) and let us know.
+If an error persists and you can't resolve it, please [email us](mailto:api@edmunds.com?subject=API%20Error) and let us know.
 
 When an error occurs, you should get the following response:
 
@@ -162,7 +162,7 @@ Your code should always be looking for the root key <code>error</code> in the AP
 
 ### Static Datasets
 
-Some of our datasets are static and don't change often (if at all.) Here's the most common static datasets you will need to make API calls and understand API response.
+Some of our datasets are static and don't change often (if at all). Here are the most common static datasets you will need to make API calls and understand API responses.
 
 #### Vehicle Types
 
@@ -191,7 +191,7 @@ As mentioned above, car _style IDs_ and _Model Year IDs_ are important to retrie
 
 To get the _Model Year IDs_ for all _new_ makes, use the following API call:
 	
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api\_key=**{your vehicle api key}
+	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api_key={your vehicle api key}
 	
 In the **response** of that call, you will find the following object:
 
@@ -204,7 +204,7 @@ The **id** key in this object is the _Model Year ID_.
 
 To get the _style IDs_ for a specific car make, let's use Lexus as an example, use the following API call:
 
-	http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api\_key=**{your vehicle api key}
+	http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key={your vehicle api key}
 	
 In the **response** of that call, you will find the following object:
 
@@ -220,7 +220,7 @@ In the **response** of that call, you will find the following object:
 	
 The **id** key in this object is the _Style ID_.
 
-More on these endpoints in the _Make_ and _Model_ **Spec** resources under the Vehicle API.
+More on these endpoints in the [_Spec: Make_](http://edmundsapi.github.io/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](http://edmundsapi.github.io/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.
 
 ### SDKs and Code Samples
 
@@ -228,13 +228,13 @@ Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great wa
 
 ### Pedal to The Metal!
 
-If you've made it this far, **congratulations!** You're way on your way to rock the API! 
+If you've made it this far, **congratulations**! You're way on your way to rocking the API! 
 
-This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key,<a class="linkGetKey" href="http://edmunds.mashery.com/member/register" title="Get your API key" target="_blank">get a key</a> now so you can rock 'n' roll in no time!
+This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key,<a class="linkGetKey" href="http://edmunds.mashery.com/member/register" title="Get your API key" target="_blank">get a key</a> now so you can start building in no time!
 
-All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Serious. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
+All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Seriously. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
 
-Once you're comfortable with our APIs, you could now start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
+Once you're comfortable with our APIs, you can start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
 
 Still have questions? Don't hesitate to [tweet us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com) or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
 
