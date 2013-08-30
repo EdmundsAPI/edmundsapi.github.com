@@ -16,4 +16,47 @@ overview: page_version
 
 ---
 
-Get engine and transmission details of a certain car style by their IDs.
+#### This resource provide engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle [equipment](/api-documentation/vehicle/spec_equipment/v2/).
+
+### Engine Details
+
+	{
+		"id": {string},
+		"name": {string},
+		"equipmentType": "ENGINE",
+		"availability": {string},
+		"make": {object},
+		"model": {object},
+		"styles":{array of objects},
+		"year": {object}
+		"compressionRatio": {float},
+		"cylinder": {integer},
+		"size": {float},
+		"displacement": {integer},
+		"configuration": {string},
+		"fuelType": {string},
+		"horsepower": {integer},
+		"torque": {integer},
+		"totalValves": {integer},
+		"manufacturerEngineCode": {string},
+		"type": {string},
+		"code": {string},
+		"compressorType": {string}
+	}
+
+# Transmission Details
+
+	{
+		"id": {integer},
+    	"name": {string},
+		"make": {object},
+		"model": {object},
+		"styles":{array of objects},
+		"year": {object}
+		"equipmentType": "TRANSMISSION",
+	    "availability": {string},
+    	"automaticType": {string},
+    	"transmissionType": {string},
+    	"numberOfSpeeds": {integer}
+	}
+	

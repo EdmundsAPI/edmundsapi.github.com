@@ -84,6 +84,12 @@ This resource returns a list of equipment that either comes standard or optional
 				"g": {integer},
 				"b": {integer},
 				"hex": {string}
+			},
+			"secondary": {
+				"r": {integer},
+				"g": {integer},
+				"b": {integer},
+				"hex": {string}
 			}
 		}
 	}
