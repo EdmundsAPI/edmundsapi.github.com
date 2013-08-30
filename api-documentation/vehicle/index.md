@@ -66,6 +66,31 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 	https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
+### Static Datasets
+
+Some of our datasets are static and don't change often (if at all.) Here's the most common static datasets you will need to make API calls and understand API response.
+
+#### Vehicle Types
+
+|		|		|		|		|			|
+|:------|:------|:------|:------|:----------|
+| Car	| Truck	| SUV	| Van	| Minivan	|
+
+#### Vehicle Categories
+
+|						|					|						|					|
+|:----------------------|:------------------|:----------------------|:------------------|
+| 4dr Hatchback			| 2dr Hatchback		| 2dr SUV 				| 4dr SUV			|
+| Cargo Minivan			| Cargo Van			| Convertible			| Convertible SUV	|
+| Coup					| Crew Cab Pickup	| Extended Cab Pickup 	| Passenger Minivan	|
+| Passenger Van 		| Regular Cab Pickup| Sedan				 	| Wagon				|
+
+#### Vehicle Sizes
+
+|			|			|		|
+|:----------|:----------|:------|
+| Compact	| Midsize	| Large	|
+
 ### API Uses
 
 * Get all vehicle specs

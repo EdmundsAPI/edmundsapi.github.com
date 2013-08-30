@@ -25,7 +25,7 @@ This overview covers the core concepts that you need to know before you could fu
 
 ### Data Hierarchy
 
-Exploring a new API can be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
+Exploring a new API could be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
 In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the **car Style ID** or the **car Model Year ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
@@ -237,6 +237,5 @@ All set? Awesome. Why not start making **live API calls** _right now_ by using t
 Once you're comfortable with our APIs, you could now start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
 
 Still have questions? Don't hesitate to [tweet us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com) or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
-
 
 
