@@ -24,12 +24,57 @@ In the response objects you will get back, you will come across things like <cod
 
 #### equipmentType
 
-INTERIOR,
-        EXTERIOR,
-        MECHANICAL,
-        PACKAGE,
-        ADDITIONAL_FEES,
-        UNKNOWN
+* 1st Row Seats
+* 2nd Row Seats
+* 3rd Row Seats
+* 4th Row Seats
+* 5th Row Seats
+* Air Conditioning
+* Airbags
+* Audio System
+* Brake System
+* Cargo Dimensions
+* Child Safety
+* Color
+* Collision Safety System
+* Convertible Roof
+* Crash Test Ratings
+* Differential
+* Doors
+* Drive Type
+* Driver Seat
+* Engine Features
+* Exterior Dimensions
+* Exterior Lights
+* Front Passenger Seat
+* Instrumentation
+* Interior Dimensions
+* Interior Trim
+* Mirrors
+* Misc. Exterior Features
+* Misc. Interior Features
+* Mobile Connectivity
+* Navigation System
+* Parking Aid
+* Power Outlets
+* Seatbelts
+* Seating Configuration
+* Security
+* Spare Tire/Wheel
+* Steering
+* Steering Wheel
+* Storage
+* Sunroof
+* Suspension
+* Tires
+* Traction/Stability Control
+* Trailer Towing Equipment
+* Transmission Features
+* Truck Bed
+* Trunk
+* Video System
+* Wheels
+* Windows
 
 #### optionType
 
