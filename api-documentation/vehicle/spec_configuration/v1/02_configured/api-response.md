@@ -24,18 +24,22 @@ number: 3
 #### JSON Response
 
 	{
-		"id": {integer},
-		"name": {string},
-		"equipmentType": {string},
-		"availability": {string},
-		"manufactureOptionName": {string},
-		"manufactureOptionCode": {string},
-		"equipment": {array},
-		"category": {string},
-		"make": {object},
-		"model": {object},
-		"year": {object}
-    }
+		"zipCode": {integer},
+		"styleId": {integer},
+		"colorId": {integer},
+		"currentOptions": {array},
+		"selectedOption": {integer},
+		"deselectedOption": {integer},
+		"furtherAdditions": {array},
+		"furtherRemovals": {array},
+		"requiredItems": {array},
+		"includedItems": {array},
+		"excludedItems": {array},
+		"name": {
+		  {option ID}: {string}
+		},
+		"tmv": {object}
+	}
 
 | Property      | Description                         					| Visibility                |
 |:--------------|:------------------------------------------------------|:------------------------- |

@@ -23,8 +23,9 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| zip        | Zip Code			                     | json              | json          | Yes      |
-| styleid    | The vehicle style ID                  | json              | json          | Yes      |
-| optionid   | Zip Code			                     | json              | json          | Yes      |
+| zip        | Zip Code			                     |               |           | Yes      |
+| styleid    | The vehicle style ID                  |               |           | Yes      |
+| selected   | The selected option ID                |               	|           | Yes      |
+| optionid   | The option ID that needs to be selected      |               |           | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |

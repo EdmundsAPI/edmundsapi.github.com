@@ -12,7 +12,7 @@ api: vehicle
 dropdown-link: 'v1/api/configurator/withOptions'
 
 
-level: 4
+level: 3
 description_edpoint: 'Get configured vehicle w/ Options by style ID and Zip Code'
 title_md : Description
 number: 1
@@ -21,11 +21,17 @@ number: 1
 
 ### Description
 
-Get the vehicle option details by its ID.
+Get a **configured vehicle** with options by the style ID and zip code. This endpoint helps **resolve conflicts** between two or more options should any exists.
+
+For example, let's say you you want to configure a **2013 BMW 328i Sedan (2.0L 4-cyl. Turbo 6-speed Manual)**, which has a style ID of **200423469**. And let's say you're in the Santa Monica, CA (zip code is **90404**).
+
+Now that you have a style ID and a zip code, you can get the default configuration of this vehicle, which is documented in [this endpoint](/api-documentation/vehicle/spec_configuration/v1/01_by_style/api-description.html). Now let's say you want to add the **M Sport Line** package. In order to verify what other options are *required* when this package is selected, we use this endpoint.
+
+This endpoint gives us an idea that given a certain option, what other options need to be *excluded*, *included* and *required* to have a sound vehicle configuration.
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/options/{id}?fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/api/configurator/withOptions?zip={zipcode}&styleid={style ID}&selected={option ID}&fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -47,12 +53,16 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {};
+				var options = {
+					"zip": "77001",
+					"styleid": "200423469",
+					"selected": "200425407"
+				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The option name is: " + res.name;
+					body.innerHTML = "The first option ID that is excluded is: " + res.excludedItems[0];
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +71,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/vehicle/v2/options/200235312', options, success, fail);
+				res.api('/api/configurator/withOptions', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

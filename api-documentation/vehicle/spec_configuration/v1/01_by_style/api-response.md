@@ -58,12 +58,14 @@ number: 3
 
 | Property      				| Description                         					| Visibility                |
 |:------------------------------|:------------------------------------------------------|:------------------------- |
-| id		    				| The option ID											| Edmunds, Partners, Public |
-| name		    				| The option name										| Edmunds, Partners, Public |
-| equipmentType 				| Equipment type. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/)	| Edmunds, Partners, Public |
-| availability  				| Option availability									| Edmunds, Partners, Public |
-| manufactureOptionName		    | Manufacturer name										| Edmunds, Partners, Public |
-| manufactureOptionCode			| Manufacturer code										| Edmunds, Partners, Public |
-| equipment	    				| Equipment objects. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/) | Edmunds, Partners, Public |
-| category	    				| The option category (see overview)					| Edmunds, Partners, Public |
+| id		    				| The style ID											| Edmunds, Partners, Public |
+| longName		    			| The style long name									| Edmunds, Partners, Public |
+| pricingAttributeGroup			| Price category **(we will remove this in version 2)**	| Edmunds, Partners, Public |
+| featuresMap	  				| List of default options. See [options spec](/api-documentation/vehicle/spec_colors_and_options/v2/)	| Edmunds, Partners, Public |
+| furtherAdditions		    	| List of options to be added							| Edmunds, Partners, Public |
+| furtherRemovals				| List of options to be removed							| Edmunds, Partners, Public |
+| requiredItems	    			| List of options that are required						| Edmunds, Partners, Public |
+| excludedItems	    			| List of options to be excluded						| Edmunds, Partners, Public |
+| name			    			| The style name										| Edmunds, Partners, Public |
+| tmv			    			| TMV® adjusted for options. See [TMV® pricing](/api-documentation/vehicle/price_tmv/v1/)					| Edmunds, Partners, Public |
 
