@@ -162,7 +162,7 @@ Your code should always be looking for the root key <code>error</code> in the AP
 
 ### Static Datasets
 
-Some of our datasets are static and don't change often (if at all). Here's the most common static datasets you will need to make API calls and understand API responses.
+Some of our datasets are static and don't change often (if at all). Here are the most common static datasets you will need to make API calls and understand API responses.
 
 #### Vehicle Types
 
