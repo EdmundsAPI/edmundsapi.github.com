@@ -21,6 +21,8 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
+	
 
-tab: {{page.number}}
+| Property      | Description                                              	| Visibility                |
+|:--------------|:----------------------------------------------------------|:------------------------- |
+| value         | The TCO® total value					                   	| Edmunds, Partners, Public |
