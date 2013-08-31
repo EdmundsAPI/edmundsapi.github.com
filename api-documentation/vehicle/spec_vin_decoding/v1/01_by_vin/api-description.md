@@ -38,7 +38,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Get the number of all car brands listed as NEW</title>
+		<title>Edmunds API Example</title>
 	</head>
 
 	<body>
