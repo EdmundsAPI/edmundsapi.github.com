@@ -66,7 +66,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/tco/getstyleswithtcodatabysubmodel?make=acura&model=zdx&year=2011&submodel=hatchback', options, success, fail);
+				res.api('/v1/api/tco/getstyleswithtcodatabysubmodel', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

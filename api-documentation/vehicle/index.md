@@ -68,7 +68,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 ### Static Datasets
 
-Some of our datasets are static and don't change often (if at all.) Here's the most common static datasets you will need to make API calls and understand API response.
+Some of our datasets are static and don't change often (if at all.) Here's the **most common** static datasets you will need to make API calls and understand API response. More specific datasets (e.g. equipment types, option types, ...etc) are mentioned in the resources in which they're relevant.
 
 #### Vehicle Types
 
@@ -76,7 +76,7 @@ Some of our datasets are static and don't change often (if at all.) Here's the m
 |:------|:------|:------|:------|:----------|
 | Car	| Truck	| SUV	| Van	| Minivan	|
 
-#### Vehicle Categories
+#### Vehicle Categories (aka submodels)
 
 |						|					|						|					|
 |:----------------------|:------------------|:----------------------|:------------------|
@@ -90,6 +90,21 @@ Some of our datasets are static and don't change often (if at all.) Here's the m
 |			|			|		|
 |:----------|:----------|:------|
 | Compact	| Midsize	| Large	|
+
+#### Fuel Types
+
+|			|					|			| 
+|:----------|:------------------|:----------|
+| Electric	| Natural-gas-cng	| gas		| 
+| hybrid	| Flex-fuel-ffv		| diesel	| 
+
+#### Driven Wheels
+                                 
+|					|					|
+|:------------------|:------------------|
+| all-wheel-drive	| four-wheel-drive	|
+| front-wheel-drive	| rear-wheel-drive	|
+
 
 ### API Uses
 

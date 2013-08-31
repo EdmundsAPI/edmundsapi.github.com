@@ -21,6 +21,30 @@ number: 3
 
 ###Response format
 
-##test content : {{page.title-endpoint}} 
+	{
+	    "tmvUsd": {integer},
+	    "dealerCashUsd": {float}
+	    "customerIncentiveUsd": {float}
+	    "destinationFeeUsd": {float}
+	    "gasGuzzlerTaxUsd": {float}
+	    "link": {
+	        "rel": "full",
+	        "href": {URI}
+	    },
+	    "corePercent": {object},
+	    "regionAdjustment": {object},
+	    "colorAdjustment": {object}
+	}
+	
+| Property      | Description                                              	| Visibility                |
+|:--------------|:----------------------------------------------------------|:------------------------- |
+| tmvUsd	    | The **total** Edmunds.com True Market Value® in dollars	           	| Edmunds, Partners, Public |
+| dealerCashUsd | The dealer cash incentive						    | Edmunds, Partners, Public |
+| customerIncentiveUsd         | The customer incentive | Edmunds, Partners, Public |
+| destinationFeeUsd	        | Destination fee						| Edmunds, Partners, Public |
+| gasGuzzlerTaxUsd | Gas guzzler tax					           	| Edmunds, Partners, Public |
+| link 			   | Link to this API call				           	| Edmunds, Partners, Public |
+| corePercent      | TMV® price **without** any adjustments		    | Edmunds, Partners, Public |
+| regionAdjustment | Regional adjustment to the TMV® price			| Edmunds, Partners, Public |
+| colorAdjustment  | Color adjustment to the TMV® price	           	| Edmunds, Partners, Public |
 
-tab: {{page.number}}
