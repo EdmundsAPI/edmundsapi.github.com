@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| makeid     | The car make ID                       | json              | json          | Yes      |
+| makeid     | The car make ID                       | 		             |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |

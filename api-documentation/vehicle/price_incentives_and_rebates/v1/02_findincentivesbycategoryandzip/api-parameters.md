@@ -21,6 +21,9 @@ number: 2
 
 ###Parameters
 
-##test content : {{page.title-endpoint}} 
-
-tab: {{page.number}}
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| category	 | Vehicle category (see API Overview)	 | 					 | 	             | Yes       |
+| zipcode    | The area zip de						 | 					 |               | Yes       |
+| fmt        | Response format                       | json              | json          | Yes      |
+| api_key    | vehicle api key                       |                   |               | Yes      |

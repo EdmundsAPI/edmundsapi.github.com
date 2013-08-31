@@ -21,6 +21,50 @@ number: 4
 
 ###Sample Request
 
-##test content : {{page.title-endpoint}} 
+Get all incentives for ID **2943384**
 
-tab: {{page.number}} 
+### URL
+
+	https://api.edmunds.com/v1/api/incentive/incentiverepository/findbyid?id=2943384&fmt=json&api_key={api key}
+
+### Response
+
+	{
+	    "incentiveHolder": [{
+	        "rebateAmount": 750.0,
+	        "termMonths": 60,
+	        "apr": 0.9,
+	        "creditRatingTier": "Tier 1",
+	        "id": 2943384,
+	        "type": "CASH_REBATE",
+	        "contentType": "CUSTOMER_CASH_OR_APR",
+	        "sourceType": "UNKNOWN",
+	        "subprogramId": 830583,
+	        "startDate": "2013-07-09",
+	        "endDate": "2013-09-03",
+	        "comments": "",
+	        "restrictions": "$750 Customer Retail Cash may not be combined with 0.90% APR - 2.90 % APR and vehicle must be financed through Ally Financial Inc. ",
+	        "name": "CC or APR - 2013 Verano - National",
+	        "primary": false,
+	        "incentiveVehicles": [{
+	            "link": "/api/incentive/incentivevehicle/57298"
+	        }],
+	        "zipcodeExceptions": [],
+	        "categories": ["Car", "Sedan"],
+	        "regions": ["i397"],
+	        "incentiveType": "cashRebate",
+	        "optionIds": [],
+	        "makeIds": [{
+	            "link": "/api/vehicle/make/200006659"
+	        }],
+	        "styleIds": [{
+	            "link": "/api/vehicle/style/200430609"
+	        }, {
+	            "link": "/api/vehicle/style/200430608"
+	        }, {
+	            "link": "/api/vehicle/style/200424094"
+	        }, {
+	            "link": "/api/vehicle/style/200430607"
+	        }]
+	    }]
+	}

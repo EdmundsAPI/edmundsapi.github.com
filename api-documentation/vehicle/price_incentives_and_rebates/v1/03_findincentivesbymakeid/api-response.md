@@ -23,9 +23,9 @@ number: 3
 
 	{
 	    "incentiveHolder": [{
-	        "rebateAmount": {float},
+	        "rebateAmount": {float}
 	        "termMonths": {integer},
-	        "apr": {float},
+	        "apr": {float}
 	        "creditRatingTier": {string},
 	        "id": {integer},
 	        "type": {string},
@@ -34,16 +34,16 @@ number: 3
 	        "subprogramId": {integer},
 	        "startDate": {date},
 	        "endDate": {date},
-	        "comments": "",
+	        "comments": {string},
 	        "restrictions": {string},
 	        "name": {string},
-	        "primary": {boolean},
+	        "primary": false,
 	        "incentiveVehicles": [{
 	            "link": {URI}
 	        }],
 	        "zipcodeExceptions": {array},
 	        "categories": {array},
-	        "regions": ["i397"],
+	        "regions": {arra},
 	        "incentiveType": {string},
 	        "optionIds": {array},
 	        "makeIds": [{
@@ -52,17 +52,33 @@ number: 3
 	        "styleIds": [{
 	            "link": {URI}
 	        }]
-	    }]
+	    }
 	}
 	
-| Property      | Description                         					| Visibility                |
-|:--------------|:------------------------------------------------------|:------------------------- |
-| id		    | The style ID											| Edmunds, Partners, Public |
-| name		    | The style name										| Edmunds, Partners, Public |
-| make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
-| model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
-| year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
-| submodel	    | Car submode details									| Edmunds, Partners, Public |
-| trim		    | The car trim											| Edmunds, Partners, Public |
-	
-	
+| Property      	| Description                                              	| Visibility                |
+|:------------------|:----------------------------------------------------------|:------------------------- |
+| rebateAmount  	| The rebate amount in dollars			                   	| Edmunds, Partners, Public |
+| termMonths		| The numbers of months for financing this vehicle         	| Edmunds, Partners, Public |
+| apr				| The APR for this incentive			                   	| Edmunds, Partners, Public |
+| creditRatingTier  | Credit rating that qualifies for this incentive          	| Edmunds, Partners, Public |
+| id				| The incentive ID						                   	| Edmunds, Partners, Public |
+| type  			| Incentive type (see overview)				                | Edmunds, Partners, Public |
+| contentType  		| Incentive content type (see overview)		                | Edmunds, Partners, Public |
+| sourceType  		| Incentive source type (see overview)				        | Edmunds, Partners, Public |
+| subprogramId	 	| *deprecated property*				                   		| Edmunds, Partners, Public |
+| startDate  		| The date this incentive starts		                   	| Edmunds, Partners, Public |
+| endDate  			| The date this incentive ends			                   	| Edmunds, Partners, Public |
+| comments  		| Comments on this incentive			                   	| Edmunds, Partners, Public |
+| restrictions  	| Restrictions on this incentive			                   	| Edmunds, Partners, Public |
+| name  			| The name of the incentive				                   	| Edmunds, Partners, Public |
+| primary  			| Is this a primary incentive?			                   	| Edmunds, Partners, Public |
+| incentiveVehicles | List of vehicles this incentive applies to (*deprecated*)	| Edmunds, Partners, Public |
+| zipcodeExceptions | List of zip codes where this incentive does **not** apply | Edmunds, Partners, Public |
+| categories		| Car categories (see [Vehicle API](/api-documentation/vehicle/))   	| Edmunds, Partners, Public |
+| regions  			| List of region IDs where this incentive applies           	| Edmunds, Partners, Public |
+| incentiveType  	| Incentive type (see overview			                   	| Edmunds, Partners, Public |
+| optionIds  		| List of option this incentive applies to                 	| Edmunds, Partners, Public |
+| makeIds  			| List of car make IDs this incentive applies to           	| Edmunds, Partners, Public |
+| styleIds		  	| List of car style IDs this incentive applies to			| Edmunds, Partners, Public |
+
+
