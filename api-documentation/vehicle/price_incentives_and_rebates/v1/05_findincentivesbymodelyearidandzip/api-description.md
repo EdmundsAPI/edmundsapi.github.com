@@ -48,7 +48,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-					"makeid": "200010382",
+					"modelyearid": "200482808",
 					"zipcode": "90019"
 				};
 
@@ -64,7 +64,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/incentive/incentiverepository/findincentivesbycategoryandzipcode', options, success, fail);
+				res.api('/v1/api/vehicle/incentive/incentiverepository/findincentivesbymodelyearidandzipcode', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

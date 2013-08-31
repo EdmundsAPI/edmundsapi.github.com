@@ -63,7 +63,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/incentive/incentiverepository/findincentivesbycategoryandzipcode', options, success, fail);
+				res.api('/v1/api/vehicle/incentive/incentiverepository/findincentivesbystyleid', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
