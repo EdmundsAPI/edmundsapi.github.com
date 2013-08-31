@@ -16,7 +16,4 @@ overview: page_version
 
 ---
 
-
-### Test page {{page.version}}
-
-
+#### Get the local labor rate in a specific zip code. The returned data will be in dollar per hour.

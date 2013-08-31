@@ -1,11 +1,11 @@
 ---
 layout: api-documentation
-title : 'Get Local Labor Rate in Dollars by Zipcode'
+title : 'Get Local Labor Rate in Dollars per Hour by Zipcode'
 title_active_left_menu: 'Service: Local Labor Rate'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Local Labor Rate in Dollars by Zipcode'
+title-endpoint: 'Get Local Labor Rate in Dollars per Hour by Zipcode'
 spec: service_local_labor_rate
 version: v1
 api: vehicle
@@ -13,7 +13,7 @@ dropdown-link: 'v1/api/maintenance/ziplaborrate'
 
 
 level: 3
-description_edpoint: 'Get Local Labor Rate in Dollars by Zipcode'
+description_edpoint: 'Get Local Labor Rate in Dollars per Hour by Zipcode'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get the local labor rate (dollars per hour) in a specific zip code.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/maintenance/ziplaborrate/{zip code}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The labor rate per hour in 90019 is: $" + res.zipLaborRateHolder[0].laborRate;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/maintenance/ziplaborrate/90019', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
