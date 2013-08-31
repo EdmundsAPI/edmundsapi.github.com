@@ -57,7 +57,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The trim of the first style with True Cost to Own® is: " + res.styles["4dr Hatchback AWD (3.7L 6cyl 6A"].trim;
+					body.innerHTML = "The TVM® price is: " + res.tmvUsd;
 				}
 
 				// Oops, Houston we have a problem!

@@ -22,11 +22,50 @@ number: 1
 
 ### Description
 
+Get the TMV® price for a vehicle given its:
 
+* Style ID
+* Condition
+* Mileage
+* Zip code.
+
+These fields are required. You can also pass an <code>optionid</code> and/or <code>colorid</code> to get a more accurate value.
+
+#### Car Conditions
+
+**Outstanding**
+
+Exceptional mechanical, exterior and interior condition; requires no reconditioning.
+
+Vehicle is in exceptional mechanical, exterior and interior condition with no visible wear; it requires no reconditioning. Paint will have a glossy appearance. Vehicle has no mechanical and/or cosmetic problems and has a clean engine compartment. Exterior and interior are free of any damage. Tires are in nearly new condition. Vehicle has a clean title and has the ability to pass an emissions inspection.
+
+**Clean**
+
+Some normal wear but no major mechanical or cosmetic problems; may require limited reconditioning.
+
+Vehicle shows some normal wear but has no major mechanical and/or cosmetic problems. Paint still has a glossy finish and may have slight scratches or dings. Some reconditioning may be needed. Interior will have minimal fading and wear. Tires have substantial tread remaining. Vehicle has a clean title and has the ability to pass an emissions inspection.
+
+**Average**
+
+May have a few mechanical and/or cosmetic problems and may require a considerable amount of reconditioning 
+
+Vehicle may have a few mechanical and/or cosmetic problems and may require a considerable amount of reconditioning. Exterior paint has some dullness. Vehicle may have a considerable amount of scratches or dings. Interior material is slightly worn and faded. Tires have some useable tread remaining. Vehicle has a clean title and has the ability to pass an emissions inspection.
+
+**Rough**
+
+Several mechanical and/or cosmetic problems requiring significant repairs.
+
+Vehicle has several mechanical and/or cosmetic problems. Exterior and interior need significant repairs. Tires may need to be replaced. Vehicle may need minor repairs to pass an emissions inspection, but has a clean title.
+
+**Damaged**
+
+Major mechanical and/or body damage that may render it in non-safe running condition.
+
+Vehicle has major mechanical and/or body damage that may render it in non-safe running condition. Exterior and interior is damaged or worn. Tires need to be replaced. Vehicle may have a branded title (i.e. salvaged, flooded, frame damaged, etc.). Vehicle may require significant repairs to pass an emissions inspection.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid={style ID}&condition={condition}&mileage={mileage}&zip={zip code}&fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -48,12 +87,17 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {};
+				var options = {
+					"styleid": "101353967",
+					"condition": "Clean",
+					"mileage": "25000",
+					"zip": 90019
+				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The used TMV® price is: " + res.tmv.nationalBasePrice.usedTmvRetail;
 				}
 
 				// Oops, Houston we have a problem!
@@ -62,7 +106,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/tmv/tmvservice/calculateusedtmv', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

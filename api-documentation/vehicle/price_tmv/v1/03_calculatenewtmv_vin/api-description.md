@@ -53,7 +53,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The TMV® price is: " + res.pricing.tmvUsd;
 				}
 
 				// Oops, Houston we have a problem!
@@ -62,7 +62,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/api/v1/vehicle/vin/1N4AL3AP4DC295509/price', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

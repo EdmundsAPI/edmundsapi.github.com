@@ -24,6 +24,10 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | styleId    | The car style ID			             |  				 |               | Yes      |
-| comparator | Sort results by photo shot type       | simple			 |               | Yes      |
+| condition  | The car condition			         | (see overview)	 |               | Yes      |
+| mileage    | The car mileage   			         |               	 |               | Yes      |
+| zip        | The zip code of the area  	         |               	 |               | Yes      |
+| colorid    | Vehicle color ID (&colorid=xxx&colorid=xxx&colorid=xxx for multiples)  	         |               	 |               | No      |
+| optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) 	         |               	 |               | No      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
