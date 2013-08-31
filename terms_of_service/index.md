@@ -61,9 +61,9 @@ By submitting an Application for API Keys, you acknowledge and agree that (i) yo
 
 ### 5. Attribution.
 
-Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the *approved logos* in it to link back to **http://www.edmunds.com**.
+Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the *approved logos* in it to link back to **[http://www.edmunds.com/?id=apis](http://www.edmunds.com/?id=apis)**.
 
-**Do Not:**
+#### DO NOT:
 
 * Change, alter or modify in any way the image of the Edmunds Web Badge — including colors, language, appearance or animations.
 * Make the Web Badge bigger than your Developer Site’s or Developer Application’s name and branding.
