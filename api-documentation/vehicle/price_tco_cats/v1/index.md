@@ -20,7 +20,7 @@ This resource returns the **5-year breakdown values** of all True Cost to Own® 
 
 **Please note** that the TCO® value is only available for up to 5 years. Vehicles that are older than five years **will not** have an accurate TCO® values.
 
-### The TCO® Categories
+### The True Cost to Own® Categories
 
 This is a **typical response** of the two endpoints listed in this resource:
 
@@ -59,35 +59,39 @@ These **seven categories** make up the True Cost to Own® value. The values prop
 
 For example, in the response above we can understand that for this vehicle, it will cost **$3,140 on fuel for the first year** and **$3,534 in the 5th year**.
 
-The categories are as follows:
-
-#### Fuel
-
-The fuel cost in dollars per year.
-
-#### Insurance
-
-The insurance cost in dollars per year. 
-
-#### Maintenance
-
-The maintenance cost in dollars per year.
-
-#### Repairs
-
-Expected repairs cost in dollars per year.
+### Explanation of True Cost to Own® Categories
 
 #### Depreciation
 
-The amount of how much the car will depreciate in dollars per year.
+This is the amount by which the value of a vehicle declines from its purchase price to its estimated resale value. The purchase price employed is the vehicle's Total Cash Price, minus any taxes and fees included in that amount. We estimate the resale value assuming the vehicle will be in "clean" condition, will be driven 15,000 miles per year, and will be sold to a private party.
 
-#### Taxes and Fees
+#### Insurance
 
-The taxes and fees expected to be paid in dollars per year.
+This is the estimated average annual insurance premium in your state. The premium has been determined based on annual premium data for defined driver profiles and coverages (liability, comprehensive and collision) from a major national insurer. While this information is specific to vehicle make, model, model year and body type, your personal information is not taken into consideration and could greatly alter the actual premium quoted by an insurer. Factors that will affect your rate include your age, marital status, credit history, driving record, and the garaging address of your vehicle.
 
 #### Financing
 
-The finance interest expense in dollars per year.
+This is the interest expense on a loan in the amount of the Total Cash Price, assuming a 10% down payment and a loan term of 60 months. The interest rate used is the prevailing rate that banks and other direct automotive lenders are currently charging consumers in your geographic region who have above average credit scores.
+
+Note: Even if you do not finance your vehicle, the inclusion of financing cost in determining True Cost to Own® is still appropriate because it reflects the estimated "opportunity cost" (i.e., the amount you may earn) if you invest the Purchase Price instead of using it to purchase the vehicle.
+
+#### Taxes & Fees
+
+This consists of the base sales (or use) taxes, license and registration fees in your state, and gas guzzler tax if applicable. These taxes and fees are often based on a percentage of the purchase price, and generally decrease as the vehicle ages and loses its value.
+
+Note: the state sales/use tax rate that we use includes the average local and county taxes assessed in that state.
+
+#### Fuel
+
+This expense is based on the revised EPA mileage ratings, assuming consumption consists of 45% highway and 55% city driving and that the vehicle is equipped with the transmission that is standard equipment for that vehicle. Cost estimates are based on the current one-year moving average of self-service prices in your state, using regular unleaded gasoline for vehicles whose manufacturers require regular; premium unleaded gasoline for vehicles whose manufacturers recommend or require premium; or diesel fuel for diesel vehicles.
+
+#### Maintenance
+
+This is the estimated expense of the two types of maintenance: scheduled and unscheduled. Scheduled maintenance is the performance of factory-recommended items at periodic mileage and/or calendar intervals. Unscheduled maintenance includes wheel alignment and the replacement of items such as the battery, brakes, headlamps, hoses, exhaust system parts, taillight/turn signal bulbs, tires and wiper blades/inserts. Estimated tire replacement costs are supplied to Edmunds.com by The Tire Rack, Inc.
+
+#### Repairs
+
+This is the estimated expense for repairs not covered by the vehicle manufacturer's warranties over the five years from the date of purchase, assuming 15,000 miles are driven annually. We estimate this expense based on the cost of a typical "zero deductible" extended warranty for the vehicle, minus the estimated amount of that cost that consists of the warranty provider's overhead and profit.
 
 ### Special Requirements
 

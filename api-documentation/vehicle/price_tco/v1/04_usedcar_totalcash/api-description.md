@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-The Total Cash Price is the vehicle's **True Market Value®** (TMV®) price **plus** typically equipped options, destination charge, base tax and fees assessed by the state, and, if applicable, gas guzzler tax; less any widely available manufacturer-to-customer cash rebates. (However, we do not account for other types of cash rebates or incentives because of the variability of those offers and their eligibility requirements.)
+Total Cash Price is the sum of the vehicle's **Private Party TMV®** price in **CLEAN** condition *plus* **typically equipped options**, and base tax and fees assessed by your state.
 
 ### URL
 
