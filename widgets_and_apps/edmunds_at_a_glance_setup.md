@@ -1,6 +1,6 @@
 ---
 layout: page
-title : 'Edmunds at a Glance - An Edmunds API Widget'
+title : 'Edmunds at a Glance'
 title_parent: Widgets and apps
 header : Edmunds at a Glance
 ---

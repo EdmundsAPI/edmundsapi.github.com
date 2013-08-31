@@ -1,6 +1,6 @@
 ---
 layout: page
-title : 'The New Vehicle Configurator Widget - The Edmunds API'
+title : 'The New Vehicle Configurator Widget'
 title_parent: Widgets and apps
 header : Vehicle configurator
 
