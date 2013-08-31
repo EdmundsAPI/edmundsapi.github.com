@@ -23,7 +23,8 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| styleId    | The car style ID			             |  				 |               | Yes      |
-| comparator | Sort results by photo shot type       | simple			 |               | Yes      |
+| msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
+| zip        | Zip code		                         |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
+| color      | vehicle color (blue, white, black, ..etc)     |                   |               | No       |

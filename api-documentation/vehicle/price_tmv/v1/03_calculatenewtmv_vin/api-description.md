@@ -22,11 +22,11 @@ number: 1
 
 ### Description
 
-
+Get the TMV® price for a specific car VIN given its MSRP price and zip code. This a good API call to use if you have the car VIN and its MSRP. Passing the color parameter (optional) could also help get you a more accurate TMV® price.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/api/v1/vehicle/vin/{VIN}/price?zip={zip code}&msrp={MSRP price}&api_key={api key}
 	
 ### Code Example
 
