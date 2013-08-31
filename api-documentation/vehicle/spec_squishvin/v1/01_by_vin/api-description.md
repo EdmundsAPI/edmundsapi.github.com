@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Decode the supplied Squish VIN to its most basic vehicle specs (i.e. make, model, year, style, trim, engine and transmission details.)
+Decode the supplied Squish VIN into its most basic vehicle specs (i.e. make, model, year, style, trim, engine and transmission details.)
 
 ### URL
 

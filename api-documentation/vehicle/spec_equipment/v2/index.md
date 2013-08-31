@@ -16,7 +16,7 @@ overview: page_version
 
 ---
 
-The vehicle equipment is everything that exists within a car from options, engine, transmission, colors, ...etc. 
+#### The vehicle equipment is everything that exists within a car from options, engine, transmission, colors, ...etc. 
 
 ### Equipment Response Formats
 

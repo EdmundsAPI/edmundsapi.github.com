@@ -16,8 +16,8 @@ overview: page_version
 
 ---
 
-The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style.
+#### The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style.
 
-#### Static Datasets
+### Static Datasets
 
 In the response objects you will get back, you will come across properties like <code>equipmentType</code> and <code>optionType</code>. To understand those better, you should familiarize yourself with the [equipment spec](/api-documentation/vehicle/spec_equipment/v2/) and [options spec](/api-documentation/vehicle/spec_colors_and_options/v2/) resources.
