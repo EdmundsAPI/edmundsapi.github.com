@@ -16,7 +16,4 @@ overview: page_version
 
 ---
 
-
-### Test page {{page.version}}
-
-
+The manufacturer recalls are available in this resource by a car's **model year ID** or by the recall ID.

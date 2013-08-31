@@ -21,8 +21,15 @@ number: 3
 
 ###Response format
 
-	
+	{
+	    "maintenanceStyleNotesHolder": [{
+	        "note1": {string},
+	        "note2": {string},
+	        "style": {URI}
+	    }]
+	}
 
 | Property      | Description                                              	| Visibility                |
 |:--------------|:----------------------------------------------------------|:------------------------- |
-| value         | The TCO® total value					                   	| Edmunds, Partners, Public |
+| notex         | The maintenance note					                   	| Edmunds, Partners, Public |
+| style         | The car style ID							                   	| Edmunds, Partners, Public |

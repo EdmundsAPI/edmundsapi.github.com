@@ -16,7 +16,4 @@ overview: page_version
 
 ---
 
-
-### Test page {{page.version}}
-
-
+The maintenance notes for a particular vehicle. You will need to provide the vehicle's **style ID** in order to pull up the notes.

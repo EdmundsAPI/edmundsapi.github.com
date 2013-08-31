@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get maintenance notes about a specific vehicle by its style ID.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/maintenance/stylesnotes/{style ID}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The note is: " + res.maintenanceStyleNotesHolder[0].note1;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/maintenance/stylesnotes/101353967', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
