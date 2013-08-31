@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get a the TMV® price for a vehicle make at a certain price in a certain area.
+Get a the TMV® price for a vehicle make at a certain MSRP price in a certain area.
 
 ### URL
 

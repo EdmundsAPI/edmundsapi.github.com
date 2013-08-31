@@ -48,7 +48,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-					"makeid": "200010382",
+					"styleid": "200482817",
 					"zipcode": "90019"
 				};
 
