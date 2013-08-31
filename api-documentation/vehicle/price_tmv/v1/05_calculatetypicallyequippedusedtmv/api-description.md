@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-
+Get the TMV® price for a vehicle with ***typically equipped options*** installed. The vehicle style ID and zip code are required.
 
 ### URL
 
@@ -55,7 +55,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The used TMV® price is: " + res.tmv.nationalBasePrice.usedTmvRetail;
+					body.innerHTML = "The TMV® price is: " + res.tmv.nationalBasePrice.usedTmvRetail;
 				}
 
 				// Oops, Houston we have a problem!

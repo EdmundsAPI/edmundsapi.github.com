@@ -21,8 +21,6 @@ number: 3
 
 ###Response format
 
-	
+	{float}
 
-| Property      | Description                                              	| Visibility                |
-|:--------------|:----------------------------------------------------------|:------------------------- |
-| value         | The TCO® total value					                   	| Edmunds, Partners, Public |
+The response is just the TMV® price for the certified vehicle.

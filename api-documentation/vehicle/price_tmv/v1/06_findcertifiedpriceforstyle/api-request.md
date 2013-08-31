@@ -23,6 +23,8 @@ number: 4
 
 ### URL
 
+	https://api.edmunds.com/v1/api/tmv/tmvservice/findcertifiedpriceforstyle?styleid=101353967&zip=90019&fmt=json&api_key={api key}
+	
 ### Response
 
-
+	30788.004
