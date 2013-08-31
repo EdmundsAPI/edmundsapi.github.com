@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Vehicle Recalls by ID'
-title_active_left_menu: 'Service: Recalls'
+title : 'Get Vehicle Recalls by Car Model Year ID'
+title_active_left_menu: 'Service: Maintenance'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Vehicle Recalls by ID'
+title-endpoint: 'Get Vehicle Recalls by Car Model Year ID'
 spec: service_recalls
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/recall/{id}'
+dropdown-link: 'v1/api/maintenance/recallrepository/findbymodelyearid'
 
 
 level: 3
-description_edpoint: 'Get Vehicle Recalls by ID'
+description_edpoint: 'Get Vehicle Recalls by Car Model Year ID'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get list of manufacturer recalls for vehicles with model year ID
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid={model year ID}&fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -47,12 +47,14 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {};
+				var options = {
+					"modelyearid": "100502677"
+				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The recall is: " + res.recallHolder[0].defectDescription;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +63,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/maintenance/recallrepository/findbymodelyearid', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

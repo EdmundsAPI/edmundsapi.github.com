@@ -41,7 +41,7 @@ When you display our True Market Value® (TMV®) prices for any new or used vehi
 
 * For the presentation of TMV for used vehicles (using the appropriate bracketed words):
 
-	***The Edmunds.com TMV® (Edmunds.com True Market Value®) price is Edmunds.com’s determination of the current average base \[“dealer retail”\] \[“private party”\] [“dealer trade-in”] price in the area indicated by the Zip Code provided, unadjusted for color or any options.  (If no Zip Code was provided, this price is the national price.)***
+	***The Edmunds.com TMV® (Edmunds.com True Market Value®) price is Edmunds.com’s determination of the current average base \[“dealer retail”\] \[“private party”\] \[“dealer trade-in”\] price in the area indicated by the Zip Code provided, unadjusted for color or any options.  (If no Zip Code was provided, this price is the national price.)***
 
 #### That you include the following legal notice:
 
