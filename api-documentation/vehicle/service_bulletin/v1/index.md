@@ -16,7 +16,4 @@ overview: page_version
 
 ---
 
-
-### Test page {{page.version}}
-
-
+#### Get the service bulletins for a car by its model year ID or by the bulletin's ID.

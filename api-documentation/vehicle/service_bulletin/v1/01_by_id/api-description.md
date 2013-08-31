@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Service Bulletin by Car Model Year ID'
+title : 'Get Service Bulletin by ID'
 title_active_left_menu: 'Service: Service Bulletin'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Service Bulletin by Car Model Year ID'
+title-endpoint: 'Get Service Bulletin by ID'
 spec: service_bulletin
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/servicebulletinrepository/findbymodelyearid'
+dropdown-link: 'v1/api/maintenance/servicebulletin/{id}'
 
 
 level: 3
-description_edpoint: 'Get Service Bulletin by Car Model Year ID'
+description_edpoint: 'Get Service Bulletin by ID'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get the service bulletin details by ID.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/maintenance/servicebulletin/{id}?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The service bulletin is: " + res.serviceBulletinHolder[0].summaryText;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/maintenance/servicebulletin/190059', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
