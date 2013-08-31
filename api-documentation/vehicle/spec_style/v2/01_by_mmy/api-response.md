@@ -123,7 +123,7 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 | transmission  | The transmission details on this style (see below)	| Edmunds, Partners, Public |
 | options	    | Available options for this style (see below)			| Edmunds, Partners, Public |
 | colors	    | Available colors for this style (see below)			| Edmunds, Partners, Public |
-| squishVins    | All the squishVins associated with this style			| Edmunds, Partners, Public |
+| squishVins    | All the squish Vins associated with this style		| Edmunds, Partners, Public |
 
 
 The properties within the <code>engine</code> object are:
