@@ -54,7 +54,7 @@ overview: page_version
 		"styles":{array of objects},
 		"year": {object}
 		"equipmentType": "TRANSMISSION",
-	    "availability": {string},
+		"availability": {string},
     	"automaticType": {string},
     	"transmissionType": {string},
     	"numberOfSpeeds": {integer}
