@@ -14,14 +14,17 @@ dropdown-link: 'v1/api/maintenance/actionrepository/findmodelyearidswithmaintena
 
 level: 4
 description_edpoint: 'Find Car Model Year IDs with Maintenance Schedules'
-title_md : Sample Request
-number: 4
+title_md : Response format
+number: 3
 
 ---
 
-###Sample Request
+###Response format
 
-### URL
+	{
+	    "longListHolder": {array}
+	}
 
-### Response
-
+| Property      	| Description                                              	| Visibility                |
+|:------------------|:----------------------------------------------------------|:------------------------- |
+| longListHolder	| List of all model year IDs with maintenance schedules    	| Edmunds, Partners, Public |

@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get Maintenance Action by ID'
+title : 'Find Car Model Year IDs with Maintenance Schedules'
 title_active_left_menu: 'Service: Maintenance'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Maintenance Action by ID'
+title-endpoint: 'Find Car Model Year IDs with Maintenance Schedules'
 spec: service_maintenance
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/action/{id}'
+dropdown-link: 'v1/api/maintenance/actionrepository/findmodelyearidswithmaintenanceschedule'
 
 
 level: 3
-description_edpoint: 'Get Maintenance Action by ID'
+description_edpoint: 'Find Car Model Year IDs with Maintenance Schedules'
 title_md : Description
 number: 1
 
@@ -21,11 +21,11 @@ number: 1
 
 ### Description
 
-
+Get a list of model year IDs with available maintenance schedule information.
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/maintenance/actionrepository/findmodelyearidswithmaintenanceschedule?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -52,7 +52,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The first model year ID is: " + res.longListHolder[0];
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +61,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/maintenance/actionrepository/findmodelyearidswithmaintenanceschedule', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
