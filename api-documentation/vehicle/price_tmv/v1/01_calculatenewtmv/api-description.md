@@ -25,7 +25,7 @@ number: 1
 
 ### URL
 
-	https://
+	https://api.edmunds.com/v1/api/tmv/tmvservice/calculatenewtmv?styleid={style ID}&zip={zip code}&fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -47,12 +47,15 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
-				var options = {};
+				var options = {
+					"styleid": "200419751",
+					"zip": 90019
+				};
 
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The average rating for this vehicle is: " + res.averageRating;
+					body.innerHTML = "The used TMV® price is: " + res.tmv.nationalBasePrice.usedTmvRetail;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,7 +64,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('', options, success, fail);
+				res.api('/v1/api/tmv/tmvservice/calculatenewtmv', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };
