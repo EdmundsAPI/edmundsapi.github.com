@@ -1,6 +1,6 @@
 ---
 layout: page
-title : 'The TMV Widget'
+title : 'The TMV® Widget'
 title_parent: Widgets and apps
 header : True market value
 
