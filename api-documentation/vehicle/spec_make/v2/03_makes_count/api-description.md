@@ -53,7 +53,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total Number of New Makes is: " + res.makesCount;
+					body.innerHTML = "Total Number of New Makes is: " + 
+					res.makesCount;
 				}
 
 				// Oops, Houston we have a problem!

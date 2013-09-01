@@ -31,37 +31,37 @@ Get the list of models and model/year IDs for __NEW__ Lexus cars
 
 	{
 		"id": 200001623,
-		"models":[{
-			"id": "Lexus_CT_200h",
-			"name":	"CT 200h",
-			"niceName": "ct200h",
-			"years":[{
-				"id": 100531231,
-				"year": 2011
-			},
-			....
-			{
-				"id": 100537990,
-				"year": 2012
-			}]
-		},
-		....
-		{
-			"id": "Lexus_ES_250",
-			"name": "ES 250",
-			"niceName": "es250",
-			"years": [{
-				"id": 2029,
-				"year": 1990
-			},
-			....
-			{
-				"id": 2030,
-				"year": 1991
-			}]
-		}],
 		"name": "Lexus",
-		"niceName": "lexus"
+		"niceName": "lexus",
+		"models": [
+			{
+				"id": "Lexus_CT_200h",
+				"name":	"CT 200h",
+				"niceName": "ct200h",
+				"years": [
+					{
+						"id":200437666,
+						"year":2013
+					}
+				]
+			},
+			....
+			{
+				"id": "Lexus_IS_350",
+				"name": "IS 350",
+				"niceName": "is350",
+				"years": [
+					{
+						"id": 200432925,
+						"year": 2013
+					},
+					{
+						"id": 200443784,
+						"year": 2014
+					}
+				]
+			},
+		]
 	}
 
 ### Sample Request 2
@@ -76,39 +76,44 @@ Get the list of models and model/year IDs and their states (i.e. new, used, futu
 
 	{
 		"id": 200001623,
-		"models":[{
-			"id": "Lexus_CT_200h",
-			"name":	"CT 200h",
-			"niceName": "ct200h",
-			"years":[{
-				"id": 100531231,
-				"states": ["USED"],
-				"year": 2011
-			},
-			....
-			{
-				"id": 100537990,
-				"states": ["USED"],
-				"year": 2012
-			}]
-		},
-		....
-		{
-			"id": "Lexus_ES_250",
-			"name": "ES 250",
-			"niceName": "es250",
-			"years": [{
-				"id": 2029,
-				"states": ["USED"],
-				"year": 1990
-			},
-			....
-			{
-				"id": 2030,
-				"states": ["USED"],
-				"year": 1991
-			}]
-		}],
 		"name": "Lexus",
-		"niceName": "lexus"
+		"niceName": "lexus",
+		"models": [
+			{
+				"id": "Lexus_CT_200h",
+				"name":	"CT 200h",
+				"niceName": "ct200h",
+				"years": [
+					{
+						"id": 200437666,
+						"year": 2013,
+						"states": ["NEW"]
+					}
+				],
+				"states": [
+					"USED",
+					"NEW"
+				]
+			},
+			....
+			{
+				"id": "Lexus_ES_350",
+				"name": "ES 350",
+				"niceName": "es350",
+				"years": [
+					{
+						"id": 100539469,
+						"year": 2013,
+						"states": [
+							"USED",
+							"NEW"
+						]
+					}
+				],
+				"states": [
+					"USED",
+					"NEW"
+				]
+			}
+		]
 	}

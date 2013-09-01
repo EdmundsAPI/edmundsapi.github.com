@@ -35,7 +35,7 @@ Each element in the <code>makes</code> array follows this format:
 
 	{
 		"id": {integer},
-		"models":{array of objects},
+		"models": {array of objects},
 		"name": {string},
 		"niceName": {string}
 	}
@@ -54,7 +54,7 @@ Each element in the <code>models</code> array follows this format:
 		"name":	{string},
 		"niceName": {string},
 		"states": {array of strings}, // only when view=full
-		"years":{array of objects}
+		"years": {array of objects}
 	}
 
 | Property      | Description                                                    | Visibility                |
