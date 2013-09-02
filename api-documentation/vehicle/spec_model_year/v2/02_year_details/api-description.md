@@ -22,7 +22,7 @@ number: 1
 
 ### Description
 
-Get the list of models and model/year IDs belonging to a specific car make.
+Get the style details for a specific car make/mode/year.
 
 ### URL
 
@@ -37,14 +37,14 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Get models and model/year IDs for Lexus</title>
+		<title>Get models and model/year IDs for the 2011 Lexus RX-350</title>
 	</head>
 
 	<body>
 		<div id="results-body"></div>
 		<script>
 		  	window.sdkAsyncInit = function() {
-		    	// Instantiate the SDK
+				// Instantiate the SDK
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
@@ -53,7 +53,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first style for the 2011 Lexus RX-350 " + res.styles[0].name;
+					body.innerHTML = "The first style for the 2011 Lexus RX-350 " + 
+					res.styles[0].name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -64,7 +65,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Fire the API call
 				res.api('/api/vehicle/v2/lexus/rx350/2011', options, success, fail);
 
-			    // Additional initialization code such as adding Event Listeners goes here
+				// Additional initialization code such as adding Event Listeners goes here
 		  };
 
 		  // Load the SDK asynchronously

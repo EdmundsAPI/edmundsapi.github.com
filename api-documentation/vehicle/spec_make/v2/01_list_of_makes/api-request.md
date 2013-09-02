@@ -41,13 +41,16 @@ Get the list of all **new** car makes with <code>view=full</code>
 	               "years":[
 	                  {
 	                     "id":100538929,
-	                     "year":2013
+	                     "year":2013,
+	                     "states":["USED","NEW"]
 	                  },
 	                  {
 	                     "id":200471908,
-	                     "year":2014
+	                     "year":2014,
+	                     "states":["NEW"]
 	                  }
-	               ]
+	               ],
+	               "states":["NEW","USED"]
 	            },
 	            ...
 	            {
@@ -57,13 +60,16 @@ Get the list of all **new** car makes with <code>view=full</code>
 	               "years":[
 	                  {
 	                     "id":100537249,
-	                     "year":2012
+	                     "year":2012,
+	                     "states":["USED","NEW"]
 	                  },
 	                  {
 	                     "id":200441835,
-	                     "year":2013
+	                     "year":2013,
+	                     "states":["NEW"]
 	                  }
-	               ]
+	               ],
+	               "states":["USED","NEW"]
 	            }
 	         ]
 	      },
@@ -80,9 +86,11 @@ Get the list of all **new** car makes with <code>view=full</code>
 	               "years":[
 	                  {
 	                     "id":200425618,
-	                     "year":2013
+	                     "year":2013,
+	                     "states":["NEW"]
 	                  }
-	               ]
+	               ],
+	               "states":["USED","NEW"]
 	            },
 	            ...
 	            {
@@ -92,13 +100,16 @@ Get the list of all **new** car makes with <code>view=full</code>
 	               "years":[
 	                  {
 	                     "id":100539229,
-	                     "year":2013
+	                     "year":2013,
+	                     "states":["USED","NEW"]
 	                  },
 	                  {
 	                     "id":200484498,
-	                     "year":2014
+	                     "year":2014,
+	                     "states":["NEW"]
 	                  }
-	               ]
+	               ],
+	               "states":["USED","NEW"]
 	            }
 	         ]
 	      },
@@ -114,9 +125,11 @@ Get the list of all **new** car makes with <code>view=full</code>
 	               "years":[
 	                  {
 	                     "id":200418482,
-	                     "year":2013
+	                     "year":2013,
+	                     "states":["NEW"]
 	                  }
-	               ]
+	               ],
+	               "states":["USED","NEW"]
 	            }
 	         ]
 	      }
@@ -130,7 +143,7 @@ Get the list of all **new** car makes
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=xxxxx&state=new
+	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={api key}&state=new
 
 #### Response
 
@@ -145,16 +158,13 @@ Get the list of all **new** car makes
 	               "id":"Acura_ILX",
 	               "name":"ILX",
 	               "niceName":"ilx",
-				   "states": ["NEW", "USED"],
 	               "years":[
 	                  {
 	                     "id":100538929,
-	                     "states": ["NEW", "USED"],
 	                     "year":2013
 	                  },
 	                  {
 	                     "id":200471908,
-	                     "states": ["NEW", "USED"],
 	                     "year":2014
 	                  }
 	               ]
@@ -164,16 +174,13 @@ Get the list of all **new** car makes
 	               "id":"Acura_ZDX",
 	               "name":"ZDX",
 	               "niceName":"zdx",
-	               "states": ["NEW", "USED"],
 	               "years":[
 	                  {
 	                     "id":100537249,
-	                     "states": ["NEW", "USED"],
 	                     "year":2012
 	                  },
 	                  {
 	                     "id":200441835,
-	                     "states": ["NEW", "USED"],
 	                     "year":2013
 	                  }
 	               ]
@@ -190,11 +197,9 @@ Get the list of all **new** car makes
 	               "id":"Volvo_C30",
 	               "name":"C30",
 	               "niceName":"c30",
-	               "states": ["NEW", "USED"],
 	               "years":[
 	                  {
 	                     "id":200425618,
-	                     "states": ["NEW", "USED"],
 	                     "year":2013
 	                  }
 	               ]
@@ -204,16 +209,13 @@ Get the list of all **new** car makes
 	               "id":"Volvo_XC90",
 	               "name":"XC90",
 	               "niceName":"xc90",
-	               "states": ["NEW", "USED"],
 	               "years":[
 	                  {
 	                     "id":100539229,
-	                     "states": ["NEW", "USED"],
 	                     "year":2013
 	                  },
 	                  {
 	                     "id":200484498,
-	                     "states": ["NEW", "USED"],
 	                     "year":2014
 	                  }
 	               ]
@@ -229,11 +231,9 @@ Get the list of all **new** car makes
 	               "id":"smart_fortwo",
 	               "name":"fortwo",
 	               "niceName":"fortwo",
-	               "states": ["NEW", "USED"],
 	               "years":[
 	                  {
 	                     "id":200418482,
-	                     "states": ["NEW", "USED"],
 	                     "year":2013
 	                  }
 	               ]

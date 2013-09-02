@@ -20,7 +20,7 @@ number: 4
 
 ### Sample Request 1
 
-Get the list of model years and their styles and trims for all **New Honda Civics** 
+Get the list of model years and their styles and trims for all **new Honda Civics**.
 
 #### URL
 
@@ -55,8 +55,7 @@ Get the list of model years and their styles and trims for all **New Honda Civic
 	        }
 	      ]
 	    }
-	  ],
-	  "yearsCount": 1
+	  ]
 	}
 	
 ### Sample Request 2
@@ -70,19 +69,17 @@ Get the list of model years and their styles and trims for all **New Honda Civic
 #### Response
 
 	{
+	  "id": 200442557,
+	  "name": "Civic",
+	  "niceName": "civic",
+	  "make": {
+	     "id": 200001444,
+	     "name": "Honda",
+	     "niceName": "honda"
+	  },
 	  "years": [
 	    {
 	      "id": 200442557,
-	      "make": {
-	        "id": 200001444,
-	        "name": "Honda",
-	        "niceName": "honda"
-	      },
-	      "model": {
-	        "id": "Honda_Civic",
-	        "name": "Civic",
-	        "niceName": "civic"
-	      },
 	      "year": 2013,
 	      "styles": [
 	        {
@@ -115,10 +112,13 @@ Get the list of model years and their styles and trims for all **New Honda Civic
 	        }
 	      ],
 	      "states": [
-	        "NEW",
-	        "USED"
+	        "USED",
+	        "NEW"
 	      ]
 	    }
 	  ],
-	  "yearsCount": 1
+	  "states": [
+	    "USED",
+	    "NEW"
+	  ]
 	}

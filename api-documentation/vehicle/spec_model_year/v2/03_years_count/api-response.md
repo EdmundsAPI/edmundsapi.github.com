@@ -35,11 +35,11 @@ number: 3
 
 	{
 	   "years":[
-	   		{
-			"id": {integer},
+	     {
+	         "id": {integer},
 	         "stylesCount": {integer},
 	         "year": {integer}
-			}
+	     }
 	   ],
 	   "yearsCount": {integer}
 	}

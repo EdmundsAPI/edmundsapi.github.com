@@ -40,8 +40,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<body>
 		<div id="results-body"></div>
 		<script>
-		  	window.sdkAsyncInit = function() {
-		    	// Instantiate the SDK
+			window.sdkAsyncInit = function() {
+				// Instantiate the SDK
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
@@ -50,7 +50,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first make in the response is " + res.makes[0].name;
+					body.innerHTML = "The first make in the response is " + 
+					res.makes[0].name;
 				}
 
 				// Oops, Houston we have a problem!
@@ -61,17 +62,18 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Fire the API call
 				res.api('/api/vehicle/v2/makes', options, success, fail);
 
-			    // Additional initialization code such as adding Event Listeners goes here
-		  };
+				// Additional initialization code such as 
+				// adding Event Listeners goes here
+			};
 
-		  // Load the SDK asynchronously
-		  (function(d, s, id){
-		     	var js, sdkjs = d.getElementsByTagName(s)[0];
-		     	if (d.getElementById(id)) {return;}
-		     	js = d.createElement(s); js.id = id;
-		     	js.src = "path/to/sdk/file";
-		     	sdkjs.parentNode.insertBefore(js, sdkjs);
-		   }(document, 'script', 'edmunds-jssdk'));
+		// Load the SDK asynchronously
+		(function(d, s, id){
+			var js, sdkjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "path/to/sdk/file";
+			sdkjs.parentNode.insertBefore(js, sdkjs);
+		}(document, 'script', 'edmunds-jssdk'));
 		</script>
 	</body>
 	</html>

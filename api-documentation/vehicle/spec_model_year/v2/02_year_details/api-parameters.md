@@ -24,5 +24,5 @@ number: 2
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:--------------|:---------------------------|:----------------- |:------------- |:-------- |
 | view			| Response detail level      | basic, full       | basic         | No       |
-| fmt			| Response detail level      | json              | json          | Yes      |
-| api_key    	| vehicle api key            |                   |               | Yes      |
+| fmt			| Response format            | json              | json          | Yes      |
+| api_key    	| Vehicle API key            |                   |               | Yes      |
