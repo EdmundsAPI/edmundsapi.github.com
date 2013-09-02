@@ -21,7 +21,7 @@ number: 4
 
 ### Sample Request 1
 
-Get the list of model years and styles for ***used*** Honda Civics
+Get the list of model years and styles for ***used*** Honda Civics.
 
 #### URL
 

@@ -29,7 +29,7 @@ number: 3
 
 | Property      | Description                                              | Visibility                |
 |:--------------|:---------------------------------------------------------|:------------------------- |
-| years   		| An array of objects describing car mode years            | Edmunds, Partners, Public |
+| years   		| An array of objects describing car model years           | Edmunds, Partners, Public |
 | yearsCount 	| Total number of car models							   | Edmunds, Partners, Public |
 
 Each element in the <code>years</code> array follows this format:
@@ -47,7 +47,7 @@ Each element in the <code>years</code> array follows this format:
 |:--------------|:----------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
 | make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
-| model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
+| model         | Car model details (id, name and niceName)					| Edmunds, Partners, Public |
 | states        | The state of this model/year (e.g. NEW, USED, or FUTURE) 	| Edmunds, Partners, Public |
 | year		    | The model year				                         	| Edmunds, Partners, Public |
 | styles        | List of styles belonging to this model year (see below)   | Edmunds, Partners, Public |
@@ -67,3 +67,15 @@ Each element in the <code>styles</code> array follows this format:
 | name	        | The car style name										     | Edmunds, Partners, Public |
 | submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |
 | trim      	| The vehicle trim for this car style 			                 | Edmunds, Partners, Public |
+
+Each <code>submodel</code> object follows this format:
+
+	{
+		"body": {string},
+		"modelName": {string}
+	}
+
+| Property      | Description                                                         | Visibility                 |
+|:--------------|:--------------------------------------------------------------------|:-------------------------- |
+| body          | The type of car body (e.g. "Sedan", "Hatchback")                    | Edmunds, Partners, Public  |
+| modelName     | The name of this submodel (e.g. "Civic Hatchback", "X5 SUV Diesel") | Edmunds, Partners, Public  |

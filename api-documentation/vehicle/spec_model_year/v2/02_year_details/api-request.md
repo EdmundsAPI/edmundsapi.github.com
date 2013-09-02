@@ -21,7 +21,7 @@ number: 4
 
 ### Sample Request 1
 
-Get style details for the 2011 Lexus RX-350
+Get style details for the 2011 Lexus RX-350.
 
 #### URL
 

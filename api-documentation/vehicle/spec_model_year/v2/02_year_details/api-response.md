@@ -28,7 +28,7 @@ number: 3
 		"make": {object},
 		"model": {object},
 		"states" {array of strings},
-		"styles":{array of objects},
+		"styles": {array of objects},
 		"year": {integer}
 	}
 	
@@ -36,7 +36,7 @@ number: 3
 |:--------------|:----------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the model year		                   	| Edmunds, Partners, Public |
 | make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
-| model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
+| model         | Car model details (id, name and niceName)					| Edmunds, Partners, Public |
 | states        | The state of this model/year (e.g. NEW, USED, or FUTURE) 	| Edmunds, Partners, Public |
 | year		    | The model year				                         	| Edmunds, Partners, Public |
 	
@@ -53,7 +53,17 @@ Each element in the <code>styles</code> array follows this format:
 |:--------------|:---------------------------------------------------------------|:------------------------- |
 | id            | The Edmunds ID for the car style 	                             | Edmunds, Partners, Public |
 | name          | The style name			                                     | Edmunds, Partners, Public |
-| submodel      | Car submodel details (body, modelName, ...etc)                 | Edmunds, Partners, Public |
+| submodel      | Car submodel details (body, modelName, etc.)                   | Edmunds, Partners, Public |
 | trim	        | The car trim associated with this style 				         | Edmunds, Partners, Public |
 
-		
+Each <code>submodel</code> object follows this format:
+
+	{
+		"body": {string},
+		"modelName": {string}
+	}
+
+| Property      | Description                                                         | Visibility                 |
+|:--------------|:--------------------------------------------------------------------|:-------------------------- |
+| body          | The type of car body (e.g. "Sedan", "Hatchback")                    | Edmunds, Partners, Public  |
+| modelName     | The name of this submodel (e.g. "Civic Hatchback", "X5 SUV Diesel") | Edmunds, Partners, Public  |

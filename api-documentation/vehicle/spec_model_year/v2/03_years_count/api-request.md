@@ -20,7 +20,7 @@ number: 4
 
 ###Sample Request 1
 
-Get the total number of **new** model years for **Acura MDX**
+Get the total number of **new** model years for the **Acura MDX**.
 
 #### URL
 
@@ -29,7 +29,7 @@ Get the total number of **new** model years for **Acura MDX**
 #### Response
 
 	{
-		"makesCount": 60
+		"yearsCount": 2
 	}
 	
 ###Sample Request 2
