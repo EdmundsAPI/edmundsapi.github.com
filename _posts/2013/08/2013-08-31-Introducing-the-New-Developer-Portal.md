@@ -29,6 +29,7 @@ links:
 page_title: Introducing the New Developer Portal
 excerpt: "New portal sports new documentation format, Certified Developer Network and Affiliate programs, FAQs, Examples, ...etc."
 published: true
+author_picture: Ismail_Elshareef.jpg
 ---
 
 We're very excited to unveil our new **Edmunds Developer Network Portal**. The new portal has been completely redesigned with new flows and format to make it as easy as possible for developers to leverage the Edmunds.com data.
