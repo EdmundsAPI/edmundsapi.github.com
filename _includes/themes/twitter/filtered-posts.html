@@ -43,7 +43,7 @@
 	  for (var i in queries) {
 	    var pair = queries[i].split("=");
 	    if (pair[0] == param) {
-	      return pair[1];
+	      return decodeURIComponent(pair[1]);
 	    }
 	  }
 	  return null;
@@ -55,7 +55,7 @@
 	  for (var i in posts) {
 	    var post = posts[i],
 	        prop = post[property];
-	    
+	    	    
 	    post.tags.pop();
 	    
 	    if (prop.constructor == String) {
