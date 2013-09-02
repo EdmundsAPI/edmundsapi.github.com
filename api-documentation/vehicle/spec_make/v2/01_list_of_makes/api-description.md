@@ -62,7 +62,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Fire the API call
 				res.api('/api/vehicle/v2/makes', options, success, fail);
 
-				// Additional initialization code such as adding Event Listeners goes here
+				// Additional initialization code such as 
+				// adding Event Listeners goes here
 			};
 
 		// Load the SDK asynchronously
