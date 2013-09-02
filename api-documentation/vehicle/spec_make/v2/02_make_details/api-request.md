@@ -76,39 +76,41 @@ Get the list of models and model/year IDs and their states (i.e. new, used, futu
 
 	{
 		"id": 200001623,
-		"models":[{
+		"name": "Lexus",
+		"niceName": "lexus",
+		"models":[
+		  {
 			"id": "Lexus_CT_200h",
 			"name":	"CT 200h",
 			"niceName": "ct200h",
-			"years":[{
-				"id": 100531231,
-				"states": ["USED"],
-				"year": 2011
-			},
-			....
-			{
+			"years":[
+			  {
+				"id": 200437666,
+				"year": 2013,
+				"states": ["NEW"]
+			  },
+			  ...
+			  {
 				"id": 100537990,
-				"states": ["USED"],
-				"year": 2012
-			}]
-		},
-		....
-		{
-			"id": "Lexus_ES_250",
-			"name": "ES 250",
-			"niceName": "es250",
-			"years": [{
-				"id": 2029,
-				"states": ["USED"],
-				"year": 1990
-			},
-			....
-			{
-				"id": 2030,
-				"states": ["USED"],
-				"year": 1991
-			}]
-		}],
-		"name": "Lexus",
-		"niceName": "lexus"
+				"year": 2012,
+				"states": ["USED"]
+			  }
+			],
+			"states":["USED", "NEW"]
+		  },
+		  ...
+		  {
+			"id": "Lexus_ES_350",
+			"name": "ES 350",
+			"niceName": "es350",
+			"years": [
+			  {
+				"id": 2013,
+				"year": 100539469,
+				"states":["USED", "NEW"]
+			  }
+			],
+			"states":["USED", "NEW"]
+		  }
+		]
 	}

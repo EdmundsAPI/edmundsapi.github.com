@@ -12,12 +12,12 @@ weight: 1
 
 **Welcome!** To get you started, let's go over the automotive datasets we've made available for you through the Edmunds API. Once you [register for a key](http://edmunds.mashery.com/member/register), you will be able to access the following datasets:
 
-* **Vehicle Specs**: Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, ...etc.
-* **Vehicle Pricing**: Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, ...etc.
-* **Vehicle Service**: Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, ...etc.
-* **Vehicle Content**: Consumer reviews, editorial reviews, editorial articles, ...etc.
+* **Vehicle Specs**: Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, etc.
+* **Vehicle Pricing**: Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, etc.
+* **Vehicle Service**: Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, etc.
+* **Vehicle Content**: Consumer reviews, editorial reviews, editorial articles, etc.
 * **Vehicle Media**: Vehicle photos.
-* **Dealership Content**: Dealership info, consumer reviews, list of cars for sale, dealer pricing, ...etc.
+* **Dealership Content**: Dealership info, consumer reviews, list of cars for sale, dealer pricing, etc.
 
 These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
 
@@ -25,7 +25,7 @@ This overview covers the core concepts that you need to know before you could fu
 
 ### Data Hierarchy
 
-Exploring a new API could be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
+Exploring a new API can be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
 In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the **car Style ID** or the **car Model Year ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
