@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Communication
+category : 'Communication'
 tags : ['Edmunds']
 title: 'Introducing the API Affiliate Network'
 by: 'Ismail Elshareef'
