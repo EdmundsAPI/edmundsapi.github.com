@@ -1,33 +1,34 @@
 ---
 layout: post
-category : Communication
-tags : ['Edmunds', 'API', 'Developer Portal', 'SSL', 'OAuth 2.0', 'API docs', 'Affiliate', 'Certified Developers', 'Javascript', 'SDK', 'Status Dashboard']
-title: 'The Edmunds API Blog - Introducing the New Developer Portal'
-by: 'Ismail Elshareef'
-author_url: 'https://twitter.com/ielshareef/'
-author_description: 'Senior Director, Open Platform initiative'
-
-links: [
-		{
-			name: 'API Overview',
-			url: '/api-documentation/overview/'
-		},
-		{
-			name: 'Edmunds Certified Developer Network',
-			url: '/certified-dev.html'
-		},
-		{
-			name: 'API Affiliate Program',
-			url: '/api_affiliate_network/'
-		},
-		{
-			name: 'OAuth 2.0 Simplified',
-			url: 'http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified'
-		}
-	]
-page_title: 'Introducing the New Developer Portal'
-
+category: Communication
+tags: 
+  - Edmunds
+  - API
+  - Developer Portal
+  - SSL
+  - OAuth 2.0
+  - API docs
+  - Affiliate
+  - Certified Developers
+  - Javascript
+  - SDK
+  - Status Dashboard
+title: "The Edmunds API Blog - Introducing the New Developer Portal"
+by: Ismail Elshareef
+author_url: "https://twitter.com/ielshareef/"
+author_description: "Senior Director, Open Platform initiative"
+links: 
+  - name: API Overview
+    url: "/api-documentation/overview/"
+  - name: Edmunds Certified Developer Network
+    url: "/certified-dev.html"
+  - name: API Affiliate Program
+    url: /api_affiliate_network/
+  - name: OAuth 2.0 Simplified
+    url: "http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified"
+page_title: Introducing the New Developer Portal
 excerpt: "New portal sports new documentation format, Certified Developer Network and Affiliate programs, FAQs, Examples, ...etc."
+published: true
 ---
 
 We're very excited to unveil our new **Edmunds Developer Network Portal**. The new portal has been completely redesigned with new flows and format to make it as easy as possible for developers to leverage the Edmunds.com data.
@@ -59,4 +60,3 @@ We have a ton of new goodies available to you in this new portal. Let's get righ
 We love to hear your feedback, suggestions, and comments on the new portal and our API in general. You can [tweets us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com) or post a comment on the [forum](http://edmunds.mashery.com/forum).
 
 Happy coding!
-
