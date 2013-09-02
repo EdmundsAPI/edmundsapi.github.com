@@ -18,11 +18,11 @@ overview: page_version
 
 #### A vehicle _model year_ for a vehicle model is the *calendar year* designation assigned by the manufacturer to the annual version of that model. You can get a list of car model years for a specific car make and model via the following endpoints (accessible from the drop-down menu above):
 
-1. **Get Total Count of Model Years for a Car Make/Model**: Get the total number of model years of a specific car make/model. You can use filters to get subtotals (e.g. give me the total number of **used** **1999** model years for a car make/model)
+1. **Get a List of Car Model Years for a Specific Car Make/Model**: You can get the entire list of car model years or use some basic filters to return the array of car model years you're interested in for a specific car make/model.
 
-2. **Get Details on a Specific Car Make/Model/Year**: Same as the first endpoint but this one returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
+2. **Get Details on a Specific Car Make/Model/Year**: Returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
 
-3. **Get a List of Car Model Years for a Specific Car Make/Model**: You can get the entire list of car model year or use some basic filters to return the array of car model years you're interested in for a specific car make/model.
+3. **Get Total Count of Model Years for a Car Make/Model**: Get the total number of model years of a specific car make/model. You can use filters to get subtotals (e.g. give me the total number of **used** **1999** model years for a car make/model).
 
 
 These three endpoints provide all the necessary data points.

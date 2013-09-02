@@ -48,9 +48,9 @@ number: 3
 	   "modelsCount": {integer}
 	}
 	
-| Property      | Description                         					| Visibility                |
-|:--------------|:------------------------------------------------------|:------------------------- |
-| models	    | Array of model year counts and model name objects		| Edmunds, Partners, Public |
-| yearsCount	| The total number of model years for this model		| Edmunds, Partners, Public |
-| niceName	    | The URL-friendly name of this model 					| Edmunds, Partners, Public |
-| modelsCount   | The total count of car models for a specific car make	| Edmunds, Partners, Public |
+| Property      | Description                         					    | Visibility                |
+|:--------------|:------------------------------------------------------    |:------------------------- |
+| models	    | Array objects including model year counts and model names | Edmunds, Partners, Public |
+| yearsCount	| The total number of model years for this model		    | Edmunds, Partners, Public |
+| niceName	    | The URL-friendly name of this model 					    | Edmunds, Partners, Public |
+| modelsCount   | The total count of car models for a specific car make	    | Edmunds, Partners, Public |

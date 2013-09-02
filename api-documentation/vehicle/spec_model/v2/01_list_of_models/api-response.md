@@ -54,7 +54,7 @@ Each element in the <code>years</code> array follows this format:
 	{
 		"id": {integer},
 		"states": {array of strings}, // only when view=full
-		"styles":{array of objects},
+		"styles": {array of objects},
 		"year": {integer}
 	}
 

@@ -21,7 +21,7 @@ number: 4
 
 ### Sample Request 1
 
-Get the list of model years and styles for ***used*** Honda Civics
+Get the list of model years and styles for ***used*** Honda Civics.
 
 #### URL
 
@@ -68,7 +68,7 @@ Get the list of model years and styles for ***used*** Honda Civics
 	        }
 	      ]
 	    },
-		...
+	    ...
 	    {
 	      "id": 100505002,
 	      "year": 2005,
@@ -103,7 +103,7 @@ Get the list of model year and style details and their states (i.e. new, used, f
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/bmw/x5?year=2103&view=full&fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/bmw/x5?year=2013&view=full&fmt=json&api_key={api key}
 
 #### Response
 

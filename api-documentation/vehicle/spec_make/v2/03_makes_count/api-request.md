@@ -29,7 +29,7 @@ Get the total amount of car makes in the system
 #### Response
 
 	{
-		"makesCount": 60
+		"makesCount": 61
 	}
 
 ###Sample Request 2

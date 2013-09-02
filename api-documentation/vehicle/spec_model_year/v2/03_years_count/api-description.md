@@ -35,14 +35,14 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Edmunds API Example</title>
+		<title>Get the number of Model Years for the Acura MDXs</title>
 	</head>
 
 	<body>
 		<div id="results-body"></div>
 		<script>
 		  	window.sdkAsyncInit = function() {
-		    	// Instantiate the SDK
+				// Instantiate the SDK
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
@@ -53,7 +53,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total number of new Acura MDXs is: " + res.yearsCount;
+					body.innerHTML = "Total number of new Acura MDXs is: " + 
+					res.yearsCount;
 				}
 
 				// Oops, Houston we have a problem!
@@ -64,7 +65,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Fire the API call
 				res.api('/api/vehicle/v2/acura/mdx/years/count', options, success, fail);
 
-			    // Additional initialization code such as adding Event Listeners goes here
+				// Additional initialization code such as adding Event Listeners goes here
 		  };
 
 		  // Load the SDK asynchronously

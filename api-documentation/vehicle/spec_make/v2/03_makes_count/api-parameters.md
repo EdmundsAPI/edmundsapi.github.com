@@ -26,4 +26,4 @@ number: 2
 | year       | The year of the car makes             | 1990-current year |               | No       |
 | view       | the level of details in the response  | basic, full		 | basic         | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

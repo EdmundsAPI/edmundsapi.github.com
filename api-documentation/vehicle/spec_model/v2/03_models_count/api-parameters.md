@@ -23,6 +23,6 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | state      | The state of the car model            | new, used, future |               | No       |
-| view       | the level of details in the response  | basic, full		 | basic         | No       |
+| view       | Response level detail                 | basic, full		 | basic         | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

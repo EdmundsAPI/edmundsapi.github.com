@@ -34,7 +34,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Get a list of makes</title>
+		<title>Get a list of models for a specific make</title>
 	</head>
 
 	<body>
@@ -50,7 +50,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first model in the response is " + res.models[0].name;
+					body.innerHTML = "The first model in the response is " + 
+					res.models[0].name;
 				}
 
 				// Oops, Houston we have a problem!
