@@ -44,7 +44,7 @@
     for (var i in queries) {
       var pair = queries[i].split("=");
       if (pair[0] == param) {
-        return pair[1];
+        return decodeURIComponent(pair[1]);
       }
     }
     return null;
