@@ -20,11 +20,11 @@ number: 1
 
 ### Description
 
-Get the total number of all Lexus models available in the API.
+Get the total number of models available for a specific car make.
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/lexus/models/count?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/{make}/models/count?fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -35,7 +35,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Edmunds API Example</title>
+		<title>Get the number of Lexus models</title>
 	</head>
 
 	<body>
@@ -51,7 +51,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "Total number of Lexus models are: " + res.modelsCount;
+					body.innerHTML = "Total number of Lexus models are: " + 
+					res.modelsCount;
 				}
 
 				// Oops, Houston we have a problem!

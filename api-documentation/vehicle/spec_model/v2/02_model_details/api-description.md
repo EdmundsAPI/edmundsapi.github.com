@@ -37,7 +37,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Get models and model/year IDs for Lexus</title>
+		<title>Get model year and style details for Toyota Camry</title>
 	</head>
 
 	<body>
@@ -53,7 +53,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Callback function to be called when the API response is returned
 				function success(res) {
 					var body = document.getElementById('results-body');
-					body.innerHTML = "The first style name for this Toyota Camry is " + res.years[0].styles[0].name;
+					body.innerHTML = "The first style name for this Toyota Camry is " + 
+					res.years[0].styles[0].name;
 				}
 
 				// Oops, Houston we have a problem!

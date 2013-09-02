@@ -20,7 +20,7 @@ number: 4
 
 ###Sample Request 1
 
-Get the total ***new*** Toyota models
+Get the total number of ***new*** Toyota models.
 
 #### URL
 
@@ -34,7 +34,7 @@ Get the total ***new*** Toyota models
 	
 ###Sample Request 2
 
-Get the total ***new*** Toyota models ***and*** the breakdown of their model year counts
+Get the total number of ***new*** Toyota models ***and*** the breakdown of their model year counts.
 
 #### URL
 
@@ -46,7 +46,7 @@ Get the total ***new*** Toyota models ***and*** the breakdown of their model yea
 	  "modelsCount": 23,
 	  "models": [
 	    {
-	      "yearsCount": 1,
+	      "yearsCount": 2,
 	      "niceName": "sequoia"
 	    },
 	    {
@@ -70,7 +70,7 @@ Get the total ***new*** Toyota models ***and*** the breakdown of their model yea
 	      "niceName": "landcruiser"
 	    },
 	    {
-	      "yearsCount": 1,
+	      "yearsCount": 2,
 	      "niceName": "camry"
 	    },
 	    {
