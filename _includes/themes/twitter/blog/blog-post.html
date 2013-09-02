@@ -1,4 +1,4 @@
-<div class="post-wrap">
+
   <div class="post-sidebar">
     <div class="author-wrap">
       {% if page.author_picture %}
@@ -36,8 +36,26 @@
       {% endunless %}  
     </div>
   </div>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
+
+<div class="blog-post">
+  <h3>{{ page.title }}</h3>
+  <div class="post-header">
+    <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
+    <span class="category">
+      {% if page.category == 'Engineering' %}
+      <i class="icon-cog">&nbsp;</i>
+      {% else %}
+      <i class="icon-globe">&nbsp;</i>
+      {% endif %}
+
+      {{ page.category }}
+    </span>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
         var disqus_shortname = 'edmundsapi';
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -47,27 +65,5 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	
+
 </div> 
-
-  <div class="blog-post">
-    <h3>{{ page.title }}</h3>
-    <div class="post-header">
-      
-      <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
-      <span class="category">
-        {% if page.category == 'Engineering' %}
-        <i class="icon-cog">&nbsp;</i>
-        {% else %}
-        <i class="icon-globe">&nbsp;</i>
-        {% endif %}
-
-        {{ page.category }}
-      </span>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-
-  </div> 
-</div>
