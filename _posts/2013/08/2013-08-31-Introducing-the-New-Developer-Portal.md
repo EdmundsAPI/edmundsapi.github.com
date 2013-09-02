@@ -5,7 +5,7 @@ tags : ['Edmunds', 'API', 'Developer Portal', 'SSL', 'OAuth 2.0', 'API docs', 'A
 title: 'The Edmunds API Blog - Introducing the New Developer Portal'
 by: 'Ismail Elshareef'
 author_url: 'https://twitter.com/ielshareef/'
-author_description: 'Senior Director, Open Platform initiative, '
+author_description: 'Senior Director, Open Platform initiative'
 
 links: [
 		{
