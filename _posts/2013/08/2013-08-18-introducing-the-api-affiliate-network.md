@@ -5,7 +5,8 @@ tags : ['Edmunds']
 title: 'Introducing the API Affiliate Network'
 by: 'Ismail Elshareef'
 author_url: 'https://twitter.com/ielshareef/'
-author_description: 'Senior Director, Open Platform initiative, '
+author_description: 'Senior Director, Open Platform initiative'
+author_picture: 'Ismail_Elshareef.jpg'
 
 links: [
 		{

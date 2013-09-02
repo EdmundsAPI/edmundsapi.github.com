@@ -78,9 +78,11 @@
 			  	var post = posts[i],
 			  		iconClass = post.category.toLowerCase() == 'engineering' ? 'icon-cog' : 'icon-globe',
 			  		authorLink = post.author_url ? '<a href="' + post.author_url +'" target="_blank">' + post.by + '</a>' : '<span>' + post.by + '</span>';
+			  		authorPicture = post.author_picture ? '<div class="authorImgSmall"><img src="{{PATH}}/assets/themes/twitter/img/blog/author_pics/'+ post.author_picture+ '" alt="Author picture" />'+ '<div class="imgFrameSmall">&nbsp;</div></div>' : '';
 
 			    $container.append(
 					'<li class="blog-post">'
+					+ authorPicture
 			      	+ '<h3><a href="'
 			      	+ post.href
 			      	+ '">'
@@ -120,7 +122,6 @@
 		    if (activPage == pages - 1) {
 		    	prevButton.addClass('disable');
 		    }
-
 		}
 
 	  	$.getJSON('/search.json', function(data) {

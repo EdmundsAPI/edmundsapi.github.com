@@ -5,6 +5,8 @@
   "href"     : "{{ post.url }}",
   "by"		 : "{{ post.by }}",
   "author_url" : "{{ post.author_url }}",
+  "author_description" : "{{ post.author_description }}",
+  "author_picture" : "{{ post.author_picture }}",
   "excerpt"  : "{{ post.excerpt }}",
   "date"     : "{{ post.date | date: '%b %d, %Y' }}",
   "archive" : "{{ post.date | date: '%Y-%m' }}",
