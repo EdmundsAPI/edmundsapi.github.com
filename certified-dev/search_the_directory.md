@@ -1,6 +1,6 @@
 ---
 layout: certified_dev
-title: 'Search The Directory'
+title: 'EDMUNDS CERTIFIED DEVELOPER NETWORK'
 title_parent: Certified developers
 title_active_left_menu: 'Search the directory'
 
