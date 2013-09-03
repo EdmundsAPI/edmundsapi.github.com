@@ -24,6 +24,8 @@ Option types are always one of these values:
 
 * INTERIOR
 * EXTERIOR
+* ROOF
+* INTERIOR_TRIM
 * MECHANICAL
 * PACKAGE
 * ADDITIONAL_FEES
