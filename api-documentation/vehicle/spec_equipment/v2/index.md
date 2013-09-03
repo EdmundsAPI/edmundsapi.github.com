@@ -102,6 +102,24 @@ The response objects will include keys like <code>equipmentType</code> and <code
 
 #### equipmentType
 
+* AUDIO_SYSTEM
+* COLOR
+* ENGINE
+* FEE
+* MANUFACTURER
+* MIRRORS
+* OPTION
+* OTHER
+* TELEMATICS
+* TIRES
+
+#### availability
+
+* Standard
+* Optional
+
+#### Available Equipment Names
+
 * 1ST_ROW_SEATS
 * 2ND_ROW_SEATS
 * 3RD_ROW_SEATS
@@ -125,12 +143,10 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * FRONT_PASSENGER_SEAT
 * INSTRUMENTATION
 * INTERIOR_DIMENSIONS
-* LEGACY
 * MANUFACTURER
 * MIRRORS
 * MOBILE_CONNECTIVITY
 * NAVIGATION_SYSTEM
-* OPTION
 * PARKING_AID
 * POWER_OUTLETS
 * SEATBELTS
@@ -154,8 +170,3 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * WARRANTY
 * WHEELS
 * WINDOWS
-
-#### availability
-
-* Standard
-* Optional
