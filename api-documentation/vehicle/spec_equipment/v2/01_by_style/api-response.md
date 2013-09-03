@@ -56,25 +56,6 @@ The properties within the <code>typical equipment</code> object follow this form
 The properties within the <code>engine</code> object are:
 
 	{
-<<<<<<< HEAD
-	    "id": {string},
-	    "name": {string},
-	    "equipmentType": "ENGINE",
-	    "availability": {string},
-	    "compressionRatio": {float},
-	    "cylinder": {integer},
-	    "size": {float},
-	    "displacement": {integer},
-	    "configuration": {string},
-	    "fuelType": {string},
-	    "horsepower": {integer},
-	    "torque": {integer},
-	    "totalValves": {integer},
-	    "manufacturerEngineCode": {string},
-	    "type": {string},
-	    "code": {string},
-	    "compressorType": {string}
-=======
 		"id": {string},
 		"name": {string},
 		"equipmentType": "ENGINE",
@@ -92,7 +73,6 @@ The properties within the <code>engine</code> object are:
 		"type": {string},
 		"code": {string},
 		"compressorType": {string}
->>>>>>> master
 	}
 
 | Property      	| Description                         					| Visibility                |

@@ -170,8 +170,3 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * WARRANTY
 * WHEELS
 * WINDOWS
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
