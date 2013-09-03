@@ -124,7 +124,12 @@
       	var footerHeight = $('.footerLayout').height(),
        		footer = $('.footerLayout'),
    			fixedPanel = $('.footer-section'),
-   			height;
+   			height,
+   			$title = $('.h1Title h1'),
+   			titleText = $title.html();
+
+   		titleText = titleText.replace(/®/g, '<sup>®</sup>');
+   		$title.html(titleText);
 
 		fixedPanel.removeClass('fixed');
 		height = $(document).height();
