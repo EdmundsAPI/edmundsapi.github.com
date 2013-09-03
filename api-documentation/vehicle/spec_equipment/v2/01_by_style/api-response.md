@@ -25,14 +25,14 @@ number: 3
 
 	{
 	  "equipment": [
-	    {typical equipment},
-	    {engine},
-	    {transmission}
+	    {typical equipment object},
+	    {engine object},
+	    {transmission object}
 	  ],
-	  "equipmentCount": 68
+	  "equipmentCount": {integer}
 	}
 
-The properties within the <code>typical equipment</code> object are:
+The properties within the <code>typical equipment</code> object follow this format:
 
 	{
 		"id": {integer},
@@ -45,13 +45,13 @@ The properties within the <code>typical equipment</code> object are:
 		}]
 	}
 
-| Property      	| Description                         					| Visibility                |
-|:------------------|:------------------------------------------------------|:------------------------- |
-| id		    	| The equipment ID										| Edmunds, Partners, Public |
-| name		    	| The equipment name									| Edmunds, Partners, Public |
-| equipmentType		| The type of the equipment (see overview)				| Edmunds, Partners, Public |
-| availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
-| attributes	    | The name/value pairs describing the equipment			| Edmunds, Partners, Public |
+| Property      	| Description                         						| Visibility                |
+|:------------------|:------------------------------------------------------	|:------------------------- |
+| id		    	| The equipment ID											| Edmunds, Partners, Public |
+| name		    	| The equipment name										| Edmunds, Partners, Public |
+| equipmentType		| The type of equipment (see overview for possible values)	| Edmunds, Partners, Public |
+| availability		| The availability of the equipment (see overview)			| Edmunds, Partners, Public |
+| attributes	    | The name/value pairs describing the equipment				| Edmunds, Partners, Public |
 
 The properties within the <code>engine</code> object are:
 
@@ -83,14 +83,14 @@ The properties within the <code>engine</code> object are:
 | availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
 | compressionRatio	| The engine compression ratio							| Edmunds, Partners, Public |
 | cylinder		    | The number of cylinders this engine has				| Edmunds, Partners, Public |
-| size			    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
-| displacement	    | The engine size										| Edmunds, Partners, Public |
+| size			    | The engine size										| Edmunds, Partners, Public |
+| displacement	    | The engine displacement								| Edmunds, Partners, Public |
 | configuration		| The engine configuration								| Edmunds, Partners, Public |
-| fuelType	        | The engine fuel type									| Edmunds, Partners, Public |
+| fuelType	        | The engine fuel type (e.g. premium unleaded)			| Edmunds, Partners, Public |
 | horsepower	    | The engine horsepower									| Edmunds, Partners, Public |
 | torque			| The engine torque										| Edmunds, Partners, Public |
 | totalValves	    | The total values in the engine 						| Edmunds, Partners, Public |
-| type			    | The type type (gas, hybrid, diesel, ...etc)			| Edmunds, Partners, Public |
+| type			    | The type of engine (e.g. gas, hybrid, diesel, etc.)	| Edmunds, Partners, Public |
 | code			    | The engine code										| Edmunds, Partners, Public |
 | compressorType	| The engine compressor type							| Edmunds, Partners, Public |
 
@@ -113,6 +113,6 @@ The properties within the <code>transmission</code> object are:
 | equipmentType		| Always "TRANSMISSION"									| Edmunds, Partners, Public |
 | availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
 | automaticType		| The type of automatic transmission					| Edmunds, Partners, Public |
-| transmissionType  | The transmission type (automatic, manual, ..etc)		| Edmunds, Partners, Public |
-| numberOfSpeeds    | The number of speed the car has						| Edmunds, Partners, Public |
+| transmissionType  | The transmission type (automatic, manual, etc.)		| Edmunds, Partners, Public |
+| numberOfSpeeds    | The number of speeds the car has						| Edmunds, Partners, Public |
 

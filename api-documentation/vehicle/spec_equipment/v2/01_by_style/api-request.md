@@ -21,7 +21,7 @@ number: 4
 
 ###Sample Request
 
-Get equipment details for car style ID **101353967**
+Get equipment details for car style ID **101353967** (2011 Lexus RX 350 4dr SUV).
 
 #### URL
 
@@ -55,6 +55,7 @@ Get equipment details for car style ID **101353967**
 	        }
 	      ]
 	    },
+	    ...
 	    {
 	      "id": "200349838",
 	      "name": "Engine",

@@ -19,3 +19,5 @@ overview: page_version
 #### Look up vehicle specs (i.e. make, model, year, style, trim, engine and transmission details) by its squish VIN.
 
 A squish VIN is basically **the first 11 digits of the VIN minus the 9th digit which is a check digit**. It's the value used to decode a VIN into a vehicle style ID.
+
+To learn more about VINs, please see [Vehicle Identification Numbers](https://help.edmunds.com/entries/23782847-Vehicle-Identification-Numbers-VINs), [Making Sense of Your VIN](http://www.edmunds.com/driving-tips/making-sense-of-your-vin.html), and [More VIN Information](http://www.edmunds.com/car-buying/vin-check.html).
