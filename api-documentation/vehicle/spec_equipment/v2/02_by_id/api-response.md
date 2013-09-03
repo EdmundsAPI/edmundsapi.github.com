@@ -36,23 +36,23 @@ number: 3
       ],
 	  "make": {object},
 	  "model": {object},
-	  "styles":{array of objects},
+	  {"style" | "styles"}: {object | array of objects},
 	  "year": {object}
 	}
 
-| Property      	| Description                         					| Visibility                |
-|:------------------|:------------------------------------------------------|:------------------------- |
-| id		    	| The equipment ID										| Edmunds, Partners, Public |
-| name		    	| The equipment name									| Edmunds, Partners, Public |
-| equipmentType		| The type of the equipment (see overview)				| Edmunds, Partners, Public |
-| availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
-| attributes	    | The name/value pairs describing the equipment			| Edmunds, Partners, Public |
-| make	        | Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
-| model         | Car make details (id, name and niceName)					| Edmunds, Partners, Public |
-| styles        | List of styles belonging to this model year (see below)   | Edmunds, Partners, Public |
-| year		    | The model year ID and the four-digit year                	| Edmunds, Partners, Public |
+| Property      	| Description                         						| Visibility                |
+|:------------------|:----------------------------------------------------------|:------------------------- |
+| id		    	| The equipment ID											| Edmunds, Partners, Public |
+| name		    	| The equipment name										| Edmunds, Partners, Public |
+| equipmentType		| The type of the equipment (see overview)					| Edmunds, Partners, Public |
+| availability		| The availability of the equipment (see overview)			| Edmunds, Partners, Public |
+| attributes	    | The name/value pairs describing the equipment				| Edmunds, Partners, Public |
+| make	        	| Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
+| model         	| Car make details (id, name and niceName)					| Edmunds, Partners, Public |
+| styles        	| List/object of styles for this model year (see below)   	| Edmunds, Partners, Public |
+| year		    	| The model year ID and the four-digit year                	| Edmunds, Partners, Public |
 
-Each element in the <code>styles</code> array follows this format:
+Each <code>style</code> object follows this format:
 
 	{
 		"id": {integer},
