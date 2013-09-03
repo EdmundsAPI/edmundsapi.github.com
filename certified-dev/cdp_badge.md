@@ -35,7 +35,7 @@ All Certified Developers will be given a **Badge Box** that reflects the categor
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_web.png" alt="Web" />
 
-<p>Desktop web and widget application developer. Expertise is building out automotive solutions for the typical desktop browser.</p>
+<p>Desktop web and widget application developer. Expertise in building out automotive solutions for the desktop browser.</p>
 </div>
 
 <div class="discriptionBadge">
@@ -43,7 +43,7 @@ All Certified Developers will be given a **Badge Box** that reflects the categor
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_mobile.png" alt="Mobile" />
 
-<p>Mobile web and native mobile application developer. Expertise is building out automotive solutions for the small screens.</p>
+<p>Mobile web and native mobile application developer. Expertise in building automotive solutions for the small screens.</p>
 </div>
 
 <div class="discriptionBadge">
@@ -51,7 +51,7 @@ All Certified Developers will be given a **Badge Box** that reflects the categor
 </a>
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_socialShopping.png" alt="SocialShopping" />
 
-<p>Creating automotive experiences that are social in nature. Facebook apps and Twitter integration are some of the things this developer can do.</p>
+<p>Creating automotive experiences that are social in nature, including Facebook apps and Twitter integration.</p>
 </div>
 
 <div class="discriptionBadge last">
@@ -60,11 +60,11 @@ All Certified Developers will be given a **Badge Box** that reflects the categor
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 
 
-<p>Going beyond what you see in the data. Finding insights and deriving new value from the data.</p>
+<p>Going beyond what you see on the surface of the data. Finding insights and deriving new value.</p>
 </div>
 
 <div class="additionalInf">
-	<p>If you wish to apply for the ECD badge, <a href="/certified-dev/get_start.html#certified_developer">follow this process</a></p>
+	<p>If you wish to become an Edmunds Certified Developer, <a href="/certified-dev/get_start.html#certified_developer">follow this process</a>.</p>
 </div>
 
 
