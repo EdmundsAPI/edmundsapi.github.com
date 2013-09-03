@@ -4,7 +4,7 @@ title: 'Edmunds Certified Developer Network - Policies'
 title_parent: Certified developers
 title_active_left_menu: 'Policies'
 
-cdp_weight: 3
+cdp_weight: 5
 cdp_class_page: cdpPolice
 ---
 

@@ -35,17 +35,15 @@ number: 3
 The properties within the <code>typical equipment</code> object are:
 
 	{
-      "id": {integer},
-      "name": {string},
-      "equipmentType": {string},
-      "availability": {string},
-      "attributes": [
-        {
-          "name": {string},
-          "value": {string}
-        }
-      ]
-    }
+		"id": {integer},
+		"name": {string},
+		"equipmentType": {string},
+		"availability": {string},
+		"attributes": [{
+			"name": {string},
+			"value": {string}
+		}]
+	}
 
 | Property      	| Description                         					| Visibility                |
 |:------------------|:------------------------------------------------------|:------------------------- |
@@ -59,22 +57,22 @@ The properties within the <code>engine</code> object are:
 
 	{
 		"id": {string},
-	    "name": {string},
+		"name": {string},
 		"equipmentType": "ENGINE",
-	    "availability": {string},
-	    "compressionRatio": {float},
-	    "cylinder": {integer},
-	    "size": {float},
-	    "displacement": {integer},
-	    "configuration": {string},
-	    "fuelType": {string},
-	    "horsepower": {integer},
-	    "torque": {integer},
-	    "totalValves": {integer},
-	    "manufacturerEngineCode": {string},
-	    "type": {string},
-	    "code": {string},
-	    "compressorType": {string}
+		"availability": {string},
+		"compressionRatio": {float},
+		"cylinder": {integer},
+		"size": {float},
+		"displacement": {integer},
+		"configuration": {string},
+		"fuelType": {string},
+		"horsepower": {integer},
+		"torque": {integer},
+		"totalValves": {integer},
+		"manufacturerEngineCode": {string},
+		"type": {string},
+		"code": {string},
+		"compressorType": {string}
 	}
 
 | Property      	| Description                         					| Visibility                |
@@ -100,12 +98,12 @@ The properties within the <code>transmission</code> object are:
 
 	{
 		"id": {integer},
-    	"name": {string},
+		"name": {string},
 		"equipmentType": "TRANSMISSION",
-	    "availability": {string},
-    	"automaticType": {string},
-    	"transmissionType": {string},
-    	"numberOfSpeeds": {integer}
+		"availability": {string},
+		"automaticType": {string},
+		"transmissionType": {string},
+		"numberOfSpeeds": {integer}
 	}
 
 | Property      	| Description                         					| Visibility                |

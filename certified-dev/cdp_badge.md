@@ -4,7 +4,7 @@ title: 'Edmunds Certified Developer Network - ECD Badges'
 title_parent: Certified developers
 title_active_left_menu: 'ECD Badge'
 
-cdp_weight: 5
+cdp_weight: 4
 cdp_class_page: cdpBdge
 ---
 
