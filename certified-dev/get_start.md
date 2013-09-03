@@ -7,7 +7,6 @@ title_active_left_menu: 'How do I get started?'
 cdp_weight: 3
 ---
 
-We have broken down the process for both business owners and developers below. The main steps in getting started with this program are laid out. This program is here to make it easier for business owners to build automotive solutions and to give bright developers the opportunities they deserve in delivering automotive solutions built on the Edmunds API.
 <a name="certified_developer">
 </a>
 <a name="business_owner">
