@@ -13,7 +13,7 @@ tags:
   - Javascript
   - SDK
   - Status Dashboard
-title: "The Edmunds API Blog - Introducing the New Developer Portal"
+title: "Introducing the New Developer Portal"
 by: Ismail Elshareef
 author_url: "https://twitter.com/ielshareef/"
 author_description: "Senior Director, Open Platform initiative"
@@ -26,13 +26,13 @@ links:
     url: /api_affiliate_network/
   - name: OAuth 2.0 Simplified
     url: "http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified"
-page_title: Introducing the New Developer Portal
-excerpt: "New portal sports new documentation format, Certified Developer Network and Affiliate programs, FAQs, Examples, ...etc."
+page_title: "The Edmunds API Blog"
+excerpt: "We're very excited to unveil our new Edmunds Developer Network Portal. The new portal has been completely redesigned with new APIs and documentation format to make it as easy as possible for developers to leverage the Edmunds.com data."
 published: true
 author_picture: Ismail_Elshareef.jpg
 ---
 
-We're very excited to unveil our new **Edmunds Developer Network Portal**. The new portal has been completely redesigned with new flows and format to make it as easy as possible for developers to leverage the Edmunds.com data.
+We're very excited to unveil our new **Edmunds Developer Network Portal**. The new portal has been completely redesigned with new APIs and documentation format to make it as easy as possible for developers to leverage the Edmunds.com data.
 
 #### So what's new?
 
