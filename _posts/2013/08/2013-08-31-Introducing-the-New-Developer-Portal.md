@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Communication
+category: Announcement
 tags: 
   - Edmunds
   - API
@@ -8,7 +8,7 @@ tags:
   - SSL
   - OAuth 2.0
   - API docs
-  - Affiliate
+  - Affiliates
   - Certified Developers
   - Javascript
   - SDK
