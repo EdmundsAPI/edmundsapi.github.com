@@ -22,11 +22,11 @@ cdp_class_page: cdpBdge
 		<img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/icon_analitics.png" alt="Analitics" />
 	</a>
 </div>
-The ECD Badge is awarded to developers that have demonstrated value-added capabilities in one or more of the following qualification areas: Web, Social, Mobile, Analytics. These developers **are not directly endorsed** by Edmunds.com, Inc, but have clearly demonstrated unique capabilities that help customers build efficient applications using the Edmunds API. Developers that hold the ECD Badge are reviewed periodically by Edmunds.com, Inc, and must demonstrate an ongoing high-standard of excellence. All candidates and ECDs must be aligned with the general section at the top, as well as the below sections that apply to their Qualification(s).
+A badge is awarded to developers that have demonstrated value-added capabilities in one or more of the following qualification areas: Web, Social, Mobile, Analytics. These developers **are not directly endorsed** by Edmunds.com, Inc, but have clearly demonstrated unique capabilities that help customers build efficient applications using the Edmunds API. Developers that hold an ECD badge are reviewed periodically by Edmunds.com, Inc, and must demonstrate an ongoing high-standard of excellence. All candidates and ECDs must be aligned with the general section at the top, as well as the below sections that apply to their Qualification(s).
 
-###ECDs AND CANDIDATES MUST HAVE
+###ECD BADGE BOX
 
-ECDs must show the following badge box on their site:
+ECDs will be given a **Badge Box** that reflects their qualification and that they could display on their websites. Please see [Policies](/certified-dev/policies.html#badge_use_policies) for badge use:
 
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/badges.png" alt="" />
 
