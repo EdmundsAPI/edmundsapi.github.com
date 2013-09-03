@@ -1,6 +1,6 @@
 ---
 layout: certified_dev
-title: 'EDMUNDS CERTIFIED DEVELOPER NETWORK'
+title: 'The Edmunds Certified Developer Network'
 title_parent: Certified developers
 title_active_left_menu: 'Search the directory'
 

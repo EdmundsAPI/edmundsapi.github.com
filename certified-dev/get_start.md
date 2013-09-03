@@ -1,6 +1,6 @@
 ---
 layout: certified_dev
-title: 'Edmunds Certified Developer Network'
+title: 'The Edmunds Certified Developer Network'
 title_parent: Certified developers
 title_active_left_menu: 'How do I get started?'
 

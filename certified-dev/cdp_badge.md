@@ -1,8 +1,8 @@
 ---
 layout: certified_dev
-title: 'Edmunds Certified Developer Network'
+title: 'The Edmunds Certified Developer Network'
 title_parent: Certified developers
-title_active_left_menu: 'ECD Badge'
+title_active_left_menu: 'ECD Badges'
 
 cdp_weight: 4
 cdp_class_page: cdpBdge
