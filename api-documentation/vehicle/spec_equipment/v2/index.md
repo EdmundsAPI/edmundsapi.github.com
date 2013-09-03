@@ -102,6 +102,24 @@ In the response objects you will get back, you will come across things like <cod
 
 #### equipmentType
 
+* AUDIO_SYSTEM
+* COLOR
+* ENGINE
+* FEE
+* MANUFACTURER
+* MIRRORS
+* OPTION
+* OTHER
+* TELEMATICS
+* TIRES
+
+#### availability
+
+* Standard
+* Optional
+
+#### Available Equipment Names
+
 * 1ST_ROW_SEATS
 * 2ND_ROW_SEATS
 * 3RD_ROW_SEATS
@@ -125,12 +143,10 @@ In the response objects you will get back, you will come across things like <cod
 * FRONT_PASSENGER_SEAT
 * INSTRUMENTATION
 * INTERIOR_DIMENSIONS
-* LEGACY
 * MANUFACTURER
 * MIRRORS
 * MOBILE_CONNECTIVITY
 * NAVIGATION_SYSTEM
-* OPTION
 * PARKING_AID
 * POWER_OUTLETS
 * SEATBELTS
@@ -155,7 +171,4 @@ In the response objects you will get back, you will come across things like <cod
 * WHEELS
 * WINDOWS
 
-#### availability
 
-* Standard
-* Optional
