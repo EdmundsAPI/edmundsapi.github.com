@@ -16,11 +16,11 @@ overview: page_version
 
 ---
 
-#### The vehicle equipment is everything that exists within a car from options, engine, transmission, colors, ...etc. 
+#### The vehicle equipment is everything that exists within a car, including the options, engine, transmission, colors, and more.
 
 ### Equipment Response Formats
 
-This resource returns a list of equipment that either comes standard or optional with a car. The response describes these equipment in **four different ways**:
+This resource returns a list of equipment that comes either standard or optional with a car. The response describes the equipment in **four different ways**:
 
 #### 1) Typical equipment description:
 
@@ -94,11 +94,11 @@ This resource returns a list of equipment that either comes standard or optional
 		}
 	}
 
-When you parse an equipment object, make sure you look for the <code>equipmentType</code> value first to see how to process it. If it's anything other than **COLOR**, **ENGINE** or **TRANSMISSION**, then treat it as a *typical equipment*. 
+When you parse an equipment object, make sure you look for the <code>equipmentType</code> value first to see how to process it. If it's anything other than **COLOR**, **ENGINE** or **TRANSMISSION**, then treat it as a *typical equipment*.
 
 ### Static Datasets
 
-In the response objects you will get back, you will come across things like <code>equipmentType</code> and <code>availability</code>. To understand those better, here's a list of all possible values for both properties:
+The response objects will include keys like <code>equipmentType</code> and <code>availability</code>. To understand those better, here's a list of all possible values for both properties:
 
 #### equipmentType
 
@@ -170,5 +170,3 @@ In the response objects you will get back, you will come across things like <cod
 * WARRANTY
 * WHEELS
 * WINDOWS
-
-
