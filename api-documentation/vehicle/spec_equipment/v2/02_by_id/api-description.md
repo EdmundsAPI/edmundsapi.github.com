@@ -36,14 +36,14 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 	<html>
 	<head>
 		<meta charset=utf-8>
-		<title>Edmunds API Example</title>
+		<title>Get the Equipment details for the Lexus RX 35O A/C</title>
 	</head>
 
 	<body>
 		<div id="results-body"></div>
 		<script>
 		  	window.sdkAsyncInit = function() {
-		    	// Instantiate the SDK
+				// Instantiate the SDK
 				var res = new EDMUNDSAPI('YOUR API KEY');
 
 				// Optional parameters
@@ -63,7 +63,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				// Fire the API call
 				res.api('/api/vehicle/v2/equipment/10135396713', options, success, fail);
 
-			    // Additional initialization code such as adding Event Listeners goes here
+				// Additional initialization code such as adding Event Listeners goes here
 		  };
 
 		  // Load the SDK asynchronously

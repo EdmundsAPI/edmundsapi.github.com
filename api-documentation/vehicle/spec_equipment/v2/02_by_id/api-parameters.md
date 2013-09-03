@@ -21,7 +21,7 @@ number: 2
 
 ###Parameters
 
-| Parameter  	| Description                           | Possible Values   | Default Value | Required |
+| Parameter  	| Description                            | Possible Values   | Default Value | Required |
 |:---------------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | fmt        	 | Response format                       | json              | json          | Yes      |
-| api_key    	 | vehicle api key                       |                   |               | Yes      |
+| api_key    	 | Vehicle API key                       |                   |               | Yes      |
