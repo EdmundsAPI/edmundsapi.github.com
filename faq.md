@@ -18,6 +18,9 @@ class_page: faqPage
 * [What data formats does the Edmunds API support?](#faq-7)
 * [How can I reach out to Edmunds to discuss a potential partnership opportunity?](#faq-8)
 * [How can I make money using this API?](#faq-9)
+* [How much does it cost to increase my rate limit or quota?](#faq-10)
+* [How can I find a car's MPG information?](#faq-11)
+* [What happened to the old API calls I was using?](#faq-12)
 
 ---
 
@@ -92,6 +95,25 @@ Well, aren't you in for a treat! We don't only have one, but two, ways for you t
 2. [Certified Developer Network](/certified-dev.html)
 
 Both programs are intended for the talented developers to use the Edmunds API to their financial benefit.
+
+[Back to top](#top)
+
+
+<a name='faq-10'>&nbsp;</a>
+<span class="question-header">How much does it cost to increase my rate limit or quota?</span>
+We're more than happy to increase the rate limit for any developer after we look at their application and verify that it's in compliance with our [Terms of Service](/terms_of_service/). The rate increase is FREE.
+
+[Back to top](#top)
+
+<a name='faq-11'>&nbsp;</a>
+<span class="question-header">How can I find a car's MPG information?</span>
+The MPG data is available in the [Equipment Resource](/api-documentation/vehicle/spec_equipment/v2/) under equipment name "SPECIFICATION".
+
+[Back to top](#top)
+
+<a name='faq-12'>&nbsp;</a>
+<span class="question-header">What happened to the old API calls I was using?</span>
+When we launch a new version of an API resource, we remove the documentation for the older version of that resource so new developers don't start coding against it. The API calls themselves are not removed until the date called out in the docs. We encourage all developers to move over to the new API resources when available since they're the ones we'll continue to support.
 
 [Back to top](#top)
 
