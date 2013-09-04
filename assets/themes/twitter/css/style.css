@@ -50,7 +50,7 @@ table h1, table h2, table h3, table h4, table h5, table h6 {
 	margin: 10px 0 24px;
 }
 table ol, table p {
-	margin-bottom:22px;
+	margin-bottom:20px;
 }
 
 
@@ -369,10 +369,6 @@ footer.footerLayout .nav > li > a {
 .sectionContent .navbar nav {
   border-bottom: 1px solid #ccc;
 }
-.sectionContent p {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
 .leftMenuFixed.fixed, .headerMenuContent.fixed  {
 	z-index:100;
 	position: fixed;
@@ -444,9 +440,6 @@ a.linkGetKey:hover {
 	.tableParametrs .text-info {
 		margin: 0 0 5px 0;
 		font-weight: 700;
-	}
-	.tableParametrs p {
-		margin: 0;
 	}
 	table .linkGetKey,
 	.tableParametrs .linkGetKey {
