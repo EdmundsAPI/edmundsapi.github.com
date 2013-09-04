@@ -11,6 +11,7 @@ phone: (631) 750-1200
 skype:
 twitter: nexteppe
 image_icon_developer: nexteppe.png
+badges: [web, mobile, analytics, socialShopping]
 ---
 
 
@@ -43,7 +44,27 @@ image_icon_developer: nexteppe.png
 
 			<!-- Icon of the developer -->
 			<div class="wrapperIconDeveloper">
-				<div class="imgFrame" style="background-position: 0 -1056px;">&nbsp;</div>
+				<div class="imgFrame">
+
+						<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/frames/
+						{% for p in page.badges %}
+							{% if p == 'analytics' %}analytics{%  endif %}
+						{% endfor %}
+
+						{% for p in page.badges %}
+							{% if p == 'mobile' %}mobile{%  endif %}
+						{% endfor %}
+
+						{% for p in page.badges %}
+							{% if p == 'socialShopping' %}socialShopping{%  endif %}
+						{% endfor %}
+
+						{% for p in page.badges %}
+							{% if p == 'web' %}web{%  endif %}
+						{% endfor %}
+						.png" alt=""/>
+
+				</div>
 				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
 
 			</div>
@@ -58,10 +79,13 @@ image_icon_developer: nexteppe.png
 				<div class="badges">
 					<span>Qualification:</span>
 					<ul id="iconBadge" class="clearfix">
-						<li><a data-badge="web" class="badge-web" href="/certified-dev/cdp_badge.html#web"></a></li>
-						<li><a data-badge="mobile" class="badge-mobile" href="/certified-dev/cdp_badge.html#mobile"></a></li>
-						<li><a data-badge="socialShopping" class="badge-socialShopping" href="/certified-dev/cdp_badge.html#socialShopping"></a></li>
-						<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" /></li>
+
+						{% for p in page.badges %}
+
+							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}"></a></li>
+
+						{% endfor %}
+
 					</ul>
 				</div>
 			</div>
