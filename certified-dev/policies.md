@@ -37,26 +37,26 @@ In order to use the badge box, you must follow the badge box use policies outlin
 
 ---
 
-#### ECD badge box
+#### ECD Badge Box
 
-The ECD badge box allows you to promote your status as an Edmunds Certified Developer in online and offline materials.
+The ECD Badge Box allows you to promote your status as an Edmunds Certified Developer in online and offline materials.
 
 ---
 
-#### Using the ECD badge box
+#### Using the ECD Badge Box
 
-* You may use the badge box only if you have been recognized as a ***Certified Developer*** by the Edmunds.com API Team
-* You may only display the badge box as is without any modifications once you have been recognized by the API team as having met the requirements for that qualification. If you lose qualification in any area, we will send you a new badge box that reflects your updated qualifications.
-* In online materials, the badge box *must hyperlink* to one of the following: the ECD Network Page, or your profile page in the ECD Network section
+* You may use the ECD Badge Box only if you have been recognized as a ***Certified Developer*** by the Edmunds API Team
+* You may only display the ECD Badge Box as-is without any modifications once you have been recognized by the API team as having met the requirements for that qualification. If you lose qualification in any category, we will send you a new ECD Badge Box that reflects your updated qualifications.
+* In online materials, the ECD Badge Box *must hyperlink* to one of the following: the ECD Network Page, or your profile page in the ECD Network section
 * In offline materials, you must include a printed URL to developer.edmunds.com/certified-dev.html immediately adjacent to the badge
 * You must keep sufficient space around the badge box so it appears clean and uncluttered
-* You may not modify or alter the badge box in any way, such as changing its design or color, or combining the badge with any other words or images
-* Your own brand or personal identity must be the predominant identity whenever the badge box is displayed
-* You may not use the badge box as a profile image or incorporate the badge into any profile image
-* You may not use this badge box in any way that implies that you are an employee or agent of Edmunds.com, or that Edmunds.com, Inc. is responsible for your services
-* You may not use this badge box in a way that is deceptive, harmful, obscene, or otherwise objectionable to Edmunds.com, Inc.
+* You may not modify or alter the ECD Badge Box in any way, such as changing its design or color, or combining the badge with any other words or images
+* Your own brand or personal identity must be the predominant identity whenever the ECD Badge Box is displayed
+* You may not use the ECD Badge Box as a profile image or incorporate the badge into any profile image
+* You may not use this ECD Badge Box in any way that implies that you are an employee or agent of Edmunds.com, or that Edmunds.com is responsible for your services
+* You may not use this ECD Badge Box in a way that is deceptive, harmful, obscene, or otherwise objectionable to Edmunds.com, Inc.
 
-These policies are limited to the ECD badge box. Edmunds.com’s [Brand Usage Guidelines](/api_branding_guide/), apply to any other use of Edmunds.com logos, trademarks or screenshots. To incorporate Edmunds.com logos, trademarks or screenshots into your materials, you must submit a request for permission via the Permissions Request Form. Edmunds.com reserves the right to terminate or modify your permission to use the badge at any time, at its sole discretion.
+These policies are limited to the **ECD Badge Box**. Edmunds.com’s [Brand Usage Guidelines](/api_branding_guide/), apply to any other use of Edmunds.com logos, trademarks or screenshots. To incorporate Edmunds.com logos, trademarks or screenshots into your materials, you must submit a request for permission via the Permissions Request Form. Edmunds.com reserves the right to terminate or modify your permission to use the badge at any time, at its sole discretion.
 
 ---
 

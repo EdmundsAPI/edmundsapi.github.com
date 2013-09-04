@@ -26,7 +26,7 @@ All Certified Developers are given an ECD badge per category in which they are d
 
 ###ECD BADGE BOX
 
-All Certified Developers will be given a **Badge Box** that reflects the categories in which they were qualified and the ones in which they weren't. Please see [Policies/Legal](/certified-dev/policies.html#badge_use_policies) section on badge use:
+All Certified Developers will be given a **Badge Box** that reflects the categories in which they were qualified and the ones in which they weren't. Please see [Policies/Legal](/certified-dev/policies.html#badge_use_policies) section on **Badge Box Use Policies**:
 
 <img src="{{ PATH }}/assets/themes/twitter/img/certified_developer/badges.png" alt="" />
 
