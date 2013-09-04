@@ -24,7 +24,7 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
-| zipcode		| Dealership zipcode					|						| 		        | Yes      |
+| zipcode		| Dealership ZIP Code					|						| 		        | Yes      |
 | range			| Car make								|						| 		        | Yes      |
 | make			| Car make								|						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |

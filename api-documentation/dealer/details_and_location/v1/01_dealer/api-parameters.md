@@ -24,9 +24,9 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
-| zipcode	 	| The area zipcode						| 						| 		        | Yes      |
+| zipcode	 	| The area ZIP Code						| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
-| makeName	 	| The car make the dealership sells		| 						| 		        | No       |
-| model		 	| The car model the dealership sells	| 						| 		        | No       |
-| styleid	 	| The car style the dealership sells	| 						| 		        | No       |
+| makeName	 	| The car's make 						| 						| 		        | No       |
+| model		 	| The car's model						| 						| 		        | No       |
+| styleid	 	| The car's Style ID					| 						| 		        | No       |
 | radius	 	| The radius of the search				| 						| 50	        | No       |

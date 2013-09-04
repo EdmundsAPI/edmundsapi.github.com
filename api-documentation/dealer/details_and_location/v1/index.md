@@ -15,6 +15,6 @@ level: 2
 overview: page_version
 ---
 
-#### Get dealership details and location information by providing the zipcode of the area you're interested in.
+#### Get dealership details and location information by providing the ZIP Code of the area you're interested in.
 
 
