@@ -24,6 +24,12 @@
 {% comment %}<!-- script for accordion  -->{% endcomment %}
 <script type="text/javascript">
 $(function(){
+
+   	var $title = $('.h1Title h1'),
+   		titleText = $title.html();
+
+   	titleText = titleText.replace(/®/g, '<sup>®</sup>');
+   	$title.html(titleText);
 	
 	$('.accordion-toggle').on('click.accordion',function(){
 		
