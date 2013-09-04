@@ -2,7 +2,7 @@
 layout: certified_dev
 title: 'The Edmunds Certified Developer Network'
 title_parent: Certified developers
-title_active_left_menu: 'Search the directory'
+title_active_left_menu: 'Search the ECD directory'
 
 cdp_weight: 6
 cdp_class_page: sdpDirectory

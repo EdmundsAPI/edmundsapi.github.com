@@ -105,7 +105,6 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * AUDIO_SYSTEM
 * COLOR
 * ENGINE
-* FEE
 * MANUFACTURER
 * MIRRORS
 * OPTION
