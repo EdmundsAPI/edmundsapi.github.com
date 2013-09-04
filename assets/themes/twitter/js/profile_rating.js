@@ -204,42 +204,64 @@ $(function(){
         var response = starRating(arrResponse);
         var professional = starRating(arrProfessional);
 
-       /* draw = [
-             [
-               {axis: "Quality", value: quality},
-               {axis: "Expertise", value: expertise},
-               {axis: "Cost", value: cost},
-               {axis: "Schedule", value: schedule},
-               {axis: "Response", value: response},
-               {axis: "Professional", value: professional}
-              ]
+
+        var companies=[
+            { "developer": quality, "property":"Quality" },
+            { "developer": expertise, "property":"Expertise" },
+            { "developer": cost, "property":"Cost" },
+            { "developer": schedule, "property":"Schedule" },
+            { "developer": response, "property":"Response" },
+            { "developer": professional, "property":"Professional" }
         ];
 
-        RadarChart.draw("#chart", draw);
-        //end create parameters for diagram*/
+       /* var companies=[
+            { "companyA":"4.5", "manth":"Jan" },
+            { "companyA":"2.0", "manth":"Feb" },
+            { "companyA":"4.0", "manth":"Mar" },
+            { "companyA":"3.0", "manth":"Apr" },
+            { "companyA":"3.0", "manth":"May" },
+            { "companyA":"3.5", "manth":"Jun" }
+        ];*/
 
+        var chart =  new dhtmlXChart({
+            container:"chartDiv",
+            view:"radar",
+            value:"#developer#",
+            tooltip:{
+                template:"#developer#"
+            },
+            color:"#3399ff",
+            line:{
+                color:"#3399ff",
+                width:1
+            },
+            fill:"#3399ff",
+            xAxis:{
+                template:"#property#"
+            },
+            yAxis:{
+                start:0,
+                step:1,
+                end:5
+            },
+            disableItems:false,
+            alpha: 0.2,
+            legend:{
+                layout:"y",
+                width: 110,
+                align:"right",
+                valign:"middle",
+                marker:{
+                    width:15,
+                    radius:3
+                },
+                values:[
+                    //{text:"company A",color:"#3399ff"}
+                ]
+            }
+        });
 
-
-
-
-
-            var radarChartData = {
-            labels : ["Quality","Expertise","Cost","Schedule","Response","Professional"],
-            datasets : [
-                {
-                    fillColor : "#a8c6ea",
-                    strokeColor : "#538fd5",
-                    pointColor : "#538fd5",
-                    pointStrokeColor : "#3d78bc",
-                    data : [quality,expertise,cost,schedule,response,professional]
-                }
-            ]
-
-        }
-
-    var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
-
-
+        chart.parse(companies,"json");
 
 
 
