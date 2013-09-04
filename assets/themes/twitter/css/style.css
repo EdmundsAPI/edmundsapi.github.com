@@ -170,6 +170,7 @@ header {
   margin: 0 25px 0 0;
   font-size: 9px;
   color: #999;
+  line-height: 15px;
 }
 .register img {
   margin: 0 7px 0 0;
@@ -191,7 +192,7 @@ header {
 	text-decoration: none;
 }
 nav.headerLinks {
-  margin: 14px 0 11px;
+  margin: 14px 0 13px;
 }
 .navbar nav.headerMenu a {
   display: inline-block;
