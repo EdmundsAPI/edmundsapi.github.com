@@ -158,10 +158,10 @@ h2, h3 {
 body {
 	margin:0;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:14px;
-	line-height:20px;
-	color:#333;
-	background-color:#fff
+	font-size:15px;
+	line-height:25px;
+	color:#444;
+	background-color:#F2F2F2
 }
 a {
 	color:#444;
@@ -488,7 +488,7 @@ margin-left:2.127659574468085%
 	clear:both
 }
 p {
-	margin:0 0 10px
+	margin:0 0 20px
 }
 .lead {
 	margin-bottom:20px;
