@@ -118,7 +118,7 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * Standard
 * Optional
 
-#### Available Equipment Names
+#### Available Equipment
 
 * 1ST_ROW_SEATS
 * 2ND_ROW_SEATS
@@ -153,7 +153,7 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * SEATING_CONFIGURATION
 * SECURITY
 * SPARE_TIRE/WHEEL
-* SPECIFICATIONS
+* SPECIFICATIONS   // *for MPG and fuel capacity information*
 * STEERING
 * STEERING_WHEEL
 * STORAGE
