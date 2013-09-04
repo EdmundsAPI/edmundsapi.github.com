@@ -36,7 +36,7 @@ We're very excited to unveil our new **Edmunds Developer Network Portal**. The n
 
 #### So what's new?
 
-We have tons of new goodies in this new portal:
+We have tons of goodies in this new portal:
 
 * **Brand New Docs:** [Our docs](/api-documentation/overview/) are much more detailed with *examples* and response object definitions. Some of our APIs have new versions as well. The Vehicle Spec resources (make, model, model year, style, options, equipment, ...etc) have been completely revamped to reflect the community's suggestions and to address their pain points.
 
