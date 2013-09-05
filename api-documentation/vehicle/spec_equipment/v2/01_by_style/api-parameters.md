@@ -22,5 +22,6 @@ number: 2
 | Parameter      | Description                           | Possible Values    | Default Value | Required |
 |:---------------|:--------------------------------------|:-----------------  |:------------- |:-------- |
 | availability	 | Equipment availability on this car    | optional, standard |               | No       |
+| name			 | Equipment name   				   	 | (see overview) 	  |               | No       |
 | fmt        	 | Response format                       | json               | json          | Yes      |
 | api_key    	 | Vehicle API key                       |                    |               | Yes      |

@@ -117,7 +117,7 @@ The response objects will include keys like <code>equipmentType</code> and <code
 * Standard
 * Optional
 
-#### Available Equipment
+#### Equipment Names
 
 * 1ST_ROW_SEATS
 * 2ND_ROW_SEATS
