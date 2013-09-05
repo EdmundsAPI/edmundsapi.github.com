@@ -81,7 +81,7 @@
 {% comment %}<!-- end description of developer - EPAM -->{% endcomment %}
 
 {% comment %}<!-- VINSNAP -->{% endcomment %}
-	<div class="wrapperDeveloper" data-location="newtown" data-badge="social-shopping;mobile;badge-web;analytics">
+	<div class="wrapperDeveloper" data-location="atlanta" data-badge="social-shopping;mobile;badge-web;analytics">
 			<div class="iconBadges">
 				<ul class="clearfix">
 					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" /></li>
@@ -109,4 +109,21 @@
 </div>
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/filterCDP.js">
+</script>
+
+<script type="text/javascript">
+
+	$(function(){
+		//$('.iconBadges li')
+		$('.wrapperDeveloper').each(function(){
+
+			var developer = $(this);
+
+			var height = $(this).height();
+			//console.log(height);
+			developer.find('.iconBadges li').css('line-height', height+'px');
+
+		});
+	});
+
 </script>
