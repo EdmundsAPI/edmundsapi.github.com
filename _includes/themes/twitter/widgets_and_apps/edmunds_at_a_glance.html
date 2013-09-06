@@ -1,0 +1,62 @@
+<div class="container promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">	
+		<a href="#" class="linkWidgets hide">other widgets and apps</a>	
+		<div class="span12">
+			<h1>
+				<div>
+					<span>{{ page.title }}</span>
+					<span class="mark">&#174;</span>
+				</div>
+			</h1>
+		</div>	
+		<span id="h1Title">{{ page.title_parent }}</span>	
+		<span class="arrow">&nbsp;</span>	
+	</div>
+</div>
+
+<div>
+	<div class="wrap-container promo-section1">&nbsp;</div>
+	<div class="wrap-container promo-section2">&nbsp;</div>
+	<div class="wrap-container promo-section3">&nbsp;</div>
+</div>
+
+<div class="wrap-container footer-section fixed">
+	<div class="container">
+		<span>It's as simple as copy and paste</span>&ndash;&mdash;&mdash;
+		<a href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance_setup.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>Copy the code and paste it in your page's HTML</span>
+		<div class="quick-start-TMV">
+			<a href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance_setup.html" class="quick-start-header">Quick Start<span>View how it works</span></a>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+	    var footerHeight = $('.footerLayout').height(),
+	       	footer = $('.footerLayout'),
+	   		fixedPanel = $('.footer-section'),
+	   		height;
+
+	  	fixedPanel.removeClass('fixed');
+	  	height = $(document).height();	  	
+	  	console.log('document height: ' + height);
+	  	console.log('window height: ' + $(window).height());
+	  	if((height - $(window).height()) > footerHeight) {
+	  		fixedPanel.addClass('fixed');
+	  	}
+
+	  	$(window).scroll(function() {
+	   		var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+	   		if(scrollBottom > footerHeight) {
+	    		fixedPanel.addClass('fixed');
+	    		footer.addClass('hide');
+			}
+			else {
+	    		fixedPanel.removeClass('fixed');
+	    		footer.removeClass('hide');
+	   		}
+	  	});
+    });
+</script>

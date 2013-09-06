@@ -1,0 +1,21 @@
+<section>
+    			
+	{{content}}
+	{% include themes/twitter/navigathion_prev_next.html %}
+</section>
+
+
+{% comment %} <!-- Set default active links for left menu --> {% endcomment %}
+<script type="text/javascript">
+		//left menu
+		var linkLeftMenu = $('.multiLevelMenu').find('a');
+		var valueActiveLeftMenu = $('#valActiveLeftMenu').text();
+		var amountLinks = linkLeftMenu.length;
+		for (var i=0; i<=amountLinks; i++) {
+			var valTitle = linkLeftMenu.eq(i).attr('title');
+			if(valTitle == valueActiveLeftMenu) {
+				linkLeftMenu.eq(i).addClass('active');
+			}
+		}
+		
+</script>

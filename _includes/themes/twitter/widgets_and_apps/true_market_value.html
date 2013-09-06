@@ -1,0 +1,173 @@
+<div class="container promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">	
+		
+		{% include themes/twitter/widgets_and_apps/drop-down.html %}
+		<div class="span12">
+			<h1>
+				<div>
+					<span>{{ page.title }}</span>					
+				</div>
+			</h1>
+		</div>	
+		<span id="h1Title">{{ page.title_parent }}</span>	
+		<span class="arrow">&nbsp;</span>	
+	</div>
+</div>
+<div>
+	<div class="wrap-container row-fluid">
+		<div class="container">
+			<div class="span6 right-align">
+				<h2>SEVERAL COLOR SHEMES</h2>
+				<div class="sub-header">...for better fit your design</div>
+				<p class="small-paragraph">We have modern beautiful schemes that make your experiance...</p>
+				<div class="btn-control-group">
+					<span class="btn-group-header">TRY THEM YOURSELF</span>
+					<div class="btn-color-selector gray"><div class="btn-color-inner">&nbsp;</div></div>
+					<div class="btn-color-selector green selected"><div class="btn-color-inner">&nbsp;</div></div>
+					<div class="btn-color-selector yellow"><div class="btn-color-inner">&nbsp;</div></div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="screen-bgnd green">&nbsp;</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="wrap-container row-fluid sectiobSliderTMV">	
+		<div class="span6">
+			<div class="clearfix wrapperSliderTMV">
+				
+				
+				<div class="navig">
+					<ul>
+						<li id="downSlide">Prev</li>
+						<li class="slidePoint1">1</li>
+						<li class="slidePoint2">2</li>
+						<li class="slidePoint3">3</li>
+						<li id="upSlide">Next</li>
+					</ul>
+				</div>
+				<div class="sliderTMV">
+					<ul>
+						<li class="slide1" data-slide="1"></li>
+						<li class="slide2" data-slide="2"></li>
+						<li class="slide3" data-slide="3"></li>
+					</ul>
+				</div>
+				
+				<div class="markers">
+
+					<span data-num="1" class="markerConf mark1">&nbsp;</span>
+					<span data-num="2" class="markerConf mark2">&nbsp;</span>
+					<span data-num="3" class="markerConf mark3">&nbsp;</span>
+					<span data-num="4" class="markerConf mark4">&nbsp;</span>
+					
+					
+					<span data-slide="1" data-num="1" class="tips tip1">API Key (or Vehicle API key for old keys)</span>
+					<span data-slide="1" data-num="2" class="tips tip2">Color Theme</span>
+					<span data-slide="1" data-num="3" class="tips tip3">Light or Dark Background</span>
+					<span data-slide="1" data-num="4" class="tips tip4">UI Layout</span>
+					
+					<span data-slide="2" data-num="1" class="tips tip1">Widget Width</span>
+					<span data-slide="2" data-num="2" class="tips tip2">Border Radius</span>
+					<span data-slide="2" data-num="3" class="tips tip3">Selected Car Makes</span>
+					
+					<span data-slide="3" data-num="1" class="tips tip1">Vehicle State</span>
+					<span data-slide="3" data-num="2" class="tips tip2">Zip Code</span>
+					<span data-slide="3" data-num="3" class="tips tip3">Price Values</span>
+					
+				</div>
+			
+				
+			</div>
+			<span class="inrustrSliderTMV">click on markers to get more info</span>
+		</div>
+		<div class="span6">
+			<h2>CUSTOMIZE WIDGET</h2>
+			<p>Make the widget serve the data you need</p>
+			
+			<h5>Select option from:</h5>
+			<ul>
+				<li>Select the car makes you want</li>
+				<li>Choose what price points to show</li>
+				<li>Configure layout and color schemes</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrap-container sectionMobileBrowsers">
+		<div class="h2Header">
+			<h2>ALL MODERN MOBILE BROWSERS ARE SUPPORTED</h2>
+			<div class="logo-bgnd">&nbsp;</div>
+		</div>
+
+		<p>You can easily render the widget on mobile devices</p>
+		<div class="device-bgnd">&nbsp;</div>
+
+	</div>
+</div>
+
+<div class="wrap-container footer-section fixed">
+	<div class="container">
+		<span>Why Reinvent the wheel</span>&ndash;&mdash;&mdash;
+		<a href="{{ PATH }}/widgets_and_apps/market_value.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>When a solution is already built!</span>
+		<div class="quick-start-TMV">
+			<a href="{{ PATH }}/widgets_and_apps/market_value.html#quick_start" class="quick-start-header">Quick Start<span>View how it works</span></a>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+      	var footerHeight = $('.footerLayout').height(),
+       		footer = $('.footerLayout'),
+   			fixedPanel = $('.footer-section'),
+   			height,
+   			$title = $('.h1Title h1'),
+   			titleText = $title.html();
+
+   		titleText = titleText.replace(/®/g, '<sup>®</sup>');
+   		$title.html(titleText);
+
+		fixedPanel.removeClass('fixed');
+		height = $(document).height();
+
+		if((height - $(window).scrollTop() - $(window).height()) > footerHeight) {
+			fixedPanel.addClass('fixed');
+		}
+
+		$(window).scroll(function() {
+		   	var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+		   	if(scrollBottom > footerHeight) {
+		    	fixedPanel.addClass('fixed');
+		    	footer.addClass('hide');
+		   	}
+		   	else {
+		    	fixedPanel.removeClass('fixed');
+		    	footer.removeClass('hide');
+		   }
+		 });
+		$('.btn-color-selector').on('click', function() {
+			var selectedColor;
+			$('.btn-color-selector').removeClass('selected');
+			$(this).addClass('selected');
+			if($(this).hasClass('green')) {
+				selectedColor = 'green';
+			}
+			else if($(this).hasClass('yellow')) {
+			selectedColor = 'yellow';
+			}
+			else if($(this).hasClass('gray')) {
+				selectedColor = 'gray';
+			}
+		
+			$('.screen-bgnd').removeClass('yellow green gray').addClass(selectedColor);
+		});
+		
+
+		interval(timeInterval); 
+	});
+</script>
+

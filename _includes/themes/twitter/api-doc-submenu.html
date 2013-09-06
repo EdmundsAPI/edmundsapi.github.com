@@ -1,0 +1,26 @@
+
+<div class="endpoint-submenu">
+	<ul class="nav nav-tabs">
+		
+		{% for number in (1..4) %}
+			{% for p in site.pages %}
+			
+				{% if p.title-endpoint == page.title-endpoint and p.spec == page.spec %}
+				
+						{% if p.number == number %}
+							<li {% if p.url == page.url %} class="active"{% endif %}>
+								<a href="{{p.url}}" title="{{p.title_md}}">{{p.title_md}}</a>
+							</li>
+						{% endif %}
+					
+					
+				{% endif %}
+			
+		{% endfor %}
+		{% endfor%}
+		
+		
+		
+	</ul>
+
+</div>

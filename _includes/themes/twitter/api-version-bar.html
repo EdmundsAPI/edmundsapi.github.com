@@ -1,0 +1,116 @@
+<div class="api-header-row1">
+	<div class="row-fluid bgnd">
+		<div class="span6">&nbsp;</div>
+		<div class="span6">&nbsp;</div>
+	</div>
+	<div class="container">
+		<div class="row-fluid overlay">
+			<div class="span2">&nbsp;</div>
+			<div class="span10">
+
+
+						{% comment %}<!-- Tabs of the versions -->{% endcomment %}
+
+						{% if page.amount_version == 1 %}
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
+						{% elsif page.amount_version == 2 %}
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
+							{% elsif page.amount_version == 3 %}
+							<a class="tab {% if page.version == 'v3' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v3/">v3</a>
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
+						{% endif%}
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="api-header-row2">
+	<div class="row-fluid bgnd">
+		<div class="span6">&nbsp;</div>
+		<div class="span6">&nbsp;</div>
+	</div>
+
+	<div class="container">
+		<div class="row-fluid overlay">
+			<div class="span2">&nbsp;</div>
+			<div class="span10">
+				{% if page.dropdown-link != '' %}
+				{% if page.overview == 'page' %}
+					<a class="version-bar-block {% if page.overview == 'page' %} active {% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/index.html" title="Overview">Overview</a>
+				{% elsif page.overview == 'page_version' %}
+					<a class="version-bar-block {% if page.overview == 'page_version' %} active {% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/{{ page.version }}/index.html" title="Overview">Overview</a>
+				{% else  %}
+					<a class="version-bar-block" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/{{ page.version }}/index.html" title="Overview">Overview</a>
+				{% endif %}
+
+				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
+
+				<div class="dropdown">
+
+					<a class="dropdown-toggle {% if page.dropdown-link != 'Select an Endpoint'%} active {% endif %}" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
+
+
+					<ul class="dropdown-menu">
+
+						{% for p in site.pages | sort:path %}
+							{% if p.spec == page.spec and p.version == page.version and p.level == 3 %}
+
+								<li name="endpoint">
+									<a href="{{ p.url }}" title="">
+									<div class="option-description">{{ p.description_edpoint }}</div>
+									<div class="option-value">{{ p.dropdown-link }}</div></a>
+								</li>
+
+							{% endif %}
+						{% endfor %}
+					</ul>
+
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$('[name="endpoint"]').on('click', function() {
+			$('.selected-option').html($(this).find('.option-value').text());
+		});
+		$('.tab').on('click', function() {
+			$('.tab').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+</script>
+
+
+{% comment %}<!-- script for setting wodth of drop down in the page API documentation -->{% endcomment %}
+<script type="text/javascript">
+
+	$(function(){
+		var select = $('.apiPage').find('.dropdown');
+		var dropdownMenu = $('.apiPage').find('.dropdown-menu');
+		var countLi = dropdownMenu.find('li').length;
+		var selectWidth = select.width();
+		var list = $('.apiPage .dropdown-menu').find('li:first-child');
+		var listWidth = dropdownMenu.width();
+
+		var value = listWidth - selectWidth - 44;
+
+		if(value > 0 && countLi>1) {
+			list.css('border-radius', '0 5px 0 0');
+		} else if (value > 0 && countLi==1) {
+			list.css('border-radius', '0 5px 5px 5px');
+		} else {
+		  list.css('border-radius', '0');
+		}
+
+	});
+
+</script>

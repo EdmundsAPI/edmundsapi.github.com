@@ -1,0 +1,80 @@
+<a name="quick_start" ></a>
+<div class="accordion" id="accordion2">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle accordion-header collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+				How to embed widget
+			</a>
+		</div>
+		<div id="collapseOne" class="accordion-body collapse in">
+			<div class="accordion-inner">
+<p>To embed Vehicle Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
+        <h4>Example scenario:</h4>
+        <ol>
+            <li>
+                <p>Add the following JavaScript files to your page. It's preferably to add them at the bottom of your page for best page performance:</p>
+                <pre>&lt;script src="http://widgets.edmunds.com/js/edm/sdk.js"&gt;&lt;/script&gt;
+&lt;script src="http://widgets.edmunds.com/js/carconfig/carconfig.js"&gt;&lt;/script&gt;</pre> 
+            </li>
+            <li>
+                <p>Create new instance of the Widget:</p>
+                <pre>var widget = new EDM.NVC(vehicleApikey, dealerApiKey, {root: 'nvcwidget', baseClass: 'nvcwidget'});</pre> 
+            </li>
+            <li>
+                <p>Widget initialisation:</p>
+                <pre>widget.init({"includedMakes":"all","showVehicles":"ALL","zip":"12345"});</pre> 
+            </li>
+            <li>
+                <p>Widget rendering:</p>
+                <pre>widget.render();</pre> 
+            </li>
+            <li>
+                <p>Add the CSS files to your page. It's preferably to add them at the head of your page:</p>
+                <pre>&lt;link rel="stylesheet" href="http://widgets.edmunds.com/css/carconfig/simple-light.css"&gt;
+&lt;style&gt;
+.nvcwidget{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border-width:1px;width:248px;}.nvcwidget .nvcwidget-header{-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topleft:5px;border-top-left-radius:5px;}
+&lt;/style&gt;</pre> 
+            </li>
+        </ol> 			
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle accordion-header collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				Widget custom events
+			</a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse in">
+			<div class="accordion-inner">
+                <p>Vehicle widget provides the next methods for working with custom events:</p>
+                <br>
+                <p><code>on()</code> - Binds a callback function to an object. The callback will be invoked whenever the event is fired.</p>
+                <pre>// External usage example:
+widget.componentName.on('complete', function(options) {
+    // this code is executed when the change event is fired by the widget
+});
+
+// Internal usage example:
+this.componentName.on('complete, function(options) {
+    // this code is executed when the change event is fired by the widget
+});</pre>
+                <br>
+                <p><code>off()</code> - Removes a previously-bound callback function from an object. If no event name is specified, all callbacks will be removed.</p>
+                <pre>// External usage example:
+widget.componentName.off('complete');
+
+// Internal usage example:
+this.componentName.off('complete');</pre>
+                <br>
+                <p><code>trigger()</code> - Trigger callbacks for the given event. Subsequent arguments to trigger will be passed along to the event callbacks.</p>
+                <pre>this.componentName.trigger('complete', options);</pre>
+                <br>
+                <p><code>componentName</code> - this is one component of Vehicle Widget.</p>
+			</div>
+		</div>
+	</div>
+
+    
+</div>

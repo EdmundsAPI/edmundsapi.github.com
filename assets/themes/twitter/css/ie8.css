@@ -1,0 +1,7 @@
+.accordion .accordion-group a {
+	background-position:left -89px;
+}
+
+.accordion .accordion-group a.active {
+	background-position:left 43px; 
+}

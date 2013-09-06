@@ -1,0 +1,459 @@
+<div class="container promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">	
+		
+		{% include themes/twitter/widgets_and_apps/drop-down.html %}
+
+		<div class="span12">
+			<h1>
+				<div>
+					<span>{{ page.title }}</span>
+				</div>
+			</h1>
+		</div>
+
+		<span id="h1Title">{{ page.title_parent }}</span>	
+		<span class="arrow">&nbsp;</span>	
+	</div>
+</div>
+
+<div>
+	<div class="wrap-container promo-section1">
+		<div class="container">
+			<div class="promo-section-label">User</div>
+			<div class="span12 section-header">
+				<div class="step-header active">
+					<h2>Step1: Configure your vehicle</h2>
+					<div class="sub-header">We give people the ability to customize a car, choosing interior and exterior color, wheels, roof options and more.</div>
+				</div>
+				<div class="step-header">
+					<h2>Step2: TRUE MARKET VALUE <span class="marker">®</span></h2>
+					<div class="sub-header">We let you know what others are paying for this car based on actual sales data from your region</div>
+				</div>
+				<div class="step-header">
+					<h2>Step3: Get free dealer price quotes</h2>
+					<div class="sub-header">We connect you with dealers sending information about the car that you has configured. No commitment. Request free quotes and have dealers competing for your business.</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-slides">
+			<div class="carousel-wrap">
+				<div class="screen-wrap">
+					<ul class="carousel" name="main-carousel">
+						<li class="step1 active">
+							<div data-marker="1" data-step="1" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="1" class="marker2">&nbsp;</div>
+						</li>
+						<li class="step2">
+							<div data-marker="1" data-step="2" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="2" class="marker2">&nbsp;</div>
+							<div data-marker="3" data-step="2" class="marker3">&nbsp;</div>
+						</li>
+						<li class="step3">
+							<div data-marker="1" data-step="3" class="marker1">&nbsp;</div>
+							<div data-marker="2" data-step="3" class="marker2">&nbsp;</div>
+						</li>
+					</ul>
+					<div class="popup-container">
+
+						<div data-marker="1" data-step="1" class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								Configurable options can be used to customize the vehicle.
+							</div>
+						</div>
+						<div data-marker="2" data-step="1" class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								Get vehicle details with base MSRP.
+							</div>
+						</div>
+
+						<div data-marker="1" data-step="2" class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								TMV® price visual range.	
+							</div>
+						</div>
+						<div data-marker="2" data-step="2"  class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								Incentives are optional.
+							</div>
+						</div>
+						<div data-marker="3" data-step="2"  class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								Get options prices.
+							</div>
+						</div>
+
+						<div data-marker="1" data-step="3" class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								List of dealerships that have this car.
+							</div>
+						</div>
+						<div data-marker="2" data-step="3" class="info-popup">
+							<div class="close-btn">&nbsp;</div>
+							<div class="popup-header">Information popup</div>
+							<div class="popup-content">
+								Submit FREE price quote request.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="prev-wrap empty-nav">
+					<ul class="prev" name="left-carousel">
+						<li data-step="-1" class="empty active">&nbsp;</li>
+						<li data-step="0" class="step1">&nbsp;</li>
+						<li data-step="1" class="step2">&nbsp;</li>
+						<li data-step="2" class="step3">&nbsp;</li>
+					</ul>
+					<div class="white-shadow" style="display: none;">&nbsp;</div>
+				</div>
+				<div class="next-wrap">
+					<ul class="next" name="right-carousel">
+						<li data-step="0" class="step1">&nbsp;</li>
+						<li data-step="1" class="step2 active">&nbsp;</li>
+						<li data-step="2" class="step3">&nbsp;</li>
+						<li data-step="-1" class="empty">&nbsp;</li>
+					</ul>
+					<div class="white-shadow">&nbsp;</div>
+				</div>
+				<ul class="nvc-pager">
+					<li class="left hide">
+						<a href="#" title="Previous">&nbsp;</a>
+					</li>
+					<li class="right hide">
+						<a href="#" title="Next">&nbsp;</a>
+					</li>
+				</ul>
+				<ul class="paging-indicators">
+					<li data-step="0" class="active">&nbsp;</li>
+					<li data-step="1">&nbsp;</li>
+					<li data-step="2">&nbsp;</li>
+				</ul>				
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap-container row-fluid promo-section2">
+		<div class="span6">
+			<div class="clearfix wrapperSliderNVC">
+				<div class="promo-section-label">Client</div>
+				<div class="navig">
+					<ul>
+						<li id="downSlideNVC">Prev</li>
+						<li class="slidePoint1">1</li>
+						<li class="slidePoint2">2</li>
+						<li class="slidePoint3">3</li>
+						<li id="upSlideNVC">Next</li>
+					</ul>
+				</div>
+				<div class="sliderNVC">
+					<ul>
+						<li class="slide1" data-slide="1"></li>
+						<li class="slide2" data-slide="2"></li>
+						<li class="slide3" data-slide="3"></li>
+					</ul>
+				</div>
+
+				<div class="markers">
+
+					<span data-num="1" class="markerConf mark1">&nbsp;</span>
+					<span data-num="2" class="markerConf mark2">&nbsp;</span>
+					<span data-num="3" class="markerConf mark3">&nbsp;</span>
+					<span data-num="4" class="markerConf mark4">&nbsp;</span>
+					<span data-num="5" class="markerConf mark5">&nbsp;</span>
+					
+					
+					<span data-slide="1" data-num="1" class="tips tip1">Vehicle API key</span>
+					<span data-slide="1" data-num="2" class="tips tip2">Dealer API key</span>
+					<span data-slide="1" data-num="3" class="tips tip3">Theme</span>
+					<span data-slide="1" data-num="4" class="tips tip4">Color scheme</span>
+					<span data-slide="1" data-num="5" class="tips tip5">Width</span>
+					
+					<span data-slide="2" data-num="1" class="tips tip1">Border radius</span>
+					<span data-slide="2" data-num="2" class="tips tip2">Tabs to display</span>
+					<span data-slide="2" data-num="3" class="tips tip3">Included Makes</span>
+					
+					<span data-slide="3" data-num="1" class="tips tip1">Included makes</span>
+					<span data-slide="3" data-num="2" class="tips tip2">Default ZIP code</span>
+					<span data-slide="3" data-num="3" class="tips tip3">Dealer Keywords</span>
+					
+				</div>
+
+			</div>
+			<span class="inrustrSliderNVC">click on markers to get more info</span>
+		</div>
+		<div class="span6">
+			<h2>CUSTOMIZE WIDGET</h2>
+			<p>Make the widget serve the data you need</p>
+			
+			<h5>Select option from:</h5>
+			<ul>
+				<li>The car makes you want users to select from on your page</li>
+				<li>choose the price points you want to display</li>
+				<li>Configure the widget color scheme and size</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrap-container promo-section3">
+		<div class="analytic-section hide">
+			<p>&nbsp;</p>
+		</div>
+		<div class="section-inner">
+			<div class="h2Header">
+				<h2>ALL MODERN MOBILE BROWSERS ARE SUPPORTED</h2>
+				<div class="logo-bgnd">&nbsp;</div>
+			</div>
+
+			<p>You can easily render the widget on mobile devices</p>
+			<div class="device-bgnd">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="wrap-container footer-section fixed">
+	<div class="container">
+		<span>Why reinvent the wheel</span>&ndash;&mdash;&mdash;
+		<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>When a solution is already built!</span>
+		<div class="quick-start-TMV">
+			<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html#quick_start" class="quick-start-header">Quick Start<span>View how it works</span></a>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	$(function() {
+	    var footerHeight = $('.footerLayout').height(),
+	       	footer = $('.footerLayout'),
+	   		fixedPanel = $('.footer-section'),
+	   		slider = new Slider(),
+	   		$prev = $('[name="left-carousel"]'),
+	   		$next = $('[name="right-carousel"]'),
+	   		$prevWrap = $('.prev-wrap'),
+	   		$nextWrap = $('.next-wrap'),
+	   		$prevShadow = $prevWrap.find('.white-shadow'),
+	   		$nextShadow = $nextWrap.find('.white-shadow'),
+	   		$pagingIndicators = $('.paging-indicators'),
+	   		$sectionHeader = $('.section-header'),
+	   		carousel = new CarouselNVC($('[name="main-carousel"]'), $pagingIndicators, $sectionHeader),
+	   		leftCarousel = new CarouselNVC($prev),
+	   		rightCarousel = new CarouselNVC($next),
+	   		$pager = $('.nvc-pager'),
+	   		$pagerLeft = $pager.find('.left'),
+	   		$pagerRight = $pager.find('.right'),
+	   		$marker = $('[class*="marker"]'),
+	   		$popups = $('.info-popup'),
+	   		height;
+
+	  	fixedPanel.removeClass('fixed');
+	  	height = $(document).height();
+	  	if((height - $(window).height()) > footerHeight) {
+	  		fixedPanel.addClass('fixed');
+	  	}
+
+	  	function showElement(el) {
+	  		el.removeClass('hide');
+	  	}
+	  	function hideElement(el) {
+	  		el.addClass('hide');
+	  	}
+	  	function movePrev(event) {
+			var leftIndex = $prev.find('.active').data('step'),
+				rightIndex = $next.find('.active').data('step');
+
+			event.preventDefault();
+			if( leftIndex==0 ) {
+				$pagerLeft[0].style.display = "none";
+				$prevWrap.addClass('empty-nav');
+				$prevShadow.fadeOut(600);
+			}
+			if(rightIndex == -1) {
+				$nextShadow.fadeIn(600);
+			}
+			carousel.prev();
+			leftCarousel.prev();
+			rightCarousel.prev();
+
+			$pagerRight[0].style.display = "";
+			$nextWrap.removeClass('empty-nav');
+	  	}
+	  	function moveNext(event) {
+			var leftIndex = $prev.find('.active').data('step'),
+				rightIndex = $next.find('.active').data('step');
+
+			event.preventDefault();
+			if( rightIndex==2 ) {
+				$pagerRight[0].style.display = "none";
+				$nextWrap.addClass('empty-nav');
+
+				$nextShadow.fadeOut(600);
+			}
+			if(leftIndex == -1) {
+				$prevShadow.fadeIn(600);
+			}
+			carousel.next();
+
+			rightCarousel.next();
+			leftCarousel.next();
+			$pagerLeft[0].style.display = "";
+			$prevWrap.removeClass('empty-nav');
+	  	}
+
+	  	$prevWrap.on('mouseenter', function() {
+	  		var active = $prev.find('.active').data('step');
+	  		if(active >= 0) {
+	  			showElement($pagerLeft);
+	  		}
+	  	});
+	  	$prevWrap.on('mouseleave', function() {
+	  		var active = $prev.find('.active').data('step');
+	  		if(active >= 0) {
+	  			hideElement($pagerLeft);
+	  		}
+	  	});
+	  	$pagerLeft.on('mouseenter', function() {
+	  		showElement($pagerLeft);
+	  	});
+	  	$pagerRight.on('mouseenter', function() {
+	  		showElement($pagerRight);
+	  	});
+
+	  	$nextWrap.on('mouseenter', function() {
+	  		var active = $next.find('.active').data('step');
+	  		if(active >= 0) {
+	  			showElement($pagerRight);
+	  		}
+	  	});
+	  	$nextWrap.on('mouseleave', function() {
+	  		var active = $next.find('.active').data('step');
+	  		if(active >= 0) {
+	  			hideElement($pagerRight);
+	  		}
+	  	});
+
+	  	$(window).scroll(function() {
+	   		var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+	   		if(scrollBottom > footerHeight) {
+	    		fixedPanel.addClass('fixed');
+	    		footer.addClass('hide');
+			}
+			else {
+	    		fixedPanel.removeClass('fixed');
+	    		footer.removeClass('hide');
+	   		}
+	  	});
+
+
+		slider.start();
+
+		// Carousel for section 1
+
+		$prevWrap.on('click', function(event) {
+	  		var active = $prev.find('.active').data('step');
+	  		if(active >= 0) {
+				movePrev(event);
+			}
+		});
+		$pager.find('.left').on('click', function(event) {
+	  		var active = $prev.find('.active').data('step');
+	  		if(active >= 0) {
+				movePrev(event);
+			}
+		});
+		$nextWrap.on('click', function(event) {
+	  		var active = $next.find('.active').data('step');
+	  		if(active >= 0) {
+				moveNext(event);
+			}
+		});
+		$pager.find('.right').on('click', function(event) {
+	  		var active = $next.find('.active').data('step');
+	  		if(active >= 0) {
+				moveNext(event);
+			}
+		});
+		$pagingIndicators.on('click', 'li', function() {
+			var $el = $(this),
+				toStep = $el.data('step'),
+				activeStep = $('[name="main-carousel"]').find('.active').data('step'),
+				leftIndex = $prev.find('.active').data('step'),
+				rightIndex = $next.find('.active').data('step');
+
+			hideElement($pagerRight);
+			hideElement($pagerLeft);
+
+			if(toStep === activeStep) return;
+
+			if(rightIndex === -1) {
+				$nextShadow.fadeIn(600);
+				$pagerRight[0].style.display = "";
+			}			
+			if(leftIndex === -1) {
+				$prevShadow.fadeIn(600);
+				$pagerLeft[0].style.display = "";
+			}
+			if(toStep === 0) {
+				$prevShadow.fadeOut(600);
+				$pagerLeft[0].style.display = "none";
+			}
+			if(toStep === 2) {
+				$nextShadow.fadeOut(600);
+				$pagerRight[0].style.display = "none";
+			}
+			leftCarousel.to(toStep);
+			carousel.to(toStep);
+			rightCarousel.to(toStep + 1);
+		});
+
+		// Markers and popups 
+		$marker.on('click', function(event) {
+			var $el = $(this),
+				markerNumber = $el.data('marker'),
+				curStep = $el.data('step'),
+				$allPopups = $('.popup-container').find('.info-popup');
+
+			event.stopPropagation();
+
+			$allPopups.fadeOut(500);
+			$allPopups.each(function() {
+				var thisNumber = $(this).data('marker'),
+					thisStep = $(this).data('step');
+				if(thisNumber === markerNumber) {
+					if(thisStep === curStep ) {					
+						$(this).fadeIn(400);
+					}
+				}
+			});
+		});
+
+		$popups.on('click', '.close-btn', function(event) {
+			var $el = $(this);
+			event.stopPropagation();
+			$el.parent().fadeOut(100);
+		});
+
+		$popups.on('click', function(event) {
+			event.stopPropagation();
+		});
+
+		$('body').on('click', function() {
+			$popups.fadeOut(100);
+		});
+
+    });
+//]]>
+</script>

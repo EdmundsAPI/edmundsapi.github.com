@@ -1,0 +1,69 @@
+
+  <div class="post-sidebar">
+    <div class="author-wrap">
+      {% if page.author_picture %}
+      <div class="authorImgBig">
+        <img src="{{PATH}}/assets/themes/twitter/img/blog/author_pics/{{ page.author_picture }}" alt="Author picture" />
+        <div class="imgFrameBig">&nbsp;</div>
+      </div>
+      {% endif %}
+      <div class="author-info">
+        <span class="author">by
+        {% if page.author_url %}
+          <a href="{{ page.author_url }} " target="_blank">{{ page.by }}</a>
+        {% else %}
+          <span>{{ page.by }}</span>
+        {% endif %}
+          <div class="author_description">{{ page.author_description }}</div>
+        </span>
+      </div>
+    </div>
+    <div class="post-panel">
+      {% unless page.tags == empty %}
+        <h5>Tags</h5>
+        <ul>
+          {% assign tags_list = page.tags %}
+          {% include JB/custom_tags_list %}
+        </ul>
+      {% endunless %}
+      {% unless page.links == empty %}
+        <h5>What links here</h5>
+        <ul class="links-list">
+          {% for link in page.links %} 
+            <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endunless %}  
+    </div>
+  </div>
+
+<div class="blog-post">
+  <h3>{{ page.title }}</h3>
+  <div class="post-header">
+    <span class="date"><i class="icon-time">&nbsp;</i>{{ page.date | date: "%b %d, %Y" }}</span>
+    <span class="category">
+      {% if page.category == 'Engineering' %}
+      <i class="icon-cog">&nbsp;</i>
+      {% else %}
+      <i class="icon-globe">&nbsp;</i>
+      {% endif %}
+
+      {{ page.category }}
+    </span>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+        var disqus_shortname = 'edmundsapi';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div> 

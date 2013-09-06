@@ -1,0 +1,138 @@
+
+{% comment %}<!-- start filter-showcase.html -->{% endcomment %}
+<div class="container contentPage">
+	<div class="row lineVertical">
+		<div class="span2">&nbsp;</div>
+		<div class="span10">&nbsp;</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="span2">
+
+				{% comment %}<!-- Start Items of filter  -->{% endcomment %}
+				
+				<ul class="multiLevelMenu">
+					<li>
+						<a data-filter="company" class="active" href="#" title="All">All</a>
+					</li>
+					<li>
+						<a data-filter="enterprise" href="#" title="Enterprise">Enterprise</a>
+					</li>
+					<li>
+						<a data-filter="startups" href="#" title="Startups">Startups</a>
+					</li>
+					<li>
+						<a data-filter="dealerships" href="#" title="Dealerships">Dealerships</a>
+					</li>
+					<li>
+						<a data-filter="oems" href="#" title="OEMs">OEMs</a>
+					</li>
+					<li>
+						<a data-filter="solutionProviders" href="#" title="Solution Providers">Solution Providers</a>
+					</li>
+					<li>
+						<a data-filter="individuals" href="#" title="Individuals">Individuals</a>
+					</li>
+				</ul>
+				
+				{% comment %}<!-- End Items of filter  -->{% endcomment %}
+
+			</div>
+			{% comment %}<!--<div class="verticalLine">&nbsp;</div>-->{% endcomment %}
+			<div class="span10">
+				
+				{% comment %}<!-- Start content of filter -->{% endcomment %}
+				
+				<section>
+					<p>Here you can find a sample of websites and apps using the Edmunds API.</p>
+										
+					{% include themes/twitter/showcase/showcase-items.html %}
+					
+				</section>
+				
+				{% comment %}<!-- End content of filter  -->{% endcomment %}
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% comment %}<!-- script for calculate height of tag aside -->{% endcomment %}
+<script type="text/javascript">
+	
+	$(function(){
+		
+		var aside = $('.wrapperResultFilter').find('aside');
+		
+		var amountAside = aside.lenght;
+		
+		var arrayHeight = [];
+		
+		aside.each(function(){
+			arrayHeight.push($(this).height());
+			arrayHeight.sort();
+		});
+		
+		var arrLength = arrayHeight.length - 1;
+		
+		var heightAside = arrayHeight[arrLength];
+		
+		aside.css('height', heightAside);
+		
+	});
+	
+</script>
+
+{% comment %}<!-- checking icon "NEW" -->{% endcomment %}
+<script type="text/javascript">
+
+	var today = new Date();
+	
+	var todayNumber = today.getDate();
+	
+	var $imgNew = $('.iconNew');
+	
+	var count = 30 * 24*60*60*1000;
+	
+	$imgNew.each(function(){
+	    var thisLi = $(this);
+	    
+	    var number = thisLi.data('date');
+	    
+	    var imgDate = new Date(number);
+	    
+
+	    var balance = today - imgDate;
+	    
+	    if(balance > count){
+	    	thisLi.hide();
+	    }
+	    
+	
+	});
+
+</script>
+
+{% comment %}<!-- 
+<script type="text/javascript">
+	$(function(){
+		var contentPage = $('.contentPage .span10');
+		var verticalLine = $('#verticalLine');
+		
+		function coordLine(){
+			
+			var leftPos = contentPage.offset().left;
+			
+			verticalLine.css('left', leftPos - 9);
+		};
+		coordLine();
+		
+		$(document).resize(function(){
+			coordLine();
+		});
+
+		
+	});
+</script>
+end filter-showcase.html -->{% endcomment %}

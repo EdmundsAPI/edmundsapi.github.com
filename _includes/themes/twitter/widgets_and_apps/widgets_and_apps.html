@@ -1,0 +1,184 @@
+
+{% include themes/twitter/title-page.html %}
+
+<div id="wrapperWidget" class="marketValue">
+
+
+
+		        <div id="myCarousel" class="carousel slide">
+		        	<div class="container">
+			        	<header class="headerWidgets">
+							<ul class="carousel-indicators">
+							    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#marketValue">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
+							    <li data-target="#myCarousel" data-slide-to="1"><a href="#vehicleConf">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
+							    <li data-target="#myCarousel" data-slide-to="2"><a href="#edmundsWidget">EDMUNDS AT A GLANCE</a></li>
+						    </ul>
+							<h2 >Widgets</h2>
+							<span class="arrow"></span>
+					    </header>
+
+				    </div>
+				    {% comment %}<!-- Carousel items -->{% endcomment %}
+				    <div class="carousel-inner slider-content">
+
+				    	{% comment %}<!-- TRUE MARKET VALUE -->{% endcomment %}
+					    <div class="active item">
+					    	<div class="slide1 container active">
+
+								<div class="row-fluid">
+									<div class="span6">
+										<a class="standart-btn" href="{{ PATH }}/widgets_and_apps/true_market_value.html" title="Learn More">Learn More</a>
+										<a class="standart-btn configureBtn" href="{{ PATH }}/widgets_and_apps/market_value.html" title="Learn More">Configure Now</a>
+										<p>
+											The Edmunds.com True Market Value® (TMV®) Widget gives automotive consumers the ability to find the Edmunds.com TMV® price for a particular new or used vehicle with hassle. The price shown is for the base vehicle trim and doesn't account for any options or colors adjustments.
+										</p>
+										<div class="row-fluid info">
+											<div class="span3">
+												<h3>Input data</h3>
+												<ul>
+													<li>Makes</li>
+													<li>Model</li>
+													<li>Year</li>
+													<li>Styles</li>
+													<li>Zip code</li>
+												</ul>
+											</div>
+											<div class="span4">
+												<h3>Output data</h3>
+												<span>&#8212; New vehicles &#8212;</span>
+												<ul>
+													<li>True Market Value&#174;</li>
+													<li>MSRP</li>
+													<li>Invoice price</li>
+												</ul>
+
+												<span>&#8212; Used vehicles &#8212;</span>
+												<ul>
+													<li>Tradeln</li>
+													<li>Private Party</li>
+													<li>Dealer Retail</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="span6">
+										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/market_value.png" alt="" />
+									</div>
+								</div>
+
+							</div>
+					    </div>
+
+						{% comment %}<!-- NEW VEHICLE CONFIGURATOR -->{% endcomment %}
+					    <div class="item">
+							<div class="slide2 container">
+								<div class="row-fluid">
+									<div class="span6">
+										<a class="standart-btn" href="{{ PATH }}/widgets_and_apps/vehicle_configurator.html" title="Learn More">Learn More</a>
+										<a class="standart-btn configureBtn" href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" title="Learn More">Configure Now</a>
+										<p>
+											The New Vehicle Configurator Widget allows the consumer to configure a <strong>new</strong> vehicle, price it out and submit a quick quote to a local dealer(s).
+										</p>
+										<div class="row-fluid info">
+											<div class="span3">
+												<h3>Input data</h3>
+												<ul>
+													<li>Makes</li>
+													<li>Model</li>
+													<li>Year</li>
+													<li>Styles</li>
+													<li>Zip code</li>
+												</ul>
+											</div>
+											<div class="span4">
+												<h3>Output data</h3>
+												<ul>
+													<li>True Market Value&#174;</li>
+													<li>MSRP</li>
+													<li>Invoice price</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="span6">
+										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/vehicle_config.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						{% comment %}<!-- EDMUNDS AT A GLANCE -->{% endcomment %}
+					    <div class="item">
+							<div class="slide3 container">
+						    	<div class="row-fluid">
+									<div class="span6">
+										<h3>Stay turned...<br>Widget coming soon</h3>
+										<p>
+											Tell the widget what car make/model/year you're interested in and it will tell you all that Edmunds.com knows about it including its car rating grade, consumers reviews, Edmunds.com Editorial review, Road Test articles, Price Promise® inventories, dealers selling it in the area, ...etc
+										</p>
+										<div class="row-fluid info">
+											<div class="span3">
+												<h3>Input data</h3>
+												<ul>
+													<li>Makes</li>
+													<li>Model</li>
+													<li>Year</li>
+												</ul>
+											</div>
+											<div class="span9">
+												<h3>Output data</h3>
+												<ul>
+													<li>Edmund's Rating</li>
+													<li>What Edmunds Says: Pros ans Cons</li>
+													<li>Consumer Reviews</li>
+													<li>Road Tests</li>
+													<li>Comparison</li>
+													<li>and more...</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="span6">
+										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/at-a-glance.png" alt="" />
+									</div>
+								</div>
+						    </div>
+						</div>
+
+				    </div>
+
+			    </div>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript">
+
+		$('.carousel-indicators a').bind('click.tabLink', function(){
+
+			var wrapperWidget= $('#wrapperWidget');
+		 	var hrefThis = $(this).attr('href');
+		 	var classWrapp = hrefThis.substr(1);
+		 	wrapperWidget.removeAttr('class');
+		 	wrapperWidget.addClass(classWrapp);
+
+		});
+
+	    $('.carousel').carousel({
+	    	pause: true,
+			interval: false
+	    });
+
+</script>
+
+
+
+
+

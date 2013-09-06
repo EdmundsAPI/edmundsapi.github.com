@@ -1,0 +1,42 @@
+
+<ul class="nav nav-tabs" id="myTab">
+    <li class="active">
+    	<a href="#qualification">Qualification</a>
+    </li>
+    <li>
+    	<a href="#location">Location</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane  in active" id="qualification">
+
+		<input id="social-shopping" type="checkbox" /><label for="social-shopping">Social</label>
+		<input id="mobile" type="checkbox" /><label for="mobile">Mobile</label>
+		<input id="analytics" type="checkbox" /><label for="analytics">Analytics</label>
+		<input id="badge-web" type="checkbox" /><label for="badge-web">Web</label>
+
+	</div>
+
+    <div class="tab-pane " id="location">
+
+		<input id="san_jose" type="checkbox" /><label for="rochester">Rochester, NY (<span class="amountCityDev">0</span>)</label>
+		<input id="astoria" type="checkbox" /><label for="astoria">Astoria, NY (<span class="amountCityDev">0</span>)</label>
+		<input id="newtown" type="checkbox" /><label for="newtown">Newtown, PA (<span class="amountCityDev">0</span>)</label>
+		<input id="atlanta" type="checkbox" /><label for="atlanta">Atlanta, GA (<span class="amountCityDev">0</span>)</label>
+	</div>
+
+</div>
+
+<div class="optionFilter">Showing <span id="amountDev">0</span> developers <span id="selectedQual" class="hide">providing:</span><span id="selectedLoc" class="hide">from location:</span></div>
+
+
+{% comment %}<!-- script show tabs -->{% endcomment %}
+<script type="text/javascript">
+    $('#myTab a').click(function (e) {
+	    e.preventDefault();
+	    $(this).tab('show');
+    });
+</script>
+
+
