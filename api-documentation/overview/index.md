@@ -40,6 +40,8 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 
 [Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/).
 
+It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.
+
 ### URI Format
 
 All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}**?fmt=**{response format}**&api\_key=**{API key}**_
