@@ -18,7 +18,7 @@ overview: page_version
 
 #### The vehicle equipment is everything that exists within a car, including the options, engine, transmission, colors, seat configuration, brake system, air conditioning, and more.
 
-_**Please note** that this resource **does not work** for vehicles that were released in 2001 or prior. We will introduce that dataset soon._
+_**Please note** that this resource **does not work** for vehicles that were released in 2000 or prior. We will introduce that dataset soon._
 
 ### Equipment Response Formats
 
