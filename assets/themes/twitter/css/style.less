@@ -2411,9 +2411,14 @@ a.blueLink {
           }
 
           figure {
+            width: 225px;
+            height: 170px;
+            border-right: 1px solid #DDD;
             padding: 0;
             margin:0;
             background:#fff;
+            line-height: 170px;
+            text-align: center;
           }
 
           aside {
@@ -4140,6 +4145,10 @@ a.blueLink {
           height: 18px;
           background-image: url('../img/certified_developer/buttons_slider.png');
           background-repeat: no-repeat;
+          -moz-user-select: none;
+          -khtml-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
 
           &:hover {
             cursor: pointer;
@@ -4174,6 +4183,9 @@ a.blueLink {
             }
             figure {
               width: 142px;
+              height: auto;
+              line-height: normal;
+
               img {
                 width: 142px;
               }
@@ -4182,6 +4194,7 @@ a.blueLink {
         }
       }
     }
+
 
     // start block Developer (slider)
     .blockBottomSlider {
