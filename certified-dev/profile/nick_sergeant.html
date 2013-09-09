@@ -81,7 +81,7 @@ badges: [web, mobile]
 
 						{% for p in page.badges %}
 
-							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}"></a></li>
+							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{{p}}"></a></li>
 
 						{% endfor %}
 
@@ -265,3 +265,15 @@ badges: [web, mobile]
 </script>
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/profile_rating.js"></script>
+
+{% comment %}<!-- Script for showing tooltops -->{% endcomment %}
+<script type="text/javascript">
+
+	$(function(){
+
+		$('#iconBadge a').tooltip('toggle');
+		$('#iconBadge a').tooltip('hide')
+
+	});
+
+</script>

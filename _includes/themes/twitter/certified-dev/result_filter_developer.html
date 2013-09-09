@@ -4,8 +4,8 @@
 	<div class="wrapperDeveloper" data-location="san_jose" data-badge="mobile;badge-web">
 			<div class="iconBadges">
 				<ul class="clearfix">
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" /></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" rel="tooltip" data-original-title="Web"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" rel="tooltip" data-original-title="Mobile"/></li>
 				</ul>
 			</div>
 			<div class="iconDev">
@@ -30,10 +30,10 @@
 	<div class="wrapperDeveloper" data-location="astoria" data-badge="mobile;badge-web;social-shopping;analytics">
 			<div class="iconBadges">
 				<ul class="clearfix">
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_social_shopping_mini.png" alt="Social shopping" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" /></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" rel="tooltip" data-original-title="Mobile"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" rel="tooltip" data-original-title="Web"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_social_shopping_mini.png" alt="Social shopping" rel="tooltip" data-original-title="Social shopping"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" rel="tooltip" data-original-title="Analytics"/></li>
 
 				</ul>
 			</div>
@@ -58,10 +58,10 @@
 	<div class="wrapperDeveloper" data-location="newtown" data-badge="social-shopping;mobile;badge-web;analytics">
 			<div class="iconBadges">
 				<ul class="clearfix">
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_social_shopping_mini.png" alt="Social shopping" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" /></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" rel="tooltip" data-original-title="Web"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_social_shopping_mini.png" alt="Social shopping" rel="tooltip" data-original-title="Social shopping"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" rel="tooltip" data-original-title="Mobile"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" rel="tooltip" data-original-title="Analytics"/></li>
 				</ul>
 			</div>
 			<div class="iconDev">
@@ -84,9 +84,9 @@
 	<div class="wrapperDeveloper" data-location="atlanta" data-badge="mobile;badge-web;analytics">
 			<div class="iconBadges">
 				<ul class="clearfix">
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" /></li>
-					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" /></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_web_mini.png" alt="Web" rel="tooltip" data-original-title="Web"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_mobile_mini.png" alt="Mobile" rel="tooltip" data-original-title="Mobile"/></li>
+					<li><img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/icon_analytics_mini.png" alt="Analytics" rel="tooltip" data-original-title="Analytics"/></li>
 				</ul>
 			</div>
 			<div class="iconDev">
@@ -124,6 +124,20 @@
 			developer.find('.iconBadges li').css('line-height', height+'px');
 
 		});
+	});
+
+</script>
+
+
+
+{% comment %}<!-- Script for showing tooltops -->{% endcomment %}
+<script type="text/javascript">
+
+	$(function(){
+
+		$('.iconBadges li img').tooltip('toggle');
+		$('.iconBadges li img').tooltip('hide')
+
 	});
 
 </script>
