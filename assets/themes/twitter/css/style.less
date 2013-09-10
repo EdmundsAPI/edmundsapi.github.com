@@ -1824,10 +1824,8 @@ a.blueLink {
   }
   .faq-links {
     margin-left: 0;
-    margin-bottom: 17px;
     list-style: none;
     li {
-      line-height: 45px;
       a {
         color: #336699;
         &:hover {
@@ -4198,7 +4196,6 @@ a.blueLink {
 
     // start block Developer (slider)
     .blockBottomSlider {
-        height: 106px;
         padding: 21px 27px 17px 22px;
         border-bottom: 2px solid #dedede;
         border-right: 1px solid #dedede;
@@ -4208,6 +4205,7 @@ a.blueLink {
         .blockDiscription1 {
           float: left;
           width: 703px;
+          border-right: 1px solid #525252;
 
           p {
             overflow: hidden;
@@ -4225,9 +4223,8 @@ a.blueLink {
 
         }
         .blockDiscription2 {
+          position: relative;
           overflow: hidden;
-          height: 106px;
-          border-left: 1px solid #525252;
 
           p {
             padding: 0;
@@ -4235,7 +4232,7 @@ a.blueLink {
 
           .carousel-button {
             position: absolute;
-            bottom: 21px;
+            bottom: 0;
             display: inline-block;
             width: 18px;
             height: 18px;
@@ -4254,7 +4251,8 @@ a.blueLink {
           }
 
           .carousel-indicators {
-            top: 72px;
+            top: auto;
+            bottom: 5px;
             right: 49px;
 
             li {
@@ -4272,7 +4270,6 @@ a.blueLink {
 
 
         .carousel-inner {
-          height: 106px;
           margin: 7px 0 0 27px;
 
           span.name {

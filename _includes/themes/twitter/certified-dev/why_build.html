@@ -43,7 +43,7 @@
 	        <li>Promote your software solution services</li>
 	        <li>Get access to API previews before they launch</li>
 	        <li>Help form the future roadmap of the Edmunds API</li>
-	        <li>Monthly conference call to discuss API development</li> 
+	        <li>Monthly conference call to discuss API development</li>
 			<li>Get some awesome swag</li>
 			<li>Make Money!</li>
 		</ul>
@@ -54,21 +54,14 @@
 </div>
 
 
-
-
-{% comment %}<!-- start script slider of the customer -->{% endcomment %}
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/slidersSDP.js">
-</script>
-{% comment %}<!-- end script slider of the customer -->{% endcomment %}
-
-{% comment %}
+{% comment %}<!--
 <div class="titleBottomSlider">
 	Kind words from our
 
     <ul class="nav nav-tabs" id="myTab">
 	    <li><a href="#businessOwner" data-toggle="tab">Business Owners</a></li>
 	    <li><a href="#certDev" data-toggle="tab">Certified Developers </a></li>
-    </ul>	
+    </ul>
 </div>
 
 
@@ -113,15 +106,14 @@
 							</p>
 						</div>
 					</div>
-
-					<a class="carousel-button left" href="#myCarousel" data-slide="prev">&nbsp;</a>
-					<a class="carousel-button right" href="#myCarousel" data-slide="next">&nbsp;</a>
-					<ol class="carousel-indicators">
-					  	<li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
-					  	<li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
-					   	<li data-target="#myCarousel" data-slide-to="2">&nbsp;</li>
-					</ol>
 				</div>
+				<a class="carousel-button left" href="#myCarousel" data-slide="prev">&nbsp;</a>
+				<a class="carousel-button right" href="#myCarousel" data-slide="next">&nbsp;</a>
+				<ol class="carousel-indicators">
+				  	<li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
+				  	<li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
+				   	<li data-target="#myCarousel" data-slide-to="2">&nbsp;</li>
+				</ol>
 			</div>
 	</div>
 
@@ -164,48 +156,77 @@
 							</p>
 						</div>
 					</div>
-
-					<a class="carousel-button left" href="#myCarousel2" data-slide="prev">&nbsp;</a>
-					<a class="carousel-button right" href="#myCarousel2" data-slide="next">&nbsp;</a>
-					<ol class="carousel-indicators">
-					  	<li data-target="#myCarousel2" data-slide-to="0" class="active">&nbsp;</li>
-					  	<li data-target="#myCarousel2" data-slide-to="1">&nbsp;</li>
-					   	<li data-target="#myCarousel2" data-slide-to="2">&nbsp;</li>
-					</ol>
 				</div>
+				<a class="carousel-button left" href="#myCarousel2" data-slide="prev">&nbsp;</a>
+				<a class="carousel-button right" href="#myCarousel2" data-slide="next">&nbsp;</a>
+				<ol class="carousel-indicators">
+				  	<li data-target="#myCarousel2" data-slide-to="0" class="active">&nbsp;</li>
+				  	<li data-target="#myCarousel2" data-slide-to="1">&nbsp;</li>
+				   	<li data-target="#myCarousel2" data-slide-to="2">&nbsp;</li>
+				</ol>
 			</div>
 	</div>
-	
+
 </div>
-{% endcomment %}
+
+-->{% endcomment %}
+
+{% comment %}<!-- start script slider of the customer -->{% endcomment %}
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/slidersCDP.js">
+</script>
+{% comment %}<!-- end script slider of the customer -->{% endcomment %}
+
+
+
+{% comment %}<!-- start script slider of the bottom corusel of the developers and business owners -->{% endcomment %}
 <script type="text/javascript">
 
-    $('.carousel').carousel({
+/*    $('.carousel').carousel({
 	    pause: false,
 		interval: false
     });
 
+    function heightBlock(idParent){
+    	var parent = $(idParent);
+    	var discription1 = parent.find('.blockDiscription1');
+    	var height = discription1.height();
+
+		var discription2 = parent.find('.blockDiscription2');
+    	var heightDiscription2 = discription2.height();
+
+		console.log(height +"   " + heightDiscription2)
+
+    	if(height > heightDiscription2) {
+			console.log('test1')
+    		discription2.height(height);
+    	} else {
+    		discription2.removeAttr('style');
+    	}
+
+    };*/
+
     $('.bottomSlider1 .carousel').on('slide', function(event) {
    		var slideNumber = $(event.relatedTarget).data('itemNumber');
     	$('.bottomSlider1 .app-picture.active').hide().removeClass('active');
-    	$('.bottomSlider1 [data-slide-number="'+ slideNumber +'"]').addClass('active');
-    	$('.bottomSlider1 [data-slide-number="'+ slideNumber +'"]').show();
+    	$('.bottomSlider1 [data-slide-number="'+ slideNumber +'"]').addClass('active').show();
+    	//heightBlock('#businessOwner');
     });
 
     $('.bottomSlider2 .carousel').on('slide', function(event) {
    		var slideNumber = $(event.relatedTarget).data('itemNumber');
     	$('.bottomSlider2 .app-picture.active').hide().removeClass('active');
-    	$('.bottomSlider2 [data-slide-number="'+ slideNumber +'"]').addClass('active');
-    	$('.bottomSlider2 [data-slide-number="'+ slideNumber +'"]').show();
+    	$('.bottomSlider2 [data-slide-number="'+ slideNumber +'"]').addClass('active').show();
+		//heightBlock('#certDev');
     });
 
-</script>
 
-<script>
 	$(function () {
 		$('#myTab a:last').tab('show');
 	})
-</script>
 
+	//heightBlock('#certDev');
+
+</script>
+{% comment %}<!-- end script slider of the bottom corusel of the developers and business owners -->{% endcomment %}
 
 
