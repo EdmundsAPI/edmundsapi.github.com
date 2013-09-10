@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Dealer Details and Location'
-title_active_left_menu: 'Details and Location'
+title_active_left_menu: 'Editor Reviews'
 title_parent: Api documentation
 
 amount_version: 1
