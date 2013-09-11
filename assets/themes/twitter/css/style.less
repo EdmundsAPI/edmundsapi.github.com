@@ -3367,10 +3367,45 @@ a.blueLink {
               list-style: none;
               li {
                 float:right;
-                width:53px;
                 margin: 0 21px 0 0;
                 &:first-child {
                   margin:0;
+                }
+                a {
+                  display: inline-block;
+                  width:52px;
+                  height: 60px;
+                  margin-top: 30px;
+                  background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
+                  background-repeat: no-reapeat;
+                  background-color: transparent;
+                  cursor: default;
+
+                  &.badgeWeb {
+                    background-position: 0 0;
+                    &.activeBadge {
+                      background-position: 0 -60px;
+                    }
+                  }
+                  &.badgeMobile {
+                    background-position: -52px 0;
+                    &.activeBadge {
+                      background-position: -52px -60px;
+                    }
+                  }
+                  &.badgeSocial {
+                    background-position: -104px 0;
+                    &.activeBadge {
+                      background-position: -104px -60px;
+                    }
+                  }
+                  &.badgeAnalytics {
+                    background-position: -156px 0;
+                    &.activeBadge {
+                      background-position: -156px -60px;
+                    }
+                  }
+
                 }
               }
             }
@@ -3800,22 +3835,22 @@ a.blueLink {
                 margin: 0 10px 0 0;
                 a {
                   display: inline-block;
-                  width:53px;
+                  width:52px;
                   height: 61px;
                   background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
                   background-repeat: no-repeat;
 
                   &.badge-socialShopping {
-                    background-position: 0 1px;
+                    background-position: -104px -60px;
                   }
                   &.badge-mobile {
-                    background-position: 0 -60px;
+                    background-position: -52px -60px;
                   }
                   &.badge-analytics {
-                    background-position: 0 -121px;
+                    background-position: -156px -60px;
                   }
                   &.badge-web {
-                    background-position: 0 -181px;
+                    background-position: 0 -60px;
                   }
                 }
 
