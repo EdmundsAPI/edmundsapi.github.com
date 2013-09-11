@@ -4226,17 +4226,20 @@ a.blueLink {
 
 
     // start block Developer (slider)
+
+    .tab-content {
+      padding: 21px 27px 17px 22px;
+      border-bottom: 2px solid #dedede;
+      border-right: 1px solid #dedede;
+      background: #fff;
+    }
     .blockBottomSlider {
-        padding: 21px 27px 17px 22px;
-        border-bottom: 2px solid #dedede;
-        border-right: 1px solid #dedede;
         color: #525252;
-        background: #fff;
+        background: #fff url('../img/certified_developer/why_build/bg_line_slider_why_build.png') 703px 0 repeat-y;
 
         .blockDiscription1 {
           float: left;
           width: 703px;
-          border-right: 1px solid #525252;
 
           p {
             overflow: hidden;
@@ -4254,7 +4257,6 @@ a.blueLink {
 
         }
         .blockDiscription2 {
-          position: relative;
           overflow: hidden;
 
           p {
@@ -4301,6 +4303,7 @@ a.blueLink {
 
 
         .carousel-inner {
+          min-height: 100px;
           margin: 7px 0 0 27px;
 
           span.name {
@@ -4308,7 +4311,8 @@ a.blueLink {
             margin: 0 0 3px 0;
             font:700 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
           }
-          .slide-text {
+          p.slide-text {
+            margin-bottom: 0;
             font-size: 12px;
           }
         }
