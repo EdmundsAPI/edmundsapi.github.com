@@ -4,14 +4,14 @@ $(function(){
 
         var wrapperReviews = $('.wrapperReviews');
 
-        blockRating.each(function(){  //1
+        blockRating.each(function(){
 
             var dataRating = $(this).find('.rating').data('rating').split(';');
 
             var lengthDataRating = dataRating.length;
 
             // start raring Square
-            var $arrUl = $(this).find('.ratingSquare'); // array ul
+            var $arrUl = $(this).find('.ratingSquare'); 
 
             $arrUl.each(function(indx){
 
