@@ -3769,15 +3769,17 @@ a.blueLink {
       position: relative;
       margin: 0 0 56px;
 
+      .blockGeneralExampl, .blockContactReviews {
+        min-height: 155px;
+      }
+
       .blockGeneralExampl {
-        height: 155px;
         margin:0 0 9px 0;
         border-right: 1px solid #dedede;
         border-bottom: 2px solid #dedede;
         background: #fff;
       }
       .blockContactReviews {
-        height: 155px;
         border-right: 1px solid #dedede;
         border-bottom: 2px solid #dedede;
         background: #fff;
@@ -3788,7 +3790,7 @@ a.blueLink {
       .blockInform  {
         float: left;
         width: 358px;
-        padding:16px 0 0 38px;
+        padding:16px 0 16px 38px;
         &:first-child {
           float:right;
           padding-right:34px;
@@ -3966,10 +3968,10 @@ a.blueLink {
         // icon of the developer
 
         .wrapperIconDeveloper {
-          position: relative;
+          position: absolute;
           display: inline-block;
-          overflow: hidden;
-          margin: -15px 0 0;
+          left: 410px;
+          top: -15px;
           width:352px;
           height:352px;
 
@@ -3993,6 +3995,12 @@ a.blueLink {
           }
           &.iconBadges3 {
              background-position: 0 -704px;
+          }
+
+          .iconDev {
+            margin: 1px;
+            width: 350px;
+            .border-radius(50%);
           }
 
         }
