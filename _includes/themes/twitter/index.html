@@ -15,7 +15,7 @@
 						<object width="594" height="334"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" />
 							<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=65923039&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=1&amp;color=ffffff&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" />
 							<embed src="http://vimeo.com/moogaloop.swf?clip_id=65923039&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=1&amp;color=ffffff&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="594" height="334"></embed>
-						</object>			
+						</object>
 					</div>
 				</div>
 				<div class="row">
@@ -75,44 +75,44 @@
 					    <div class="tab-content">
 						    <div class="tab-pane  in active" id="vehical">
 						    	<p>This API encompasses a wide variety of <em>vehicle-centric</em> datasets including <strong>vehicle specs</strong> (e.g. make and model names, trim, options, colors, equipment, engine, MPG, ...etc), consumer ratings and reviews, stock photos, vehicle pricing and maintenance schedules just to name a few. The API has the <em>biggest dataset</em> Edmunds.com has to offer.</p>
-						    	<div class="moreInf"><a href="/api-documentation/vehicle/" title="Vehical API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/> Public | Partner | Edmunds</div>
+						    	<div class="moreInf"><a class="standart-btn" href="/api-documentation/vehicle/" title="Vehical API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/> Public | Partner | Edmunds</div>
 						    </div>
 						    <div class="tab-pane " id="editorial">
 						    	<p>This API offers access to Edmunds.com's automotive articles and vehicle editorial reviews, including video reviews, vehicle pros, vehicle cons, safety and performance reviews.</p>
-						    	<div class="moreInf"><a href="/api-documentation/editorial/" title="Editorial API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" aalt="API Access" title="API Access"/>  Public | Partner | Edmunds</div> 
+						    	<div class="moreInf"><a class="standart-btn" href="/api-documentation/editorial/" title="Editorial API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" aalt="API Access" title="API Access"/>  Public | Partner | Edmunds</div>
 						    </div>
 						    <div class="tab-pane " id="dealer">
 						    	<p>This API gives access to dealerships location and identity data as well as their consumer ratings and reviews.</p>
-						    	<div class="moreInf"><a href="/api-documentation/dealer/" title="Dealer API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/>  Public | Partner | Edmunds</div>
+						    	<div class="moreInf"><a class="standart-btn" href="/api-documentation/dealer/" title="Dealer API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/>  Public | Partner | Edmunds</div>
 						    </div>
 						    <div class="tab-pane " id="inventory">
 						    	<p>This API enables vehicle inventory search and inventory VIN lookup.</p>
-						    	<div class="moreInf"><a href="/api-documentation/inventory/" title="Inventory API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/> Partner | Edmunds</div>
+						    	<div class="moreInf"><a class="standart-btn" href="/api-documentation/inventory/" title="Inventory API">View Documentation</a><img src="{{ PATH }}/assets/themes/twitter/img/iconPublic.png" alt="API Access" title="API Access"/> Partner | Edmunds</div>
 						    </div>
 					    </div>
-					     
-					     
+
+
 					    <script>
 					        $('#myTab a').click(function (e) {
 							    e.preventDefault();
 							    $(this).tab('show');
-							    
+
 							    //moving arrow
-							    
+
 							    var hrefLink = $(this).attr('href');
-							    
+
 							    var classArrow = hrefLink.substr(1);
 
-								var arrow = $('.arrow');							    
+								var arrow = $('.arrow');
 
 							   	arrow.removeAttr('class');
-							    
+
 							    arrow.addClass('arrow '+ classArrow +'');
-							    
-							    
+
+
 						    })
-						    
-					
+
+
 					    </script>
 					</div>
 				</div>
@@ -124,7 +124,7 @@
 			<div class="span6">
 				<div class="app-picture pic-slide0 active" data-slide-number="0">&nbsp;</div>
 				<div class="app-picture pic-slide1" data-slide-number="1">&nbsp;</div>
-				<div class="app-picture pic-slide2" data-slide-number="2">&nbsp;</div>					
+				<div class="app-picture pic-slide2" data-slide-number="2">&nbsp;</div>
 			</div>
 
 			<div class="span6">
@@ -185,7 +185,7 @@
 						<i class="icon-inspector">&nbsp;</i>
 					</span>
 					<h4>FAQs</h4>
-				</div>				
+				</div>
 				<p>
 					If the docs couldn't answer your questions, the <a href="/faq.html">FAQs</a> probably will. These are some of the most common and frequent questions we get from the community.
 				</p>
@@ -196,7 +196,7 @@
 						<i class="icon-community">&nbsp;</i>
 					</span>
 					<h4>Community</h4>
-				</div>	
+				</div>
 				<p>With the <a href="http://edmunds.mashery.com/forum">forum</a> and <a href="https://twitter.com/edmundsapi" target="_blank">Twitter</a>, we encourage the community to engage and help us and each other optimize the use of the Edmunds API</p>
 			</div>
 			<div class="span3">
@@ -205,7 +205,7 @@
 						<i class="icon-test">&nbsp;</i>
 					</span>
 					<h4>Github</h4>
-				</div>	
+				</div>
 				<p>SDKs, widgets and everything else we do, including this very portal, is on <a href="https://github.com/EdmundsAPI/" target="_blank">Github</a>.</p>
 			</div>
 			</div>
@@ -238,12 +238,12 @@
 					<a href="{{ PATH }}/faq.html" class="standart-btn">View All</a>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 </div>
 
 <script type="text/javascript">
-		
+
     $('.carousel').carousel({
 	    pause: true,
 		interval: false
@@ -253,7 +253,7 @@
     	var slideNumber = $(event.relatedTarget).data('itemNumber');
     	$('.app-picture.active').fadeOut(500, function() {
     		$(this).removeClass('active');
-    		$('[data-slide-number="'+ slideNumber +'"]').addClass('active');    			
+    		$('[data-slide-number="'+ slideNumber +'"]').addClass('active');
     	});
     	$('[data-slide-number="'+ slideNumber +'"]').fadeIn(500);
     });

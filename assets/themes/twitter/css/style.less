@@ -50,6 +50,10 @@ a:hover {
   text-decoration: none;
 }
 
+ul, ol {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
 // Drop shadows
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
@@ -83,31 +87,31 @@ a:hover {
           transition: @duration @timing-function @prop;
 }
 
-a.redButton {
-    margin: 0 0 31px;
-    padding: 0 21px;
-    display: inline-block;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 38px;
-    background: #BF2F37;
-
-    &:hover {
-      color:#fff;
-      text-decoration:none;
-    }
-    &:focus {
-      color:#fff;
-    }
-    &:active {
-      color:#fff;
-    }
-}
-
 body .container, .wrap-container, .pageCertDev .wrapperMainPage, .apiPage {
   min-width: 1150px;
 }
+//change
+a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus {
+  display: inline-block;
+  margin-bottom:25px;
+  padding: 0 20px 0 20px;
+  color: #FFFFFF;
+  font-size:14px;
+  font-weight:700;
+  line-height:2.9;
+  background: @color_red_blok;
+
+ &:hover, &:focus {
+    text-decoration:none;
+    color: #FFFFFF;
+  }
+}
+p, table {
+  a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus {
+    margin-bottom:0;
+  }
+}
+
 
 #h1Title {
   display:none;
@@ -131,19 +135,7 @@ a:focus {
 }
 //pages widgets and apps
 // widgets TRUE MARKET VALUE
-.content ul{
 
-  margin-bottom: 37px;
-
-  li {
-    line-height: 31px;
-
-    ul {
-      margin-bottom:0;
-    }
-}
-
-}
 .h1Title {
     border-bottom: 1px solid #CCC;
 
@@ -155,22 +147,6 @@ a:focus {
       font-family:'Oswald400', "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 78px;
       text-transform: uppercase;
-  }
-}
-
-//change
-a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus {
-  display: inline-block;
-  padding: 0 21px;
-  color: #FFFFFF;
-  font-size:15px;
-  font-weight:700;
-  line-height: 38px;
-  background: @color_red_blok;
-
- &:hover, &:focus {
-    text-decoration:none;
-    color: #FFFFFF;
   }
 }
 
@@ -340,7 +316,7 @@ a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus
         }
         &:last-child {
           .border-radius(0 0 5px 5px);
-          &:hover, a:hover {
+          &:hover {
             .border-radius(0 0 5px 5px)
           }
         }
@@ -374,12 +350,6 @@ a.standart-btn, a.standart-btn:link, a.standart-btn:active, a.standart-btn:focus
 .pageWidgetSetup {
   .container {
     position:relative;
-  }
-  ul {
-    margin-bottom: 42px;
-    ul {
-      margin-bottom:0;
-    }
   }
   h5 {
     font-size:18px;
@@ -513,26 +483,6 @@ a.blueLink {
         padding: 0 0 50px 39px;
       }
 
-      .linkLearMore, .configureBtn {
-        display: inline-block;
-        margin: 0 0 31px 0;
-        padding: 0 21px;
-        color: #FFFFFF;
-        font-size:15px;
-        font-weight:700;
-        line-height: 38px;
-        background: @color_red_blok;
-
-        &:hover {
-          text-decoration:none;
-        }
-      }
-
-      .linkLearMore {
-        color: #FFFFFF;
-        background: @color_red_blok;
-      }
-
       .configureBtn {
         margin-left: 10px;
         padding: 0 14px;
@@ -550,11 +500,9 @@ a.blueLink {
 
         ul {
           margin-left:15px;
-          font-size:15px;
 
           li {
             list-style:square;
-            line-height: 33px;
           }
         }
 
@@ -586,7 +534,6 @@ a.blueLink {
       ul {
         border:0;
         padding:0;
-        margin:0;
 
         &.carousel-indicators {
             top: 49px;
@@ -903,12 +850,14 @@ a.blueLink {
       margin: 0 14px;
       font-style: italic;
     }
-    .standart-btn {
-      font-family:'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    a.standart-btn {
+      font-family: 'Oswald',"Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 27px;
-      padding: 14px 49px;
       margin: 0 15px;
+      padding: 14px 49px;
       vertical-align: middle;
+      line-height: 38px;
     }
     .quick-start-TMV {
       display: inline-block;
@@ -1092,8 +1041,8 @@ a.blueLink {
             box-shadow:0 0 20px #234668;
       ul {
         position:absolute;
-        margin:0;
         padding:0;
+        margin: 0;
 
         li {
          position:relative;
@@ -1203,9 +1152,9 @@ a.blueLink {
     font-weight: 700;
   }
   ul {
-    margin:0 0 0 48px;
+    margin-right:0 0 0 48px;
     li {
-      margin:0 0 14px 0;
+      margin:0 0 14px 31px;
       list-style: square;
     }
   }
@@ -1575,7 +1524,6 @@ a.blueLink {
               box-shadow:0 0 20px #234668;
         ul {
           position:absolute;
-          margin:0;
           padding:0;
 
           li {
@@ -1689,9 +1637,9 @@ a.blueLink {
         margin-left: 33px;
       }
       ul {
-        margin:0 0 0 48px;
+        margin:0;
         li {
-          margin:0 0 14px 0;
+          margin:0 0 14px 50px;
           list-style: square;
         }
       }
@@ -1772,14 +1720,6 @@ a.blueLink {
     }
     .standart-btn {
       margin-top: 10px;
-      font-size: 14px;
-      padding: 0 15px;
-      color: #fff;
-
-      &:focus {
-        color: inherit;
-        text-decoration:none;
-      }
     }
     // Change
     .app-picture {
@@ -1801,10 +1741,6 @@ a.blueLink {
     }
     .pic-slide2 {
       background: url('../img/app-slide-2.png') no-repeat;
-    }
-
-    .carousel-inner {
-      margin-bottom: 34px;
     }
 
     .carousel-button {
@@ -1830,7 +1766,7 @@ a.blueLink {
     .carousel-indicators {
       position: relative;
       margin: 0 7px;
-      top: 0;
+      top: -5px;
       right: 0;
       display: inline-block;
       li {
@@ -1888,10 +1824,8 @@ a.blueLink {
   }
   .faq-links {
     margin-left: 0;
-    margin-bottom: 17px;
     list-style: none;
     li {
-      line-height: 45px;
       a {
         color: #336699;
         &:hover {
@@ -1900,9 +1834,6 @@ a.blueLink {
         }
       }
     }
-  }
-  .standart-btn {
-    padding: 0 28px;
   }
   .twitter-follow-button {
     display: inline-block;
@@ -1977,7 +1908,7 @@ a.blueLink {
     }
     p {
       color: #333;
-      margin: 0 58px 20px 38px;
+      margin: 0 58px 33px 38px;
       font-weight:700;
     }
 
@@ -2126,31 +2057,17 @@ a.blueLink {
       color: #fff;
       padding: 0 0 0 38px;
 
-      .moreInf {
+      div.moreInf {
+        background: none repeat scroll 0 0 #557EA7;
+        color: #FFFFFF;
         display: inline-block;
-        padding: 0 16px 0 0;
-        color:#fff;
         font-size: 14px;
         font-weight: 700;
-        background: #557ea7 ;
+        padding: 0 16px 0 0;
 
-        img {
-          margin:0 1px 0 0;
+        a.standart-btn {
+          margin: 0 19px 0 0;
         }
-
-        a, a:hover, a:focus, a:active {
-          display: inline-block;
-          margin:0 19px 0 0;
-          padding:0 20px;
-          color:#fff;
-          font-size: 14px;
-          line-height: 37px;
-          background:@color_red_blok;
-          text-decoration:none;
-        }
-
-
-
       }
     }
   }
@@ -2173,6 +2090,11 @@ a.blueLink {
     .span2 {
       padding-top: 25px;
       min-width: 200px;
+
+      a.linkConsole {
+        padding-left: 33px;
+        background: url("../img/sprite-icon.png") no-repeat  -204px 14px;
+      }
     }
     .span10 {
       border-left: 1px solid #c5c5c5;
@@ -2182,7 +2104,7 @@ a.blueLink {
     h1 {
       padding: 25px 0 18px 29px;
       margin:0;
-      font: 26px/26px 'Oswald400', Arial;
+      font: 26px/26px 'Oswald400', "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #444;
       text-transform: uppercase;
     }
@@ -2346,11 +2268,12 @@ a.blueLink {
           background: none;
           padding: 8px 20px;
           &:hover, &:focus {
-            background-color: #2d9a00;
+            .border-radius(0 0 5px 5px);
             border: 0;
           }
         }
         &:hover {
+          background-color: #2d9a00;
           border-color: #2d9a00;
         }
         &:first-child {
@@ -2486,9 +2409,14 @@ a.blueLink {
           }
 
           figure {
+            width: 225px;
+            height: 170px;
+            border-right: 1px solid #DDD;
             padding: 0;
             margin:0;
             background:#fff;
+            line-height: 170px;
+            text-align: center;
           }
 
           aside {
@@ -2642,6 +2570,7 @@ a.blueLink {
 
     p {
       font-weight:400;
+      margin-bottom: 20px;
 
       &.contentBold {
         margin:0 0 20px 37px;
@@ -2650,7 +2579,6 @@ a.blueLink {
     }
 
     ul {
-      margin-bottom: 20px;
       margin-left: 52px;
     }
 
@@ -2671,18 +2599,8 @@ a.blueLink {
 
         .moreInf {
           position: absolute;
-          bottom: 62px;
+          bottom: 33px;
           left: 50px;
-          background: #BF2F37;
-          color: #FFF;
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 37px;
-          padding: 0px 24px;
-
-          &:hover {
-            text-decoration: none;
-          }
         }
 
         .discriptBlokBisOwner {
@@ -2702,7 +2620,6 @@ a.blueLink {
             li {
               margin: 0 0 16px;
               padding: 0 0 0 4px;
-              line-height: 26px;
             }
           }
         }
@@ -2724,7 +2641,6 @@ a.blueLink {
           li {
             margin: 0 0 16px 0;
             padding: 0 25px 0 4px;
-            line-height: 26px;
           }
         }
 
@@ -2886,7 +2802,7 @@ a.blueLink {
 
   .section3{
     position:relative;
-    height: 464px;
+    height: 407px;
     padding: 0;
     background: #444;
 
@@ -2904,18 +2820,18 @@ a.blueLink {
       h3.titelSection {
         position:absolute;
         left: 36px;
-        top: 106px;
+        top: 130px;
         font-size: 38px;
         line-height: 38px;
         text-transform:uppercase;
       }
       .nav-tabs {
           border-bottom: 1px solid #787878;
-          padding: 26px 0 15px 0;
+          padding: 60px 0 15px 0;
           margin: 0 0 26px;
 
           li {
-  margin-left: 10px;
+              margin-left: 10px;
 
             &:first-child {
               margin-right: 16px;
@@ -2927,21 +2843,6 @@ a.blueLink {
       margin: 0 37px;
       font-size: 14px;
       line-height: 23px;
-
-      a.moreInf {
-        display: inline-block;
-        margin: 0 0 0 1px;
-        padding: 0 16px;
-        color: #FFF;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 38px;
-        background: #BF2F37;
-
-        &:hover {
-          text-decoration:none;
-        }
-      }
     }
     .arrow {
       background: url('../img/slider_widgets/arrows.gif') no-repeat 0 -26px transparent;
@@ -2956,7 +2857,7 @@ a.blueLink {
       width: 20px;
 
       &.web {
-  left: 510px;
+        left: 510px;
       }
       &.mobile {
         left: 695px;
@@ -2989,7 +2890,6 @@ a.blueLink {
       list-style: none;
 
       li {
-        line-height: 23px;
 
         a {
           color:@color_regular_link;
@@ -3086,10 +2986,6 @@ a.blueLink {
        .wrapperStep {
          margin: 0 0 120px 0;
          padding:0 0 0 108px;
-
-         a {
-          color: @color_regular_link;
-         }
 
          .imgStep {
            width: 835px;
@@ -3196,9 +3092,8 @@ a.blueLink {
            padding: 0;
          }
 
-         a.redButton {
-           margin: 14px 0 0 0;
-           color:#fff;
+         a.standart-btn {
+           margin-top: 14px;
          }
 
          &.step4BS {
@@ -3211,16 +3106,15 @@ a.blueLink {
 
        .cdpBdge {
 
-         .wrapperAnchors {
-             margin: 0 0 14px;
+           .span3 {
+             text-align: center;
 
-             a {
-               display: inline-block;
-               margin:0 52px 0 0;
+             p{
+              text-align: left;
+             }
 
-               &:hover {
-                 text-decoration: none;
-               }
+             img{
+               margin: 0 0 25px 0;
              }
            }
 
@@ -3232,22 +3126,6 @@ a.blueLink {
              padding-bottom: 14px;
            }
 
-           .discriptionBadge {
-             border-top: 1px solid #C5C5C5;
-              margin: 28px 0 35px;
-              padding: 21px 0 0;
-
-             img {
-               margin: 0 0 10px;
-               display: block;
-             }
-
-             &.last{
-               margin-bottom: 0;
-               padding-bottom: 20px;
-               border-bottom: 1px solid #C5C5C5;
-             }
-           }
 
            .additionalInf {
              margin: 42px 0 0;
@@ -3457,7 +3335,7 @@ a.blueLink {
               }
             }
             ul {
-              margin: 0 0 19px;
+              margin-left: 0;
               list-style: none;
               li {
                 float:left;
@@ -3489,10 +3367,45 @@ a.blueLink {
               list-style: none;
               li {
                 float:right;
-                width:53px;
                 margin: 0 21px 0 0;
                 &:first-child {
                   margin:0;
+                }
+                a {
+                  display: inline-block;
+                  width:52px;
+                  height: 60px;
+                  margin-top: 30px;
+                  background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
+                  background-repeat: no-reapeat;
+                  background-color: transparent;
+                  cursor: default;
+
+                  &.badgeWeb {
+                    background-position: 0 0;
+                    &.activeBadge {
+                      background-position: 0 -60px;
+                    }
+                  }
+                  &.badgeMobile {
+                    background-position: -52px 0;
+                    &.activeBadge {
+                      background-position: -52px -60px;
+                    }
+                  }
+                  &.badgeSocial {
+                    background-position: -104px 0;
+                    &.activeBadge {
+                      background-position: -104px -60px;
+                    }
+                  }
+                  &.badgeAnalytics {
+                    background-position: -156px 0;
+                    &.activeBadge {
+                      background-position: -156px -60px;
+                    }
+                  }
+
                 }
               }
             }
@@ -3542,11 +3455,8 @@ a.blueLink {
   .termsOfUses {
     .innerContentPage .span10 {
       ul {
+        margin-left:0;
         list-style: none;
-        margin: 0 45px 25px 0;
-          li {
-            line-height: 26px;
-        }
       }
     }
   }
@@ -3570,10 +3480,7 @@ a.blueLink {
       }
       ul {
         list-style: none;
-        margin: 0 45px 25px 0;
-        li {
-          line-height: 45px;
-        }
+        margin: 0 45px 20px 0;
       }
       .question-header {
         font-weight: bold;
@@ -3644,12 +3551,6 @@ a.blueLink {
           text-decoration: none;
         }
       }
-    }
-    .standart-btn {
-      margin: 15px 0;
-      font-size: 14px;
-      padding: 0 17px;
-      color: #fff;
     }
     .post-header {
       font-size: 12px;
@@ -3764,9 +3665,10 @@ a.blueLink {
     }
   }
 
-  .blog-menu {
+  ul.blog-menu {
     font-size: 13px;
     padding-top: 40px;
+    margin-left: 17px;
     list-style: none;
     color: @color_text;
     &>li>span {
@@ -3775,16 +3677,15 @@ a.blueLink {
       margin-bottom: 9px;
     }
     ul {
-      list-style: none;
-      font-size: 13px;
       margin-bottom: 10px;
+      list-style: none;
 
       .active a{
         color: @color_red;
       }
       li {
-        text-transform: capitalize;
         line-height: 34px;
+        text-transform: capitalize;
         a {
           color: inherit;
           &:hover, &:focus {
@@ -3857,10 +3758,6 @@ a.blueLink {
 
       .standart-btn {
         float:right;
-        padding: 0 41px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 51px;
       }
       p {
         max-width: 780px;
@@ -3872,15 +3769,17 @@ a.blueLink {
       position: relative;
       margin: 0 0 56px;
 
+      .blockGeneralExampl, .blockContactReviews {
+        min-height: 155px;
+      }
+
       .blockGeneralExampl {
-        height: 155px;
         margin:0 0 9px 0;
         border-right: 1px solid #dedede;
         border-bottom: 2px solid #dedede;
         background: #fff;
       }
       .blockContactReviews {
-        height: 155px;
         border-right: 1px solid #dedede;
         border-bottom: 2px solid #dedede;
         background: #fff;
@@ -3891,7 +3790,7 @@ a.blueLink {
       .blockInform  {
         float: left;
         width: 358px;
-        padding:16px 0 0 38px;
+        padding:15px 0 15px 35px;
         &:first-child {
           float:right;
           padding-right:34px;
@@ -3938,22 +3837,22 @@ a.blueLink {
                 margin: 0 10px 0 0;
                 a {
                   display: inline-block;
-                  width:53px;
+                  width:52px;
                   height: 61px;
                   background-image: url('../img/certified_developer/search_the_directory/sprite_badge_mini.png');
                   background-repeat: no-repeat;
 
                   &.badge-socialShopping {
-                    background-position: 0 1px;
+                    background-position: -104px -60px;
                   }
                   &.badge-mobile {
-                    background-position: 0 -60px;
+                    background-position: -52px -60px;
                   }
                   &.badge-analytics {
-                    background-position: 0 -121px;
+                    background-position: -156px -60px;
                   }
                   &.badge-web {
-                    background-position: 0 -181px;
+                    background-position: 0 -60px;
                   }
                 }
 
@@ -3969,10 +3868,6 @@ a.blueLink {
             margin:0;
             padding:0;
             list-style: none;
-
-            li {
-              margin: 0 0 9px;
-            }
 
             span {
               margin: 0 12px 0 0;
@@ -4073,10 +3968,10 @@ a.blueLink {
         // icon of the developer
 
         .wrapperIconDeveloper {
-          position: relative;
+          position: absolute;
           display: inline-block;
-          overflow: hidden;
-          margin: -15px 0 0;
+          left: 410px;
+          top: -15px;
           width:352px;
           height:352px;
 
@@ -4100,6 +3995,12 @@ a.blueLink {
           }
           &.iconBadges3 {
              background-position: 0 -704px;
+          }
+
+          .iconDev {
+            margin: 1px;
+            width: 350px;
+            .border-radius(50%);
           }
 
         }
@@ -4209,11 +4110,6 @@ a.blueLink {
           font: 700 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
       }
-
-      .standart-btn {
-        font: 400 14px/38px "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding: 0 15px;
-      }
     }
 }
 
@@ -4221,7 +4117,7 @@ a.blueLink {
 
 
 //start page "Why Build"  CDP
-  section.sdpWhyBuild {
+  section.cdpWhyBuild {
 
     h2 {
       font-size: 26px;
@@ -4237,25 +4133,6 @@ a.blueLink {
       margin: 0 0 39px;
       padding: 0 0 45px;
       border-bottom: 1px solid #DEDEDE;
-
-      ul {
-        margin: 0 0 31px 17px;
-        color: #525252;
-        font-size: 15px;
-
-        li {
-          padding: 0 0 0 5px;
-          margin: 0 0 12px;
-          line-height: 22px;
-        }
-      }
-
-      a.standart-btn {
-        padding: 0 24px;
-        margin: 0 0 0 3px;
-        font-size: 14px;
-        font-weight: 400;
-      }
 
       article {
         overflow: hidden;
@@ -4305,6 +4182,10 @@ a.blueLink {
           height: 18px;
           background-image: url('../img/certified_developer/buttons_slider.png');
           background-repeat: no-repeat;
+          -moz-user-select: none;
+          -khtml-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
 
           &:hover {
             cursor: pointer;
@@ -4339,6 +4220,9 @@ a.blueLink {
             }
             figure {
               width: 142px;
+              height: auto;
+              line-height: normal;
+
               img {
                 width: 142px;
               }
@@ -4348,14 +4232,18 @@ a.blueLink {
       }
     }
 
+
     // start block Developer (slider)
+
+    .tab-content {
+      padding: 21px 27px 17px 22px;
+      border-bottom: 2px solid #dedede;
+      border-right: 1px solid #dedede;
+      background: #fff;
+    }
     .blockBottomSlider {
-        height: 106px;
-        padding: 21px 27px 17px 22px;
-        border-bottom: 2px solid #dedede;
-        border-right: 1px solid #dedede;
         color: #525252;
-        background: #fff;
+        background: #fff url('../img/certified_developer/why_build/bg_line_slider_why_build.png') 703px 0 repeat-y;
 
         .blockDiscription1 {
           float: left;
@@ -4378,8 +4266,6 @@ a.blueLink {
         }
         .blockDiscription2 {
           overflow: hidden;
-          height: 106px;
-          border-left: 1px solid #525252;
 
           p {
             padding: 0;
@@ -4387,7 +4273,7 @@ a.blueLink {
 
           .carousel-button {
             position: absolute;
-            bottom: 21px;
+            bottom: 0;
             display: inline-block;
             width: 18px;
             height: 18px;
@@ -4406,7 +4292,8 @@ a.blueLink {
           }
 
           .carousel-indicators {
-            top: 72px;
+            top: auto;
+            bottom: 5px;
             right: 49px;
 
             li {
@@ -4424,7 +4311,7 @@ a.blueLink {
 
 
         .carousel-inner {
-          height: 106px;
+          min-height: 100px;
           margin: 7px 0 0 27px;
 
           span.name {
@@ -4432,7 +4319,8 @@ a.blueLink {
             margin: 0 0 3px 0;
             font:700 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
           }
-          .slide-text {
+          p.slide-text {
+            margin-bottom: 0;
             font-size: 12px;
           }
         }

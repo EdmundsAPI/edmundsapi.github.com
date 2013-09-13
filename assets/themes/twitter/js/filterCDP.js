@@ -301,4 +301,42 @@ var $inputLocation = $('#location');
 	//initialization
 	init();
 
+
+	// Setting to showing badges of the developers in the result filtering
+
+	
+
+	$('.wrapperDeveloper').each(function(index){
+
+		var thisDeveloper = $(this);	
+
+		var badges = thisDeveloper.find('.iconBadges a');
+
+		badges.on('click', function(event){event.preventDefault()});
+
+		var dataBadgeName = thisDeveloper.data('badge').split(';');
+
+		for (var i in dataBadgeName) {
+			//console.log(dataBadgeName[i]);
+
+			badges.each(function(){
+
+				if(dataBadgeName[i] == $(this).data('badge-name')) {
+					$(this).addClass('activeBadge');
+				}
+
+			});
+
+
+		}
+
+			
+
+		
+
+		
+
+	});
+
+
 }());

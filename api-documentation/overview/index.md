@@ -106,7 +106,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 		<td>Authorized API Key</td>
 		<td><strong>Yes</strong></td>
 		<td>
-			<a class="linkGetKey" href="http://edmunds.mashery.com/member/my-account" title="Get your API key">Get your API key</a> 
+			<a class="standart-btn" href="http://edmunds.mashery.com/member/my-account" title="Get your API key">Get your API key</a> 
 		</td>
 	</tr>
 

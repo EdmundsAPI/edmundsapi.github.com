@@ -6,26 +6,33 @@ $(function(){
 		//top menu
 		var linkHeaderMenu = $('.headerMenu').find('a');
 		
-		var valueActiveTopMenu = $('#h1Title').text();
+		var valueActiveTopMenu = $('#h1Title').text().toLowerCase();
 		
 		var amountLinks = linkHeaderMenu.length;
-		
-		for (var i=0; i<=amountLinks; i++) {
-			
-			var valTitle = linkHeaderMenu.eq(i).attr('title');
-			if(valTitle == valueActiveTopMenu) {
-				
-				linkHeaderMenu.eq(i).addClass('active');
-			}
-		}
+
+		linkHeaderMenu.each(function(){
+
+			var thisLink = $(this);
+
+			var titleLink = thisLink.attr('title').toLowerCase();
+
+			if (titleLink == valueActiveTopMenu) {
+
+				thisLink.addClass('active');
+
+				return false;
+
+			};
+
+		});
+
 	};
 	acrivation_link();
 	
 	
 	//color code
 	function color_code(){
-		$('pre').addClass('prettyprint');
-		$('pre').addClass('linenums');
+		$('pre').addClass('prettyprint linenums');
 	}
 	color_code();
 	
@@ -33,7 +40,7 @@ $(function(){
 	
 });
 
-	
+
 
 	
 	

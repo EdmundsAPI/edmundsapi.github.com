@@ -7,7 +7,7 @@ name: VINSNAP
 certified_since: 02/15/2013
 location: Atlanta, GA
 email: contactus@vinsnap.com
-phone: 
+phone:
 skype: vinsnap2011
 twitter: '@vinsnap'
 image_icon_developer: 'vinsnap.png'
@@ -65,7 +65,7 @@ badges: [web, mobile, analytics]
 						.png" alt=""/>
 
 				</div>
-				<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
+				<img class="iconDev" src="{{PATH}}/assets/themes/twitter/img/certified_developer/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
 
 			</div>
 
@@ -82,7 +82,7 @@ badges: [web, mobile, analytics]
 
 						{% for p in page.badges %}
 
-							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}"></a></li>
+							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{{p}}"></a></li>
 
 						{% endfor %}
 
@@ -113,12 +113,26 @@ badges: [web, mobile, analytics]
 			<div class="blockInform wrapperContsnts">
 				<h3>Contacts</h3>
 				<ul>
-					<li><span class="location">{{page.location}}</span></li>
-					<li><span class="email"><a href="mailto:{{page.email}}">{{page.email}}</a></span></li>
+					{% if page.location != null %}
+						<li><span class="location">{{page.location}}</span></li>
+					{% endif %}
+
+					{% if page.email != null %}
+						<li><span class="email"><a href="mailto:{{page.email}}">{{page.email}}</a></span></li>
+					{% endif %}
+
 					<li>
-						<span class="phone">{{page.phone}}</span>
-						<span class="skype">{{page.skype}}</span>
-						<span class="twitter">{{page.twitter}}</span>
+						{% if page.phone != null %}
+							<span class="phone">{{page.phone}}</span>
+						{% endif %}
+
+						{% if page.skype != null %}
+							<span class="skype">{{page.skype}}</span>
+						{% endif %}
+
+						{% if page.twitter != null %}
+							<span class="twitter">{{page.twitter}}</span>
+						{% endif %}
 					</li>
 				</ul>
 			</div>
@@ -252,3 +266,16 @@ badges: [web, mobile, analytics]
 </script>
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/profile_rating.js"></script>
+
+
+{% comment %}<!-- Script for showing tooltops -->{% endcomment %}
+<script type="text/javascript">
+
+	$(function(){
+
+		$('#iconBadge a').tooltip('toggle');
+		$('#iconBadge a').tooltip('hide')
+
+	});
+
+</script>

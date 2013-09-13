@@ -6,7 +6,7 @@ title_active_left_menu: 'Why build?'
 title_h1: "WHY BUILD ON THE EDMUNDS API?"
 
 cdp_weight: 2
-cdp_class_page: sdpWhyBuild
+cdp_class_page: cdpWhyBuild
 cdp_global_class_page: pageWhyBuild
 ---
 

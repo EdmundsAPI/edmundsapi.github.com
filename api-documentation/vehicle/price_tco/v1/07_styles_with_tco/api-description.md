@@ -5,7 +5,7 @@ title_active_left_menu: 'Price: True Cost to Own'
 title_parent: Api documentation
 
 amount_version: 1
-title-endpoint: 'Get Car Style with TCO® Value'
+title-endpoint: 'Get Car Styles with TCO® Value'
 spec: price_tco
 version: v1
 api: vehicle

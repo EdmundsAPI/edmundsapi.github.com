@@ -68,11 +68,6 @@ body, html {
   background: #f2f2f2;
 }
 
-ul, ol {
-	padding: 0;
-	margin: 0 0 20px 20px;
-}
-
 .pushTop {
   height: 117px;
 }
@@ -288,7 +283,7 @@ footer.navbar .span6 {
 .social nav p {
   margin: 0;
   width: 158px;
-  margin: 0 28px 0 0;
+  margin: 6px 28px 20px 0;
   color:#666;
   font-size: 11px;
   line-height: 15px;
@@ -379,22 +374,6 @@ footer.footerLayout .nav > li > a {
 .headerMenuContent.fixed {
 	box-shadow: 0 2px 3px #dad8d8 ;
 }
-.linkGetKey {
-	display:inline-block;
-	margin:0 4px 0 8px;
-	padding:0 21px;
-	color:#fff;
-	font-weight:700;
-	line-height:38px;
-	background: #bf2f37;
-}
-.sectionContent a.linkGetKey {
-	color: #fff;
-}
-a.linkGetKey:hover {
-	color:#fff;
-	text-decoration: none;
-}
 .blogGray {
 	margin:0 0 31px 0;
 	padding: 0 28px;
@@ -442,10 +421,7 @@ a.linkGetKey:hover {
 		margin: 0 0 5px 0;
 		font-weight: 700;
 	}
-	table .linkGetKey,
-	.tableParametrs .linkGetKey {
-		margin: 0;
-	}
+
 	/*__end table Parametrs__*/
 
 	/*__Start Navigation left menu "Next & Previos"__*/
@@ -970,27 +946,3 @@ ul.multiLevelMenu {
 	.api-header-row2 .row-fluid .span10 { margin-left: 0; }
 	.api-header-row2 .row-fluid .span6 { margin-left: 0; }
 }
-
-/*
-.editorialTableTr {
-	position: relative;
-	overflow: hidden;
-}
-
-.subcategory .row-fluid .row-fluid [class^="span"]{
-	position: relative;
-	z-index: 2;
-}
-
-.subcategory .rename {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #f2f2f2;
-	z-index: 1;
-}
-
-.subcategory .odd .rename {
-	background: #fff;
-}*/

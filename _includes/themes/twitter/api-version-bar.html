@@ -5,12 +5,12 @@
 	</div>
 	<div class="container">
 		<div class="row-fluid overlay">
-			<div class="span2">&nbsp;</div>			
-			<div class="span10">		
-			
-				
+			<div class="span2">&nbsp;</div>
+			<div class="span10">
+
+
 						{% comment %}<!-- Tabs of the versions -->{% endcomment %}
-						
+
 						{% if page.amount_version == 1 %}
 							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
 						{% elsif page.amount_version == 2 %}
@@ -23,12 +23,12 @@
 						{% endif%}
 
 
-				
+
 			</div>
 		</div>
 	</div>
 </div>
-	
+
 <div class="api-header-row2">
 	<div class="row-fluid bgnd">
 		<div class="span6">&nbsp;</div>
@@ -37,7 +37,7 @@
 
 	<div class="container">
 		<div class="row-fluid overlay">
-			<div class="span2">&nbsp;</div>		
+			<div class="span2">&nbsp;</div>
 			<div class="span10">
 				{% if page.dropdown-link != '' %}
 				{% if page.overview == 'page' %}
@@ -47,19 +47,19 @@
 				{% else  %}
 					<a class="version-bar-block" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/{{ page.version }}/index.html" title="Overview">Overview</a>
 				{% endif %}
-				
+
 				<span class="wrap-icon"><i class="right-angle-icon">&nbsp;</i></span>
 
 				<div class="dropdown">
-				
+
 					<a class="dropdown-toggle {% if page.dropdown-link != 'Select an Endpoint'%} active {% endif %}" data-toggle="dropdown"><span class="selected-option">{{ page.dropdown-link }}</span><span class="dropdown-btn">&nbsp;</span></a>
-			
-									
+
+
 					<ul class="dropdown-menu">
-						
-						{% for p in site.pages | sort:path %} 
+
+						{% for p in site.pages | sort:path %}
 							{% if p.spec == page.spec and p.version == page.version and p.level == 3 %}
-									
+
 								<li name="endpoint">
 									<a href="{{ p.url }}" title="">
 									<div class="option-description">{{ p.description_edpoint }}</div>
@@ -67,7 +67,7 @@
 								</li>
 
 							{% endif %}
-						{% endfor %}		
+						{% endfor %}
 					</ul>
 
 				</div>
@@ -95,18 +95,24 @@
 
 	$(function(){
 		var select = $('.apiPage').find('.dropdown');
+		var dropdownMenu = $('.apiPage').find('.dropdown-menu');
+		var countLi = dropdownMenu.find('li').length;
 		var selectWidth = select.width();
 		var list = $('.apiPage .dropdown-menu').find('li:first-child');
-		var listWidth = $('.apiPage').find('.dropdown-menu').width(); 
-		
+		var listWidth = dropdownMenu.width();
+
 		var value = listWidth - selectWidth - 44;
-		
-		if(value > 0) {
+
+		if(value > 0 && countLi>1) {
 			list.css('border-radius', '0 5px 0 0');
+		} else if (value > 0 && countLi==1) {
+			list.css('border-radius', '0 5px 5px 5px');
+		} else if (countLi==1) {
+			list.css('border-radius', '0 0 5px 5px');
 		} else {
 		  list.css('border-radius', '0');
 		}
-		
+
 	});
 
 </script>

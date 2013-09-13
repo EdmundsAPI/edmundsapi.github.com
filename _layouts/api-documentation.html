@@ -19,48 +19,48 @@ layout: default
 		<div class="headerMenuContent">
 			<div class="container">
 				<div class="row-fluid">
-					<div class="span2"><a href="http://edmunds.mashery.com/io-docs" title="API Explorer" style="padding-left:0 !important;">➾ API Console</a></div>
+					<div class="span2"><a class="linkConsole" href="http://edmunds.mashery.com/io-docs" title="API Explorer">API Console</a></div>
 					<div class="span10">
-						<h1>{{page.title}}</h1>	
-						<span id="valActiveLeftMenu">{{page.title_active_left_menu}}</span>	
+						<h1>{{page.title}}</h1>
+						<span id="valActiveLeftMenu">{{page.title_active_left_menu}}</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		{% if page.level >= 2 %}		
-			{% include themes/twitter/api-version-bar.html %}					  
+
+		{% if page.level >= 2 %}
+			{% include themes/twitter/api-version-bar.html %}
 		{% endif %}
 	</div>
 	<div class="container api-table">
-		
+
 		<div class="row lineVertical">
 			<div class="span2">&nbsp;</div>
 			<div class="span10">&nbsp;</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="span2 collumnMenu">
-				<div id="leftMenuFixed" class="leftMenuFixed">					
-					{% comment %} <!--{% include themes/twitter/api-doc-select-api-version.html %}--> {% endcomment %}								
-					{% include themes/twitter/api-doc-left-menu.html %}					
+				<div id="leftMenuFixed" class="leftMenuFixed">
+					{% comment %} <!--{% include themes/twitter/api-doc-select-api-version.html %}--> {% endcomment %}
+					{% include themes/twitter/api-doc-left-menu.html %}
 				</div>
 			</div>
 
-			<div class="span10 sectionContent">	
-				{% if page.level >= 3 %}		
-					{% include themes/twitter/api-doc-submenu.html %}					  
-				{% endif %}	
+			<div class="span10 sectionContent">
+				{% if page.level >= 3 %}
+					{% include themes/twitter/api-doc-submenu.html %}
+				{% endif %}
 
-				{% include themes/twitter/api-doc-content.html %}	
-				
-					
-			</div>	
+				{% include themes/twitter/api-doc-content.html %}
+
+
+			</div>
 		</div>
 	</div>
 </div>
-	
-	
+
+
 {% comment %}<!-- Fix left menu and header(sub menu) in the top --> {% endcomment %}
 
 <style>
@@ -75,7 +75,7 @@ layout: default
 	}
 	.fixElem .endpoint-submenu {
 		top:143px;
-		width:970px;	
+		width:970px;
 		background: #F2F2F2;
 	}
 	.fixElem .apiPage .api-table .endpoint-submenu {
@@ -122,27 +122,27 @@ layout: default
 
 {% comment %}<!-- Fix left menu and sub menu (tabs of versions, endpoints ...) in top window -->{% endcomment %}
 <script type="text/javascript">
-	
+
 	$(function(){
 		var body = $('body');
 		var wrapperHeader = $('.wrapperHeader');
 		var panelTabs = $('.api-header-row1').hasClass('api-header-row1');
 		var subMenu =$('.endpoint-submenu').hasClass('endpoint-submenu');
 		//var leftMenu = $('#leftMenuFixed')
-		
-		
+
+
 		var topPadding = $('.wrapperTopHeader').height() + $('.api-header .span12').height();
-		
+
 		if (subMenu) {
 			body.addClass('endpointPage');
 		} else if (panelTabs && !subMenu) {
 			body.addClass('overviewPage');
 		}
-		
-		
+
+
 
 		$(window).scroll(function(){
-			
+
 			var win = $(this);
 			var scrollWindow = win.scrollTop();
 
@@ -151,12 +151,12 @@ layout: default
 				body.addClass('fixElem');
 			} else {
 				if(body.hasClass('fixElem')) {
-					body.removeClass('fixElem');	
+					body.removeClass('fixElem');
 				}
 			};
- 
+
 		});
 	});
-	
+
 </script>
 </div>

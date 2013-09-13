@@ -13,20 +13,9 @@ $(function(){
 
     var widthUl = wrapperResultFilter.css('width', step*countCompany);
 
-    var arrHeightComp = [];
+    var maxHeight = wrapperResultFilter.height();
 
-    $company.each(function(){
-
-        arrHeightComp.push($(this).height());
-
-    });
-    // sort array
-    arrHeightComp.sort();
-
-    var maxHeight = arrHeightComp[0];
-
-    //wrapSlider.height(maxHeight);
-    wrapSlider.height(214);
+    wrapSlider.height(maxHeight);
 
     // click buttonSlider
     function stepNext(){
