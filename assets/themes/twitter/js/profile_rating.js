@@ -4,14 +4,14 @@ $(function(){
 
         var wrapperReviews = $('.wrapperReviews');
 
-        blockRating.each(function(){  //1
+        blockRating.each(function(){
 
             var dataRating = $(this).find('.rating').data('rating').split(';');
 
             var lengthDataRating = dataRating.length;
 
             // start raring Square
-            var $arrUl = $(this).find('.ratingSquare'); // array ul
+            var $arrUl = $(this).find('.ratingSquare');
 
             $arrUl.each(function(indx){
 
@@ -23,15 +23,15 @@ $(function(){
 
                 for(var i=0; i<dataValue; i++){
 
-                    $arrLi.eq(i).addClass('active');
+                  $arrLi.eq(i).addClass('active');
 
                 }
 
             });
-            // end raring Square
+            // end rating Square
 
 
-            // start raring Stars
+            // start rating Stars
 
             starRating(dataRating);   //function summation stars
 
@@ -40,28 +40,52 @@ $(function(){
             var stars = $(this).find('.ratingStar li');
 
             //showing stars
-            showStars(stars);
+            showStars(stars, result);
 
-            stars.each(function(indx){
+            /*stars.each(function(indx){
 
                  if(indx < result){
 
-                    $(this).addClass('active');
+                   $(this).addClass('active');
 
                 }
 
-            });
+            });*/
 
             // end raring Stars
 
         });
 
-        //showing stars
-        function showStars(element){
+        //showing stars of the comments
+        function showStars(element, number){
 
+               // var integerNumber = (1.1).toPrecision(1);
+
+               // console.log(number);
+                
             element.each(function(indx){
 
-                 if(indx < result){
+
+                var k = indx+1;
+                var b = indx+2;
+
+                if(k<number && b>number){
+
+                    
+                    $(this).addClass('active');
+
+                    console.log('1');
+                    if(b>number){
+                        console.log(b);
+                       element.eq(k).addClass('active2'); 
+
+                    }
+                    
+                    return false;
+
+                } else {
+
+                    console.log('2');
 
                     $(this).addClass('active');
 
@@ -71,7 +95,7 @@ $(function(){
 
         };
 
-        //function summation stars
+        //function summation stars 
         function starRating(arr){
 
             var a = arr;
@@ -88,7 +112,9 @@ $(function(){
             resultSun = sun / li;
 
             //result = Math.round(resultSun);
-            result = (resultSun).toFixed(1);
+
+            result = (Math.round(resultSun*2)/2).toPrecision(2);
+           // result = (resultSun).toFixed(1);
 
             return result;
         };
@@ -112,15 +138,19 @@ $(function(){
 
         function showGlobalStars(element){
 
-            element.each(function(indx){
 
-                 if(indx < Math.round(resultGlobalSumStars)){
+            showStars(element, resultGlobalSumStars);
 
-                    $(this).addClass('active');
+           /* element.each(function(indx){
+
+                    if(indx < Math.round(resultGlobalSumStars)){
+                 //if(indx < Math.round(resultGlobalSumStars)){
+
+                   // $(this).addClass('active');
 
                 }
 
-            });
+            });*/
 
         };
 
