@@ -946,26 +946,3 @@ ul.multiLevelMenu {
 	.api-header-row2 .row-fluid .span10 { margin-left: 0; }
 	.api-header-row2 .row-fluid .span6 { margin-left: 0; }
 }
-/*
-.editorialTableTr {
-  position: relative;
-  overflow: hidden;
-}
-
-.subcategory .row-fluid .row-fluid [class^="span"]{
-  position: relative;
-  z-index: 2;
-}
-
-.subcategory .rename {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #f2f2f2;
-  z-index: 1;
-}
-
-.subcategory .odd .rename {
-  background: #fff;
-}*/ 
