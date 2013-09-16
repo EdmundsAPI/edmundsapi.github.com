@@ -32,7 +32,6 @@ $(function(){
 
 
             // start rating Stars
-
             starRating(dataRating);   //function summation stars
 
             $(this).find('.amoutStars').text(result);
@@ -42,55 +41,32 @@ $(function(){
             //showing stars
             showStars(stars, result);
 
-            /*stars.each(function(indx){
-
-                 if(indx < result){
-
-                   $(this).addClass('active');
-
-                }
-
-            });*/
-
-            // end raring Stars
-
         });
 
         //showing stars of the comments
-        function showStars(element, number){
-
-               // var integerNumber = (1.1).toPrecision(1);
-
-               // console.log(number);
+        function showStars(element, number){    
                 
             element.each(function(indx){
 
-
                 var k = indx+1;
-                var b = indx+2;
 
-                if(k<number && b>number){
-
-                    
+                 if (number == k){
                     $(this).addClass('active');
 
-                    console.log('1');
-                    if(b>number){
-                        console.log(b);
-                       element.eq(k).addClass('active2'); 
-
-                    }
-                    
                     return false;
+
+                } else if(number > k){
+                    
+                    $(this).addClass('active');
 
                 } else {
 
-                    console.log('2');
+                    $(this).addClass('active2');
 
-                    $(this).addClass('active');
-
+                    return false;
+                    
                 }
-
+                    
             });
 
         };
@@ -112,9 +88,8 @@ $(function(){
             resultSun = sun / li;
 
             //result = Math.round(resultSun);
-
             result = (Math.round(resultSun*2)/2).toPrecision(2);
-           // result = (resultSun).toFixed(1);
+            // result = (resultSun).toFixed(1);
 
             return result;
         };
@@ -135,29 +110,14 @@ $(function(){
 
         };
 
-
         function showGlobalStars(element){
 
-
             showStars(element, resultGlobalSumStars);
-
-           /* element.each(function(indx){
-
-                    if(indx < Math.round(resultGlobalSumStars)){
-                 //if(indx < Math.round(resultGlobalSumStars)){
-
-                   // $(this).addClass('active');
-
-                }
-
-            });*/
 
         };
 
         //start setting result rating
         var arrGlobalSum = globalSum();  //["4.8", "3.5"]
-
-        //console.log(arrGlobalSum);  //["4.8", "3.5"]
 
         var resultGlobalSumStars = starRating(arrGlobalSum);
 
@@ -244,15 +204,6 @@ $(function(){
             { "developer": professional, "property":"Professional" }
         ];
 
-       /* var companies=[
-            { "companyA":"4.5", "manth":"Jan" },
-            { "companyA":"2.0", "manth":"Feb" },
-            { "companyA":"4.0", "manth":"Mar" },
-            { "companyA":"3.0", "manth":"Apr" },
-            { "companyA":"3.0", "manth":"May" },
-            { "companyA":"3.5", "manth":"Jun" }
-        ];*/
-
         var chart =  new dhtmlXChart({
             container:"chartDiv",
             view:"radar",
@@ -292,20 +243,6 @@ $(function(){
         });
 
         chart.parse(companies,"json");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     });
 

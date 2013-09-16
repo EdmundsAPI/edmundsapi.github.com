@@ -12,6 +12,14 @@ skype: vinsnap2011
 twitter: '@vinsnap'
 image_icon_developer: 'vinsnap.png'
 badges: [web, mobile, analytics]
+
+developer_description: 'Cars are personal, and at VINSNAP we believe car-shopping experiences should be too.  We design, develop and deploy web and mobile consumer-focused vehicle shopping and service solutions.  Our team has over 10 years of experience in the automotive industry with expert knowledge in the areas of analytics, consulting services, consumer behavior research and marketing research.'
+developer_category: Enterprise
+work_examples: 
+  - name: iOS App
+    url: "https://itunes.apple.com/us/app/vinsnap/id538400300?mt=8"
+  - name: Android App
+    url: "https://play.google.com/store/apps/details?id=com.itanyplace.vinsnap&hl=en"
 ---
 
 
@@ -20,128 +28,7 @@ badges: [web, mobile, analytics]
 
 <div class="wrapperProfile">
 
-	<header>
-
-		<a href="mailto:{{page.email}}" class="standart-btn">Contact {{page.name}}</a>
-		<h1>{{page.name_developer}}</h1>
-		<p>Cars are personal, and at VINSNAP we believe car-shopping experiences should be too.  We design, develop and deploy web and mobile consumer-focused vehicle shopping and service solutions.  Our team has over 10 years of experience in the automotive industry with expert knowledge in the areas of analytics, consulting services, consumer behavior research and marketing research.</p>
-		<a href="/certified-dev/search_the_directory.html" title="Close" class="iconClose">&nbsp;</a>
-	</header>
-
-	<section class="inform">
-
-		<div class="blockGeneralExampl clearfix">
-			<!-- WORK EXAMPLES -->
-			<div class="blockInform wrapperExamples">
-				<h3>WORK EXAMPLES</h3>
-				<span>Client’s examples for the work was created</span>
-				<ul>
-					<li><a href="https://itunes.apple.com/us/app/vinsnap/id538400300?mt=8" title="">iOS App</a></li>
-					<li><a href="https://play.google.com/store/apps/details?id=com.itanyplace.vinsnap&hl=en" title="">Android App</a></li>
-				</ul>
-			</div>
-
-
-			<!-- Icon of the developer -->
-			<div class="wrapperIconDeveloper">
-				<div class="imgFrame">
-
-						<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/frames/
-						{% for p in page.badges %}
-							{% if p == 'analytics' %}analytics{%  endif %}
-						{% endfor %}
-
-						{% for p in page.badges %}
-							{% if p == 'mobile' %}mobile{%  endif %}
-						{% endfor %}
-
-						{% for p in page.badges %}
-							{% if p == 'socialShopping' %}socialShopping{%  endif %}
-						{% endfor %}
-
-						{% for p in page.badges %}
-							{% if p == 'web' %}web{%  endif %}
-						{% endfor %}
-						.png" alt=""/>
-
-				</div>
-				<img class="iconDev" src="{{PATH}}/assets/themes/twitter/img/certified_developer/icon_developer/{{page.image_icon_developer}}" alt="{{page.name}}" />
-
-			</div>
-
-			<!-- General -->
-			<div class="blockInform wrapperGeneral">
-				<h3>General</h3>
-				<ul class="clearfix addInf">
-					<li>Individual</li>
-					<li>Certified since {{page.certified_since}}</li>
-				</ul>
-				<div class="badges">
-					<span>Qualification:</span>
-					<ul id="iconBadge" class="clearfix">
-
-						{% for p in page.badges %}
-
-							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{{p}}"></a></li>
-
-						{% endfor %}
-
-					</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="blockContactReviews clearfix">
-			<!-- REVIEWS -->
-			<div class="blockInform wrapperReviews">
-				<h3>Reviews</h3>
-				<div class="resultRating">
-					<ul class="ratingStar">
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-					<span class="amoutStars">0.0</span>
-				</div>
-				<div id="chartDiv"></div>
-			</div>
-
-			<!-- Contacts -->
-			<div class="blockInform wrapperContsnts">
-				<h3>Contacts</h3>
-				<ul>
-					{% if page.location != null %}
-						<li><span class="location">{{page.location}}</span></li>
-					{% endif %}
-
-					{% if page.email != null %}
-						<li><span class="email"><a href="mailto:{{page.email}}">{{page.email}}</a></span></li>
-					{% endif %}
-
-					<li>
-						{% if page.phone != null %}
-							<span class="phone">{{page.phone}}</span>
-						{% endif %}
-
-						{% if page.skype != null %}
-							<span class="skype">{{page.skype}}</span>
-						{% endif %}
-
-						{% if page.twitter != null %}
-							<span class="twitter">{{page.twitter}}</span>
-						{% endif %}
-					</li>
-				</ul>
-			</div>
-
-		</div>
-
-
-
-	</section>
+	{% include themes/twitter/certified-dev/developer_page.html %}
 
 	<div class="wrapperComments">
 
@@ -167,70 +54,10 @@ badges: [web, mobile, analytics]
 					</div>
 					<div data-rating="5;5;5;4;5;5" class="rating">
 
-						<ul>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Quality
-							</li>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Expertise
-							</li>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Cost
-							</li>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Schedule
-							</li>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Response
-							</li>
-							<li>
-								<ul class="ratingSquare">
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-									<li>&nbsp;</li>
-								</ul>
-								Professional
-							</li>
-						</ul>
+						{% include themes/twitter/certified-dev/developer_rating.html %}
 
 					</div>
+
 					<p class="discription">
 						“VINSNAP is a great app designed and developed by folks that understand car shopping well. They have leveraged the Edmunds API so well we're looking forward to working with them on other projects in the near future.”
 					</p>
@@ -247,35 +74,4 @@ badges: [web, mobile, analytics]
 </div>
 
 
-
-<!-- Script for changing frame of the icon of the developrt -->
-<script type="text/javascript">
-
-	$(function(){
-
-		var $iconBadge = $('#iconBadge').find('li a');
-
-		var amountBadge = $iconBadge.length;
-
-		var wrappIconDev = $('.wrapperIconDeveloper');
-
-		wrappIconDev.addClass('iconBadges'+ amountBadge +'');
-
-	});
-
-</script>
-
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/profile_rating.js"></script>
-
-
-{% comment %}<!-- Script for showing tooltops -->{% endcomment %}
-<script type="text/javascript">
-
-	$(function(){
-
-		$('#iconBadge a').tooltip('toggle');
-		$('#iconBadge a').tooltip('hide')
-
-	});
-
-</script>
+{% include themes/twitter/certified-dev/full_profile_scripts.html %}
