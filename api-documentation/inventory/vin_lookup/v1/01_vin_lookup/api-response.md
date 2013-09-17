@@ -155,7 +155,7 @@ number: 3
 
 | Property      				| Description                         						| Visibility    	|
 |:------------------------------|:----------------------------------------------------------|:----------------- |
-| incentiveAvailable	   		| Are there any incentives available? Yes|No values			| Edmunds, Partners |
+| incentiveAvailable	   		| Are there any incentives available? Yes/No values			| Edmunds, Partners |
 | resultsList    		    	| Inventory listing details (see below)						| Edmunds, Partners |
 | lease		    		    	| Lease Incentive (see below)	 							| Edmunds, Partners |
 | cashRebate	    		   	| Cash Rebated Incentive (see below)						| Edmunds, Partners |
