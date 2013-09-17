@@ -3930,7 +3930,11 @@ a.blueLink {
 
           .resultRating {
             margin: 0 0 13px;
-
+            position: relative;
+            .ratingWrap {
+              display: inline-block;
+              position: relative;
+            }
             ul{
               list-style: none;
             }
@@ -3941,6 +3945,8 @@ a.blueLink {
             }
 
             ul.ratingStar {
+              position: absolute;
+              top: 8px;
               display: inline-block;
               margin: 0 6px 0 4px;
 
@@ -3963,8 +3969,25 @@ a.blueLink {
                   background-position: 0 -10px;
                 }
               }
-            }
+            } 
 
+            ul.greyRatingStars {
+              display: inline-block;
+              margin: 0 6px 0 4px;
+
+
+
+              li {
+                float: left;
+                width:10px;
+                height: 10px;
+                margin: 0 3px 0 0;
+                background-image: url('../img/certified_developer/grey_star.png');
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: 0 0;
+              }
+            } 
 
           }
 
@@ -4024,6 +4047,7 @@ a.blueLink {
 
       .resultRating {
         margin: 0 0 13px;
+        position: relative;
 
         ul{
           list-style: none;
@@ -4035,6 +4059,8 @@ a.blueLink {
         }
 
         ul.ratingStar {
+          position: absolute;
+          top: 8px;
           display: inline-block;
           margin: 0 6px 0 6px;
 
@@ -4057,7 +4083,21 @@ a.blueLink {
           }
         }
 
+        ul.greyRatingStars {
+          display: inline-block;
+          margin: 0 6px 0 6px;
 
+          li {
+            float: left;
+            width:10px;
+            height: 10px;
+            margin: 0 3px 0 0;
+            background-image: url('../img/certified_developer/grey_star.png');
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-position: 0 0;
+          }          
+        }
       }
 
       .blockRating {
