@@ -1,7 +1,7 @@
 (function() {
 
 
-var $inputList = $('#qualification, #location').find('input');
+var $inputList = $('#qualification').find('input');
 
 var $developers = $('.wrapperDeveloper');
 
@@ -10,6 +10,7 @@ var wrapperButtonsQual = $('#selectedQual');
 var wrapperButtonsLoc = $('#selectedLoc');
 
 var $inputLocation = $('#location');
+
 
 	function init(){
 
@@ -28,6 +29,8 @@ var $inputLocation = $('#location');
 
 		//check();
 		$inputList.on('click', check);
+
+		$inputLocation.on('click', 'input', checkLocation);
 
 	};
 
@@ -168,6 +171,8 @@ var $inputLocation = $('#location');
 
             }
 
+            checkLocation();
+
         } else if (idParent == 'selectedQual'){
 
             var lengthChild =  wrapperButtonsQual.children().length;
@@ -179,13 +184,13 @@ var $inputLocation = $('#location');
                 wrapperButtonsQual.addClass('hide');
 
             }
+
+	        // check
+	        check();
+	        
         }
 
         cross.parent('.itemFilterBadge').remove();
-
-        // check
-        check();
-
 
 	});
 
@@ -224,6 +229,47 @@ var $inputLocation = $('#location');
 			countLocationDev();
 
 	};
+
+	// check location
+	function checkLocation(event) {
+		var inputID = $(this).attr('id'),
+			$checkedLocations = $inputLocation.find('input:checked'),
+			locationIdArray = [];
+		for (var i = 0; i < $checkedLocations.length; i++) {
+			locationIdArray.push($($checkedLocations[i]).attr('id'));
+		};
+		console.log(locationIdArray);
+
+		if(this.checked) {
+			createButton(inputID);
+
+		} else {
+			deleteButton(inputID);
+		}
+
+		$developers.each(function() {
+
+			if (locationIdArray.length === 0) {
+				$(this).removeClass('hide');
+				return;
+			}
+
+			var currLocation = $(this).data('location');
+
+			if (locationIdArray.indexOf(currLocation) >= 0 ) {
+
+				$(this).removeClass('hide');
+
+			} else {
+
+				$(this).addClass('hide');
+
+			}
+
+		});
+
+		countResult();
+	}
 
 	//developerParthADD
 	function developerParthADD(event){
