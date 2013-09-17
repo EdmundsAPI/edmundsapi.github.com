@@ -4,14 +4,14 @@ $(function(){
 
         var wrapperReviews = $('.wrapperReviews');
 
-        blockRating.each(function(){  //1
+        blockRating.each(function(){
 
             var dataRating = $(this).find('.rating').data('rating').split(';');
 
             var lengthDataRating = dataRating.length;
 
             // start raring Square
-            var $arrUl = $(this).find('.ratingSquare'); // array ul
+            var $arrUl = $(this).find('.ratingSquare');
 
             $arrUl.each(function(indx){
 
@@ -23,16 +23,15 @@ $(function(){
 
                 for(var i=0; i<dataValue; i++){
 
-                    $arrLi.eq(i).addClass('active');
+                  $arrLi.eq(i).addClass('active');
 
                 }
 
             });
-            // end raring Square
+            // end rating Square
 
 
-            // start raring Stars
-
+            // start rating Stars
             starRating(dataRating);   //function summation stars
 
             $(this).find('.amoutStars').text(result);
@@ -40,38 +39,39 @@ $(function(){
             var stars = $(this).find('.ratingStar li');
 
             //showing stars
-            showStars(stars);
-
-            stars.each(function(indx){
-
-                 if(indx < result){
-
-                    $(this).addClass('active');
-
-                }
-
-            });
-
-            // end raring Stars
+            showStars(stars, result);
 
         });
 
-        //showing stars
-        function showStars(element){
-
+        //showing stars of the comments
+        function showStars(element, number){    
+                
             element.each(function(indx){
 
-                 if(indx < result){
+                var k = indx+1;
 
+                 if (number == k){
                     $(this).addClass('active');
 
-                }
+                    return false;
 
+                } else if(number > k){
+                    
+                    $(this).addClass('active');
+
+                } else {
+
+                    $(this).addClass('active2');
+
+                    return false;
+                    
+                }
+                    
             });
 
         };
 
-        //function summation stars
+        //function summation stars 
         function starRating(arr){
 
             var a = arr;
@@ -88,7 +88,8 @@ $(function(){
             resultSun = sun / li;
 
             //result = Math.round(resultSun);
-            result = (resultSun).toFixed(1);
+            result = (Math.round(resultSun*2)/2).toPrecision(2);
+            // result = (resultSun).toFixed(1);
 
             return result;
         };
@@ -109,25 +110,14 @@ $(function(){
 
         };
 
-
         function showGlobalStars(element){
 
-            element.each(function(indx){
-
-                 if(indx < Math.round(resultGlobalSumStars)){
-
-                    $(this).addClass('active');
-
-                }
-
-            });
+            showStars(element, resultGlobalSumStars);
 
         };
 
         //start setting result rating
         var arrGlobalSum = globalSum();  //["4.8", "3.5"]
-
-        //console.log(arrGlobalSum);  //["4.8", "3.5"]
 
         var resultGlobalSumStars = starRating(arrGlobalSum);
 
@@ -214,15 +204,6 @@ $(function(){
             { "developer": professional, "property":"Professional" }
         ];
 
-       /* var companies=[
-            { "companyA":"4.5", "manth":"Jan" },
-            { "companyA":"2.0", "manth":"Feb" },
-            { "companyA":"4.0", "manth":"Mar" },
-            { "companyA":"3.0", "manth":"Apr" },
-            { "companyA":"3.0", "manth":"May" },
-            { "companyA":"3.5", "manth":"Jun" }
-        ];*/
-
         var chart =  new dhtmlXChart({
             container:"chartDiv",
             view:"radar",
@@ -262,20 +243,6 @@ $(function(){
         });
 
         chart.parse(companies,"json");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     });
 
