@@ -7,6 +7,29 @@ title_active_left_menu: 'How do I get started?'
 cdp_weight: 3
 ---
 
+<div class="getStartedBar">
+	<div class="top-bar-wrap">
+		<div class="cdp-path-image">&nbsp;</div>
+		<div>PATH</div>
+	</div>
+	<div class="cdp-path-steps-wrap">
+		<div class="cdp-path-arrow step1" data-active-step="1">&nbsp;</div>
+		<ul class="cdp-steps">
+			<li>
+				<div class="cdp-step" data-step="1">1</div>
+			</li>
+			<li>
+				<div class="cdp-step" data-step="2">2</div>
+			</li>
+			<li>
+				<div class="cdp-step" data-step="3">3</div>
+			</li>
+			<li>				
+				<div class="cdp-step" data-step="4">4</div>
+			</li>
+		</ul>
+	</div>
+</div>
 <a name="certified_developer">
 </a>
 <a name="business_owner">
@@ -22,9 +45,10 @@ cdp_weight: 3
 
 <div id="result">
 	<div id="content">
-		<div data-block="business_owner" class="contentBusOwner business_owner"  style="display: block;">
+		<div data-block="business_owner" class="contentBusOwner business_owner" name="cdp-steps-section" style="display: block;">
 
 			<div class="wrapperStep step1BS">
+				<div class="cdp-step-anchor" data-step="1">&nbsp;</div>
 
 				<div class="imgStep step1BOwner">&nbsp;</div>
 
@@ -57,6 +81,8 @@ cdp_weight: 3
 
 			<div class="wrapperStep step2BS">
 
+				<div class="cdp-step-anchor" data-step="2">&nbsp;</div>
+
 				<div class="imgStep step2BOwner">&nbsp;</div>
 
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
@@ -70,6 +96,8 @@ cdp_weight: 3
 
 			<div class="wrapperStep step3BS">
 
+				<div class="cdp-step-anchor" data-step="3">&nbsp;</div>
+				
 				<div class="imgStep step3BOwner">&nbsp;</div>
 
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
@@ -83,6 +111,8 @@ cdp_weight: 3
 
 			<div class="wrapperStep step4BS">
 
+				<div class="cdp-step-anchor" data-step="4">&nbsp;</div>
+				
 				<div class="imgStep step4DevBOwn">&nbsp;</div>
 
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
@@ -96,10 +126,12 @@ cdp_weight: 3
 
 
 
-		<div data-block="certified_developer" class="contentDev certified_developer" style="display: none;">
+		<div data-block="certified_developer" class="contentDev certified_developer" name="cdp-steps-section" style="display: none;">
 
 			<div class="wrapperStep">
 
+				<div class="cdp-step-anchor" data-step="1">&nbsp;</div>
+				
 				<div class="imgStep step1Dev">&nbsp;</div>
 
 				<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
@@ -108,12 +140,13 @@ cdp_weight: 3
 
 				<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
 				<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="/api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
-
 			</div>
 
 
 			<div class="wrapperStep">
 
+				<div class="cdp-step-anchor" data-step="2">&nbsp;</div>
+				
 				<div class="imgStep step2Dev">&nbsp;</div>
 
 				<span class="stepNumber step2"><span>&nbsp;</span>Step.</span>
@@ -131,6 +164,8 @@ cdp_weight: 3
 
 			<div class="wrapperStep">
 
+				<div class="cdp-step-anchor" data-step="3">&nbsp;</div>
+				
 				<div class="imgStep step3Dev">&nbsp;</div>
 
 				<span class="stepNumber step3"><span>&nbsp;</span>Step.</span>
@@ -145,6 +180,8 @@ cdp_weight: 3
 
 			<div class="wrapperStep">
 
+				<div class="cdp-step-anchor" data-step="4">&nbsp;</div>
+				
 				<div class="imgStep step4DevBOwn">&nbsp;</div>
 
 				<span class="stepNumber step4"><span>&nbsp;</span>Step.</span>
@@ -162,6 +199,9 @@ cdp_weight: 3
 </script>
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
+</script>
+
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/cdpPath.js">
 </script>
 
 <script type="text/javascript" charset="utf-8">
