@@ -286,16 +286,6 @@ var $inputLocation = $('#location');
 	// check location
 	function checkLocation(event) {
 		var inputID = $(this).attr('id');
-			/*$checkedLocations = $inputLocation.find('input:checked'),
-			$checkedQualifications = $inputList.filter(':checked'),
-			locationIdArray = [],
-			qualificationArray = [];
-		for (var i = 0; i < $checkedLocations.length; i++) {
-			locationIdArray.push($($checkedLocations[i]).attr('id'));
-		};
-		for (var i = 0; i < $checkedQualifications.length; i++) {
-			qualificationArray.push($($checkedQualifications[i]).attr('id'));
-		};*/
 
 		if(this.checked) {
 			createButton(inputID);
@@ -319,8 +309,6 @@ var $inputLocation = $('#location');
 		arrDataBadge.push($(this).data('location'));
 
 		var length = arrDataBadge.length;
-
-		//console.log(arrDataBadge +"  "+ length);
 
 			if($(this).hasClass('hide') == false){
 
@@ -412,12 +400,6 @@ var $inputLocation = $('#location');
 
 
 		}
-
-			
-
-		
-
-		
 
 	});
 

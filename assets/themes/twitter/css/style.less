@@ -2989,11 +2989,39 @@ a.blueLink {
             }
          }
        }
-
+  
        .wrapperStep {
          margin: 0 0 120px 0;
          padding:0 0 0 108px;
          position: relative;
+         min-height: 730px;
+         overflow: hidden;
+        
+        &.step1BS, &.step1D {
+          .stepContent {
+            top: 510px;
+          }
+        }
+        &.step2BS, &.step2D {
+          .stepContent {
+            top: 357px;
+          }
+        }
+        &.step3BS, &.step3D {
+          .stepContent {
+            top: 357px;
+          }
+        }
+        &.step4BS, &.step4D {          
+         min-height: 650px;
+          .stepContent {
+            top: 527px;
+          }
+        }
+
+        .stepContent {
+          position: absolute;
+        }
 
          .imgStep {
            width: 835px;
@@ -3121,15 +3149,21 @@ a.blueLink {
           color: #fff;
           font-family:'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-size: 13px;
+          z-index: 120;
           .top-bar-wrap {
             text-align: center;
           }
           .cdp-path-image {
             background: url('../img/certified_developer/get_started/cdp-path.png') no-repeat;
-            background-position: 0 0;
             display: inline-block;
             width: 38px;
             height: 42px;
+            &.devImage {
+              background-position: 0 0;
+            }
+            &.bOwnerImage {
+              background-position: 0 0;
+            }
           }
           .cdp-path-steps-wrap {
             position: relative;
@@ -3138,10 +3172,10 @@ a.blueLink {
               display: inline-block;
               width: 7px;
               height: 15px;
+              top: 16px;
               left: 0;
               background: url('../img/certified_developer/get_started/cdp-path.png') no-repeat;
               background-position: 0 -96px;
-              .transition(0.5s, ease-in-out, top);
               &.step1 {
                 top: 16px;
               }
@@ -3180,6 +3214,18 @@ a.blueLink {
                 cursor: pointer;
               }
             }
+          }
+       }
+
+       &.fixTitle {
+          #menu {
+            position: fixed;
+            width: 869px;
+            top: 0;
+            z-index: 100;
+          }
+          #result {
+            margin-top: 70px;
           }
        }
      }
