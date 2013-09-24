@@ -1,7 +1,7 @@
 (function() {
 
 
-var $inputList = $('#qualification, #location').find('input');
+var $inputList = $('#qualification').find('input');
 
 var $developers = $('.wrapperDeveloper');
 
@@ -10,6 +10,7 @@ var wrapperButtonsQual = $('#selectedQual');
 var wrapperButtonsLoc = $('#selectedLoc');
 
 var $inputLocation = $('#location');
+
 
 	function init(){
 
@@ -28,6 +29,8 @@ var $inputLocation = $('#location');
 
 		//check();
 		$inputList.on('click', check);
+
+		$inputLocation.on('click', 'input', checkLocation);
 
 	};
 
@@ -49,6 +52,13 @@ var $inputLocation = $('#location');
 	//count location developers
 	function countLocationDev(){
 
+		var $checkedQualifications = $inputList.filter(':checked'),
+			qualificationArray = [];
+
+		for (var i = 0; i < $checkedQualifications.length; i++) {
+			qualificationArray.push($($checkedQualifications[i]).attr('id'));
+		};
+
 		$inputLocation.find('input').each(function(){
 
 			var valueID = $(this).attr('id');
@@ -56,8 +66,16 @@ var $inputLocation = $('#location');
 			var countLocation = 0;
 
 			$developers.each(function(){
+				var arrDataBadge = $(this).data('badge').split(';'),
+					badgeLength = arrDataBadge.length,
+					count;
+				for(var i=0, count=0; i<badgeLength; i++){
+					if (qualificationArray.indexOf(arrDataBadge[i]) >= 0) {
+						count ++;
+					}
+				}
 
-				if(!$(this).hasClass('hide') && $(this).data('location') == valueID){
+				if(count === qualificationArray.length && $(this).data('location') == valueID){
 
 					countLocation++;
 
@@ -66,9 +84,9 @@ var $inputLocation = $('#location');
 			});
 
 			$('label[for="'+ valueID +'"]').find('.amountCityDev').text(countLocation);
+			$('#selectedLoc').find('[name="' + valueID +'"]').html($('label[for="'+ valueID +'"]').text() + '<span class="removeOptionFilter">&nbsp;</span>');
 
 		});
-
 	};
 
 	// create button
@@ -84,7 +102,7 @@ var $inputLocation = $('#location');
 
            wrapperButtonsLoc.removeClass('hide');
 
-           wrapperButtonsLoc.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
+           wrapperButtonsLoc.append('<span class="itemFilterBadge '+ checkboxID +'" name="' + checkboxID + '">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
 
 
         } else if (idParent == 'qualification'){
@@ -94,9 +112,6 @@ var $inputLocation = $('#location');
            wrapperButtonsQual.append('<span class="itemFilterBadge '+ checkboxID +'">'+ nameLabel +'<span class="removeOptionFilter">&nbsp;</span></span>')
 
         }
-
-
-
 	};
 
 	// delete button
@@ -149,9 +164,6 @@ var $inputLocation = $('#location');
 
 		$('#'+ class2 +'').prop("checked", false);
 
-
-
-
 		var idParent = cross.parents('#selectedQual, #selectedLoc').attr('id');
 
 		//console.log(idParent);
@@ -168,6 +180,8 @@ var $inputLocation = $('#location');
 
             }
 
+            checkLocation();
+
         } else if (idParent == 'selectedQual'){
 
             var lengthChild =  wrapperButtonsQual.children().length;
@@ -179,15 +193,57 @@ var $inputLocation = $('#location');
                 wrapperButtonsQual.addClass('hide');
 
             }
+
+	        // check
+	        check();
+	        
         }
 
         cross.parent('.itemFilterBadge').remove();
 
-        // check
-        check();
-
-
 	});
+
+
+	function checkFilters() {
+		var $checkedLocations = $inputLocation.find('input:checked'),
+			$checkedQualifications = $inputList.filter(':checked'),
+			locationIdArray = [],
+			qualificationArray = [];
+		for (var i = 0; i < $checkedLocations.length; i++) {
+			locationIdArray.push($($checkedLocations[i]).attr('id'));
+		};
+		for (var i = 0; i < $checkedQualifications.length; i++) {
+			qualificationArray.push($($checkedQualifications[i]).attr('id'));
+		};
+
+
+		$developers.each(function() {
+			var currLocation = $(this).data('location'),
+				arrDataBadge = $(this).data('badge').split(';'),
+				badgeLength = arrDataBadge.length,
+				count;
+			for(var i=0, count=0; i<badgeLength; i++){
+				if (qualificationArray.indexOf(arrDataBadge[i]) >= 0) {
+					count ++;
+				}
+			}
+			if (locationIdArray.length === 0) {
+				if (count === qualificationArray.length) {
+					$(this).removeClass('hide');
+				} else {
+					$(this).addClass('hide');
+				}
+				return;
+			}
+			if (locationIdArray.indexOf(currLocation) >= 0 && count === qualificationArray.length) {
+				$(this).removeClass('hide');
+
+			} else {
+				$(this).addClass('hide');
+			}
+		});
+	};
+
 
 	// check
 	function check(event){
@@ -202,7 +258,7 @@ var $inputLocation = $('#location');
 				createButton(inputID);
 
 				//developers prthing
-				$developers.each(developerParthADD);
+				//$developers.each(developerParthADD);
 
 			} else {
 
@@ -214,8 +270,10 @@ var $inputLocation = $('#location');
 					$developers.removeClass('hide');
 				}
 
-				$developers.each(developerParthDelete);
+				//$developers.each(developerParthDelete);
 			}
+
+			checkFilters();
 
 			// count Result
 			countResult();
@@ -224,6 +282,23 @@ var $inputLocation = $('#location');
 			countLocationDev();
 
 	};
+
+	// check location
+	function checkLocation(event) {
+		var inputID = $(this).attr('id');
+
+		if(this.checked) {
+			createButton(inputID);
+
+		} else {
+			deleteButton(inputID);
+		}
+
+		checkFilters();
+
+		countResult();
+	}
+
 
 	//developerParthADD
 	function developerParthADD(event){
@@ -234,8 +309,6 @@ var $inputLocation = $('#location');
 		arrDataBadge.push($(this).data('location'));
 
 		var length = arrDataBadge.length;
-
-		console.log(arrDataBadge +"  "+ length);
 
 			if($(this).hasClass('hide') == false){
 
@@ -254,9 +327,7 @@ var $inputLocation = $('#location');
 					$(this).addClass('hide');
 
 				}
-
 			}
-
 	};
 
 	//developerParthDelete
@@ -329,12 +400,6 @@ var $inputLocation = $('#location');
 
 
 		}
-
-			
-
-		
-
-		
 
 	});
 

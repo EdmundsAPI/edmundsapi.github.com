@@ -2926,6 +2926,12 @@ a.blueLink {
        position:relative;
        z-index:1;
 
+       .cdp-step-anchor {
+        line-height: 0;
+        font-size: 0;
+        position: absolute;
+       }
+
        .toggleLinks {
          margin:2px 0 45px 0;
          text-align: center;
@@ -2983,10 +2989,35 @@ a.blueLink {
             }
          }
        }
-
+  
        .wrapperStep {
          margin: 0 0 120px 0;
          padding:0 0 0 108px;
+         position: relative;
+         overflow: hidden;
+        
+        &.step1BS, &.step1D {
+          .stepContent {
+            top: 510px;
+          }
+        }
+        &.step2BS, &.step2D {
+          .stepContent {
+            top: 357px;
+          }
+        }
+        &.step3BS, &.step3D {
+          .stepContent {
+            top: 357px;
+          }
+        }
+        &.step4BS, &.step4D {          
+         min-height: 650px;
+          .stepContent {
+            top: 527px;
+          }
+        }
+
 
          .imgStep {
            width: 835px;
@@ -3100,6 +3131,98 @@ a.blueLink {
          &.step4BS {
            margin:0;
          }
+       }
+
+       .getStartedBar {
+          position: fixed;          
+          top: 50%;
+          right: 0;
+          width: 52px;
+          margin-top: -150px;
+          display: inline-block;
+          padding-top: 10px;
+          background-color: #fc6431;
+          color: #fff;
+          font-family:'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          z-index: 120;
+          .top-bar-wrap {
+            text-align: center;
+          }
+          .cdp-path-image {
+            background: url('../img/certified_developer/get_started/cdp-path.png') no-repeat;
+            display: inline-block;
+            width: 38px;
+            height: 42px;
+            &.devImage {
+              background-position: 0 0;
+            }
+            &.bOwnerImage {
+              background-position: 0 0;
+            }
+          }
+          .cdp-path-steps-wrap {
+            position: relative;
+            .cdp-path-arrow {
+              position: absolute;
+              display: inline-block;
+              width: 7px;
+              height: 15px;
+              top: 16px;
+              left: 0;
+              background: url('../img/certified_developer/get_started/cdp-path.png') no-repeat;
+              background-position: 0 -96px;
+              &.step1 {
+                top: 16px;
+              }
+              &.step2 {
+                top: 65px;
+              }
+              &.step3 {
+                top: 111px;
+              }
+              &.step4 {
+                top: 158px;
+              }
+            }
+          }
+          ul {
+            list-style: none;
+            margin: 13px 0 30px;
+            li {
+              text-align: center;
+              &:not(:last-child) {
+                border-bottom: 1px solid #f88e6b;                
+              }
+            }
+            .cdp-step {
+              display: inline-block;
+              width: 25px;
+              height: 26px;
+              background: url('../img/certified_developer/get_started/cdp-path.png') no-repeat;
+              background-position: 0 -56px;
+              line-height: 25px;
+              margin: 10px 0;
+              color: #fc6431;
+              font-size: 14px;
+              font-weight: bold;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+       }
+
+       &.fixTitle {
+          #menu {
+            position: fixed;
+            width: 869px;
+            top: 0;
+            z-index: 100;
+          }
+          #result {
+            margin-top: 70px;
+          }
        }
      }
 
@@ -3261,6 +3384,8 @@ a.blueLink {
           padding: 7px 35px 7px 10px;
           background: #DEDEDE;
           white-space: nowrap;
+          display: inline-block;
+          line-height: 17px;
         }
         #selectedCost {
           padding-left: 21px;
