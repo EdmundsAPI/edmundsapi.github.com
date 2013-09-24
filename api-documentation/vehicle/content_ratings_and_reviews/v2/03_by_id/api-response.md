@@ -49,24 +49,24 @@ number: 4
 	
 | Property      		| Description                                              	| Visibility                |
 |:----------------------|:----------------------------------------------------------|:------------------------- |
-| id	        		| The review ID								 				| Edmunds, Partners, Public |	
-| legacyId				| The review ID in the old system			                | Edmunds, Partners, Public | 
-| make					| The car make								                | Edmunds, Partners, Public | 
-| model					| The car model								                | Edmunds, Partners, Public | 
-| year					| The car style ID							                | Edmunds, Partners, Public | 
-| styleId				| The total TCO® for the five years			                | Edmunds, Partners, Public | 
-| title 				| The review title 							                | Edmunds, Partners, Public | 
-| text					| The review 								                | Edmunds, Partners, Public | 
-| updated				| Timestamp of when review was updated		                | Edmunds, Partners, Public | 
-| submodels				| The car submodels this review applies to	                | Edmunds, Partners, Public | 
-| created				| The timestamp of when the review was created              | Edmunds, Partners, Public | 
-| favoriteFeatures		| Review section on favorite features		                | Edmunds, Partners, Public | 
+| id	        		      | The review ID								 				                      | Edmunds, Partners, Public |	
+| legacyId				      | The review ID in the old system			                      | Edmunds, Partners, Public | 
+| make					        | The car make								                              | Edmunds, Partners, Public | 
+| model					        | The car model								                              | Edmunds, Partners, Public | 
+| year					        | The car year							                                | Edmunds, Partners, Public | 
+| styleId				        | The car style ID		                                      | Edmunds, Partners, Public | 
+| title 				        | The review title 							                            | Edmunds, Partners, Public | 
+| text					        | The review 								                                | Edmunds, Partners, Public | 
+| updated				        | Timestamp of when review was updated		                  | Edmunds, Partners, Public | 
+| submodels				      | The car submodels this review applies to	                | Edmunds, Partners, Public | 
+| created				        | The timestamp of when the review was created              | Edmunds, Partners, Public | 
+| favoriteFeatures		  | Review section on favorite features		                    | Edmunds, Partners, Public | 
 | suggestedImprovements	| Review section on suggested improvements	                | Edmunds, Partners, Public | 
-| authorName			| The review author							                | Edmunds, Partners, Public | 
-| ratings				| The ratings (see below)					                | Edmunds, Partners, Public | 
-| comments				| Comments on this review					                | Edmunds, Partners, Public | 
-| thumbsUpDownCounter	| Likes and dislikes totals 				                | Edmunds, Partners, Public | 
-| moderationStatus		| For internal use							                | Edmunds, Partners, Public | 
+| authorName			      | The review author							                            | Edmunds, Partners, Public | 
+| ratings				        | The ratings (see below)					                          | Edmunds, Partners, Public | 
+| comments				      | Comments on this review					                          | Edmunds, Partners, Public | 
+| thumbsUpDownCounter	  | Likes and dislikes totals 				                        | Edmunds, Partners, Public | 
+| moderationStatus		  | For internal use							                            | Edmunds, Partners, Public | 
 
 Each element in the <code>ratings</code> array follows this format:
 
