@@ -36,9 +36,9 @@ Edmunds.com’s Editorial Content consists of articles (“Articles”) that are
 
 #### The following **meta tag** should be added to all of your pages that display an Article:
 
-	<code><link href="/URL SUPPLIED WITH THE ARTICLE" rel="canonical" /></code>
+	<link href="/{URL SUPPLIED WITH THE ARTICLE}" rel="canonical" />
     <!-- The URL SUPPLIED WITH THE ARTICLE is the URL of the content you’re displaying on your site. The URL is provided in the response object you’ll receive when you make a REST call request. -->
-    <!-- The meta tag needs to exist in the <code>header</code> section of your page. -->
+    <!-- The meta tag needs to exist in the <head> section of your page. -->
  
 #### Each Article you elect to display **must be displayed in the form it is provided**, i.e., it may not be edited, supplemented or abridged.
  
