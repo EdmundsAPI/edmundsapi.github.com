@@ -2989,16 +2989,17 @@ a.blueLink {
             }
          }
        }
-  
-       .wrapperStep {
-         margin: 0 0 120px 0;
-         padding:0 0 0 108px;
+       .outerStep {
          position: relative;
          overflow: hidden;
-        
+       }
+       .wrapperStep {
+         margin:0 0 0 108px;
+         position: relative;
+
         &.step1BS, &.step1D {
           .stepContent {
-            top: 510px;
+            top: 468px;
           }
         }
         &.step2BS, &.step2D {
@@ -3011,11 +3012,16 @@ a.blueLink {
             top: 357px;
           }
         }
-        &.step4BS, &.step4D {          
+        &.step4BS, &.step4D {  
          min-height: 650px;
           .stepContent {
             top: 527px;
           }
+        }
+
+        .stepContent {
+          left: 0;
+          right: 0;
         }
 
 
@@ -3129,7 +3135,7 @@ a.blueLink {
          }
 
          &.step4BS {
-           margin:0;
+           /*margin:0;*/
          }
        }
 
