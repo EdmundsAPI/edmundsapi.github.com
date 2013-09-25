@@ -143,7 +143,7 @@ function Slider() {
 	};
 	
 	var moveMark = function(){ 
-      	var slidePoint1 = $('.slidePoint1');
+      		var slidePoint1 = $('.slidePoint1');
 		var slidePoint2 = $('.slidePoint2');
 		var slidePoint3 = $('.slidePoint3');
 			
@@ -171,6 +171,26 @@ function Slider() {
 				break			
 		};		
 	};
+	
+	//click on the dots of the slider
+	$('.pointSlider').on('click', function(){
+		
+		clearInterval(intervalID); 			
+
+		count = $(this).data('number');
+		
+		closeAll();
+		
+		switch (count) {
+			case 1:  $slides.animate({top: 0 }, 400); break
+			case 2:  $slides.animate({top: step*(count-1) }, 400); break
+			case 3:  $slides.animate({top: step*(count-1) }, 400); break
+		}
+		
+		moveMark();
+
+		interval(timeInterval);
+	});
 
 
 	var upSlider = function() {
