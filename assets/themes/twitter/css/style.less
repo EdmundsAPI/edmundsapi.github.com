@@ -150,6 +150,10 @@ a:focus {
   }
 }
 
+.h1Title.no-border {
+  border: 0;
+}
+
 .lineVertical {
   .span10 {
     width: 10px;
@@ -4701,3 +4705,168 @@ a.blueLink {
 }
 
 // end Branding Guide
+
+
+// start Affiliate Network page
+
+  .pageAffilligNet {
+    table td {
+      border: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    .subtitle {
+      padding-left: 230px;
+      font-weight: bold;
+      margin-bottom: 35px;
+      line-height: 20px;
+    }
+    .affiliate-steps-panel {
+      background-color: #FC6431;
+      padding: 0;
+      color: #fff;
+      overflow: hidden;
+      text-align: center;
+      height: 411px;
+      ul {
+        list-style: none;
+        overflow: hidden;
+        display: inline-block;
+        margin: 62px 0;
+
+        li {
+          float: left;
+          width: 225px;
+          overflow: visible;
+          position: relative;
+          .step-image {
+            background: url('../img/affiliate-network/affiliate-steps.png') no-repeat;
+            width: 365px;
+            height: 192px;
+          }
+          .step-description-wrap {
+            text-align: initial;
+            margin-top: 43px;
+            padding-left: 3px;
+            font-size: 18px;
+
+            .step-number {              
+              background: url('../img/affiliate-network/affiliate-images.png') no-repeat;
+              background-position: 0 -39px;
+              display: inline-block;
+              width: 34px;
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              float: left;
+            }
+            .step-description {
+              padding-left: 50px;
+            }
+          }
+          .dots-image {
+            background: url('../img/affiliate-network/affiliate-images.png') no-repeat;
+            background-position: 0 0;
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            position: absolute;
+            top: 109px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 225px;
+          }
+          &.step1 {
+           .step-image {
+              background-position: 0 0;
+            }
+            .dots-image {
+              right: -142px;
+            }
+          }          
+          &.step2 {
+            .step-image {
+              background-position: 0 -288px;
+            }
+            .dots-image {
+              right: -125px;
+            }
+          } 
+          &.step3 .step-image {
+            background-position: 0 -581px;
+            margin-left: -52px;
+          }   
+        }
+      }      
+    }
+    .why-join-image-wrap {
+      padding: 0 50px;
+      .why-join-image {
+        background: url('../img/affiliate-network/why-join.png') no-repeat;
+        display: inline-block;
+        height: 200px;
+        width: 607px;
+      }
+    }
+    ul.why-join-list {
+      list-style: none;
+      width: 715px;
+      margin-left: 0;
+      overflow: hidden;
+      &>li {
+        width: 220px;
+        float: left;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        ul>li {
+          list-style-type: disc;
+        }
+      }
+    }
+
+    &.fixed {
+      .header-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #f2f2f2;
+        z-index: 10;
+      }
+      .header-container-wrap {
+        background: #f2f2f2;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 117px;
+        z-index: 10;
+      }
+      .header-container {
+        background: #f2f2f2;
+      }
+      .affiliate-steps-panel {
+        margin-top: 288px;
+      }
+      .main-container-wrap {
+        position: absolute;
+        top: 810px;
+        right: 0;
+        left: 0;
+        background: #f2f2f2;
+      }
+      footer {
+        display: none;
+      }
+    }
+    &.non-fixed {
+      margin-top: 400px;
+      .header-wrap {
+        position: relative;
+      }
+    }
+  }
+
+// end Affiliate Network page
