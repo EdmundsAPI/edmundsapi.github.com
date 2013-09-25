@@ -20,21 +20,24 @@ $(function() {
 		windowScrollTop = $(window).scrollTop(),
 		scrollDistance = 0;
 
-	setStartHeights();
+	var activeContent = $('.activeToggle').data('activeContent');
+	setStartHeights(activeContent);
 
 	$('#menu').on('click', 'a', function() {
 		var link = $(this).data('link');
+		var activeContent = $(this).data('activeContent');
 		$('.cdp-path-image').removeClass('devImage').removeClass('bOwnerImage').addClass(link+'Image');
-		setStartHeights();
+		setStartHeights(activeContent);
 	});
 
-	function setStartHeights() {
-		var activeContent = $('.activeToggle').data('activeContent');
+	function setStartHeights(activeContent) {
 		var $outerSteps = $('.'+ activeContent).find('.outerStep');
+
 		$outerSteps.each(function() {
 			var blockHeight = $(this).find('.wrapperStep').height(),
 				windowHeight = $(window).height(),
 				top = blockHeight < windowHeight ? (windowHeight - blockHeight) / 2 : 0;
+			console.log(activeContent);
 			console.log('height = ' + blockHeight);		
 			console.log('window height = ' + windowHeight);
 			$(this).css('height', blockHeight < windowHeight ? windowHeight : blockHeight);

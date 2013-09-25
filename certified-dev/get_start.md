@@ -47,7 +47,6 @@ cdp_weight: 3
 	<div id="content">
 		<div data-block="business_owner" class="contentBusOwner business_owner" name="cdp-steps-section" style="display: block;">
 
-			<div class="outerStep">
 				<div class="cdp-step-anchor" data-step="1">&nbsp;</div>
 				<div class="wrapperStep step1BS">
 
@@ -83,9 +82,7 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
 
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="2">&nbsp;</div>
 
@@ -107,9 +104,7 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
 
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="3">&nbsp;</div>
 
@@ -130,9 +125,7 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
 
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="4">&nbsp;</div>
 
@@ -150,13 +143,11 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
 
 		</div>
 
 		<div data-block="certified_developer" class="contentDev certified_developer" name="cdp-steps-section" style="display: none;">
 
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="1">&nbsp;</div>
 					
@@ -164,7 +155,7 @@ cdp_weight: 3
 
 					<div class="imgStep step1Dev">&nbsp;</div>
 
-					<div class="stepContent" name="step-content-1" style="top: 510px;">
+					<div class="stepContent" name="step-content-1">
 
 						<span class="stepNumber step1"><span>&nbsp;</span>Step.</span>
 
@@ -177,11 +168,7 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
 
-
-			<div class="outerStep">
-					
 				<div class="cdp-step-anchor" data-step="2">&nbsp;</div>
 
 				<div class="wrapperStep step2D">
@@ -205,10 +192,6 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
-
-
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="3">&nbsp;</div>
 
@@ -230,9 +213,6 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
-
-			<div class="outerStep">
 
 				<div class="cdp-step-anchor" data-step="4">&nbsp;</div>
 
@@ -250,8 +230,6 @@ cdp_weight: 3
 
 				</div>
 				
-			</div>
-
 		</div>
 
 	</div>
@@ -261,10 +239,6 @@ cdp_weight: 3
 </script>
 
 <script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
-</script>
-
-
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/cdpPath.js">
 </script>
 
 <script type="text/javascript" charset="utf-8">
