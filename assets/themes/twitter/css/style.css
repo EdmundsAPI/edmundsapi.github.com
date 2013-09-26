@@ -752,6 +752,7 @@ ul.multiLevelMenu {
 	}
 	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span6 { width: 552px; float: left; }
+	.wrapperHeader .row-fluid .span6 { width: 470px; }
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
 
@@ -796,6 +797,10 @@ ul.multiLevelMenu {
 	.span10 { width: 780px; float: left; }
 
 	.row-fluid:not([class*="overviewTable"]) .span6 { width: 552px; float: left; }
+	.wrapperHeader .row-fluid.bgnd {
+		display: none;
+	}
+	.wrapperHeader .row-fluid .span6 { width: 365px; }
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
 
@@ -849,6 +854,10 @@ ul.multiLevelMenu {
 	}
 
 	.row-fluid .span10.navbar { margin-left: 0; }
+	.wrapperHeader .row-fluid.bgnd {
+		display: none;
+	}
+	.wrapperHeader .row-fluid .span6 { width: 300px; }
 	body {
 		padding: 0;
 	}
@@ -914,6 +923,10 @@ ul.multiLevelMenu {
 	.row-fluid .span10.navbar { margin-left: 0; }
 	body {
 		padding: 0;
+	}
+	
+	.wrapperHeader .row-fluid.bgnd {
+		display: none;
 	}
 	.overviewTable .parenCategory { padding: 13px 5px; }
 	.overviewTableTH .span4 { width: 237px; float: left; }
