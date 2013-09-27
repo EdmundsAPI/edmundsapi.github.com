@@ -876,6 +876,7 @@ ul.multiLevelMenu {
 	.row-fluid .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
+	.mainPage .container { margin: 0 101px;}
 
 	.row-fluid.info .span3 { width: 132px; float: left;}
 	.row-fluid.info .span4 { width: 180px; float: left; margin-left: 15px;}
