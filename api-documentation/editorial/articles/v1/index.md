@@ -16,9 +16,9 @@ overview: page_version
 ---
 
 
-<span class="info-message">
+<div class="info-message">
 	Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
-</span>
+</div>
 
 ### Available Article Categories
 

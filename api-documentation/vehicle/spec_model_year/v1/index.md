@@ -16,11 +16,11 @@ overview: page_version
 
 ---
 
-<span class="notification-message">
-This version has been deprecated
+<div class="notification-message">
+<p>This version has been deprecated. </p>
 
-#### Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The  endpoints below will be discontinued then.
-</span>
+Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before <i>January 7, 2014</i>. The  endpoints below will be discontinued then.
+</div>
 
 * v1/api/vehicle/modelyearrepository/findbyid
 * v1/api/vehicle/modelyearrepository/finddistinctyearwithnew
