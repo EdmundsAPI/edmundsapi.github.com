@@ -15,9 +15,9 @@ level: 2
 overview: page_version
 ---
 
-<span class="info-message">
+<div class="info-message">
 	Get the dealership ratings and reviews that are collected from consumers through Edmunds.com's website, apps and tools.
-</span>
+</div>
 
 We offer two endpoints in this resource:
 

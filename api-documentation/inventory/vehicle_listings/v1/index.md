@@ -15,9 +15,9 @@ level: 2
 overview: page_version
 ---
 
-<span class="info-message">
+<div class="info-message">
 	This resource provides a list of cars available for sale at a specific dealership.
-</span>
+</div>
 
 ### Sort options
 

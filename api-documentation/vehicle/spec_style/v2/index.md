@@ -16,9 +16,9 @@ overview: page_version
 
 ---
 
-<span class="info-message">
+<div class="info-message">
  The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style.
-</span>
+</div>
 
 ### Static Datasets
 

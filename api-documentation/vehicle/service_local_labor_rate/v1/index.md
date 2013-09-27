@@ -16,6 +16,6 @@ overview: page_version
 
 ---
 
-<span class="info-message">
+<div class="info-message">
  Get the local labor rate in a specific zip code. The returned data will be in dollar per hour.
-</span>
+</div>

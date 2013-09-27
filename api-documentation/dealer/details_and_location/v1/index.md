@@ -15,8 +15,8 @@ level: 2
 overview: page_version
 ---
 
-<span class="info-message">
+<div class="info-message">
 	Get dealership details and location information by providing the ZIP Code of the area you're interested in.
-</span>
+</div>
 
 

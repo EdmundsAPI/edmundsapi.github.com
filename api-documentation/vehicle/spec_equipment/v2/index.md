@@ -16,11 +16,11 @@ overview: page_version
 
 ---
 
-<span class="info-message">
- The vehicle equipment is everything that exists within a car, including the options, engine, transmission, colors, seat configuration, brake system, air conditioning, and more.
+<div class="info-message">
+ <p>The vehicle equipment is everything that exists within a car, including the options, engine, transmission, colors, seat configuration, brake system, air conditioning, and more.</p>
 
-_**Please note** that this results for vehicles that are 2000 or older will be available in mid September, 2013._
-</span>
+<p><i><b>Please note</b> that this results for vehicles that are 2000 or older will be available in mid September, 2013.</i></p>
+</div>
 
 ### Equipment Response Formats
 

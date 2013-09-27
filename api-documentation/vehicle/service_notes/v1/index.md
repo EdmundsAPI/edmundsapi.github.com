@@ -16,6 +16,6 @@ overview: page_version
 
 ---
 
-<span class="info-message">
-	The maintenance notes for a particular vehicle. You will need to provide the vehicle's **style ID** in order to pull up the notes.
-</span>
+<div class="info-message">
+	The maintenance notes for a particular vehicle. You will need to provide the vehicle's <b>style ID</b> in order to pull up the notes.
+</div>

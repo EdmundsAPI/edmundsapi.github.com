@@ -15,9 +15,9 @@ level: 2
 overview: page_version
 ---
 
-<span class="info-message">
+<div class="info-message">
 	Get an inventory listing by VIN.
-</span>
+</div>
 
 To learn more about car VINs, check out this [Wikipedia page](http://en.wikipedia.org/wiki/Vehicle_Identification_Number). The VINs that are expected are:
 

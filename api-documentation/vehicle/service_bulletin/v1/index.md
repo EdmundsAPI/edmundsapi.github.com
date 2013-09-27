@@ -16,6 +16,6 @@ overview: page_version
 
 ---
 
-<span class="info-message">
+<div class="info-message">
  Get the service bulletins for a car by its model year ID or by the bulletin's ID.
-</span>
+</div>
