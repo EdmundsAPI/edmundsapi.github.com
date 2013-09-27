@@ -755,6 +755,7 @@ ul.multiLevelMenu {
 	.wrapperHeader .row-fluid .span6 { width: 470px; }
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
+	.wrapperMainPage .section4 .row-fluid .span3 { width: 250px; }
 
 
 	.row-fluid.info .span3 { width: 132px; float: left;}
@@ -771,6 +772,7 @@ ul.multiLevelMenu {
 	.wrapperDeveloper .row-fluid .span2 { width: 133px; }
 	.wrapperDeveloper .row-fluid .span4 { width: 285px; float: left; }
 	.wrapperDeveloper .row-fluid .span6 { width: 430px; }
+	.wrapperMainPage .row .span12 {	width: 100%;}
 
 	.api-header-row2 .row-fluid .span6 { margin-left: 0; }
 }
@@ -802,6 +804,8 @@ ul.multiLevelMenu {
 	}
 	.wrapperMainPage .span6 { width: 552px; float: left; }
 	.wrapperMainPage .span3 { width: 269px; float: left; margin-right: 18px;}
+	.wrapperMainPage .section4 .row-fluid .span3 { width: 235px; }
+	.wrapperMainPage .row .span12 {	width: 100%;}
 
 	.row-fluid.info .span3 { width: 132px; float: left;}
 	.row-fluid.info .span4 { width: 180px; float: left; margin-left: 15px; }
