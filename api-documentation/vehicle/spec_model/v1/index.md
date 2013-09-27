@@ -17,9 +17,9 @@ overview: page_version
 ---
 
 <div class="info-message">
-<p>This version has been deprecated</p>
+<p><b>This version has been deprecated</b></p>
 
-<p>Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The  endpoints below will be discontinued then:</p>
+<p>Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before <i>January 7, 2014</i>. The  endpoints below will be discontinued then:</p>
 </div>
 
 * v1/api/vehicle/modelrepository/findbyid
