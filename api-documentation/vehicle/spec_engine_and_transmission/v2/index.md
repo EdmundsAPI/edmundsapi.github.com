@@ -16,7 +16,9 @@ overview: page_version
 
 ---
 
-#### This resource provides engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle [equipment](/api-documentation/vehicle/spec_equipment/v2/).
+<span class="info-message">
+ This resource provides engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle [equipment](/api-documentation/vehicle/spec_equipment/v2/).
+</span>
 
 ### Engine Details
 

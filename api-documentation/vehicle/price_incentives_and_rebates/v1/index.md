@@ -16,7 +16,9 @@ overview: page_version
 
 ---
 
-#### This resource is about getting incentives and rebates for vehicles. To fully understand the data you get back from the endpoints available in this resource, you will need to understand a few key concepts, like what incentives types, *source* types and *content* types there are.
+<span class="info-message">
+	This resource is about getting incentives and rebates for vehicles. To fully understand the data you get back from the endpoints available in this resource, you will need to understand a few key concepts, like what incentives types, *source* types and *content* types there are.
+</span>
 
 ### Incentives Types
 

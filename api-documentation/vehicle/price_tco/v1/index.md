@@ -16,7 +16,9 @@ overview: page_version
 
 ---
 
-#### Edmunds.com's True Cost to Own® (TCO®) is proprietary data that helps you estimate the **total five-year cost** of buying and owning a vehicle — including some items you may not have taken into consideration. A benefit of using our TCO® API is that you can easily compare the five-year totals for different vehicles and make a more informed choice.
+<span class="info-message">
+Edmunds.com's True Cost to Own® (TCO®) is proprietary data that helps you estimate the **total five-year cost** of buying and owning a vehicle — including some items you may not have taken into consideration. A benefit of using our TCO® API is that you can easily compare the five-year totals for different vehicles and make a more informed choice.
+</span>
 
 The [components of TCO®](/api-documentation/pricing_tco_cats/v1/) are depreciation, interest on financing, taxes and fees, insurance premiums, fuel, maintenance, repairs and any federal tax credit that may be available. In order to estimate certain mileage-dependent costs, we assume that vehicles will be driven **15,000 miles per year**. For a used vehicle, we calculate the years the vehicle has been driven using the nominal difference between the current calendar year and the vehicle's model year, and assume that it was driven 15,000 miles during each of those years.
 

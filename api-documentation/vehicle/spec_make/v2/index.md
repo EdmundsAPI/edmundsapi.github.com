@@ -16,8 +16,11 @@ overview: page_version
 
 ---
 
+<span class="info-message">
 
 A vehicle _make_ is either the name of its manufacturer or, if the manufacturer has more than one operating unit, the name of that unit. We made it super easy to get a list of car makes. In this version, you can get a list of car makes and their relevant data through the following endpoints (accessible from the drop-down menu above):
+
+</span>
 
 1. **Get Total Count of Car Makes**: Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
 

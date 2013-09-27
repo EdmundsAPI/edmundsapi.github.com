@@ -16,4 +16,6 @@ overview: page_version
 
 ---
 
-#### Get the local labor rate in a specific zip code. The returned data will be in dollar per hour.
+<span class="info-message">
+ Get the local labor rate in a specific zip code. The returned data will be in dollar per hour.
+</span>

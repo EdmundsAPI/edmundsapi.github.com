@@ -17,9 +17,11 @@ overview: page_version
 ---
 
 
-### This version has been deprecated
+<span class="info-message">
+This version has been deprecated
 
-#### Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The following endpoints will be discontinued then:
+ Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The  endpoints below will be discontinued then.
+</span>
 
 * v1/api/vehicle/equipmentrepository/findbytypeandmodelyearid
 * v1/api/vehicle/equipment/{id}

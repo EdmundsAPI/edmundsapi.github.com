@@ -12,10 +12,32 @@
 body {
   position: relative;
   min-width: 1150px;
-    &.mainPage {
-      min-width: 1352px;
-    }
+  &.mainPage {
+    min-width: 1352px;
   }
+}
+
+
+.notification-message, .info-message {
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  background-position: 25px 25px; 
+  padding: 25px;
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.notification-message {
+  background-image: url('../img/notification-icon.png');
+  padding-left: 74px;
+}
+.info-message {
+  background-image: url('../img/info-icon.png');
+  padding-left: 78px;
+}
 
  /*__font-family__*/
 @font-face {
@@ -751,8 +773,8 @@ a.blueLink {
 .screen-bgnd {
   background: url('../img/widget_promo/sprite-promo-widgets.png') no-repeat;
   background-position: -58px 0;
-  width: 879px;
-  height: 489px;
+  width: px;
+  height: 732px;
   position: absolute;
   top: 6px;
   bottom: 0;
@@ -4725,24 +4747,15 @@ a.blueLink {
     h3 {
       text-transform: uppercase;
     }
+    .notification-message {
+      margin-bottom: 70px;
+    }
+
     .subtitle {
       padding-left: 230px;
       font-weight: bold;
       margin-bottom: 35px;
       line-height: 20px;
-    }
-    .notification-message {
-      background-color: #dedede;
-      background-image: url('../img/notification-icon.png');
-      background-repeat: no-repeat;
-      background-position: 25px 25px;   
-      padding: 25px 25px 25px 78px;
-      font-size: 15px;
-      line-height: 23px;
-      margin-bottom: 70px;
-      p {
-        margin-bottom: 0;
-      }
     }
     .affiliate-steps-panel {
       background-color: #FC6431;

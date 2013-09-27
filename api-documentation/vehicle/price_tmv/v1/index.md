@@ -16,7 +16,9 @@ overview: page_version
 
 ---
 
-#### TMV® is the *average price* that a car sells for within a particular region. TMV® is adjusted for options, the vehicle's color and associated incentives. TMV® figures are ***based on the actual sales*** of other vehicles of its kind in the given region. The figure is then adjusted further for accuracy using sophisticated calculations designed by mathematicians at Edmunds.com.
+<span class="info-message">
+ TMV® is the *average price* that a car sells for within a particular region. TMV® is adjusted for options, the vehicle's color and associated incentives. TMV® figures are ***based on the actual sales*** of other vehicles of its kind in the given region. The figure is then adjusted further for accuracy using sophisticated calculations designed by mathematicians at Edmunds.com.
+</span>
 
 Knowing the TMV® price helps buyers negotiate the price of a new car as well as the value of their trade-in vehicle. Additionally, sellers can use TMV® to set the price of their used car when selling it to a private party.
 

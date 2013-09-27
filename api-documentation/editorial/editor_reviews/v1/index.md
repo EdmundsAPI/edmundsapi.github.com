@@ -15,7 +15,9 @@ level: 2
 overview: page_version
 ---
 
-#### This resource offers access to the Edmunds Editor Reviews including the pros, cons, Edmunds Says.
+<span class="info-message">
+	This resource offers access to the Edmunds Editor Reviews including the pros, cons, Edmunds Says.
+</span>
 
 ### Granular Editor Review Components
 
