@@ -128,6 +128,7 @@ layout: default
 		var wrapperHeader = $('.wrapperHeader');
 		var panelTabs = $('.api-header-row1').hasClass('api-header-row1');
 		var subMenu =$('.endpoint-submenu').hasClass('endpoint-submenu');
+		var fixedMenu = $('.fixElem .wrapperHeader');
 		//var leftMenu = $('#leftMenuFixed')
 
 
@@ -138,8 +139,6 @@ layout: default
 		} else if (panelTabs && !subMenu) {
 			body.addClass('overviewPage');
 		}
-
-
 
 		$(window).scroll(function(){
 
@@ -154,6 +153,10 @@ layout: default
 					body.removeClass('fixElem');
 				}
 			};
+
+			var scrollLeft = $(window).scrollLeft();
+			console.log('scroll left = ' + scrollLeft);
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
 
 		});
 	});
