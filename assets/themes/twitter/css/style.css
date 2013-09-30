@@ -899,6 +899,8 @@ ul.multiLevelMenu {
 
 	.api-header-row1 .row-fluid .span10,
 	.api-header-row2 .row-fluid .span10  { margin-left: 0; width: 950px; }
+	html body.tmv-promo, 
+	html body.vehicle-conf-promo  { min-width: 1650px;  }
 
 }
 
