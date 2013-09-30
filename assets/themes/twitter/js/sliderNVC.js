@@ -32,6 +32,7 @@ function Slider() {
 		});
 
 		sliderHover.mouseenter(function(){  //stop
+
 			clearInterval(intervalID); 		
 			
 		});
@@ -94,7 +95,6 @@ function Slider() {
 		interval(timeInterval); //autoStart
 	}
 
-
 	
 	// clear
 	var closeAll = function (){
@@ -103,9 +103,6 @@ function Slider() {
 	};
 	
 
-	
-	
-	
 	// Moving Markers (animate)
 	
 	var animateMarkers = function(mark1Top, mark2Top, mark3Top, mark4Top, mark5Top, tip1Top, tip2Top, tip3Top, tip4Top, tip5Top, slidePoint1, slidePoint2, slidePoint3) {
@@ -143,11 +140,11 @@ function Slider() {
 	};
 	
 	var moveMark = function(){ 
-      		var slidePoint1 = $('.slidePoint1');
+      	var slidePoint1 = $('.slidePoint1');
 		var slidePoint2 = $('.slidePoint2');
 		var slidePoint3 = $('.slidePoint3');
 			
-		switch  (count) {			
+		switch  (count) {
 			case 1:			
 				animateMarkers(66, 131, 196, 257, 318, 59, 124, 189, 250, 311, 30, 45, 45);
 				
@@ -173,13 +170,16 @@ function Slider() {
 	};
 	
 	//click on the dots of the slider
-	$('.pointSlider').on('click', function(){
-		
-		clearInterval(intervalID); 			
+	$('.wrapperSliderNVC .pointSlider').on('click', function(){
 
-		count = $(this).data('number');
+		clearInterval(intervalID); 	
 		
 		closeAll();
+
+		count = $(this).data('number');
+
+		console.log('go to slide ' + count);
+		
 		
 		switch (count) {
 			case 1:  $slides.animate({top: 0 }, 400); break
@@ -205,6 +205,7 @@ function Slider() {
 		};	
 		
 		
+		console.log('up slide to slide ' + count);
 		moveMark()
 
 	};
@@ -223,6 +224,7 @@ function Slider() {
 			
 		};
 		
+		console.log('down slide to slide ' + count);
 		
 		moveMark()
 	};

@@ -193,7 +193,7 @@
 	};
 	
 	//click on the dots of the slider
-	$('.pointSlider').on('click', function(){
+	$('.wrapperSliderTMV .pointSlider').on('click', function(){
 		
 		clearInterval(intervalID); 			
 
