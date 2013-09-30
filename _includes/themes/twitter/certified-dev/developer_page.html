@@ -27,19 +27,19 @@
 
 						<img src="{{PATH}}/assets/themes/twitter/img/certified_developer/search_the_directory/frames/
 						{% for p in page.badges %}
-							{% if p == 'analytics' %}Analytics{%  endif %}
+							{% if p == 'analytics' %}analytics{%  endif %}
 						{% endfor %}
 
 						{% for p in page.badges %}
-							{% if p == 'mobile' %}Mobile{%  endif %}
+							{% if p == 'mobile' %}mobile{%  endif %}
 						{% endfor %}
 
 						{% for p in page.badges %}
-							{% if p == 'socialShopping' %}Social Shopping{%  endif %}
+							{% if p == 'socialShopping' %}socialShopping{%  endif %}
 						{% endfor %}
 
 						{% for p in page.badges %}
-							{% if p == 'web' %}Web{%  endif %}
+							{% if p == 'web' %}web{%  endif %}
 						{% endfor %}
 						.png" alt=""/>
 
@@ -61,7 +61,10 @@
 
 						{% for p in page.badges %}
 
-							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{{p}}"></a></li>
+							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{% if p == 'analytics' %}Analytics{%  endif %}
+							{% if p == 'mobile' %}Mobile{%  endif %}
+							{% if p == 'socialShopping' %}Social shopping{%  endif %}
+							{% if p == 'web' %}Web{%  endif %}"></a></li>
 
 						{% endfor %}
 
