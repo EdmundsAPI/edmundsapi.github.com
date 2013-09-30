@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 <div class="info-message">
-	This resource is about getting incentives and rebates for vehicles. To fully understand the data you get back from the endpoints available in this resource, you will need to understand a few key concepts, like what incentives types, <b>source</b> types and <b>content</b> types there are.
+	This resource is about getting incentives and rebates for vehicles. To fully understand the data you get back from the endpoints available in this resource, you will need to understand a few key concepts, like what incentives types, <em>source</em> types and <em>content</em> types there are.
 </div>
 
 ### Incentives Types

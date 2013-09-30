@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 <div class="info-message">
- This resource provides engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle [equipment](/api-documentation/vehicle/spec_equipment/v2/).
+ This resource provides engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment</a>.
 </div>
 
 ### Engine Details

@@ -19,7 +19,7 @@ overview: page_version
 <div class="info-message">
  This resource returns the <b>5-year breakdown values</b> of all True Cost to Own® (TCO®) categories for a both <b>new</b> and <b>used</b> vehicles based on their specified <i>style ID, zip code, and state code</i>.
 
-<b>Please note</b> that the TCO® value is only available for up to 5 years. Vehicles that are older than five years <b>will not</b> have an accurate TCO® values.
+<p><b>Please note</b> that the TCO® value is only available for up to 5 years. Vehicles that are older than five years <b>will not</b> have an accurate TCO® values.</p>
 </div>
 
 ### The True Cost to Own® Categories
