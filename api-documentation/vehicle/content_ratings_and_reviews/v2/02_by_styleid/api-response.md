@@ -74,9 +74,9 @@ Each element in the <code>reviews</code> array follows this format:
 | legacyId				| The review ID in the old system			                | Edmunds, Partners, Public | 
 | make					| The car make								                | Edmunds, Partners, Public | 
 | model					| The car model								                | Edmunds, Partners, Public | 
-| year					| The car style ID							                | Edmunds, Partners, Public | 
-| styleId				| The total TCO® for the five years			                | Edmunds, Partners, Public | 
-| title 				| The review title 							                | Edmunds, Partners, Public | 
+| year					| The car year								                | Edmunds, Partners, Public | 
+| styleId				| The car style ID							                | Edmunds, Partners, Public | 
+| title 				| The review title							                | Edmunds, Partners, Public | 
 | text					| The review 								                | Edmunds, Partners, Public | 
 | updated				| Timestamp of when review was updated		                | Edmunds, Partners, Public | 
 | submodels				| The car submodels this review applies to	                | Edmunds, Partners, Public | 
