@@ -40,17 +40,17 @@
 				<div class="screen-wrap">
 					<ul class="carousel" name="main-carousel">
 						<li class="step1 active">
-							<div data-marker="1" data-step="1" class="marker1">&nbsp;</div>
-							<div data-marker="2" data-step="1" class="marker2">&nbsp;</div>
+							<div data-marker="1" data-step="1" class="marker1"><div class="inner-marker">&nbsp;</div></div>
+							<div data-marker="2" data-step="1" class="marker2"><div class="inner-marker">&nbsp;</div></div>
 						</li>
 						<li class="step2">
-							<div data-marker="1" data-step="2" class="marker1">&nbsp;</div>
-							<div data-marker="2" data-step="2" class="marker2">&nbsp;</div>
-							<div data-marker="3" data-step="2" class="marker3">&nbsp;</div>
+							<div data-marker="1" data-step="2" class="marker1"><div class="inner-marker">&nbsp;</div></div>
+							<div data-marker="2" data-step="2" class="marker2"><div class="inner-marker">&nbsp;</div></div>
+							<div data-marker="3" data-step="2" class="marker3"><div class="inner-marker">&nbsp;</div></div>
 						</li>
 						<li class="step3">
-							<div data-marker="1" data-step="3" class="marker1">&nbsp;</div>
-							<div data-marker="2" data-step="3" class="marker2">&nbsp;</div>
+							<div data-marker="1" data-step="3" class="marker1"><div class="inner-marker">&nbsp;</div></div>
+							<div data-marker="2" data-step="3" class="marker2"><div class="inner-marker">&nbsp;</div></div>
 						</li>
 					</ul>
 					<div class="popup-container">
@@ -150,9 +150,9 @@
 				<div class="navig">
 					<ul>
 						<li id="downSlideNVC">Prev</li>
-						<li class="slidePoint1">1</li>
-						<li class="slidePoint2">2</li>
-						<li class="slidePoint3">3</li>
+						<li class="pointSlider slidePoint1" data-number="1">1</li>
+						<li class="pointSlider slidePoint2" data-number="2">2</li>
+						<li class="pointSlider slidePoint3" data-number="3">3</li>
 						<li id="upSlideNVC">Next</li>
 					</ul>
 				</div>
@@ -224,8 +224,8 @@
 
 <div class="wrap-container footer-section fixed">
 	<div class="container">
-		<span>Why reinvent the wheel</span>&ndash;&mdash;&mdash;
-		<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>Why reinvent the wheel</span><div class="footer-line">&nbsp;</div>
+		<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html" class="standart-btn">GET A WIDGET!</a><div class="footer-line">&nbsp;</div>
 		<span>When a solution is already built!</span>
 		<div class="quick-start-TMV">
 			<a href="{{ PATH }}/widgets_and_apps/vehicle_configurator_setup.html#quick_start" class="quick-start-header">Quick Start<span>View how it works</span></a>
@@ -420,14 +420,15 @@
 		});
 
 		// Markers and popups 
-		$marker.on('click', function(event) {
-			var $el = $(this),
+		$('.inner-marker').on('click', function(event) {
+			var $el = $(this).parent(),
 				markerNumber = $el.data('marker'),
 				curStep = $el.data('step'),
 				$allPopups = $('.popup-container').find('.info-popup');
 
 			event.stopPropagation();
-
+			$marker.removeClass('active');
+			$el.addClass('active');
 			$allPopups.fadeOut(500);
 			$allPopups.each(function() {
 				var thisNumber = $(this).data('marker'),
@@ -444,6 +445,7 @@
 			var $el = $(this);
 			event.stopPropagation();
 			$el.parent().fadeOut(100);
+			$marker.removeClass('active');
 		});
 
 		$popups.on('click', function(event) {
@@ -452,6 +454,7 @@
 
 		$('body').on('click', function() {
 			$popups.fadeOut(100);
+			$marker.removeClass('active');
 		});
 
     });

@@ -16,9 +16,13 @@ overview: page_version
 
 ---
 
-#### The Photos Resource has only one endpoint right now (we're working hard on version 2.0, which should be out soon.) You can access the photos of a specific make/model/year/trim by supplying its style ID, which you can get from the Model, Model Year and/or the Style and Trim resources.
+<div class="info-message">
+<p> 
+	The Photos Resource has only one endpoint right now (we're working hard on version 2.0, which should be out soon.) You can access the photos of a specific make/model/year/trim by supplying its style ID, which you can get from the Model, Model Year and/or the Style and Trim resources.
+</p>
 
-A few things to note about the responses you will get back when you make calls to the endpoint available above:
+<p>A few things to note about the responses you will get back when you make calls to the endpoint available above:</p>
+</div>
 
 ### Photo Shot Types (i.e. *shotTypeAbbreviation*)
 

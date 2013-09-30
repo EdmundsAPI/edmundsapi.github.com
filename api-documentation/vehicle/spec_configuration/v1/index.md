@@ -16,5 +16,7 @@ overview: page_version
 
 ---
 
-#### This resource allows you to configure vehicles. The first endpoint gives you the default configuration of a vehicle and the second endpoint gives you the ability to get exclusions, inclusions and required options for this vehicle based on the current configuration.
+<div class="info-message">
+ This resource allows you to configure vehicles. The first endpoint gives you the default configuration of a vehicle and the second endpoint gives you the ability to get exclusions, inclusions and required options for this vehicle based on the current configuration.
+</div>
 

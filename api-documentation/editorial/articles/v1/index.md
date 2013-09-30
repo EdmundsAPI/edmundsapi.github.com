@@ -15,7 +15,10 @@ level: 2
 overview: page_version
 ---
 
-#### Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
+
+<div class="info-message">
+	Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
+</div>
 
 ### Available Article Categories
 

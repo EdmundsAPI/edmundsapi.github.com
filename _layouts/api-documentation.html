@@ -139,8 +139,6 @@ layout: default
 			body.addClass('overviewPage');
 		}
 
-
-
 		$(window).scroll(function(){
 
 			var win = $(this);
@@ -155,6 +153,17 @@ layout: default
 				}
 			};
 
+			var scrollLeft = $(window).scrollLeft();
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
+
+		});
+		$(window).on('mousewheel', function() {
+			var scrollLeft = $(window).scrollLeft();
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
+		});
+		$(window).on('touchmove', function() {
+			var scrollLeft = $(window).scrollLeft();
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
 		});
 	});
 

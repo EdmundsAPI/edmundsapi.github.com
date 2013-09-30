@@ -41,9 +41,9 @@
 				<div class="navig">
 					<ul>
 						<li id="downSlide">Prev</li>
-						<li class="slidePoint1">1</li>
-						<li class="slidePoint2">2</li>
-						<li class="slidePoint3">3</li>
+						<li class="pointSlider slidePoint1" data-number="1">1</li>
+						<li class="pointSlider slidePoint2" data-number="2">2</li>
+						<li class="pointSlider slidePoint3" data-number="3">3</li>
 						<li id="upSlide">Next</li>
 					</ul>
 				</div>
@@ -109,8 +109,8 @@
 
 <div class="wrap-container footer-section fixed">
 	<div class="container">
-		<span>Why Reinvent the wheel</span>&ndash;&mdash;&mdash;
-		<a href="{{ PATH }}/widgets_and_apps/market_value.html" class="standart-btn">GET A WIDGET!</a>&ndash;&mdash;&mdash;
+		<span>Why Reinvent the wheel</span><div class="footer-line">&nbsp;</div>
+		<a href="{{ PATH }}/widgets_and_apps/market_value.html" class="standart-btn">GET A WIDGET!</a><div class="footer-line">&nbsp;</div>
 		<span>When a solution is already built!</span>
 		<div class="quick-start-TMV">
 			<a href="{{ PATH }}/widgets_and_apps/market_value.html#quick_start" class="quick-start-header">Quick Start<span>View how it works</span></a>
@@ -125,7 +125,7 @@
        		footer = $('.footerLayout'),
    			fixedPanel = $('.footer-section'),
    			height,
-   			$title = $('.h1Title h1'),
+   			$title = $('.h1Title h1 span'),
    			titleText = $title.html();
 
    		titleText = titleText.replace(/®/g, '<sup>®</sup>');

@@ -70,7 +70,7 @@ var CarouselNVC = function(element, indicators, header) {
 	        $active.removeClass('active');
 	        $next.addClass('active');
 	        that.sliding = false;
-	        this.$element.trigger('slid');
+	        that.$element.trigger('slid');
 	    }
 
       	return that;

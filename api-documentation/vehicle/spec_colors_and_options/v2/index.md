@@ -16,7 +16,9 @@ overview: page_version
 
 ---
 
-#### This resource provides access to vehicle options and colors. For vehicle options, the data returns will always include an array of [equipment](/api-documentation/vehicle/spec_equipment/v2/) that exist within each option. The [equipment format for colors](/api-documentation/vehicle/spec_equipment/v2/) is different from the typical equipment format. [Learn more](/api-documentation/vehicle/spec_equipment/v2/)
+<div class="info-message">
+ This resource provides access to vehicle options and colors. For vehicle options, the data returns will always include an array of <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment</a> that exist within each option. The <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment format for colors</a> is different from the typical equipment format. <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">Learn more</a>
+</div>
 
 ### Option Types
 

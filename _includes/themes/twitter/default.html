@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- viewport for responsin designe -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scaleable=no, width=device-width" />
 	
 	<!-- JQuery -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.js"></script>
@@ -105,10 +105,11 @@
 
   <body onload="prettyPrint()" class="{{page.class_page}}">
 
+  	<div class="header-wrap">
      <div class="topBlogBackground"></div>
     
 	{% include themes/twitter/header_layout.html %}
-    
+    </div>
     
       <!-- start content {{ content }}-->
 	<a name="top"></a>

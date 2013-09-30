@@ -1,4 +1,3 @@
-
 	var step = -316;
 	
 	var $slides = $('.sliderTMV').find('ul');
@@ -192,6 +191,26 @@
 		};
 		
 	};
+	
+	//click on the dots of the slider
+	$('.wrapperSliderTMV .pointSlider').on('click', function(){
+		
+		clearInterval(intervalID); 			
+
+		count = $(this).data('number');
+		
+		closeAll();
+		
+		switch (count) {
+			case 1:  $slides.animate({top: 0 }, 400); break
+			case 2:  $slides.animate({top: step*(count-1) }, 400); break
+			case 3:  $slides.animate({top: step*(count-1) }, 400); break
+		}
+		
+		moveMark();
+
+		interval(timeInterval);
+	});
 
 
 	function upSlider() {

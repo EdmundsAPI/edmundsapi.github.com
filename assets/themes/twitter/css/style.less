@@ -9,6 +9,90 @@
 @color_green: #8FC033;
 @color_gray_line: #C5C5C5;
 
+body {
+  position: relative;
+  min-width: 1150px;
+  max-height:9999999px;
+  &.mainPage {
+    min-width: 1352px;
+  }
+  &.pageProfileDevelop {
+    min-width: 1350px;
+  }
+  &.tmv-promo {
+    min-width: 1350px;
+  }
+  &.vehicle-conf-promo {
+    min-width: 1350px;
+  }
+
+   -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform:scale(.7,.7);
+    opacity:0.0;
+  }
+  50% {
+    opacity:1.0;
+  }
+  100% {
+    -webkit-transform:scale(1.2, 1.2);
+    opacity:0.0;
+  }
+}
+@-moz-keyframes pulsate
+{
+  0% {
+    -moz-transform:scale(.7,.7);
+    opacity:0.0;
+  }
+  50% {
+    opacity:1.0;
+  }
+  100% {
+    -moz-transform:scale(1.2, 1.2);
+    opacity:0.0;
+  }
+}
+@-ms-keyframes pulsate {
+  0% {
+    -ms-transform:scale(.7,.7);
+    opacity:0.0;
+  }
+  50% {
+    opacity:1.0;
+  }
+  100% {
+    -ms-transform:scale(1.2, 1.2);
+    opacity:0.0;
+  }
+}
+
+.notification-message, .info-message {
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  background-position: 25px 25px; 
+  padding: 25px;
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.notification-message {
+  background-image: url('../img/notification-icon.png');
+  padding-left: 74px;
+}
+.info-message {
+  background-image: url('../img/info-icon.png');
+  padding-left: 78px;
+}
+
  /*__font-family__*/
 @font-face {
   font-family: 'Oswald';
@@ -150,6 +234,10 @@ a:focus {
   }
 }
 
+.h1Title.no-border {
+  border: 0;
+}
+
 .lineVertical {
   .span10 {
     width: 10px;
@@ -238,7 +326,7 @@ a:focus {
 
   .arrow {
     position:absolute;
-    left: 529px;
+    left: 735px;
     bottom:-1px;
     width: 20px;
     height: 13px;
@@ -739,7 +827,7 @@ a.blueLink {
 .screen-bgnd {
   background: url('../img/widget_promo/sprite-promo-widgets.png') no-repeat;
   background-position: -58px 0;
-  width: 879px;
+  width: 732px;
   height: 489px;
   position: absolute;
   top: 6px;
@@ -896,6 +984,12 @@ a.blueLink {
     .container {
       position:relative;
     }
+    .footer-line {
+      display: inline-block;
+      width: 36px;
+      background: url('../img/widget_promo/bottom-line.png') no-repeat;
+      background-position: 0;
+    }
   }
 
   h2 {
@@ -1003,12 +1097,12 @@ a.blueLink {
            background-repeat:  no-repeat;
            background-position: 0 -45px;
            text-indent: -99999px;
+           cursor: pointer;
 
            &#downSlide {
              background-position: 0 -15px;
              &:hover {
                background-position: 0 0;
-               cursor: pointer;
              }
            }
 
@@ -1016,7 +1110,6 @@ a.blueLink {
              background-position: 0 -59px;
              &:hover {
                background-position: 0 -74px;
-               cursor: pointer;
              }
            }
 
@@ -1176,9 +1269,31 @@ a.blueLink {
     height: 705px;
     .promo-section-label {
       top: 5px;
+      left: 0;
     }
     ul {
       list-style: none;
+    }
+    [class*="marker"]:not(:hover):not(.active) .inner-marker {
+      border: 2px solid #fff;
+      height: 37px;
+      width: 37px;
+      left: -2px;
+      opacity: 0.0;
+      position: absolute;
+      top: -2px;
+      -webkit-border-radius: 21px;
+      -moz-border-radius: 21px;
+      border-radius: 21px;
+      -webkit-box-shadow: 0px 0px 2px 0px #BF2F37, inset 0px 0px 2px 1px #BF2F37;
+      -moz-box-shadow: 0px 0px 2px 0px #BF2F37, inset 0px 0px 2px 1px #BF2F37;
+      box-shadow: 0px 0px 2px 0px #BF2F37, inset 0px 0px 2px 1px #BF2F37;
+      -webkit-animation: pulsate 1s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation: pulsate 1s ease-out;
+      -moz-animation-iteration-count: infinite;
+      -ms-animation: pulsate 1s ease-out;
+      -ms-animation-iteration-count: infinite;
     }
     .section-header {
       margin-left: 230px;
@@ -1198,6 +1313,7 @@ a.blueLink {
       .marker {
         vertical-align: top;
         line-height: 12px;
+
       }
     }
     .sub-header {
@@ -1487,12 +1603,12 @@ a.blueLink {
               background-repeat:  no-repeat;
               background-position: 0 -45px;
               text-indent: -99999px;
+              cursor: pointer;
 
               &#downSlideNVC {
                 background-position: 0 -15px;
                 &:hover {
                   background-position: 0 0;
-                  cursor: pointer;
                 }
               }
 
@@ -1500,7 +1616,6 @@ a.blueLink {
                 background-position: 0 -59px;
                 &:hover {
                   background-position: 0 -74px;
-                  cursor: pointer;
                 }
               }
 
@@ -2088,6 +2203,9 @@ a.blueLink {
 .apiPage {
   .headerMenuContent {
     background-color: #e9e9e9;
+    &>.container{
+      background-color: #e9e9e9;      
+    }
     .span2 {
       padding-top: 25px;
       min-width: 200px;
@@ -2117,16 +2235,18 @@ a.blueLink {
   .apiTopSection {
     background-color: #e9e9e9;
   }
+  .row-version-bgnd {
+    height: 45px;
+  }
   .api-header-row1 {
     position: relative;
     .bgnd {
       position: absolute;
       top: 0;
       bottom: 0;
-      .span6:nth-of-type(1) {
-        background-color: transparent;
-      }
-      .span6:nth-of-type(2) {
+      .row-version-bgnd {
+        width: 30%;
+        float: right;
         background-color: #e9e9e9;
       }
     }
@@ -2146,11 +2266,10 @@ a.blueLink {
       position: absolute;
       top: 0;
       bottom: 0;
-      .span6:nth-of-type(1) {
-        background-color: transparent;
-      }
-      .span6:nth-of-type(2) {
+      .row-version-bgnd {
+        width: 30%;
         background-color: #c13b39;
+        float: right;
       }
     }
     [class^="span"] {
@@ -2989,16 +3108,18 @@ a.blueLink {
             }
          }
        }
-  
-       .wrapperStep {
-         margin: 0 0 120px 0;
-         padding:0 0 0 108px;
+       .outerStep {
          position: relative;
          overflow: hidden;
-        
+       }
+       .wrapperStep {
+         padding:0 0 0 108px;
+         margin: 0 0 120px 0;
+         position: relative;
+
         &.step1BS, &.step1D {
           .stepContent {
-            top: 510px;
+            top: 468px;
           }
         }
         &.step2BS, &.step2D {
@@ -3011,11 +3132,16 @@ a.blueLink {
             top: 357px;
           }
         }
-        &.step4BS, &.step4D {          
+        &.step4BS, &.step4D {  
          min-height: 650px;
           .stepContent {
             top: 527px;
           }
+        }
+
+        .stepContent {
+          left: 0;
+          right: 0;
         }
 
 
@@ -3129,17 +3255,17 @@ a.blueLink {
          }
 
          &.step4BS {
-           margin:0;
+           /*margin:0;*/
          }
        }
 
        .getStartedBar {
+          display: none;
           position: fixed;          
           top: 50%;
           right: 0;
           width: 52px;
           margin-top: -150px;
-          display: inline-block;
           padding-top: 10px;
           background-color: #fc6431;
           color: #fff;
@@ -4275,7 +4401,8 @@ a.blueLink {
 
         .discription {
           overflow: hidden;
-          line-height: 16px;
+          line-height: 20px;
+          font-size: 14px;
         }
         .annotator {
           clear: both;
@@ -4696,3 +4823,188 @@ a.blueLink {
 }
 
 // end Branding Guide
+
+
+// start Affiliate Network page
+
+  .pageAffilligNet {
+    table td {
+      border: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    .notification-message {
+      margin-bottom: 70px;
+    }
+
+    .subtitle {
+      padding-left: 230px;
+      font-weight: bold;
+      margin-bottom: 35px;
+      line-height: 20px;
+    }
+    .affiliate-steps-panel {
+      background-color: #FC6431;
+      padding: 0;
+      color: #fff;
+      overflow: hidden;
+      text-align: center;
+      height: 411px;
+      ul {
+        list-style: none;
+        overflow: hidden;
+        display: inline-block;
+        margin: 62px 0;
+
+        li {
+          float: left;
+          width: 225px;
+          overflow: visible;
+          position: relative;
+          .step-image {
+            background: url('../img/affiliate-network/affiliate-steps.png') no-repeat;
+            width: 365px;
+            height: 192px;
+          }
+          .step-description-wrap {
+            text-align: initial;
+            margin-top: 43px;
+            padding-left: 3px;
+            font-size: 18px;
+
+            .step-number {              
+              background: url('../img/affiliate-network/affiliate-images.png') no-repeat;
+              background-position: 0 -39px;
+              display: inline-block;
+              width: 34px;
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              float: left;
+            }
+            .step-description {
+              padding-left: 50px;
+            }
+          }
+          .dots-image {
+            background: url('../img/affiliate-network/affiliate-images.png') no-repeat;
+            background-position: 0 0;
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            position: absolute;
+            top: 109px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 225px;
+          }
+          &.step1 {
+           .step-image {
+              background-position: 0 0;
+            }
+            .dots-image {
+              right: -142px;
+            }
+          }          
+          &.step2 {
+            .step-image {
+              background-position: 0 -308px;
+            }
+            .dots-image {
+              right: -125px;
+            }
+          } 
+          &.step3 .step-image {
+            background-position: 0 -621px;
+            margin-left: -52px;
+          }   
+        }
+      }      
+    }
+    .why-join-image-wrap {
+      padding: 0 50px;
+      position: relative;
+      top: -50px;
+      height: 155px;
+      .why-join-image {
+        background: url('../img/affiliate-network/why-join.png') no-repeat;
+        display: inline-block;
+        height: 200px;
+        width: 607px;
+      }
+    }
+    ul.why-join-list {
+      list-style: none;
+      width: 715px;
+      margin-left: 0;
+      margin-bottom: 60px;
+      overflow: hidden;
+      font-size: 13px;
+      li {
+        line-height: 17px;
+        margin-bottom: 15px;
+      }
+      &>li {
+        width: 220px;
+        float: left;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        ul>li {
+          list-style-type: disc;
+        }
+      }
+      .why-join-header {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 5px;
+        height: 45px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &.fixed {
+      .header-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #f2f2f2;
+        z-index: 10;
+      }
+      .header-container-wrap {
+        background: #f2f2f2;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 117px;
+        z-index: 10;
+      }
+      .header-container {
+        background: #f2f2f2;
+      }
+      .affiliate-steps-panel {
+        margin-top: 288px;
+      }
+      .main-container-wrap {
+        position: absolute;
+        top: 810px;
+        right: 0;
+        left: 0;
+        background: #f2f2f2;
+      }
+      footer {
+        display: none;
+      }
+    }
+    &.non-fixed {
+      margin-top: 411px;
+      .header-wrap {
+        position: relative;
+      }
+    }
+  }
+
+// end Affiliate Network page

@@ -17,9 +17,11 @@ overview: page_version
 ---
 
 
-### This version has been deprecated
+<div class="notification-message">
+ <p><b>This version has been deprecated</b></p>
 
-#### Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before _January 7, 2014_. The following endpoints will be discontinued then:
+ <p>Please use the most recent version of this resource. If you're still using this version in production, please switch to the latest version before <i>January 7, 2014</i>. The  endpoints below will be discontinued then.</p>
+</div>
 
 * v1/api/vehicle/stylerepository/findbyid
 * v1/api/vehicle/stylerepository/findstylesbymakemodelyear

@@ -15,10 +15,12 @@ level: 2
 overview: page_version
 
 ---
+<div class="info-message">
+	Consumer ratings and reviews for cars. This resource gives you access to user-generated vehicle ratings and reviews that were submitted on Edmunds.com's website, apps or tool.
 
-#### Consumer ratings and reviews for cars. This resource gives you access to user-generated vehicle ratings and reviews that were submitted on Edmunds.com's website, apps or tool.
+<p><i>Please note the version 1 of this resource will be discontinued in January 2014. Please move your applications to the new version as soon as you can.</i></p>
 
-*Please note the version 1 of this resource will be discontinued in January 2014. Please move your applications to the new version as soon as you can.*
+</div>
 
 ### Special Requirements
 
