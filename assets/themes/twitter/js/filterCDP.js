@@ -166,13 +166,10 @@ var $inputLocation = $('#location');
 
 		var idParent = cross.parents('#selectedQual, #selectedLoc').attr('id');
 
-		//console.log(idParent);
 
 		if (idParent == 'selectedLoc'){
 
             var lengthChild =  wrapperButtonsLoc.children().length;
-
-            console.log(lengthChild);
 
             if(lengthChild == 1) {
 
@@ -185,8 +182,6 @@ var $inputLocation = $('#location');
         } else if (idParent == 'selectedQual'){
 
             var lengthChild =  wrapperButtonsQual.children().length;
-
-            console.log(lengthChild);
 
             if(lengthChild == 1) {
 
@@ -388,7 +383,6 @@ var $inputLocation = $('#location');
 		var dataBadgeName = thisDeveloper.data('badge').split(';');
 
 		for (var i in dataBadgeName) {
-			//console.log(dataBadgeName[i]);
 
 			badges.each(function(){
 
@@ -397,8 +391,6 @@ var $inputLocation = $('#location');
 				}
 
 			});
-
-
 		}
 
 	});
