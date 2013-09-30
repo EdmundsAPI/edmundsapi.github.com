@@ -128,7 +128,6 @@ layout: default
 		var wrapperHeader = $('.wrapperHeader');
 		var panelTabs = $('.api-header-row1').hasClass('api-header-row1');
 		var subMenu =$('.endpoint-submenu').hasClass('endpoint-submenu');
-		var fixedMenu = $('.fixElem .wrapperHeader');
 		//var leftMenu = $('#leftMenuFixed')
 
 
@@ -155,9 +154,16 @@ layout: default
 			};
 
 			var scrollLeft = $(window).scrollLeft();
-			console.log('scroll left = ' + scrollLeft);
 			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
 
+		});
+		$(window).on('mousewheel', function() {
+			var scrollLeft = $(window).scrollLeft();
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
+		});
+		$(window).on('touchmove', function() {
+			var scrollLeft = $(window).scrollLeft();
+			$('.fixElem .wrapperHeader').css('left', '-' + scrollLeft + 'px');
 		});
 	});
 

@@ -126,7 +126,7 @@ var $inputLocation = $('#location');
 
 			if (idParent == 'location'){
 
-                wrapperButtonsLoc.find('.'+ checkboxID +'').detach();
+                wrapperButtonsLoc.find('.'+ checkboxID +'').remove();
 
                 var lengthChild =  wrapperButtonsLoc.children().length;
 
@@ -138,7 +138,7 @@ var $inputLocation = $('#location');
 
             } else if (idParent == 'qualification'){
 
-                wrapperButtonsQual.find('.'+ checkboxID +'').detach();
+                wrapperButtonsQual.find('.'+ checkboxID +'').remove();
 
                 var lengthChild =  wrapperButtonsQual.children().length;
 
