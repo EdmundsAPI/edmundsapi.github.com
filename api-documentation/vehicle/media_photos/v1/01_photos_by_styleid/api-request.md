@@ -58,19 +58,19 @@ Get all photos for style ID **101357832** (2011 Honda Civic DX 4dr Sedan (1.8L 4
 	    "subType": "exterior",
 	    "shotTypeAbbreviation": "FQ",
 	    "photoSrcs": [
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_396.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_185.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_150.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_196.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_300.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_276.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_175.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_423.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_131.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_400.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_87.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_500.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_fq_oem_1_98.jpg"
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_396.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_185.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_150.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_196.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_300.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_276.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_175.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_423.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_131.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_400.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_87.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_500.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_fq_oem_1_98.jpg"
 	    ]
 	  },
 	  ...
@@ -83,19 +83,19 @@ Get all photos for style ID **101357832** (2011 Honda Civic DX 4dr Sedan (1.8L 4
 	    "subType": "interior",
 	    "shotTypeAbbreviation": "RI",
 	    "photoSrcs": [
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_185.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_300.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_500.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_196.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_400.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_276.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_423.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_87.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_150.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_98.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_131.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_396.jpg",
-	      "\/honda\/civic\/2010\/oem\/2010_honda_civic_sedan_hybrid_ri_oem_1_175.jpg"
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_185.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_300.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_500.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_196.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_400.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_276.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_423.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_87.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_150.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_98.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_131.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_396.jpg",
+	      "/honda/civic/2010/oem/2010_honda_civic_sedan_hybrid_ri_oem_1_175.jpg"
 	    ]
 	  }
 	]
