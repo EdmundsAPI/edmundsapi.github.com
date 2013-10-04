@@ -26,7 +26,7 @@ overview: page_version
 
 ### Media Base URL
 
-The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is 'http://media.ed.edmunds-media.com/' so that Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
+The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is 'http://media.ed.edmunds-media.com' so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
 
 ### Photo Shot Types (i.e. *shotTypeAbbreviation*)
 
