@@ -25,6 +25,7 @@ number: 2
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
 | zip        | Zip code		                         |                   |               | Yes      |
+| color      | Vehicle color	                     | black, white, blue, etc.  |               | No      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
 | color      | vehicle color (blue, white, black, ..etc)     |                   |               | No       |

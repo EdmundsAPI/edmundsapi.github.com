@@ -30,9 +30,9 @@ number: 2
 | color      | vehicle color                         |                   |               | No       |
 | model	     | vehicle model nam                     |                   |               | No       |
 | vehicleStyle | vehicle api key                     |                   |               | No       |
-| drivenWheels | vehicle x-wheel drive                 |                   |               | No       |
-| fuelType     | vehicle fule type                     |                   |               | No       |
+| drivenWheels | vehicle x-wheel drive                 | all-wheel-drive, front-wheel-drive, rear-wheel-drive, all-wheel-drive                  |               | No       |
+| fuelType     | vehicle fule type                     | electric, natural-gas-cng, gas, flex-fuel-ffv, diesel, hybrid                   |               | No       |
 | cylinders    | number of cylinders in vehicle's engine                     |                   |               | No       |
 | vehicleStyle | vehicle api key                     |                   |               | No       |
-| compressorType | engine aspiration                    |                   |               | No       |
+| compressorType | engine aspiration                    | supercharger, twin-turbocharger, turbocharger |               | No       |
 | trim           | vehicle trim                     |                   |               | No       |
