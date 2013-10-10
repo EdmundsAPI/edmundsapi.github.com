@@ -33,11 +33,7 @@ number: 3
           "name": {string},
           "value": {string}
         }
-      ],
-	  "make": {object},
-	  "model": {object},
-	  {"style" | "styles"}: {object | array of objects},
-	  "year": {object}
+      ]
 	}
 
 | Property      	| Description                         						| Visibility                |
@@ -47,25 +43,6 @@ number: 3
 | equipmentType		| The type of the equipment (see overview)					| Edmunds, Partners, Public |
 | availability		| The availability of the equipment (see overview)			| Edmunds, Partners, Public |
 | attributes	    | The name/value pairs describing the equipment				| Edmunds, Partners, Public |
-| make	        	| Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
-| model         	| Car make details (id, name and niceName)					| Edmunds, Partners, Public |
-| styles        	| List/object of styles for this model year (see below)   	| Edmunds, Partners, Public |
-| year		    	| The model year ID and the four-digit year                	| Edmunds, Partners, Public |
 
-Each <code>style</code> object follows this format:
-
-	{
-		"id": {integer},
-		"name": {string},
-		"submodel": {object},
-		"trim": {string}
-	}
-	
-| Property      | Description                                                    | Visibility                |
-|:--------------|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car style 		                         | Edmunds, Partners, Public |
-| name	        | The car style name										     | Edmunds, Partners, Public |
-| submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |
-| trim      	| The vehicle trim for this car style 			                 | Edmunds, Partners, Public |
 
 
