@@ -30,7 +30,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 	https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
 
-### <a id="special-requirements"></a> Special Requirements
+### Special Requirements
 
 Edmunds.com’s Editorial Content consists of articles (“Articles”) that are the copyright property of Edmunds.com, Inc., and we have special requirements for the use of the Articles.
 
