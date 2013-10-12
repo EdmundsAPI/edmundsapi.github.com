@@ -23,6 +23,7 @@ number: 1
 ### Description
 
 Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
+Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special-requirements) for displaying Edmunds edetorial content.
 
 ### URL
 
