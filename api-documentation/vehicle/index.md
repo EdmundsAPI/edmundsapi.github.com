@@ -93,10 +93,10 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 
 #### Fuel Types
 
-|			|					|			| 
+|			|					|			|
 |:----------|:------------------|:----------|
-| Electric	| Natural-gas-cng	| gas		| 
-| hybrid	| Flex-fuel-ffv		| diesel	| 
+| Electric	| Natural-gas-cng	| gas		|
+| hybrid	| Flex-fuel-ffv		| diesel	|
 
 #### Driven Wheels
                                  
