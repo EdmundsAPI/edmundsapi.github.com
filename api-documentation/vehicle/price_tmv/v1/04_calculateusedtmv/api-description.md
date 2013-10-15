@@ -22,6 +22,8 @@ number: 1
 
 ### Description
 
+Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
+
 Get the TMV® price for a vehicle given its:
 
 * Style ID

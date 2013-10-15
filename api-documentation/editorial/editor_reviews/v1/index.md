@@ -19,6 +19,8 @@ overview: page_version
 	This resource offers access to the Edmunds Editor Reviews including the pros, cons, Edmunds Says.
 </div>
 
+Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds edetorial content.
+
 ### Granular Editor Review Components
 
 When using the **Editor Reviews** resource, you will get the review broken into smaller chunks that makes it easy for you to take what you want out of it. The full review will also be included.
