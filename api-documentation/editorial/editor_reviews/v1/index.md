@@ -1,13 +1,13 @@
 ---
 layout: api-documentation
-title : 'Get Dealer Details and Location'
+title : 'Get Edmunds Editor Review by Car Make/Model/Year'
 title_active_left_menu: 'Editor Reviews'
 title_parent: Api documentation
 
 amount_version: 1
 spec: editor_reviews
 version: v1
-api: dealer
+api: editorial
 dropdown-link: 'Select an Endpoint'
 
 
