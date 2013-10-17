@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a New Car by MSRP and Spec'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'api/v1/vehicle/:make/:year/price'
+dropdown-link: 'api/v1/vehicle/{make}/{year}/price'
 
 
 level: 3
