@@ -12,15 +12,15 @@ level: 1
 
 The Vehicle API is comprised of a collection of resources that provide access to an array of automotive datasets _related directly to the automotive vehicle_. First, you need to know the _five components_ that fully describe an **automotive vehicle**: 
 
-_Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style_
+`Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style`
 
 For example: 
 
-_Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation_
+`Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation`
 
-_(Honda) –> (Accord) –> (2013) –> (EX) –> (2.4-liter 4-cylinder CVT Automatic w/Navigation)_
+`(Honda) –> (Accord) –> (2013) –> (EX) –> (2.4-liter 4-cylinder CVT Automatic w/Navigation)`
 
-**_(make) –> (model) –> (model year) –> (trim) –> (style)_**
+`(make) –> (model) –> (model year) –> (trim) –> (style)`
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
