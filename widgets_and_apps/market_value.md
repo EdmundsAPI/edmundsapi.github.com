@@ -14,13 +14,13 @@ The TMV® Widget allows consumers to get an idea of how much a new car costs and
 You can use the widget configurator below to customize the layout and style of the widget, and grab a small snippet of code to insert into your HTML pages to implement the widget.
 
 <div class="pre-loader" style="height: 200px;">&nbsp;</div>
-<iframe src="http://widgets.edmunds.com/tmv/v2?portal=true" width="100%" height="1050" align="left" class="iframeWidget">
+<iframe src="http://widgets.edmunds.com/tmv/v2?portal=true" width="100%" height="1090" align="left" class="iframeWidget">
 </iframe>
 
 
 #####ATTRIBUTES
 
-* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
+* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://developer.edmunds.com/' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
 * `Theme` - the theme for the Widget. Options: 'Theme 1', 'Theme 2', 'Theme 3'.
 * `Color Scheme` - the color schemefor the Widget. Option: 'Light', 'Dark'.
 * `Layout` - sets the layout of the Widget. Options: 'Vertical', 'Horizontal'.
