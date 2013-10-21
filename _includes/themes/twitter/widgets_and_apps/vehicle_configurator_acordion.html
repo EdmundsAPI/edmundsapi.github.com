@@ -8,34 +8,47 @@
 		</div>
 		<div id="collapseOne" class="accordion-body collapse in">
 			<div class="accordion-inner">
-<p>To embed Vehicle Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
-        <h4>Example scenario:</h4>
-        <ol>
-            <li>
-                <p>Add the following JavaScript files to your page. It's preferably to add them at the bottom of your page for best page performance:</p>
-                <pre>&lt;script src="http://widgets.edmunds.com/js/edm/sdk.js"&gt;&lt;/script&gt;
-&lt;script src="http://widgets.edmunds.com/js/carconfig/carconfig.js"&gt;&lt;/script&gt;</pre> 
-            </li>
-            <li>
-                <p>Create new instance of the Widget:</p>
-                <pre>var widget = new EDM.NVC(vehicleApikey, dealerApiKey, {root: 'nvcwidget', baseClass: 'nvcwidget'});</pre> 
-            </li>
-            <li>
-                <p>Widget initialisation:</p>
-                <pre>widget.init({"includedMakes":"all","showVehicles":"ALL","zip":"12345"});</pre> 
-            </li>
-            <li>
-                <p>Widget rendering:</p>
-                <pre>widget.render();</pre> 
-            </li>
-            <li>
-                <p>Add the CSS files to your page. It's preferably to add them at the head of your page:</p>
-                <pre>&lt;link rel="stylesheet" href="http://widgets.edmunds.com/css/carconfig/simple-light.css"&gt;
-&lt;style&gt;
-.nvcwidget{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border-width:1px;width:248px;}.nvcwidget .nvcwidget-header{-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topleft:5px;border-top-left-radius:5px;}
-&lt;/style&gt;</pre> 
-            </li>
-        </ol> 			
+                <p>To embed Vehicle Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
+                <h4>Example scenario:</h4>
+                <ol>
+                    <li>
+                        <p>You need an empty div on your page to house the widget:</p>
+                        <pre>&lt;div class="nvcwidget"&gt;&lt;/div&gt;</pre>
+                    </li>
+                    <li>
+                        <p>Add the following JavaScript snippet to your page. It's preferably to add at the bottom of your page for best page performance:</p>
+                        <pre>&lt;script type="text/javascript" src="http://widgets.edmunds.com/loader.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+(function(){
+    var widget = EDM.createWidget({
+        "type": "nvc",
+        "renderTo": "nvcwidget",
+        "debug": true,
+        "style": {
+            "width": 250,
+            "height": 890,
+            "theme": "simple",
+            "color": "light",
+            "border": "1px",
+            "borderRadius": "5px"
+        },
+        "options": {
+            "vehicleApiKey": "axr2rtmnj63qsth3ume3tv5f",
+            "dealerApiKey": "axr2rtmnj63qsth3ume3tv5f",
+            "includedMakes": "bmw",
+            "dealerKeywords": "",
+            "zipCode": "10001",
+            "tabs": {
+                "tab1": "Configure",
+                "tab2": "TMV®",
+                "tab3": "Price Quotes"
+            }
+        }
+    });
+}());
+&lt;/script&gt;</pre>
+                    </li>
+                </ol>
 			</div>
 		</div>
 	</div>
@@ -48,33 +61,139 @@
 		</div>
 		<div id="collapseTwo" class="accordion-body collapse in">
 			<div class="accordion-inner">
-                <p>Vehicle widget provides the next methods for working with custom events:</p>
+                <p>New Vehicle Configurator Widget provides the next method for subscription to the widget events:</p>
                 <br>
                 <p><code>on()</code> - Binds a callback function to an object. The callback will be invoked whenever the event is fired.</p>
-                <pre>// External usage example:
-widget.componentName.on('complete', function(options) {
-    // this code is executed when the change event is fired by the widget
+                <pre>
+(function(){
+
+    // create an instance of the widget
+    var widget = EDM.createWidget(/* configured options here */);
+
+    // subscribe to the event
+    widget.on('vehicle.make.select', function(makeId, makeName) {
+        console.log(makeName + ' was selected.');
+    });
+
+}());
+                </pre>
+                <p><code>vehicle.make.select</code> - this is one event of the widget. All list of <a href="#NVC_Events_List">events</a> is below.</p>
+
+                <div class="alert alert-info">
+                    <p>This method is very useful if you would use Google Analytics or another tracking system for the widget. For example:</p>
+                    <pre style="text-shadow: none;">
+// subscribe to the event
+widget.on('vehicle.make.select', function(makeId, makeName) {
+    _gaq.push(['_trackEvent', 'Edmunds NVC Widget', 'Select a Make', makeName]);
 });
+                    </pre>
+                    <p>Where <code>_gaq</code> is an instance of Google Analytics in your page.</p>
+                </div>
 
-// Internal usage example:
-this.componentName.on('complete, function(options) {
-    // this code is executed when the change event is fired by the widget
-});</pre>
-                <br>
-                <p><code>off()</code> - Removes a previously-bound callback function from an object. If no event name is specified, all callbacks will be removed.</p>
-                <pre>// External usage example:
-widget.componentName.off('complete');
+                <table class="table table-condensed table-hover table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th width="30%">Event</th>
+                        <th>Callback Params</th>
+                        <th width="50%">Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>vehicle.make.select</td>
+                        <td><span class="label">makeId</span>&nbsp;<span class="label">makeName</span></td>
+                        <td>This event is fired when vehicle make is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle.model.select</td>
+                        <td><span class="label">modelId</span>&nbsp;<span class="label">modelName</span></td>
+                        <td>This event is fired when vehicle model is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle.year.select</td>
+                        <td><span class="label">yearId</span>&nbsp;<span class="label">yearName</span></td>
+                        <td>This event is fired when vehicle year is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle.style.select</td>
+                        <td><span class="label">styleId</span>&nbsp;<span class="label">styleName</span></td>
+                        <td>This event is fired when vehicle style is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle.feature.select</td>
+                        <td><span class="label">featureId</span></td>
+                        <td>This event is fired when vehicle feature is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle.feature.deselect</td>
+                        <td><span class="label">featureId</span></td>
+                        <td>This event is fired when vehicle feature is unselected.</td>
+                    </tr>
+                    <tr>
+                        <td>dealer.select</td>
+                        <td><span class="label">dealerId</span></td>
+                        <td>This event is fired when dealer is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>dealer.deselect</td>
+                        <td><span class="label">dealerId</span></td>
+                        <td>This event is fired when dealer is unselected.</td>
+                    </tr>
+                    <tr>
+                        <td>zip.update</td>
+                        <td><span class="label">zipCode</span></td>
+                        <td>This event is fired when zip on the first tab is changed.</td>
+                    </tr>
+                    <tr>
+                        <td>ziplocation.update</td>
+                        <td><span class="label">zipCode</span></td>
+                        <td>This event is fired when zip on the second tab is changed.</td>
+                    </tr>
+                    <tr>
+                        <td>zipmi.update</td>
+                        <td><span class="label">zipCode</span>&nbsp;<span class="label">radius</span></td>
+                        <td>This event is fired when zip on the third tab is changed.</td>
+                    </tr>
+                    <tr>
+                        <td>successdialogbtn.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when button in the success dialog is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>tab1.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when first tab is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>tab2.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when second tab is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>tab3.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when third tab is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>nextbtn1.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when next button on the first tab is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>nextbtn2.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when next button on the second tab is clicked.</td>
+                    </tr>
+                    <tr>
+                        <td>submitbtn.click</td>
+                        <td>Has no params</td>
+                        <td>This event is fired when submit button on the third tab is clicked.</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-// Internal usage example:
-this.componentName.off('complete');</pre>
-                <br>
-                <p><code>trigger()</code> - Trigger callbacks for the given event. Subsequent arguments to trigger will be passed along to the event callbacks.</p>
-                <pre>this.componentName.trigger('complete', options);</pre>
-                <br>
-                <p><code>componentName</code> - this is one component of Vehicle Widget.</p>
 			</div>
 		</div>
 	</div>
 
-    
 </div>
