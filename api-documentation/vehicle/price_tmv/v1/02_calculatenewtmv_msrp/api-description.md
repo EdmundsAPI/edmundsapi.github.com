@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a New Car by MSRP and Spec'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'api/v1/vehicle/:make/:year/price'
+dropdown-link: 'api/v1/vehicle/{make}/{year}/price'
 
 
 level: 3
@@ -22,6 +22,7 @@ number: 1
 ### Description
 
 Get a the TMV® price for a vehicle make at a certain MSRP price in a certain area.
+Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 

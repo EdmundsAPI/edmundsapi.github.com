@@ -24,6 +24,10 @@ overview: page_version
 <p>A few things to note about the responses you will get back when you make calls to the endpoint available above:</p>
 </div>
 
+### Media Base URL
+
+The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is <code>http://media.ed.edmunds-media.com</code> so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
+
 ### Photo Shot Types (i.e. *shotTypeAbbreviation*)
 
 Our photos are diverse in terms of the perspective from which they were taken. Here's a list of the all available shot types, which you will find in the API response as the value of the property **shotTypeAbbreviation**:

@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a New Car by MSRP and VIN'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'api/v1/vehicle/vin/:vin/price'
+dropdown-link: 'api/v1/vehicle/vin/{vin}/price'
 
 
 level: 3
@@ -23,6 +23,7 @@ number: 1
 ### Description
 
 Get the TMV® price for a specific car VIN given its MSRP price and zip code. This a good API call to use if you have the car VIN and its MSRP. Passing the color parameter (optional) could also help get you a more accurate TMV® price.
+Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 

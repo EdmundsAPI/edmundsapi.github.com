@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a New Car by MSRP and VIN'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'api/v1/vehicle/vin/:vin/price'
+dropdown-link: 'api/v1/vehicle/vin/{vin}/price'
 
 
 level: 4
@@ -25,6 +25,7 @@ number: 2
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
 | zip        | Zip code		                         |                   |               | Yes      |
+| color      | Vehicle color	                     | black, white, blue, etc.  |               | No      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
 | color      | vehicle color (blue, white, black, ..etc)     |                   |               | No       |

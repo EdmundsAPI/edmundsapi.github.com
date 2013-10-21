@@ -51,7 +51,7 @@ Each element in the <code>styles</code> array follows this format:
 
 | Property      | Description                                                    | Visibility                |
 |:--------------|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car style 	                             | Edmunds, Partners, Public |
+| id            | The Style ID   					                             | Edmunds, Partners, Public |
 | name          | The style name			                                     | Edmunds, Partners, Public |
 | submodel      | Car submodel details (body, modelName, etc.)                   | Edmunds, Partners, Public |
 | trim	        | The car trim associated with this style 				         | Edmunds, Partners, Public |

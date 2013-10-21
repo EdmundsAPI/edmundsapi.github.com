@@ -61,7 +61,10 @@
 
 						{% for p in page.badges %}
 
-							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{{p}}"></a></li>
+							<li><a data-badge="{{p}}" class="badge-{{p}}" href="/certified-dev/cdp_badge.html#{{p}}" rel="tooltip" data-original-title="{% if p == 'analytics' %}Analytics{%  endif %}
+							{% if p == 'mobile' %}Mobile{%  endif %}
+							{% if p == 'socialShopping' %}Social shopping{%  endif %}
+							{% if p == 'web' %}Web{%  endif %}"></a></li>
 
 						{% endfor %}
 

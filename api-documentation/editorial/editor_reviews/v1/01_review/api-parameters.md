@@ -24,7 +24,8 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required          |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:------------------|
+| make  	 	| The car make                  		| 						| 		        | Yes               |
+| model		 	| The car model                     	| 						| 		        | Yes               |
+| year  	 	| The car year                      	| 						| 		        | Yes               |
 | fmt        	| Response format                       | json              	| json          | Yes               |
-| make  	 	| The car make                  		| 						| 		        | No                |
-| model		 	| The car model                     	| 						| 		        | No                |
-| year  	 	| The car year                      	| 						| 		        | No                |
+| api_key		| Your Edmunds/Editorial API 			| 						|				| Yes				|

@@ -162,7 +162,7 @@ cdp_weight: 3
 						<h2>Developer builds an application with Edmunds API </h2>
 
 						<p><a href="http://edmunds.mashery.com/apps/mykeys" title="Register for a user account" target="_blank">Register and get an API key</a> on developer.edmunds.com </br> Build something awesome with Edmunds API!</p>
-						<p>If you have any questions during this phase, you can go to the <a href="#" title="Forum">forum</a>, browse our <a href="/api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
+						<p>If you have any questions during this phase, you can go to the <a href="http://edmunds.mashery.com/forum" title="Forum">forum</a>, browse our <a href="/api-documentation/overview/" title="API documentation">API documentation</a> or <a href="http://twitter.com/edmundsapi" title="Edmunds API Twitter" target="_blank">tweet us</a>.</p>
 
 					</div>
 
@@ -205,9 +205,9 @@ cdp_weight: 3
 
 						<h2>Developer completes certification process</h2>
 
-						<p>When you receive passing scores on test and the interview goes well, you’ll get an email from Edmunds.com asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="#" title="Edmunds Certified Developer badge"> Edmunds Certified Developer badge</a>, which you can display on your personal and professional websites, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="#" title="Online directory">online directory</a>. We promote only certified developers in our directory.</p>
+						<p>When you receive passing scores on test and the interview goes well, you’ll get an email from Edmunds.com asking you to accept the certification program agreements. <strong>And that’s it – you’re certified!</strong> You’ll then receive access to the <a href="/certified-dev/cdp_badge.html" title="Edmunds Certified Developer badge"> Edmunds Certified Developer badge</a>, which you can display on your personal and professional websites, your profile on business networking sites, your business card, and your personal email signature. We will also list your profile in our <a href="/certified-dev/search_the_directory.html" title="Online directory">online directory</a>. We promote only certified developers in our directory.</p>
 
-						<p>There are 4 qualification areas. You will get your official <a href="#" title=""><strong>Edmunds Certified Developer badge</strong></a> specific to the APIs for which qualifications were granted to you, and which can be displayed on your website to showcase the developer’s skills and help attract clients.</p>
+						<p>There are 4 qualification areas. You will get your official <a href="/certified-dev/cdp_badge.html" title=""><strong>Edmunds Certified Developer badge</strong></a> specific to the APIs for which qualifications were granted to you, and which can be displayed on your website to showcase the developer’s skills and help attract clients.</p>
 					
 					</div>
 
