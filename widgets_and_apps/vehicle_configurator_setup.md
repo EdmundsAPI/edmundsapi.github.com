@@ -15,9 +15,9 @@ class_page: pageWidgetSetup
 
 #####ATTRIBUTES
 
-* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Admunds Developer Portal'>Admunds Developer Portal</a>
+* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://developer.edmunds.com' title='Admunds Developer Portal'>Edmunds Developer Portal</a>
 
-* `Dealer API Key` - the Key for Dealer API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Admunds Developer Portal'>Admunds Developer Portal</a>
+* `Dealer API Key` - the Key for Dealer API registered on <a class='blueLink' href='http://developer.edmunds.com' title='Admunds Developer Portal'>Edmunds Developer Portal</a>
 
 * `Width` - sets the width of the Widget.
 

@@ -20,7 +20,7 @@ You can use the widget configurator below to customize the layout and style of t
 
 #####ATTRIBUTES
 
-* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://edmundsapi.github.io' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
+* `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://developer.edmunds.com/' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
 * `Theme` - the theme for the Widget. Options: 'Theme 1', 'Theme 2', 'Theme 3'.
 * `Color Scheme` - the color schemefor the Widget. Option: 'Light', 'Dark'.
 * `Layout` - sets the layout of the Widget. Options: 'Vertical', 'Horizontal'.
