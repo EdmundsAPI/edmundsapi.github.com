@@ -9,7 +9,7 @@ title-endpoint: 'Get Car Photos By Car Style ID'
 spec: media_photos
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/vehicle/vehiclephoto/service/findphotosbystyleid'
+dropdown-link: 'v1/api/vehiclephoto/service/findphotosbystyleid'
 
 
 level: 3

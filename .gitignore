@@ -4,6 +4,7 @@ _includes/themes/twitter/_site
 
 Thumbs.db
 .DS_Store
+.idea
 
 !.gitkeep
 
