@@ -24,4 +24,4 @@ To learn more about car VINs, check out this [Wikipedia page](http://en.wikipedi
 1. 17 characters long.
 2. The last 5 characters are *numeric*.
 
-This resource is **not** meant to be a *VIN Decoder*. For VIN decoding, please see [this resource](/api-documentation/vehicle/vin_decoding/v1/).
+This resource is **not** meant to be a *VIN Decoder*. For VIN decoding, please see [this resource](/api-documentation/vehicle/spec_vin_decoding/v1/).
