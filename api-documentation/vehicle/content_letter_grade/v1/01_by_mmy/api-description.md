@@ -25,7 +25,7 @@ Get the Edmunds.com **Letter Grade Car Rating** by the car Make/Model/Year infor
 
 ### URL
 
-	https://api.edmunds.com/api/vehicle/v2/grade/{make}/{model}/{year}?sub={submodel}&fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/grade/{make}/{model}/{year}?submodel={submodel}&fmt=json&api_key={api key}
 	
 ### Code Example
 
@@ -48,7 +48,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-					"sub": "Sedan"
+					"submodel": "Sedan"
 				};
 
 				// Callback function to be called when the API response is returned

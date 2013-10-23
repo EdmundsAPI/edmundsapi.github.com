@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| sub        | The car submodel (aka category)       | see [Vehicle API](/api-documentation/vehicle/)	                 |               | Yes      |
+| submodel   | The car submodel (aka category)       | see [Vehicle API](/api-documentation/vehicle/)                 |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
