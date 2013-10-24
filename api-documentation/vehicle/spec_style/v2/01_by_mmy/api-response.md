@@ -43,7 +43,8 @@ number: 3
 		  },
 		  "submodel": {
 		    "body": {string},
-		    "modelName": {string}
+		    "modelName": {string},
+		    "niceName": {string}
 		  },
 		  "trim": {string}
 		},
@@ -85,7 +86,8 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 		  },
 		  "submodel": {
 		    "body": {string},
-		    "modelName": {string}
+		    "modelName": {string},
+		    "niceName": {string}
 		  },
 		  "trim": {string},
 		  "states": {array},

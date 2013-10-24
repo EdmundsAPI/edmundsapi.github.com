@@ -38,7 +38,8 @@ Get style details for the 2011 Lexus RX-350.
 	      "name": "4dr SUV AWD (3.5L 6cyl 6A)",
 	      "submodel": {
 	        "body": "SUV",
-	        "modelName": "RX 350 SUV"
+	        "modelName": "RX 350 SUV",
+	        "niceName": "suv"
 	      },
 	      "trim": "Base"
 	    },
@@ -47,7 +48,8 @@ Get style details for the 2011 Lexus RX-350.
 	      "name": "4dr SUV (3.5L 6cyl 6A)",
 	      "submodel": {
 	        "body": "SUV",
-	        "modelName": "RX 350 SUV"
+	        "modelName": "RX 350 SUV",
+	        "niceName": "suv"
 	      },
 	      "trim": "Base"
 	    }
@@ -83,7 +85,8 @@ Get style details for the 2011 Lexus RX-350 with <code>view=full</code>
 	      "name": "4dr SUV AWD (3.5L 6cyl 6A)",
 	      "submodel": {
 	        "body": "SUV",
-	        "modelName": "RX 350 SUV"
+	        "modelName": "RX 350 SUV",
+	        "niceName": "suv"
 	      },
 	      "trim": "Base"
 	    },
@@ -92,7 +95,8 @@ Get style details for the 2011 Lexus RX-350 with <code>view=full</code>
 	      "name": "4dr SUV (3.5L 6cyl 6A)",
 	      "submodel": {
 	        "body": "SUV",
-	        "modelName": "RX 350 SUV"
+	        "modelName": "RX 350 SUV",
+	        "niceName": "suv"
 	      },
 	      "trim": "Base"
 	    }

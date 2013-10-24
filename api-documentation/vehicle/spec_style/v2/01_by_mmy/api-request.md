@@ -50,7 +50,8 @@ Get the style details for **2011 Lexus RX-350**
 		  },
 		  "submodel": {
 		    "body": "SUV",
-		    "modelName": "RX 350 SUV"
+		    "modelName": "RX 350 SUV",
+		    "niceName": "suv"
 		  },
 		  "trim": "Base"
 	  },
@@ -89,7 +90,8 @@ Get the style ***full*** details for **2011 Lexus RX-350**
 		  },
 		  "submodel": {
 		    "body": "SUV",
-		    "modelName": "RX 350 SUV"
+		    "modelName": "RX 350 SUV",
+		    "niceName": "suv"
 		  },
 		  "trim": "Base",
 		  "states": [

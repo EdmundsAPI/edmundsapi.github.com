@@ -48,7 +48,8 @@ Get the style details for car style **101353967**
 	  },
 	  "submodel": {
 	    "body": "SUV",
-	    "modelName": "RX 350 SUV"
+	    "modelName": "RX 350 SUV",
+	    "submodel": "suv"
 	  },
 	  "trim": "Base"
    }

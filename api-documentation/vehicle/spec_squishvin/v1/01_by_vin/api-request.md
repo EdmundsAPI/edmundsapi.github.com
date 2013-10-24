@@ -51,7 +51,8 @@ Get details for Squish VIN **1N4AL3APDN**
 	          "name": "2.5 4dr Sedan (2.5L 4cyl CVT)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Altima Sedan"
+	            "modelName": "Altima Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "2.5"
 	        },
@@ -60,7 +61,8 @@ Get details for Squish VIN **1N4AL3APDN**
 	          "name": "2.5 S 4dr Sedan (2.5L 4cyl CVT)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Altima Sedan"
+	            "modelName": "Altima Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "2.5 S"
 	        },
@@ -69,7 +71,8 @@ Get details for Squish VIN **1N4AL3APDN**
 	          "name": "2.5 SV 4dr Sedan (2.5L 4cyl CVT)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Altima Sedan"
+	            "modelName": "Altima Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "2.5 SV"
 	        },
@@ -78,7 +81,8 @@ Get details for Squish VIN **1N4AL3APDN**
 	          "name": "2.5 SL 4dr Sedan (2.5L 4cyl CVT)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Altima Sedan"
+	            "modelName": "Altima Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "2.5 SL"
 	        },
@@ -87,7 +91,8 @@ Get details for Squish VIN **1N4AL3APDN**
 	          "name": "2.5 SL 4dr Sedan w\/Prod. End 11\/12 (2.5L 4cyl CVT)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Altima Sedan"
+	            "modelName": "Altima Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "2.5 SL"
 	        }

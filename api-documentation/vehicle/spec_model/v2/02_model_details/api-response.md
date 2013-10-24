@@ -75,8 +75,15 @@ Each element in the <code>styles</code> array follows this format:
 
 Each <code>submodel</code> object follows this format:
 
+	{
+		"body": {string},
+		"modelName": {string},
+		"niceName": {string}
+	}
+
 | Property      | Description                                                         | Visibility                 |
 |:--------------|:--------------------------------------------------------------------|:-------------------------- |
 | body          | The type of car body (e.g. "Sedan", "Hatchback")                    | Edmunds, Partners, Public  |
 | modelName     | The name of this submodel (e.g. "Civic Hatchback", "X5 SUV Diesel") | Edmunds, Partners, Public  |
+| niceName      | The nice name of this submodel (e.g. "sedan", "diesel"              | Edmunds, Partners, Public  |
 
