@@ -33,20 +33,6 @@ Get the color details for ID **200478111**
 	  "id": "200478111",
 	  "name": "Granite Crystal Metallic Clear Coat",
 	  "equipmentType": "COLOR",
-	  "year": {
-	    "id": 200477946,
-	    "year": 2014
-	  },
-	  "make": {
-	    "id": 200003644,
-	    "name": "Chrysler",
-	    "niceName": "chrysler"
-	  },
-	  "model": {
-	    "id": "Chrysler_300",
-	    "name": "300",
-	    "niceName": "300"
-	  },
 	  "manufactureOptionName": "Granite Crystal Metallic Clear Coat",
 	  "manufactureOptionCode": "PAU",
 	  "category": "Exterior",
@@ -57,5 +43,9 @@ Get the color details for ID **200478111**
 	      "b": 72,
 	      "hex": "484848"
 	    }
-	  }
+	  },
+	  "fabricTypes": [ 
+	  ],
+	  "attributes": [
+	  ]
 	}

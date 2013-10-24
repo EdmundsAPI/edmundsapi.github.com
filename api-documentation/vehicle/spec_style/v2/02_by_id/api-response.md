@@ -42,7 +42,10 @@ number: 3
 	  },
 	  "submodel": {
 	    "body": {string},
-	    "modelName": {string}
+	    "fuel": {string}, // is not always populated
+		"tuner": {string}, // is not always populated
+	    "modelName": {string},
+	    "niceName": {string}
 	  },
 	  "trim": {string}
 	}
@@ -80,6 +83,8 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 	  },
 	  "submodel": {
 	    "body": {string},
+	    "fuel": {string}, // is not always populated
+		"tuner": {string}, // is not always populated
 	    "modelName": {string},
 	    "niceName": {string}
 	  },
@@ -99,7 +104,13 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 	      "options": {array}
 	    }
 	  ],
-	  "squishVins": {array}
+	  "drivenWheels": {string},
+	  "numOfDoors": {string},
+	  "squishVins": {array},
+	  "categories": {object},
+	  "MPG": {object},
+	  "manufacturerCode": {string},
+	  "price": {object}
 	}
 
 | Property      | Description                         					| Visibility                |
@@ -116,7 +127,13 @@ The *make*, *model*, *year* and *submodel* objects are identical to what's retur
 | transmission  | The transmission details on this style (see below)	| Edmunds, Partners, Public |
 | options	    | Available options for this style (see below)			| Edmunds, Partners, Public |
 | colors	    | Available colors for this style (see below)			| Edmunds, Partners, Public |
+| drivenWheels  | The car drive											| Edmunds, Partners, Public |
+| numOfDoors    | The number of doors on the car						| Edmunds, Partners, Public |
 | squishVins    | All the squish Vins associated with this style		| Edmunds, Partners, Public |
+| categories    | The car categories (e.g. EPA Class, Size, Type)		| Edmunds, Partners, Public |
+| MPG           | The highway and city MPG details						| Edmunds, Partners, Public |
+| manufacturerCode | The manufacturer code of the car					| Edmunds, Partners, Public |
+| price         | The price details for this style						| Edmunds, Partners, Public |
 
 
 The properties within the <code>engine</code> object are:

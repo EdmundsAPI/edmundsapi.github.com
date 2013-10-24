@@ -27,10 +27,6 @@ overview: page_version
 		"name": {string},
 		"equipmentType": "ENGINE",
 		"availability": {string},
-		"make": {object},
-		"model": {object},
-		"styles":{array of objects},
-		"year": {object}
 		"compressionRatio": {float},
 		"cylinder": {integer},
 		"size": {float},
@@ -51,10 +47,6 @@ overview: page_version
 	{
 		"id": {integer},
     	"name": {string},
-		"make": {object},
-		"model": {object},
-		"styles":{array of objects},
-		"year": {object}
 		"equipmentType": "TRANSMISSION",
 		"availability": {string},
     	"automaticType": {string},

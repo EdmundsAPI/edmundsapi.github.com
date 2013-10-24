@@ -30,11 +30,11 @@ number: 3
 		"availability": {string},
 		"manufactureOptionName": {string},
 		"manufactureOptionCode": {string},
-		"equipment": {array},
+		"colorChips": {array},
+		"fabricTypes": {array},
 		"category": {string},
-		"make": {object},
-		"model": {object},
-		"year": {object}
+		"attributes": {array},
+	    "price": {object}
     }
 
 | Property      | Description                         					| Visibility                |
@@ -44,9 +44,9 @@ number: 3
 | equipmentType 			| Always set to "COLOR"						| Edmunds, Partners, Public |
 | manufactureOptionName		| Manufacturer name							| Edmunds, Partners, Public |
 | manufactureOptionCode		| Manufacturer code							| Edmunds, Partners, Public |
-| colorChips	    		| Color RGB and HEX values					| Edmunds, Partners, Public |
+| colorChips	    		| Color RGB and HEX values for primary and secondary colors | Edmunds, Partners, Public |
+| fabricTypes	    		| The fabric types      					| Edmunds, Partners, Public |
 | category	    			| The color category (exterior or interior)	| Edmunds, Partners, Public |
-| make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
-| model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
-| year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
+| attributes    		    | The name/value pairs describing the color | Edmunds, Partners, Public |
+| price 	    		    | The price details for this color  		| Edmunds, Partners, Public |
 

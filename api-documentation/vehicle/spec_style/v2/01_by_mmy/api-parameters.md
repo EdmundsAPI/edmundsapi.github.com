@@ -23,6 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| state	     | The state of the vehicle style        | new, used, future | 	             | No       |
 | category	 | Vehicle category (see API Overview)	 | 					 | 	             | No       |
 | submodel   | Vehicle submodel						 | 					 |               | No       |
 | view		 | Response detail level      			 | basic, full       | basic         | No       |

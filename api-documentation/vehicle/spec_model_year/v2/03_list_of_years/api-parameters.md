@@ -23,7 +23,8 @@ number: 2
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:--------------|:---------------------------|:----------------- |:------------- |:-------- |
 | state			| The state of the car makes | new, used, future | 	             | No       |
-| year       	| The year of the car makes	 | 1990-current year |               | No       |
+| submodel      | The submodel of the car model | see [Vehicle API](/api-documentation/vehicle/) | | No |
+| category      | The category of the car model | see [Vehicle API](/api-documentation/vehicle/) | | No |
 | view			| Response detail level      | basic, full       | basic         | No       |
 | fmt			| Response format            | json              | json          | Yes      |
 | api_key    	| Vehicle API key            |                   |               | Yes      |

@@ -25,9 +25,9 @@ number: 3
 
 	{
 		"id": {integer},
-		"make": {object},
-		"model": {object},
-		"states" {array of strings},
+		"make": {object}, // only when view=full
+		"model": {object}, // only when view=full
+		"states" {array of strings}, // only when view=full
 		"styles": {array of objects},
 		"year": {integer}
 	}
@@ -46,7 +46,8 @@ Each element in the <code>styles</code> array follows this format:
 		"id": {string},
 		"name":	{string},
 		"submodel": {object},
-		"trim": {string}
+		"trim": {string},
+		"states": {array of strings} // only when view=full
 	}
 
 | Property      | Description                                                    | Visibility                |
@@ -55,11 +56,14 @@ Each element in the <code>styles</code> array follows this format:
 | name          | The style name			                                     | Edmunds, Partners, Public |
 | submodel      | Car submodel details (body, modelName, etc.)                   | Edmunds, Partners, Public |
 | trim	        | The car trim associated with this style 				         | Edmunds, Partners, Public |
+| states        | The state of this car style (e.g. NEW, USED, FUTURE)       	 | Edmunds, Partners, Public |
 
 Each <code>submodel</code> object follows this format:
 
 	{
 		"body": {string},
+		"fuel": {string}, // is not always populated
+		"tuner": {string}, // is not always populated
 		"modelName": {string},
 		"niceName": {string}
 	}
@@ -67,5 +71,7 @@ Each <code>submodel</code> object follows this format:
 | Property      | Description                                                         | Visibility                 |
 |:--------------|:--------------------------------------------------------------------|:-------------------------- |
 | body          | The type of car body (e.g. "Sedan", "Hatchback")                    | Edmunds, Partners, Public  |
+| fuel          | The type of car fuel (e.g. "Hybrid", "Diesel", "Electric")          | Edmunds, Partners, Public  |
+| tuner         | The type of car tuner (e.g. "Base", "Sport")                        | Edmunds, Partners, Public  |
 | modelName     | The name of this submodel (e.g. "Civic Hatchback", "X5 SUV Diesel") | Edmunds, Partners, Public  |
-| niceName      | The nice name of this submodel (e.g. "sedan", "diesel"              | Edmunds, Partners, Public  |
+| niceName      | The nice name of this submodel (e.g. "sedan", "diesel")             | Edmunds, Partners, Public  |

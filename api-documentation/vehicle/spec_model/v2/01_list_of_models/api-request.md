@@ -43,7 +43,8 @@ Get the list of all ***new*** 2013 car models for Lexus
 	              "name": "4dr Hatchback (1.8L 4cyl gas\/electric hybrid CVT)",
 	              "submodel": {
 	                "body": "Hatchback",
-	                "modelName": "CT 200h Hatchback"
+	                "modelName": "CT 200h Hatchback",
+	                "niceName": "hatchback"
 	              },
 	              "trim": "Base"
 	            }
@@ -66,7 +67,8 @@ Get the list of all ***new*** 2013 car models for Lexus
 	              "name": "4dr SUV AWD (3.5L 6cyl gas\/electric hybrid CVT)",
 	              "submodel": {
 	                "body": "SUV",
-	                "modelName": "RX 450h SUV"
+	                "modelName": "RX 450h SUV",
+	                "niceName": "suv"
 	              },
 	              "trim": "Base"
 	            },
@@ -75,7 +77,8 @@ Get the list of all ***new*** 2013 car models for Lexus
 	              "name": "4dr SUV (3.5L 6cyl gas\/electric hybrid CVT)",
 	              "submodel": {
 	                "body": "SUV",
-	                "modelName": "RX 450h SUV"
+	                "modelName": "RX 450h SUV",
+	                "niceName": "suv"
 	              },
 	              "trim": "Base"
 	            }

@@ -34,29 +34,6 @@ Get engine details for ID **200478098**
 	  "name": "5.7L V8 Engine (EZH)",
 	  "equipmentType": "ENGINE",
 	  "availability": "OPTIONAL",
-	  "year": {
-	    "id": 200477946,
-	    "year": 2014
-	  },
-	  "style": {
-	    "id": 200477956,
-	    "name": "C 4dr Sedan AWD (3.6L 6cyl 8A)",
-	    "submodel": {
-	      "body": "Sedan",
-	      "modelName": "300 Sedan"
-	    },
-	    "trim": "C"
-	  },
-	  "make": {
-	    "id": 200003644,
-	    "name": "Chrysler",
-	    "niceName": "chrysler"
-	  },
-	  "model": {
-	    "id": "Chrysler_300",
-	    "name": "300",
-	    "niceName": "300"
-	  },
 	  "compressionRatio": 10.5,
 	  "cylinder": 8,
 	  "size": 5.7,

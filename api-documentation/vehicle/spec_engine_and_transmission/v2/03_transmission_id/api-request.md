@@ -34,29 +34,6 @@ Get transmission details for ID **200478100**
 	  "name": "5A",
 	  "equipmentType": "TRANSMISSION",
 	  "availability": "OPTIONAL",
-	  "year": {
-	    "id": 200477946,
-	    "year": 2014
-	  },
-	  "style": {
-	    "id": 200477956,
-	    "name": "C 4dr Sedan AWD (3.6L 6cyl 8A)",
-	    "submodel": {
-	      "body": "Sedan",
-	      "modelName": "300 Sedan"
-	    },
-	    "trim": "C"
-	  },
-	  "make": {
-	    "id": 200003644,
-	    "name": "Chrysler",
-	    "niceName": "chrysler"
-	  },
-	  "model": {
-	    "id": "Chrysler_300",
-	    "name": "300",
-	    "niceName": "300"
-	  },
 	  "automaticType": "Shiftable automatic",
 	  "transmissionType": "AUTOMATIC",
 	  "numberOfSpeeds": "5"

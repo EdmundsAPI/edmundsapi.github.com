@@ -40,7 +40,7 @@ number: 3
 	         "niceName": {string}
 	      },
 	      {
-	         "modelsCount": {integer},
+	         "yearsCount": {integer},
 	         "niceName": {string}
 	      },
 	      ...

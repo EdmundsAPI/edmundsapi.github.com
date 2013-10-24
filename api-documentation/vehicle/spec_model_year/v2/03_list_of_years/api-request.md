@@ -39,7 +39,8 @@ Get the list of model years and their styles and trims for all **new Honda Civic
 	          "name": "LX 2dr Coupe (1.8L 4cyl 5A)",
 	          "submodel": {
 	            "body": "Coupe",
-	            "modelName": "Civic Coupe"
+	            "modelName": "Civic Coupe",
+	            "niceName": "coupe"
 	          },
 	          "trim": "LX"
 	        },
@@ -49,7 +50,8 @@ Get the list of model years and their styles and trims for all **new Honda Civic
 	          "name": "HF PZEV 4dr Sedan (1.8L 4cyl 5A)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Civic Sedan"
+	            "modelName": "Civic Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "HF PZEV"
 	        }
@@ -87,18 +89,28 @@ Get the list of model years and their styles and trims for all **New Honda Civic
 	          "name": "LX 2dr Coupe (1.8L 4cyl 5A)",
 	          "submodel": {
 	            "body": "Coupe",
-	            "modelName": "Civic Coupe"
+	            "modelName": "Civic Coupe",
+	            "niceName": "coupe"
 	          },
-	          "trim": "LX"
+	          "trim": "LX",
+	          "states": [
+	            "USED",
+	            "NEW"
+	          ]
 	        },
 	        {
 	          "id": 200443846,
 	          "name": "LX 2dr Coupe (1.8L 4cyl 5M)",
 	          "submodel": {
 	            "body": "Coupe",
-	            "modelName": "Civic Coupe"
+	            "modelName": "Civic Coupe",
+	            "niceName": "coupe"
 	          },
-	          "trim": "LX"
+	          "trim": "LX",
+	          "states": [
+	            "USED",
+	            "NEW"
+	          ]
 	        },
 	        ...
 	        {
@@ -106,9 +118,14 @@ Get the list of model years and their styles and trims for all **New Honda Civic
 	          "name": "HF PZEV 4dr Sedan (1.8L 4cyl 5A)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Civic Sedan"
+	            "modelName": "Civic Sedan",
+	            "niceName": "sedan"
 	          },
-	          "trim": "HF PZEV"
+	          "trim": "HF PZEV",
+	          "states": [
+	            "USED",
+	            "NEW"
+	          ]
 	        }
 	      ],
 	      "states": [
