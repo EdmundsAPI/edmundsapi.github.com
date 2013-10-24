@@ -33,7 +33,9 @@ number: 3
 	      "manufactureOptionName": {string},
 	      "manufactureOptionCode": {string},
 	      "equipment": {array},
-	      "category": {string}
+	      "category": {string},
+	      "attributes": {array},
+	      "price": {object}
 	    }
 	}
 
@@ -42,10 +44,11 @@ number: 3
 |:------------------------------|:------------------------------------------------------|:------------------------- |
 | id		    				| The option ID											| Edmunds, Partners, Public |
 | name		    				| The option name										| Edmunds, Partners, Public |
-| equipmentType 				| Equipment type. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/)	| Edmunds, Partners, Public |
+| equipmentType 				| Always set to "OPTION"	                            | Edmunds, Partners, Public |
 | availability  				| Option availability									| Edmunds, Partners, Public |
 | manufactureOptionName		    | Manufacturer name										| Edmunds, Partners, Public |
 | manufactureOptionCode			| Manufacturer code										| Edmunds, Partners, Public |
 | equipment	    				| Equipment objects. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/) | Edmunds, Partners, Public |
 | category	    				| The option category (see overview)					| Edmunds, Partners, Public |
-
+| attributes    				| The name/value pairs describing the option			| Edmunds, Partners, Public |
+| price 	    				| The price details for this option  					| Edmunds, Partners, Public |

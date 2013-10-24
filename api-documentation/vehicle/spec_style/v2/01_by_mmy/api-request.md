@@ -304,10 +304,34 @@ Get the style ***full*** details for **2011 Lexus RX-350**
 		      ]
 		    }
 		  ],
-		  "squishVins": [
-		    "JTJZK1BAB2",
-		    "2T2ZK1BABC"
-		  ]
+		  "drivenWheels": "front wheel drive",
+	      "numOfDoors": "4",
+	      "squishVins": [
+	        "JTJZK1BAB2",
+	        "2T2ZK1BABC"
+	      ],
+	      "categories": {
+	        "EPAClass": "Sport Utility Vehicles",
+	        "vehicleSize": "Midsize",
+	        "primaryBodyType": "SUV",
+	        "vehicleStyle": "4dr SUV",
+	        "vehicleType": "SUV"
+	      },
+	      "MPG": {
+	        "highway": "25",
+	        "city": "18"
+	      },
+	      "manufacturerCode": "9420",
+	      "price": {
+	        "baseMSRP": 39075,
+	        "baseInvoice": 35363,
+	        "deliveryCharges": 875,
+	        "usedTmvRetail": 28005,
+	        "usedPrivateParty": 26600,
+	        "usedTradeIn": 24883,
+	        "estimateTmv": false,
+	        "tmvRecommendedRating": 0
+	      }
 		}
      },
      ...

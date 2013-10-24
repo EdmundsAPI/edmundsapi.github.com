@@ -34,24 +34,21 @@ Get the option details for ID **200235312**
 	  "name": "Power Moonroof",
 	  "equipmentType": "OPTION",
 	  "availability": "Super\/SuperCrew XLT\/FX4\/Lariat",
-	  "year": {
-	    "id": 100502974,
-	    "year": 2004
-	  },
-	  "make": {
-	    "id": 200005143,
-	    "name": "Ford",
-	    "niceName": "ford"
-	  },
-	  "model": {
-	    "id": "Ford_F_150",
-	    "name": "F-150",
-	    "niceName": "f150"
-	  },
 	  "manufactureOptionName": "Power Moonroof",
 	  "manufactureOptionCode": "43M",
 	  "equipment": [
 
 	  ],
-	  "category": "Other"
+	  "category": "Other",
+	  "attributes": [
+        {
+          "name": "Sunroof",
+          "value": "power glass"
+        }
+      ],
+      "price": {
+        "baseMSRP": 810,
+        "baseInvoice": 688,
+        "estimateTmv": false
+      }
 	}

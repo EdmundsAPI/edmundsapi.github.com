@@ -71,7 +71,8 @@ Each element in the <code>styles</code> array follows this format:
 		"id": {integer},
 		"name": {string},
 		"submodel": {object},
-		"trim": {string}
+		"trim": {string},
+		"states": {array of strings} // only when view=full
 	}
 	
 | Property      | Description                                                    | Visibility                |

@@ -88,7 +88,10 @@ Get style details for the 2011 Lexus RX-350 with <code>view=full</code>
 	        "modelName": "RX 350 SUV",
 	        "niceName": "suv"
 	      },
-	      "trim": "Base"
+	      "trim": "Base",
+	      "states": [
+	        "USED"
+	      ]
 	    },
 	    {
 	      "id": 101353967,
@@ -98,7 +101,10 @@ Get style details for the 2011 Lexus RX-350 with <code>view=full</code>
 	        "modelName": "RX 350 SUV",
 	        "niceName": "suv"
 	      },
-	      "trim": "Base"
+	      "trim": "Base",
+	      "states": [
+	        "USED"
+	      ]
 	    }
 	  ],
 	  "states": [

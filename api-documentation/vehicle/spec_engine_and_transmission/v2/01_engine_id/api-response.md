@@ -28,10 +28,6 @@ number: 3
 		"name": {string},
 		"equipmentType": "ENGINE",
 		"availability": {string},
-		"make": {object},
-		"model": {object},
-		"styles":{array of objects},
-		"year": {object}
 		"compressionRatio": {float},
 		"cylinder": {integer},
 		"size": {float},
@@ -53,10 +49,6 @@ number: 3
 | name		    	| The engine name										| Edmunds, Partners, Public |
 | equipmentType		| Always "ENGINE"										| Edmunds, Partners, Public |
 | availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
-| make	        	| Car make details (id, name and niceName)   			   	| Edmunds, Partners, Public |
-| model         	| Car make details (id, name and niceName)					| Edmunds, Partners, Public |
-| styles        	| List of styles belonging to this model year (see below)   | Edmunds, Partners, Public |
-| year		    	| The model year ID and the four-digit year                	| Edmunds, Partners, Public |
 | compressionRatio	| The engine compression ratio							| Edmunds, Partners, Public |
 | cylinder		    | The number of cylinders this engine has				| Edmunds, Partners, Public |
 | size			    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
@@ -70,21 +62,4 @@ number: 3
 | type			    | The type type (gas, hybrid, diesel, ...etc)			| Edmunds, Partners, Public |
 | code			    | The engine code										| Edmunds, Partners, Public |
 | compressorType	| The engine compressor type							| Edmunds, Partners, Public |
-
-Each element in the <code>styles</code> array follows this format:
-
-	{
-		"id": {integer},
-		"name": {string},
-		"submodel": {object},
-		"trim": {string}
-	}
-	
-| Property      | Description                                                    | Visibility                |
-|:--------------|:---------------------------------------------------------------|:------------------------- |
-| id            | The Edmunds ID for the car style 		                         | Edmunds, Partners, Public |
-| name	        | The car style name										     | Edmunds, Partners, Public |
-| submodel      | The vehicle submodel (body and modelName info)                 | Edmunds, Partners, Public |
-| trim      	| The vehicle trim for this car style 			                 | Edmunds, Partners, Public |
-
 

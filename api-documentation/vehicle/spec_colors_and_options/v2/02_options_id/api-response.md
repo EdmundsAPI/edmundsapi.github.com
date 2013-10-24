@@ -32,9 +32,8 @@ number: 3
 		"manufactureOptionCode": {string},
 		"equipment": {array},
 		"category": {string},
-		"make": {object},
-		"model": {object},
-		"year": {object}
+		"attributes": {array},
+	    "price": {object}
     }
 
 | Property      | Description                         					| Visibility                |
@@ -47,7 +46,7 @@ number: 3
 | manufactureOptionCode			| Manufacturer code										| Edmunds, Partners, Public |
 | equipment	    				| Equipment objects. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/) | Edmunds, Partners, Public |
 | category	    				| The option category (see overview)					| Edmunds, Partners, Public |
-| make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
-| model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
-| year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
+| attributes    				| The name/value pairs describing the option			| Edmunds, Partners, Public |
+| price 	    				| The price details for this option  					| Edmunds, Partners, Public |
+
 

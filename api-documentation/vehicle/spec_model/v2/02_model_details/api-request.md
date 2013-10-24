@@ -43,7 +43,8 @@ Get the list of model years and styles for ***used*** Honda Civics.
 	          "name": "2dr Hatchback",
 	          "submodel": {
 	            "body": "Hatchback",
-	            "modelName": "Civic Hatchback"
+	            "modelName": "Civic Hatchback",
+	            "niceName": "hatchback"
 	          },
 	          "trim": "Base"
 	        },
@@ -52,7 +53,8 @@ Get the list of model years and styles for ***used*** Honda Civics.
 	          "name": "DX 2dr Hatchback",
 	          "submodel": {
 	            "body": "Hatchback",
-	            "modelName": "Civic Hatchback"
+	            "modelName": "Civic Hatchback",
+	            "niceName": "hatchback"
 	          },
 	          "trim": "DX"
 	        },
@@ -62,7 +64,8 @@ Get the list of model years and styles for ***used*** Honda Civics.
 	          "name": "LX 4dr Sedan",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Civic Sedan"
+	            "modelName": "Civic Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "LX"
 	        }
@@ -78,7 +81,8 @@ Get the list of model years and styles for ***used*** Honda Civics.
 	          "name": "Si 2dr Hatchback (2.0L 4cyl 5M)",
 	          "submodel": {
 	            "body": "Hatchback",
-	            "modelName": "Civic Hatchback"
+	            "modelName": "Civic Hatchback",
+	            "niceName": "hatchback"
 	          },
 	          "trim": "Si"
 	        },
@@ -88,7 +92,8 @@ Get the list of model years and styles for ***used*** Honda Civics.
 	          "name": "LX Special Edition 4dr Sedan (1.7L 4cyl 4A)",
 	          "submodel": {
 	            "body": "Sedan",
-	            "modelName": "Civic Sedan"
+	            "modelName": "Civic Sedan",
+	            "niceName": "sedan"
 	          },
 	          "trim": "LX Special Edition"
 	        }
@@ -126,9 +131,14 @@ Get the list of model year and style details and their states (i.e. new, used, f
 	          "name": "xDrive35i 4dr SUV AWD (3.0L 6cyl Turbo 8A)",
 	          "submodel": {
 	            "body": "SUV",
-	            "modelName": "X5 SUV"
+	            "modelName": "X5 SUV",
+	            "niceName": "suv"
 	          },
-	          "trim": "xDrive35i"
+	          "trim": "xDrive35i",
+	          "states": [
+	            "USED", 
+	            "NEW"
+	          ]
 	        },
 	        {
 	          "id": 200445599,
@@ -136,40 +146,61 @@ Get the list of model year and style details and their states (i.e. new, used, f
 	          "submodel": {
 	            "body": "SUV",
 	            "modelName": "X5 SUV Diesel",
-	            "fuel": "Diesel"
+	            "fuel": "Diesel",
+	            "niceName": "diesel"
 	          },
-	          "trim": "xDrive35d"
+	          "trim": "xDrive35d",
+	          "states": [
+	            "USED", 
+	            "NEW"
+	          ]
 	        },
 	        {
 	          "id": 200420452,
 	          "name": "xDrive35i Premium 4dr SUV AWD (3.0L 6cyl Turbo 8A)",
 	          "submodel": {
 	            "body": "SUV",
-	            "modelName": "X5 SUV"
+	            "modelName": "X5 SUV",
+	            "niceName": "suv"
 	          },
-	          "trim": "xDrive35i Premium"
+	          "trim": "xDrive35i Premium",
+	          "states": [
+	            "USED", 
+	            "NEW"
+	          ]
 	        },
 	        {
 	          "id": 200420453,
 	          "name": "xDrive35i Sport Activity 4dr SUV AWD (3.0L 6cyl Turbo 8A)",
 	          "submodel": {
 	            "body": "SUV",
-	            "modelName": "X5 SUV"
+	            "modelName": "X5 SUV",
+	            "niceName": "suv"
 	          },
-	          "trim": "xDrive35i Sport Activity"
+	          "trim": "xDrive35i Sport Activity",
+	          "states": [
+	            "USED", 
+	            "NEW"
+	          ]
 	        },
 	        {
 	          "id": 200420454,
 	          "name": "xDrive50i 4dr SUV AWD (4.4L 8cyl Turbo 8A)",
 	          "submodel": {
 	            "body": "SUV",
-	            "modelName": "X5 SUV"
+	            "modelName": "X5 SUV",
+	            "niceName": "suv"
 	          },
-	          "trim": "xDrive50i"
+	          "trim": "xDrive50i",
+	          "states": [
+	            "USED", 
+	            "NEW"
+	          ]
 	        }
 	      ],
 	      "states": [
-	        "NEW"
+	        "NEW",
+	        "USED"
 	      ]
 	    }
 	  ],

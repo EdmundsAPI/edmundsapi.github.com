@@ -20,15 +20,15 @@ overview: page_version
  This resource provides access to vehicle options and colors. For vehicle options, the data returns will always include an array of <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment</a> that exist within each option. The <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment format for colors</a> is different from the typical equipment format. <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">Learn more</a>
 </div>
 
-### Option Types
+### Option Categories
 
-Option types are always one of these values:
+Option categories are always one of these values:
 
-* INTERIOR
-* EXTERIOR
-* ROOF
-* INTERIOR_TRIM
-* MECHANICAL
-* PACKAGE
-* ADDITIONAL_FEES
-* UNKNOWN
+* Interior
+* Exterior
+* Roof
+* Interior Trim
+* Mechanical
+* Package
+* Additional Fees
+* Other
