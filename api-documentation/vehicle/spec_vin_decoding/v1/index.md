@@ -4,7 +4,7 @@ title : 'Spec: VIN Decoding'
 title_active_left_menu: "Spec: VIN Decoding"
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 spec: spec_vin_decoding
 version: v1
 api: vehicle
