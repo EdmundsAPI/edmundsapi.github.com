@@ -25,7 +25,7 @@ number: 2
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
 | zipcode		| Dealership ZIP Code					|						| 		        | Yes      |
-| range			| Car make								|						| 		        | Yes      |
+| range			| The search radius in mile				|						| 50 	        | Yes      |
 | make			| Car make								|						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
 | types    		| The state of the cars		          	| ALL, NEW, USED, CPO 	| NEW           | No       |
