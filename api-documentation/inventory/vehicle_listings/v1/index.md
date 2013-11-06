@@ -36,4 +36,4 @@ You can use the basicFilter query string parameter to filter out the results. Yo
 
 *The double quotes are important.*
 
-You can use the basicFilter wit any *response key* for a particular endpoint.
+You can use the basicFilter with any *response key* for a particular endpoint.
