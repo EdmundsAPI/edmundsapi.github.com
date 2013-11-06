@@ -25,7 +25,7 @@ number: 2
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
 | zipcode		| Dealership ZIP Code					|						| 		        | Yes      |
-| range			| Car make								|						| 		        | Yes      |
+| range			| The search radius in miles			|						| 50 	        | Yes      |
 | make			| Car make								|						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
 | types    		| The state of the cars		          	| ALL, NEW, USED, CPO 	| NEW           | No       |
@@ -37,4 +37,4 @@ number: 2
 | years			| Car year. Multiples separated by :	|						| 		        | No       |
 | submodel		| Car submodel							|						| 		        | No       |
 | priceRange	| Car price range ($15k to $55k)		|						| 		        | No       |
-| dealerId 		| The dealership ID						| 						| 		         | No	   |
+| dealerId 		| The dealership ID						| 						| 		        | No	   |

@@ -43,13 +43,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 The Dealer API has two resources:
 
-#### Dealer Details
-
-This is where you can get dealerships' name, location, operating hours, contact information, ...etc. by zip code and optionally the cars they sell.
-
-#### Dealer Ratings and Reviews
-
-This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. 
-
-These resources are accessible on the left.
-
+| Resource Name  	| Description                           |
+|:------------------|:--------------------------------------|
+| [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/) | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
+| [Dealer Details](/api-documentation/dealer/details_and_location/v1/) | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |

@@ -22,11 +22,11 @@ number: 4
 
 ###Sample Request 1
 
-Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) within the 10 miles radius
+Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) within a 100-mile radius.
 
 #### URL
 
-	https://api.edmunds.com/api/inventory/v1/getall?range=100&zipcode=90019&make=Hyundai&basicFilter=make:Hyundai&pageSize=1
+	https://api.edmunds.com/api/inventory/v1/getall?range=100&zipcode=90404&make=Hyundai&basicFilter=make:%22Hyundai%22&pageSize=1
 	
 #### Response
 

@@ -27,9 +27,9 @@ This overview covers the core concepts that you need to know before you could fu
 
 Exploring a new API can be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
-In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the **car Style ID** or the **car Model Year ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
+In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the car **Model Year ID** or the car **Style ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
-_Car Make –> Car Model –> **Car Model Year** –> Car Trim –> **Car Style**_
+	Car Make –> Car Model –> *Car Model Year* –> Car Trim –> *Car Style*
 
 In the _Useful API Calls_ section below, we'll show you how to get both IDs in one API call!
 
@@ -115,8 +115,8 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 ### URI Examples
 
 * _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
-* _**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&callback=**myFunction**_
-* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state=new&view=full**_
+* _**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**callback**=**myFunction**_
+* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state**=**new**&**view**=**full**_
 
 ### Rate Limit
 
@@ -168,7 +168,7 @@ As mentioned above, car _style IDs_ and _Model Year IDs_ are important to retrie
 
 To get the _Model Year IDs_ for all _new_ makes, use the following API call:
 	
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api_key={your vehicle api key}
+	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api_key={your API key}
 	
 In the **response** of that call, you will find the following object:
 

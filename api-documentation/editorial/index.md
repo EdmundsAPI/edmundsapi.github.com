@@ -40,16 +40,24 @@ Edmunds.com’s Editorial Content consists of articles (“Articles”) that are
     <!-- The URL SUPPLIED WITH THE ARTICLE is the URL of the content you’re displaying on your site. The URL is provided in the response object you’ll receive when you make a REST call request. -->
     <!-- The meta tag needs to exist in the <head> section of your page. -->
  
-#### Each Article you elect to display **must be displayed in the form it is provided**, i.e., it may not be edited, supplemented or abridged.
+Each Article you elect to display **must be displayed in the form it is provided**, i.e., it may not be edited, supplemented or abridged.
  
-#### The “date published” and/or “date revised” that accompanies each Article may not be removed or altered, and should be displayed above the Article.
+The “date published” and/or “date revised” that accompanies each Article may not be removed or altered, and should be displayed above the Article.
 
-#### Each Article should be accredited as follows: "From Edmunds.com" at the top of the article (i.e., below the article’s title and above the “date published”), in a font size not smaller than the font size that you use for the text of the Article.
+Each Article should be accredited as follows: **"From Edmunds.com"** at the top of the article (i.e., below the article’s title and above the “date published”), in a font size not smaller than the font size that you use for the text of the Article.
 
-#### The following notice should be affixed to the end of each Article: Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc.
+The following notice should be affixed to the end of each Article: **"Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc."**
 
-#### Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.
+Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.
 
+### Available Resources
+
+The Editorial API has two resources:
+
+| Resource Name  	| Description                           |
+|:------------------|:--------------------------------------|
+| [Articles](/api-documentation/editorial/articles/v1/) | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
+| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/) | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
 
 ### Available Article Categories
 
@@ -94,17 +102,3 @@ When using the **Editor Reviews** resource, you will get the review broken into 
 * Get all articles for a specific make/model/year
 * Get all articles for a specific make/model/year **and** specific category
 * Get the Edmunds Editor Review of a specific make/model/year
-
-### Available Resources
-
-The Editorial API has two resources:
-
-#### Articles
-
-Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
-
-#### Editor Reviews
-
-This resource offers access to the Edmunds Editor Reviews including the pros, cons, Edmunds Says.
-
-These resources are accessible on the left.
