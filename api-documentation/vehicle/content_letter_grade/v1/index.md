@@ -26,20 +26,9 @@ For more details, visit [http://www.edmunds.com/new-car-ratings/](http://www.edm
 
 All tested vehicles are given a score and a grade in the following categories:
 
-#### Performance
-The score is broken down by the following sub-categories: ***acceleration, braking, steering, handling, and drivability***.
-
-#### Comfort 
-The score is broken down by the following sub-categories: ***seating comfort, ride comfort, and quietness***.
-
-#### Interior
-The score is broken down by the following sub-categories: ***ergonomics, ingress/egress, space/room, visibility and cargo/storage***.
-
-#### Value
-The score is broken down by the following sub-categories: ***build quality, features, cost, MPG, warranty and ownership***.
-
-#### Fun to Drive
-The score is broken down by the following sub-categories: ***driving experience, and personality***.
+| 								| 							| 							| 								| 					|
+|:------------------------------|:--------------------------|:--------------------------|:------------------------------|:------------------|
+| **Performance**: The score is broken down by the following sub-categories: *acceleration, braking, steering, handling, and drivability*.							| **Comfort**: The score is broken down by the following sub-categories: *seating comfort, ride comfort, and quietness*.		| **Interior**: The score is broken down by the following sub-categories: *ergonomics, ingress/egress, space/room, visibility and cargo/storage*.	| **Value**: The score is broken down by the following sub-categories: *build quality, features, cost, MPG, warranty and ownership*.	| **Fun to Drive**: The score is broken down by the following sub-categories: *driving experience, and personality*.	|
 
 In addition to the ratings categories, the resource returns the following information:
 
