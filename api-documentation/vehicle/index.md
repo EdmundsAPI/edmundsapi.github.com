@@ -12,15 +12,16 @@ level: 1
 
 The Vehicle API is comprised of a collection of resources that provide access to an array of automotive datasets _related directly to the automotive vehicle_. First, you need to know the _five components_ that fully describe an **automotive vehicle**: 
 
-`Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style`
+	Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style
 
 For example: 
 
-`Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation`
+	Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation
 
-`(Honda) –> (Accord) –> (2013) –> (EX) –> (2.4-liter 4-cylinder CVT Automatic w/Navigation)`
+Would match to:
 
-`(make) –> (model) –> (model year) –> (trim) –> (style)`
+	(Honda) –> (Accord) –> (2013) –> (EX) –> (2.4-liter 4-cylinder CVT Automatic w/Navigation)
+	(make) –> (model) –> (model year) –> (trim) –> (style)
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
@@ -72,38 +73,38 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 
 #### Vehicle Types
 
-|		|		|		|		|			|
-|:------|:------|:------|:------|:----------|
-| Car	| Truck	| SUV	| Van	| Minivan	|
+|				|				|				|				|					|
+|:--------------|:--------------|:--------------|:--------------|:------------------|
+| &bull; Car	| &bull; Truck	| &bull; SUV	| &bull; Van	| &bull; Minivan	|
 
 #### Vehicle Categories (aka submodels)
 
-|						|					|						|					|
-|:----------------------|:------------------|:----------------------|:------------------|
-| 4dr Hatchback			| 2dr Hatchback		| 2dr SUV 				| 4dr SUV			|
-| Cargo Minivan			| Cargo Van			| Convertible			| Convertible SUV	|
-| Coup					| Crew Cab Pickup	| Extended Cab Pickup 	| Passenger Minivan	|
-| Passenger Van 		| Regular Cab Pickup| Sedan				 	| Wagon				|
+|						|							|								|							|
+|:----------------------|:--------------------------|:------------------------------|:--------------------------|
+| &bull; 4dr Hatchback	| &bull; 2dr Hatchback		| &bull; 2dr SUV 				| &bull; 4dr SUV			|
+| &bull; Cargo Minivan	| &bull; Cargo Van			| &bull; Convertible			| &bull; Convertible SUV	|
+| &bull; Coup			| &bull; Crew Cab Pickup	| &bull; Extended Cab Pickup 	| &bull; Passenger Minivan	|
+| &bull; Passenger Van 	| &bull; Regular Cab Pickup | &bull; Sedan				 	| &bull; Wagon				|
 
 #### Vehicle Sizes
 
-|			|			|		|
-|:----------|:----------|:------|
-| Compact	| Midsize	| Large	|
+|					|					|				|
+|:------------------|:------------------|:--------------|
+| &bull; Compact	| &bull; Midsize	| &bull; Large	|
 
 #### Fuel Types
 
-|			|					|			|
-|:----------|:------------------|:----------|
-| Electric	| Natural-gas-cng	| gas		|
-| hybrid	| Flex-fuel-ffv		| diesel	|
+|					|							|					|
+|:------------------|:--------------------------|:------------------|
+| &bull; Electric	| &bull; Natural-gas-cng	| &bull; gas		|
+| &bull; hybrid		| &bull; Flex-fuel-ffv		| &bull; diesel		|
 
 #### Driven Wheels
                                  
-|					|					|
-|:------------------|:------------------|
-| all-wheel-drive	| four-wheel-drive	|
-| front-wheel-drive	| rear-wheel-drive	|
+|							|							|
+|:--------------------------|:--------------------------|
+| &bull; all-wheel-drive	| &bull; four-wheel-drive	|
+| &bull; front-wheel-drive	| &bull; rear-wheel-drive	|
 
 
 ### API Uses
