@@ -57,16 +57,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 The Inventory API has two resources:
 
-#### Inventory by VIN
-
-If the VIN you supply matches a vehicle that's for sale at one of the dealerships Edmunds.com, Inc. works with, you will get a response back. Otherwise, you will get an error.
-
-#### Inventory by Dealer ID
-
-Get a list of inventories for sale at the dealership whose ID is supplied.
-
-These resources are accessible on the left.
-
-
-
-
+| Resource Name  	| Description                           |
+|:------------------|:--------------------------------------|
+| [Inventory by VIN](/api-documentation/inventory/vin_lookup/v1/) | If the VIN you supply matches a vehicle that's for sale at one of the dealerships Edmunds.com, Inc. works with, you will get a response back. Otherwise, you will get an error. |
+| [Inventory by Dealer ID or ZIP Code](/api-documentation/inventory/vehicle_listings/v1/) | Get a list of inventories for sale at a dealership by Dealer ID or by ZIP Code. |
