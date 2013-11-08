@@ -24,7 +24,7 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
-| make		 	| The car make							| 						| 		        | Yes      |
+| make		 	| The car make							| Available at the [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) endpoint | 		        | Yes      |
 | zipcode	 	| The area ZIP Code						| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
 | limit		 	| pagination (index, size)				| 						| 0, 10	        | No       |

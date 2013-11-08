@@ -22,10 +22,10 @@ number: 2
 
 ###Parameters
 
-| Parameter  	| Description                           | Possible Values   	| Default Value | Required          |
-|:--------------|:--------------------------------------|:----------------------|:------------- |:------------------|
-| make  	 	| The car make                  		| 						| 		        | Yes               |
-| model		 	| The car model                     	| 						| 		        | Yes               |
-| year  	 	| The car year                      	| 						| 		        | Yes               |
-| fmt        	| Response format                       | json              	| json          | Yes               |
-| api_key		| Your Edmunds/Editorial API 			| 						|				| Yes				|
+| Parameter  	| Description                           | Possible Values   					| Default Value | Required          |
+|:--------------|:--------------------------------------|:--------------------------------------|:------------- |:------------------|
+| make  	 	| The car make                  		| Available in the [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) endpoint  | 		        | Yes               |
+| model		 	| The car model                     	| 										| 		        | Yes               |
+| year  	 	| The car year                      	| 										| 		        | Yes               |
+| fmt        	| Response format                       | json              					| json          | Yes               |
+| api_key		| Your Edmunds/Editorial API key		| 										|				| Yes				|
