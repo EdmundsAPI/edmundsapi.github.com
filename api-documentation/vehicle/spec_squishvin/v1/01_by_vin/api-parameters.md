@@ -21,7 +21,8 @@ number: 2
 
 ###Parameters
 
-| Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| Parameter   | Description                           | Possible Values   | Default Value | Required |
+|:------------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {squish VIN}| The first 11 digits of the VIN minus the 9th digit which is a check digit | | | Yes  |
+| fmt         | Response format                       | json              | json          | Yes      |
+| api_key     | Vehicle API key                       |                   |               | Yes      |

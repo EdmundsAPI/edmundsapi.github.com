@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| zip        | Zip Code			                     | json              | json          | Yes      |
-| styleid    | The vehicle style ID                  | json              | json          | Yes      |
+| zip        | ZIP Code			                     |                   |               | Yes      |
+| styleid    | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) endpoints | | Yes |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

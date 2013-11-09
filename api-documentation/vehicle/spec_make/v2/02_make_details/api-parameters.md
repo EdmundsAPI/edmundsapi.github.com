@@ -23,6 +23,7 @@ number: 2
 
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:--------------|:---------------------------|:----------------- |:------------- |:-------- |
+| {make}		| The car make 				 |					 |				 | Yes 		|
 | state			| The state of the car makes | new, used, future | 	             | No       |
 | year       	| The year of the car makes	 | 1990-current year |               | No       |
 | view			| Response detail level      | basic, full       | basic         | No       |

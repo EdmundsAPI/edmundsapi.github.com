@@ -23,7 +23,7 @@ number: 2
 
 | Parameter        | Description                           | Possible Values   | Default Value | Required |
 |:-----------------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| vin              | The car VIN                           |                   |               | Yes      |
+| {vin}            | The car VIN                           |                   |               | Yes      |
 | manufacturerCode | The car manufacturer code             |                   |               | No       |
 | fmt              | Response format                       | json              | json          | Yes      |
-| api_key          | vehicle api key                       |                   |               | Yes      |
+| api_key          | Vehicle API key                       |                   |               | Yes      |

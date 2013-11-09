@@ -21,11 +21,11 @@ number: 2
 
 ###Parameters
 
-| Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| zip        | Zip Code			                     |               |           | Yes      |
-| styleid    | The vehicle style ID                  |               |           | Yes      |
-| selected   | The selected option ID                |               	|           | Yes      |
-| optionid   | The option ID that needs to be selected      |               |           | No       |
-| fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| Parameter  | Description                             | Possible Values   | Default Value | Required |
+|:-----------|:----------------------------------------|:------------------|:------------- |:-------- |
+| zip        | ZIP Code			                       |                   |               | Yes      |
+| styleid    | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) endpoints | | Yes |
+| selected   | The selected option ID                  |                   |               | Yes      |
+| optionid   | The option ID that needs to be selected |                   |               | No       |
+| fmt        | Response format                         | json              | json          | Yes      |
+| api_key    | Vehicle API key                         |                   |               | Yes      |

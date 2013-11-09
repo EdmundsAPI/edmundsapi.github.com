@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| ChromeId	 | The [Chrome Data](http://www.chromedata.com) ID     	     |        |          | Yes       |
+| {ChromeId} | The [Chrome Data](http://www.chromedata.com) ID  |        |          	 | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |

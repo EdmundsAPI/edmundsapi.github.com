@@ -23,6 +23,8 @@ number: 2
 
 | Parameter  	| Description                | Possible Values   | Default Value | Required |
 |:--------------|:---------------------------|:----------------- |:------------- |:-------- |
+| {make} 		| The car make 				 | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
+| {model} 		| The car model 			 | 					 | 				 | Yes		|
 | state			| The state of the car model | new, used, future | 	             | No       |
 | year       	| The year of the car model	 | 1990-current year |               | No       |
 | submodel      | The submodel of the car model | see [Vehicle API](/api-documentation/vehicle/) | | No |
