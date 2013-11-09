@@ -28,4 +28,4 @@ number: 2
 | year       | The car year		                     | 			         | 		         | Yes      |
 | submodel   | The car submodel                    	 | 		             | 		         | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

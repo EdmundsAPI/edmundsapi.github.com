@@ -9,7 +9,7 @@ title-endpoint: 'Get the Total Cash Price for a Used Car'
 spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip'
+dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
@@ -23,5 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/), or [Spec: Style](/api-documentation/vehicle/spec_style/v2/) endpoints | | Yes |
+| {zipcode}  | ZIP Code                              |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

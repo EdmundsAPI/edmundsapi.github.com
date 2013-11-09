@@ -9,13 +9,13 @@ title-endpoint: 'Get the Total Cash Price for a Used Car'
 spec: price_tco
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip'
+dropdown-link: 'v1/api/tco/usedtotalcashpricebystyleidandzip/{style ID}/{zipcode}'
 
 
 level: 4
 description_edpoint: 'Get the Total Cash Price for a Used Car'
 title_md : Response format
-number: 4
+number: 3
 
 ---
 

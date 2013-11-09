@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| makeid     | The car make ID                       | 		             | 		         | Yes      |
+| makeid     | The car make ID | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/)	| | Yes |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
