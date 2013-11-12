@@ -23,8 +23,11 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {make}     | The car make | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | | Yes |
+| {model}    | The car model | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | | Yes |
+| {year}     | The car year                          |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
-| sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). Default: created:DESC                       | json              | json          | No	    |
-| pagenum    | The page number of the paginated result. Default: 1       | json              | json          | No      |
-| pagesize   | The maximum number of returned reviews. Default: 10       | json              | json          | No      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
+| sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). | | created:DESC  | No |
+| pagenum    | The page number of the paginated result  | | 1          | No      |
+| pagesize   | The maximum number of returned reviews   | | 10        | No      |

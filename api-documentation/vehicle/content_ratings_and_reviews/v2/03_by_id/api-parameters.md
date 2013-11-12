@@ -23,8 +23,9 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {review ID} | The review ID                        |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |
-| sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). Default: created:DESC                       | json              | json          | No	    |
-| pagenum    | The page number of the paginated result. Default: 1       | json              | json          | No      |
-| pagesize   | The maximum number of returned reviews. Default: 10       | json              | json          | No      |
+| sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). | | created:DESC | No |
+| pagenum    | The page number of the paginated result  | | 1          | No      |
+| pagesize   | The maximum number of returned reviews   | | 10        | No      |
