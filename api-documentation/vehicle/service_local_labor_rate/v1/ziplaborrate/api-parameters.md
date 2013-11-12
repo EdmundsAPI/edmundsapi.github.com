@@ -9,7 +9,7 @@ title-endpoint: 'Get Local Labor Rate in Dollars per Hour by Zipcode'
 spec: service_local_labor_rate
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/ziplaborrate'
+dropdown-link: 'v1/api/maintenance/ziplaborrate/{zip code}'
 
 
 level: 4
@@ -23,5 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {zip code} | The ZIP code                          |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | vehicle api key                       |                   |               | Yes      |

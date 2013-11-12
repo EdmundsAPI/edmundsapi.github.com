@@ -22,6 +22,7 @@ number: 2
 ###Parameters
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+|:-----------|:--------------------------------------|:------------------|:--------------|:---------|
+| {id}       | The recall ID                         |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

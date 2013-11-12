@@ -19,3 +19,6 @@ overview: page_version
 <div class="info-message">
  Get the local labor rate in a specific zip code. The returned data will be in dollar per hour.
 </div>
+
+###Endpoints
+* [Get local labor rate by ZIP code](/api-documentation/vehicle/service_local_labor_rate/v1/ziplaborrate/api-description.html)

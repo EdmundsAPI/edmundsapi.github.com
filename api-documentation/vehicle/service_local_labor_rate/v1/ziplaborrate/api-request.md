@@ -9,7 +9,7 @@ title-endpoint: 'Get Local Labor Rate in Dollars per Hour by Zipcode'
 spec: service_local_labor_rate
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/maintenance/ziplaborrate'
+dropdown-link: 'v1/api/maintenance/ziplaborrate/{zip code}'
 
 
 level: 4
@@ -21,7 +21,7 @@ number: 4
 
 ###Sample Request
 
-Get the local labor rate (i.e. $$ per hour) in a specific area.
+Get the local labor rate (in $ per hour) for a specific area (the ZIP code 90019).
 
 ### URL
 
