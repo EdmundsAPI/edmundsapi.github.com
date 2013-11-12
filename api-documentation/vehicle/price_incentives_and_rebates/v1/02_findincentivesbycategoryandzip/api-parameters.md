@@ -22,8 +22,8 @@ number: 2
 ###Parameters
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| category	 | Vehicle category (see API Overview)	 | 					 | 	             | Yes       |
-| zipcode    | The area zip de						 | 					 |               | Yes       |
+|:-----------|:--------------------------------------|:------------------|:--------------|:---------|
+| category	 | Vehicle category | (see [Vehicle API Overview](/api-documentation/vehicle/#static_datasets)) | | Yes |
+| zipcode    | The area ZIP code					 | 					 |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

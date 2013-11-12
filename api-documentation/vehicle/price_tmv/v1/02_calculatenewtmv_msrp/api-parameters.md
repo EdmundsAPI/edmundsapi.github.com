@@ -23,10 +23,12 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+| {make}     | The vehicle make 					 | See the [Spec: Make](/api-documentation/vehicle/spec_make/v2/) resource | | Yes |
+| {year}	 | The vehicle year 					 | 					 | 				 | Yes		|
 | msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
 | zip        | Zip code		                         |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
 | color      | vehicle color                         |                   |               | No       |
 | model	     | vehicle model nam                     |                   |               | No       |
 | vehicleStyle | vehicle api key                     |                   |               | No       |

@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| modelyearid | Car model year ID							 | 					 | 	             | Yes       |
-| zipcode    | The area zip de						 | 					 |               | Yes       |
+| modelyearid | Car model year ID					 | See the [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) resource | | Yes |
+| zipcode    | The area ZIP code					 | 					 |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |

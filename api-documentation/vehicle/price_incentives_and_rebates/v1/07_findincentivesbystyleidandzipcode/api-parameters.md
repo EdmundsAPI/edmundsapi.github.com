@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| styleid	 | Car style ID							 | 					 | 	             | Yes       |
-| zipcode    | The area zip de						 | 					 |               | Yes       |
+| styleid    | Car style ID	| See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource | | Yes |
+| zipcode    | The area ZIP code                     |                   |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
