@@ -46,11 +46,11 @@ number: 3
 	            "endDate": {date}
 	        }
 	    },
-	    "furtherAdditions": {arra},
-	    "furtherRemovals": {arra},
-	    "requiredItems": {arra},
-	    "includedItems": {arra},
-	    "excludedItems": {arra},
+	    "furtherAdditions": {array},
+	    "furtherRemovals": {array},
+	    "requiredItems": {array},
+	    "includedItems": {array},
+	    "excludedItems": {array},
 	    "name": {string},
 	    "tmv": {object}
 	}
