@@ -335,12 +335,10 @@ footer.footerLayout .nav > li > a {
 
 .sectionContent h1,
 .sectionContent h2,
-.sectionContent h3,
-.sectionContent h4,
-.sectionContent h5,
-.sectionContent h6 {
+.sectionContent h3 {
 	font-family: 'Oswald400', Arial, sans-serif;
 }
+
 .sectionContent {
 	margin-left: 0;
 }
