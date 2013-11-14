@@ -106,5 +106,5 @@ When you display our True Cost to Own® (TCO®) data for any vehicles, we ask fo
 
 You can also send your users to the following URL for more information on the True Cost to Own value: 
 
-*http://www.edmunds.com/{make}/{model}/{year}/tco.html?style={style ID}&zip={zipcode}*
+> http://www.edmunds.com/{make}/{model}/{year}/tco.html?style={style ID}&zip={zipcode}
 

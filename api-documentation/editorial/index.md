@@ -20,15 +20,15 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get the latest *five* articles in the ***car news*** category
 
-	https://api.edmunds.com/v1/content/?category=car+news&limit=0%2C5&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/content/?category=car+news&limit=0%2C5&fmt=json&api_key={your API key}
 
 #### Example 2: Get the latest *ten* articles on ***Lexus RX-350 2013***
 
-	https://api.edmunds.com/v1/content/?make=lexus&model=rx-350&year=2013&limit=0%2C10&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/content/?make=lexus&model=rx-350&year=2013&limit=0%2C10&fmt=json&api_key={your API key}
 
 #### Example 3: Get the *Edmunds Editor Review* of the ***BMW X5 2013***
 
-	https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
 
 ### Special Requirements
 

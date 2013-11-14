@@ -12,16 +12,17 @@ level: 1
 
 The Vehicle API is comprised of a collection of resources that provide access to an array of automotive datasets _related directly to the automotive vehicle_. First, you need to know the _five components_ that fully describe an **automotive vehicle**: 
 
-	Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style
+> Vehicle Make –> Vehicle Model –> Vehicle Model Year –> Vehicle Trim –> Vehicle Style
 
 For example: 
 
-	Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation
+> Honda Accord 2013 EX 2.4-liter 4-cylinder CVT Automatic w/Navigation
 
 Would match to:
 
-	(Honda) –> (Accord) –> (2013) –> (EX) –> (2.4-liter 4-cylinder CVT Automatic w/Navigation)
-	(make) –> (model) –> (model year) –> (trim) –> (style)
+> **(Honda)** –> (Accord) –> **(2013)**       –> (EX)   –> **(2.4-liter 4-cylinder CVT Automatic w/Navigation)**
+>
+> **(make)**  –> (model)  –> **(model year)** –> (trim) –> **(style)**
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
@@ -33,39 +34,39 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get a list of all car makes
 
-	https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={your API key}
 
 #### Example 2: Get a list of all new car makes
 
-	https://api.edmunds.com/api/vehicle/v2/makes?state=new&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/makes?state=new&fmt=json&api_key={your API key}
 
 #### Example 3: Get model, model year, style and trim data for Honda
 
-	https://api.edmunds.com/api/vehicle/v2/honda/models?fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/honda/models?fmt=json&api_key={your API key}
 
 #### Example 4: Get model, model year, style and trim data for 2001 Honda
 
-	https://api.edmunds.com/api/vehicle/v2/honda/models?year=2001&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/honda/models?year=2001&fmt=json&api_key={your API key}
 
 #### Example 5: Get the total number of all new Acura models in the Edmunds data
 
-	https://api.edmunds.com/api/vehicle/v2/acura/models/count?state=new&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/acura/models/count?state=new&fmt=json&api_key={your API key}
 
 #### Example 6: Get a list of styles for 2001 Honda Accord
 
-	https://api.edmunds.com/api/vehicle/v2/honda/accord/2001?fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v2/honda/accord/2001?fmt=json&api_key={your API key}
 
 #### Example 7: Get a list of Maintenance Schedules for 2001 Honda Accord
 
-	https://api.edmunds.com/v1/api/maintenance/actionrepository/findbymodelyearid?modelyearid=100537293&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/maintenance/actionrepository/findbymodelyearid?modelyearid=100537293&fmt=json&api_key={your API key}
 
 #### Example 8: Get all photos for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A)
 
-	https://api.edmunds.com/v1/api/vehiclephoto/service/findphotosbystyleid?styleId=100001210&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/vehiclephoto/service/findphotosbystyleid?styleId=100001210&fmt=json&api_key={your API key}
 
 #### Example 9: Get the TMV® for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A) w/ Outstanding condition and 25,000 miles in the 90069 area
 
-	https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
 ### Static Datasets
 

@@ -22,15 +22,15 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get a list of all dealerships within 10 miles from 90019 that sell or service Hondas
 
-	https://api.edmunds.com/v1/api/dealer?zipcode=90019&makeName=honda&radius=10&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/dealer?zipcode=90019&makeName=honda&radius=10&fmt=json&api_key={your API key}
 
 #### Example 2: Get a dealership 5 most recent sales and service consumer ratings and reviews by the dealer ID
 
-	https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=26643&limit=0%2C5&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=26643&limit=0%2C5&fmt=json&api_key={your API key}
 
 #### Example 3: Get model, model year, style and trim data for Honda
 
-	https://api.edmunds.com/v1/api/drrrepository/getdrrbyzipcodeandmake?zipcode=90019&make=bmw&limit=0%2C5&fmt=json&api_key={your API key}
+> https://api.edmunds.com/v1/api/drrrepository/getdrrbyzipcodeandmake?zipcode=90019&make=bmw&limit=0%2C5&fmt=json&api_key={your API key}
 
 ### API Uses
 

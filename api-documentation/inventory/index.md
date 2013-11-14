@@ -40,11 +40,11 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get a listed call for sale by its VIN
 
-	https://api.edmunds.com/api/inventory/v1/vin?vin={VIN}&fmt=json
+> https://api.edmunds.com/api/inventory/v1/vin?vin={VIN}&fmt=json
 
 #### Example 2: Get available *NEW* cars for sale at a specific dealership
 
-	https://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
+> https://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
 
 ### API Uses
 

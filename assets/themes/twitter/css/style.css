@@ -63,6 +63,13 @@ table ol, table p {
 h3 {
 	line-height:1.3;
 }
+blockquote {
+	border:0;
+	padding:20px;
+	background:#333 !important;
+	color: #fff;
+	border-radius:4px
+}
 body, html {
 	height:100%;
 	font-family:Arial, sans-serif;
