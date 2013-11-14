@@ -17,5 +17,5 @@ overview: page_version
 ---
 
 <div class="info-message">
-	The maintenance notes for a particular vehicle. You will need to provide the vehicle's <b>style ID</b> in order to pull up the notes.
+	The maintenance notes for a particular vehicle as provided by the car manufacturers. You will need to provide the vehicle's <b>style ID</b> in order to pull up the notes.
 </div>

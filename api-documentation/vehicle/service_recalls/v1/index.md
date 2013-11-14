@@ -17,5 +17,5 @@ overview: page_version
 ---
 
 <div class="info-message">
-	The manufacturer recalls are available in this resource by a car's <b>model year ID</b> or by the recall ID.
+	The car manufacturers' recalls are available in this resource. You can look up the data by a car's <b>model year ID</b> or by the recall ID.
 </div>

@@ -71,37 +71,28 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 Some of our datasets are static and don't change often (if at all.) Here's the **most common** static datasets you will need to make API calls and understand API response. More specific datasets (e.g. equipment types, option types, etc) are mentioned in the resources for which they're relevant.
 
-#### Vehicle Types
-
-|				|				|				|				|					|
+| Vehicle Types				|				|				|				|					|
 |:--------------|:--------------|:--------------|:--------------|:------------------|
 | &bull; Car	| &bull; Truck	| &bull; SUV	| &bull; Van	| &bull; Minivan	|
 
-#### Vehicle Categories (aka submodels)
 
-|						|							|								|							|
+| Vehicle Categories (aka submodels)						|							|								|							|
 |:----------------------|:--------------------------|:------------------------------|:--------------------------|
 | &bull; 4dr Hatchback	| &bull; 2dr Hatchback		| &bull; 2dr SUV 				| &bull; 4dr SUV			|
 | &bull; Cargo Minivan	| &bull; Cargo Van			| &bull; Convertible			| &bull; Convertible SUV	|
 | &bull; Coup			| &bull; Crew Cab Pickup	| &bull; Extended Cab Pickup 	| &bull; Passenger Minivan	|
 | &bull; Passenger Van 	| &bull; Regular Cab Pickup | &bull; Sedan				 	| &bull; Wagon				|
 
-#### Vehicle Sizes
-
-|					|					|				|
+| Vehicle Sizes					|					|				|
 |:------------------|:------------------|:--------------|
 | &bull; Compact	| &bull; Midsize	| &bull; Large	|
 
-#### Fuel Types
-
-|					|							|					|
+| Fuel Types					|							|					|
 |:------------------|:--------------------------|:------------------|
 | &bull; Electric	| &bull; Natural-gas-cng	| &bull; gas		|
 | &bull; hybrid		| &bull; Flex-fuel-ffv		| &bull; diesel		|
-
-#### Driven Wheels
                                  
-|							|							|
+| Driven Wheels							|							|
 |:--------------------------|:--------------------------|
 | &bull; all-wheel-drive	| &bull; four-wheel-drive	|
 | &bull; front-wheel-drive	| &bull; rear-wheel-drive	|

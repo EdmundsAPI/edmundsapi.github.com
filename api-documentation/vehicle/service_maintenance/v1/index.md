@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 <div class="info-message">
-    The maintenance schedule of vehicles. This resource allows you to look up the entire maintenance schedule for a particular vehicle's <strong>model year ID</strong> and by the maintenance action ID.
+    The maintenance schedule of vehicles as provided by the car manufacturers. This resource allows you to look up the entire maintenance schedule for a particular vehicle's <strong>model year ID</strong> and by the maintenance action ID.
 </div>
 
 ### Frequency IDs
