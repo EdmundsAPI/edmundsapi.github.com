@@ -29,7 +29,7 @@ Exploring a new API can be daunting. To make using our API enjoyable, easy and f
 
 In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the car **Model Year ID** or the car **Style ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
-	Car Make –> Car Model –> *Car Model Year* –> Car Trim –> *Car Style*
+> Car Make *&rarr;* Car Model *&rarr;* Car Model Year *&rarr;* Car Trim *&rarr;* Car Style
 
 In the _Useful API Calls_ section below, we'll show you how to get both IDs in one API call!
 
@@ -114,9 +114,9 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 ### URI Examples
 
-* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**_
-* _**http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**callback**=**myFunction**_
-* _**https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state**=**new**&**view**=**full**_
+> **https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**
+> **http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**callback**=**myFunction**
+> **https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state**=**new**&**view**=**full**
 
 ### Rate Limit
 
@@ -168,7 +168,7 @@ As mentioned above, car _style IDs_ and _Model Year IDs_ are important to retrie
 
 To get the _Model Year IDs_ for all _new_ makes, use the following API call:
 	
-	http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api_key={your API key}
+> http://api.edmunds.com/api/vehicle/v2/makes?fmt=json&state=new&api_key={your API key}
 	
 In the **response** of that call, you will find the following object:
 
@@ -181,7 +181,7 @@ The **id** key in this object is the _Model Year ID_.
 
 To get the _style IDs_ for a specific car make, let's use Lexus as an example, use the following API call:
 
-	http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key={your vehicle api key}
+> http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api_key={your vehicle api key}
 	
 In the **response** of that call, you will find the following object:
 

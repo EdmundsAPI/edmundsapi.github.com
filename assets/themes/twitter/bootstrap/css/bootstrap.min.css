@@ -678,7 +678,7 @@ blockquote {
 }
 blockquote p {
 	margin-bottom:0;
-	font-size:17.5px;
+	font-size:14px;
 	font-weight:300;
 	line-height:1.25
 }
@@ -715,7 +715,7 @@ address {
 	font-style:normal;
 	line-height:20px
 }
-code, pre {
+code, pre, blockquote {
 	padding:2px 9px;
 	font-family:Monaco, Menlo, Consolas, "Courier New", monospace;
 	font-size:15px;

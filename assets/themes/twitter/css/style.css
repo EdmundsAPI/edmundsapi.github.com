@@ -67,8 +67,13 @@ blockquote {
 	border:0;
 	padding:20px;
 	background:#333 !important;
-	color: #fff;
-	border-radius:4px
+	color: #fff !important;
+}
+blockquote strong {
+	color: yellow;
+}
+blockquote em {
+	color: paleGreen;
 }
 body, html {
 	height:100%;
