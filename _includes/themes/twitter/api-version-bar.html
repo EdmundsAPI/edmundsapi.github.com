@@ -11,7 +11,7 @@
 						{% comment %}<!-- Tabs of the versions -->{% endcomment %}
 
 						{% if page.amount_version == 1 %}
-							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
+							<a class="tab active" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/{{ page.version }}/">{{ page.version }}</a>
 						{% elsif page.amount_version == 2 %}
 							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
 							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>

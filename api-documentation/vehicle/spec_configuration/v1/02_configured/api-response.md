@@ -41,17 +41,19 @@ number: 3
 		"tmv": {object}
 	}
 
-| Property      | Description                         					| Visibility                |
-|:--------------|:------------------------------------------------------|:------------------------- |
-| id		    				| The option ID											| Edmunds, Partners, Public |
-| name		    				| The option name										| Edmunds, Partners, Public |
-| equipmentType 				| Equipment type. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/)	| Edmunds, Partners, Public |
-| availability  				| Option availability									| Edmunds, Partners, Public |
-| manufactureOptionName		    | Manufacturer name										| Edmunds, Partners, Public |
-| manufactureOptionCode			| Manufacturer code										| Edmunds, Partners, Public |
-| equipment	    				| Equipment objects. See [Spec: Equipment](/api-documentation/vehicle/spec_equipment/v2/) | Edmunds, Partners, Public |
-| category	    				| The option category (see overview)					| Edmunds, Partners, Public |
-| make		    | The car make details (id, name and nicename)			| Edmunds, Partners, Public |
-| model		    | The car model details (id, name and nicename)			| Edmunds, Partners, Public |
-| year		    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
+| Property      				| Description                         					| Visibility                |
+|:------------------------------|:------------------------------------------------------|:------------------------- |
+| zipCode	    				| The ZIP Code											| Edmunds, Partners, Public |
+| styleId	    				| The style ID											| Edmunds, Partners, Public |
+| colorId	    				| The color ID											| Edmunds, Partners, Public |
+| currentOptions	    		| List of currently selected options                    | Edmunds, Partners, Public |
+| selectedOption	    		| The ID of selected option                             | Edmunds, Partners, Public |
+| deselectedOption	    		| The ID of deselected option                           | Edmunds, Partners, Public |
+| furtherAdditions		    	| List of options to be added							| Edmunds, Partners, Public |
+| furtherRemovals				| List of options to be removed							| Edmunds, Partners, Public |
+| requiredItems	    			| List of options that are required						| Edmunds, Partners, Public |
+| includedItems	    			| List of options to be included						| Edmunds, Partners, Public |
+| excludedItems	    			| List of options to be excluded						| Edmunds, Partners, Public |
+| name			    			| The object contains mapping of an option ID to an option name  | Edmunds, Partners, Public |
+| tmv			    			| TMV® adjusted for options. See [TMV® pricing](/api-documentation/vehicle/price_tmv/v1/)					| Edmunds, Partners, Public |
 
