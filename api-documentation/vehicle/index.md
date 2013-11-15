@@ -22,7 +22,7 @@ Would match to:
 
 > **(Honda)** *&rarr;* (Accord) *&rarr;* **(2013)**       *&rarr;* (EX)   *&rarr;* **(2.4-liter 4-cylinder CVT Automatic w/Navigation)**
 >
-> **(make)**  *&rarr;* (model)  *&rarr;* **(model year)** *&rarr;* (trim) *&rarr;* **(style)**
+> **(make)**  *&rarr;* (model)  *&rarr;* **(year)** *&rarr;* (trim) *&rarr;* **(style)**
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
