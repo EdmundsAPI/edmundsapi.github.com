@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| styleId    | The car style ID			             | See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource | | Yes |
+| styleid    | The car style ID			             | See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource | | Yes |
 | condition  | The car condition			         | (see overview)	 |               | Yes      |
 | mileage    | The car mileage   			         |               	 |               | Yes      |
 | zip        | The zip code of the area  	         |               	 |               | Yes      |
