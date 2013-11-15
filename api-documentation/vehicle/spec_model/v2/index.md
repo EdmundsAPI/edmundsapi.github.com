@@ -30,14 +30,14 @@ These three endpoints provide all the necessary data points.
 
 #### Example 1: Get model year and style details for all Lexus 1995 models
 	
-	https://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&year=1995&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&year=1995&api_key={api key}
 	
 #### Example 2: Get model year and style details for all ***used*** Honda Accords
 
-	https://api.edmunds.com/api/vehicle/v2/honda/accord?fmt=json&state=used&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/honda/accord?fmt=json&state=used&api_key={api key}
 	
 #### Example 3: Get the total number of car models for Acura that are listed as ***new***
 
-	https://api.edmunds.com/api/vehicle/v2/acura/models/count?fmt=json&state=new&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/acura/models/count?fmt=json&state=new&api_key={api key}
 
 

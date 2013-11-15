@@ -31,14 +31,14 @@ These three endpoints provide all the necessary data points.
 
 #### Example 1: Get model years and style details for all 2011 Lexus RX-350s
 	
-	https://api.edmunds.com/api/vehicle/v2/lexus/rx350/years?fmt=json&year=2011&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/lexus/rx350/years?fmt=json&year=2011&api_key={api key}
 	
 #### Example 2: Get style details for all 2009 Honda Accords
 
-	https://api.edmunds.com/api/vehicle/v2/honda/accord/2009?fmt=json&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/honda/accord/2009?fmt=json&api_key={api key}
 	
 #### Example 3: Get the total number of car model years for Acura MDXs that are listed as ***new***
 
-	https://api.edmunds.com/api/vehicle/v2/acura/mdx/years/count?fmt=json&state=new&api_key={api key}
+> https://api.edmunds.com/api/vehicle/v2/acura/mdx/years/count?fmt=json&state=new&api_key={api key}
 
 
