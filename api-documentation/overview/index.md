@@ -114,11 +114,11 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 ### URI Examples
 
-> **https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**
+> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334
 
-> **http**://api.edmunds.com/**api/vehicle/v2/lexus/models**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**callback**=**myFunction**
+> http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api\_key=94tyghf85jdhshwge334&callback=myFunction
 
-> **https**://api.edmunds.com/**api/vehicle/v2/makes**?fmt=**json**&api\_key=**94tyghf85jdhshwge334**&**state**=**new**&**view**=**full**
+> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&state=new&view=full
 
 ### Rate Limit
 
