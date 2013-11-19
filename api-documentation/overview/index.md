@@ -12,12 +12,14 @@ weight: 1
 
 **Welcome!** To get you started, let's go over the automotive datasets we've made available for you through the Edmunds API. Once you [register for a key](http://edmunds.mashery.com/member/register), you will be able to access the following datasets:
 
-* **Vehicle Specs**: Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, etc.
-* **Vehicle Pricing**: Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, etc.
-* **Vehicle Service**: Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, etc.
-* **Vehicle Content**: Consumer reviews, editorial reviews, editorial articles, etc.
-* **Vehicle Media**: Vehicle photos.
-* **Dealership Content**: Dealership info, consumer reviews, list of cars for sale, dealer pricing, etc.
+| Dataset           | Description                                                                                               |
+|:------------------|:----------------------------------------------------------------------------------------------------------|
+| Vehicle Specs     | Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, etc.               |
+| Vehicle Pricing   | Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, etc. |
+| Vehicle Service   | Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, etc.         |
+| Vehicle Content   | Consumer reviews, editorial reviews, editorial articles, etc.                                             |
+| Vehicle Media     | Vehicle photos                                                                                            |
+| Dealership Content| Dealership info, consumer reviews, list of cars for sale, dealer pricing, etc.                            |
 
 These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
 
@@ -25,7 +27,7 @@ This overview covers the core concepts that you need to know before you could fu
 
 ### Data Hierarchy
 
-Exploring a new API can be daunting. To make using our API enjoyable, easy and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
+Exploring a new API can be daunting. To make using our API enjoyable, easy, and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
 
 In order to retrieve _most of the datasets_ we offer in the API, you will almost always need the car **Model Year ID** or the car **Style ID**. To get these IDs, you need to know at _least the car make_ you're interested in:
 
@@ -33,10 +35,12 @@ In order to retrieve _most of the datasets_ we offer in the API, you will almost
 
 In the _Useful API Calls_ section below, we'll show you how to get both IDs in one API call!
 
-* **Car Make:** It's either the name of the car's manufacturer or, if the manufacturer has more than one operating unit, the name of that unit.
-* **Car Model:** A specific vehicle brand identified by a name or number (and which is usually further classified by trim or style level).
-* **Car Model Year:** For a vehicle model, the calendar year designation assigned by the manufacturer to the annual version of that model.
-* **Car Style:** A style is the specific version of a particular model. Each style offers different levels of equipment and a unique price point. Manufacturers have their own way of determining styles and these are not necessarily comparable across models.
+| Name           | Description                                                                                               |
+|:---------------|:----------------------------------------------------------------------------------------------------------|
+| Car Make       | It's either the name of the car's manufacturer or, if the manufacturer has more than one operating unit, the name of that unit |
+| Car Model      | A specific vehicle brand identified by a name or number (and which is usually further classified by trim or style level) |
+| Car Model Year | For a vehicle model, the calendar year designation assigned by the manufacturer to the annual version of that model |
+| Car Style      | A style is the specific version of a particular model. Each style offers different levels of equipment and a unique price point. Manufacturers have their own way of determining styles and these are not necessarily comparable across models. |
 
 [Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/).
 
