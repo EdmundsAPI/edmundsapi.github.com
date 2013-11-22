@@ -24,8 +24,8 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | {vin} 	 | The new vehicle VIN 					 | 					 | 				 | Yes		|
-| msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
-| zip        | Zip code		                         |                   |               | Yes      |
-| color      | Vehicle color	                     | black, white, blue, etc.  |       | No       |
+| msrp       | Vehicle MSRP in dollars               | e.g. 33000        |               | Yes      |
+| zip        | Zip code		                         | e.g. 90404        |               | Yes      |
+| color      | Vehicle color	                     | e.g. black, white, blue, etc. |   | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |
