@@ -20,6 +20,14 @@ overview: page_version
  This resource provides access to vehicle options and colors. Please note that both options and colors <em><strong>are considered a vehicle equipment</strong></em>. For vehicle options, the data returned will always include an array of <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment</a> that exist within each option. The <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment format for colors</a> is different from the typical equipment format. <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">Learn more</a>
 </div>
 
+### Endpoints
+
+* [Get the Vehicle Options for a Particular Vehicle Style](/api-documentation/vehicle/spec_colors_and_options/v2/01_options_by_style/api-description.html)
+* [Get the Vehicle Option Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v2/02_options_id/api-description.html)
+* [Get the Vehicle Colors for a Particular Vehicle Style](/api-documentation/vehicle/spec_colors_and_options/v2/03_colors_by_style/api-description.html)
+* [Get the Vehicle Color Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v2/04_color_id/api-description.html)
+
+
 ### Option Categories
 
 Option categories are always one of these values:

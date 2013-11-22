@@ -20,3 +20,7 @@ overview: page_version
  This resource allows you to configure vehicles. The first endpoint gives you the default configuration of a vehicle and the second endpoint gives you the ability to get exclusions, inclusions and required options for this vehicle based on the current configuration.
 </div>
 
+### Endpoints
+
+* [Get the Default Configuration for Vehicle with Style ID and ZIP Code](/api-documentation/vehicle/spec_configuration/v1/01_by_style/api-description.html)
+* [Get a Configured Vehicle with Options by the Style ID and ZIP code](/api-documentation/vehicle/spec_configuration/v1/02_configured/api-description.html)

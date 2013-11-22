@@ -20,6 +20,13 @@ overview: page_version
  This resource provides engine and transmission details for a specific vehicle. Both engine and transmission are in essence a vehicle <a href="{{ PATH }}/api-documentation/vehicle/spec_equipment/v2/">equipment</a>.
 </div>
 
+### Endpoints
+
+* [Get the Engine Detail by ID](/api-documentation/vehicle/spec_engine_and_transmission/v2/01_engine_id/api-description.html)
+* [Get the Vehicle Engines for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/02_engines_by_style/api-description.html)
+* [Get Transmission Details by ID](/api-documentation/vehicle/spec_engine_and_transmission/v2/03_transmission_id/api-description.html)
+* [Get the Vehicle Transmissions for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/04_transmissions_by_style/api-description.html)
+
 ### Engine Details
 
 	{

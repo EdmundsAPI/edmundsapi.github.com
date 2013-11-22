@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get the default configuration for vehicle with style ID and Zip Code
+Get the default configuration for vehicle with style ID and ZIP Code
 
 ### URL
 

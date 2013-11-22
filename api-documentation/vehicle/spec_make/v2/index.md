@@ -22,13 +22,17 @@ A vehicle <i>make</i> is either the name of its manufacturer or, if the manufact
 
 </div>
 
-1. **Get Total Count of Car Makes**: Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
+###Endpoints
 
-2. **Get Details on a Specific Car Make**: Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
+* [**Get Total Count of Car Makes**](/api-documentation/vehicle/spec_make/v2/03_makes_count/api-description.html): Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
 
-3. **Get a List of Car Makes**: You can get the entire list of car makes or use some basic filters to return the array of car makes you're interested in.
+* [**Get Details on a Specific Car Make**](/api-documentation/vehicle/spec_make/v2/02_make_details/api-description.html): Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
 
-These three endpoints provide all the necessary data points.
+* [**Get a List of Car Makes**](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html): You can get the entire list of car makes or use some basic filters to return the array of car makes you're interested in.
+
+These three endpoints provide all the necessary data.
+
+###Examples
 
 #### Example 1: Get relevant information for all car makes that were active in 1995
 

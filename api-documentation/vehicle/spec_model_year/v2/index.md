@@ -20,14 +20,17 @@ overview: page_version
  A vehicle <em>model year</em> for a vehicle model is the <em>calendar year</em> designation assigned by the manufacturer to the annual version of that model. You can get a list of car model years for a specific car make and model via the following endpoints (accessible from the drop-down menu above):
 </div>
 
-1. **Get a List of Car Model Years for a Specific Car Make/Model**: You can get the entire list of car model years or use some basic filters to return the array of car model years you're interested in for a specific car make/model.
+###Endpoints
 
-2. **Get Details on a Specific Car Make/Model/Year**: Returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
+* [**Get a List of Car Model Years for a Specific Car Make/Model**](/api-documentation/vehicle/spec_model_year/v2/03_list_of_years/api-description.html): You can get the entire list of car model years or use some basic filters to return the array of car model years you're interested in for a specific car make/model.
 
-3. **Get Total Count of Model Years for a Car Make/Model**: Get the total number of model years of a specific car make/model. You can use filters to get subtotals (e.g. give me the total number of **used** **1999** model years for a car make/model).
+* [**Get Details on a Specific Car Make/Model/Year**](/api-documentation/vehicle/spec_model_year/v2/02_year_details/api-description.html): Returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
 
+* [**Get Total Count of Model Years for a Car Make/Model**](/api-documentation/vehicle/spec_model_year/v2/03_years_count/api-description.html): Get the total number of model years of a specific car make/model. You can use filters to get subtotals (e.g. give me the total number of **used** **1999** model years for a car make/model).
 
 These three endpoints provide all the necessary data points.
+
+###Examples
 
 #### Example 1: Get model years and style details for all 2011 Lexus RX-350s
 	

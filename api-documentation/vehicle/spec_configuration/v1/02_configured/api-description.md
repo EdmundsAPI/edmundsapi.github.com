@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get a **configured vehicle** with options by the style ID and zip code. This endpoint helps **resolve conflicts** between two or more options should any exists.
+Get a **configured vehicle** with options by the style ID and ZIP code. This endpoint helps **resolve conflicts** between two or more options should any exists.
 
 For example, let's say you you want to configure a **2013 BMW 328i Sedan (2.0L 4-cyl. Turbo 6-speed Manual)**, which has a style ID of **200423469**. And let's say you're in the Santa Monica, CA (zip code is **90404**).
 

@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Spec: Make'
+title : 'Get list of car makes'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 

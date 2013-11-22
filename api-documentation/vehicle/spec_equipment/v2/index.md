@@ -22,6 +22,11 @@ overview: page_version
 <p><i><b>Please note</b> that this results for vehicles that are 2000 or older will be available in mid September, 2013.</i></p>
 </div>
 
+### Endpoints
+
+* [Get Vehicle Equipment for a Car Style](/api-documentation/vehicle/spec_equipment/v2/01_by_style/api-description.html)
+* [Get the Equipment Details by the Equipment ID](/api-documentation/vehicle/spec_equipment/v2/02_by_id/api-description.html)
+
 ### Equipment Response Formats
 
 This resource returns a list of equipment that comes either standard or optional with a car. The response describes the equipment in **four different ways**:
