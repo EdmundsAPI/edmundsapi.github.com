@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| {vin} 	 | The vehicle VIN 						 | 					 | 				 | Yes		|
+| {vin} 	 | The new vehicle VIN 					 | 					 | 				 | Yes		|
 | msrp       | Vehicle MSRP in dollars               | 	                 |               | Yes      |
 | zip        | Zip code		                         |                   |               | Yes      |
 | color      | Vehicle color	                     | black, white, blue, etc.  |       | No       |

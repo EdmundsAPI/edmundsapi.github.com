@@ -23,7 +23,7 @@ number: 3
 
 	{
 	    "pricing": {
-			"tmvUsd": {integer},
+		    "tmvUsd": {integer},
 		    "dealerCashUsd": {float}
 		    "customerIncentiveUsd": {float}
 		    "destinationFeeUsd": {float}
