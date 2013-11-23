@@ -19,3 +19,8 @@ overview: page_version
 <div class="info-message">
 	The car manufacturers' recalls are available in this resource. You can look up the data by a car's <b>model year ID</b> or by the recall ID.
 </div>
+
+### Endpoints
+
+* [Get Recall Details by ID](/api-documentation/vehicle/service_recalls/v1/01_recall/api-description.html)
+* [Get List of Manufacturer Recalls for Vehicles with Model Year ID](/api-documentation/vehicle/service_recalls/v1/02_recallrepository/findbymodelyearid/api-description.html)

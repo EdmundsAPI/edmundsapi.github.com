@@ -20,6 +20,12 @@ overview: page_version
     The maintenance schedule of vehicles as provided by the car manufacturers. This resource allows you to look up the entire maintenance schedule for a particular vehicle's <strong>model year ID</strong> and by the maintenance action ID.
 </div>
 
+### Endpoints
+
+* [Get Maintenance Details with ID](/api-documentation/vehicle/service_maintenance/v1/01_action/api-description.html)
+* [Get Maintenance Schedule for a Vehicle with Model Year ID](/api-documentation/vehicle/service_maintenance/v1/02_actionrepository/findbymodelyearid/api-description.html)
+* [Get a List of Model Year IDs with Available Maintenance Schedule Info](/api-documentation/vehicle/service_maintenance/v1/02_actionrepository/findmodelyearidswithmaint/api-description.html)
+
 ### Frequency IDs
 
 Each maintenance action is assigned a frequency ID that describe how often it needs to take place. Here's a list of all available frequency IDs and their descriptions:

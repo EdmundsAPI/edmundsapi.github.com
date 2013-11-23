@@ -19,3 +19,7 @@ overview: page_version
 <div class="info-message">
 	The maintenance notes for a particular vehicle as provided by the car manufacturers. You will need to provide the vehicle's <b>style ID</b> in order to pull up the notes.
 </div>
+
+### Endpoint
+
+* [Get Maintenance Notes About a Specific Vehicle by its Style ID](/api-documentation/vehicle/service_notes/v1/stylesnotes/api-description.html)
