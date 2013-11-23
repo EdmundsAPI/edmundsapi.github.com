@@ -24,6 +24,15 @@ Knowing the TMV® price helps buyers negotiate the price of a new car as well as
 
 TMV® is essential information for shoppers because cars sell at very different prices depending on their availability and popularity. Knowing TMV® allows a shopper to make an offer that a dealer will immediately recognize as reasonable. Thus, negotiations will take less time and be more relaxed.
 
+### Endpoints
+
+* [Get TMV® for a New Car by Style ID and ZIP Code](/api-documentation/vehicle/price_tmv/v1/01_calculatenewtmv/api-description.html)
+* [Get TMV® for a Vehicle Make by MSRP and Area](/api-documentation/vehicle/price_tmv/v1/02_calculatenewtmv_msrp/api-description.html)
+* [Get TMV® by New Car VIN, MSRP, and ZIP Code](/api-documentation/vehicle/price_tmv/v1/03_calculatenewtmv_vin/api-description.html)
+* [Get TMV® for a Used Car by Style ID and More](/api-documentation/vehicle/price_tmv/v1/04_calculateusedtmv/api-description.html)
+* [Get TMV® for a Used Vehicle with Typically Equipped Options](/api-documentation/vehicle/price_tmv/v1/05_calculatetypicallyequippedusedtmv/api-description.html)
+* [Get TMV® for a Certified Vehicle](/api-documentation/vehicle/price_tmv/v1/06_findcertifiedpriceforstyle/api-description.html)
+
 ### Special Requirement
 
 When you display our True Market Value® (TMV®) prices for any new or used vehicles, we ask for the following:

@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get incentives and rebates information for a car model year ID and zip code.
+Get incentives and rebates information for a car model year ID and ZIP code.
 
 ### URL
 

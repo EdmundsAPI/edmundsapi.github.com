@@ -20,9 +20,19 @@ overview: page_version
 Edmunds.com's True Cost to Own® (TCO®) is proprietary data that helps you estimate the <b>total five-year cost</b> of buying and owning a vehicle — including some items you may not have taken into consideration. A benefit of using our TCO® API is that you can easily compare the five-year totals for different vehicles and make a more informed choice.
 </div>
 
-The [components of TCO®](/api-documentation/pricing_tco_cats/v1/) are depreciation, interest on financing, taxes and fees, insurance premiums, fuel, maintenance, repairs and any federal tax credit that may be available. In order to estimate certain mileage-dependent costs, we assume that vehicles will be driven **15,000 miles per year**. For a used vehicle, we calculate the years the vehicle has been driven using the nominal difference between the current calendar year and the vehicle's model year, and assume that it was driven 15,000 miles during each of those years.
+The [components of TCO®](/api-documentation/vehicle/price_tco_cats/v1/) are depreciation, interest on financing, taxes and fees, insurance premiums, fuel, maintenance, repairs and any federal tax credit that may be available. In order to estimate certain mileage-dependent costs, we assume that vehicles will be driven **15,000 miles per year**. For a used vehicle, we calculate the years the vehicle has been driven using the nominal difference between the current calendar year and the vehicle's model year, and assume that it was driven 15,000 miles during each of those years.
 
 Note that TCO® is a comparative tool, not a predictive tool — your actual five-year cost of owning a particular vehicle will vary depending on your personal circumstances, such as your driving history and the number of miles you drive.
+
+### Endpoints
+
+* [Get the True Cost to Own® Total for a New Car](/api-documentation/vehicle/price_tco/v1/01_newcar_tco/api-description.html)
+* [Get the True Cost to Own® Total for a Used Car](/api-documentation/vehicle/price_tco/v1/02_usedcar_tco/api-description.html)
+* [Get the Total Cash Price for a New Car](/api-documentation/vehicle/price_tco/v1/03_newcar_totalcash/api-description.html)
+* [Get the Total Cash Price for a Used Car](/api-documentation/vehicle/price_tco/v1/04_usedcar_totalcash/api-description.html)
+* [Get Car Makes with TCO® Values](/api-documentation/vehicle/price_tco/v1/05_makes_with_tco/api-description.html)
+* [Get Car Models with a TCO® Value](/api-documentation/vehicle/price_tco/v1/06_models_with_tco/api-description.html)
+* [Get Car Styles with a TCO® Value](/api-documentation/vehicle/price_tco/v1/07_styles_with_tco/api-description.html)
 
 ### How We Calculate True Cost to Own®
 

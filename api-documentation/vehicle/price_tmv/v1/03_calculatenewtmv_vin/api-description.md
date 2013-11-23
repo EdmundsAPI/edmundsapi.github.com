@@ -22,7 +22,7 @@ number: 1
 
 ### Description
 
-Get the TMV® price for a specific *new* car VIN given its MSRP price and zip code. This a good API call to use if you have a *new* car VIN and its MSRP. Passing the color parameter (optional) could also help get you a more accurate TMV® price.
+Get the TMV® price for a specific *new* car VIN given its MSRP and ZIP code. This a good API call to use if you have a *new* car VIN and its MSRP. Passing the color parameter (optional) could also help get you a more accurate TMV® price.
 Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL

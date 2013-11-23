@@ -20,6 +20,16 @@ overview: page_version
 	This resource is about getting incentives and rebates for vehicles. To fully understand the data you get back from the endpoints available in this resource, you will need to understand a few key concepts, like what incentives types, <em>source</em> types and <em>content</em> types there are.
 </div>
 
+### Endpoints
+
+* [Get Incentives & Rebates Information by ID](/api-documentation/vehicle/price_incentives_and_rebates/v1/01_findbyid/api-description.html)
+* [Get Incentives & Rebates for a Specific Car Category](/api-documentation/vehicle/price_incentives_and_rebates/v1/02_findincentivesbycategoryandzip/api-description.html)
+* [Get Incentives & Rebates Information for a Car Make ID](/api-documentation/vehicle/price_incentives_and_rebates/v1/03_findincentivesbymakeid/api-description.html)
+* [Get Incentives & Rebates Information for a Car Make ID and ZIP Code](/api-documentation/vehicle/price_incentives_and_rebates/v1/04_findincentivesbymakeidandzip/api-description.html)
+* [Get Incentives & Rebates Information for a Car Model Year ID and ZIP Code](/api-documentation/vehicle/price_incentives_and_rebates/v1/05_findincentivesbymodelyearidandzip/api-description.html)
+* [Get Incentives & Rebates Information for a Car Style ID](/api-documentation/vehicle/price_incentives_and_rebates/v1/06_findincentivesbystyleid/api-description.html)
+* [Get Incentives & Rebates Information for a Car Style ID and ZIP Code](/api-documentation/vehicle/price_incentives_and_rebates/v1/07_findincentivesbystyleidandzipcode/api-description.html)
+
 ### Incentives Types
 
 * CASH_REBATE

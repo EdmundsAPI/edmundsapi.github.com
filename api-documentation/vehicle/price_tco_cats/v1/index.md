@@ -22,6 +22,12 @@ overview: page_version
 <p><b>Please note</b> that the TCO® value is only available for up to 5 years. Vehicles that are older than five years <b>will not</b> have an accurate TCO® values.</p>
 </div>
 
+### Endpoints
+
+* [Get True Cost to Own® Details for a New Car](/api-documentation/vehicle/price_tco_cats/v1/01_newcars/api-description.html)
+* [Get True Cost to Own® Details for a Used Car](/api-documentation/vehicle/price_tco_cats/v1/02_usedcars/api-description.html)
+
+
 ### The True Cost to Own® Categories
 
 This is a **typical response** of the two endpoints listed in this resource:
