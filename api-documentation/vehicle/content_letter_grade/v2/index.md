@@ -22,7 +22,12 @@ overview: page_version
 
 For more details, visit [http://www.edmunds.com/new-car-ratings/](http://www.edmunds.com/new-car-ratings/)
 
-### RATINGS CATEGORIES
+### Endpoints
+
+* [Get Edmunds.com Letter Grade Rating by Car Make/Model/Year Info](/api-documentation/vehicle/content_letter_grade/v2/01_by_mmy/api-description.html)
+* [Get Edmunds.com Letter Grade Rating by Car Style ID](/api-documentation/vehicle/content_letter_grade/v2/02_by_id/api-description.html)
+
+### Ratings Categories
 
 All tested vehicles are given a score and a grade in the following categories:
 

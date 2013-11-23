@@ -19,8 +19,13 @@ overview: page_version
 	Consumer ratings and reviews for cars. This resource gives you access to user-generated vehicle ratings and reviews that were submitted on Edmunds.com's website, apps or tool.
 
 <p><i>Please note the version 1 of this resource will be discontinued in January 2014. Please move your applications to the new version as soon as you can.</i></p>
-
 </div>
+
+### Endpoints
+
+* [Get Consumer Ratings & Reviews by Make/Model/Year Info](/api-documentation/vehicle/content_ratings_and_reviews/v2/01_by_mmy/api-description.html)
+* [Get Consumer Ratings & Reviews by Style ID](/api-documentation/vehicle/content_ratings_and_reviews/v2/02_by_styleid/api-description.html)
+* [Get Consumer Ratings & Reviews by Reviews ID](/api-documentation/vehicle/content_ratings_and_reviews/v2/03_by_id/api-description.html)
 
 ### Special Requirements
 

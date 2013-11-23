@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get a car photos by its style ID.
+Get a car's photos by its style ID.
 
 ### URL
 
