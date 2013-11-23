@@ -22,7 +22,7 @@ number: 1
 
 ### Description
 
-Get Dealerships details and information by ZIP Code with a specific radius and by supplying either car make/mode or car style ID
+Get Dealership details and information by ZIP code with a specific radius and by supplying either car make/mode or car style ID
 
 ### URL
 

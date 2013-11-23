@@ -19,4 +19,6 @@ overview: page_version
 	Get dealership details and location information by providing the ZIP Code of the area you're interested in.
 </div>
 
+### Endpoints
 
+* [Get Dealership Details and Information by ZIP Code](/api-documentation/dealer/details_and_location/v1/01_dealer/api-description.html)

@@ -21,6 +21,10 @@ overview: page_version
 
 Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
+### Endpoint
+
+* [Get Edmunds Editor Review by Car Make/Model/Year](/api-documentation/editorial/editor_reviews/v1/01_review/api-description.html)
+
 ### Granular Editor Review Components
 
 When using the **Editor Reviews** resource, you will get the review broken into smaller chunks that makes it easy for you to take what you want out of it. The full review will also be included.

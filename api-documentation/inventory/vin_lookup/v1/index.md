@@ -25,3 +25,7 @@ To learn more about car VINs, check out this [Wikipedia page](http://en.wikipedi
 2. The last 5 characters are *numeric*.
 
 This resource is **not** meant to be a *VIN Decoder*. For VIN decoding, please see [this resource](/api-documentation/vehicle/spec_vin_decoding/v1/).
+
+### Endpoint
+
+* [Look up a Car Available for Sale by its VIN](/api-documentation/inventory/vin_lookup/v1/01_vin_lookup/api-description.html)

@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get cars available for sale within a specific area by supplying a five-digit zipcode.
+Get cars available for sale within a specific area by supplying a five-digit ZIP code.
 
 ### URL
 

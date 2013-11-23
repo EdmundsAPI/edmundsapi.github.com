@@ -19,10 +19,10 @@ overview: page_version
 	Get the dealership ratings and reviews that are collected from consumers through Edmunds.com's website, apps and tools.
 </div>
 
-We offer two endpoints in this resource:
+### Endpoints
 
-1. Get Dealer Ratings and Reviews by Dealer ID
-2. Get Dealer Ratings and Reviews by a Car Make and Zipcode
+* [Get Dealer Ratings and Reviews by Dealer ID](/api-documentation/dealer/ratings_and_reviews/v1/01_by_dealer_id/api-description.html)
+* [Get Dealer Ratings and Reviews by a Car Make and ZIP Code](/api-documentation/dealer/ratings_and_reviews/v1/02_by_dealer_make/api-description.html)
 
 If you know the dealership ID you would like to get this content for, you should use the first endpoint. Otherwise, the second endpoint would be the best and only option for you to get this content.
 

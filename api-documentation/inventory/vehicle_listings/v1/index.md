@@ -19,6 +19,11 @@ overview: page_version
 	This resource provides a list of cars available for sale at a specific dealership.
 </div>
 
+### Endpoints
+
+* [Get Cars Available for Sale at a Specific Dealership by Dealership ID](/api-documentation/inventory/vehicle_listings/v1/01_listings_by_dealer/api-description.html)
+* [Get Cars Available for Sale by ZIP Code](/api-documentation/inventory/vehicle_listings/v1/02_listings_by_zip/api-description.html)
+
 ### Sort options
 
 You can sort by the following properties with either **|asc** or **|desc** appended to it. For example, if you want to search by ascending price, you set sort to **price|asc** (i.e. sort=price|asc).

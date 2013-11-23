@@ -22,6 +22,10 @@ overview: page_version
 
 Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
+### Endpoint
+
+* [Get Edmunds articles by category and/or Vehicle Make/Model/Year](/api-documentation/editorial/articles/v1/01_content/api-description.html)
+
 ### Available Article Categories
 
 * auto finance
