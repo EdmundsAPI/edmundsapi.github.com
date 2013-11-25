@@ -120,7 +120,7 @@ number: 3
 | hasBuildDataAndFullyMatched   | Is the built data available for this car?					| Edmunds			|
 | carfaxes	    				| The Carfax data for this car								| Edmunds, Partners |
 | mileage	    				| The number of miles this car has on it					| Edmunds, Partners |
-| vin		    				| The total count of car makes/brands 						| Edmunds, Partners |
+| vin		    				| The vehicle VIN					 						| Edmunds, Partners |
 | inventoryId    				| The inventory ID											| Edmunds			|
 | cityMpg	    				| The car's City MPG				 						| Edmunds, Partners |
 | HwyMpg	    				| The car's Highway MPG										| Edmunds, Partners |
