@@ -23,12 +23,12 @@ number: 2
 
 | Parameter  | Description                          | Possible Values   | Default Value | Required |
 |:-----------|:-------------------------------------|:----------------- |:------------- |:-------- |
-| {make} 	 | The car make 				      	| See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
-| {model} 	 | The car model 			 			| 					|				| Yes	   |
-| {year} 	 | The car year 				 		| 					| 				| Yes	   |
+| {make} | The car make | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
+| {model} | The car model | See [List of Models by Make](/api-documentation/vehicle/spec_model/v2/01_list_of_models/api-description.html) |	| Yes |
+| {year} 	 | The car year 				 		| 1990 - current year | 		    | Yes	   |
 | state	     | The state of the vehicle style      	| new, used, future | 	            | No       |
 | category	 | Vehicle category (see API Overview)	| 					| 	            | No       |
 | submodel   | Vehicle submodel						| 					|               | No       |
 | view		 | Response detail level      			| basic, full       | basic         | No       |
 | fmt        | Response format                     	| json              | json          | Yes      |
-| api_key    | vehicle api key                     	|                   |               | Yes      |
+| api_key    | Vehicle API key                     	|                   |               | Yes      |

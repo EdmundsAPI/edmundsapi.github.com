@@ -23,8 +23,8 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| {make} 	 | The car make 				      	 | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
-| {model} 	 | The car model 			 			 | 					 |				 | Yes	    |
+| {make} | The car make | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
+| {model} | The car model | See [List of Models by Make](/api-documentation/vehicle/spec_model/v2/01_list_of_models/api-description.html) |	| Yes |
 | state	     | The state of the vehicle style        | new, used, future | 	             | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
