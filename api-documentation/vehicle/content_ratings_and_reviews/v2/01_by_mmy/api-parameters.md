@@ -25,7 +25,7 @@ number: 2
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | {make}     | The car make | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | | Yes |
 | {model}    | The car model | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | | Yes |
-| {year}     | The car year                          |                   |               | Yes      |
+| {year}     | The car year                          | 1990-current year |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |
 | sortby     | Sort the reviews by any string of the format field or field:direction, where field = created, thumbsUp, or avgRating and direction = ASC (ascending) or DESC (descending). | | created:DESC  | No |
