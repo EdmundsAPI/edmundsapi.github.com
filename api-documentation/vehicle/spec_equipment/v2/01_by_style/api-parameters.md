@@ -23,7 +23,7 @@ number: 2
 |:---------------|:--------------------------------------|:-----------------  |:------------- |:-------- |
 | {style ID}     | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) endpoints | | Yes |
 | availability	 | Equipment availability on this car    | optional, standard |               | No       |
-| equipmentType  | Equipment type                        | (see overview) 	  |               | No       |
-| name			 | Equipment name   				   	 | (see overview) 	  |               | No       |
+| equipmentType | Equipment type | See [Spec: Equipment Overview](/api-documentation/vehicle/spec_equipment/v2/index.html) | | No |
+| name | Equipment name | See [Spec: Equipment Overview](/api-documentation/vehicle/spec_equipment/v2/index.html) | | No |
 | fmt        	 | Response format                       | json               | json          | Yes      |
 | api_key    	 | Vehicle API key                       |                    |               | Yes      |

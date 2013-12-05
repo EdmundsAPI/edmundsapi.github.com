@@ -24,6 +24,6 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) endpoints | | Yes |
-| category   | The color category                    | (see overview)    |               | No       |
+| category | The color category | See [Colors & Options Overview](/api-documentation/vehicle/spec_colors_and_options/v2/index.html)    | | No |
 | fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| api_key    | Vehicle API key                       |                   |               | Yes      |
