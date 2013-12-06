@@ -27,7 +27,7 @@ number: 2
 | dealerId 		| The dealership ID						|						| 		        | Yes      |
 | types    		| The state of the cars		          	| ALL, NEW, USED, CPO 	| NEW           | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
-| sort			| The desired sort (i.e. price:asc)     | (see overview) 		|           	| No       |
+| sort | The desired sort (i.e. price:asc) | See [Inventory API Overview](/api-documentation/inventory/vehicle_listings/v1/index.html) | | No |
 | pageNumber	| Pagination start index				| 						| 1		        | No       |
 | pageSize   	| Pagination results size 				| 						| 25	        | No       |
-| basicFilter	| Narrow down response by *key:"value"* | (see overview)		| 		        | No       |
+| basicFilter	| Narrow down response by *key:"value"* | See [Inventory API Overview](/api-documentation/inventory/vehicle_listings/v1/index.html) | | No |

@@ -26,7 +26,7 @@ number: 2
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
 | zipcode	 	| The area ZIP Code						| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
-| makeName	 	| The car's make 						| 						| 		        | No       |
-| model		 	| The car's model						| 						| 		        | No       |
-| styleid	 	| The car's Style ID					| 						| 		        | No       |
+| makeName | The car's make | [List of Makes](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | No |
+| model | The car's model | [List of Models by Make](/api-documentation/vehicle/spec_model/v2/01_list_of_models/api-description.html) | | No |
+| styleid | The car's Style ID | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/), or [Spec: Style](/api-documentation/vehicle/spec_style/v2/) | | No |
 | radius	 	| The radius of the search				| 						| 50	        | No       |
