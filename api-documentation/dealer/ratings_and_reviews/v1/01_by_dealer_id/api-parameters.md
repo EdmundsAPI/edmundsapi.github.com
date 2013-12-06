@@ -26,4 +26,6 @@ number: 2
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
 | dealerid	 	| The dealership ID						| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
-| limit		 	| pagination (index, size)				| 						| 0, 10	        | No       |
+| limit		 	| Pagination (offset, size). The parameter has been deprecated, please use pagenum and pagesize instead | | 0, 30 | No       |
+| pagenum	 	| The page number of the paginated result | 					| 1	        | No       |
+| pagesize	 	| The maximum number of returned reviews (sales and service) | 	| 30        | No       |
