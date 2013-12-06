@@ -23,7 +23,7 @@ number: 1
 
 Get a **configured vehicle** with options by the style ID and ZIP code. This endpoint helps **resolve conflicts** between two or more options should any exists.
 
-For example, let's say you you want to configure a **2013 BMW 328i Sedan (2.0L 4-cyl. Turbo 6-speed Manual)**, which has a style ID of **200423469**. And let's say you're in the Santa Monica, CA (zip code is **90404**).
+For example, let's say you you want to configure a **2013 BMW 328i Sedan (2.0L 4-cyl. Turbo 6-speed Manual)**, which has a style ID of **200423469**. And let's say you're in Santa Monica, CA (ZIP code is **90404**).
 
 Now that you have a style ID and a zip code, you can get the default configuration of this vehicle, which is documented in [this endpoint](/api-documentation/vehicle/spec_configuration/v1/01_by_style/api-description.html). Now let's say you want to add the **M Sport Line** package. In order to verify what other options are *required* when this package is selected, we use this endpoint.
 

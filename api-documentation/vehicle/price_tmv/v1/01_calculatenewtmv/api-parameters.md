@@ -24,8 +24,8 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | styleid    | The car style ID			             | See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource | | Yes |
-| zip        | The zip code of the area  	         |               	 |               | Yes      |
-| colorid    | Vehicle color ID (&colorid=xxx&colorid=xxx&colorid=xxx for multiples) | | | No       |
-| optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) | | | No   |
+| zip        | The ZIP code of the area  	         |               	 |               | Yes      |
+| colorid    | Vehicle color ID (&colorid=xxx&colorid=xxx&colorid=xxx for multiples) | See [Spec: Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v2/) | | No |
+| optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) | See [Spec: Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v2/) | | No |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |

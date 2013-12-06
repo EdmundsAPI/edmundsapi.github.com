@@ -23,9 +23,9 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| make       | The car make nicename                 | 		             | 		         | Yes      |
-| model      | The car model nicename                | 		             | 		         | Yes      |
-| year       | The car year		                     | 			         | 		         | Yes      |
+| make | The car make nicename | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | | Yes |
+| model | The car model nicename | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | | Yes |
+| year       | The car year		                     | 1990-current year | 		         | Yes      |
 | submodel   | The car submodel                    	 | 		             | 		         | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |

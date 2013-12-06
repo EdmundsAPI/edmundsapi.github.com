@@ -1,7 +1,7 @@
 ---
 layout: api-documentation
 title : 'Get Vehicle Recalls by Car Model Year ID'
-title_active_left_menu: 'Service: Maintenance'
+title_active_left_menu: 'Service: Recalls'
 title_parent: Api documentation
 
 amount_version: 1

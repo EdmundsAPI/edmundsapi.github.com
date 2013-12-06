@@ -24,11 +24,12 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required                                                  |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:----------------------------------------------------------|
-| category	 	| The article category          		| (see below)			| 		        | Yes/No (Not required if car make/model/year is supplied)  |
+| category	 	| The article category          		| See below; e.g. car+news |            | Yes/No (Not required if car make/model/year is supplied)  |
 | fmt        	| Response format                       | json, xml         	| json          | Yes                                                       |
-| make  	 	| The car make                  		| 						| 		        | No                                                        |
-| model		 	| The car model                     	| 						| 		        | No                                                        |
-| year  	 	| The car year                      	| 						| 		        | No                                                        |
+| api_key       | Your Edmunds/Editorial API key                     |                       |               | Yes                                                       |
+| make  	 	| The car make                  		| See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | 		        | No                    |
+| model		 	| The car model                     	| See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | 		    | No                    |
+| year  	 	| The car year                      	| 1990-current year     | 		        | No                                                        |
 | limit 	 	| Pagination range (from, to)			| 						| 0, 10	        | No                                                        |
 
 ### Available Article Categories
