@@ -30,7 +30,9 @@ number: 2
 | make  	 	| The car make                  		| See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | 		        | No                    |
 | model		 	| The car model                     	| See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | 		    | No                    |
 | year  	 	| The car year                      	| 1990-current year     | 		        | No                                                        |
-| limit 	 	| Pagination range (from, to)			| 						| 0, 10	        | No                                                        |
+| limit		 	| Pagination (offset, size). The parameter has been deprecated, please use pagenum and pagesize instead | | 0, 30    | No                   |
+| pagenum	 	| The page number of the paginated result | 					| 1	            | No                                                        |
+| pagesize	 	| The maximum number of returned articles | 					| 30            | No                                                        |
 
 ### Available Article Categories
 
