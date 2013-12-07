@@ -115,15 +115,15 @@ Here are some common uses of the Vehicle API:
 
 | Specification					| Service					| Pricing					| Review						| Media				|
 |:------------------------------|:--------------------------|:--------------------------|:------------------------------|:------------------|
-| Make							| Maintenance Schedule		| True Market Value® 		| Edmunds Grade Ratings			| Vehicle Photos	|
-| Model							| Recalls					| True Cost to Own®			| Consumer Ratings and Reviews	|					|
-| Model Year and trim			| Service Bulletin			| Incentives and Rebated 	| 								|					|
-| Style							| Local Labor Rates			| 					 		| 								|					|
-| Colors and Options			|							|							|								|					|
-| Engine and Transmission		|							|							|								|					|
-| Equipment						|							|							|								|					|
-| Configuration					|							|							|								|					|
-| VIN and SquishVin				|							|							|								|					|
+| [Make](/api-documentation/vehicle/spec_make/v2/) | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | [Edmunds Grade Ratings](/api-documentation/vehicle/content_letter_grade/v2/) | [Vehicle Photos](/api-documentation/vehicle/media_photos/v1/) |
+| [Model](/api-documentation/vehicle/spec_model/v2/) | [Recalls](/api-documentation/vehicle/service_recalls/v1/) | [True Cost to Own®](/api-documentation/vehicle/price_tco/v1/) | [Consumer Ratings and Reviews](/api-documentation/vehicle/content_ratings_and_reviews/v2/) | |
+| [Model Year and trim](/api-documentation/vehicle/spec_model_year/v2/) | [Service Bulletin](/api-documentation/vehicle/service_bulletin/v1/) | [Incentives and Rebated](/api-documentation/vehicle/price_incentives_and_rebates/v1/) | | |
+| [Style](/api-documentation/vehicle/spec_style/v2/) | [Local Labor Rates](/api-documentation/vehicle/service_local_labor_rate/v1/) | | | |
+| [Engine and Transmission](/api-documentation/vehicle/spec_engine_and_transmission/v2/) | | | | |
+| [Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v2/) | | | | |
+| [Configuration](/api-documentation/vehicle/spec_configuration/v1/) | | | | |
+| [Equipment](/api-documentation/vehicle/spec_equipment/v2/) | | | | |
+| [VIN](/api-documentation/vehicle/spec_vin_decoding/v2/) and [SquishVin](/api-documentation/vehicle/spec_squishvin/v1/) | | | | |
 
 All of these resources are accessible in the table of contents on the left.
 
