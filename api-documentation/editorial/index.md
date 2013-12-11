@@ -8,11 +8,29 @@ title_parent: Api documentation
 level: 1
 ---
 
+<a name="top">&nbsp;</a>
+
+### Page Content
+
+* [Overview](#sec-1)
+* [Quick Start](#sec-2)
+* [Special Requirements](#sec-3)
+* [Available Resources](#sec-4)
+* [Available Article Categories](#sec-5)
+* [Granular Editor Review Components](#sec-6)
+* [API Uses](#sec-7)
+
+<a name='sec-1'>&nbsp;</a>
+
+---
+
 ### Overview
 
 The Editorial API offers access to Edmunds.com's award-winning editorial content, including articles, editor reviews and road tests. This shouldn't be confused with *consumer-generated* [vehicle rating and reviews](/api-documentation/vehicle/ratings_and_reviews/v1/) and [dealership ratings and reviews](/api-documentation/dealer/ratings_and_reviews/v1/). The content in the Editorial API is created and managed by the Edmunds.com editorial team.
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Quick Start
 
@@ -29,6 +47,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 #### Example 3: Get the *Edmunds Editor Review* of the ***BMW X5 2013***
 
 > https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
+
+<a name='sec-3'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Special Requirements
 
@@ -48,7 +70,9 @@ Each Article should be accredited as follows: **"From Edmunds.com"** at the top 
 
 The following notice should be affixed to the end of each Article: **"Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc."**
 
-Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.
+Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.<a name='sec-4'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Available Resources
 
@@ -58,6 +82,10 @@ The Editorial API has two resources:
 |:------------------|:--------------------------------------|
 | [Articles](/api-documentation/editorial/articles/v1/) | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
 | [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/) | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
+
+<a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Available Article Categories
 
@@ -81,6 +109,10 @@ The Editorial API has two resources:
 * vehicle safety
 * warranties
 
+<a name='sec-6'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### Granular Editor Review Components
 
 When using the **Editor Reviews** resource, you will get the review broken into smaller chunks that makes it easy for you to take what you want out of it. The full review will also be included.
@@ -95,6 +127,9 @@ When using the **Editor Reviews** resource, you will get the review broken into 
 * Video Review
 * Full Review
 
+<a name='sec-7'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### API Uses
 
@@ -102,3 +137,5 @@ When using the **Editor Reviews** resource, you will get the review broken into 
 * Get all articles for a specific make/model/year
 * Get all articles for a specific make/model/year **and** specific category
 * Get the Edmunds Editor Review of a specific make/model/year
+
+[Back to top](#top)

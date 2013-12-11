@@ -8,13 +8,29 @@ title_parent: Api documentation
 level: 1
 ---
 
+<a name="top">&nbsp;</a>
+
+### Page Content
+
+* [Overview](#sec-1)
+* [Quick Start](#sec-2)
+* [API Uses](#sec-3)
+* [Available Resources](#sec-4)
+
+<a name='sec-1'>&nbsp;</a>
+
+---
+
+
 ### Overview
 
 The Dealer API is comprised of a collection of resources that provide access to an array of datasets _related directly to the automotive dealership_.
 
 **Please note** that *dealer inventories* aren't available in this API. They are available in the [Inventory API](/api-documentation/inventory/).
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Quick Start
 
@@ -32,12 +48,20 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/drrrepository/getdrrbyzipcodeandmake?zipcode=90019&make=bmw&limit=0%2C5&fmt=json&api_key={your API key}
 
+<a name='sec-3'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### API Uses
 
 * Get all dealerships within a certain zip code and radius
 * Get all dealerships by the kinds of cars they sell
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
+
+<a name='sec-4'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Available Resources
 
@@ -47,3 +71,5 @@ The Dealer API has two resources:
 |:------------------|:--------------------------------------|
 | [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/) | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
 | [Dealer Details](/api-documentation/dealer/details_and_location/v1/) | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |
+
+[Back to top](#top)

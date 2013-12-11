@@ -8,6 +8,20 @@ title_parent: Api documentation
 level: 1
 ---
 
+<a name="top">&nbsp;</a>
+
+### Page Content
+
+* [Overview](#sec-1)
+* [Quick Start](#sec-2)
+* [Static Datasets](#sec-3)
+* [API Uses](#sec-4)
+* [Available Resources](#sec-5)
+
+<a name='sec-1'>&nbsp;</a>
+
+---
+
 ### Overview
 
 The Vehicle API is comprised of a collection of resources that provide access to an array of automotive datasets _related directly to the automotive vehicle_. First, you need to know the _five components_ that fully describe an **automotive vehicle**: 
@@ -26,7 +40,9 @@ Would match to:
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.<a name='sec-2'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Quick Start
 
@@ -68,6 +84,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
+<a name='sec-3'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### Static Datasets
 
 Some of our datasets are static and don't change often (if at all.) Here's the **most common** static datasets you will need to make API calls and understand API response. More specific datasets (e.g. equipment types, option types, etc) are mentioned in the resources for which they're relevant.
@@ -98,6 +118,9 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 | &bull; all-wheel-drive	| &bull; four-wheel-drive	|
 | &bull; front-wheel-drive	| &bull; rear-wheel-drive	|
 
+<a name='sec-4'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### API Uses
 
@@ -110,6 +133,10 @@ Here are some common uses of the Vehicle API:
 * Decode a VIN
 * Get vehicle photos
 * Get consumer ratings and reviews
+
+<a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Available Resources
 
@@ -126,4 +153,6 @@ Here are some common uses of the Vehicle API:
 | [VIN](/api-documentation/vehicle/spec_vin_decoding/v2/) and [SquishVin](/api-documentation/vehicle/spec_squishvin/v1/) | | | | |
 
 All of these resources are accessible in the table of contents on the left.
+
+[Back to top](#top)
 

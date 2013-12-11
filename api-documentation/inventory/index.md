@@ -8,11 +8,27 @@ title_parent: Api documentation
 level: 1
 ---
 
+<a name="top">&nbsp;</a>
+
+### Page Content
+
+* [Overview](#sec-1)
+* [OAuth 2.0](#sec-2)
+* [Quick Start](#sec-3)
+* [API Uses](#sec-4)
+* [Available Resources](#sec-5)
+
+<a name='sec-1'>&nbsp;</a>
+
+---
+
 ### Overview
 
 The Inventory API provides access to the *vehicle inventories* (or *cars for sale*) available at dealerships with a relationship with Edmunds.com. Due to the nature of this data, it's only available to **API Partners** and **Edmunds Developers**. If you're interested in becoming an API Partner, please [email us](mailto:api%40edmunds.com?subject=API%20Partner%20Inquiry&body=Please%20fill%20out%20the%20following.%0A%0AName%20and%20position%3A%0A%0ACompany%3A%0A%0AApplication%20Description%2C%20including%20links%20to%20demo%20or%20live%20app%3A%0A%0AHow%20you%20plan%20to%20use%20Edmunds%20data%3A%0A%0ADo%20you%20currently%20work%20with%20any%20dealerships%20and%2For%20OEMs%3F%20If%20so%2C%20who%3A%20).
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### OAuth 2.0
 
@@ -32,7 +48,9 @@ Alternative, you can add the the _access\_token_ to the query string:
 
 	curl -i 'http://api.edmunds.com/{endpoint}?access_token=<access_token>'
 	
-We **do not recommend** the second approach since it's not secure.
+We **do not recommend** the second approach since it's not secure.<a name='sec-3'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Quick Start
 
@@ -46,12 +64,20 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
 
+<a name='sec-4'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### API Uses
 
 * Get all dealerships within a certain zip code and radius
 * Get all dealerships by the kinds of cars they sell
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
+
+<a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Available Resources
 
@@ -61,3 +87,5 @@ The Inventory API has two resources:
 |:------------------|:--------------------------------------|
 | [Inventory by VIN](/api-documentation/inventory/vin_lookup/v1/) | If the VIN you supply matches a vehicle that's for sale at one of the dealerships Edmunds.com, Inc. works with, you will get a response back. Otherwise, you will get an error. |
 | [Inventory by Dealer ID or ZIP Code](/api-documentation/inventory/vehicle_listings/v1/) | Get a list of inventories for sale at a dealership by Dealer ID or by ZIP Code. |
+
+[Back to top](#top)
