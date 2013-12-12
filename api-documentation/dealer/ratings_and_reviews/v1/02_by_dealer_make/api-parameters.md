@@ -27,6 +27,7 @@ number: 2
 | make		 	| The car make							| Available at the [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) endpoint | 		        | Yes      |
 | zipcode	 	| The area ZIP Code						| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |
+| radius	 	| The radius of the search				| 						| 50	        | No       |
 | limit		 	| Pagination (offset, size). The parameter has been deprecated, please use pagenum and pagesize instead | | 0, 30 | No       |
 | pagenum	 	| The page number of the paginated result | 					| 1	        | No       |
 | pagesize	 	| The maximum number of returned reviews (sales and service) | 	| 30        | No       |
