@@ -7,6 +7,18 @@ title_parent: Api documentation
 
 level: 1
 ---
+<a name="top">&nbsp;</a>
+### Page Content
+
+* [Overview](#sec-1)
+* [Quick Start](#sec-2)
+* [Static Datasets](#sec-3)
+* [API Uses](#sec-4)
+* [Available Resources](#sec-5)
+
+<a name='sec-1'>&nbsp;</a>
+
+---
 
 ### Overview
 
@@ -26,7 +38,9 @@ Would match to:
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.<a name='sec-2'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### Quick Start
 
@@ -68,6 +82,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
+<a name='sec-3'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### Static Datasets
 
 Some of our datasets are static and don't change often (if at all.) Here's the **most common** static datasets you will need to make API calls and understand API response. More specific datasets (e.g. equipment types, option types, etc) are mentioned in the resources for which they're relevant.
@@ -98,6 +116,9 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 | &bull; all-wheel-drive	| &bull; four-wheel-drive	|
 | &bull; front-wheel-drive	| &bull; rear-wheel-drive	|
 
+<a name='sec-4'>&nbsp;</a>
+
+[Back to top](#top)
 
 ### API Uses
 
@@ -111,19 +132,25 @@ Here are some common uses of the Vehicle API:
 * Get vehicle photos
 * Get consumer ratings and reviews
 
+<a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### Available Resources
 
 | Specification					| Service					| Pricing					| Review						| Media				|
 |:------------------------------|:--------------------------|:--------------------------|:------------------------------|:------------------|
-| Make							| Maintenance Schedule		| True Market Value® 		| Edmunds Grade Ratings			| Vehicle Photos	|
-| Model							| Recalls					| True Cost to Own®			| Consumer Ratings and Reviews	|					|
-| Model Year and trim			| Service Bulletin			| Incentives and Rebated 	| 								|					|
-| Style							| Local Labor Rates			| 					 		| 								|					|
-| Colors and Options			|							|							|								|					|
-| Engine and Transmission		|							|							|								|					|
-| Equipment						|							|							|								|					|
-| Configuration					|							|							|								|					|
-| VIN and SquishVin				|							|							|								|					|
+| [Make](/api-documentation/vehicle/spec_make/v2/) | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | [Edmunds Grade Ratings](/api-documentation/vehicle/content_letter_grade/v2/) | [Vehicle Photos](/api-documentation/vehicle/media_photos/v1/) |
+| [Model](/api-documentation/vehicle/spec_model/v2/) | [Recalls](/api-documentation/vehicle/service_recalls/v1/) | [True Cost to Own®](/api-documentation/vehicle/price_tco/v1/) | [Consumer Ratings and Reviews](/api-documentation/vehicle/content_ratings_and_reviews/v2/) | |
+| [Model Year and trim](/api-documentation/vehicle/spec_model_year/v2/) | [Service Bulletin](/api-documentation/vehicle/service_bulletin/v1/) | [Incentives and Rebated](/api-documentation/vehicle/price_incentives_and_rebates/v1/) | | |
+| [Style](/api-documentation/vehicle/spec_style/v2/) | [Local Labor Rates](/api-documentation/vehicle/service_local_labor_rate/v1/) | | | |
+| [Engine and Transmission](/api-documentation/vehicle/spec_engine_and_transmission/v2/) | | | | |
+| [Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v2/) | | | | |
+| [Configuration](/api-documentation/vehicle/spec_configuration/v1/) | | | | |
+| [Equipment](/api-documentation/vehicle/spec_equipment/v2/) | | | | |
+| [VIN](/api-documentation/vehicle/spec_vin_decoding/v2/) and [SquishVin](/api-documentation/vehicle/spec_squishvin/v1/) | | | | |
 
 All of these resources are accessible in the table of contents on the left.
+
+[Back to top](#top)
 
