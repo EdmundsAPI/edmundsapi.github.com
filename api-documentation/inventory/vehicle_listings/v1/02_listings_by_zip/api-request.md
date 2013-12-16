@@ -26,7 +26,7 @@ Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) with
 
 #### URL
 
-	https://api.edmunds.com/api/inventory/v1/getall?range=100&zipcode=90404&make=Hyundai&basicFilter=make:%22Hyundai%22&pageSize=1
+	https://api.edmunds.com/api/inventory/v1/getall?radius=100&zipcode=90404&make=Hyundai&basicFilter=make:%22Hyundai%22&pagesize=1
 	
 #### Response
 
@@ -132,7 +132,7 @@ Get one listing for a USED Lexus RX-350 2011 in Santa Monica
 
 #### URL
 
-	https://api.edmunds.com/api/inventory/v1/getall?range=100&types=USED&years=2011&zipcode=90404&pageSize=1&make=Lexus&basicFilter=make:%22Lexus%22&basicFilter=model:%22RX%20350%22
+	https://api.edmunds.com/api/inventory/v1/getall?radius=100&types=USED&years=2011&zipcode=90404&pagesize=1&make=Lexus&basicFilter=make:%22Lexus%22&basicFilter=model:%22RX%20350%22
 
 #### Response
 

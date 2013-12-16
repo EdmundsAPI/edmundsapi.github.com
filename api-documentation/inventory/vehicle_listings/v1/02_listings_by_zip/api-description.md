@@ -25,7 +25,7 @@ Get cars available for sale within a specific area by supplying a five-digit ZIP
 
 ### URL
 
-	https://api.edmunds.com/api/inventory/v1/getall?zipcode={desired zipcode}&range={miles in which to searh}&make={car make}&fmt=json
+	https://api.edmunds.com/api/inventory/v1/getall?zipcode={desired zipcode}&radius={miles in which to searh}&make={car make}&fmt=json
 	
 ### Code Example
 
@@ -37,9 +37,9 @@ Get cars available for sale within a specific area by supplying a five-digit ZIP
 	
 	# With the access_token now available, we can make the call
 	# In this example, we want to get a list of cars available for sale, or inventory listings, for all *NEW* Hyundais in the 90019 area within 100 miles
-	curl -i -H 'Authorization: Bearer jw8qpg8a3yprdbbkwvu2yas2' 'https://api.edmunds.com/api/inventory/getall?range=100&zipcode=90019&make=Hyundai'
+	curl -i -H 'Authorization: Bearer jw8qpg8a3yprdbbkwvu2yas2' 'https://api.edmunds.com/api/inventory/getall?radius=100&zipcode=90019&make=Hyundai'
 	
 	# You can make the same call directly in the browser as follows
-	curl -i 'https://api.edmunds.com/api/inventory/getall?range=100&zipcode=90019&make=Hyundai&access_token=jw8qpg8a3yprdbbkwvu2yas2'
+	curl -i 'https://api.edmunds.com/api/inventory/getall?radius=100&zipcode=90019&make=Hyundai&access_token=jw8qpg8a3yprdbbkwvu2yas2'
 	
 
