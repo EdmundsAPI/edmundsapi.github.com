@@ -21,6 +21,7 @@ class_page: faqPage
 * [How much does it cost to increase my rate limit or quota?](#faq-10)
 * [How can I find a car's MPG information?](#faq-11)
 * [What happened to the old API calls I was using?](#faq-12)
+* [Does the API have data on international cars?](#faq-13)
 
 ---
 
@@ -114,6 +115,12 @@ The MPG data is available in the [Equipment Resource](/api-documentation/vehicle
 <a name='faq-12'>&nbsp;</a>
 <span class="question-header">What happened to the old API calls I was using?</span>
 When we launch a new version of an API resource, we remove the documentation for the older version of that resource so new developers don't start coding against it. The API calls themselves are not removed until the date called out in the docs. We encourage all developers to move over to the new API resources when available since they're the ones we'll continue to support.
+
+[Back to top](#top)
+
+<a name='faq-13'>&nbsp;</a>
+<span class="question-header">Does the API have data for the whole world?</span>
+Nope sorry, the data in the Edmunds API covers North American vehicles only.
 
 [Back to top](#top)
 
