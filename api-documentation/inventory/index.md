@@ -16,8 +16,9 @@ level: 1
 * [OAuth 2.0](#sec-2)
 * [Quick Start](#sec-3)
 * [Edmunds Inventory Link](#sec-4)
-* [API Uses](#sec-5)
-* [Available Resources](#sec-6)
+* [Visibility Tiers](#sec-5)
+* [API Uses](#sec-6)
+* [Available Resources](#sec-7)
 
 <a name='sec-1'>&nbsp;</a>
 
@@ -75,9 +76,21 @@ The inventory detail page on Edmunds.com has the following URL structure:
 
 > http://www.edmunds.com/inventory/vin.html?make={vehicle make}&inventoryId={vehicle inventory ID}&zip={vehicle zip code}&radius={the radius to search}
 
-The information you need to compile this URL is available in the API response of all endpoints in this resource.
+The information you need to compile this URL is available in the API response of all endpoints in this resource. This piece of information is **important** when you want to send traffic back to Edmunds.com so your users can transact on that inventory.
 
 <a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
+
+### Visibility Tiers
+
+Due to the nature of the inventory data, not all of it is available to the public, or even to strategic partners. Every endpoint has a section called **Response Format** in which each datapoint returned is described and its visibility called out. Our visibility tiers are as follows:
+
+1. **Edmunds:** This datapoint is visible to Edmunds developers
+2. **Partners:** This datapoint is visible to strategic partners. Your API Key has to be assigned as such.
+3. **Public:** This datapoint is visible to public partners (those who have their rate limit raised and apps verified for compliance with our TOS.) Your API Key has to be assigned as such.
+
+<a name='sec-6'>&nbsp;</a>
 
 [Back to top](#top)
 
@@ -88,7 +101,7 @@ The information you need to compile this URL is available in the API response of
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 
-<a name='sec-6'>&nbsp;</a>
+<a name='sec-7'>&nbsp;</a>
 
 [Back to top](#top)
 
