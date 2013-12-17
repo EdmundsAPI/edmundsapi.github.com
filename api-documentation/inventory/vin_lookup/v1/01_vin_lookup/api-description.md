@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Look up a car available for sale by its VIN.
+Look up a car available for sale by its VIN, zip code and range.
 
 ### URL
 
