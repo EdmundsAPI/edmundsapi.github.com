@@ -15,8 +15,9 @@ level: 1
 * [Overview](#sec-1)
 * [OAuth 2.0](#sec-2)
 * [Quick Start](#sec-3)
-* [API Uses](#sec-4)
-* [Available Resources](#sec-5)
+* [Edmunds Inventory Link](#sec-4)
+* [API Uses](#sec-5)
+* [Available Resources](#sec-6)
 
 <a name='sec-1'>&nbsp;</a>
 
@@ -68,6 +69,18 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 [Back to top](#top)
 
+### Edmunds Inventory Link
+
+The inventory detail page on Edmunds.com has the following URL structure:
+
+> http://www.edmunds.com/inventory/vin.html?make={vehicle make}&inventoryId={vehicle inventory ID}&zip={vehicle zip code}&radius={the radius to search}
+
+The information you need to compile this URL is available in the API response of all endpoints in this resource.
+
+<a name='sec-5'>&nbsp;</a>
+
+[Back to top](#top)
+
 ### API Uses
 
 * Get all dealerships within a certain zip code and radius
@@ -75,7 +88,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 
-<a name='sec-5'>&nbsp;</a>
+<a name='sec-6'>&nbsp;</a>
 
 [Back to top](#top)
 
