@@ -23,7 +23,6 @@ number: 3
 ### Response format
 
 	{
-		"totalCount": {integer},
 		"resultsList": [{
 			"year": {integer},
 			"features": {array},
