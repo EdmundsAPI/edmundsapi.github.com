@@ -25,4 +25,6 @@ number: 2
 | Parameter  	| Description                           | Possible Values   	| Default Value | Required |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:-------- |
 | vin	 		| The car's VIN							| 						| 		        | Yes      |
+| zipcode 		| The zip code in which the car is available | 						| 		        | Yes      |
+| range	 		| The radius for search					| 						| 		        | Yes      |
 | fmt        	| Response format                       | json              	| json          | Yes      |

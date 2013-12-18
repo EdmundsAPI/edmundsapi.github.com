@@ -140,6 +140,11 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 	</tr>
 
 </table>
+
+#### CORS Support
+
+The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers and a full list of browser support can be found [here](http://caniuse.com/cors).
+
 <a name='sec-4'>&nbsp;</a>
 
 [Back to top](#top)
