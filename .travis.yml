@@ -1,0 +1,14 @@
+language: ruby
+
+rvm: # the Ruby versions to be used
+  - 2.0.0
+
+before_install:
+  - gem update
+  - gem install jekyll
+
+before_script:
+  - rake local
+
+script:
+  - rake test
