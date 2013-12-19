@@ -7,7 +7,7 @@ title_parent: Api documentation
 
 level: 1
 ---
-<a name="top">&nbsp;</a>
+<a name="top"> &nbsp;</a>
 ### Page Content
 
 * [Overview](#sec-1)
@@ -16,7 +16,7 @@ level: 1
 * [API Uses](#sec-4)
 * [Available Resources](#sec-5)
 
-<a name='sec-1'>&nbsp;</a>
+<a name='sec-1'> &nbsp;</a>
 
 ---
 
