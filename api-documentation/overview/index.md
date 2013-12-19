@@ -10,7 +10,7 @@ weight: 1
 
 ---
 
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 
 ### Page Content
 
@@ -25,7 +25,7 @@ weight: 1
 * [SDKs and Code Samples](#sec-9)
 * [Pedal to The Metal!](#sec-10)
 
-<a name='sec-1'>&nbsp;</a>
+<a name='sec-1'> </a>
 
 ---
 
@@ -44,7 +44,7 @@ weight: 1
 
 These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
 
-This overview covers the core concepts that you need to know before you could fully use the APIs to their potential. Once you have a good understanding of the API core concepts, you can then dig deeper into each API by visiting its dedicated overview page.<a name='sec-2'>&nbsp;</a>
+This overview covers the core concepts that you need to know before you could fully use the APIs to their potential. Once you have a good understanding of the API core concepts, you can then dig deeper into each API by visiting its dedicated overview page.<a name='sec-2'> </a>
 
 [Back to top](#top)
 
@@ -67,7 +67,7 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 
 [Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/).
 
-It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-3'>&nbsp;</a>
+It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-3'> </a>
 
 [Back to top](#top)
 
@@ -145,7 +145,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers and a full list of browser support can be found [here](http://caniuse.com/cors).
 
-<a name='sec-4'>&nbsp;</a>
+<a name='sec-4'> </a>
 
 [Back to top](#top)
 
@@ -157,7 +157,7 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
 
 > https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&state=new&view=full
 
-<a name='sec-5'>&nbsp;</a>
+<a name='sec-5'> </a>
 
 [Back to top](#top)
 
@@ -169,7 +169,7 @@ All API keys are issued with a _default quota_ of **2 API calls/second** and **5
 2. The application is in compliance with our [branding guide](/api_branding_guide/)
 3. The application is representing the Edmunds data properly
 
-Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com?subject=API%20Rate%20Limit%20Increase)**. _No monetary compensation is expected in exchange for the rate limit increase_.<a name='sec-6'>&nbsp;</a>
+Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please [email us](mailto:api@edmunds.com?subject=API%20Rate%20Limit%20Increase)**. _No monetary compensation is expected in exchange for the rate limit increase_.<a name='sec-6'> </a>
 
 [Back to top](#top)
 
@@ -183,7 +183,7 @@ Although access to these APIs is _free_, their _availability to developers_ vari
 * **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please [email us](mailto:api%40edmunds.com?subject=API%20Partner%20Inquiry&body=Please%20fill%20out%20the%20following.%0A%0AName%20and%20position%3A%0A%0ACompany%3A%0A%0AApplication%20Description%2C%20including%20links%20to%20demo%20or%20live%20app%3A%0A%0AHow%20you%20plan%20to%20use%20Edmunds%20data%3A%0A%0ADo%20you%20currently%20work%20with%20any%20dealerships%20and%2For%20OEMs%3F%20If%20so%2C%20who%3A%20).
 * **EDMUNDS**: Edmunds.com employees and contractors using the API to build out the Edmunds.com apps and websites.
 
-Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-7'>&nbsp;</a>
+Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-7'> </a>
 
 [Back to top](#top)
 
@@ -207,7 +207,7 @@ When an error occurs, you should get the following response:
 
 	{"error": {"code": xxx, "message":"some message"}}
 	
-Your code should always be looking for the root key <code>error</code> in the API response. <a name='sec-8'>&nbsp;</a>
+Your code should always be looking for the root key <code>error</code> in the API response. <a name='sec-8'> </a>
 
 [Back to top](#top)
 
@@ -246,13 +246,13 @@ In the **response** of that call, you will find the following object:
 	
 The **id** key in this object is the _Style ID_.
 
-More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.<a name='sec-9'>&nbsp;</a>
+More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.<a name='sec-9'> </a>
 
 [Back to top](#top)
 
 ### SDKs and Code Samples
 
-Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-10'>&nbsp;</a>
+Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-10'> </a>
 
 [Back to top](#top)
 
