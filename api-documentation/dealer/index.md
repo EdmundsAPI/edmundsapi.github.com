@@ -17,7 +17,7 @@ level: 1
 * [API Uses](#sec-3)
 * [Available Resources](#sec-4)
 
-<a name='sec-1'> </a>
+<p><a name='sec-1'> </a></p>
 
 ---
 
