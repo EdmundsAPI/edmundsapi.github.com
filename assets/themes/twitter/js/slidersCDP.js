@@ -79,3 +79,23 @@ $(function(){
 
 
 });
+
+$('.bottomSlider1 .carousel').on('slide', function(event) {
+	var slideNumber = $(event.relatedTarget).data('itemNumber');
+	$('.bottomSlider1 .app-picture.active').hide().removeClass('active');
+	$('.bottomSlider1 [data-slide-number="'+ slideNumber +'"]').addClass('active').show();
+	//heightBlock('#businessOwner');
+});
+
+$('.bottomSlider2 .carousel').on('slide', function(event) {
+	var slideNumber = $(event.relatedTarget).data('itemNumber');
+	$('.bottomSlider2 .app-picture.active').hide().removeClass('active');
+	$('.bottomSlider2 [data-slide-number="'+ slideNumber +'"]').addClass('active').show();
+	//heightBlock('#certDev');
+});
+
+
+$(function () {
+	$('#myTab a:last').tab('show');
+})
+

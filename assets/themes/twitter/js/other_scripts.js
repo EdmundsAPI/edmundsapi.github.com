@@ -16,7 +16,6 @@ $(function(){
 	  	});
 	}
 });
-
 // FAQ - END
 
 // WIDGETS AND APPS - START
@@ -60,20 +59,27 @@ if ($('#myTab').length > 0) {
     $('#myTab a').click(function (e) {
 	    e.preventDefault();
 	    $(this).tab('show');
-
+		
 	    //moving arrow
-
-	    var hrefLink = $(this).attr('href');
-
-	    var classArrow = hrefLink.substr(1);
-
-		var arrow = $('.arrow');
-
-	   	arrow.removeAttr('class');
-
-	    arrow.addClass('arrow '+ classArrow +'');
-    });
+		if ($('.arrow').length > 0) {
+	    	var hrefLink = $(this).attr('href');
+		    var classArrow = hrefLink.substr(1);
+			var arrow = $('.arrow');
+		   	arrow.removeAttr('class');
+		    arrow.addClass('arrow '+ classArrow +'');
+		}
+	});
 }
+
+// FOR POLICIES
+$(function(){
+	if ($('#compliance_policies').length > 0) {
+		$("ol a").on('click', function (element) { 
+			var thisLink = $(this);
+			scrollTo(thisLink);
+		});
+	}
+});
 
 $(function(){
 	if ($('.discriptBlokBisOwner').length > 0) {
@@ -113,6 +119,17 @@ $(function(){
 	}
 });
 
+$(function(){
+	if ($('#iconBadge').length > 0) {
+		var $iconBadge = $('#iconBadge').find('li a');
+		var amountBadge = $iconBadge.length;
+		var wrappIconDev = $('.wrapperIconDeveloper');
+		wrappIconDev.addClass('iconBadges'+ amountBadge +'');
+		
+		$('#iconBadge a').tooltip('toggle');
+		$('#iconBadge a').tooltip('hide');
+	}
+});
 // CERTIFIED DEVELOPER NETWORK JS - END
 
 // WIDGETS - START
