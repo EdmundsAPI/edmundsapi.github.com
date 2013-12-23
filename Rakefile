@@ -313,10 +313,20 @@ require 'rake/testtask'
 
 ENV["SITE_URL"] = "http://localhost:4000"
 
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'test'
-  test.test_files = FileList['test/test_*.rb']
-  test.verbose = true
+task :test => ['test:unit', 'test:acceptance']
+
+namespace 'test' do
+
+  Rake::TestTask.new('unit') do |test|
+    test.libs << 'test'
+    test.test_files = FileList['test/test_*.rb']
+    test.verbose = true
+  end
+
+  task :acceptance do
+    sh "cucumber test"
+  end
+
 end
 
 task :jekyll do
