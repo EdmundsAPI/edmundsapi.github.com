@@ -1,3 +1,43 @@
+// FAQ - START
+
+$(function(){
+	if ($('#faq-1').length > 0) {
+ 		function scrollTo(element){
+			var elementClick = element.attr("href");		
+			var cutElementClick = elementClick.substring(1);		
+			var destination = $('[name="'+ cutElementClick +'"]').offset().top;		
+			$("html, body").animate({ scrollTop: destination}, 500 );		
+			return false;
+		};
+ 
+	  	$("a").on('click', function (element) { 
+	   		var thisLink = $(this);
+	   		scrollTo(thisLink);
+	  	});
+	}
+});
+
+// FAQ - END
+
+// WIDGETS AND APPS - START
+if ($('.carousel-indicators').length > 0) {
+	$('.carousel-indicators a').bind('click.tabLink', function(){
+
+		var wrapperWidget= $('#wrapperWidget');
+	 	var hrefThis = $(this).attr('href');
+	 	var classWrapp = hrefThis.substr(1);
+	 	wrapperWidget.removeAttr('class');
+	 	wrapperWidget.addClass(classWrapp);
+
+	});
+
+	$('.carousel').carousel({
+		pause: true,
+		interval: false
+	});
+}
+// WIDGETS AND APPS - END
+
 // CERTIFIED DEVELOPER NETWORK JS - START
 if ($('.carousel').length > 0) {
 	

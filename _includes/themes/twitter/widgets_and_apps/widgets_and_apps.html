@@ -2,8 +2,6 @@
 
 <div id="wrapperWidget" class="marketValue">
 
-
-
 		        <div id="myCarousel" class="carousel slide">
 		        	<div class="container">
 			        	<header class="headerWidgets">
@@ -152,34 +150,4 @@
 				    </div>
 
 			    </div>
-
-
-
-
-
 </div>
-
-
-<script type="text/javascript">
-
-		$('.carousel-indicators a').bind('click.tabLink', function(){
-
-			var wrapperWidget= $('#wrapperWidget');
-		 	var hrefThis = $(this).attr('href');
-		 	var classWrapp = hrefThis.substr(1);
-		 	wrapperWidget.removeAttr('class');
-		 	wrapperWidget.addClass(classWrapp);
-
-		});
-
-	    $('.carousel').carousel({
-	    	pause: true,
-			interval: false
-	    });
-
-</script>
-
-
-
-
-

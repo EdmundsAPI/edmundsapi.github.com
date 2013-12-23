@@ -5,7 +5,7 @@ title: Frequently Asked Questions
 class_page: faqPage
 ---
 
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 
 ### The Questions
 
@@ -27,7 +27,7 @@ class_page: faqPage
 
 ### The Answers
 
-<a name='faq-1'>&nbsp;</a>
+<a name='faq-1' id='faq-1'> </a>
 <span class="question-header" >What is an API?
 </span>
 [Kin Lane](http://apievangelist.com), who's also known as *API Evangelist*, has the best answer for this question:
@@ -38,56 +38,56 @@ We also put together this [3-minute video](http://vimeo.com/65923039) to explain
 
 [Back to top](#top)
 
-<a name='faq-2'>&nbsp;</a>
+<a name='faq-2' id='faq-2'> </a>
 <span class="question-header" >Why has Edmunds decided to open up the data?
 </span>
 We here at Edmunds believe strongly that innovation is fostered best through openness and transparency. We're opening up our data because we want to give you, the developer, the ability to explore its potential beyond what we have already done. You can use the breadth and detail of the automotive information available through the Edmunds' API to create mashups, mobile apps, visualizations and other data-consuming applications that will provide an added dimension of user experience for the automotive consumer. Edmunds is committed to helping automotive consumers find the car that meets their every need. Providing our data to developers interested in automative data is a key component to achieving our goal.
 
 [Back to top](#top)
 
-<a name='faq-3'>&nbsp;</a>
+<a name='faq-3' id='faq-3'> </a>
 <span class="question-header" >Who is the intended audience for the Edmunds API?
 </span>
 The ultimate user of our API is a software developer. However, we are also appealing to business owners and decision makers who are creative and innovative in the automotive space.
 
 [Back to top](#top)
 
-<a name='faq-4'>&nbsp;</a>
+<a name='faq-4' id='faq-4'> </a>
 <span class="question-header">How might I use the content that's made available via the Edmunds API?
 </span>
 We want you to be as *creative* and as *innovative* as possible with our data. We have tried hard to put as little constraints on you as possible. The only thing we ask you to do is to **comply with our [Terms of Service](/terms_of_service/)**. 
 
 [Back to top](#top)
 
-<a name='faq-5'>&nbsp;</a>
+<a name='faq-5' id='faq-5'> </a>
 <span class="question-header">How much does it cost to use the API?
 </span>
 The Edmunds API is **FREE**. Certain resources and datasets that are deemed for **Partners only** will require a discussion with our business development team, but no monetary compensation is expected for the API access.
 
 [Back to top](#top)
 
-<a name='faq-6'>&nbsp;</a>
+<a name='faq-6' id='faq-6'> </a>
 <span class="question-header">Can I use the Edmunds API for my business?
 </span>
 Absolutely. We have large companies like eBay and Toyota Motors using our data as well as startups like showroom.is and noodler compare.
 
 [Back to top](#top)
 
-<a name='faq-7'>&nbsp;</a>
+<a name='faq-7' id='faq-7'> </a>
 <span class="question-header">What data formats does the Edmunds API support?
 </span>
 The vast majority of our data is returned in **JSON**. The Editorial API resource support JSON as well as XML. We will be adding XML support to the other APIs in the future.
 
 [Back to top](#top)
 
-<a name='faq-8'>&nbsp;</a>
+<a name='faq-8' id='faq-8'> </a>
 <span class="question-header">How can I reach out to Edmunds to discuss a potential partnership opportunity?
 </span>
 Exciting! Please [email us](mailto:api@edmunds.com) and try to be as specific as you can so we can bring in the right people to have a follow-up discussion with you regarding this potential opportunity. We should get back to you by email within 48 hours.
 
 [Back to top](#top)
 
-<a name='faq-9'>&nbsp;</a>
+<a name='faq-9' id='faq-9'> </a>
 <span class="question-header">How can I make money using this API?
 </span>
 Well, aren't you in for a treat! We don't only have one, but two, ways for you to make money using the Edmunds API:
@@ -100,48 +100,26 @@ Both programs are intended for the talented developers to use the Edmunds API to
 [Back to top](#top)
 
 
-<a name='faq-10'>&nbsp;</a>
+<a name='faq-10' id='faq-10'> </a>
 <span class="question-header">How much does it cost to increase my rate limit or quota?</span>
 We're more than happy to increase the rate limit for any developer after we look at their application and verify that it's in compliance with our [Terms of Service](/terms_of_service/). The rate increase is FREE.
 
 [Back to top](#top)
 
-<a name='faq-11'>&nbsp;</a>
+<a name='faq-11' id='faq-11'> </a>
 <span class="question-header">How can I find a car's MPG information?</span>
 The MPG data is available in the [Equipment Resource](/api-documentation/vehicle/spec_equipment/v2/) under equipment name "SPECIFICATION".
 
 [Back to top](#top)
 
-<a name='faq-12'>&nbsp;</a>
+<a name='faq-12' id='faq-12'> </a>
 <span class="question-header">What happened to the old API calls I was using?</span>
 When we launch a new version of an API resource, we remove the documentation for the older version of that resource so new developers don't start coding against it. The API calls themselves are not removed until the date called out in the docs. We encourage all developers to move over to the new API resources when available since they're the ones we'll continue to support.
 
 [Back to top](#top)
 
-<a name='faq-13'>&nbsp;</a>
+<a name='faq-13' id='faq-13'> </a>
 <span class="question-header">Does the API have data for the whole world?</span>
 Nope sorry, the data in the Edmunds API covers North American vehicles only.
 
 [Back to top](#top)
-
-
-<script type="text/javascript">
-
- $(function(){
-
- 	function scrollTo(element){
-		var elementClick = element.attr("href");		
-		var cutElementClick = elementClick.substring(1);		
-		var destination = $('[name="'+ cutElementClick +'"]').offset().top;		
-		$("html, body").animate({ scrollTop: destination}, 500 );		
-		return false;
-	};
- 
-  	$("a").on('click', function (element) { 
-   		var thisLink = $(this);
-   		scrollTo(thisLink);
-  	});
-
- });
-
-</script>
