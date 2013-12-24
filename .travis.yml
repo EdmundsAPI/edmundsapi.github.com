@@ -4,6 +4,9 @@ rvm: # the Ruby versions to be used
   - 2.0.0
 
 before_install:
+  - sudo apt-get install openjdk-7-jdk
+  - java -version
+  - mvn -version
   - gem update
   - gem install jekyll
   - gem install cucumber
