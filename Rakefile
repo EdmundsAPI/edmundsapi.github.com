@@ -313,7 +313,7 @@ require 'rake/testtask'
 
 ENV["SITE_URL"] = "http://localhost:4000"
 
-task :test => ['test:unit', 'test:acceptance']
+task :test => ['test:unit', 'test:integration', 'test:acceptance']
 
 namespace 'test' do
 
@@ -323,8 +323,12 @@ namespace 'test' do
     test.verbose = true
   end
 
+  task :integration do
+    sh "cucumber test/features"
+  end
+  
   task :acceptance do
-    sh "cucumber test"
+    sh "mvn clean test"
   end
 
 end

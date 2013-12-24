@@ -29,7 +29,9 @@ end
 Capybara.default_selector = :css
 World(RSpec::Matchers)
 
-$site_base_url = ENV["SITE_URL"]
+throw 'SITE_URL is not defined' if ENV['SITE_URL'] == nil
+
+$site_base_url = ENV['SITE_URL']
 
 def ui_url(path)
   $site_base_url + path
