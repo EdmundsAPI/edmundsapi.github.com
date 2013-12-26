@@ -9,10 +9,6 @@ before_install:
   - mvn -version
   - gem update
   - gem install jekyll
-  - gem install cucumber
-  - gem install rspec
-  - gem install capybara
-  - gem install poltergeist
   - phantomjs --version
 
 before_script:
