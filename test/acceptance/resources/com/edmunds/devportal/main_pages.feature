@@ -28,21 +28,25 @@ Feature: Main pages
     And the page should have header links
     And the page should have header menu
     And the page should have link to 'get started'
+    And menu 'api documentation' should be active
     Then I choose 'widgets and apps' menu
     And a new page should be open
     Then the page should have 'The Edmunds API - Widgets' in the title
     And the page should have header links
     And the page should have header menu
     And the page should have link to 'get started'
+    And menu 'widgets and apps' should be active
     Then I choose 'showcase' menu
     And a new page should be open
     Then the page should have 'Applications Built with The Edmunds API' in the title
     And the page should have header links
     And the page should have header menu
     And the page should have link to 'get started'
+    And menu 'showcase' should be active
     Then I choose 'certified developers' menu
     And a new page should be open
     Then the page should have 'Edmunds Certified Developer Network - Overview' in the title
     And the page should have header links
     And the page should have header menu
     And the page should have link to 'get started'
+    And menu 'certified developers' should be active

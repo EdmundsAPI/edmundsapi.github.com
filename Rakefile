@@ -328,7 +328,7 @@ namespace 'test' do
   end
   
   task :acceptance do
-    sh "mvn clean test"
+    sh "mvn clean test -DsiteUrl=#{ENV["SITE_URL"]} -DinBrowser"
   end
 
 end

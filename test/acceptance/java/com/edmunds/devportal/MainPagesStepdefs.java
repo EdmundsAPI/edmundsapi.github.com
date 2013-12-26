@@ -3,7 +3,7 @@ package com.edmunds.devportal;
 import static com.edmunds.devportal.RunCukesTest.getDriver;
 import static com.edmunds.devportal.RunCukesTest.getUiUrl;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
@@ -45,32 +45,33 @@ public class MainPagesStepdefs {
     @And("the page should have header links")
     public void the_page_should_have_header_links() {
         WebElement headerLinks = getDriver().findElement(By.className("headerLinks"));
-        assertNotNull(headerLinks);
+        assertTrue(headerLinks.isDisplayed());
         for (String link : links) {
             WebElement linkElement = headerLinks.findElement(By.linkText(link));
-            assertNotNull(linkElement);
+            assertTrue(linkElement.isDisplayed());
         }
     }
     
     @And("the page should have header menu")
     public void the_page_should_have_header_menu() {
         WebElement headerMenu = getDriver().findElement(By.className("headerMenu"));
-        assertNotNull(headerMenu);
+        assertTrue(headerMenu.isDisplayed());
         for (String item : menu) {
             WebElement menuElement = headerMenu.findElement(By.linkText(item));
-            assertNotNull(menuElement);
+            assertTrue(menuElement.isDisplayed());
         }
     }
     
     @And("the page should have link to '(.*)'")
     public void the_page_should_have_link_to(String link) {
         WebElement linkElement = getDriver().findElement(By.linkText(link));
-        assertNotNull(linkElement);
+        assertTrue(linkElement.isDisplayed());
     }
     
     @Then("I choose '(.*)' menu")
     public void I_choose_menu(String menu) {
         WebElement linkElement = getDriver().findElement(By.linkText(menu));
+        assertTrue(linkElement.isDisplayed());
         linkElement.click();
     }
     
@@ -79,4 +80,12 @@ public class MainPagesStepdefs {
         WebDriverWait wait = new WebDriverWait(getDriver(), 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("html")));
     }
+    
+    @And("menu '(.*)' should be active")
+    public void menu_should_be_active(String menu) {
+        WebElement menuItem = getDriver().findElement(By.linkText(menu));
+        String menuClass = menuItem.getAttribute("class");
+        assertTrue(menuClass.contains("active"));
+    }
+    
 }

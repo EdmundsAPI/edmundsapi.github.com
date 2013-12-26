@@ -3,6 +3,7 @@ package com.edmunds.devportal;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
@@ -20,15 +21,18 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
 
     @Before
     public void setUp() {
-        Assert.assertNotNull(System.getenv("SITE_URL"), "SITE_URL environment variable is missing");
-        baseUrl = System.getenv("SITE_URL");
+        Assert.assertNotNull(System.getProperty("siteUrl"), "'siteUrl' system property is missing");
+        baseUrl = System.getProperty("siteUrl");
         
-        DesiredCapabilities  dCaps = new DesiredCapabilities();
-        dCaps.setJavascriptEnabled(true);
-        dCaps.setCapability("takesScreenshot", false);
-        
-        driver = new PhantomJSDriver(dCaps);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        if (System.getProperty("inBrowser") == null) {
+            DesiredCapabilities  dCaps = new DesiredCapabilities();
+            dCaps.setJavascriptEnabled(true);
+            dCaps.setCapability("takesScreenshot", false);
+            driver = new PhantomJSDriver(dCaps);
+        } else {
+            driver = new FirefoxDriver(DesiredCapabilities.firefox());
+        }
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     
     @After
