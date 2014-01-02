@@ -54,7 +54,6 @@ number: 3
 	
 | Property      | Description                                              	| Visibility                |
 |:--------------|:----------------------------------------------------------|:------------------------- |
-| value         | An array with five float values representing 				| Edmunds, Partners, Public |
-|				| the 5-year breakdown of the TCO® value.	                | Edmunds, Partners, Public | 	
-| total			| The total TCO® for the five years			                | Edmunds, Partners, Public | 
+| value         | An array with five float values representing the 5-year breakdown of the TCO® value. | Edmunds, Partners, Public |
+| total         | The total TCO® for the five years                         | Edmunds, Partners, Public | 
 
