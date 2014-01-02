@@ -143,7 +143,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 #### CORS Support
 
-The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers and a full list of browser support can be found [here](http://caniuse.com/cors).
+The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers, and a full list of browser support can be found [here](http://caniuse.com/cors).
 
 <a name='sec-4'> </a>
 
@@ -252,7 +252,7 @@ More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_ma
 
 ### SDKs and Code Samples
 
-Our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) is a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-10'> </a>
+Our [Javascript](https://github.com/EdmundsAPI/sdk-javascript) and [Python](https://github.com/EdmundsAPI/sdk-python) SDKs are a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-10'> </a>
 
 [Back to top](#top)
 
