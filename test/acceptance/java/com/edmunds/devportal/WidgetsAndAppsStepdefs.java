@@ -40,8 +40,8 @@ public class WidgetsAndAppsStepdefs {
         WebElement linkItem = carousel.findElement(By.partialLinkText(item));
         assertEquals(activeItem.findElement(By.tagName("a")), linkItem, "Carousel item is not active");
         
-        int xStart = linkItem.getLocation().getX();
-        int xEnd = xStart + linkItem.getSize().getWidth();
+        int xStart = activeItem.getLocation().getX();
+        int xEnd = xStart + activeItem.getSize().getWidth();
         
         WebElement arrow = getDriver().findElement(By.id("myCarousel")).findElement(By.className("arrow"));
         int arrowX = arrow.getLocation().getX();
