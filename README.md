@@ -37,8 +37,4 @@ Run unit tests only:
 
 Run acceptance tests only:
 
-    rake test:acceptance
-
-Run acceptance tests against remote deployment:
-
-    rake remote test:acceptance
+    rake test:acceptance SITE_URL={http url}
