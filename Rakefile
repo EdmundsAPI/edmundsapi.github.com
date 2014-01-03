@@ -311,11 +311,15 @@ Dir['_rake/*.rake'].each { |r| load r }
 # Testing tasks
 require 'rake/testtask'
 
-ENV["SITE_URL"] = "http://localhost:4000"
-
 task :test => ['test:unit', 'test:acceptance']
 
 namespace 'test' do
+
+  task :setup do
+    if ENV["REMOTE"] != 'true'
+      sh "jekyll serve --detach"
+    end
+  end
 
   Rake::TestTask.new('unit') do |test|
     test.libs << 'test'
@@ -324,19 +328,17 @@ namespace 'test' do
   end
   
   task :acceptance do
+    if ENV["SITE_URL"] == nil
+        if ENV["REMOTE"] == 'true'
+          file = File.open("CNAME")
+          ENV["SITE_URL"] = "http://" + file.read.gsub(/\s+/, "")
+          file.close
+        else
+          ENV["SITE_URL"] = "http://localhost:4000"
+        end
+    end
+    
     sh "mvn clean test -DsiteUrl=#{ENV["SITE_URL"]}"
   end
 
-end
-
-task :jekyll do
-  sh "jekyll serve --detach"
-end
-
-task :local => [:jekyll]
-
-task :remote do
-  file = File.open("CNAME")
-  ENV["SITE_URL"] = "http://" + file.read.gsub(/\s+/, "")
-  file.close
 end
