@@ -7,7 +7,7 @@ title_parent: Api documentation
 
 level: 1
 ---
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 ### Page Content
 
 * [Overview](#sec-1)
@@ -16,7 +16,7 @@ level: 1
 * [API Uses](#sec-4)
 * [Available Resources](#sec-5)
 
-<a name='sec-1'>&nbsp;</a>
+<a name='sec-1'> </a>
 
 ---
 
@@ -38,7 +38,7 @@ Would match to:
 
 You will see many references throughout the documentation for vehicle (or car) _Model Year ID_ and _Style ID_. Most of the endpoints offered throughout the API require one of these IDs. Getting familiar with them is essential to taking full advantage of the Edmunds API. 
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.<a name='sec-2'>&nbsp;</a>
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to use the API.<a name='sec-2'> </a>
 
 [Back to top](#top)
 
@@ -82,7 +82,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
-<a name='sec-3'>&nbsp;</a>
+<a name='sec-3'> </a>
 
 [Back to top](#top)
 
@@ -116,7 +116,7 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 | &bull; all-wheel-drive	| &bull; four-wheel-drive	|
 | &bull; front-wheel-drive	| &bull; rear-wheel-drive	|
 
-<a name='sec-4'>&nbsp;</a>
+<a name='sec-4'> </a>
 
 [Back to top](#top)
 
@@ -132,7 +132,7 @@ Here are some common uses of the Vehicle API:
 * Get vehicle photos
 * Get consumer ratings and reviews
 
-<a name='sec-5'>&nbsp;</a>
+<a name='sec-5'> </a>
 
 [Back to top](#top)
 

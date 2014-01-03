@@ -8,7 +8,7 @@ title_parent: Api documentation
 level: 1
 ---
 
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 
 ### Page Content
 
@@ -17,7 +17,7 @@ level: 1
 * [API Uses](#sec-3)
 * [Available Resources](#sec-4)
 
-<a name='sec-1'>&nbsp;</a>
+<p><a name='sec-1'> </a></p>
 
 ---
 
@@ -28,7 +28,7 @@ The Dealer API is comprised of a collection of resources that provide access to 
 
 **Please note** that *dealer inventories* aren't available in this API. They are available in the [Inventory API](/api-documentation/inventory/).
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 
 [Back to top](#top)
 
@@ -48,7 +48,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/drrrepository/getdrrbyzipcodeandmake?zipcode=90019&make=bmw&limit=0%2C5&fmt=json&api_key={your API key}
 
-<a name='sec-3'>&nbsp;</a>
+<a name='sec-3'> </a>
 
 [Back to top](#top)
 
@@ -59,7 +59,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 
-<a name='sec-4'>&nbsp;</a>
+<a name='sec-4'> </a>
 
 [Back to top](#top)
 

@@ -425,6 +425,7 @@ footer.footerLayout .nav > li > a {
 		font-weight: bold;
 		text-align: left;
 		background: #444;
+		white-space: nowrap;
 	}
 	table td,
 	.tableParametrs td {

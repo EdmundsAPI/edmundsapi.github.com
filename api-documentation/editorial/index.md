@@ -8,7 +8,7 @@ title_parent: Api documentation
 level: 1
 ---
 
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 
 ### Page Content
 
@@ -20,7 +20,7 @@ level: 1
 * [Granular Editor Review Components](#sec-6)
 * [API Uses](#sec-7)
 
-<a name='sec-1'>&nbsp;</a>
+<a name='sec-1'> </a>
 
 ---
 
@@ -28,7 +28,7 @@ level: 1
 
 The Editorial API offers access to Edmunds.com's award-winning editorial content, including articles, editor reviews and road tests. This shouldn't be confused with *consumer-generated* [vehicle rating and reviews](/api-documentation/vehicle/ratings_and_reviews/v1/) and [dealership ratings and reviews](/api-documentation/dealer/ratings_and_reviews/v1/). The content in the Editorial API is created and managed by the Edmunds.com editorial team.
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 
 [Back to top](#top)
 
@@ -48,7 +48,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
 
-<a name='sec-3'>&nbsp;</a>
+<a name='sec-3'> </a>
 
 [Back to top](#top)
 
@@ -70,7 +70,7 @@ Each Article should be accredited as follows: **"From Edmunds.com"** at the top 
 
 The following notice should be affixed to the end of each Article: **"Copyright Edmunds.com, Inc. All rights reserved. First published on www.edmunds.com and reprinted with permission. Edmunds and the Edmunds.com car logo are registered trademarks of Edmunds.com, Inc."**
 
-Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.<a name='sec-4'>&nbsp;</a>
+Each Article should be refreshed not less often than once every 30 days, in order to obtain updates and revisions by Edmunds.com.<a name='sec-4'> </a>
 
 [Back to top](#top)
 
@@ -78,12 +78,12 @@ Each Article should be refreshed not less often than once every 30 days, in orde
 
 The Editorial API has two resources:
 
-| Resource Name  	| Description                           |
-|:------------------|:--------------------------------------|
-| [Articles](/api-documentation/editorial/articles/v1/) | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
-| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/) | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
+| Resource Name  					| Description                           |
+|:----------------------------------|:--------------------------------------|
+| [Articles](/api-documentation/editorial/articles/v1/)        | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
+| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/)      | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
 
-<a name='sec-5'>&nbsp;</a>
+<a name='sec-5'> </a>
 
 [Back to top](#top)
 
@@ -109,7 +109,7 @@ The Editorial API has two resources:
 * vehicle safety
 * warranties
 
-<a name='sec-6'>&nbsp;</a>
+<a name='sec-6'> </a>
 
 [Back to top](#top)
 
@@ -127,7 +127,7 @@ When using the **Editor Reviews** resource, you will get the review broken into 
 * Video Review
 * Full Review
 
-<a name='sec-7'>&nbsp;</a>
+<a name='sec-7'> </a>
 
 [Back to top](#top)
 

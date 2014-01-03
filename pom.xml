@@ -44,20 +44,21 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.rubiconproject.oss</groupId>
-			<artifactId>jchronic</artifactId>
-			<version>0.2.6</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.39.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>2.28.0</version>
-		</dependency>
+	        <groupId>org.seleniumhq.selenium</groupId>
+	        <artifactId>selenium-firefox-driver</artifactId>
+	        <version>2.39.0</version>
+	    </dependency>
 		<dependency>
 			<groupId>com.github.detro.ghostdriver</groupId>
 			<artifactId>phantomjsdriver</artifactId>
 			<version>1.0.1</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>

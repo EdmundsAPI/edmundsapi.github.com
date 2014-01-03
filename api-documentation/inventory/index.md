@@ -8,7 +8,7 @@ title_parent: Api documentation
 level: 1
 ---
 
-<a name="top">&nbsp;</a>
+<a name="top"> </a>
 
 ### Page Content
 
@@ -20,7 +20,7 @@ level: 1
 * [API Uses](#sec-6)
 * [Available Resources](#sec-7)
 
-<a name='sec-1'>&nbsp;</a>
+<a name='sec-1'> </a>
 
 ---
 
@@ -28,7 +28,7 @@ level: 1
 
 The Inventory API provides access to the *vehicle inventories* (or *cars for sale*) available at dealerships with a relationship with Edmunds.com. Due to the nature of this data, it's only available to **API Partners** and **Edmunds Developers**. If you're interested in becoming an API Partner, please [email us](mailto:api%40edmunds.com?subject=API%20Partner%20Inquiry&body=Please%20fill%20out%20the%20following.%0A%0AName%20and%20position%3A%0A%0ACompany%3A%0A%0AApplication%20Description%2C%20including%20links%20to%20demo%20or%20live%20app%3A%0A%0AHow%20you%20plan%20to%20use%20Edmunds%20data%3A%0A%0ADo%20you%20currently%20work%20with%20any%20dealerships%20and%2For%20OEMs%3F%20If%20so%2C%20who%3A%20).
 
-If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'>&nbsp;</a>
+If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 
 [Back to top](#top)
 
@@ -50,7 +50,7 @@ Alternative, you can add the the _access\_token_ to the query string:
 
 	curl -i 'http://api.edmunds.com/{endpoint}?access_token=<access_token>'
 	
-We **do not recommend** the second approach since it's not secure.<a name='sec-3'>&nbsp;</a>
+We **do not recommend** the second approach since it's not secure.<a name='sec-3'> </a>
 
 [Back to top](#top)
 
@@ -66,7 +66,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/api/inventory/v1/getall?types=NEW&dealerId=26711
 
-<a name='sec-4'>&nbsp;</a>
+<a name='sec-4'> </a>
 
 [Back to top](#top)
 
@@ -78,7 +78,7 @@ The inventory detail page on Edmunds.com has the following URL structure:
 
 The information you need to compile this URL is available in the API response of all endpoints in this resource. This piece of information is **important** when you want to send traffic back to Edmunds.com so your users can transact on that inventory.
 
-<a name='sec-5'>&nbsp;</a>
+<a name='sec-5'> </a>
 
 [Back to top](#top)
 
@@ -90,7 +90,7 @@ Due to the nature of the inventory data, not all of it is available to the publi
 2. **Partners:** This datapoint is visible to strategic partners. Your API Key has to be assigned as such.
 3. **Public:** This datapoint is visible to public partners (those who have their rate limit raised and apps verified for compliance with our TOS.) Your API Key has to be assigned as such.
 
-<a name='sec-6'>&nbsp;</a>
+<a name='sec-6'> </a>
 
 [Back to top](#top)
 
@@ -101,7 +101,7 @@ Due to the nature of the inventory data, not all of it is available to the publi
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 
-<a name='sec-7'>&nbsp;</a>
+<a name='sec-7'> </a>
 
 [Back to top](#top)
 

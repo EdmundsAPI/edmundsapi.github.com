@@ -76,7 +76,7 @@ Product discussions with Edmunds.com regarding new or existing products are cons
 
 ---
 
-<a name="compliance_policies">
+<a name="compliance_policies" id="compliance_policies">
 </a>
 
 #### Compliance Policies
@@ -87,16 +87,4 @@ Please review these policies carefully. Violations may result in suspension from
 
 
 {% comment %}<!-- Smooth scroll to -->{% endcomment %}
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js">
-</script>
-<script type="text/javascript">
-	$(function(){
-	
-		$("ol a").on('click', function (element) { 
-			var thisLink = $(this);
-			scrollTo(thisLink);
-		});
-	
-	});
-</script>
-
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js"></script>

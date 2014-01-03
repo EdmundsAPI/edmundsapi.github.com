@@ -235,41 +235,5 @@ cdp_weight: 3
 	</div>
 </div>
 
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/jquery.history.js">
-</script>
-
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
-</script>
-
-<script type="text/javascript" charset="utf-8">
-	/*$(function(){
-
-		var currentHash = window.location.hash;
-
- 		console.log(currentHash)
-
-		$('#menu').find('div:first a').addClass('activeToggle');
-
-		if(currentHash == ''){
-
-			//$('#menu').find('a[href="#business_owner"]').addClass('activeToggle');
-			console.log('1')
-
-		} else {
-
-			$('#menu').find('a[href='+ currentHash +']').addClass('activeToggle');
-			console.log('2')
-
-		}
-	});	*/
-</script>
-
-
-
-
-
-
-
-
-
-
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/jquery.history.js"></script>
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js"></script>
