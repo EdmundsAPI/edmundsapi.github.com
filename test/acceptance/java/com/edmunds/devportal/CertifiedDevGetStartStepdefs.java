@@ -1,10 +1,13 @@
 package com.edmunds.devportal;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Lists;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import java.util.List;
+import org.apache.commons.collections.CollectionUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -52,9 +55,13 @@ public class CertifiedDevGetStartStepdefs {
         assertNotNull(ulMenu);
         List<WebElement> list = ulMenu.findElements(By.tagName("li"));
         assertNotNull(list);
-        for (WebElement element : list) {
-            assertTrue(menu.contains(element.getText()));
-        }
+        assertTrue(CollectionUtils.isEqualCollection(menu, Lists.transform(list,
+            new Function<WebElement, String>() {
+                @Override
+                public String apply(WebElement input) {
+                    return input.getText();
+                }
+            })));
     }
 
     @And("the right block should be visible")
@@ -83,9 +90,13 @@ public class CertifiedDevGetStartStepdefs {
         assertNotNull(ulList);
         List<WebElement> list = ulList.findElements(By.tagName("li"));
         assertNotNull(list);
-        for (WebElement element : list) {
-            assertTrue(navigatedList.contains(element.getText()));
-        }
+        assertTrue(CollectionUtils.isEqualCollection(navigatedList, Lists.transform(list,
+            new Function<WebElement, String>() {
+                @Override
+                public String apply(WebElement input) {
+                    return input.getText();
+                }
+            })));
     }
 
     @And("the page should have left block")
@@ -138,10 +149,13 @@ public class CertifiedDevGetStartStepdefs {
         List<WebElement> items = list.findElements(By.tagName("li"));
         assertNotNull(items);
         assertEquals(rightList.size(), items.size());
-        for (WebElement item : items) {
-            assertTrue(rightList.contains(item.getText()));
-            assertTrue(item.isDisplayed());
-        }
+        assertTrue(CollectionUtils.isEqualCollection(rightList, Lists.transform(items,
+            new Function<WebElement, String>() {
+                @Override
+                public String apply(WebElement input) {
+                    return input.getText();
+                }
+            })));
     }
 
     @Then("I direct the mouse over the right block")
@@ -160,10 +174,13 @@ public class CertifiedDevGetStartStepdefs {
         List<WebElement> items = list.findElements(By.tagName("li"));
         assertNotNull(items);
         assertEquals(leftList.size(), items.size());
-        for (WebElement item : items) {
-            assertTrue(leftList.contains(item.getText()));
-            assertTrue(item.isDisplayed());
-        }
+        assertTrue(CollectionUtils.isEqualCollection(leftList, Lists.transform(items,
+            new Function<WebElement, String>() {
+                @Override
+                public String apply(WebElement input) {
+                    return input.getText();
+                }
+            })));
     }
 
     @And("the link '(.*)' should be visible")

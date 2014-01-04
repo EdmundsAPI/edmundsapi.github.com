@@ -1,5 +1,7 @@
 package com.edmunds.devportal;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Lists;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -8,6 +10,7 @@ import cucumber.api.java.en.When;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.apache.commons.collections.CollectionUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -37,9 +40,13 @@ public class CertifiedDevSearchDirectoryStepdefs {
         WebElement content = getDriver().findElement(By.id("qualification"));
         assertNotNull(content);
         List<WebElement> types = content.findElements(By.tagName("label"));
-        for (WebElement type : types) {
-            assertTrue(qualifications.contains(type.getText()));
-        }
+        assertTrue(CollectionUtils.isEqualCollection(qualifications, Lists.transform(types,
+            new Function<WebElement, String>() {
+                @Override
+                public String apply(WebElement input) {
+                    return input.getText();
+                }
+            })));
     }
 
     @When("I click '(.*)' and '(.*)' qualifications checkboxes")

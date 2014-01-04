@@ -8,12 +8,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import java.util.List;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static com.edmunds.devportal.RunCukesTest.getDriver;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
 public class CertifiedDevPagesStepdefs {
@@ -59,7 +59,7 @@ public class CertifiedDevPagesStepdefs {
             new Function<WebElement, String>() {
                 @Override
                 public String apply(WebElement input) {
-                    return input.getText();
+                    return StringUtils.upperCase(input.getText());
                 }
             })));
     }
