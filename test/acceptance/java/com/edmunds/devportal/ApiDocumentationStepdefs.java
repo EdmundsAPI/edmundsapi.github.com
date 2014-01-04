@@ -4,11 +4,11 @@ import static com.edmunds.devportal.RunCukesTest.getDriver;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import cucumber.api.DataTable;
@@ -94,18 +94,43 @@ public class ApiDocumentationStepdefs {
     @And("the '(.*)' documentation should(|n't) be present")
     public void the_documentation_should_be_present(String version, String isNotPresent) {
         WebElement header = getDriver().findElement(By.className("api-header-row1"));
-        try {
-            WebElement doc = header.findElement(By.linkText(version));
-            assertTrue(doc.isDisplayed());
-        } catch (NoSuchElementException e) {
-            assertFalse(isNotPresent.isEmpty());
+        List<WebElement> links = header.findElements(By.tagName("a"));
+        WebElement doc = null;
+        for (WebElement link : links) {
+            if(link.getText().equals(version)) {
+                doc = link;
+                break;
+            }
+        }
+        if (isNotPresent.isEmpty()) {
+            assertTrue(doc != null, "Documentation is missing");
+            assertTrue(doc.isDisplayed(), "Documentation is not visible");
+        } else {
+            assertTrue(doc == null, "Documentation should not be displayed");
         }
     }
     
-    @And("the documentation should have endpoints")
-    public void the_documentation_should_have_endpoints() {
+    @And("the documentation should have (\\d+) endpoints")
+    public void the_documentation_should_have_endpoints(int count) {
         List<WebElement> endpoints = getDriver().findElement(By.className("api-header-row2")).findElements(By.name("endpoint"));
-        assertFalse(endpoints.isEmpty());
+        assertEquals(endpoints.size(), count, "Endpoints count doesn't match");
+    }
+    
+    @And("the documentation should not have endpoints")
+    public void the_documentation_should_not_have_endpoints() {
+        List<WebElement> links = getDriver().findElement(By.className("wrapperHeader")).findElements(By.xpath("//a/.."));
+        for (WebElement link : links) {
+            if("endpoint".equals(link.getAttribute("name"))) {
+                fail("The documentation should not have endpoints");
+            }
+        }
+    }
+    
+    @When("I choose '(.*)' documentation")
+    public void I_choose_documentation(String version) {
+        WebElement header = getDriver().findElement(By.className("api-header-row1"));
+        WebElement doc = header.findElement(By.linkText(version));
+        doc.click();
     }
     
     @When("I choose '(.*)' endpoint")
