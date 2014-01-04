@@ -11,8 +11,6 @@ before_install:
   - sudo apt-get install openjdk-7-jdk
   - java -version
   - mvn -version
-  - gem update
-  - gem install jekyll
   - phantomjs --version
 
 before_script:

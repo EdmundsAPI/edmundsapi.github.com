@@ -317,7 +317,7 @@ namespace 'test' do
 
   task :setup do
     if ENV["REMOTE"] != 'true'
-      sh "jekyll serve --detach"
+      sh "gem install jekyll; jekyll serve --detach"
     end
   end
 
