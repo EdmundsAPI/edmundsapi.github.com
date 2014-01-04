@@ -14,12 +14,10 @@ Install gems:
 
   - gem install rake
   - gem install jekyll
-  - gem install cucumber
-  - gem install rspec
-  - gem install capybara
-  - gem install poltergeist
 
 Install [PhantomJS] (http://phantomjs.org/)
+
+Install JDK and Maven.
 
 #### Build the site
 
@@ -37,4 +35,8 @@ Run unit tests only:
 
 Run acceptance tests only:
 
-    rake test:acceptance SITE_URL={http url}
+    rake test:acceptance
+
+Run acceptance tests against remote deployment:
+
+    rake test:acceptance REMOTE=true (will use CNAME hostname) or rake test:acceptance SITE_URL={http url}
