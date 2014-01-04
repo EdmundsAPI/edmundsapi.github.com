@@ -49,7 +49,7 @@ public class WidgetsAndAppsStepdefs {
         assertTrue(arrowX > xStart && arrowX < xEnd, "Widgets carousel arrow doesn't work");
     }
     
-    @And("the slide (.*) should be displayed")
+    @And("the slide '(.*)' should be displayed")
     public void the_slide_should_be_displayed(String slideNum) {
         WebElement slider = getDriver().findElement(By.id("myCarousel")).findElement(By.className("slider-content"));
         WebElement slide = slider.findElement(By.cssSelector(".item.active")).findElement(By.className("slide" + slideNum));

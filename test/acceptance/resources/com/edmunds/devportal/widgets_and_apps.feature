@@ -9,22 +9,22 @@ Feature: Widgets and Apps
         | NEW VEHICLE CONFIGURATOR |
         | EDMUNDS AT A GLANCE      |
     Then the 'TRUE MARKET VALUE' carousel item should be active
-    And the slide 1 should be displayed
+    And the slide '1' should be displayed
     And the slide 1 should have links:
         | Learn More    |
         | Configure Now |
     When I select 'NEW VEHICLE CONFIGURATOR' carousel item
     Then the 'NEW VEHICLE CONFIGURATOR' carousel item should be active
-    And the slide 2 should be displayed
+    And the slide '2' should be displayed
     And the slide 2 should have links:
         | Learn More    |
         | Configure Now |
     When I select 'EDMUNDS AT A GLANCE' carousel item
     Then the 'EDMUNDS AT A GLANCE' carousel item should be active
-    And the slide 3 should be displayed
+    And the slide '3' should be displayed
     When I select 'TRUE MARKET VALUE' carousel item
     Then the 'TRUE MARKET VALUE' carousel item should be active
-    And the slide 1 should be displayed
+    And the slide '1' should be displayed
 
 
 
