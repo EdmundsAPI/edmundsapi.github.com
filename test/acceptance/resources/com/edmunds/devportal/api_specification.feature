@@ -155,9 +155,9 @@ Feature: API Documentation
     Then I choose 'Spec: Squish VIN' left menu
     And a new page should be open
     And menu 'Spec: Squish VIN' should be active
-    And the 'v2' documentation shouldn't be present
-    And the 'v1' documentation should be present
-    And menu 'v1' should be active
+    And the 'v1' documentation shouldn't be present
+    And the 'v2' documentation should be present
+    And menu 'v2' should be active
     And the documentation should have 1 endpoints
     When I choose 'api/vehicle/v2/squishvins/{squish VIN}/' endpoint
     Then the endpoint should have specification articles
