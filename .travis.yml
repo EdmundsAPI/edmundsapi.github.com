@@ -4,8 +4,13 @@ rvm: # the Ruby versions to be used
   - 2.0.0
 
 env:
-  - REMOTE=false
-  - REMOTE=true
+  global:
+    - secure: PW/0i0zeRGEAZy64MeEmxt7kaaLtQYMbh0N0/SHJ3tWONmgo8rsbRsHif69B/UGdVk9Pne0uL17GangbXpjmks31j0TW0MyT277tAdTXxFp1fudyOI89KqijQRCiwTjyRbdZfmJpeQ33f657sCv++Li82LjVZ1MsxvBcS1ekwHg=
+
+branches:
+  only:
+    - dev
+    - master
 
 before_install:
   - sudo apt-get install openjdk-7-jdk
@@ -14,10 +19,12 @@ before_install:
   - phantomjs --version
 
 before_script:
-  - rake test:setup
+  - rake test:unit
+  - rake travis:setup
 
 script:
-  - rake test
+  - rake test:acceptance
+  - rake travis:deploy
 
 notifications:
   email:

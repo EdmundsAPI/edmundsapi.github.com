@@ -315,12 +315,6 @@ task :test => ['test:unit', 'test:acceptance']
 
 namespace 'test' do
 
-  task :setup do
-    if ENV["REMOTE"] != 'true'
-      sh "gem install jekyll; jekyll serve --detach"
-    end
-  end
-
   Rake::TestTask.new('unit') do |test|
     test.libs << 'test'
     test.test_files = FileList['test/test_*.rb']
@@ -341,4 +335,48 @@ namespace 'test' do
     sh "mvn clean test -DsiteUrl=#{ENV["SITE_URL"]}"
   end
 
+end
+
+namespace 'travis' do
+  SOURCE_BRANCH = 'dev'
+  DEPLOY_BRANCH = 'master'
+  
+  desc 'Setup site on Travis'
+  task :setup do
+    if ENV['TRAVIS_BRANCH'] == DEPLOY_BRANCH
+      sh "export REMOTE=true"
+    else
+      sh "gem install jekyll; jekyll serve --detach"
+    end
+  end
+    
+  desc 'Publish site to GitHub Pages'
+  task :deploy do
+    if ENV['TRAVIS_TEST_RESULT'].to_i != 0
+      puts "Skipping deployment due to test failure"
+      next
+    end
+  
+    if ENV['TRAVIS_PULL_REQUEST'] == "true" or ENV['TRAVIS_BRANCH'] != SOURCE_BRANCH
+      puts "Skipping deployment from #{ENV['TRAVIS_BRANCH']}"
+      next
+    end
+  
+    repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
+    system "git remote set-url --push origin #{repo}"
+    system 'git config credential.helper "store --file=.git/credentials"'
+    File.open('.git/credentials', 'w') do |f|
+      f.write("https://#{ENV['GH_TOKEN']}:x-oauth-basic@github.com")
+    end
+  
+    puts "Deploying from #{SOURCE_BRANCH} to #{DEPLOY_BRANCH}"
+    deployed = system "git push origin #{SOURCE_BRANCH}:#{DEPLOY_BRANCH}"
+    puts "Deployed: #{deployed}"
+  
+    File.delete '.git/credentials'
+  
+    if not deployed
+      exit 1
+    end
+  end
 end
