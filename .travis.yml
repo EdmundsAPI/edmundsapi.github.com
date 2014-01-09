@@ -24,6 +24,10 @@ script:
 
 notifications:
   email:
+    - ielshareef@edmunds.com
+    - mbock@edmunds.com
+    - andrii_senchylov@epam.com
     - vera_kruhliakova@epam.com
     - maksim_dadzerkin@epam.com
+    - dzmitry_yurkavets@epam.com
 
