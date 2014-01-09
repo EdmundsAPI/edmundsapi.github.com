@@ -18,12 +18,8 @@ before_install:
   - mvn -version
   - phantomjs --version
 
-before_script:
-  - rake test:unit
-  - rake travis:setup
-
 script:
-  - rake test:acceptance
+  - rake travis:test
   - rake travis:deploy
 
 notifications:

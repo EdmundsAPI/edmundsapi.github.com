@@ -321,18 +321,19 @@ namespace 'test' do
     test.verbose = true
   end
   
+  desc 'Run acceptance tests'
   task :acceptance do
-    if ENV["SITE_URL"] == nil
-        if ENV["REMOTE"] == 'true'
+    if ENV['SITE_URL'] == nil
+        if ENV['REMOTE'] == 'true'
           file = File.open("CNAME")
-          ENV["SITE_URL"] = "http://" + file.read.gsub(/\s+/, "")
+          ENV['SITE_URL'] = "http://" + file.read.gsub(/\s+/, "")
           file.close
         else
-          ENV["SITE_URL"] = "http://localhost:4000"
+          ENV['SITE_URL'] = 'http://localhost:4000'
         end
     end
     
-    sh "mvn clean test -DsiteUrl=#{ENV["SITE_URL"]}"
+    sh "mvn clean test -DsiteUrl=#{ENV['SITE_URL']}"
   end
 
 end
@@ -344,13 +345,16 @@ namespace 'travis' do
   desc 'Setup site on Travis'
   task :setup do
     if ENV['TRAVIS_BRANCH'] == DEPLOY_BRANCH
-      sh "export REMOTE=true"
+      ENV['REMOTE'] = 'true'
     else
       sh "gem install jekyll; jekyll serve --detach"
     end
   end
+  
+  desc 'Execute tests on Travis'
+  task :test => ['test:unit', 'travis:setup', 'test:acceptance']
     
-  desc 'Publish site to GitHub Pages'
+  desc 'Publish site to GitHub Pages from Travis'
   task :deploy do
     if ENV['TRAVIS_TEST_RESULT'].to_i != 0
       puts "Skipping deployment due to test failure"
