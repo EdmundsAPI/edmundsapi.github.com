@@ -15,3 +15,6 @@ Thumbs.db
 *.swp
 
 CNAME
+
+target
+.classpath

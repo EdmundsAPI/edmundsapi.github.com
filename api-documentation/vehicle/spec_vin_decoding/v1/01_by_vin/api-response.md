@@ -63,7 +63,7 @@ number: 3
 | engineCylinder			    | The car engine details. See [engine specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)					| Edmunds, Partners, Public |
 | engineSize			    	| The car engine details. See [engine specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)					| Edmunds, Partners, Public |
 | trim			    			| The car trim																												| Edmunds, Partners, Public |
-| squishVins			    	| The VIN's corresponding squishVINs. See [SquishVIN specs](/api-documentation/vehicle/spec_squishvin/v1/)					| Edmunds, Partners, Public |
+| squishVins			    	| The VIN's corresponding squishVINs. See [SquishVIN specs](/api-documentation/vehicle/spec_squishvin/v2/)					| Edmunds, Partners, Public |
 | styleIds			    		| A list of style IDs that match this VIN																					| Edmunds, Partners, Public |
 
 

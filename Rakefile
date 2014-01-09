@@ -307,3 +307,245 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+# Testing tasks
+require 'rake/testtask'
+
+task :test => ['test:unit', 'test:acceptance']
+
+namespace 'test' do
+
+  Rake::TestTask.new('unit') do |test|
+    test.libs << 'test'
+    test.test_files = FileList['test/test_*.rb']
+    test.verbose = true
+  end
+  
+  desc 'Run acceptance tests'
+  task :acceptance do
+    if ENV['SITE_URL'] == nil
+        if ENV['REMOTE'] == 'true'
+          file = File.open("CNAME")
+          ENV['SITE_URL'] = "http://" + file.read.gsub(/\s+/, "")
+          file.close
+        else
+          ENV['SITE_URL'] = 'http://localhost:4000'
+        end
+    end
+    
+    sh "mvn clean test -DsiteUrl=#{ENV['SITE_URL']}"
+  end
+
+end
+
+namespace 'travis' do
+  SOURCE_BRANCH = 'dev'
+  DEPLOY_BRANCH = 'master'
+  
+  desc 'Setup site on Travis'
+  task :setup do
+    if ENV['TRAVIS_BRANCH'] == DEPLOY_BRANCH
+      ENV['REMOTE'] = 'true'
+    else
+      sh "gem install jekyll; jekyll serve --detach"
+    end
+  end
+  
+  desc 'Execute tests on Travis'
+  task :test => ['test:unit', 'travis:setup', 'test:acceptance']
+    
+  desc 'Publish site to GitHub Pages from Travis'
+  task :deploy do
+    if ENV['TRAVIS_TEST_RESULT'].to_i != 0
+      puts "Skipping deployment due to test failure"
+      next
+    end
+  
+    if ENV['TRAVIS_PULL_REQUEST'] == "true" or ENV['TRAVIS_BRANCH'] != SOURCE_BRANCH
+      puts "Skipping deployment from #{ENV['TRAVIS_BRANCH']}"
+      next
+    end
+  
+    repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
+    system "git remote set-url --push origin #{repo}"
+    system 'git config credential.helper "store --file=.git/credentials"'
+    File.open('.git/credentials', 'w') do |f|
+      f.write("https://#{ENV['GH_TOKEN']}:x-oauth-basic@github.com")
+    end
+  
+    puts "Deploying from #{SOURCE_BRANCH} to #{DEPLOY_BRANCH}"
+    deployed = system "git push origin #{SOURCE_BRANCH}:#{DEPLOY_BRANCH}"
+    puts "Deployed: #{deployed}"
+  
+    File.delete '.git/credentials'
+  
+    if not deployed
+      exit 1
+    end
+  end
+end
+
+
+# Quick Edmunds API Endpoint generation.
+#
+# To generate new Endpoint use 'endpoint' rake task
+# 
+# Example
+#
+#    rake endpoint path=api-documentation/vehicle/spec_make/v2/04_test title="Test Endpoint" url=api/v2/vehicle/makes/test
+#
+# Will generate endpoint articles in <path>:
+#    api-description.md
+#    api-parameters.md
+#    api-response.md
+#    api-request.md
+# with proper headers and template body.
+module ApiDocumentation
+    
+    class Spec
+        attr_reader :api, :link, :title, :version, :versionAmount
+        
+        def initialize(api, link, title, version, versionAmount)
+            @api = api
+            @link = link
+            @title = title
+            @version = version
+            @versionAmount = versionAmount
+        end
+        
+        def to_s
+            "#{@api} -- #{@link} -- #{@title} -- #{@version} (#{@versionAmount})"
+        end
+    end
+
+    class Endpoint
+        attr_reader :spec, :title, :link
+        
+        def initialize(spec, title, link)
+            @spec = spec
+            @title = title
+            @link = link
+        end
+        
+        def to_s
+            "#{@spec} -- #{@title} -- #{@link}"
+        end
+    end
+
+    class Article
+        attr_reader :file, :endpoint, :title, :level, :number, :body
+        
+        def initialize(file, endpoint, title, level, number, body)
+            @file = file
+            @endpoint = endpoint
+            @title = title
+            @level = level
+            @number = number
+            @body = body
+        end
+        
+        def header
+"---
+layout: api-documentation
+title : '#{@endpoint.title}'
+title_active_left_menu: '#{@endpoint.spec.title}'
+title_parent: Api documentation
+
+amount_version: #{@endpoint.spec.versionAmount}
+title-endpoint: '#{@endpoint.title}'
+spec: #{@endpoint.spec.link}
+version: #{@endpoint.spec.version}
+api: #{@endpoint.spec.api}
+dropdown-link: '#{@endpoint.link}'
+
+level: #{@level}
+description_edpoint: '#{@endpoint.title}'
+title_md : #{@title}
+number: #{@number}
+
+---
+"
+        end
+        
+        def to_s
+          header + @body
+        end
+    end
+    
+    def ApiDocumentation.findSpec(path)
+        path = File.join(path, 'index.md')
+        if File.exist? path
+            file = File.open(path)
+            content = file.read
+            file.close
+
+            api = /^api\s*:\s*(.+)\n/.match(content)[1]
+            link = /^spec\s*:\s*(.+)\n/.match(content)[1]
+            title = /^title\s*:\s*'(.+)'\n/.match(content)[1]
+            version = /^version\s*:\s*(.+)\n/.match(content)[1]
+            versionAmount = /^amount_version\s*:\s*(\d+)\n/.match(content)[1]
+            Spec.new(api, link, title, version, versionAmount)
+        else
+            raise "Spec is not found: #{path}"
+        end
+    end
+    
+    def ApiDocumentation.generateEndpoint(path, title, link)
+        if Dir[File.join(path, '*')].size > 0
+            raise "Endpoint already exists: #{path}"
+        end
+        
+        pathParts = /^(.*)\/(.*)$/.match(path)
+        spec = findSpec(pathParts[1])
+        endpoint = Endpoint.new(spec, title, link)
+        
+        description = Article.new('api-description.md', endpoint, 'Description', 3, 1, "
+### Description
+
+### URL
+
+### Code Example
+")
+        parameters = Article.new('api-parameters.md', endpoint, 'Parameters', 4, 2, "
+###Parameters
+
+| Parameter  | Description                           | Possible Values   | Default Value | Required |
+|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
+|            |                                       |                   |               |          |
+")
+        response = Article.new('api-response.md', endpoint, 'Response Format', 4, 3, "
+###Response format
+
+
+| Property      | Description                                              	| Visibility                |
+|:--------------|:----------------------------------------------------------|:------------------------- |
+|               |                                                          	| Edmunds, Partners, Public |
+")
+        request = Article.new('api-request.md', endpoint, 'Sample Request', 4, 4, "
+###Sample Request
+
+### URL
+
+### Response
+")
+        if not Dir.exist? path
+          Dir.mkdir(path)
+        end
+        [description, parameters, response, request].each do |article|
+            file = File.new(File.join(path, article.file),  "w+")
+            file.write article
+            file.close
+        end
+    end
+end
+
+desc 'Quick Edmunds API Endpoint generation. Usage: rake endpoint path=<path> title=<title> url=<url>'
+task :endpoint do
+  ['path', 'title', 'url'].each do |param|
+    if not ENV[param] or ENV[param] == ''
+      puts "The parameter '#{param}' is not defined"
+      exit 1
+    end
+  end
+  ApiDocumentation.generateEndpoint(ENV['path'], ENV['title'], ENV['url'])
+end

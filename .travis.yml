@@ -1,0 +1,29 @@
+language: ruby
+
+rvm: # the Ruby versions to be used
+  - 2.0.0
+
+env:
+  global:
+    - secure: pUx+KnBDGtjnpSfHUrc+iJ/DGPaPQsckqS02yezDGmQ7sV/OdKz8FOHV3ZDU1wF2U5dLBNDOxKesfkbwxieix65XO5S88ucc0ESEFnrett+v7UUBRkn1o2mhV/itZ0sof6mTs7cIRpUiVbMDLUbFbN91zqpEbjHRdMBBFv/87jE=
+
+branches:
+  only:
+    - dev
+    - master
+
+before_install:
+  - sudo apt-get install openjdk-7-jdk
+  - java -version
+  - mvn -version
+  - phantomjs --version
+
+script:
+  - rake travis:test
+  - rake travis:deploy
+
+notifications:
+  email:
+    - vera_kruhliakova@epam.com
+    - maksim_dadzerkin@epam.com
+
