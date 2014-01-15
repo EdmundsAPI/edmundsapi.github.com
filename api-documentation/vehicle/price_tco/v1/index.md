@@ -24,6 +24,12 @@ The [components of TCO®](/api-documentation/vehicle/price_tco_cats/v1/) are dep
 
 Note that TCO® is a comparative tool, not a predictive tool — your actual five-year cost of owning a particular vehicle will vary depending on your personal circumstances, such as your driving history and the number of miles you drive.
 
+For legal reasons, we cannot expose the granular data (i.e. depreciation, taxes and fees, insurance, fuel, etc.) that makes up the True Cost to Own value. If you want to get access to that data, please email us at api \[at\] edmunds \[dot\] com.
+
+You can also send your users to the following URL for more information on the True Cost to Own value: 
+
+> http://www.edmunds.com/{make}/{model}/{year}/tco.html?style={style ID}&zip={zipcode}
+
 ### Endpoints
 
 * [Get the True Cost to Own® Total for a New Car](/api-documentation/vehicle/price_tco/v1/01_newcar_tco/api-description.html)
@@ -111,10 +117,3 @@ When you display our True Cost to Own® (TCO®) data for any vehicles, we ask fo
 4) That you include the following legal notice:
 
 *TCO® data are copyrighted by Edmunds.com, Inc., which reserves all rights. Edmunds®, Edmunds.com True Cost to Own® and TCO® are registered trademarks of Edmunds.com, Inc. Edmunds.com, Inc. is not affiliated with this website or app.*
-
-For legal reasons, we cannot expose the granular data (i.e. depreciation, taxes and fees, insurance, fuel, etc.) that makes up the True Cost to Own value. If you want to get access to that data, please email us at api \[at\] edmunds \[dot\] com.
-
-You can also send your users to the following URL for more information on the True Cost to Own value: 
-
-> http://www.edmunds.com/{make}/{model}/{year}/tco.html?style={style ID}&zip={zipcode}
-
