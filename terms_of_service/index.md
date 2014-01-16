@@ -61,13 +61,13 @@ By submitting an Application for API Keys, you acknowledge and agree that (i) yo
 
 ### 5. Attribution.
 
-Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the *approved logos* in it to link back to **[http://www.edmunds.com/?id=apis](http://www.edmunds.com/?id=apis)**.
+Additionally, please follow the [API Branding Guideline](/api_branding_guide/) and use of the *approved logos (the "Edmunds Web Logos")* in it to link back to **[http://www.edmunds.com/?id=apis](http://www.edmunds.com/?id=apis)**.
 
 #### DO NOT:
 
-* Change, alter or modify in any way the image of the Edmunds Web Badge — including colors, language, appearance or animations.
-* Make the Web Badge bigger than your Developer Site’s or Developer Application’s name and branding.
-* Use the Web Badge to suggest that Edmunds is responsible for, or endorses or recommends, your Developer Site's or Developer Application’s content, design, language or topic.
+* Change, alter or modify in any way the image of any Edmunds Web Logo — including colors, language, appearance or animations.
+* Make an Edmunds Web Logo bigger than your Developer Site’s or Developer Application’s name and branding.
+* Use an Edmunds Web Logo to suggest that Edmunds is responsible for, or endorses or recommends, your Developer Site’s or Developer Application’s content, design, language or topic.
 
 ---
 
@@ -103,7 +103,7 @@ You acknowledge and agree that:
 
 **7.4**   Edmunds may limit the number API queries that may be submitted by your Developer Application per day.
 
-**7.5**   You must include the Edmunds Web Badge on the Developer Site and the Developer Application displaying Edmunds Data.
+**7.5**   You must include an Edmunds Web Logo on the Developer Site and the Developer Application displaying Edmunds Data.
 
 **7.6 **  You will not include rel="nofollow" when rendering hyperlinked Edmunds Data returned by an Edmunds API.
 
