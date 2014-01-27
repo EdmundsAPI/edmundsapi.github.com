@@ -2,6 +2,10 @@
 
 ## Testing
 
+### Production
+
+[![Build Status](https://travis-ci.org/EdmundsAPI/edmundsapi.github.com.png)](https://travis-ci.org/EdmundsAPI/edmundsapi.github.com)
+
 ### Staging
 
 [![Build Status](https://travis-ci.org/edmundsapi-preprod/edmundsapi-preprod.github.com.png)](https://travis-ci.org/edmundsapi-preprod/edmundsapi-preprod.github.com)
