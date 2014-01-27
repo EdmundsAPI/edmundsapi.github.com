@@ -87,4 +87,5 @@ Please review these policies carefully. Violations may result in suspension from
 
 
 {% comment %}<!-- Smooth scroll to -->{% endcomment %}
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js"></script>
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/scrollTo.js">
+</script>

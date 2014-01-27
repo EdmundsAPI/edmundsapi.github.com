@@ -235,5 +235,7 @@ cdp_weight: 3
 	</div>
 </div>
 
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/jquery.history.js"></script>
-<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js"></script>
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/jquery.history.js">
+</script>
+<script type="text/javascript" src="{{ PATH }}/assets/themes/twitter/js/jquery_history/scriptHistory.js">
+</script>
