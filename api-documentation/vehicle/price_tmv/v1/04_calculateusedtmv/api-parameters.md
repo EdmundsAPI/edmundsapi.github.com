@@ -28,6 +28,6 @@ number: 2
 | mileage    | The car mileage   			         |               	 |               | Yes      |
 | zip        | The zip code of the area  	         |               	 |               | Yes      |
 | colorid    | Vehicle color ID (&colorid=xxx&colorid=xxx&colorid=xxx for multiples) | | | No       |
-| optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) | | No     |
+| optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) | | | No   |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |
