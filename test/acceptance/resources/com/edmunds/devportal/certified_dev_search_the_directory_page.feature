@@ -10,7 +10,7 @@ Feature: Certified-def/search_the_directory
       | FORUM             |
       | API STATUS        |
       | AFFILIATE NETWORK |
-      | TERMS OF USE      |
+      | TERMS OF SERVICE  |
       | FAQ               |
       | BLOG              |
     Given there is a list of menu:
