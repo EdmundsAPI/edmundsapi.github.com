@@ -2,7 +2,6 @@ package com.edmunds.devportal;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,13 +25,13 @@ public class CertifiedDevSearchDirectoryStepdefs {
     private List<String> locations;
 
     @Given("there is a qualification types")
-    public void there_is_a_qualifications_types(DataTable table) {
-        qualifications = table.asList(String.class);
+    public void there_is_a_qualifications_types(List<String> qualifications) {
+        this.qualifications = qualifications;
     }
 
     @Given("there is a list of locations")
-    public void there_is_a_list_of_locations(DataTable table) {
-        locations = table.asList(String.class);
+    public void there_is_a_list_of_locations(List<String> locations) {
+        this.locations = locations;
     }
 
     @And("the page should have qualification types")

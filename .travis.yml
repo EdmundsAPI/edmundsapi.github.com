@@ -1,7 +1,7 @@
 language: ruby
 
 rvm: # the Ruby versions to be used
-  - 2.0.0
+  - 2.1.0
 
 env:
   global:

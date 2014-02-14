@@ -120,7 +120,6 @@ Feature: Widgets and Apps
     Then I should see setup page from 'http://widgets.edmunds.com/carconfig/v1?portal=true' source
     
     Then I choose 'widgets and apps' menu
-    And a new page should be open
     When I select 'NEW VEHICLE CONFIGURATOR' carousel item
     Then the 'NEW VEHICLE CONFIGURATOR' carousel item should be active
     When I click on 'Configure Now' button of slide 2

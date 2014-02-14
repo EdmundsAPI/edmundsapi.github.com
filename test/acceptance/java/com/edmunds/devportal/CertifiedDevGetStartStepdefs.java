@@ -2,7 +2,6 @@ package com.edmunds.devportal;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -25,28 +24,28 @@ public class CertifiedDevGetStartStepdefs {
     private List<String> menu;
 
     @Given("there is a left menu")
-    public void there_is_a_left_menu(DataTable table) {
-        menu = table.asList(String.class);
+    public void there_is_a_left_menu(List<String> menu) {
+        this.menu = menu;
     }
 
     @Given("there is a left list")
-    public void there_is_a_left_list(DataTable table) {
-        leftList = table.asList(String.class);
+    public void there_is_a_left_list(List<String> leftList) {
+        this.leftList = leftList;
     }
 
     @Given("there is a right list")
-    public void there_is_a_right_list(DataTable table) {
-        rightList = table.asList(String.class);
+    public void there_is_a_right_list(List<String> rightList) {
+        this.rightList = rightList;
     }
 
     @Given("there is descriptions of badges")
-    public void there_is_descriptions_of_badges(DataTable table) {
-        descriptions = table.asList(String.class);
+    public void there_is_descriptions_of_badges(List<String> descriptions) {
+        this.descriptions = descriptions;
     }
 
     @Given("there is a navigated list")
-    public void there_is_a_navigated_list(DataTable table) {
-        navigatedList = table.asList(String.class);
+    public void there_is_a_navigated_list(List<String> navigatedList) {
+        this.navigatedList = navigatedList;
     }
 
     @And("the page should have a left menu")

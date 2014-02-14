@@ -10,6 +10,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -88,6 +90,7 @@ public class ApiDocumentationStepdefs {
     public void I_choose_left_menu(String menu) {
         WebElement menuContainer = getDriver().findElement(By.id("leftMenuFixed"));
         WebElement menuItem = menuContainer.findElement(By.linkText(menu));
+        getDriver().executeScript(String.format("window.scrollTo(0,%d)", menuItem.getLocation().getY() - 200), "");
         menuItem.click();
     }
     
@@ -146,8 +149,12 @@ public class ApiDocumentationStepdefs {
     @Then("the endpoint should have specification articles")
     public void the_endpoint_should_have_specification_articles() {
         WebElement submenu = getDriver().findElement(By.className("endpoint-submenu"));
+
+        WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(submenu));
+        
         for (WebElement article: submenu.findElements(By.tagName("a"))) {
-            assertTrue(specArticles.contains(article.getText().toLowerCase()));
+            assertTrue(specArticles.contains(article.getText().toLowerCase()), "Article " + article.getText() + " is not found.");
         }
         assertEquals(submenu.findElements(By.tagName("a")).size(), specArticles.size());
     }

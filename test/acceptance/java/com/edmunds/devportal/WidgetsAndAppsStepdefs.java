@@ -8,6 +8,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -126,8 +128,12 @@ public class WidgetsAndAppsStepdefs {
     @Then("the '(.*)' slider should have markers")
     public void the_slider_should_have_markers(String sliderName, List<String> markers) {
         WebElement slider = getDriver().findElement(By.className("wrapperSlider" + sliderName));
-        for (int i = 0; i < markers.size(); i ++) {
+        for (int i = 0; i < markers.size(); i ++) {           
             WebElement marker = slider.findElement(By.className("mark" + (i + 1)));
+            
+            WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+            wait.until(ExpectedConditions.visibilityOf(marker));
+            
             marker.click();
             
             WebElement tip = slider.findElement(By.xpath("//span[text()='" + markers.get(i) + "']"));

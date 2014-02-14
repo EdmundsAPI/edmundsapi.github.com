@@ -23,26 +23,21 @@ Feature: Main Page
     And the carousel should have '5' items
     
     When I select '2' Built with Edmunds API carousel item
-    And a new page should be open
     Then the '2' Built with Edmunds API carousel item should be active
     And the slide '2' of Built with Edmunds API should be displayed
 
     When I select '3' Built with Edmunds API carousel item
-    And a new page should be open
     Then the '3' Built with Edmunds API carousel item should be active
     And the slide '3' of Built with Edmunds API should be displayed
 
     When I select '4' Built with Edmunds API carousel item
-    And a new page should be open
     Then the '4' Built with Edmunds API carousel item should be active
     And the slide '4' of Built with Edmunds API should be displayed
 
     When I select '5' Built with Edmunds API carousel item
-    And a new page should be open
     Then the '5' Built with Edmunds API carousel item should be active
     And the slide '5' of Built with Edmunds API should be displayed
 
     When I select '1' Built with Edmunds API carousel item
-    And a new page should be open
     Then the '1' Built with Edmunds API carousel item should be active
     And the slide '1' of Built with Edmunds API should be displayed

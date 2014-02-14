@@ -12,7 +12,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -28,13 +27,13 @@ public class MainPagesStepdefs {
     }
 
     @Given("there is a list of links")
-    public void there_is_a_list_of_links(DataTable table) {
-        links = table.asList(String.class);
+    public void there_is_a_list_of_links(List<String> links) {
+        this.links = links;
     }
     
     @Given("there is a list of menu")
-    public void there_is_a_list_of_menu(DataTable table) {
-        menu = table.asList(String.class);
+    public void there_is_a_list_of_menu(List<String> menu) {
+        this.menu = menu;
     }
     
     @Then("the page should have '(.*)' in the title")

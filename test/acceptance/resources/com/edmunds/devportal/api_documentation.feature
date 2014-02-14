@@ -113,7 +113,6 @@ Feature: API Documentation
     Then I should see left menu
     
     Then I choose 'Vehicle API' left menu
-    And a new page should be open
     And menu 'Vehicle API' should be active
     And the page content should be displayed
     Then the page content should have articles:
@@ -124,7 +123,6 @@ Feature: API Documentation
         | Available Resources  |
         
     Then I choose 'Editorial API' left menu
-    And a new page should be open
     And menu 'Editorial API' should be active
     And the page content should be displayed
     Then the page content should have articles:
@@ -137,7 +135,6 @@ Feature: API Documentation
         | API Uses                          |
         
     Then I choose 'Inventory API' left menu
-    And a new page should be open
     And menu 'Inventory API' should be active
     And the page content should be displayed
     Then the page content should have articles:
@@ -150,7 +147,6 @@ Feature: API Documentation
         | Available Resources    |
         
     Then I choose 'Dealer API' left menu
-    And a new page should be open
     And menu 'Dealer API' should be active
     And the page content should be displayed
     Then the page content should have articles:

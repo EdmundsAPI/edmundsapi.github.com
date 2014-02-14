@@ -12,7 +12,6 @@ Feature: API Documentation
     Then I should see left menu
     
     Then I choose 'Spec: Make' left menu
-    And a new page should be open
     And menu 'Spec: Make' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -29,7 +28,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Model' left menu
-    And a new page should be open
     And menu 'Spec: Model' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -46,7 +44,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Model/Year' left menu
-    And a new page should be open
     And menu 'Spec: Model/Year' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -63,7 +60,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Style' left menu
-    And a new page should be open
     And menu 'Spec: Style' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -88,7 +84,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
 
     Then I choose 'Spec: Engine and Transmission' left menu
-    And a new page should be open
     And menu 'Spec: Engine and Transmission' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -107,7 +102,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Colors and Options' left menu
-    And a new page should be open
     And menu 'Spec: Colors and Options' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -126,7 +120,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Configuration' left menu
-    And a new page should be open
     And menu 'Spec: Configuration' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -138,7 +131,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Spec: Equipment' left menu
-    And a new page should be open
     And menu 'Spec: Equipment' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -153,7 +145,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Spec: Squish VIN' left menu
-    And a new page should be open
     And menu 'Spec: Squish VIN' should be active
     And the 'v1' documentation shouldn't be present
     And the 'v2' documentation should be present
@@ -163,7 +154,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Spec: VIN Decoding' left menu
-    And a new page should be open
     And menu 'Spec: VIN Decoding' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -176,7 +166,6 @@ Feature: API Documentation
     And the documentation should have 1 endpoints
     
     Then I choose 'Price: True Cost to Own®' left menu
-    And a new page should be open
     And menu 'Price: True Cost to Own®' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -198,7 +187,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Price: True Cost to Own® Categories' left menu
-    And a new page should be open
     And menu 'Price: True Cost to Own® Categories' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -210,7 +198,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Price: True Market Value®' left menu
-    And a new page should be open
     And menu 'Price: True Market Value®' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -230,7 +217,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Price: Incentives and Rebates' left menu
-    And a new page should be open
     And menu 'Price: Incentives and Rebates' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -252,7 +238,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Service: Maintenance' left menu
-    And a new page should be open
     And menu 'Service: Maintenance' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -266,7 +251,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Service: Recalls' left menu
-    And a new page should be open
     And menu 'Service: Recalls' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -278,7 +262,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Service: Service Bulletin' left menu
-    And a new page should be open
     And menu 'Service: Service Bulletin' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -290,7 +273,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Service: Notes' left menu
-    And a new page should be open
     And menu 'Service: Notes' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -300,7 +282,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Service: Local Labor Rate' left menu
-    And a new page should be open
     And menu 'Service: Local Labor Rate' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -310,7 +291,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Media: Photos' left menu
-    And a new page should be open
     And menu 'Media: Photos' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -320,7 +300,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Content: Ratings and Reviews' left menu
-    And a new page should be open
     And menu 'Content: Ratings and Reviews' should be active
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
@@ -337,7 +316,6 @@ Feature: API Documentation
     And the documentation should not have endpoints
     
     Then I choose 'Content: Letter Grade Rating' left menu
-    And a new page should be open
     And menu 'Content: Letter Grade Rating' should be active
     And the 'v1' documentation shouldn't be present
     And the 'v2' documentation should be present
@@ -349,7 +327,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Articles' left menu
-    And a new page should be open
     And menu 'Articles' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -359,7 +336,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Editor Reviews' left menu
-    And a new page should be open
     And menu 'Editor Reviews' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -369,7 +345,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'VIN Lookup' left menu
-    And a new page should be open
     And menu 'VIN Lookup' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -379,7 +354,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Vehicle Listings' left menu
-    And a new page should be open
     And menu 'Vehicle Listings' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -389,7 +363,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
 
     Then I choose 'Ratings and Reviews' left menu
-    And a new page should be open
     And menu 'Ratings and Reviews' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present
@@ -401,7 +374,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     
     Then I choose 'Details and Location' left menu
-    And a new page should be open
     And menu 'Details and Location' should be active
     And the 'v2' documentation shouldn't be present
     And the 'v1' documentation should be present

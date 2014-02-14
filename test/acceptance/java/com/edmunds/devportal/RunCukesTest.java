@@ -2,10 +2,11 @@ package com.edmunds.devportal;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 import cucumber.api.CucumberOptions;
@@ -17,7 +18,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 public class RunCukesTest extends AbstractTestNGCucumberTests {
 
     private static String baseUrl;
-    private static WebDriver driver;
+    private static RemoteWebDriver driver;
 
     @Before
     public void setUp() {
@@ -33,6 +34,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             driver = new FirefoxDriver(DesiredCapabilities.firefox());
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().setSize(new Dimension(1280, 1024));
     }
     
     @After
@@ -44,7 +46,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         return baseUrl + page;
     }
     
-    public static WebDriver getDriver() {
+    public static RemoteWebDriver getDriver() {
         return driver;
     }
 }

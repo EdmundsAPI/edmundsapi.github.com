@@ -1,6 +1,5 @@
 package com.edmunds.devportal;
 
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import java.util.List;
@@ -16,8 +15,8 @@ public class CertifiedDevPoliciesStepdefs {
     private List<String> policies;
 
     @Given("there is a list of policies")
-    public void there_is_a_list_of_policies(DataTable table) {
-        policies = table.asList(String.class);
+    public void there_is_a_list_of_policies(List<String> policies) {
+        this.policies = policies;
     }
 
     @And("the page should have list of policies")

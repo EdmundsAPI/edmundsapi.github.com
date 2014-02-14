@@ -2,7 +2,6 @@ package com.edmunds.devportal;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -23,8 +22,8 @@ public class CertifiedDevPagesStepdefs {
     private List<String> menu;
 
     @Given("there is a list of left menu items for certified-dev pages")
-    public void there_is_a_list_of_left_menu_items_for_certified_dev_pages(DataTable table) {
-        menu = table.asList(String.class);
+    public void there_is_a_list_of_left_menu_items_for_certified_dev_pages(List<String> menu) {
+        this.menu = menu;
     }
 
     @Then("the certified-dev page should have '(.*)' in the page title")
