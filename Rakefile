@@ -109,7 +109,7 @@ namespace :theme do
   # Public: Switch from one theme to another for your blog.
   #
   # name - String, Required. name of the theme you want to switch to.
-  #        The the theme must be installed into your JB framework.
+  #        The theme must be installed into your JB framework.
   #
   # Examples
   #
@@ -341,16 +341,34 @@ end
 namespace 'travis' do
   SOURCE_BRANCH = 'dev'
   DEPLOY_BRANCH = 'master'
-  
+
+  VERSION_URL = 'http://pages.github.com/versions.json'
+
+  # install 'json' gem to parse version of Jekyll from Github Pages
+  sh "gem install json --no-ri --no-rdoc"
+
   desc 'Setup site on Travis'
   task :setup do
+    require 'net/http'
+    require 'uri'
+    require 'json'
+
     if ENV['TRAVIS_BRANCH'] == DEPLOY_BRANCH
       ENV['REMOTE'] = 'true'
     else
-      sh "gem install jekyll; jekyll serve --detach"
+      uri = URI.parse(VERSION_URL)
+      response = Net::HTTP.get_response(uri)
+      json = JSON.parse(response.body)
+      version = json["jekyll"]
+
+      # uninstall all versions of Jekyll
+      sh "gem uninstall -ax jekyll"
+
+      sh "gem install jekyll --version '=" + version + "' --no-ri --no-rdoc"
+      sh "jekyll serve --detach"
     end
   end
-  
+
   desc 'Execute tests on Travis'
   task :test => ['test:unit', 'travis:setup', 'test:acceptance']
     
