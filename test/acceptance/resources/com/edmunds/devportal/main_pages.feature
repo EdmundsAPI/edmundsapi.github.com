@@ -1,3 +1,4 @@
+@healthcheck
 Feature: Main pages
   To verify main pages availability
 

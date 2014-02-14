@@ -7,7 +7,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>Developer Portal Acceptance Tests</name>
-
+	
 	<build>
 		<testSourceDirectory>test/acceptance/java</testSourceDirectory>
 		<testResources>
@@ -25,10 +25,22 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>test/acceptance/resources/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+		            	<cucumber.options>${cucumber.options}</cucumber.options>
+		            </systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>healthcheck</id>
+			<properties>
+				<cucumber.options>--tags @healthcheck</cucumber.options>
+			</properties>
+		</profile>
+	</profiles>
 
 	<dependencies>
 		<dependency>
