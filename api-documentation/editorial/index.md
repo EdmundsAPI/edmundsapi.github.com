@@ -26,7 +26,7 @@ level: 1
 
 ### Overview
 
-The Editorial API offers access to Edmunds.com's award-winning editorial content, including articles, editor reviews and road tests. This shouldn't be confused with *consumer-generated* [vehicle rating and reviews](/api-documentation/vehicle/ratings_and_reviews/v1/) and [dealership ratings and reviews](/api-documentation/dealer/ratings_and_reviews/v1/). The content in the Editorial API is created and managed by the Edmunds.com editorial team.
+The Editorial API offers access to Edmunds.com's award-winning editorial content, including articles, editor reviews and road tests. This shouldn't be confused with *consumer-generated* [vehicle rating and reviews](/api-documentation/vehicle/content_ratings_and_reviews/v2/) and [dealership ratings and reviews](/api-documentation/dealer/ratings_and_reviews/v1/). The content in the Editorial API is created and managed by the Edmunds.com editorial team.
 
 If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 
