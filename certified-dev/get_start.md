@@ -30,10 +30,9 @@ cdp_weight: 3
 	</div>
 </div>
 
-<a name="certified_developer">
-</a>
-<a name="business_owner">
-</a>
+<a name="certified_developer"></a>
+<a name="business_owner"></a>
+
 <div id="menu" class="toggleLinks clearfix ">
 	<div>
 		<a href="#certified_developer" data-link="dev" data-active-content="contentDev">Certified Developer</a>

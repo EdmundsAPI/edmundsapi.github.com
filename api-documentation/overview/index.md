@@ -175,8 +175,8 @@ Once these three criteria are verified, the rate limit is increased to what Edmu
 
 ### Available Resources
 
-{% comment %} <!-- Top table "AVAILABLE API’S" --> {% endcomment %}
 {% include themes/twitter/api_overview/table_available_api.html %}
+
 Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer _three access tiers_:
 
 * **PUBLIC**: All registered developers using the Edmunds.com data and content according to our [Terms of Service](/terms_of_service/).
