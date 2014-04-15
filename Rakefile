@@ -359,12 +359,19 @@ namespace 'travis' do
       uri = URI.parse(VERSION_URL)
       response = Net::HTTP.get_response(uri)
       json = JSON.parse(response.body)
-      version = json["jekyll"]
+
+      jekyllVersion = json["jekyll"]
+      kramdownVersion = json["kramdown"]
 
       # uninstall all versions of Jekyll
       sh "gem uninstall -ax jekyll"
 
-      sh "gem install jekyll --version '=" + version + "' --no-ri --no-rdoc"
+      # uninstall all versions of Kramdown
+      sh "gem uninstall -ax kramdown"
+
+      sh "gem install jekyll --version '=" + jekyllVersion + "' --no-ri --no-rdoc"
+      sh "gem install kramdown --version '=" + kramdownVersion + "' --no-ri --no-rdoc"
+
       sh "jekyll serve --detach"
     end
   end
