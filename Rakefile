@@ -24,7 +24,7 @@ module JB
       :theme_packages => "_theme_packages",
       :posts => "_posts"
     }
-    
+
     def self.base
       SOURCE
     end
@@ -36,7 +36,7 @@ module JB
       path.compact!
       File.__send__ :join, path
     end
-  
+
   end #Path
 end #JB
 
@@ -57,7 +57,7 @@ task :post do
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -83,7 +83,7 @@ task :page do
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  
+
   mkdir_p File.dirname(filename)
   puts "Creating new page: #{filename}"
   open(filename, 'w') do |post|
@@ -105,7 +105,7 @@ end # task :preview
 task :switch_theme => "theme:switch"
 
 namespace :theme do
-  
+
   # Public: Switch from one theme to another for your blog.
   #
   # name - String, Required. name of the theme you want to switch to.
@@ -140,16 +140,16 @@ namespace :theme do
           page.puts "---"
           page.puts "layout: default"
           page.puts "---"
-        end 
+        end
         page.puts "{% include JB/setup %}"
-        page.puts "{% include themes/#{theme_name}/#{File.basename(filename)} %}" 
+        page.puts "{% include themes/#{theme_name}/#{File.basename(filename)} %}"
       end
     end
-    
+
     puts "=> Theme successfully switched!"
     puts "=> Reload your web-page to check it out =)"
   end # task :switch
-  
+
   # Public: Install a theme using the theme packager.
   # Version 0.1.0 simple 1:1 file matching.
   #
@@ -173,28 +173,28 @@ namespace :theme do
     end
 
     packaged_theme_path = JB::Path.build(:theme_packages, :node => name)
-    
+
     abort("rake aborted!
       => ERROR: 'name' cannot be blank") if name.empty?
-    abort("rake aborted! 
+    abort("rake aborted!
       => ERROR: '#{packaged_theme_path}' directory not found.
       => Installable themes can be added via git. You can find some here: http://github.com/jekyllbootstrap
       => To download+install run: `rake theme:install git='[PUBLIC-CLONE-URL]'`
       => example : rake theme:install git='git@github.com:jekyllbootstrap/theme-the-program.git'
     ") unless FileTest.directory?(packaged_theme_path)
-    
+
     manifest = verify_manifest(packaged_theme_path)
-    
+
     # Get relative paths to packaged theme files
     # Exclude directories as they'll be recursively created. Exclude meta-data files.
     packaged_theme_files = []
     FileUtils.cd(packaged_theme_path) {
-      Dir.glob("**/*.*") { |f| 
+      Dir.glob("**/*.*") { |f|
         next if ( FileTest.directory?(f) || f =~ /^(manifest|readme|packager)/i )
-        packaged_theme_files << f 
+        packaged_theme_files << f
       }
     }
-    
+
     # Mirror each file into the framework making sure to prompt if already exists.
     packaged_theme_files.each do |filename|
       file_install_path = File.join(JB::Path.base, filename)
@@ -205,7 +205,7 @@ namespace :theme do
         cp_r File.join(packaged_theme_path, filename), file_install_path
       end
     end
-    
+
     puts "=> #{name} theme has been installed!"
     puts "=> ---"
     if ask("=> Want to switch themes now?", ['y', 'n']) == 'y'
@@ -218,7 +218,7 @@ namespace :theme do
   # In other words packaging is essentially the reverse of installing.
   #
   # name - String, Required name of the theme you want to package.
-  #        
+  #
   # Examples
   #
   #   rake theme:package name="twitter"
@@ -233,12 +233,12 @@ namespace :theme do
     abort("rake aborted: name cannot be blank") if name.empty?
     abort("rake aborted: '#{theme_path}' directory not found.") unless FileTest.directory?(theme_path)
     abort("rake aborted: '#{asset_path}' directory not found.") unless FileTest.directory?(asset_path)
-    
+
     ## Mirror theme's template directory (_includes)
     packaged_theme_path = JB::Path.build(:themes, :root => JB::Path.build(:theme_packages, :node => name))
     mkdir_p packaged_theme_path
     cp_r theme_path, packaged_theme_path
-    
+
     ## Mirror theme's asset directory
     packaged_theme_assets_path = JB::Path.build(:theme_assets, :root => JB::Path.build(:theme_packages, :node => name))
     mkdir_p packaged_theme_assets_path
@@ -249,10 +249,10 @@ namespace :theme do
     open(JB::Path.build(:theme_packages, :node => "#{name}/packager.yml"), "w") do |page|
       page.puts packager.to_yaml
     end
-    
+
     puts "=> '#{name}' theme is packaged and available at: #{JB::Path.build(:theme_packages, :node => name)}"
   end
-  
+
 end # end namespace :theme
 
 # Internal: Download and process a theme from a git url.
@@ -260,7 +260,7 @@ end # end namespace :theme
 # So we'll have to change the folder name once we get the name.
 #
 # url - String, Required url to git repository.
-#        
+#
 # Returns theme manifest hash
 def theme_from_git_url(url)
   tmp_path = JB::Path.build(:theme_packages, :node => "_tmp")
@@ -280,7 +280,7 @@ end
 # Internal: Process theme package manifest file.
 #
 # theme_path - String, Required. File path to theme package.
-#        
+#
 # Returns theme manifest hash
 def verify_manifest(theme_path)
   manifest_path = File.join(theme_path, "manifest.yml")
@@ -320,7 +320,7 @@ namespace 'test' do
     test.test_files = FileList['test/test_*.rb']
     test.verbose = true
   end
-  
+
   desc 'Run acceptance tests'
   task :acceptance do
     if ENV['SITE_URL'] == nil
@@ -332,7 +332,7 @@ namespace 'test' do
           ENV['SITE_URL'] = 'http://localhost:4000'
         end
     end
-    
+
     sh "mvn clean test -DsiteUrl=#{ENV['SITE_URL']}"
   end
 
@@ -342,7 +342,7 @@ namespace 'travis' do
   SOURCE_BRANCH = 'dev'
   DEPLOY_BRANCH = 'master'
 
-  VERSION_URL = 'http://pages.github.com/versions.json'
+  VERSION_URL = 'https://pages.github.com/versions.json'
 
   # install 'json' gem to parse version of Jekyll from Github Pages
   sh "gem install json --no-ri --no-rdoc"
@@ -371,32 +371,32 @@ namespace 'travis' do
 
   desc 'Execute tests on Travis'
   task :test => ['test:unit', 'travis:setup', 'test:acceptance']
-    
+
   desc 'Publish site to GitHub Pages from Travis'
   task :deploy do
     if ENV['TRAVIS_TEST_RESULT'].to_i != 0
       puts "Skipping deployment due to test failure"
       next
     end
-  
+
     if ENV['TRAVIS_PULL_REQUEST'] == "true" or ENV['TRAVIS_BRANCH'] != SOURCE_BRANCH
       puts "Skipping deployment from #{ENV['TRAVIS_BRANCH']}"
       next
     end
-  
+
     repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
     system "git remote set-url --push origin #{repo}"
     system 'git config credential.helper "store --file=.git/credentials"'
     File.open('.git/credentials', 'w') do |f|
       f.write("https://#{ENV['GH_TOKEN']}:x-oauth-basic@github.com")
     end
-  
+
     puts "Deploying from #{SOURCE_BRANCH} to #{DEPLOY_BRANCH}"
     deployed = system "git push origin #{SOURCE_BRANCH}:#{DEPLOY_BRANCH}"
     puts "Deployed: #{deployed}"
-  
+
     File.delete '.git/credentials'
-  
+
     if not deployed
       exit 1
     end
@@ -407,7 +407,7 @@ end
 # Quick Edmunds API Endpoint generation.
 #
 # To generate new Endpoint use 'endpoint' rake task
-# 
+#
 # Example
 #
 #    rake endpoint path=api-documentation/vehicle/spec_make/v2/04_test title="Test Endpoint" url=api/v2/vehicle/makes/test
@@ -419,10 +419,10 @@ end
 #    api-request.md
 # with proper headers and template body.
 module ApiDocumentation
-    
+
     class Spec
         attr_reader :api, :link, :title, :version, :versionAmount
-        
+
         def initialize(api, link, title, version, versionAmount)
             @api = api
             @link = link
@@ -430,7 +430,7 @@ module ApiDocumentation
             @version = version
             @versionAmount = versionAmount
         end
-        
+
         def to_s
             "#{@api} -- #{@link} -- #{@title} -- #{@version} (#{@versionAmount})"
         end
@@ -438,13 +438,13 @@ module ApiDocumentation
 
     class Endpoint
         attr_reader :spec, :title, :link
-        
+
         def initialize(spec, title, link)
             @spec = spec
             @title = title
             @link = link
         end
-        
+
         def to_s
             "#{@spec} -- #{@title} -- #{@link}"
         end
@@ -452,7 +452,7 @@ module ApiDocumentation
 
     class Article
         attr_reader :file, :endpoint, :title, :level, :number, :body
-        
+
         def initialize(file, endpoint, title, level, number, body)
             @file = file
             @endpoint = endpoint
@@ -461,7 +461,7 @@ module ApiDocumentation
             @number = number
             @body = body
         end
-        
+
         def header
 "---
 layout: api-documentation
@@ -484,12 +484,12 @@ number: #{@number}
 ---
 "
         end
-        
+
         def to_s
           header + @body
         end
     end
-    
+
     def ApiDocumentation.findSpec(path)
         path = File.join(path, 'index.md')
         if File.exist? path
@@ -507,16 +507,16 @@ number: #{@number}
             raise "Spec is not found: #{path}"
         end
     end
-    
+
     def ApiDocumentation.generateEndpoint(path, title, link)
         if Dir[File.join(path, '*')].size > 0
             raise "Endpoint already exists: #{path}"
         end
-        
+
         pathParts = /^(.*)\/(.*)$/.match(path)
         spec = findSpec(pathParts[1])
         endpoint = Endpoint.new(spec, title, link)
-        
+
         description = Article.new('api-description.md', endpoint, 'Description', 3, 1, "
 ### Description
 
