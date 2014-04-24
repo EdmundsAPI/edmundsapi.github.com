@@ -16,21 +16,21 @@ overview: page_version
 
 ---
 
+### Endpoint
+
+* [Get a Car's Photos by its Style ID](/api-documentation/vehicle/media_photos/v1/01_photos_by_styleid/api-description.html)
+
 <div class="info-message">
 <p> 
-	The Photos Resource has only one endpoint right now (we're working hard on version 2.0, which should be out soon.) You can access the photos of a specific make/model/year/trim by supplying its style ID, which you can get from the Model, Model Year and/or the Style and Trim resources.
+	The Photos Resource has only one endpoint right now (we're working hard on version 2.0, which should be out soon). You can access the photos of a specific make/model/year/trim by supplying its style ID, which you can get from the Model, Model Year and/or the Style and Trim resources.
 </p>
 
 <p>A few things to note about the responses you will get back when you make calls to the endpoint available above:</p>
 </div>
 
-### Endpoint
-
-* [Get a Car's Photos by its Style ID](/api-documentation/vehicle/media_photos/v1/01_photos_by_styleid/api-description.html)
-
 ### Media Base URL
 
-The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is <code>http://media.ed.edmunds-media.com</code> so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
+The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is <code>http://media.ed.edmunds-media.com</code> or <code>https://media.ed.edmunds-media.com</code> so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg) or [https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
 
 ### Photo Shot Types (i.e. *shotTypeAbbreviation*)
 
