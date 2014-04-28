@@ -1,6 +1,6 @@
 ---
 layout: vertical-line-page
-title: The Edmunds TMV® Widget Legal Notice
+title: Legal Notice
 
 class_page: termsOfUses
 ---
