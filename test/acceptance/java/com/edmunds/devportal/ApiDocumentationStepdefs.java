@@ -48,13 +48,13 @@ public class ApiDocumentationStepdefs {
     
     @And("the page content should be displayed")
     public void the_page_content_should_be_displayed() {
-        WebElement pageContent = getDriver().findElement(By.id("page_content"));
+        WebElement pageContent = getDriver().findElement(By.id("page-content"));
         assertTrue(pageContent.isDisplayed());
     }
     
     @Then("the page content should have articles")
     public void the_page_content_should_have_articles(DataTable articles) {
-        WebElement pageContent = getDriver().findElement(By.xpath("//*[@id='page_content']/following-sibling::ul"));
+        WebElement pageContent = getDriver().findElement(By.xpath("//*[@id='page-content']/following-sibling::ul"));
         assertTrue(pageContent.isDisplayed());
         List<String> articleItems = articles.asList(String.class);
         for (String item : articleItems) {
@@ -65,7 +65,7 @@ public class ApiDocumentationStepdefs {
     
     @When("I choose '(.*)' article")
     public void I_choose_an_article(String article) {
-        WebElement pageContent = getDriver().findElement(By.xpath("//*[@id='page_content']/following-sibling::ul"));
+        WebElement pageContent = getDriver().findElement(By.xpath("//*[@id='page-content']/following-sibling::ul"));
         WebElement articleLink = pageContent.findElement(By.linkText(article));
         articleLink.click();
     }
