@@ -61,9 +61,7 @@ Vehicle has several mechanical and/or cosmetic problems. Exterior and interior n
 
 **Damaged**
 
-Major mechanical and/or body damage that may render it in non-safe running condition.
-
-Vehicle has major mechanical and/or body damage that may render it in non-safe running condition. Exterior and interior is damaged or worn. Tires need to be replaced. Vehicle may have a branded title (i.e. salvaged, flooded, frame damaged, etc.). Vehicle may require significant repairs to pass an emissions inspection.
+Sorry, Edmunds.com **does not** provide estimates for damaged vehicles. To derive a value for a "Damaged" vehicle, simply take the the "Average" condition and subtract the cost of restoring the vehicle to "Average" condition.
 
 ### URL
 
