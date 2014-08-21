@@ -87,7 +87,7 @@ Exciting! Please [email us](mailto:api@edmunds.com) and try to be as specific as
 
 [Back to top](#top)
 
-<a name='faq-9' id='faq-9'> </a>
+<a name='faq-9' id='faq-9'> </a> 
 <span class="question-header">How can I make money using this API?
 </span>
 Well, aren't you in for a treat! We don't only have one, but two, ways for you to make money using the Edmunds API:
