@@ -83,11 +83,11 @@ The vast majority of our data is returned in **JSON**. The Editorial API resourc
 <a name='faq-8' id='faq-8'> </a>
 <span class="question-header">How can I reach out to Edmunds to discuss a potential partnership opportunity?
 </span>
-Exciting! Please [email us](mailto:api@edmunds.com) and try to be as specific as you can so we can bring in the right people to have a follow-up discussion with you regarding this potential opportunity. We should get back to you by email within 48 hours.
+Exciting! Please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and try to be as specific as you can so we can bring in the right people to have a follow-up discussion with you regarding this potential opportunity. We should get back to you by email within 48 hours.
 
 [Back to top](#top)
 
-<a name='faq-9' id='faq-9'> </a> 
+<a name='faq-9' id='faq-9'> </a>
 <span class="question-header">How can I make money using this API?
 </span>
 Well, aren't you in for a treat! We don't only have one, but two, ways for you to make money using the Edmunds API:
