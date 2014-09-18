@@ -127,13 +127,13 @@ You acknowledge and agree that:
 
 ### 8. Indemnification. 
 
-You agree to defend, indemnify and hold Edmunds, its parent company and any affiliate entities, and its and their directors, officers, employees, agents and assigns, harmless from and against any and all losses, costs, claims, liabilities, damages, suits, actions or expenses (including, without limitation, reasonable attorneys' fees) arising from or in connection with (i) any breach of these representations, warranties and covenants, or your performance or failure to perform any of your obligations under this Agreement.
+You agree to defend, indemnify and hold Edmunds, its parent company and any affiliate entities, and its and their directors, officers, employees, agents and assigns, harmless from and against any and all losses, costs, claims, liabilities, damages, suits, actions or expenses (including, without limitation, reasonable attorneys' fees) arising from or in connection with (i) any breach of these representations, warranties and covenants, or your performance or failure to perform any of your obligations under this Agreement, and (ii) the use by you of the Edmunds Materials (other than any such claim that any of the Edmunds Materials (other than the Third-Party Photos) violate the intellectual property rights of a third party).
 
 ---
  
 ### 9. Disclaimer of Warranties.
 
-EDMUNDS EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF ANY KIND OR NATURE, WHETHER EXPRESS, IMPLIED OR STATUTORY, RELATING TO THE EDMUNDS WEB SITE, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. In addition, Edmunds makes no representation or warranty that the Edmunds Links, the operation of the Edmunds Web Site, or the Edmunds API will be uninterrupted or error-free, and Edmunds will not be liable for the consequences of any interruptions or errors.
+EDMUNDS EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF ANY KIND OR NATURE, WHETHER EXPRESS, IMPLIED OR STATUTORY, RELATING TO THE EDMUNDS MATERIALS, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. In addition, Edmunds makes no representation or warranty that the Edmunds Links, the operation of the Edmunds Web Site, or the Edmunds API will be uninterrupted or error-free, or that the Edmunds Materials will be complete, accurate or error-free, and Edmunds will not be liable for the consequences of any interruptions or errors.
 
 ---
 
