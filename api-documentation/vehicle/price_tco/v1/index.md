@@ -110,7 +110,7 @@ When you display our True Cost to Own® (TCO®) data for any vehicles, we ask fo
 
 3) That you include the following explanation of what that number is:
 
-*Edmunds.com's True Cost to Own® (TCO®) is Edmunds.com’s estimate of the cost of buying and owning a vehicle for the first five years assuming 15,000 miles driven per year.  TCO® includes depreciation, interest on financing, insurance premiums, taxes and fees, fuel, maintenance, repairs, and takes into account and any federal tax credit that may be available.*
+*Edmunds.com's True Cost to Own® (TCO®) is Edmunds.com’s estimate of the cost of buying and owning a vehicle for the first five years assuming 15,000 miles driven per year.  TCO® includes depreciation, interest on financing, insurance premiums, taxes and fees, fuel, maintenance, repairs, and takes into account any federal tax credit that may be available.*
 
 4) That you include the following legal notice:
 
