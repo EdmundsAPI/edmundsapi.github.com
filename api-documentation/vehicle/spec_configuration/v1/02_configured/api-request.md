@@ -25,7 +25,7 @@ Get the required, excluded and included options for a **2013 BMW 328i Sedan (2.0
 
 #### URL
 
-	https://api.edmunds.com/api/configurator/withOptions?zip=77001&styleid=200423469&fmt=json&optionid=&selected=200425407&api_key={api key}
+	https://api.edmunds.com/v1/api/configurator/withOptions?zip=77001&styleid=200423469&fmt=json&optionid=&selected=200425407&api_key={api key}
 	
 #### Response
 	
