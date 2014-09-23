@@ -24,10 +24,10 @@ script:
 
 notifications:
   email:
+    - api@edmunds.com
     - ielshareef@edmunds.com
+    - jnaylor@edmunds.com
     - mbock@edmunds.com
-    - andrii_senchylov@epam.com
-    - vera_kruhliakova@epam.com
+    - yauhen_yemelyanau@epam.com
     - maksim_dadzerkin@epam.com
-    - dzmitry_yurkavets@epam.com
-
+    - ihar_krupenin@epam.com
