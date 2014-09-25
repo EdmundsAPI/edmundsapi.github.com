@@ -59,7 +59,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 					console.log(data);
 				}
 
-				// Fire the API call
+				// Fire the API 
 				res.api('/api/vehicle/v2/toyota/models', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
