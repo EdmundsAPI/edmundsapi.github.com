@@ -1,11 +1,10 @@
-<div class="container promo-page-header">
-	<div class="row-fluid h1Title widgetsPage">	
-		<a href="#" class="linkWidgets hide">other widgets and apps</a>	
+<div class="container at-glance-promo-page-header promo-page-header">
+	<div class="row-fluid h1Title widgetsPage">
+        {% include themes/twitter/widgets_and_apps/drop-down.html %}
 		<div class="span12">
 			<h1>
 				<div>
 					<span>{{ page.title }}</span>
-					<span class="mark">&#174;</span>
 				</div>
 			</h1>
 		</div>	
@@ -15,9 +14,44 @@
 </div>
 
 <div>
-	<div class="wrap-container promo-section1">&nbsp;</div>
-	<div class="wrap-container promo-section2">&nbsp;</div>
-	<div class="wrap-container promo-section3">&nbsp;</div>
+	<div class="wrap-container promo-section1 row-fluid at-glance-promo-section">
+        <div class="container">
+            <div class="span6">
+                <h2>5 INFORMATION SECTIONS</h2>
+                <div class="sub-header">some description goes here some description goes here</div>
+                <div class="at-glance-slider-nav">
+                    <ul>
+                        <li class="rating btn-glance-selector selected"><a title="" href="javascript:void(0)" >Rating</a></li>
+                        <li class="says btn-glance-selector"><a title="" href="javascript:void(0)" >Edmunds says</a></li>
+                        <li class="reviews btn-glance-selector"><a title="" href="javascript:void(0)" >Consumer Reviews</a></li>
+                        <li class="cost btn-glance-selector"><a title="" href="javascript:void(0)" >True Cost to Own</a></li>
+                        <li class="photos btn-glance-selector"><a title="" href="javascript:void(0)" >Photos</a></li>
+                    </ul>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/EdmundsAPI" class="twitter-follow-button" data-show-count="false">Follow @EdmundsAPI</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <p>More sections will be added soon!<br>to be the first to know when that happens.</p>
+                </div>
+
+            </div>
+            <div class="span6">
+                <div class="screen-bgnd rating">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-container promo-section3 at-glance-promo-section3">
+        <div class="wrap-container sectionMobileBrowsers">
+            <div class="h2Header">
+                <h2>ALL MODERN MOBILE BROWSERS ARE SUPPORTED</h2>
+                <div class="logo-bgnd">&nbsp;</div>
+            </div>
+
+            <p>You can easily render the widget on mobile devices</p>
+            <div class="device-bgnd">&nbsp;</div>
+
+        </div>
+    </div>
 </div>
 
 <div class="wrap-container footer-section fixed">

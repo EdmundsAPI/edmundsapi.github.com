@@ -406,6 +406,29 @@ $(function() {
 		});
 		interval(timeInterval); 
 	}
+    $('.btn-glance-selector').on('click', function() {
+        var selectedGlance;
+        $('.btn-glance-selector').removeClass('selected');
+        $(this).addClass('selected');
+        if($(this).hasClass('rating')) {
+            selectedGlance = 'rating';
+        }
+        else if($(this).hasClass('says')) {
+            selectedGlance = 'says';
+        }
+        else if($(this).hasClass('reviews')) {
+            selectedGlance = 'reviews';
+        }
+        else if($(this).hasClass('cost')) {
+            selectedGlance = 'cost';
+        }
+        else if($(this).hasClass('photos')) {
+            selectedGlance = 'photos';
+        }
+
+        $('.screen-bgnd').removeClass('rating says reviews cost photos').addClass(selectedGlance);
+    });
+
 });
 // WIDGETS - END
 

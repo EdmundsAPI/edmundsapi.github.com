@@ -1,6 +1,6 @@
 ---
 layout: default
-title : 'Edmunds at a Glance'
+title : 'Edmunds at a Glance Widget'
 title_parent: Widgets and apps
 header : Edmunds at a Glance
 
