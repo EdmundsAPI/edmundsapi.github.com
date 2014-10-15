@@ -20,7 +20,6 @@ You can use the widget configurator below to customize the layout and style of t
 
 * `API Key` - the Key for API registered on <a class='blueLink' href='http://developer.edmunds.com/' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
 * `Width` - sets the width of the Widget.
-* `Included Makes` - the set of Makes to display in Makes dropdown.
 * `Default Zip Code` - the zip code to display by default in ZIP field.
 * `Get Code` - Instructions to embed at a Glance Widget on your page.
 

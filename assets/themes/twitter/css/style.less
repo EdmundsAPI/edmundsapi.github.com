@@ -1824,6 +1824,9 @@ a.blueLink {
             color: #000;
           }
         }
+        &.selected {
+          background-color: #d8d8d8;
+        }
         &.rating {
           background-position: 0 0;
           &:hover {
@@ -1831,10 +1834,13 @@ a.blueLink {
             background-color: #d8d8d8;
             cursor: pointer;
           }
+          &.selected {
+            background-position: 0 -104px;
+          }
         }
         &.says {
           background-position: -93px 0;
-          &:hover {
+          &:hover, &.selected {
             background-position: -93px -179px;
             background-color: #d8d8d8;
             cursor: pointer;
@@ -1842,7 +1848,7 @@ a.blueLink {
         }
         &.reviews {
           background-position: -186px 0;
-          &:hover {
+          &:hover, &.selected {
             background-position: -186px -245px;
             background-color: #d8d8d8;
             cursor: pointer;
@@ -1850,7 +1856,7 @@ a.blueLink {
         }
         &.cost {
           background-position: -279px -103px;
-          &:hover {
+          &:hover, &.selected {
             background-position: -279px 0;
             background-color: #d8d8d8;
             cursor: pointer;
@@ -1858,7 +1864,7 @@ a.blueLink {
         }
         &.photos {
           background-position: -372px 0;
-          &:hover {
+          &:hover, &.selected {
             background-position: -372px -318px;
             background-color: #d8d8d8;
             cursor: pointer;
@@ -1869,15 +1875,15 @@ a.blueLink {
   }
   .screen-bgnd {
     position: static;
-    height: 439px;
+    height: 438px;
   }
   .twitter {
-    margin-top: 100px;
+    margin-top: 169px;
     text-align: right;
     p {
       display: inline-block;
       margin-bottom: 0;
-      vertical-align: 3px;
+      vertical-align: 5px;
       text-align: right;
     }
   }
