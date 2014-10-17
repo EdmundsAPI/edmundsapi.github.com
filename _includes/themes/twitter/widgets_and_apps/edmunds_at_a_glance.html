@@ -40,6 +40,57 @@
             </div>
         </div>
     </div>
+    <div class="wrap-container at-glance-promo-section2 promo-section2 row-fluid sectiobSliderGlance">
+        <div class="span6">
+            <div class="clearfix wrapperSliderGlance">
+
+
+                <div class="navig">
+                    <ul>
+                        <li id="downSlide" class="arr" data-number="1">Prev</li>
+                        <li class="pointSlider slidePoint1" data-number="1">1</li>
+                        <li class="pointSlider slidePoint2" data-number="2">2</li>
+                        <li id="upSlide" class="arr" data-number="2">Next</li>
+                    </ul>
+                </div>
+                <div class="sliderGlance">
+                    <ul>
+                        <li class="slide1" data-slide="1"></li>
+                        <li class="slide2" data-slide="2"></li>
+                    </ul>
+                </div>
+
+                <div class="markers">
+
+                    <span data-num="1" class="markerConf mark1">&nbsp;</span>
+                    <span data-num="2" class="markerConf mark2">&nbsp;</span>
+
+
+
+                    <span data-slide="1" data-num="1" class="tips tip1" style="top: 57px">API Key</span>
+                    <span data-slide="1" data-num="2" class="tips tip2" style="top: 123px">Zip Code</span>
+
+
+                    <span data-slide="2" data-num="1" class="tips tip1">Include Tabs</span>
+                    <span data-slide="2" data-num="2" class="tips tip2">Widget Width</span>
+                </div>
+
+
+            </div>
+            <span class="inrustrSliderGlance">click on markers to get more info</span>
+        </div>
+        <div class="span6" style="color: #fff">
+            <h2>CUSTOMIZE WIDGET</h2>
+            <p>Make the widget serve the data you need</p>
+
+            <h5>Select option from:</h5>
+            <ul>
+                <li>120 most popular makes on US market</li>
+                <li>5 tabs: Rating, Edmunds says, Consumer Reviews, TCO, Photos</li>
+                <li>Configure the width of your widget</li>
+            </ul>
+        </div>
+    </div>
     <div class="wrap-container promo-section3 at-glance-promo-section3">
         <div class="wrap-container sectionMobileBrowsers">
             <div class="h2Header">
@@ -92,5 +143,228 @@
 	    		footer.removeClass('hide');
 	   		}
 	  	});
+
+        var step = -316;
+
+        var $slides = $('.sliderGlance').find('ul');
+
+        var amountSlides = $slides.find('li').length;
+
+        var count = 1;
+
+        var timeInterval = 3000;
+
+        var $markers = $('.sectiobSliderGlance .markerConf');
+
+        var $tips = $('.sectiobSliderGlance .tips');
+
+        var sliderHover = $('.sliderGlance, .sectiobSliderGlance .markerConf, .sectiobSliderGlance .tips');
+
+
+// autoSlide
+        var intervalID;
+
+        function interval(timeInterval){
+            intervalID = setInterval(function(){
+                upSlider();
+            }, timeInterval);
+        }
+
+
+        sliderHover.mouseenter(function(e){  //stop
+            clearInterval(intervalID);
+        });
+
+        sliderHover.mouseout(function(e){  //start
+
+            if(intervalID) {
+                clearInterval(intervalID);
+            }
+
+            interval(timeInterval);
+        });
+
+
+// click on the arrows
+
+        $('#downSlide').click(function(){ //down Slide
+            clearInterval(intervalID);
+            downSlider();
+            interval(timeInterval);
+        });
+
+
+        $('#upSlide').click(function(){ //up Slide
+            clearInterval(intervalID);
+            upSlider();
+            interval(timeInterval);
+
+        });
+
+
+// Markers and tips
+
+// Click to markers
+        $markers.click(function(event){
+
+            var thisMark = $(this);
+
+
+            if(thisMark.hasClass('active')){
+
+                thisMark.removeClass('active');
+
+                $tips.fadeOut(200);
+
+            } else {
+
+                $markers.each(function(){
+
+                    $(this).removeClass('active');
+
+                });
+
+                thisMark.addClass('active');
+
+                var indexThis = thisMark.attr('data-num'); //data-num
+
+                $tips.fadeOut(200);
+
+                $tips.each(function(){
+
+                    var attrDataSlide = $(this).attr('data-slide'); //data-slide
+
+                    var attrDataNum = $(this).attr('data-num'); //data-num'
+
+                    if(attrDataSlide == count && attrDataNum == indexThis) {
+
+                        $(this).fadeIn(600);
+                    }
+
+                });
+
+            }
+
+            event.stopPropagation();
+
+        });
+
+
+// clear
+        function closeAll (){
+            $tips.fadeOut(200);
+            $markers.removeClass('active');
+        };
+
+        $('body').click(function(){
+            closeAll ();
+        });
+
+
+
+// Moving Markers (animate)
+
+        function animateMarkers(mark1Top, mark2Top, tip1Top, tip2Top, slidePoint1, slidePoint2) {
+            var mark1 = $('.mark1');
+            var mark2 = $('.mark2');
+            var tip1 = $('.tip1');
+            var tip2 = $('.tip2');
+            mark1.animate({top: mark1Top}, 700);
+            mark2.animate({top: mark2Top}, 700);
+//            if(count == 1) {
+//                mark2.fadeIn(1000).animate({top: mark2Top});
+//            } else {
+//                mark2.fadeOut(1000);
+//            }
+
+
+            tip1.css('top', tip1Top);
+            tip2.css('top', tip2Top);
+
+
+        };
+
+        function moveMark(){
+
+            var slidePoint1 = $('.slidePoint1');
+            var slidePoint2 = $('.slidePoint2');
+            //var slidePoint3 = $('.slidePoint3');
+
+
+            switch  (count) {
+
+                case 1:
+
+                    animateMarkers(63, 128, 57, 123);
+
+                    slidePoint1.css({'background-position': '0 -30px'});
+                    slidePoint2.css({'background-position': '0 -45px'});
+                    //slidePoint3.css({'background-position': '0 -45px'});
+                    break;
+
+                case 2:
+
+                    animateMarkers(5, 189, -2, 182);
+
+                    slidePoint1.css({'background-position': '0 -45px'});
+                    slidePoint2.css({'background-position': '0 -30px'});
+                    //slidePoint3.css({'background-position': '0 -45px'});
+                    break;
+            }
+
+        }
+
+//click on the dots of the slider
+        $('.wrapperSliderGlance .pointSlider').on('click', function(){
+
+            clearInterval(intervalID);
+
+            count = $(this).data('number');
+
+            closeAll();
+
+            switch (count) {
+                case 1:  $slides.animate({top: 0 }, 700); break;
+                case 2:  $slides.animate({top: step*(count-1) }, 700); break;
+            }
+
+            moveMark();
+
+            interval(timeInterval);
+        });
+
+        function upSlider() {
+            closeAll ();
+            if (count < amountSlides) {
+                console.log(count);
+                $slides.animate({top: '+=' + step + ''}, 400);
+                count++;
+            } else {
+                $slides.animate({top: 0}, 400);
+                count = 1;
+            }
+            moveMark()
+
+        }
+
+        function downSlider() {
+            closeAll ();
+
+
+            if (count > 1) {
+
+                $slides.animate({top: '-=' + step + ''}, 400);
+                count--;
+
+            } else {
+
+                $slides.animate({top: -316}, 400);
+                count = amountSlides;
+
+            }
+
+
+            moveMark();
+        }
     });
 </script>
