@@ -170,6 +170,7 @@
             }, timeInterval);
         }
 
+		interval(timeInterval);
 
         sliderHover.mouseenter(function(e){  //stop
             clearInterval(intervalID);
@@ -197,8 +198,7 @@
         $('#upSlide').click(function(){ //up Slide
             clearInterval(intervalID);
             upSlider();
-            interval(timeInterval);
-
+            //interval(timeInterval);
         });
 
 
@@ -269,8 +269,8 @@
             var mark2 = $('.mark2');
             var tip1 = $('.tip1');
             var tip2 = $('.tip2');
-            mark1.animate({top: mark1Top}, 700);
-            mark2.animate({top: mark2Top}, 700);
+            mark1.animate({top: mark1Top}, 400);
+            mark2.animate({top: mark2Top}, 400);
 //            if(count == 1) {
 //                mark2.fadeIn(1000).animate({top: mark2Top});
 //            } else {
@@ -327,7 +327,7 @@
                 case 1:  $slides.animate({top: 0 }, 700); break;
                 case 2:  $slides.animate({top: step*(count-1) }, 700); break;
             }
-
+			console.log(count);
             moveMark();
 
             interval(timeInterval);
@@ -336,14 +336,17 @@
         function upSlider() {
             closeAll ();
             if (count < amountSlides) {
-                console.log(count);
                 $slides.animate({top: '+=' + step + ''}, 400);
+	            console.log({top: '+=' + step + ''});
                 count++;
+	            console.log(count);
+	            moveMark();
             } else {
                 $slides.animate({top: 0}, 400);
                 count = 1;
+	            moveMark();
             }
-            moveMark()
+
 
         }
 
