@@ -64,11 +64,12 @@
 
                     <span data-num="1" class="markerConf mark1">&nbsp;</span>
                     <span data-num="2" class="markerConf mark2">&nbsp;</span>
-
+                    <span data-num="3" class="markerConf mark3">&nbsp;</span>
 
 
                     <span data-slide="1" data-num="1" class="tips tip1" style="top: 56px">API Key</span>
                     <span data-slide="1" data-num="2" class="tips tip2" style="top: 121px">Zip Code</span>
+                    <span data-slide="1" data-num="3" class="tips tip3" style="top: 193px">The widget works by passing the car's make, model, year to it programmatically. The style selected is the default base style</span>
 
 
                     <span data-slide="2" data-num="1" class="tips tip1">Ability to choose the tabs with different information to include in the widget. You can have one tab or all five. It's up to you.</span>
@@ -263,22 +264,26 @@
 
 // Moving Markers (animate)
 
-        function animateMarkers(mark1Top, mark2Top, tip1Top, tip2Top, slidePoint1, slidePoint2) {
+        function animateMarkers(mark1Top, mark2Top, mark3Top, tip1Top, tip2Top, tip3Top, slidePoint1, slidePoint2) {
             var mark1 = $('.mark1');
             var mark2 = $('.mark2');
+            var mark3 = $('.mark3');
             var tip1 = $('.tip1');
             var tip2 = $('.tip2');
+            var tip3 = $('.tip3');
             mark1.animate({top: mark1Top}, 400);
             mark2.animate({top: mark2Top}, 400);
-//            if(count == 1) {
-//                mark2.fadeIn(1000).animate({top: mark2Top});
-//            } else {
-//                mark2.fadeOut(1000);
-//            }
+            mark3.animate({top: mark3Top}, 400);
+            if(count == 1) {
+                mark3.fadeIn(1000).animate({top: mark3Top});
+            } else {
+                mark3.fadeOut(1000);
+            }
 
 
             tip1.css('top', tip1Top);
             tip2.css('top', tip2Top);
+            tip3.css('top', tip3Top);
 
 
         };
@@ -294,7 +299,7 @@
 
                 case 1:
 
-                    animateMarkers(63, 128, 56, 121);
+                    animateMarkers(63, 128, undefined, 56, 121, undefined);
 
                     slidePoint1.css({'background-position': '0 -30px'});
                     slidePoint2.css({'background-position': '0 -45px'});
@@ -303,10 +308,18 @@
 
                 case 2:
 
-                    animateMarkers(9, 189, 2, 182);
+                    animateMarkers(9, 189, undefined, 2, 182, undefined);
 
                     slidePoint1.css({'background-position': '0 -45px'});
                     slidePoint2.css({'background-position': '0 -30px'});
+                    //slidePoint3.css({'background-position': '0 -45px'});
+                    break;
+                case 3:
+
+                    animateMarkers(undefined, undefined, 200, undefined, undefined, 200);
+
+                    slidePoint1.css({'background-position': '0 -30px'});
+                    slidePoint2.css({'background-position': '0 -45px'});
                     //slidePoint3.css({'background-position': '0 -45px'});
                     break;
             }
