@@ -1878,7 +1878,7 @@ a.blueLink {
     height: 438px;
   }
   .twitter {
-    margin-top: 169px;
+    margin-top: 139px;
     text-align: right;
     p {
       display: inline-block;
@@ -1903,8 +1903,136 @@ a.blueLink {
     }
   }
 }
+.at-glance-promo-section2 {
+  background: url("../img/widget_promo/bg-grid.png") repeat;
+  padding: 58px 0 28px 0;
+  .inrustrSliderGlance {
+    display: block;
+    float: right;
+    text-align: right;
+    padding: 0 0 0 25px;
+    margin: 0 90px 0 0;
+    font-size: 12px;
+    font-style: italic;
+    background: url('../img/slider_tmv/iconMarkerInstr.png') left no-repeat;
+    color: #fff;
+  }
+  h2 {
+    margin: 0 0 37px 33px;
+    line-height: 58px;
+  }
+  h5 {
+    margin: 0 0 17px 33px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  ul li {
+    margin: 0 0 14px 31px;
+    list-style: square;
+  }
+  p {
+    padding-left: 33px;
+  }
+  .wrapperSliderGlance{
+    .navig {
+      position: relative;
+      z-index: 3;
+      float: right;
+      margin: 121px 0 0 0;
+      ul li {
+        width: 10px;
+        height: 8px;
+        margin: 0 0 7px 0;
+        list-style: none;
+        background-image: url('../img/slider_tmv/navig_TMV.png');
+        background-repeat: no-repeat;
+        background-position: 0 -45px;
+        text-indent: -99999px;
+        cursor: pointer;
+        &#downSlide {
+          background-position: 0 -15px;
+        }
+        &#upSlide {
+          background-position: 0 -59px;
+        }
+        &.slidePoint1 {
+          background-position: 0 -30px;
+        }
+      }
+    }
+    .sliderGlance {
+      position: relative;
+      overflow: hidden;
+      float: right;
+      width: 300px;
+      height: 316px;
+      margin: 0 0 29px 0;
+      background: #f5f5f5;
+      -webkit-box-shadow: 0 0 20px #234668;
+      -moz-box-shadow: 0 0 20px #234668;
+      box-shadow: 0 0 20px #234668;
+
+      ul {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        li {
+          position: relative;
+          width: 300px;
+          height: 316px;
+          padding: 0;
+          margin: 0;
+          background-image: url('../img/slider_glance/slider_glance_sprite.png');
+          background-repeat: no-repeat;
+          &.slide1 {
+            background-position: 0 0;
+          }
+          &.slide2 {
+            background-position: -300px 0;
+          }
+          &.slide3 {
+          }
+        }
+      }
+    }
+    .markers {
+      position: relative;
+      .markerConf {
+        position: absolute;
+        right: 331px;
+        width: 15px;
+        height: 15px;
+        background: url('../img/slider_tmv/marker_tmv.png') 0 0 no-repeat;
+        cursor: pointer;
+        &.mark1 {
+          top: 65px;
+        }
+        &.mark2 {
+          top: 128px;
+        }
+        &.mark3 {
+          top: 200px;
+        }
+        &.active {
+          background-position: 0 -15px;
+        }
+      }
+      .tips {
+        position: absolute;
+        right: 346px;
+        color: #fff;
+        display: none;
+        max-width: 226px;
+        padding: 4px 86px 0 0;
+        line-height: 17px;
+        background: url('../img/slider_tmv/markerLine.png') right 14px no-repeat;
+      }
+    }
+  }
+}
 .at-glance-promo-section3 {
-  background: #444 !important;
+  //background: #444 !important;
   .device-bgnd {
     position: relative;
     top: 50px;
