@@ -4,7 +4,7 @@ title : 'Get Dealer Details and Location'
 title_active_left_menu: 'Details and Location'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 spec: details_and_location
 version: v1
 api: dealer
@@ -16,7 +16,7 @@ overview: page_version
 ---
 
 <div class="info-message">
-	Get dealership details and location information by providing the ZIP Code of the area you're interested in.
+    Get dealership details and location information by providing the ZIP Code of the area you're interested in.
 </div>
 
 ### Endpoints
