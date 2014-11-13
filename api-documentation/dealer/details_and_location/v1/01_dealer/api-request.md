@@ -4,13 +4,12 @@ title : 'Get Dealer Details and Location'
 title_active_left_menu: Details and Location
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Get Dealer Details and Location'
 spec: details_and_location
 version: v1
 api: dealer
 dropdown-link: 'v1/api/dealer'
-
 
 level: 4
 description_edpoint: 'Get Dealer Details and Location'
