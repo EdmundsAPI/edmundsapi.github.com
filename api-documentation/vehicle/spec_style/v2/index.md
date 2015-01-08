@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 <div class="info-message">
- The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style.
+ The vehicle style is at the core of the Edmunds API. In this resource, you will be able to look up the vehicle styles belonging to a specific make/model/year vehicle or by the style ID itself. The data you get back includes the engine, transmission, colors, options, trim and squishVin details for that style. **Chrome Data ID is an endpoint only provided to explicit partners of both Chrome Data (http://www.chromedata.com) and Edmunds.com, please contact us to inquire.
 </div>
 
 ### What Can I Do With This Resource?
@@ -26,7 +26,7 @@ The Style Resource allows you to look up a vehicle's details (e.g. colors, optio
 
 * [By supplying the car's make/model nice names and the car year](/api-documentation/vehicle/spec_style/v2/01_by_mmy/api-description.html)
 * [By supplying the car's Edmunds style ID](/api-documentation/vehicle/spec_style/v2/02_by_id/api-description.html)
-* [By supplying the car's Chrome Data ID](/api-documentation/vehicle/spec_style/v2/03_chrome/api-description.html)
+* [By supplying the car's Chrome Data ID**](/api-documentation/vehicle/spec_style/v2/03_chrome/api-description.html)
 
 ### Static Datasets
 

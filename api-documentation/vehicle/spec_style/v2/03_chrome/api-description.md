@@ -21,11 +21,12 @@ number: 1
 
 ### Description
 
-Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, ...etc) by the vehicle's [Chrome Data](http://www.chromedata.com) ID. This endpoint is helpful for developers already using the [Chrome Data](http://www.chromedata.com) service and would like to leverage that to get access to the Edmunds style data.
+Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, ...etc) by the vehicle's [Chrome Data](http://www.chromedata.com) ID. 
+**Chrome Data ID is an endpoint only provided to explicit partners of both [Chrome Data](http://www.chromedata.com) and Edmunds.com, please contact us to inquire.
 
 ### URL
 
-	https://api/vehicle/v2/partners/chrome/styles/{ChromeId}?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/partners/chrome/styles/{ChromeId}?fmt=json&api_key={api key}
 	
 ### Code Example
 
