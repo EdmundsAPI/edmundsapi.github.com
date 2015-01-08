@@ -401,3 +401,39 @@ Feature: API Documentation
     And the documentation should have 1 endpoints
     When I choose 'v1/api/dealer' endpoint
     Then the endpoint should have specification articles
+
+    Then I choose 'Media (Both photos and videos)' left menu
+    And menu 'Media (Both photos and videos)' should be active
+    And the 'v2' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 1 endpoints
+    When I choose 'api/media/v2?tag={tag}' endpoint
+    Then the endpoint should have specification articles
+
+    Then I choose 'Photos' left menu
+    And menu 'Photos' should be active
+    And the 'v2' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 4 endpoints
+    When I choose 'api/media/v2/photos?tag={tag}' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/styles/{styleId}/photos' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/{make}/{model}/photos' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/{make}/{model}/{year}/photos' endpoint
+    Then the endpoint should have specification articles
+
+    Then I choose 'Videos' left menu
+    And menu 'Videos' should be active
+    And the 'v2' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 4 endpoints
+    When I choose 'api/media/v2/videos?tag={tag}' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/styles/{styleId}/videos' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/{make}/{model}/videos' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/media/v2/{make}/{model}/{year}/videos' endpoint
+    Then the endpoint should have specification articles

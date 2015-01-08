@@ -10,6 +10,7 @@ Feature: API Documentation
         | Editorial API |
         | Inventory API |
         | Dealer API    |
+        | Media API     |
     And menu 'Vehicle API' should have items:
         | Spec: Make                           |
         | Spec: Model                          |
@@ -154,3 +155,11 @@ Feature: API Documentation
         | Quick Start            |
         | API Uses               |
         | Available Resources    |
+
+    Then I choose 'Media API' left menu
+    And menu 'Media API' should be active
+    And the page content should be displayed
+    Then the page content should have articles:
+      | Overview               |
+      | Quick Start            |
+      | API Uses               |
