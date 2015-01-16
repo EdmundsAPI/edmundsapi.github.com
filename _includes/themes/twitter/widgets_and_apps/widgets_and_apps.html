@@ -8,7 +8,8 @@
 							<ul class="carousel-indicators">
 							    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#marketValue">TRUE MARKET VALUE<span class="marker">&#174;</span></a>     <span class="separator">/</span></li>
 							    <li data-target="#myCarousel" data-slide-to="1"><a href="#vehicleConf">NEW VEHICLE CONFIGURATOR</a>    <span class="separator">/</span></li>
-							    <li data-target="#myCarousel" data-slide-to="2"><a href="#edmundsWidget">EDMUNDS AT A GLANCE</a></li>
+							    <li data-target="#myCarousel" data-slide-to="2"><a href="#edmundsWidget">EDMUNDS AT A GLANCE</a> <span class="separator">/</span></li>
+								<li data-target="#myCarousel" data-slide-to="3"><a href="#ppbWidget"> PRICE PROMISE </a></li>
 						    </ul>
 							<h2 >Widgets</h2>
 							<span class="arrow"></span>
@@ -146,6 +147,41 @@
 									</div>
 								</div>
 						    </div>
+						</div>
+
+						{% comment %}<!-- PRICE PROMISE -->{% endcomment %}
+						<div class="item">
+							<div class="slide4 container">
+								<div class="row-fluid">
+									<div class="span6">
+										<a class="standart-btn" href="{{ PATH }}/widgets_and_apps/price_promise.html" title="Learn More">Learn More</a>
+										<a class="standart-btn configureBtn" href="{{ PATH }}/widgets_and_apps/price_promise_setup.html" title="Configure Now">Configure Now</a>
+										<p>
+											Tell the widget what car make/model/year you're interested in and it will tell you all that Edmunds.com knows about it including its car rating grade, consumer reviews, Edmunds.com Editorial review, Road Test articles, Price Promise® inventories, dealers selling it in the area, etc.
+										</p>
+										<div class="row-fluid info">
+											<div class="span3">
+												<h3>Input data</h3>
+												<ul>
+													<li>VIN</li>
+													<li>Zip</li>
+													<li>Code</li>
+												</ul>
+											</div>
+											<div class="span9">
+												<h3>Output data</h3>
+												<ul>
+													<li> If the vehicle has a Price Promise offer, it will render a "Get Your Special Offer" button</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="span6">
+										<img src="{{ PATH }}/assets/themes/twitter/img/slider_widgets/at-a-glance-promo.png" alt="" />
+									</div>
+								</div>
+							</div>
 						</div>
 
 				    </div>

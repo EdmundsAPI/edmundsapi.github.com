@@ -1,0 +1,429 @@
+<div class="container price-promise-promo-page-header promo-page-header">
+    <div class="row-fluid h1Title widgetsPage">
+        {% include themes/twitter/widgets_and_apps/drop-down.html %}
+        <div class="span12">
+            <h1>
+                <div class="ppb-title">
+                    <span>{{ page.title }}</span>
+                </div>
+            </h1>
+        </div>
+        <span id="h1Title">{{ page.title_parent }}</span>
+        <span class="arrow">&nbsp;</span>
+    </div>
+</div>
+
+<div>
+    <div class="wrap-container promo-section1 row-fluid price-promise-promo-section">
+        <div class="container">
+            <div class="span6">
+                <h2 style="padding-top: 0">HOW DOES IT WORK</h2>
+                <p>If <span class="valid">a given (valid or invalid) VIN</span> does NOT have an associated Price Promise offer, the user will not see any mention
+                    of Edmunds.com, Price Promise, or the “Get Your Special Offer” in the space designated by the developer for the widget to render.</p>
+                    <p>If <span class="vin">a given VIN</span> has an associated Price Promise offer, the button will render, allowing a user to pop open a
+                        lead form by clicking on the “Get Your Special Offer” button</p>
+            </div>
+            <div class="span6">
+                <div class="screen-bgnd rating">
+                    <p class="msrp">msrp: <span>$22,375</span></p>
+                    <div class="right-colom-text">
+                        <ul>
+                            <li>engine: <span>4 Cylinder Turbo</span></li>
+                            <li>transmission: <span>8 Speed Automatic</span></li>
+                            <li>exterior: <span class="brown">Brown</span></li>
+                            <li>interior: <span class="grey">Alluminum Trim</span></li>
+                            <li>vin#: <span style="font-weight: normal; text-transform: uppercase">xxxxxxxxxxxxxxx</span></li>
+                        </ul>
+                        <div class="border-vin"></div>
+                    </div>
+                    <div class="button-section">
+                        <span class="logo"></span>
+                        <button type="button" class="ppbButton">Get Your Special Offer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-container price-promise-promo-section2 promo-section2 row-fluid sectiobSliderGlance">
+        <div class="span6">
+            <div class="clearfix wrapperSliderGlance">
+               <div class="navig">
+                    <ul>
+                        <li id="downSlide" class="arr" data-number="1">Prev</li>
+                        <li class="pointSlider slidePoint1" data-number="1">1</li>
+                        <li class="pointSlider slidePoint2" data-number="2">2</li>
+                        <li id="upSlide" class="arr" data-number="2">Next</li>
+                    </ul>
+                </div>
+                <div class="sliderGlance">
+                    <ul>
+                        <li class="slide1" data-slide="1"></li>
+                        <li class="slide2" data-slide="2"></li>
+                    </ul>
+                </div>
+
+                <div class="markers">
+
+                    <span data-num="1" class="markerConf mark1">&nbsp;</span>
+                    <span data-num="2" class="markerConf mark2">&nbsp;</span>
+                    <span data-num="3" class="markerConf mark3">&nbsp;</span>
+
+
+                    <span data-slide="1" data-num="1" class="tips tip1" style="top: 66px">API Key</span>
+                    <span data-slide="1" data-num="2" class="tips tip2" style="top: 131px">Zip Code</span>
+                    <span data-slide="1" data-num="3" class="tips tip3" style="top: 193px">VIN Code</span>
+
+
+                    <span data-slide="2" data-num="1" class="tips tip1">Ability to choose the tabs with different information to include in the widget. You can have one tab or all five. It's up to you.</span>
+                    <span data-slide="2" data-num="2" class="tips tip2">Color Scheme</span>
+                    <span data-slide="2" data-num="3" class="tips tip3">Widget Width</span>
+                </div>
+
+
+            </div>
+            <span class="inrustrSliderGlance">click on markers to get more info</span>
+        </div>
+        <div class="span6" style="color: #fff">
+            <h2>CUSTOMIZE BUTTON</h2>
+
+            <h5>Select option from:</h5>
+            <ul>
+                <li>Button suze: Large or Compact views</li>
+                <li>Configure layout from stacked version to horizontal</li>
+                <li>Color Scheme: Dark or Light to perfectly fit your website</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-container promo-section3 price-promise-promo-section3">
+        <div class="wrap-container sectionConfigurations clearfix">
+            <div class="h2Header">
+                <h2>configurations</h2>
+            </div>
+            <div class="singular">
+                <p>Singular/Trial Use:</p>
+                <p>Configure a button for individual pieces of inventory, and then embed those buttons onto that
+                    vehicle’s VDP page.</p>
+            </div>
+            <div class="programmatic">
+                <p>Programmatic use at Scale (Advanced):</p>
+                <p>After establishing the placement and fit of the widget using the ‘Singular/Trial Use’ method, the
+                    developer can then
+                    program the widget into all
+                    of the VDP pages and override the VIN using Javascript.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap-container footer-section fixed">
+    <div class="container">
+        <span>It's as simple as copy and paste</span><div class="footer-line">&nbsp;</div>
+        <a href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance_setup.html" class="standart-btn">GET A WIDGET!</a><div class="footer-line">&nbsp;</div>
+        <span>Copy the code and paste it in your page's HTML</span>
+        <div class="quick-start-TMV">
+            <a href="{{ PATH }}/widgets_and_apps/edmunds_at_a_glance_setup.html" class="quick-start-header">Quick Start<span>View how it works</span></a>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        var footerHeight = $('.footerLayout').height(),
+                footer = $('.footerLayout'),
+                fixedPanel = $('.footer-section'),
+                height;
+
+        fixedPanel.removeClass('fixed');
+        height = $(document).height();
+        console.log('document height: ' + height);
+        console.log('window height: ' + $(window).height());
+        if((height - $(window).height()) > footerHeight) {
+            fixedPanel.addClass('fixed');
+        }
+
+        $(window).scroll(function() {
+            var scrollBottom = height - ($(window).scrollTop() + $(window).height());
+            if(scrollBottom > footerHeight) {
+                fixedPanel.addClass('fixed');
+                footer.addClass('hide');
+            }
+            else {
+                fixedPanel.removeClass('fixed');
+                footer.removeClass('hide');
+            }
+        });
+
+        var step = -316;
+
+        var $slides = $('.sliderGlance').find('ul');
+
+        var amountSlides = $slides.find('li').length;
+
+        var count = 1;
+
+        var timeInterval = 10000;
+
+        var $markers = $('.sectiobSliderGlance .markerConf');
+
+        var $tips = $('.sectiobSliderGlance .tips');
+
+        var sliderHover = $('.sliderGlance, .sectiobSliderGlance .markerConf, .sectiobSliderGlance .tips');
+
+
+// autoSlide
+        var intervalID;
+
+        function interval(timeInterval){
+            intervalID = setInterval(function(){
+                upSlider();
+            }, timeInterval);
+        }
+
+        interval(timeInterval);
+
+        sliderHover.mouseenter(function(e){  //stop
+            clearInterval(intervalID);
+        });
+
+        sliderHover.mouseout(function(e){  //start
+
+            if(intervalID) {
+                clearInterval(intervalID);
+            }
+
+            interval(timeInterval);
+        });
+
+
+// click on the arrows
+
+        $('#downSlide').click(function(){ //down Slide
+            clearInterval(intervalID);
+            downSlider();
+            interval(timeInterval);
+        });
+
+
+        $('#upSlide').click(function(){ //up Slide
+            clearInterval(intervalID);
+            upSlider();
+            //interval(timeInterval);
+        });
+
+
+// Markers and tips
+
+// Click to markers
+        $markers.click(function(event){
+
+            var thisMark = $(this);
+
+
+            if(thisMark.hasClass('active')){
+
+                thisMark.removeClass('active');
+
+                $tips.fadeOut(200);
+
+            } else {
+
+                $markers.each(function(){
+
+                    $(this).removeClass('active');
+
+                });
+
+                thisMark.addClass('active');
+
+                var indexThis = thisMark.attr('data-num'); //data-num
+
+                $tips.fadeOut(200);
+
+                $tips.each(function(){
+
+                    var attrDataSlide = $(this).attr('data-slide'); //data-slide
+
+                    var attrDataNum = $(this).attr('data-num'); //data-num'
+
+                    if(attrDataSlide == count && attrDataNum == indexThis) {
+
+                        $(this).fadeIn(600);
+                    }
+
+                });
+
+            }
+
+            event.stopPropagation();
+
+        });
+
+
+// clear
+        function closeAll (){
+            $tips.fadeOut(200);
+            $markers.removeClass('active');
+        };
+
+        $('body').click(function(){
+            closeAll ();
+        });
+
+
+
+// Moving Markers (animate)
+
+        function animateMarkers(mark1Top, mark2Top, mark3Top, tip1Top, tip2Top, tip3Top, slidePoint1, slidePoint2) {
+            var mark1 = $('.mark1');
+            var mark2 = $('.mark2');
+            var mark3 = $('.mark3');
+            var tip1 = $('.tip1');
+            var tip2 = $('.tip2');
+            var tip3 = $('.tip3');
+            mark1.animate({top: mark1Top}, 400);
+            mark2.animate({top: mark2Top}, 400);
+            mark3.animate({top: mark3Top}, 400);
+            if(count == 1) {
+                //mark3.fadeIn(1000).animate({top: mark3Top});
+            } else {
+                //mark3.fadeOut(1000);
+            }
+
+
+            tip1.css('top', tip1Top);
+            tip2.css('top', tip2Top);
+            tip3.css('top', tip3Top);
+
+
+        };
+
+        function moveMark(){
+
+            var slidePoint1 = $('.slidePoint1');
+            var slidePoint2 = $('.slidePoint2');
+            var slidePoint3 = $('.slidePoint3');
+
+
+            switch  (count) {
+
+                case 1:
+
+                    animateMarkers(73, 138, 200, 66, 131, 193);
+
+                    slidePoint1.css({'background-position': '0 -30px'});
+                    slidePoint2.css({'background-position': '0 -45px'});
+                    slidePoint3.css({'background-position': '0 -45px'});
+                    break;
+
+                case 2:
+
+                    animateMarkers(2, 61, 138, -5, 54, 131);
+
+                    slidePoint1.css({'background-position': '0 -45px'});
+                    slidePoint2.css({'background-position': '0 -30px'});
+                    slidePoint3.css({'background-position': '0 -45px'});
+                    break;
+//                case 3:
+//
+//                    animateMarkers(undefined, undefined, 200, undefined, undefined, 200);
+//
+//                    slidePoint1.css({'background-position': '0 -30px'});
+//                    slidePoint2.css({'background-position': '0 -45px'});
+//                    slidePoint3.css({'background-position': '0 -45px'});
+//                    break;
+            }
+
+        }
+
+//click on the dots of the slider
+        $('.wrapperSliderGlance .pointSlider').on('click', function(){
+
+            clearInterval(intervalID);
+
+            count = $(this).data('number');
+
+            closeAll();
+
+            switch (count) {
+                case 1:  $slides.animate({top: 0 }, 700); break;
+                case 2:  $slides.animate({top: step*(count-1) }, 700); break;
+            }
+            console.log(count);
+            moveMark();
+
+            interval(timeInterval);
+        });
+
+        function upSlider() {
+            closeAll ();
+            if (count < amountSlides) {
+                $slides.animate({top: '+=' + step + ''}, 400);
+                console.log({top: '+=' + step + ''});
+                count++;
+                console.log(count);
+                moveMark();
+            } else {
+                $slides.animate({top: 0}, 400);
+                count = 1;
+                moveMark();
+            }
+
+
+        }
+
+        function downSlider() {
+            closeAll ();
+
+
+            if (count > 1) {
+
+                $slides.animate({top: '-=' + step + ''}, 400);
+                count--;
+
+            } else {
+
+                $slides.animate({top: -316}, 400);
+                count = amountSlides;
+
+            }
+
+
+            moveMark();
+        }
+    });
+
+
+//  -------- hover -------- //
+
+    //cache
+    var
+      $pricePromiseSection = $('.price-promise-promo-section'),
+      $valid = $pricePromiseSection.find('.valid'),
+      $vin = $pricePromiseSection.find('.vin'),
+      $button = $pricePromiseSection.find('.ppbButton'),
+      $borderVin = $pricePromiseSection.find('.border-vin');
+    // ----
+    $valid.hover(function(){
+        $button.fadeOut(500);
+        $borderVin.fadeIn(500);
+    },function(){
+        $button.fadeIn(500);
+        $borderVin.fadeOut(500);
+    });
+
+    $vin.hover(function(){
+        $button.css({
+            'box-shadow': '0 0 6px #000'
+        });
+        $borderVin.fadeIn(500);
+    },function(){
+        $button.css({
+            'box-shadow':'0 0 0'
+        });
+        $borderVin.fadeOut(500);
+    });
+
+
+
+//   -----------------------  //
+</script>
