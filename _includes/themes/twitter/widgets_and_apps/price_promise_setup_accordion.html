@@ -1,0 +1,95 @@
+<div class="accordion clearfix" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle accordion-header collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                How to embed widget
+            </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+                <p>To embed Edmunds Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup> Widget on your page just follow the instructions from <code>Get Code</code> popup.</p>
+                <h4>Example scenario:</h4>
+                <ol>
+                    <li>
+                        <p>Insert the empty div to your page:</p>
+                        <pre>&lt;div id="ppb-&lt;vin will be added here automatically&gt;"&gt;&lt;/div&gt;</pre>
+                    </li>
+                    <li>
+                        <p>Add the following JavaScript snippet to your page. It preferably to add at the bottom of your page for best page performance:</p>
+                <pre>
+&lt;script type="text/javascript" src="http://widgets.edmunds.com/loader-ppb.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+(function(){
+var widget = EDM.createWidget({
+    "type": "ppb",
+    "renderTo": "ppb-&lt;vin will be added here automatically&gt;",
+    "style": {
+        "width": "250",
+        "height": "630"
+    },
+    "scripts": [
+        "/libs/requirejs/require.js\" data-main=\"http://widgets.edmunds.com/ppb/js/main.js"
+    ],
+    "options": {
+        "apiKey": &lt;api key&gt;
+        "vin": &lt;car's vin&gt;,
+        "zipCode": "90404"
+    }
+});
+}());
+&lt;/script&gt;
+                </pre>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle accordion-header collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Widget custom events
+            </a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse in">
+            <div class="accordion-inner">
+                <p>Edmunds Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup> Widget provides the next method for subscription to the widget events:</p>
+                <br>
+                <p><code>on()</code> - Binds a callback function to an object. The callback will be invoked whenever the event is fired.</p>
+                <pre>
+(function(){
+
+    // create instance of the widget
+    var widget = EDM.createWidget(/* configured options here */);
+
+    // subscribe to the event
+    widget.on('ppb.button.click', function() {
+        _trackEvent('Ppb', 'Click', 'Button clicked');
+        console.log('button was clicked');
+    });
+
+}());
+                </pre>
+                <h5 id="events">LIST OF EVENTS</h5>
+                <table class="table table-condensed table-hover table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th width="30%">Event</th>
+                            <th>Callback Params</th>
+                            <th width="50%">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ppb.button.click</td>
+                            <td><span class="label">none</span></td>
+                            <td>This event is fired when price promise button was clicked.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</div>

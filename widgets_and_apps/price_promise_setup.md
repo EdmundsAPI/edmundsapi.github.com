@@ -13,4 +13,6 @@ You can use the widget configurator below to customize the layout and style of t
 
 <div class="pre-loader" style="height: 200px; width: 50%">&nbsp;</div>
 
-{% include themes/twitter/widgets_and_apps/glance_setup_accordion.html %}
+<iframe src="http://widgets.edmunds.com/ppb/configure?portal=true" width="100%" height="580" align="left" class="iframeWidget"></iframe>
+
+{% include themes/twitter/widgets_and_apps/price_promise_setup_accordion.html %}
