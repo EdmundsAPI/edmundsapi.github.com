@@ -18,10 +18,10 @@
         <div class="container">
             <div class="span6">
                 <h2 style="padding-top: 0">HOW DOES IT WORK</h2>
-                <p>If <span class="valid">a given (valid or invalid) VIN</span> does NOT have an associated Price Promise offer, the user will not see any mention
-                    of Edmunds.com, Price Promise, or the “Get Your Special Offer” in the space designated by the developer for the widget to render.</p>
-                    <p>If <span class="vin">a given VIN</span> has an associated Price Promise offer, the button will render, allowing a user to pop open a
+                <p>If <span class="vin">a given VIN</span> has an associated Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup> offer, the button will render, allowing a user to pop open a
                         lead form by clicking on the “Get Your Special Offer” button</p>
+                <p>If <span class="valid">a given (valid or invalid) VIN</span> does NOT have an associated Price Promise offer, the user will not see any mention
+                    of Edmunds.com, Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup>, or the “Get Your Special Offer” in the space designated by the developer for the widget to render.</p>
             </div>
             <div class="span6">
                 <div class="screen-bgnd rating">
@@ -71,7 +71,7 @@
 
                     <span data-slide="1" data-num="1" class="tips tip1" style="top: 66px">API Key</span>
                     <span data-slide="1" data-num="2" class="tips tip2" style="top: 131px">Zip Code</span>
-                    <span data-slide="1" data-num="3" class="tips tip3" style="top: 193px">VIN Code</span>
+                    <span data-slide="1" data-num="3" class="tips tip3" style="top: 196px">VIN Code</span>
 
 
                     <span data-slide="2" data-num="1" class="tips tip1">Ability to choose the tabs with different information to include in the widget. You can have one tab or all five. It's up to you.</span>
@@ -308,7 +308,7 @@
 
                 case 1:
 
-                    animateMarkers(73, 138, 200, 66, 131, 193);
+                    animateMarkers(73, 138, 203, 66, 131, 196);
 
                     slidePoint1.css({'background-position': '0 -30px'});
                     slidePoint2.css({'background-position': '0 -45px'});
@@ -405,8 +405,10 @@
     // ----
     $valid.hover(function(){
         $button.fadeOut(500);
+        $button.prev().fadeOut(500);
         $borderVin.fadeIn(500);
     },function(){
+        $button.prev().fadeIn(500);
         $button.fadeIn(500);
         $borderVin.fadeOut(500);
     });
