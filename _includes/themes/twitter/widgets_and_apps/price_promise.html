@@ -401,7 +401,8 @@
       $valid = $pricePromiseSection.find('.valid'),
       $vin = $pricePromiseSection.find('.vin'),
       $button = $pricePromiseSection.find('.ppbButton'),
-      $borderVin = $pricePromiseSection.find('.border-vin');
+      $borderVin = $pricePromiseSection.find('.border-vin'),
+      $title = $('.promo-page-header').find('.ppb-title');
     // ----
     $valid.hover(function(){
         $button.fadeOut(500);
@@ -424,6 +425,8 @@
         });
         $borderVin.fadeOut(500);
     });
+    //$title.html('<span>PRICE PROMISE<sup>SM</sup> BUTTON</span>');
+
 
 
 

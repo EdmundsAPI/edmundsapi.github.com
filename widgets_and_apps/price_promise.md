@@ -1,6 +1,6 @@
 ---
 layout: default
-title : 'Price Promise Button'
+title : 'Price Promise<sup style="font-size: 16px; vertical-align: 32px;">SM</sup> Button'
 title_parent: Widgets and apps
 header : Price Promise
 
