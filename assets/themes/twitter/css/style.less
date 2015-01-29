@@ -790,21 +790,38 @@ a.blueLink {
 }
 
 .ppbWidget {
-  background: #444;
+  background: #f0f0f0;
   .headerWidgets {
-    border-bottom:1px solid #787878;
+    border-bottom:1px solid #CCC;
     h2 {
-      color:#fff;
+      color:#444;
     }
-
+    .carousel-indicators {
+      li {
+        &.active {
+          a {
+            color: #393939 !important;
+          }
+        }
+        a {
+          color: #444 !important;
+          border-color: #5e5e5e;
+        }
+      }
+    }
     a, a:hover, a:active, a:visited, a:focus, span.separator {
       color:#fff;
       border-color:#fff;
       text-decoration:none;
     }
+    span.separator {
+      color: #5e5e5e;
+      border-color: #5e5e5e;
+      text-decoration: none;
+    }
     .arrow {
+      background-position: 0 -13px;
       left:1090px;
-      background-position:0 -26px ;
       -webkit-transition: left 0.5s ease;
       -moz-transition: left 0.5s ease;
       transition: left 0.5s ease;
@@ -812,7 +829,14 @@ a.blueLink {
   }
   .slider-content {
     color:#fff;
-
+    .text-col {
+      p {
+        color: #000;
+      }
+      .info {
+        color: #000;
+      }
+    }
   }
 }
 
