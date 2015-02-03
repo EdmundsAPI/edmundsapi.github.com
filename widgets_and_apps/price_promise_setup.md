@@ -7,9 +7,13 @@ header : Price Promise
 
 {% include themes/twitter/widgets_and_apps/price_promise_setup.html %}
 
-Tell the widget what car make/model/year you're interested in and it will tell you all that Edmunds.com knows about it including its car rating grade, consumer reviews, Edmunds.com Editorial review, Road Test articles, dealers selling it in the area, etc.
+<i>Singular/Trial Use:</i>
 
-You can use the widget configurator below to customize the layout and style of the widget, and grab a small snippet of code to insert into your HTML pages to implement the widget.
+Configure a button for individual pieces of inventory, and then embed those buttons onto that vehicle’s VDP page.
+
+<i>Programmatic use at Scale (Advanced):</i>
+
+After establishing the placement and fit of the widget using the ‘Singular/Trial Use’ method, the developer can then program the widget into all of the VDP pages and override the VIN using Javascript.
 
 <div class="pre-loader" style="height: 200px; width: 50%">&nbsp;</div>
 
