@@ -19,7 +19,7 @@
             <div class="span6">
                 <h2 style="padding-top: 0">HOW DOES IT WORK</h2>
                 <p>If <span class="vin">a given VIN</span> has an associated Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup> offer, the button will render, allowing a user to pop open a
-                        lead form by clicking on the “Get Your Special Offer” button</p>
+                    lead form by clicking on the “Get Your Special Offer” button</p>
                 <p>If <span class="valid">a given (valid or invalid) VIN</span> does NOT have an associated Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup> offer, the user will not see any mention
                     of Edmunds.com, Price Promise<sup style="font-size: 6px;vertical-align: 5px;">SM</sup>, or the “Get Your Special Offer” in the space designated by the developer for the widget to render.</p>
             </div>
@@ -47,7 +47,7 @@
     <div class="wrap-container price-promise-promo-section2 promo-section2 row-fluid sectiobSliderGlance">
         <div class="span6">
             <div class="clearfix wrapperSliderGlance">
-               <div class="navig">
+                <div class="navig">
                     <ul>
                         <li id="downSlide" class="arr" data-number="1">Prev</li>
                         <li class="pointSlider slidePoint1" data-number="1">1</li>
@@ -88,7 +88,7 @@
 
             <h5>Select option from:</h5>
             <ul>
-                <li>Button suze: Large or Compact views</li>
+                <li>Button size: Large or Compact views</li>
                 <li>Configure layout from stacked version to horizontal</li>
                 <li>Color Scheme: Dark or Light to perfectly fit your website</li>
             </ul>
@@ -373,21 +373,14 @@
 
         function downSlider() {
             closeAll ();
-
-
             if (count > 1) {
-
                 $slides.animate({top: '-=' + step + ''}, 400);
                 count--;
 
             } else {
-
                 $slides.animate({top: -316}, 400);
                 count = amountSlides;
-
             }
-
-
             moveMark();
         }
     });
@@ -425,10 +418,5 @@
         });
         $borderVin.fadeOut(500);
     });
-    //$title.html('<span>PRICE PROMISE<sup>SM</sup> BUTTON</span>');
-
-
-
-
 //   -----------------------  //
 </script>
