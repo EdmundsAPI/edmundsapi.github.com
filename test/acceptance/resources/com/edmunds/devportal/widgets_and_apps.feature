@@ -1,37 +1,10 @@
 Feature: Widgets and Apps
   To verify Widgets and Apps availability
 
-  Scenario: Check widgets carousel
-    Given I have opened '/widgets_and_apps/index.html' page
-    Then I should see carousel
-    And the carousel should have items:
-      | TRUE MARKET VALUE        |
-      | NEW VEHICLE CONFIGURATOR |
-      | EDMUNDS AT A GLANCE      |
-    Then the 'TRUE MARKET VALUE' carousel item should be active
-    And the slide '1' should be displayed
-    And the slide 1 should have links:
-      | Learn More    |
-      | Configure Now |
-    When I select 'NEW VEHICLE CONFIGURATOR' carousel item
-    Then the 'NEW VEHICLE CONFIGURATOR' carousel item should be active
-    And the slide '2' should be displayed
-    And the slide 2 should have links:
-      | Learn More    |
-      | Configure Now |
-    When I select 'EDMUNDS AT A GLANCE' carousel item
-    Then the 'EDMUNDS AT A GLANCE' carousel item should be active
-    And the slide '3' should be displayed
-    When I select 'TRUE MARKET VALUE' carousel item
-    Then the 'TRUE MARKET VALUE' carousel item should be active
-    And the slide '1' should be displayed
-
-
   Scenario: Check TMV widget
     Given I have opened '/widgets_and_apps/index.html' page
     Then I should see carousel
     When I select 'TRUE MARKET VALUE' carousel item
-    Then the 'TRUE MARKET VALUE' carousel item should be active
     When I click on 'Learn More' button of slide 1
     Then the page should have 'The True Market Value® Widget' in the title
 
