@@ -105,7 +105,7 @@ You acknowledge and agree that:
 
 **7.5**   You must include an Edmunds Web Logo on the Developer Site and the Developer Application displaying Edmunds Data.
 
-**7.6 **  You will not include rel="nofollow" when rendering hyperlinked Edmunds Data returned by an Edmunds API.
+**7.6**  You will not include rel="nofollow" when rendering hyperlinked Edmunds Data returned by an Edmunds API.
 
 **7.7**  No substitution shall be made for page URLs included in the Edmunds Materials, and the Edmunds Links shall convey End Users directly to such page URLs within the same browser window and without any framing, redirection (with the exception of redirection through a tracking system), or interstitial advertising (including pop-up or pop-under ads).
 
