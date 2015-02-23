@@ -109,9 +109,9 @@ You acknowledge and agree that:
 
 **7.7**   You will not include rel="nofollow" when rendering hyperlinked Edmunds Data returned by an Edmunds API.
 
-**7.8**   No substitution shall be made for page URLs included in the Edmunds Materials, and the Edmunds Links shall convey End Users directly to such page URLs within the same browser window and without any framing, redirection (with the exception of redirection through a tracking system), or interstitial advertising (including pop-up or pop-under ads).
+**7.8**   You may cache and thus store Edmunds Data on your system for up to 24 hours, after which such cached Edmunds Data must be purged. Subject to that exception, you will not copy, store, archive, distribute to any third party (other than to End Users as contemplated in this Agreement) any Edmunds Data, any metadata or any Link.   You agree that any cached Edmunds Data will be used by you only for the purpose of populating the Developer Application.
 
-**7.9**   You may cache and thus store Edmunds Data on your system for up to 24 hours, after which such cached Edmunds Data must be purged.  Subject to that exception, you will not copy, store, archive, distribute to any third party (other than to End Users as contemplated in this Agreement), alter or modify in any fashion, any Edmunds Data, any metadata or any Link.  You agree that any cached Edmunds Data will be used by you only for the purpose of populating the Developer Application.
+**7.9**   You will not alter or modify in any fashion any Edmunds Data, any metadata or any Link. That includes not cropping or otherwise modifying in any way (other than resizing), or obscuring or removing any part of the Edmunds.com watermark on, any Edmunds Photos. 
 
 **7.10**   You will not, in connection with any display of any item of Edmunds Data that relates to a vehicle, make any factual misrepresentation with respect to such item or the vehicle to which it pertains.
 
