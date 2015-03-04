@@ -24,7 +24,7 @@ Find Repairshops of the **90404** area
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/repairshops?zipcode=90404&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/repairshops?zipcode=90404&api_key={api_key}&fmt=json
 
 #### Response
 
@@ -100,15 +100,15 @@ Find Repairshops of the **90404** area
         "links": [
             {
                 "rel": "first",
-                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=1&api_key={api key}"
+                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=1&api_key={api_key}"
             },
             {
                 "rel": "next",
-                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=2&api_key={api key}"
+                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=2&api_key={api_key}"
             },
             {
                 "rel": "last",
-                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=168&api_key={api key}"
+                "href": "/api/dealer/v2/repairshops?zipcode=90404&pagesize=10&pagenum=168&api_key={api_key}"
             }
         ]
     }

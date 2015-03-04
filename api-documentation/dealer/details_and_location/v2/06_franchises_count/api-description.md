@@ -25,7 +25,7 @@ Find Franchises count by ZIP code with a specific radius and/or specific car mak
 
 ### URL
 
-    https://api.edmunds.com/api/dealer/v2/franchises/count?zipcode={zipcode}&fmt=json&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/franchises/count?zipcode={zipcode}&fmt=json&api_key={api_key}&fmt=json
     
 ### Code Example
 
