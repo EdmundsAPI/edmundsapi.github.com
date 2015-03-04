@@ -171,9 +171,9 @@ EDMUNDS WILL NOT BE LIABLE FOR ANY LOST PROFITS OR COSTS OF PROCUREMENT OF SUBST
 
 **12.8**   Entire Agreement. This Agreement and the Visitor Agreement constitute the entire agreement between the parties with respect to the subject matter hereof.  This Agreement supersedes, and the terms of this Agreement govern, any other prior or collateral agreements with respect to the subject matter hereof.
 
-**12.9**  Severability. If any provision of this Agreement shall be held or made invalid or unenforceable for any reason, such invalidity shall not affect the remainder of this Agreement, and the invalid or unenforceable provisions shall be replaced by a mutually acceptable provision, which being valid, legal and enforceable comes closest to the original intentions of the parties hereto and has like economic effect.
+**12.9**   Severability. If any provision of this Agreement shall be held or made invalid or unenforceable for any reason, such invalidity shall not affect the remainder of this Agreement, and the invalid or unenforceable provisions shall be replaced by a mutually acceptable provision, which being valid, legal and enforceable comes closest to the original intentions of the parties hereto and has like economic effect.
 
-**12.10**  Section Headings. The section headings contained herein are for reference purposes only and shall not in any way affect the meaning or interpretation of this Agreement.
+**12.10**   Section Headings. The section headings contained herein are for reference purposes only and shall not in any way affect the meaning or interpretation of this Agreement.
 
 
 IN ADDITION TO ALL OTHER CRITERIA CONSIDERED BY EDMUNDS WITH RESPECT TO THE APPLICATION FOR API KEYS, NO APPLICANT SHALL BE ADMITTED TO THE EDMUNDS DEVELOPER NETWORK UNLESS SUCH APPLICANT'S SITE AND DEVELOPER APPLICATION ARE MARKETED AND DIRECTED SOLELY TO RESIDENTS OF THE UNITED STATES OF AMERICA OR CANADA, AS DETERMINED BY EDMUNDS IN ITS SOLE DISCRETION.
