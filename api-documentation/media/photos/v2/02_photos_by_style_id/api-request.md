@@ -27,7 +27,7 @@ Find Photos for Style with ID **200692674**
 
 #### URL
 
-    https://api.edmunds.com/api/media/v2/styles/200692674/photos?api_key={api key}
+    https://api.edmunds.com/api/media/v2/styles/200692674/photos?api_key={api_key}&fmt=json
 
 #### Response
 
@@ -108,15 +108,15 @@ Find Photos for Style with ID **200692674**
         "links": [
             {
                 "rel": "first",
-                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=1&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=1&api_key={api_key}&fmt=json"
             },
             {
                 "rel": "next",
-                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=2&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=2&api_key={api_key}&fmt=json"
             },
             {
                 "rel": "last",
-                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=29&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?pagesize=10&pagenum=29&api_key={api_key}&fmt=json"
             }
         ]
     }
@@ -126,7 +126,7 @@ Find Photos for Style with ID **200692674**
 
 #### URL
 
-    https://api.edmunds.com/api/media/v2/styles/200692674/photos?view=full&api_key={api key}
+    https://api.edmunds.com/api/media/v2/styles/200692674/photos?view=full&api_key={api_key}&fmt=json
 
 #### Response
 
@@ -225,15 +225,15 @@ Find Photos for Style with ID **200692674**
         "links": [
             {
                 "rel": "first",
-                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=1&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=1&api_key={api_key}&fmt=json"
             },
             {
                 "rel": "next",
-                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=2&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=2&api_key={api_key}&fmt=json"
             },
             {
                 "rel": "last",
-                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=29&api_key={api key}"
+                "href": "/api/media/v2/styles/200692674/photos?view=full&pagesize=10&pagenum=29&api_key={api_key}&fmt=json"
             }
         ]
     }

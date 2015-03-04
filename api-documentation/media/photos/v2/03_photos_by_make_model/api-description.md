@@ -25,7 +25,7 @@ Find Photos by Make/Model
 
 ### URL
 
-    https://api.edmunds.com/api/media/v2/{make}/{model}/photos?api_key={api key}
+    https://api.edmunds.com/api/media/v2/{make}/{model}/photos?api_key={api_key}&fmt=json
 
 ### Code Example
 

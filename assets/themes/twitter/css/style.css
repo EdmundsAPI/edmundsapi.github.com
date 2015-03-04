@@ -518,7 +518,8 @@ a.pdfLink:hover {
 	}
 	.editorialTableTr,
 	.inventoryTableTr,
-	.dealerTableTr {
+	.dealerTableTr,
+	.mediaTableTr {
 		border-top: 1px solid #fff;
 	}
 	.parenCategory a.icons {
@@ -588,6 +589,10 @@ a.pdfLink:hover {
 	.dealerTableTr .even .span4 {
 		line-height: 69px;
 	}
+	.mediaTableTr .odd .span4,
+    .mediaTableTr .even .span4 {
+    	line-height: 130px;
+    }
 	.subcategory .rowCostCategory .span8 .span4 {
 		line-height: 53px;
 	}
@@ -767,6 +772,10 @@ ul.multiLevelMenu {
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
+	.mediaTableTr .odd .span4,
+    .mediaTableTr .even .span4 {
+    	line-height: 130px;
+    }
 	.overviewTable .parenCategory {
 		padding: 13px 5px;
 	}
@@ -819,6 +828,10 @@ ul.multiLevelMenu {
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
+	.mediaTableTr .odd .span4,
+    .mediaTableTr .even .span4 {
+        line-height: 130px;
+    }
 	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 { width: 200px; float: left;	}
@@ -871,6 +884,10 @@ ul.multiLevelMenu {
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
+	.mediaTableTr .odd .span4,
+    .mediaTableTr .even .span4 {
+        line-height: 130px;
+    }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
 		width: 200px;
@@ -941,6 +958,10 @@ ul.multiLevelMenu {
 	.dealerTableTr .even .span4 {
 		line-height: 78px;
 	}
+	.mediaTableTr .odd .span4,
+    .mediaTableTr .even .span4 {
+        line-height: 130px;
+    }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
 		width: 200px;
