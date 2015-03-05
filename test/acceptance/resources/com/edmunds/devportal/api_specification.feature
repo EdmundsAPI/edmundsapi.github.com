@@ -345,8 +345,13 @@ Feature: API Documentation
 
     Then I choose 'VIN Lookup' left menu
     And menu 'VIN Lookup' should be active
-    And the 'v2' documentation shouldn't be present
+    And the 'v2' documentation should be present
     And the 'v1' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 1 endpoints
+    When I choose '/api/inventory/v2/vins/{vin}' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'v1' documentation
     And menu 'v1' should be active
     And the documentation should have 1 endpoints
     When I choose 'api/inventory/v1/lookup' endpoint
@@ -354,8 +359,19 @@ Feature: API Documentation
 
     Then I choose 'Vehicle Listings' left menu
     And menu 'Vehicle Listings' should be active
-    And the 'v2' documentation shouldn't be present
+    And the 'v2' documentation should be present
     And the 'v1' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 4 endpoints
+    When I choose '/api/inventory/v2/inventories?zipcode={zipcode}' endpoint
+    Then the endpoint should have specification articles
+    When I choose '/api/inventory/v2/stocks/{stockId}' endpoint
+    Then the endpoint should have specification articles
+    When I choose '/api/inventory/v2/franchises/{franchiseId}' endpoint
+    Then the endpoint should have specification articles
+    When I choose '/api/inventory/v2/styles/{styleId}' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'v1' documentation
     And menu 'v1' should be active
     And the documentation should have 2 endpoints
     When I choose 'api/inventory/v1/getall' endpoint
