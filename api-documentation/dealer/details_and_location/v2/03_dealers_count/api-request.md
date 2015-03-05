@@ -24,7 +24,7 @@ Find **Ford** Rooftop Dealers count of the **33756** area
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/dealers/count?zipcode=33756&make=ford&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/dealers/count?zipcode=33756&make=ford&api_key={api_key}&fmt=json
 
 #### Response
 

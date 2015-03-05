@@ -28,3 +28,5 @@ number: 2
 | make          | The make nice name                  |                             |               | No       |
 | state         | The state of vehicles               | new, used                   | both          | No       |
 | keyword       | Comma-separated list of keywords    |                             |               | No       |
+| api_key       | The API key                         |                             |               | Yes      |
+| fmt           | Response format                     | json                        | json          | Yes      |

@@ -26,7 +26,7 @@ Find Franchise with ID **880479**
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/franchises/880479?api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/franchises/880479?api_key={api_key}&fmt=json
 
 #### Response
 
@@ -56,7 +56,7 @@ Find Franchise with ID **880479**
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/franchises/755769?view=full&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/franchises/755769?view=full&api_key={api_key}&fmt=json
 
 #### Response
 

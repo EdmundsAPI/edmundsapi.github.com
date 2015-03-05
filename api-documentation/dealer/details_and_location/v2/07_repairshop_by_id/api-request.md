@@ -24,7 +24,7 @@ Find Repairshop by ID with ID 839031
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/repairshops/839031?api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/repairshops/839031?api_key={api_key}&fmt=json
 
 #### Response
 

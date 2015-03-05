@@ -25,7 +25,7 @@ Find Rooftop Dealer by ID
 
 ### URL
 
-    https://api.edmunds.com/api/dealer/v2/dealers/{id}?api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/dealers/{id}?api_key={api_key}&fmt=json
 
 ### Code Example
 
