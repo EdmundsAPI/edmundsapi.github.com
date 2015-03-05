@@ -25,7 +25,7 @@ Find Repairshop by ID
 
 ### URL
 
-    https://api.edmunds.com/api/dealer/v2/repairshops/{repairshopId}?api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/repairshops/{repairshopId}?api_key={api_key}&fmt=json
 
 ### Code Example
 

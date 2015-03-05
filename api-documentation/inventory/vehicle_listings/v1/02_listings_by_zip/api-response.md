@@ -4,7 +4,7 @@ title : 'Vehicle Inventory Listings by Zipcode'
 title_active_left_menu: 'Vehicle Listings'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Get Inventory Listings by Zipcode'
 spec: vehicle_listings
 version: v1

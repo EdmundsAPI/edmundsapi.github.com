@@ -24,7 +24,7 @@ Find Franchises count of the **12345** area
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/franchises/count?zipcode=12345&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/franchises/count?zipcode=12345&api_key={api_key}&fmt=json
 
 #### Response
 

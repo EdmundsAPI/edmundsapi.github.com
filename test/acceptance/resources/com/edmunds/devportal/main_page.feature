@@ -17,11 +17,14 @@ Feature: Main Page
     When I select 'Vehicle API' API carousel item
     Then the '1' item info should be displayed
 
+    When I select 'Media API' API carousel item
+    Then the '5' item info should be displayed
+
   Scenario: Check Built with Edmunds API carousel
     Given I have opened '/' page
     Then I should see carousel
     And the carousel should have '5' items
-    
+
     When I select '2' Built with Edmunds API carousel item
     Then the '2' Built with Edmunds API carousel item should be active
     And the slide '2' of Built with Edmunds API should be displayed

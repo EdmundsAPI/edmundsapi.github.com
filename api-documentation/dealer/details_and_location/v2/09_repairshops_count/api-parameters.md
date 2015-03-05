@@ -26,3 +26,5 @@ number: 2
 | zipcode       | Five-digits zip code                |                             |               | Yes      |
 | radius        | The radius of repairshops search    |                             | 100           | No       |
 | make          | The make nice name                  |                             |               | No       |
+| api_key       | The API key                         |                             |               | Yes      |
+| fmt           | Response format                     | json                        | json          | Yes      |
