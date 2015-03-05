@@ -591,7 +591,7 @@ a.pdfLink:hover {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-    	line-height: 130px;
+    	line-height: 150px;
     }
 	.subcategory .rowCostCategory .span8 .span4 {
 		line-height: 53px;
@@ -774,7 +774,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-    	line-height: 130px;
+    	line-height: 150px;
     }
 	.overviewTable .parenCategory {
 		padding: 13px 5px;
@@ -830,7 +830,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 130px;
+        line-height: 150px;
     }
 	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span2,
@@ -886,7 +886,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 130px;
+        line-height: 150px;
     }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
@@ -960,7 +960,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 130px;
+        line-height: 150px;
     }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
