@@ -27,7 +27,7 @@ Find Rooftop Dealer with ID **3742**
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/dealers/3742?api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/dealers/3742?api_key={api_key}&fmt=json
 
 #### Response
 
@@ -73,7 +73,7 @@ Find Rooftop Dealer with ID **3742**
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/dealers/3742?view=full&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/dealers/3742?view=full&api_key={api_key}&fmt=json
 
 #### Response
 

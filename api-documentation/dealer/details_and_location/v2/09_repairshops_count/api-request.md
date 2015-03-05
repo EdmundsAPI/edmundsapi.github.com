@@ -24,7 +24,7 @@ Find Repairshops count of the **90404** area
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/repairshops/count?zipcode=90404&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/repairshops/count?zipcode=90404&api_key={api_key}&fmt=json
 
 #### Response
 

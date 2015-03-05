@@ -4,7 +4,7 @@ title : 'Vehicle Inventory Listings'
 title_active_left_menu: 'Vehicle Listings'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 spec: vehicle_listings
 version: v1
 api: inventory

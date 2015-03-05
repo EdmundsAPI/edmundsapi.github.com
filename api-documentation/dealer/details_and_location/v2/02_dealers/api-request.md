@@ -25,7 +25,7 @@ Find **Ford** Rooftop Dealers of the **33756** area
 
 #### URL
 
-    https://api.edmunds.com/api/dealer/v2/dealers?zipcode=33756&make=ford&api_key={api key}
+    https://api.edmunds.com/api/dealer/v2/dealers?zipcode=33756&make=ford&api_key={api_key}&fmt=json
 
 #### Response
 
@@ -131,15 +131,15 @@ Find **Ford** Rooftop Dealers of the **33756** area
         "links": [
             {
                 "rel": "first",
-                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=1&api_key={api key}"
+                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=1&api_key={api_key}"
             },
             {
                 "rel": "next",
-                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=2&api_key={api key}"
+                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=2&api_key={api_key}"
             },
             {
                 "rel": "last",
-                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=5&api_key={api key}"
+                "href": "/api/dealer/v2/dealers?zipcode=33756&make=ford&pagesize=10&pagenum=5&api_key={api_key}"
             }
         ]
     }

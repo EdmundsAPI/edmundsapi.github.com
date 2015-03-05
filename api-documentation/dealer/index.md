@@ -54,8 +54,12 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 ### API Uses
 
+Here are some common uses of the Dealer API:
+
 * Get all dealerships within a certain zip code and radius
 * Get all dealerships by the kinds of cars they sell
+* Get all franchises within a certain zip code and radius
+* Get all repairshops within a certain zip code and radius
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 

@@ -96,10 +96,10 @@ Due to the nature of the inventory data, not all of it is available to the publi
 
 ### API Uses
 
-* Get all dealerships within a certain zip code and radius
-* Get all dealerships by the kinds of cars they sell
-* Get consumer ratings and reviews of a dealership by its Edmunds ID
-* Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
+* Get all inventories within a certain zip code and radius
+* Get inventory by VIN
+* Get inventories by franchise id
+* Get inventories by style id
 
 <a name='sec-7'> </a>
 
@@ -109,9 +109,9 @@ Due to the nature of the inventory data, not all of it is available to the publi
 
 The Inventory API has two resources:
 
-| Resource Name  	| Description                           |
+| Resource Name     | Description                           |
 |:------------------|:--------------------------------------|
-| [Inventory by VIN](/api-documentation/inventory/vin_lookup/v1/) | If the VIN you supply matches a vehicle that's for sale at one of the dealerships Edmunds.com, Inc. works with, you will get a response back. Otherwise, you will get an error. |
-| [Inventory by Dealer ID or ZIP Code](/api-documentation/inventory/vehicle_listings/v1/) | Get a list of inventories for sale at a dealership by Dealer ID or by ZIP Code. |
+| [Inventory by VIN](/api-documentation/inventory/vin_lookup/v2/) | If the VIN you supply matches a vehicle that's for sale at one of the dealerships Edmunds.com, Inc. works with, you will get a response back. Otherwise, you will get an error. |
+| [Inventory by Dealer ID or ZIP Code](/api-documentation/inventory/vehicle_listings/v2/) | Get a list of inventories. |
 
 [Back to top](#top)
