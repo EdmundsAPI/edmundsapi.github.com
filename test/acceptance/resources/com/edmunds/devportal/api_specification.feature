@@ -414,9 +414,7 @@ Feature: API Documentation
     And the 'v1' documentation should be present
     And the 'v2' documentation should be present
     And menu 'v2' should be active
-    And the documentation should have 4 endpoints
-    When I choose 'api/media/v2/photos?tag={tag}' endpoint
-    Then the endpoint should have specification articles
+    And the documentation should have 3 endpoints
     When I choose 'api/media/v2/styles/{styleId}/photos' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/media/v2/{make}/{model}/photos' endpoint
