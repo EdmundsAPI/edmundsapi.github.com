@@ -75,11 +75,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/maintenance/actionrepository/findbymodelyearid?modelyearid=100537293&fmt=json&api_key={your API key}
 
-#### Example 8: Get all photos for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A)
-
-> https://api.edmunds.com/v1/api/vehiclephoto/service/findphotosbystyleid?styleId=100001210&fmt=json&api_key={your API key}
-
-#### Example 9: Get the TMV® for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A) w/ Outstanding condition and 25,000 miles in the 90069 area
+#### Example 8: Get the TMV® for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A) w/ Outstanding condition and 25,000 miles in the 90069 area
 
 > https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
@@ -130,7 +126,6 @@ Here are some common uses of the Vehicle API:
 * Price out a used vehicle to determine the trade-in value
 * Determine the True Cost to Own® of a specific car style
 * Decode a VIN
-* Get vehicle photos
 * Get consumer ratings and reviews
 
 <a name='sec-5'> </a>

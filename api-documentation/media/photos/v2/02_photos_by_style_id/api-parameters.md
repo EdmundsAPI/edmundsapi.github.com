@@ -4,7 +4,7 @@ title : 'Find Photos by Style ID'
 title_active_left_menu: 'Photos'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Find Photos by Style ID'
 spec: photos
 version: v2

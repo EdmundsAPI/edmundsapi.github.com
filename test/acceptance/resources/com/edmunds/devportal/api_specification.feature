@@ -289,15 +289,6 @@ Feature: API Documentation
     When I choose 'v1/api/maintenance/ziplaborrate/{zip code}' endpoint
     Then the endpoint should have specification articles
 
-    Then I choose 'Media: Photos' left menu
-    And menu 'Media: Photos' should be active
-    And the 'v2' documentation shouldn't be present
-    And the 'v1' documentation should be present
-    And menu 'v1' should be active
-    And the documentation should have 1 endpoints
-    When I choose 'v1/api/vehiclephoto/service/findphotosbystyleid' endpoint
-    Then the endpoint should have specification articles
-
     Then I choose 'Content: Ratings and Reviews' left menu
     And menu 'Content: Ratings and Reviews' should be active
     And the 'v2' documentation should be present
@@ -420,12 +411,20 @@ Feature: API Documentation
 
     Then I choose 'Photos' left menu
     And menu 'Photos' should be active
+    And the 'v1' documentation should be present
     And the 'v2' documentation should be present
     And menu 'v2' should be active
-    And the documentation should have 3 endpoints
+    And the documentation should have 4 endpoints
+    When I choose 'api/media/v2/photos?tag={tag}' endpoint
+    Then the endpoint should have specification articles
     When I choose 'api/media/v2/styles/{styleId}/photos' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/media/v2/{make}/{model}/photos' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/media/v2/{make}/{model}/{year}/photos' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'v1' documentation
+    And menu 'v1' should be active
+    And the documentation should have 1 endpoints
+    When I choose 'v1/api/vehiclephoto/service/findphotosbystyleid' endpoint
     Then the endpoint should have specification articles
