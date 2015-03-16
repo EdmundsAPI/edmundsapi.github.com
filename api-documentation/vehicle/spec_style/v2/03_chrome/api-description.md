@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get TMV, TCO, Edmunds Reviews and Articles, Service Info and Dealer Ratings and Reviews by the vehicle’s [Chrome Data](http://www.chromedata.com) ID. 
+Get TMV, TCO, Edmunds Reviews and Articles, Service Information and Dealer Ratings and Reviews by the vehicle’s [Chrome Data](http://www.chromedata.com) ID. 
 **Chrome Data ID is an endpoint only provided to explicit partners of both [Chrome Data](http://www.chromedata.com) and Edmunds.com, please contact us to inquire.
 
 ### URL
