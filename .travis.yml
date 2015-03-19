@@ -5,7 +5,7 @@ rvm: # the Ruby versions to be used
 
 env:
   global:
-    - secure: gkcR4iL3O390OB/mOQPj1no9x0+oDs/CU1PR0/Kpi3vmY/TuJTwF7nJ4z0PdlwwYAzCSbyU9B3ATMVzd7UZzfPXUXHhRlijmfJevc+wRQ9DmyiXYgJeS+X6FTLjE+pLyPUua0NrL36jJprtiKlzG9Thz89qYTDxEqt8e7SWrVcM=
+    - secure: "inAI4890H8/YDwAzn+dsQI0XFqfJ0VhZ1cjjXTcluyglPO8SwywVfDlDsRBGSWXsdC/4J1DFAIZnKxw04uwTnY87W03Xa3J5VyjpqNxvMyRfK1nJH/wXzCmn+G/GLNyqDlJo169NQZqzwnhDddHXG8R/XcK+8oz8XUx1ihmJiHE="
 
 branches:
   only:
