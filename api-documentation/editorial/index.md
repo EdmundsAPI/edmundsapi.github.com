@@ -80,7 +80,7 @@ The Editorial API has two resources:
 
 | Resource Name  					| Description                           |
 |:----------------------------------|:--------------------------------------|
-| [Articles](/api-documentation/editorial/articles/v1/)        | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
+| [Articles](/api-documentation/editorial/articles/v2/)        | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
 | [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/)      | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
 
 <a name='sec-5'> </a>
