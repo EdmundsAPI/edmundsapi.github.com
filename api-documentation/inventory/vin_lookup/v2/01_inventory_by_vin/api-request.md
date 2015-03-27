@@ -59,6 +59,61 @@ Look up inventory for VIN **4JGDF7DE1EA414724**.
             },
             "trim": "GL550 4MATIC"
         },
+        "media": {
+            "photos": {
+                "thumbnails": {
+                    "count": 2,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_large.jpg",
+                            "size": "LARGE"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_small.jpg",
+                            "size": "MEDIUM"
+                        }
+                    ]
+                },
+                "small": {
+                    "count": 32,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_7_small.jpg"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_30_small.jpg"
+                        },
+                        ...
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_10_small.jpg"
+                        }
+                    ]
+                },
+                "large": {
+                    "coun": 32,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_6_large.jpg"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_large.jpg"
+                        },
+                        ...
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_13_large.jpg"
+                        }
+                    ]
+                }
+            }
+        },
         "prices": {
             "msrp": 95185,
             "tmv": 83837,
@@ -68,6 +123,17 @@ Look up inventory for VIN **4JGDF7DE1EA414724**.
             "dealerId": "837208",
             "name": "Mercedes-Benz of Rochester",
             "franchiseId": "837209",
+            "address": {
+                "street": "4447 Canal Pl SE",
+                "city": "Rochester",
+                "stateCode": "MN",
+                "stateName": "Minnesota",
+                "county": "Olmsted",
+                "country": "USA",
+                "latitude": 43.956911,
+                "longitude": -92.464561,
+                "zipcode": "55904"
+            },
             "contactInfo": {
                 "phone": "(888) 429-7040",
                 "website": http://www.mbofrochester.com/index.htm
@@ -119,18 +185,75 @@ Look up inventory for VIN **4JGDF7DE1EA414724**.
         },
         "media": {
             "photos": {
-                "link": {
-                    "rel": "_self",
-                    "href": "/api/media/v2/styles/200484926/photos"
+                "thumbnails": {
+                    "count": 2,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_large.jpg",
+                            "size": "LARGE"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_small.jpg",
+                            "size": "MEDIUM"
+                        }
+                    ]
                 },
-                "count": 44
+                "small": {
+                    "count": 32,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_7_small.jpg"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_30_small.jpg"
+                        },
+                        ...
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_10_small.jpg"
+                        }
+                    ]
+                },
+                "large": {
+                    "count": 32,
+                    "links": [
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_6_large.jpg"
+                        },
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_1_large.jpg"
+                        },
+                        ...
+                        {
+                            "rel": "_self",
+                            "href": "http://edmunds.images.dmotorworks.com/DIRMN059/MB637_13_large.jpg"
+                        }
+                    ]
+                },
+                "other": {
+                    "count": 44,
+                    "links": [
+                        {
+                            "rel": "related",
+                            "href": "/api/media/v2/styles/200484926/photos"
+                        }
+                    ]
+                }
             },
             "videos": {
-                "link": {
-                    "rel": "_self",
-                    "href": "/api/media/v2/styles/200484926/videos"
-                },
-                "count": 0
+                "count": 0,
+                "links": [
+                    {
+                        "rel": "related",
+                        "href": "/api/media/v2/styles/200484926/videos"
+                    }
+                ]
             }
         },
         "colors": [
@@ -283,6 +406,17 @@ Look up inventory for VIN **4JGDF7DE1EA414724**.
             "dealerId": "837208",
             "name": "Mercedes-Benz of Rochester",
             "franchiseId": "837209",
+            "address": {
+                "street": "4447 Canal Pl SE",
+                "city": "Rochester",
+                "stateCode": "MN",
+                "stateName": "Minnesota",
+                "county": "Olmsted",
+                "country": "USA",
+                "latitude": 43.956911,
+                "longitude": -92.464561,
+                "zipcode": "55904"
+            },
             "contactInfo": {
                 "phone": "(888) 429-7040",
                 "website": http://www.mbofrochester.com/index.htm

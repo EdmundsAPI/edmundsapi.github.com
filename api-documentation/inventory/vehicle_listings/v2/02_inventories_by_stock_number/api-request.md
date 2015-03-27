@@ -61,7 +61,25 @@ Find inventories by Stock Number **350175**.
                     },
                     "trim": "Limited"
                 },
-
+                "media": {
+                    "photos": {
+                        "thumbnails": {
+                            "count": 2,
+                            "links": [
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0209/c646513ccc02f8d1fb99db71bf9a363ex.jpg",
+                                    "size": "LARGE"
+                                },
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0209/c646513ccc02f8d1fb99db71bf9a363ex.jpg",
+                                    "size": "MEDIUM"
+                                }
+                            ]
+                        }
+                    }
+                },
                 "prices": {
                     "msrp": 25375,
                     "tmv": 23814,
@@ -70,6 +88,17 @@ Find inventories by Stock Number **350175**.
                 "dealer": {
                     "dealerId": "1046",
                     "name": "California Superstores Valencia",
+                    "address": {
+                        "street": "23820 Creekside Rd",
+                        "city": "Valencia",
+                        "stateCode": "CA",
+                        "stateName": "California",
+                        "county": "Los Angeles",
+                        "country": "USA",
+                        "latitude": 34.418535,
+                        "longitude": -118.552833,
+                        "zipcode": "91355"
+                    },
                     "franchiseId": "649665",
                     "premier": false
                 }
@@ -103,6 +132,25 @@ Find inventories by Stock Number **350175**.
                     },
                     "trim": "EX-L"
                 },
+                "media": {
+                    "photos": {
+                        "thumbnails": {
+                            "count": 2,
+                            "links": [
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0257/6fa45b963920bced0a1b3bce3c14c39cx.jpg",
+                                    "size": "LARGE"
+                                },
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0257/6fa45b963920bced0a1b3bce3c14c39cx.jpg",
+                                    "size": "MEDIUM"
+                                }
+                            ]
+                        }
+                    }
+                },
                 "prices": {
                     "msrp": 36200,
                     "tmv": 32165,
@@ -113,6 +161,17 @@ Find inventories by Stock Number **350175**.
                     "dealerId": "1484",
                     "name": "Honda World",
                     "franchiseId": "27711",
+                    "address": {
+                        "street": "13600 Beach Blvd",
+                        "city": "Westminster",
+                        "stateCode": "CA",
+                        "stateName": "California",
+                        "county": "Orange",
+                        "country": "USA",
+                        "latitude": 33.764925,
+                        "longitude": 117.989609,
+                        "zipcode": "92683"
+                    },
                     "contactInfo": {
                         "phone": "(877) 999-3173",
                         "website": http://www.ochondaworld.com/
@@ -179,18 +238,39 @@ Find inventories by Stock Number **350175**.
                 },
                 "media": {
                     "photos": {
-                        "link": {
-                            "rel": "_self",
-                            "href": "/api/media/v2/styles/200674795/photos"
-                        },
-                        "count": 32
+                        "thumbnails": {
+                            "count": 2,
+                            "links": [
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0209/c646513ccc02f8d1fb99db71bf9a363ex.jpg",
+                                    "size": "LARGE"
+                                },
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0209/c646513ccc02f8d1fb99db71bf9a363ex.jpg",
+                                    "size": "MEDIUM"
+                                }
+                            ]
+                        }
+                        "other": {
+                            "count": 32,
+                            "links": [
+                                {
+                                    "rel": "related",
+                                    "href": "/api/media/v2/styles/200674795/photos"
+                                }
+                            ]
+                        }
                     },
                     "videos": {
-                        "link": {
-                            "rel": "_self",
-                            "href": "/api/media/v2/styles/200674795/videos"
-                        },
-                        "count": 0
+                        "count": 0,
+                        "links": [
+                            {
+                                "rel": "related",
+                                "href": "/api/media/v2/styles/200674795/videos"
+                            }
+                        ]
                     }
                 },
                 "colors": [
@@ -304,6 +384,17 @@ Find inventories by Stock Number **350175**.
                     "dealerId": "1046",
                     "name": "California Superstores Valencia",
                     "franchiseId": "649665",
+                    "address": {
+                        "street": "23820 Creekside Rd",
+                        "city": "Valencia",
+                        "stateCode": "CA",
+                        "stateName": "California",
+                        "county": "Los Angeles",
+                        "country": "USA",
+                        "latitude": 34.418535,
+                        "longitude": -118.552833,
+                        "zipcode": "91355"
+                    },
                     "premier": false,
                     "link": {
                         "rel": "_self",
@@ -346,18 +437,39 @@ Find inventories by Stock Number **350175**.
                 },
                 "media": {
                     "photos": {
-                        "link": {
-                            "rel": "_self",
-                            "href": "/api/media/v2/styles/200698682/photos"
+                        "thumbnails": {
+                            "count": 2,
+                            "links": [
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0257/6fa45b963920bced0a1b3bce3c14c39cx.jpg",
+                                    "size": "LARGE"
+                                },
+                                {
+                                    "rel": "_self",
+                                    "href": "https://pictures.dealer.com/c/californiasuperstoresvalenciacllc/0257/6fa45b963920bced0a1b3bce3c14c39cx.jpg",
+                                    "size": "MEDIUM"
+                                }
+                            ]
                         },
-                        "count": 30
+                        "other": {
+                            "count": 32,
+                            "links": [
+                                {
+                                    "rel": "related",
+                                    "href": "/api/media/v2/styles/200674795/photos"
+                                }
+                            ]
+                        }
                     },
                     "videos": {
-                        "link": {
-                            "rel": "_self",
-                            "href": "/api/media/v2/styles/200698682/videos"
-                        },
-                        "count": 0
+                        "count": 0,
+                        "links": [
+                            {
+                                "rel": "related",
+                                "href": "/api/media/v2/styles/200674795/videos"
+                            }
+                        ]
                     }
                 },
                 "colors": [
@@ -478,6 +590,17 @@ Find inventories by Stock Number **350175**.
                     "dealerId": "1484",
                     "name": "Honda World",
                     "franchiseId": "27711",
+                    "address": {
+                        "street": "13600 Beach Blvd",
+                        "city": "Westminster",
+                        "stateCode": "CA",
+                        "stateName": "California",
+                        "county": "Orange",
+                        "country": "USA",
+                        "latitude": 33.764925,
+                        "longitude": 117.989609,
+                        "zipcode": "92683"
+                    },
                     "contactInfo": {
                         "phone": "(877) 999-3173",
                         "website": http://www.ochondaworld.com/

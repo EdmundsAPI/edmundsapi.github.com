@@ -53,6 +53,41 @@ number: 3
                     },
                     "trim": {string}
                 },
+                "media": {
+                    "photos": {
+                        "thumbnails": {
+                            "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string},
+                                    "size": {string}
+                                },
+                                ...
+                            ]
+                        },
+                        "small": {
+                            "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string}
+                                },
+                                ...
+                            ]
+                        },
+                        "large": {
+                             "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string}
+                                },
+                                ...
+                            ]
+                        }
+                    }
+                },
                 "prices": {
                     "msrp": {integer},
                     "tmv": {integer},
@@ -64,6 +99,17 @@ number: 3
                     "dealerId": {string},
                     "name": {string},
                     "franchiseId": {string},
+                    "address": {
+                        "street": {string},
+                        "city": {string},
+                        "stateCode": {string},
+                        "stateName": {string},
+                        "county": {string},
+                        "country": {string},
+                        "latitude": {double},
+                        "longitude": {double},
+                        "zipcode": {string}
+                    },
                     "contactInfo": {
                         "phone": {string},
                         "website": {string}
@@ -73,7 +119,7 @@ number: 3
             },
             ...
         ],
-        "inventoriesCount: {integer},
+        "inventoriesCount": {integer},
         "links": [
             {
                 "rel": {string},
@@ -103,6 +149,7 @@ number: 3
 | dealerId                   | The dealer ID                                             | Edmunds, Partners         |
 | franchiseId                | The franchise ID                                          | Edmunds, Partners         |
 | contactInfo                | The franchise contact information                         | Edmunds, Partners         |
+| address                    | The franchise address                                     | Edmunds, Partners         |
 | premier                    | Is this dealership a premier dealer?                      | Edmunds                   |
 | inventoriesCount           | The inventories count                                     | Edmunds, Partners, Public |
 | links                      | The pagination links                                      | Edmunds, Partners, Public |
@@ -146,18 +193,55 @@ number: 3
                 },
                 "media": {
                     "photos": {
-                        "link": {
-                            "rel": {string},
-                            "href": {string}
+                        "thumbnails": {
+                            "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string},
+                                    "size": {string}
+                                },
+                                ...
+                            ]
                         },
-                        "count": {integer}
+                        "small": {
+                            "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string}
+                                },
+                                ...
+                            ]
+                        },
+                        "large": {
+                             "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string}
+                                },
+                                ...
+                            ]
+                        },
+                        "other": {
+                            "count": {long},
+                            "links": [
+                                {
+                                    "rel": {string},
+                                    "href": {string}
+                                }
+                            ]
+                        }
                     },
                     "videos": {
-                        "link": {
-                            "rel": {string},
-                            "href": {string}
-                        },
-                        "count": {integer}
+                        "count": {long},
+                        "links": [
+                            {
+                                "rel": {string},
+                                "href": {string}
+                            }
+                        ]
                     }
                 },
                 "colors": [
@@ -237,6 +321,17 @@ number: 3
                     "dealerId": {string},
                     "name": {string},
                     "franchiseId": {string},
+                    "address": {
+                        "street": {string},
+                        "city": {string},
+                        "stateCode": {string},
+                        "stateName": {string},
+                        "county": {string},
+                        "country": {string},
+                        "latitude": {double},
+                        "longitude": {double},
+                        "zipcode": {string}
+                    },
                     "contactInfo": {
                         "phone": {string},
                         "website": {string}
@@ -250,7 +345,7 @@ number: 3
             },
             ...
         ],
-        "inventoriesCount: {integer},
+        "inventoriesCount": {integer},
         "links": [
             {
                 "rel": {string},
@@ -293,6 +388,7 @@ number: 3
 | dealerId                   | The dealer ID                                                                                                   | Edmunds, Partners         |
 | franchiseId                | The franchise ID                                                                                                | Edmunds, Partners         |
 | contactInfo                | The franchise contact information                                                                               | Edmunds, Partners         |
+| address                    | The franchise address                                                                                           | Edmunds, Partners         |
 | premier                    | Is this dealership a premier dealer?                                                                            | Edmunds                   |
 | inventoriesCount           | The inventories count                                                                                           | Edmunds, Partners, Public |
 | links                      | The pagination links                                                                                            | Edmunds, Partners, Public |

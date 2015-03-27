@@ -51,6 +51,41 @@ number: 3
             },
             "trim": {string}
         },
+        "media": {
+            "photos": {
+                "thumbnails": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string},
+                            "size": {string}
+                        },
+                        ...
+                    ]
+                },
+                "small": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string}
+                        },
+                        ...
+                    ]
+                },
+                "large": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string}
+                        },
+                        ...
+                    ]
+                }
+            }
+        },
         "prices": {
             "msrp": {double},
             "tmv": {double},
@@ -62,6 +97,17 @@ number: 3
             "dealerId": {string},
             "name": {string},
             "franchiseId": {string},
+            "address": {
+                "street": {string},
+                "city": {string},
+                "stateCode": {string},
+                "stateName": {string},
+                "county": {string},
+                "country": {string},
+                "latitude": {double},
+                "longitude": {double},
+                "zipcode": {string}
+            },
             "contactInfo": {
                 "phone": {string},
                 "website": {string}
@@ -82,6 +128,7 @@ number: 3
 | model                      | The car model                                             | Edmunds, Partners, Public |
 | year                       | The car year                                              | Edmunds, Partners, Public |
 | style                      | The style of this car                                     | Edmunds, Partners, Public |
+| photos                     | The link to the car photos                                | Edmunds, Partners, Public |
 | msrp                       | The MSRP of this car                                      | Edmunds, Partners         |
 | tmv                        | TMV price for this car                                    | Edmunds, Partners         |
 | guaranteedPrice            | Edmunds.com's guaranteed price                            | Edmunds, Partners         |
@@ -90,6 +137,7 @@ number: 3
 | dealerId                   | The dealer ID                                             | Edmunds, Partners         |
 | franchiseId                | The franchise ID                                          | Edmunds, Partners         |
 | contactInfo                | The franchise contact information                         | Edmunds, Partners         |
+| address                    | The franchise address                                     | Edmunds, Partners         |
 | premier                    | Is this dealership a premier dealer?                      | Edmunds                   |
 
 #### JSON Response w/ view=full
@@ -128,18 +176,55 @@ number: 3
         },
         "media": {
             "photos": {
-                "link": {
-                    "rel": {string},
-                    "href": {string}
+                "thumbnails": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string},
+                            "size": {string}
+                        },
+                        ...
+                    ]
                 },
-                "count": {integer}
+                "small": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string}
+                        },
+                        ...
+                    ]
+                },
+                "large": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string}
+                        },
+                        ...
+                    ]
+                },
+                "other": {
+                    "count": {long},
+                    "links": [
+                        {
+                            "rel": {string},
+                            "href": {string}
+                        }
+                    ]
+                }
             },
             "videos": {
-                "link": {
-                    "rel": {string},
-                    "href": {string}
-                },
-                "count": {integer}
+                "count": {long},
+                "links": [
+                    {
+                        "rel": {string},
+                        "href": {string}
+                    }
+                ]
             }
         },
         "colors": [
@@ -219,6 +304,17 @@ number: 3
             "dealerId": {string},
             "name": {string},
             "franchiseId": {string},
+            "address": {
+                "street": {string},
+                "city": {string},
+                "stateCode": {string},
+                "stateName": {string},
+                "county": {string},
+                "country": {string},
+                "latitude": {double},
+                "longitude": {double},
+                "zipcode": {string}
+            },
             "contactInfo": {
                 "phone": {string},
                 "website": {string}
@@ -264,6 +360,7 @@ number: 3
 | dealerId                   | The dealer ID                                                                                                   | Edmunds, Partners         |
 | franchiseId                | The franchise ID                                                                                                | Edmunds, Partners         |
 | contactInfo                | The franchise contact information                                                                               | Edmunds, Partners         |
+| address                    | The franchise address                                                                                           | Edmunds, Partners         |
 | premier                    | Is this dealership a premier dealer?                                                                            | Edmunds                   |
 
 **Note:** *Public* visibility is only available to public API keys that have been approved for access by Edmunds.com

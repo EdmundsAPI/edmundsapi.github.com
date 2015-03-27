@@ -330,7 +330,7 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     When I choose 'api/editorial/v2/{make}/{model}/{year}/roadtests' endpoint
     Then the endpoint should have specification articles
-    When I choose  'v1' documentation
+    When I choose 'v1' documentation
     And the documentation should have 1 endpoints
     When I choose 'v1/content' endpoint
     Then the endpoint should have specification articles
