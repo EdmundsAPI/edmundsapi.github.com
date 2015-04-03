@@ -37,3 +37,14 @@ overview: page_version
 #### Example 3: Get Cars of Dealership with ID **837209**
 
 > https://api.edmunds.com/api/inventory/v2/franchises/837209?fmt=json
+
+### Available engine cylinders count
+* 0 (for electric vehicle)
+* 3
+* 4
+* 5
+* 6
+* 8
+* 10
+* 12
+* 16
