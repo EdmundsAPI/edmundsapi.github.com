@@ -181,7 +181,7 @@ All API keys are issued with a _default quota_ of **2 API calls/second** and **5
 2. The application is in compliance with our [branding guide](/api_branding_guide/)
 3. The application is representing the Edmunds data properly
 
-Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please** <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>. _No monetary compensation is expected in exchange for the rate limit increase_.<a name='sec-7'> </a>
+Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please** <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>. _No monetary compensation is expected in exchange for the rate limit increase_.<a name='sec-7'> </a>
 
 [Back to top](#top)
 
@@ -191,7 +191,7 @@ Once these three criteria are verified, the rate limit is increased to what Edmu
 Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer _three access tiers_:
 
 * **PUBLIC**: All registered developers using the Edmunds.com data and content according to our [Terms of Service](/terms_of_service/).
-* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
+* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
 * **EDMUNDS**: Edmunds.com employees and contractors using the API to build out the Edmunds.com apps and websites.
 
 Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-8'> </a>
@@ -212,7 +212,7 @@ API errors occur for several reasons. Here's a list of **common errors** and way
 | 503     	   	| Service Unavailable 					| If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
 | 504     	   	| Gateway Timeout                       | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
 
-If an error persists and you can't resolve it, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> and let us know.
+If an error persists and you can't resolve it, please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> and let us know.
 
 When an error occurs, you should get the following response:
 
@@ -277,7 +277,7 @@ All set? Awesome. Why not start making **live API calls** _right now_ by using t
 
 Once you're comfortable with our APIs, you can start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
 
-Still have questions? Don't hesitate to <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
+Still have questions? Don't hesitate to <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
 
 [Back to top](#top)
 
