@@ -26,7 +26,7 @@ number: 2
 | styleId       | The car's style ID                                |                                                 |                         | Yes                              |
 | zipcode       | Dealership ZIP Code                               |                                                 |                         | Yes                              |
 | radius        | The search radius in miles                        |                                                 | 50                      | No                               |
-| type          | The car type                                      | new,used,future,cpo,newused,newcpo,usedcpo,all  | all                     | No                               |
+| type          | The car type                                      | new, used, cpo                                  |                         | No                               |
 | intcolor      | The car's interior color                          | Examples: Red, Dark, etc.                       |                         | No                               |
 | extcolor      | The car's exterior color                          | Examples: Red, Gray, etc.                       |                         | No                               |
 | intcolorhex   | The car's interior HEX color code                 | Examples: 0C225C, 4A4945, etc.                  |                         | No                               |
