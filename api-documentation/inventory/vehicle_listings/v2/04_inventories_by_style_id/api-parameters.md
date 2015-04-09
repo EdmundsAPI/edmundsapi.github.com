@@ -36,6 +36,6 @@ number: 2
 | lpmin         | The lower limit of car's Lease Promise Program    |                                                 |                         | No                               |
 | lpmax         | The upper limit of car's Lease Promise Program    |                                                 |                         | No                               |
 | pagenum       | The page number                                   |                                                 | 1                       | No                               |
-| pagesize      | The page size                                     |                                                 | 10                      | No                               |
+| pagesize      | The page size                                     | numeric value (the max is 50)                   | 10                      | No                               |
 | view          | The response view                                 | basic, full, custom                             | basic                   | No                               |
 | fmt           | Response format                                   | json                                            | json                    | Yes                              |
