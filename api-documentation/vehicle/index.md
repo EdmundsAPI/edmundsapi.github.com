@@ -136,7 +136,7 @@ Here are some common uses of the Vehicle API:
 
 | Specification					| Service					| Pricing					| Review						| Media				|
 |:------------------------------|:--------------------------|:--------------------------|:------------------------------|:------------------|
-| [Make](/api-documentation/vehicle/spec_make/v2/) | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | [Edmunds Grade Ratings](/api-documentation/vehicle/content_letter_grade/v2/) | [Vehicle Photos](/api-documentation/vehicle/media_photos/v1/) |
+| [Make](/api-documentation/vehicle/spec_make/v2/) | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | [Edmunds Grade Ratings](/api-documentation/vehicle/content_letter_grade/v2/) | [Vehicle Photos](/api-documentation/media/photos/v2/) |
 | [Model](/api-documentation/vehicle/spec_model/v2/) | [Recalls](/api-documentation/vehicle/service_recalls/v1/) | [True Cost to Own®](/api-documentation/vehicle/price_tco/v1/) | [Consumer Ratings and Reviews](/api-documentation/vehicle/content_ratings_and_reviews/v2/) | |
 | [Model Year and trim](/api-documentation/vehicle/spec_model_year/v2/) | [Service Bulletin](/api-documentation/vehicle/service_bulletin/v1/) | [Incentives and Rebated](/api-documentation/vehicle/price_incentives_and_rebates/v1/) | | |
 | [Style](/api-documentation/vehicle/spec_style/v2/) | [Local Labor Rates](/api-documentation/vehicle/service_local_labor_rate/v1/) | | | |

@@ -40,7 +40,7 @@ overview: page_version
 
 ### Media Base URL
 
-The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg'. The base URL for media/photos is <code>http://media.ed.edmunds-media.com</code> or <code>https://media.ed.edmunds-media.com</code> so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg) or [https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg](https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_2048.jpg).
+The photos returned from this endpoint come in URL stub format, for example '/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_1600.jpg'. The base URL for media/photos is <code>http://media.ed.edmunds-media.com</code> or <code>https://media.ed.edmunds-media.com</code> so the above Audi photo can be found at [http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_1600.jpg](http://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_1600.jpg) or [https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_1600.jpg](https://media.ed.edmunds-media.com/audi/s7/2013/oem/2013_audi_s7_sedan_prestige_fq_oem_6_1600.jpg).
 
 ###Photo's width/height
 
