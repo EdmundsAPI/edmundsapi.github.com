@@ -48,3 +48,49 @@ overview: page_version
 * 10
 * 12
 * 16
+
+### Available fuel types
+* gasoline
+* diesel
+* electric
+* natural-gas
+
+### Available engine types
+* gas
+* flex-fuel
+* hybrid
+* diesel
+* natural-gas
+
+### Available transmission types
+* automatic
+* manual
+* automated-manual
+* direct-drive
+
+### Available body types
+* sedan
+* suv
+* pickup
+* hatchback
+* minivan
+* coupe
+* station-wagon
+* truck
+* convertible
+* van
+
+### Available colors
+* black
+* blue
+* brown
+* cream
+* gold
+* gray
+* green
+* orange
+* purple
+* red
+* silver
+* white
+* yellow
