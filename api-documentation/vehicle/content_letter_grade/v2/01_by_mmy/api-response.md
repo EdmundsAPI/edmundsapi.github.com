@@ -125,4 +125,4 @@ The <code>submodel</code> object follows this format:
 |:--------------|:--------------------------------------------------------------------|:-------------------------- |
 | body          | The type of car body (e.g. "Sedan", "Hatchback")                    | Edmunds, Partners, Public  |
 | modelName     | The name of this submodel (e.g. "Civic Hatchback", "X5 SUV Diesel") | Edmunds, Partners, Public  |
-| niceName      | The nice name of this submodel (e.g. "sedan", "diesel"              | Edmunds, Partners, Public  |
+| niceName      | The nice name of this submodel (e.g. "sedan", "diesel")             | Edmunds, Partners, Public  |
