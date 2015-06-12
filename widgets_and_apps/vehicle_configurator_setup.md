@@ -10,7 +10,7 @@ class_page: pageWidgetSetup
 {% include themes/twitter/widgets_and_apps/vehicle_configurator_setup.html %}
 
 <div class="pre-loader" style="height: 200px;">&nbsp;</div>
-<iframe src="http://widgets.edmunds.com/carconfig/v1?portal=true" width="100%" height="1190" align="left" class="iframeWidget">
+<iframe src="http://widgets.edmunds.com/carconfig/v2?portal=true" width="100%" height="1190" align="left" class="iframeWidget">
 </iframe>
 
 #####ATTRIBUTES

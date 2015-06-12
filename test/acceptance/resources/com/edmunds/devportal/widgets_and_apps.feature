@@ -89,10 +89,10 @@ Feature: Widgets and Apps
 
     Then I should see 'ALL MODERN MOBILE BROWSERS ARE SUPPORTED' widget article
     Then I click on 'GET A WIDGET!' footer button
-    Then I should see setup page from 'http://widgets.edmunds.com/carconfig/v1?portal=true' source
+    Then I should see setup page from 'http://widgets.edmunds.com/carconfig/v2?portal=true' source
 
     Then I choose 'widgets and apps' menu
     When I select 'NEW VEHICLE CONFIGURATOR' carousel item
     Then the 'NEW VEHICLE CONFIGURATOR' carousel item should be active
     When I click on 'Configure Now' button of slide 2
-    Then I should see setup page from 'http://widgets.edmunds.com/carconfig/v1?portal=true' source
+    Then I should see setup page from 'http://widgets.edmunds.com/carconfig/v2?portal=true' source
