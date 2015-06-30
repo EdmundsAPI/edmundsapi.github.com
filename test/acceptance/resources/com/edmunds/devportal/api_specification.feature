@@ -325,7 +325,7 @@ Feature: API Documentation
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
     And menu 'v2' should be active
-    And the documentation should have 4 endpoints
+    And the documentation should have 5 endpoints
     When I choose 'api/editorial/v2/{make}' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/editorial/v2/{make}/{model}' endpoint
@@ -333,6 +333,8 @@ Feature: API Documentation
     When I choose 'api/editorial/v2/{make}/{model}/{year}' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/editorial/v2/{make}/{model}/{year}/roadtests' endpoint
+    Then the endpoint should have specification articles
+    When I choose 'api/editorial/v2/articles?tag={tag}' endpoint
     Then the endpoint should have specification articles
     When I choose 'v1' documentation
     And the documentation should have 1 endpoints
