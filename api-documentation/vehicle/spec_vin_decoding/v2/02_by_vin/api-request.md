@@ -25,7 +25,7 @@ Get details for VIN **4T1BK1EB6DU056165**
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v2/vins/4T1BK1EB6DU056165?manufacturerCode=3548fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v2/vins/4T1BK1EB6DU056165?manufacturerCode=3548&fmt=json&api_key={api key}
 	
 #### Response
 	
