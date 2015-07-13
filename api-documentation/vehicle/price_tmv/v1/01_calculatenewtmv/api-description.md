@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a New Car'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/vehicle/tmv/tmvservice/calculatenewtmv'
+dropdown-link: 'v1/api/tmv/tmvservice/calculatenewtmv'
 
 
 level: 3

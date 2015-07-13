@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a Typically Equipped Used Car'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/vehicle/tmv/tmvservice/calculatetypicallyequippedusedtmv'
+dropdown-link: 'v1/api/tmv/tmvservice/calculatetypicallyequippedusedtmv'
 
 
 level: 4

@@ -202,15 +202,15 @@ Feature: API Documentation
     And the 'v1' documentation should be present
     And menu 'v1' should be active
     And the documentation should have 6 endpoints
-    When I choose 'v1/api/vehicle/tmv/tmvservice/findcertifiedpriceforstyle' endpoint
+    When I choose 'v1/api/tmv/tmvservice/findcertifiedpriceforstyle' endpoint
     Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/tmv/tmvservice/calculateusedtmv' endpoint
+    When I choose 'v1/api/tmv/tmvservice/calculateusedtmv' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/v1/vehicle/vin/{vin}/price' endpoint
     Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/tmv/tmvservice/calculatenewtmv' endpoint
+    When I choose 'v1/api/tmv/tmvservice/calculatenewtmv' endpoint
     Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/tmv/tmvservice/calculatetypicallyequippedusedtmv' endpoint
+    When I choose 'v1/api/tmv/tmvservice/calculatetypicallyequippedusedtmv' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/v1/vehicle/{make}/{year}/price' endpoint
     Then the endpoint should have specification articles

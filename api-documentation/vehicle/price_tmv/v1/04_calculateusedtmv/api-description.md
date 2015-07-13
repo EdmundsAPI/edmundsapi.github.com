@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a Used Car'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/vehicle/tmv/tmvservice/calculateusedtmv'
+dropdown-link: 'v1/api/tmv/tmvservice/calculateusedtmv'
 
 
 level: 3

@@ -9,7 +9,7 @@ title-endpoint: 'Get TMV® Price for a Certified Vehicle'
 spec: price_tmv
 version: v1
 api: vehicle
-dropdown-link: 'v1/api/vehicle/tmv/tmvservice/findcertifiedpriceforstyle'
+dropdown-link: 'v1/api/tmv/tmvservice/findcertifiedpriceforstyle'
 
 
 level: 3
