@@ -24,6 +24,7 @@ number: 2
 | Parameter     | Description                                       | Possible Values                                 | Default Value           | Required                         |
 |:--------------|:--------------------------------------------------|:------------------------------------------------|:------------------------|:---------------------------------|
 | stockId       | The stock number of the car                       |                                                 |                         | Yes                              |
+| franchiseid   | The dealer franchise ID                           |                                                 |                         | No                               |
 | pagenum       | The page number                                   |                                                 | 1                       | No                               |
 | pagesize      | The page size                                     | numeric value (the max is 50)                   | 10                      | No                               |
 | view          | The response view                                 | basic, full, custom                             | basic                   | No                               |
