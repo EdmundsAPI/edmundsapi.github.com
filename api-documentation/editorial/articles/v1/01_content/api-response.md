@@ -22,22 +22,26 @@ number: 3
 
 ### Response format
 
-	[{
-        "summary": {string},
-        "link": {url},
-        "title": {string},
-        "category": {array},
-        "published": {date},
-        "content": {string}
-    }]
+    [
+        {
+            "summary": {string},
+            "link": {url},
+            "title": {string},
+            "category": {array},
+            "published": {date},
+            "content": {string},
+            "vehicles": {array}
+        }
+    ]
 
-| Property      				| Description                         						| Visibility    			|
+| Property                      | Description                                               | Visibility                |
 |:------------------------------|:----------------------------------------------------------|:--------------------------|
-| summary				   		| Article summary                               			| Edmunds, Partners, public |
-| link          		    	| Link back to edmunds.com permanent link	    			| Edmunds, Partners, public |
-| title 	    		    	| The title of the article		 							| Edmunds, Partners, public |
-| category	    		    	| The categories under which this article is listed			| Edmunds, Partners, public |
-| published     		    	| The date this article was published						| Edmunds, Partners, public	|
-| content	    		    	| The article       			 							| Edmunds, Partners, public |
+| summary                       | Article summary                                           | Edmunds, Partners, public |
+| link                          | Link back to edmunds.com permanent link                   | Edmunds, Partners, public |
+| title                         | The title of the article                                  | Edmunds, Partners, public |
+| category                      | The categories under which this article is listed         | Edmunds, Partners, public |
+| published                     | The date this article was published                       | Edmunds, Partners, public |
+| content                       | The article                                               | Edmunds, Partners, public |
+| vehicles                      | The list of cars bound to an article                      | Edmunds, Partners, public |
 
 
