@@ -24,7 +24,7 @@ number: 2
 
 | Parameter     | Description                           | Possible Values                                                  | Default Value        | Required                                                                        |
 |:--------------|:--------------------------------------|:-----------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------|
-| {tag}         | The tag of the article                |                                                                  |                      | Yes if parameters make or year are not specified                                |
+| {tag}         | The tag of the article                | See the list below                                               |                      | Yes if parameters make or year are not specified                                |
 | make          | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/)       |                      | Yes if parameters tag or year are not specified or parameter model is specified |
 | model         | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/)     |                      | No                                                                              |
 | year          | The car year                          | See [Spec: Year](/api-documentation/vehicle/spec_model_year/v2/) |                      | Yes if parameters make or tag are not specified                                 |
@@ -33,3 +33,31 @@ number: 2
 | pagesize      | The page size                         |                                                                  | 10, (the max is 50)  | No                                                                              |
 | fmt           | Response format                       | json                                                             | json                 | Yes                                                                             |
 | api_key       | Your Edmunds/Editorial API key        |                                                                  |                      | Yes                                                                             |
+
+
+### Available Article Tags:
+
+* coupe
+* hatchback
+* mini
+* minivan
+* pickup
+* sedan
+* suv
+* truck
+* wagon
+* autoshow
+* awards
+* car-buying
+* car-news
+* comparison-tests
+* diesel
+* editor-reviews
+* features
+* hydrogen
+* long-term-road-tests
+* maintenance
+* road-tests
+* safety
+* top-10-lists
+* vehicle-debuts
