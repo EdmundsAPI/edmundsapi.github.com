@@ -26,7 +26,7 @@ Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-d
 
 ### URL
 
-	https://api.edmunds.com/getmakeswithtcodata?fmt=json&api_key={api key}
+	https://api.edmunds.com/v1/api/tco/getmakeswithtcodata?fmt=json&api_key={api key}
 	
 ### Code Example
 
