@@ -9,7 +9,7 @@ title-endpoint: 'Find Inventories by Style ID'
 spec: vehicle_listings
 version: v2
 api: inventory
-dropdown-link: '/api/inventory/v2/franchises/{styleId}'
+dropdown-link: '/api/inventory/v2/styles/{styleId}'
 
 level: 4
 description_edpoint: 'Find Inventories by Style ID'
