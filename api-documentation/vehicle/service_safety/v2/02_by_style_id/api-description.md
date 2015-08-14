@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get Safety ratings by Style ID
+Get safety ratings by Style ID
 
 ### URL
 
