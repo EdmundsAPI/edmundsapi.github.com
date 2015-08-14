@@ -31,6 +31,7 @@ Feature: API Documentation
       | Service: Service Bulletin            |
       | Service: Notes                       |
       | Service: Local Labor Rate            |
+      | Service: Safety                      |
       | Content: Ratings and Reviews         |
       | Content: Letter Grade Rating         |
     And menu 'Editorial API' should have items:
@@ -42,6 +43,8 @@ Feature: API Documentation
     And menu 'Dealer API' should have items:
       | Ratings and Reviews  |
       | Details and Location |
+    And menu 'Media API' should have items:
+      | Photos |
     And menu 'API Overview' should be active
     And the page content should be displayed
     Then the page content should have articles:

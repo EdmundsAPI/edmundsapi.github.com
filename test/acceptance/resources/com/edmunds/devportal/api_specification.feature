@@ -289,6 +289,16 @@ Feature: API Documentation
     When I choose 'v1/api/maintenance/ziplaborrate/{zip code}' endpoint
     Then the endpoint should have specification articles
 
+    Then I choose 'Service: Safety' left menu
+    And menu 'Service: Safety' should be active
+    And the 'v2' documentation should be present
+    And menu 'v2' should be active
+    And the documentation should have 2 endpoints
+    When I choose '/api/vehicle/v2/{make}/{model}/{year}/safety' endpoint
+    Then the endpoint should have specification articles
+    When I choose '/api/vehicle/v2/styles/{styleId}/safety' endpoint
+    Then the endpoint should have specification articles
+
     Then I choose 'Content: Ratings and Reviews' left menu
     And menu 'Content: Ratings and Reviews' should be active
     And the 'v2' documentation should be present
