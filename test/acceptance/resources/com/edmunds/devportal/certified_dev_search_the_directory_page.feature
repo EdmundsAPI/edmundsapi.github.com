@@ -12,7 +12,6 @@ Feature: Certified-def/search_the_directory
       | AFFILIATE NETWORK |
       | TERMS OF SERVICE  |
       | FAQ               |
-      | BLOG              |
     Given there is a list of menu:
       | api documentation    |
       | widgets and apps     |

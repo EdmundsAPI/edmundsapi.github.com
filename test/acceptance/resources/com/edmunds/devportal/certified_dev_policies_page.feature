@@ -12,7 +12,6 @@ Feature: Certified-def/polities
       | AFFILIATE NETWORK |
       | TERMS OF SERVICE  |
       | FAQ               |
-      | BLOG              |
     Given there is a list of menu:
       | api documentation    |
       | widgets and apps     |
