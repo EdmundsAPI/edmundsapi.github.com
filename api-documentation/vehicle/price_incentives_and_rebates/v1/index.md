@@ -35,7 +35,6 @@ overview: page_version
 * CASH_REBATE
 * LOW_APR
 * LEASE
-* DEALER_CASH
 * MISCELLANEOUS
 
 ### Incentives Source Types (i.e. *sourceType*)
@@ -51,8 +50,6 @@ overview: page_version
 * Conquest
 * Customer Cash
 * Customer Cash or APR
-* Dealer Cash
-* Dealer Cash or APR
 * IUPA and NAPO
 * Lease Bonus Cash
 * Lender
@@ -80,16 +77,12 @@ overview: page_version
 | Customer Cash 			| A rebate offered by the manufacturer to the customer to adjust downward the net price of the vehicle.|
 | Customer Cash or APR  	| A choice of the customer between Manufacturer to customer cash incentive and a customer low APR loan.|
 | Customer Cash and APR		| A combination of a customer rebate and a low APR loan. Customer Cash or APR A choice of the customer between a rebate and a low APR loan.	|
-| Dealer Bonus Cash			| Dealer cash, with specific requisites, that may or may not be combined with other incentives.|
-| Dealer Cash	    		| Manufacturer to dealer cash incentive.|
-| Dealer Cash and APR	    | A combination of a dealer rebate and customer low APR loan.|
-| Dealer Cash or APR		| A choice of the customer between Manufacturer to dealer cash incentive and a customer low APR loan.|
 | Lease						| A special lease that is offered by the manufacturer to stimulate sales by lowering the customer's monthly payment through subsidizing the vehicle's Residual Value or Money Factor.|
-| Text Only					| Incentives that don’t involve a specific customer cash, dealer cash, or APR figure. For example, an incentive to receive a free Ipod would be text only. |
+| Text Only					| Incentives that don’t involve a specific customer cash, or APR figure. For example, an incentive to receive a free Ipod would be text only. |
 
-The <code>primary</code> property in the response will always be **false** when the contentType is ***Customer APR*** or ***Lease*** or ***Customer Cash And APR*** or ***Dealer Cash And APR***
+The <code>primary</code> property in the response will always be **false** when the contentType is ***Customer APR*** or ***Lease*** or ***Customer Cash And APR***
  
-The <code>primary</code> property *CAN* be set to **true** when contentType is ***Customer Cash*** or ***Dealer Cash*** or ***Customer Bonus Cash*** or ***Customer Cash or APR*** or ***Dealer Bonus Cash*** (but **primary** doesn’t always equal true just because the contentType is mentioned above.)
+The <code>primary</code> property *CAN* be set to **true** when contentType is ***Customer Cash*** or ***Customer Bonus Cash*** or ***Customer Cash or APR*** (but **primary** doesn’t always equal true just because the contentType is mentioned above.)
  
 When *contentType* is ***Customer Bonus Cash*** AND *primary* is **false**, then it is best to check <code>sourceType</code> property to see if the bonus cash is available to specific group (i.e. Military, College, Lender, ...etc).
 
