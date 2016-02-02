@@ -36,7 +36,6 @@ Feature: Certified-def/search_the_directory
       | Analytics |
       | Web       |
     Given there is a list of locations
-      | Rochester, NY |
       | Bohemia, NY   |
       | Newtown, PA   |
       | Atlanta, GA   |
