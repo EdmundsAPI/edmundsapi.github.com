@@ -2,7 +2,7 @@ Feature: Certified-Dev pages
   To verify Certified-Developer pages availability
 
   Scenario: Check left menu items
-    Given I have opened '/certified-dev/why_build/' page
+    Given I have opened '/certified-dev/why_build' page
     Given there is a list of left menu items for certified-dev pages:
         | Program Home             |
         | Why build?               |

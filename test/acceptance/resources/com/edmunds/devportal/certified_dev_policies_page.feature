@@ -2,7 +2,7 @@ Feature: Certified-def/polities
   To verify polities page availability
 
   Scenario: Check page 'policies'
-    Given I have opened '/certified-dev/policies/' page
+    Given I have opened '/certified-dev/policies' page
     Given there is a list of links:
       | MY ACCOUNT        |
       | REGISTER          |

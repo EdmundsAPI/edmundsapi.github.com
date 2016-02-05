@@ -25,9 +25,9 @@ script:
 notifications:
   email:
     - api@edmunds.com
-    - ielshareef@edmunds.com
-    - jnaylor@edmunds.com
-    - mbock@edmunds.com
-    - yauhen_yemelyanau@epam.com
-    - maksim_dadzerkin@epam.com
-    - ihar_krupenin@epam.com
+    - sgowda@edmunds.com
+    - pcox@edmunds.com
+    - eyemelyanau@edmunds.com
+    - akhisamutdinov@edmunds.com
+    - arybik@edmunds.com
+    - ikrupenin@edmunds.com
