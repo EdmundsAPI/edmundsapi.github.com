@@ -2,7 +2,7 @@ Feature: Certified-def/get_start
   To verify certified-def/get_start page availability
 
   Scenario: Check page 'get_started'
-    Given I have opened '/certified-dev/get_start.html' page
+    Given I have opened '/certified-dev/get_start' page
     Given there is a list of links:
       | MY ACCOUNT        |
       | REGISTER          |
@@ -48,6 +48,6 @@ Feature: Certified-def/get_start
     And the left block should be visible
 
   Scenario: Check link 'view certified directory'
-    Given I have opened '/certified-dev/get_start.html' page
+    Given I have opened '/certified-dev/get_start' page
     Then I click 'View Certified Developers Directory' link
     And a new page should be open

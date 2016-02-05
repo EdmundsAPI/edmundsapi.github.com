@@ -2,7 +2,7 @@ Feature: Certified-def/search_the_directory
   To verify certified-def/search_the_directory page availability
 
   Scenario: Check page 'search_the_directory'
-    Given I have opened '/certified-dev/search_the_directory.html' page
+    Given I have opened '/certified-dev/search_the_directory' page
     Given there is a list of links:
       | MY ACCOUNT        |
       | REGISTER          |

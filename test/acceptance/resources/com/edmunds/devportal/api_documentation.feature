@@ -2,7 +2,7 @@ Feature: API Documentation
   To verify API documentation availability
 
   Scenario: Check menu items
-    Given I have opened '/api-documentation/overview/index.html' page
+    Given I have opened '/api-documentation/overview/' page
     Then I should see left menu
     And menu '' should have items:
       | API Overview  |
@@ -112,7 +112,7 @@ Feature: API Documentation
 
 
   Scenario: Check api overview documentation
-    Given I have opened '/api-documentation/overview/index.html' page
+    Given I have opened '/api-documentation/overview/' page
     Then I should see left menu
 
     Then I choose 'Vehicle API' left menu

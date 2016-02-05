@@ -2,7 +2,7 @@ Feature: API Documentation
   To verify API specification availability
 
   Scenario: Check api documentation specification
-    Given I have opened '/api-documentation/overview/index.html' page
+    Given I have opened '/api-documentation/overview/' page
     Given there is a list of specification articles:
       | description     |
       | parameters      |

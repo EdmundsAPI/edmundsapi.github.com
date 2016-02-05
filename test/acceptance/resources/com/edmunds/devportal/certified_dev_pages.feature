@@ -2,7 +2,7 @@ Feature: Certified-Dev pages
   To verify Certified-Developer pages availability
 
   Scenario: Check left menu items
-    Given I have opened '/certified-dev/why_build.html' page
+    Given I have opened '/certified-dev/why_build/' page
     Given there is a list of left menu items for certified-dev pages:
         | Program Home             |
         | Why build?               |
@@ -44,7 +44,7 @@ Feature: Certified-Dev pages
     And menu for certified-dev network should have items
 
   Scenario: Check forward from 'why build?' page to 'How do I get started?' as a business owner
-    Given I have opened '/certified-dev/why_build.html' page
+    Given I have opened '/certified-dev/why_build' page
     Then I click to the get started button as business owner
     And a new page should be open
     And the certified-dev page should have 'HOW DO I GET STARTED?' in the page title
@@ -52,7 +52,7 @@ Feature: Certified-Dev pages
     And the developer block should be inactive
 
   Scenario: Check forward from 'why build?' page to 'How do I get started?' as a developer
-    Given I have opened '/certified-dev/why_build.html' page
+    Given I have opened '/certified-dev/why_build' page
     Then I click to the get started button as developer
     And a new page should be open
     And the certified-dev page should have 'HOW DO I GET STARTED?' in the page title
@@ -60,7 +60,7 @@ Feature: Certified-Dev pages
     And the developer block should be active
 
   Scenario: Check certified-dev page
-    Given I have opened '/certified-dev.html' page
+    Given I have opened '/certified-dev' page
     Given there is a list of links:
       | MY ACCOUNT        |
       | REGISTER          |

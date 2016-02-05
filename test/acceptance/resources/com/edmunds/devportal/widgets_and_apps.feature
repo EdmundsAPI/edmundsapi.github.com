@@ -2,7 +2,7 @@ Feature: Widgets and Apps
   To verify Widgets and Apps availability
 
   Scenario: Check TMV widget
-    Given I have opened '/widgets_and_apps/index.html' page
+    Given I have opened '/widgets_and_apps/' page
     Then I should see carousel
     When I select 'TRUE MARKET VALUE' carousel item
     When I click on 'Learn More' button of slide 1
@@ -50,7 +50,7 @@ Feature: Widgets and Apps
 
 
   Scenario: Check NVC widget
-    Given I have opened '/widgets_and_apps/index.html' page
+    Given I have opened '/widgets_and_apps/' page
     Then I should see carousel
     When I select 'NEW VEHICLE CONFIGURATOR' carousel item
     Then the 'NEW VEHICLE CONFIGURATOR' carousel item should be active

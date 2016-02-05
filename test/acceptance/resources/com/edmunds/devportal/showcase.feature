@@ -2,7 +2,7 @@ Feature: Showcase
   To verify Showcase availability
 
   Scenario: Check Showcase
-    Given I have opened '/showcase.html' page
+    Given I have opened '/showcase' page
     Then the showcases should be available:
         | All                |
         | Enterprise         |
