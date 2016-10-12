@@ -18,7 +18,7 @@ You can use the widget configurator below to customize the layout and style of t
 <iframe src="http://widgets.edmunds.com/tmv/v2?portal=true" width="100%" height="1090" align="left" class="iframeWidget"></iframe>
 
 
-#####ATTRIBUTES
+##### ATTRIBUTES
 
 * `Vhicle API Key` - the Key for Vehicle API registered on <a class='blueLink' href='http://developer.edmunds.com/' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
 * `Theme` - the theme for the Widget. Options: 'Theme 1', 'Theme 2', 'Theme 3'.

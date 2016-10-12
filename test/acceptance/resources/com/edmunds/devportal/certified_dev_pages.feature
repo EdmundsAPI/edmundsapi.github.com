@@ -60,12 +60,11 @@ Feature: Certified-Dev pages
     And the developer block should be active
 
   Scenario: Check certified-dev page
-    Given I have opened '/certified-dev' page
+    Given I have opened '/certified-dev/' page
     Given there is a list of links:
       | MY ACCOUNT        |
       | REGISTER          |
       | API CONSOLE       |
-      | FORUM             |
       | API STATUS        |
       | AFFILIATE NETWORK |
       | TERMS OF SERVICE  |

@@ -29,7 +29,7 @@ All Certified Developers are given an ECD badge per category in which they are d
   </div>
 </div>
 
-###ECD BADGE BOX
+### ECD BADGE BOX
 
 All Certified Developers will be given a **Badge Box** that reflects the categories in which they were qualified and the ones in which they weren't. Please see [Policies/Legal](/certified-dev/policies.html#badge_use_policies) section on **Badge Box Use Policies**:
 

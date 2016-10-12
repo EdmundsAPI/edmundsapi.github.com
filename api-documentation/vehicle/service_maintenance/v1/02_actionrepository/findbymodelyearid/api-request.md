@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get the maintenance schedule for a vehicle with model year ID **100502677**
 

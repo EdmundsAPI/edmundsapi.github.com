@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get equipment details for car style ID **101353967** (2011 Lexus RX 350 4dr SUV).
 

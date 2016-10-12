@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the required, excluded and included options for a **2013 BMW 328i Sedan (2.0L 4-cyl. Turbo 6-speed Manual)** when the **M Sport Line** package is selected in the **77001** area.
 
@@ -158,7 +158,7 @@ Get the required, excluded and included options for a **2013 BMW 328i Sedan (2.0
 	  }
 	}
 	
-###Sample Request 2
+### Sample Request 2
 
 Same as request above but now trying to add the **Luxury Line** options (some of which are not to coexist with the selected option) to the mis. Notice how we use <code>optionid=</code> multiple times for every new ID we're passing.
 

@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get Rating Details Review for **2013 Honda Accord** and ID 1.
 

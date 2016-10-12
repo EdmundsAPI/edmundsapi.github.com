@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get list of manufacturer recalls for vehicles with model year ID **100502677**
 

@@ -16,7 +16,7 @@ You can use the widget configurator below to customize the layout and style of t
 <iframe src="http://widgets.edmunds.com/glance/configure?portal=true" width="100%" height="737" align="left" class="iframeWidget"></iframe>
 
 
-#####ATTRIBUTES
+##### ATTRIBUTES
 
 * `API Key` - the Key for API registered on <a class='blueLink' href='http://developer.edmunds.com/' title='Edmunds Developer Portal'>Edmunds Developer Portal</a>
 * `Width` - sets the width of the Widget.

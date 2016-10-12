@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get Audi A3 2013 overview.
 
@@ -77,7 +77,7 @@ Get Audi A3 2013 overview.
       "articlesCount": 1
     }
     
-###Sample Request 2
+### Sample Request 2
 
 Get Audi A3 2013 overview with view=full.
 

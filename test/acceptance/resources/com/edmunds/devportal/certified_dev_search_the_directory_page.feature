@@ -7,7 +7,6 @@ Feature: Certified-def/search_the_directory
       | MY ACCOUNT        |
       | REGISTER          |
       | API CONSOLE       |
-      | FORUM             |
       | API STATUS        |
       | AFFILIATE NETWORK |
       | TERMS OF SERVICE  |

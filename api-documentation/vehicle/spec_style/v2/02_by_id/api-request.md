@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the style details for car style **101353967**
 

@@ -22,7 +22,7 @@ A vehicle <i>make</i> is either the name of its manufacturer or, if the manufact
 
 </div>
 
-###Endpoints
+### Endpoints
 
 * [**Get Total Count of Car Makes**](/api-documentation/vehicle/spec_make/v2/03_makes_count/api-description.html): Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
 
@@ -32,7 +32,7 @@ A vehicle <i>make</i> is either the name of its manufacturer or, if the manufact
 
 These three endpoints provide all the necessary data.
 
-###Examples
+### Examples
 
 #### Example 1: Get relevant information for all car makes that were active in 1995
 

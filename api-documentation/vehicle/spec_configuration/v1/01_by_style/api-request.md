@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get the default configuration for vehicle with style ID **200443450** in the area **90019**
 

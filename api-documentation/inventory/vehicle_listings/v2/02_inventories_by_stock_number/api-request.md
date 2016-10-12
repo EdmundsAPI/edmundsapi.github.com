@@ -19,7 +19,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Find inventories by Stock Number **350175**.
 

@@ -21,6 +21,7 @@ cdp_class_page: cdpPolice
 
 <a name="general_guidelines">
 </a>
+
 #### General Guidelines
 
 * Please find the Edmunds Certified Developer Network policies below. If you violate any of the applicable policies, you may be notified by a *warning* email at any time. Those emails will include a compliancy deadline that will depend on the type of violations. Non compliancy in time will result in your removal from the Edmunds Certified Developer Network, or ECD Network, from a *minimum period of 6 months*, after which you may or may not be allowed to re-apply. This will be specified in the notification email.
@@ -31,6 +32,7 @@ cdp_class_page: cdpPolice
 
 <a name="badge_use_policies">
 </a>
+
 #### Badge Box Use Policies
 
 In order to use the badge box, you must follow the badge box use policies outlined below, as well as adhere to all of our [Terms of Service](http://edmunds.com).
@@ -62,6 +64,7 @@ These policies are limited to the **ECD Badge Box**. Edmunds.com’s [Brand Usag
 
 <a name="press_policies">
 </a>
+
 #### Press Policies
 
 In addition to the below guidelines, the **Edmunds Developer PR Guidelines** must be observed when discussing the program publicly (press releases, articles, blog posts, etc.). Failure to do so may result in retraction of public materials or removal from the program.

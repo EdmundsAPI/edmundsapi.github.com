@@ -19,7 +19,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Look up inventory for VIN **4JGDF7DE1EA414724**.
 

@@ -19,7 +19,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Find inventories for Dealership with ID **649665**.
 

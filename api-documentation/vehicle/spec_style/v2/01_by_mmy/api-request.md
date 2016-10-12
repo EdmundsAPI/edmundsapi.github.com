@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the style details for **2011 Lexus RX-350**
 
@@ -59,7 +59,7 @@ Get the style details for **2011 Lexus RX-350**
 	 }]
    }
 
-###Sample Request 2
+### Sample Request 2
 
 Get the style ***full*** details for **2011 Lexus RX-350**
 

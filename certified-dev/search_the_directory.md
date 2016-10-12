@@ -5,6 +5,7 @@ title_parent: "Certified Developers"
 title_active_left_menu: 'Search the ECD directory'
 
 cdp_weight: 6
+class_page: pageCertDev
 cdp_class_page: sdpDirectory
 cdp_global_class_page: pageSearchDir
 ---

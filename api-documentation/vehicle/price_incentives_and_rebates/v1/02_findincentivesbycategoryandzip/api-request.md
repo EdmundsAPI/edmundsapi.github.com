@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get all incentives for **Sedans** in the **90019** area.
 

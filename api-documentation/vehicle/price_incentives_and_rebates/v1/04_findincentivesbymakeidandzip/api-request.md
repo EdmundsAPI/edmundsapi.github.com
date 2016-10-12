@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get incentives and rebates for car make with ID **200006659** and zip code **90019**
 

@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the latest article in the category ***vehicle safety***.
 
@@ -40,7 +40,7 @@ Get the latest article in the category ***vehicle safety***.
         }
     ]
     
-###Sample Request 2
+### Sample Request 2
 
 Get the latest article in the category ***road tests*** that involves ***Honda Accord 2014*** in an **XML** format
 
@@ -63,7 +63,7 @@ Get the latest article in the category ***road tests*** that involves ***Honda A
         </entry>
     </feed>
     
-###Sample Request 3
+### Sample Request 3
 
 Get the latest article ***Lexus RX-350 2013***
 

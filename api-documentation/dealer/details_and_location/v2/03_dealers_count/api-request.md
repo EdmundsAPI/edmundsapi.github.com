@@ -18,7 +18,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Find **Ford** Rooftop Dealers count of the **33756** area
 

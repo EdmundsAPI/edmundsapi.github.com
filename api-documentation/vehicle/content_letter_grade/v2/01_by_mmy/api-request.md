@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get Edmunds.com's Letter Grade Rating for **2013 Honda Accord**
 

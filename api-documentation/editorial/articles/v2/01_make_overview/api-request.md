@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get Audi overview.
 
@@ -68,7 +68,7 @@ Get Audi overview.
       ]
     }
 
-###Sample Request 2
+### Sample Request 2
 
 Get Audi overview with view=full.
 

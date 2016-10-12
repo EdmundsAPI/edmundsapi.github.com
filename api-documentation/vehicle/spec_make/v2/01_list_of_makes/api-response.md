@@ -17,7 +17,7 @@ title_md : Response format
 number: 3
 ---
 
-###Response format
+### Response format
 
 #### JSON Response
 

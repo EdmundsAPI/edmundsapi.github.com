@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get details for Squish VIN **1N4AL3APDN**
 

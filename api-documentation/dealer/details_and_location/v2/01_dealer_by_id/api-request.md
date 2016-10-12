@@ -19,7 +19,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Find Rooftop Dealer with ID **3742**
 

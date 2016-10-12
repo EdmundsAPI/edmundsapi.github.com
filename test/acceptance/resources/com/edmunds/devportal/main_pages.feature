@@ -8,7 +8,6 @@ Feature: Main pages
         | MY ACCOUNT        |
         | REGISTER          |
         | API CONSOLE       |
-        | FORUM             |
         | API STATUS        |
         | AFFILIATE NETWORK |
         | TERMS OF SERVICE  |

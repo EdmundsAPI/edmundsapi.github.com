@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get Audi A3 overview.
 
@@ -66,7 +66,7 @@ Get Audi A3 overview.
       ]
     }
 
-###Sample Request 2
+### Sample Request 2
 
 Get Audi A3 overview with view=full.
 

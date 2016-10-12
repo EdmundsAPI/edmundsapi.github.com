@@ -18,7 +18,7 @@ title_md : Sample Request
 number: 4
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the total number of **new** model years for the **Acura MDX**.
 
@@ -32,7 +32,7 @@ Get the total number of **new** model years for the **Acura MDX**.
 		"yearsCount": 2
 	}
 	
-###Sample Request 2
+### Sample Request 2
 
 Get the total number of model years and the breakdown of their style count for **Acura MDX**
 

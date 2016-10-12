@@ -18,7 +18,7 @@ title_md : Sample Request
 number: 4
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the total amount of car makes in the system
 
@@ -32,7 +32,7 @@ Get the total amount of car makes in the system
 		"makesCount": 61
 	}
 
-###Sample Request 2
+### Sample Request 2
 
 Get the total number of _NEW_ car makes and the breakdown of their models and the model counts
 

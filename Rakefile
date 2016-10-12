@@ -372,6 +372,9 @@ namespace 'travis' do
       sh "gem install jekyll --version '=" + jekyllVersion + "' --no-ri --no-rdoc"
       sh "gem install kramdown --version '=" + kramdownVersion + "' --no-ri --no-rdoc"
 
+      sh "jekyll -v"
+      sh "kramdown -v"
+
       sh "jekyll serve --detach"
     end
   end

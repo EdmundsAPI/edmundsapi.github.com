@@ -20,7 +20,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Look up inventory for VIN **1FT7X2B68CEA05672** in the 16229 area within a 50 mile range.
 

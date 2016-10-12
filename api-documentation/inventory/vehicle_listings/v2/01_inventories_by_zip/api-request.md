@@ -19,7 +19,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Find inventories in the Santa Monica area (90404).
 

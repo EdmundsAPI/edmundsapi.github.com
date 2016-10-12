@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request 1
+### Sample Request 1
 
 Get the style details for **Chrome Data ID 11916**
 
@@ -54,7 +54,7 @@ Get the style details for **Chrome Data ID 11916**
 	    "trim": "2500"
 	}
 
-###Sample Request 2
+### Sample Request 2
 
 Get the style ***full*** details for **Chrome Data ID 11916**
 

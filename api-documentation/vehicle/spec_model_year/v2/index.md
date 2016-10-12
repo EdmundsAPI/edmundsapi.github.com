@@ -20,7 +20,7 @@ overview: page_version
  A vehicle <em>model year</em> for a vehicle model is the <em>calendar year</em> designation assigned by the manufacturer to the annual version of that model. You can get a list of car model years for a specific car make and model via the following endpoints (accessible from the drop-down menu above):
 </div>
 
-###Endpoints
+### Endpoints
 
 * [**Get a List of Car Model Years for a Specific Car Make/Model**](/api-documentation/vehicle/spec_model_year/v2/03_list_of_years/api-description.html): You can get the entire list of car model years or use some basic filters to return the array of car model years you're interested in for a specific car make/model.
 
@@ -30,7 +30,7 @@ overview: page_version
 
 These three endpoints provide all the necessary data points.
 
-###Examples
+### Examples
 
 #### Example 1: Get model years and style details for all 2011 Lexus RX-350s
 	

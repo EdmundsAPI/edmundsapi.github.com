@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get details for VIN **4T1BK1EB6DU056165**
 

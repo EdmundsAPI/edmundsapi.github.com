@@ -18,7 +18,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get dealerships within the 2-mile radius of the **90019** area.
 

@@ -19,7 +19,7 @@ number: 3
 
 ---
 
-###Response format
+### Response format
 
 #### JSON Response w/ <code>view=basic</code> (default)
 

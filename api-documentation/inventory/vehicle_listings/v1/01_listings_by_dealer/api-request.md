@@ -20,7 +20,7 @@ number: 4
 ---
 
 
-###Sample Request 1
+### Sample Request 1
 
 Get the one NEW inventory listing for Santa Monica Audi
 
@@ -122,7 +122,7 @@ Get the one NEW inventory listing for Santa Monica Audi
 	  ]
 	}
 	
-###Sample Request 2
+### Sample Request 2
 
 Get the one NEW inventory listing for A4 from Santa Monica Audi
 

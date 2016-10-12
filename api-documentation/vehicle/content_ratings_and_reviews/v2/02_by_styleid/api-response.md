@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Response format
+### Response format
     
     {
         "averageRating": {float},

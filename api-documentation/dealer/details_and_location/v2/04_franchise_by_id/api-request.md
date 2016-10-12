@@ -18,7 +18,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Find Franchise with ID **880479**
 

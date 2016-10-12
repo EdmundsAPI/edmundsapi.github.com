@@ -18,7 +18,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Find Franchises of the **12345** area
 

@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get a list of model year IDs with available maintenance schedule information.
 

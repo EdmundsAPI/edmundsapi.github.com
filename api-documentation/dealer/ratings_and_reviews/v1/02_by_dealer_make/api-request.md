@@ -20,7 +20,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Get ratings and reviews for **lexus** dealership in the **90019** area
 

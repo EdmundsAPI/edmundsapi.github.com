@@ -20,7 +20,7 @@ overview: page_version
 A vehicle <em>model</em> is specific vehicle brand identified by a name or number (and which is usually further classified by trim or style level). You can get a list of car models for a specific car make and their relevant data via the following endpoints (accessible from the drop-down menu above):
 </div>
 
-###Endpoints
+### Endpoints
 
 * [**Get Details on a Specific Car Model**](/api-documentation/vehicle/spec_model/v2/02_model_details/api-description.html): Returns relevant information Model Year information for a specific car Make and Model. The information can also be narrowed down with filters.
 
@@ -30,7 +30,7 @@ A vehicle <em>model</em> is specific vehicle brand identified by a name or numbe
 
 These three endpoints provide all the necessary data points.
 
-###Examples
+### Examples
 
 #### Example 1: Get model year and style details for all Lexus 1995 models
 	

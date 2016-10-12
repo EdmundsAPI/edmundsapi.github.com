@@ -20,7 +20,7 @@ number: 4
 ---
 
 
-###Sample Request 1
+### Sample Request 1
 
 Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) within a 100-mile radius.
 
@@ -126,7 +126,7 @@ Get one result for a NEW Hyundais for sale in the Santa Monica area (90404) with
 	  ]
 	}
 	
-###Sample Request 2
+### Sample Request 2
 
 Get one listing for a USED Lexus RX-350 2011 in Santa Monica
 

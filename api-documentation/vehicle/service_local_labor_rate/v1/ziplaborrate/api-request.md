@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get the local labor rate (in $ per hour) for a specific area (the ZIP code 90019).
 

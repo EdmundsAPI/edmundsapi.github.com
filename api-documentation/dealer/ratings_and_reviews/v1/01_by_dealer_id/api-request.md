@@ -20,7 +20,7 @@ number: 4
 ---
 
 
-###Sample Request
+### Sample Request
 
 Get ratings and reviews for the dealership with ID **26811**
 

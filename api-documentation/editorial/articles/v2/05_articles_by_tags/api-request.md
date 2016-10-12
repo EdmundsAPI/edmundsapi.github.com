@@ -19,7 +19,7 @@ number: 4
 
 ---
 
-###Sample Request
+### Sample Request
 
 Get Articles for *BMW 3 Series* with *editorial-review* tag.
 
@@ -75,7 +75,7 @@ Get Articles for *BMW 3 Series* with *editorial-review* tag.
         ]
     }
     
-###Sample Request 2
+### Sample Request 2
 
 Get Articles for *BMW 3 Series* with *editorial-review* tag.
 
