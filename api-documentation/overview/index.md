@@ -37,8 +37,8 @@ weight: 1
 | Dataset           | Description                                                                                               |
 |:------------------|:----------------------------------------------------------------------------------------------------------|
 | Vehicle Specs     | Vehicle make/model/year/trim data, vehicle equipment, vehicle options, vehicle colors, etc.               |
-| Vehicle Pricing   | Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), Incentives and Rebates, etc. |
-| Vehicle Service   | Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, local labor rates, etc.         |
+| Vehicle Pricing   | Edmunds.com TMV® (True Market Value®), Edmunds.com TCO® (True Cost to Own®), etc.                         |
+| Vehicle Service   | Vehicle maintenance schedule, vehicle recalls, vehicle service bulletins, etc.                            |
 | Vehicle Content   | Consumer reviews, editorial reviews, editorial articles, etc.                                             |
 | Vehicle Media     | Vehicle photos                                                                                            |
 | Dealership Content| Dealership info, consumer reviews, list of cars for sale, dealer pricing, etc.                            |

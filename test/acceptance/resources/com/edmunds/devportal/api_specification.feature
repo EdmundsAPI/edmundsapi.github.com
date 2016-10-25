@@ -215,27 +215,6 @@ Feature: API Documentation
     When I choose 'api/v1/vehicle/{make}/{year}/price' endpoint
     Then the endpoint should have specification articles
 
-    Then I choose 'Price: Incentives and Rebates' left menu
-    And menu 'Price: Incentives and Rebates' should be active
-    And the 'v2' documentation shouldn't be present
-    And the 'v1' documentation should be present
-    And menu 'v1' should be active
-    And the documentation should have 7 endpoints
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbymakeid' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbystyleid' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbymodelyearidandzipcode' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbycategoryandzipcode' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbystyleidandzipcode' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findbyid' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/vehicle/incentive/incentiverepository/findincentivesbymakeidandzipcode' endpoint
-    Then the endpoint should have specification articles
-
     Then I choose 'Service: Maintenance' left menu
     And menu 'Service: Maintenance' should be active
     And the 'v2' documentation shouldn't be present
@@ -278,15 +257,6 @@ Feature: API Documentation
     And menu 'v1' should be active
     And the documentation should have 1 endpoints
     When I choose 'v1/api/maintenance/stylesnotes/{style ID}' endpoint
-    Then the endpoint should have specification articles
-
-    Then I choose 'Service: Local Labor Rate' left menu
-    And menu 'Service: Local Labor Rate' should be active
-    And the 'v2' documentation shouldn't be present
-    And the 'v1' documentation should be present
-    And menu 'v1' should be active
-    And the documentation should have 1 endpoints
-    When I choose 'v1/api/maintenance/ziplaborrate/{zip code}' endpoint
     Then the endpoint should have specification articles
 
     Then I choose 'Service: Safety' left menu

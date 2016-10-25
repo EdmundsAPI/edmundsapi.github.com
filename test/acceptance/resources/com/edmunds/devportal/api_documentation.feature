@@ -25,12 +25,10 @@ Feature: API Documentation
       | Price: True Cost to Own®             |
       | Price: True Cost to Own® Categories  |
       | Price: True Market Value®            |
-      | Price: Incentives and Rebates        |
       | Service: Maintenance                 |
       | Service: Recalls                     |
       | Service: Service Bulletin            |
       | Service: Notes                       |
-      | Service: Local Labor Rate            |
       | Service: Safety                      |
       | Content: Ratings and Reviews         |
       | Content: Letter Grade Rating         |
