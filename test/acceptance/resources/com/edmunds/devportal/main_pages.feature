@@ -16,7 +16,6 @@ Feature: Main pages
         | api documentation    |
         | widgets and apps     |
         | showcase             |
-        | certified developers |
     Then the page should have 'Edmunds Developer Network - Welcome to the Edmunds API' in the title
     And the page should have header links
     And the page should have header menu
@@ -39,9 +38,3 @@ Feature: Main pages
     And the page should have header menu
     And the page should have link to 'get started'
     And menu 'showcase' should be active
-    Then I choose 'certified developers' menu
-    Then the page should have 'Edmunds Certified Developer Network - Overview' in the title
-    And the page should have header links
-    And the page should have header menu
-    And the page should have link to 'get started'
-    And menu 'certified developers' should be active

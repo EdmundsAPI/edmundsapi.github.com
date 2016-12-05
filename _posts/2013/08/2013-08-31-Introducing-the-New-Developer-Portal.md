@@ -9,7 +9,6 @@ tags:
   - OAuth 2.0
   - API docs
   - Affiliates
-  - Certified Developers
   - Javascript
   - SDK
   - Status Dashboard
@@ -20,8 +19,6 @@ author_description: "Senior Director, Open Platform initiative"
 links: 
   - name: API Overview
     url: "/api-documentation/overview/"
-  - name: Edmunds Certified Developer Network
-    url: "/certified-dev.html"
   - name: API Affiliate Program
     url: /api_affiliate_network/
   - name: OAuth 2.0 Simplified
@@ -41,8 +38,6 @@ We have tons of goodies in this new portal:
 * **Brand New Docs:** [Our docs](/api-documentation/overview/) are much more detailed with *examples* and response object definitions. Some of our APIs have new versions as well. The Vehicle Spec resources (make, model, model year, style, options, equipment, ...etc) have been completely revamped to reflect the community's suggestions and to address their pain points.
 
 * **The API Affiliate Network:** API developers can start **making money** right now by registering for the [Edmunds API Affiliate Network](/api_affiliate_network/). Developers will get paid **$5** for *every new car lead form completed on the Edmunds.com site* because of their referrals. [Learn more](/api_affiliate_network/).
-
-* **The Certified Developer Network:** A marketplace for businesses and developers to meet and work together on creating automotive solutions on the Edmunds API. [Learn more](/certified-dev.html).
 
 * **OAuth 2.0 Support:** For critical API calls (i.e. lead submission, reviews creation, inventory access, ...etc), we needed to have a better authorization and authentication paradigm. API keys are a simple and easy way to quickly get access to our public, low risk datasets and *we'll continue to support them*. However, operations involving critical transactions that impact our datasets directly need to be more secured. Therefore, we have introduced [OAuth 2.0](http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified) to access [certain resources](/api-documentation/inventory/). 
 

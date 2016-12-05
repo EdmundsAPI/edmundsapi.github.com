@@ -15,7 +15,6 @@ Feature: Terms Of Use
       | api documentation    |
       | widgets and apps     |
       | showcase             |
-      | certified developers |
     Given there is a navigated list
       | TERMS OF USE       |
       | API CONSOLE        |

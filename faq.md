@@ -21,7 +21,7 @@ class_page: faqPage
 * [How much does it cost to increase my rate limit or quota?](#faq-10)
 * [How can I find a car's MPG information?](#faq-11)
 * [What happened to the old API calls I was using?](#faq-12)
-* [Does the API have data on international cars?](#faq-13)
+* [Does the API have data for the vehicles outside the United States?](#faq-13)
 
 ---
 
@@ -41,7 +41,7 @@ We also put together this [3-minute video](http://vimeo.com/65923039) to explain
 <a name='faq-2' id='faq-2'> </a>
 <span class="question-header" >Why has Edmunds decided to open up the data?
 </span>
-We here at Edmunds believe strongly that innovation is fostered best through openness and transparency. We're opening up our data because we want to give you, the developer, the ability to explore its potential beyond what we have already done. You can use the breadth and detail of the automotive information available through the Edmunds' API to create mashups, mobile apps, visualizations and other data-consuming applications that will provide an added dimension of user experience for the automotive consumer. Edmunds is committed to helping automotive consumers find the car that meets their every need. Providing our data to developers interested in automative data is a key component to achieving our goal.
+We here at Edmunds believe strongly that innovation is fostered best through openness and transparency. We’re opening up our data because we want to give you, the developer, the ability to explore its potential beyond what we have already done. You can use the breadth and detail of the automotive information available through the Edmunds’ API to create mashups, mobile apps, visualizations and other data-consuming applications that will provide an added dimension of user experience for the automotive consumer. Edmunds is committed to helping automotive consumers find the car that meets their every need. Providing our data to developers interested in automotive data is a key component to achieving our goal.
 
 [Back to top](#top)
 
@@ -69,40 +69,35 @@ The Edmunds API is **FREE**. Certain resources and datasets that are deemed for 
 <a name='faq-6' id='faq-6'> </a>
 <span class="question-header">Can I use the Edmunds API for my business?
 </span>
-Absolutely. We have large companies like eBay and Toyota Motors using our data as well as startups like showroom.is and noodler compare.
+Absolutely. We have large companies like Uber and Toyota Motors using our data as well as startups like Dealer Science and Carvana.
 
 [Back to top](#top)
 
 <a name='faq-7' id='faq-7'> </a>
 <span class="question-header">What data formats does the Edmunds API support?
 </span>
-The vast majority of our data is returned in **JSON**. The Editorial API resource support JSON as well as XML. We will be adding XML support to the other APIs in the future.
+The vast majority of our data is returned in **JSON**. The Editorial API resource support JSON as well as XML. We are trying to add XML support to the other APIs in the future.
 
 [Back to top](#top)
 
 <a name='faq-8' id='faq-8'> </a>
 <span class="question-header">How can I reach out to Edmunds to discuss a potential partnership opportunity?
 </span>
-Exciting! Please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and try to be as specific as you can so we can bring in the right people to have a follow-up discussion with you regarding this potential opportunity. We should get back to you by email within 48 hours.
+Exciting! Please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and try to be as specific as you can so we can bring in the right people to have a follow-up discussion with you regarding this potential opportunity. We should get back to you by email within 48 hours.
 
 [Back to top](#top)
 
 <a name='faq-9' id='faq-9'> </a>
 <span class="question-header">How can I make money using this API?
 </span>
-Well, aren't you in for a treat! We don't only have one, but two, ways for you to make money using the Edmunds API:
-
-1. [API Affiliate Network](/api_affiliate_network/)
-2. [Certified Developer Network](/certified-dev.html)
-
-Both programs are intended for the talented developers to use the Edmunds API to their financial benefit.
+Well, aren’t you in for a treat! We have our [API Affiliate Network](/api_affiliate_network/) for you to make money. This is intended for anyone with a website looking to make money.
 
 [Back to top](#top)
 
 
 <a name='faq-10' id='faq-10'> </a>
 <span class="question-header">How much does it cost to increase my rate limit or quota?</span>
-We're more than happy to increase the rate limit for any developer after we look at their application and verify that it's in compliance with our [Terms of Service](/terms_of_service/). The rate increase is FREE.
+We’re more than happy to increase your rate limit feel free to apply at our <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
 
 [Back to top](#top)
 
@@ -114,12 +109,12 @@ The MPG data is available in the [Equipment Resource](/api-documentation/vehicle
 
 <a name='faq-12' id='faq-12'> </a>
 <span class="question-header">What happened to the old API calls I was using?</span>
-When we launch a new version of an API resource, we remove the documentation for the older version of that resource so new developers don't start coding against it. The API calls themselves are not removed until the date called out in the docs. We encourage all developers to move over to the new API resources when available since they're the ones we'll continue to support.
+When we launch a new version of an API resource, we remove the documentation for the older version of that resource so new developers don’t start coding against it. The API calls themselves are not removed until the date called out in the docs. We encourage all developers to move over to the new API resources when available since they’re the ones we’ll continue to support.
 
 [Back to top](#top)
 
 <a name='faq-13' id='faq-13'> </a>
-<span class="question-header">Does the API have data for the whole world?</span>
+<span class="question-header">Does the API have data for the vehicles outside the United States?</span>
 Nope sorry, the data in the Edmunds API covers North American vehicles only.
 
 [Back to top](#top)
