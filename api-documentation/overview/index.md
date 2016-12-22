@@ -15,12 +15,12 @@ weight: 1
 ### Page Content
 
 * [Introduction](#sec-1)
-* [Data Hierarchy](#sec-2)
-* [Data Constraints](#sec-3)
-* [URI Format](#sec-4)
-* [URI Examples](#sec-5)
-* [Rate Limit](#sec-6)
-* [Available Resources](#sec-7)
+* [Rate Limit](#sec-2)
+* [Available Resources](#sec-3)
+* [Data Hierarchy](#sec-4)
+* [Data Constraints](#sec-5)
+* [URI Format](#sec-6)
+* [URI Examples](#sec-7)
 * [Error Codes and Handling](#sec-8)
 * [Useful API Calls](#sec-9)
 * [SDKs and Code Samples](#sec-10)
@@ -49,6 +49,56 @@ This overview covers the core concepts that you need to know before you could fu
 
 [Back to top](#top)
 
+### Rate Limit
+
+Access to our Open API is granted across three tiers, Exploratory, Enhanced, and Professional.
+
+Exploratory (25 CPD) is for you to test and Explore the Edmunds API.
+
+Enhanced (100 CPD) helps us to get to know who you are and what you are building with the Edmunds API.
+
+Professional (100k CPD) is for users that have demonstrated they are good stewards of the Edmunds API, and would like to scale their use of Edmunds’ Data.
+
+#### Exploratory
+_25 cpd | 5 cps - Open Access_
+
+All Edmunds API keys are issued with a default quota of 25 calls/day and 5 calls/second. This rate limit should provide sufficient access to test and explore the Edmunds API. Don’t forget to check out the [API Console](http://edmunds.mashery.com/io-docs) for testing and education.
+
+#### Enhanced
+_100 cpd | 10 cps - Developers Must Request Access_
+
+If you would like to apply for enhanced access of our API, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and be sure to select “Request Enhanced Access” In order to be granted Enhanced access and receive an increased rate limit, we need to verify the following:
+
+* Use of Edmunds API is in compliance with our [Terms of Service](/terms_of_service/) and our [Branding Guide](/api_branding_guide/)
+
+Applications are reviewed every 2 weeks. When your application is approved, your rate limit will be increased to 100 calls/day. 
+
+
+#### Professional
+_100,000 cpd | 25 cps - Developers Must Request Access_
+
+Our professional access is reserved for partners that are approved by our Open API review board. If you would like to apply for Professional access of our API, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and be sure to select “Request Professional Access” in order to receive access with an increased rate limit of 100,000 calls/day we will need to verify the following:
+
+* Use of Edmunds API is in compliance with our [Terms of Service](/terms_of_service/) and our [Branding Guide](/api_branding_guide/)
+
+Applications are reviewed every 90 days. When your application is approved, your rate limit will be increased to 100,000 calls/day.<a name='sec-3'> </a> 
+
+[Back to top](#top)
+
+### Available Resources
+{% include themes/twitter/api_overview/table_available_api.html %}
+
+Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer  _four access tiers_:
+
+* **EXPLORATORY**: All developers and companies start exploring here.
+* **ENHANCED**: Increased rate limit to start building your application.
+* **PROFESSIONAL**: Increased rate limits to help your application grow.
+* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you’d like to become an Edmunds API Partner, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a>.
+
+Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-4'> </a>
+
+[Back to top](#top)
+ 
 ### Data Hierarchy
 
 Exploring a new API can be daunting. To make using our API enjoyable, easy, and fun, it's important to understand a few things regarding how our data is structured and how our APIs work.
@@ -66,8 +116,7 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 | Car Model Year | For a vehicle model, the calendar year designation assigned by the manufacturer to the annual version of that model |
 | Car Style      | A style is the specific version of a particular model. Each style offers different levels of equipment and a unique price point. Manufacturers have their own way of determining styles and these are not necessarily comparable across models. |
 
-[Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/).
-
+[Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/). <a name='sec-5'> </a>
 
 [Back to top](#top)
 
@@ -78,7 +127,7 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 3. We also *do not* have comprehensive coverage of vehicles which were sold with the intent for commercial use. 
 
 
-It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-4'> </a>
+It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-6'> </a>
 
 [Back to top](#top)
 
@@ -157,7 +206,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers, and a full list of browser support can be found [here](http://caniuse.com/cors).
 
-<a name='sec-5'> </a>
+<a name='sec-7'> </a>
 
 [Back to top](#top)
 
@@ -169,34 +218,11 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
 
 > https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&state=new&view=full
 
-<a name='sec-6'> </a>
+<a name='sec-8'> </a>
 
 [Back to top](#top)
 
-### Rate Limit
 
-All API keys are issued with a _default quota_ of **2 API calls/second** and **5000 API calls/day**. We do increase rate limits on case-by-case basis. In order to increase the rate limit for a particular application, we need to verify the following:
-
-1. The application is in compliance with our [Terms of Service](/terms_of_service/)
-2. The application is in compliance with our [branding guide](/api_branding_guide/)
-3. The application is representing the Edmunds data properly
-
-Once these three criteria are verified, the rate limit is increased to what Edmunds and the developer determine to be appropriate. Please note that you **do *not* have to be an API Partner** to get your rate limit increased. Every developer can get their rate limit increased if their application meets the three conditions mentioned above. **If you would like to increase your API rate limit, please** <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>. _No monetary compensation is expected in exchange for the rate limit increase_.<a name='sec-7'> </a>
-
-[Back to top](#top)
-
-### Available Resources
-{% include themes/twitter/api_overview/table_available_api.html %}
-
-Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer _three access tiers_:
-
-* **PUBLIC**: All registered developers using the Edmunds.com data and content according to our [Terms of Service](/terms_of_service/).
-* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you'd like to become an Edmunds API Partner, please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
-* **EDMUNDS**: Edmunds.com employees and contractors using the API to build out the Edmunds.com apps and websites.
-
-Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-8'> </a>
-
-[Back to top](#top)
 
 ### Error Codes and Handling
 
@@ -269,15 +295,15 @@ Our [Javascript](https://github.com/EdmundsAPI/sdk-javascript) and [Python](http
 
 ### Pedal to The Metal!
 
-If you've made it this far, **congratulations**! You're way on your way to rocking the API! 
+If you’ve made it this far, **congratulations**! You’re way on your way to rocking the API!
 
-This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key,<a class="linkGetKey" href="http://edmunds.mashery.com/member/my-account" title="Get your API key" target="_blank">get a key</a> now so you can start building in no time!
+This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key, <a class="linkGetKey" href="http://edmunds.mashery.com/member/my-account" title="get a key" target="_blank">get a key</a> now so you can start building in no time!
 
 All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Seriously. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
 
 Once you're comfortable with our APIs, you can start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
 
-Still have questions? Don't hesitate to <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> or post your questions to the [forum](http://edmunds.mashery.com/forum). We love to hear from you!
+Still have questions? Don't hesitate to <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a>. We love to hear from you!
 
 [Back to top](#top)
 

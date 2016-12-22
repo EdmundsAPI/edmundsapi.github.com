@@ -530,6 +530,12 @@ a.pdfLink:hover {
 	.overviewTable .parenCategory a {
 		color: #fff;
 	}
+	.overviewTable .subcategory .span3 {
+		text-align: center;
+	}
+	.overviewTable .subcategory .span8 {
+		margin-left: 0;
+	}
 	.parenCategory h2,
 	.parenCategory p,
 	.parenCategory a {
@@ -578,19 +584,27 @@ a.pdfLink:hover {
 		min-height: 26px;
 	}
 	.editorialTableTr .odd .span4,
-	.editorialTableTr .even .span4 {
+	.editorialTableTr .even .span4,
+    .editorialTableTr .odd .span3,
+	.editorialTableTr .even .span3 {
 		line-height: 83px;
 	}
 	.inventoryTableTr .odd .span4,
-	.inventoryTableTr .even .span4 {
+	.inventoryTableTr .even .span4,
+	.inventoryTableTr .odd .span3,
+	.inventoryTableTr .even .span3 {
 		line-height: 69px;
 	}
 	.dealerTableTr .odd .span4,
-	.dealerTableTr .even .span4 {
+	.dealerTableTr .even .span4,
+	.dealerTableTr .odd .span3,
+	.dealerTableTr .even .span3 {
 		line-height: 69px;
 	}
 	.mediaTableTr .odd .span4,
-    .mediaTableTr .even .span4 {
+    .mediaTableTr .even .span4,
+	.mediaTableTr .odd .span3,
+    .mediaTableTr .even .span3{
     	line-height: 150px;
     }
 	.subcategory .rowCostCategory .span8 .span4 {
@@ -601,6 +615,16 @@ a.pdfLink:hover {
 	}
 	.overviewTableTH .span6{
 		padding-left: 21px;
+	}
+	.overviewTableTH .overviewTableTHcols{
+		line-height: 20px;
+		text-transform: none;
+		font-size: 16px;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.overviewTableTH .overviewTableTHcols .overviewTableTHcolsSub {
+		font-size: 11px;
 	}
 	/*__End table "AVAILABLE API’S"__*/
 /*__End Content__*/
@@ -774,7 +798,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-    	line-height: 150px;
+    	line-height: 45px;
     }
 	.overviewTable .parenCategory {
 		padding: 13px 5px;
@@ -830,7 +854,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 150px;
+        line-height: 45px;
     }
 	.overviewTable .row-fluid .span2 { padding-left: 12px !important;}
 	.row-fluid:not([class*="overviewTable"]) .span2,
@@ -886,7 +910,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 150px;
+        line-height: 45px;
     }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {
@@ -960,7 +984,7 @@ ul.multiLevelMenu {
 	}
 	.mediaTableTr .odd .span4,
     .mediaTableTr .even .span4 {
-        line-height: 150px;
+        line-height: 45px;
     }
 	.row-fluid:not([class*="overviewTable"]) .span2,
 	.span2 {

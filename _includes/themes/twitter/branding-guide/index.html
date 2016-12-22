@@ -1,235 +1,161 @@
 <p>Your use of any Edmunds API content, whether served from your site or from a client application, must appropriately attribute Edmunds by adhering to these few branding requirements.</p>
 
 <h3>Edmunds API Logos</h3>
-<p>You must include one of the following Edmunds API logos on every page that interacts with the  Edmunds API or displays the Edmunds API data. This includes pages or screens in mobile applications.</p>
-<p>Use only the following Edmunds API logos for branding attribution on your site or in your app at the full size that is provided. Select the logo that best suits the visual design and functionality of your site or app.</p>
+<p>You must use the Edmunds API Web Logo on every page that interacts with the Edmunds API or displays the Edmunds API data. This includes pages or screens in mobile applications.</p>
+<p>Only the following Edmunds API Web Logos for branding attribution are allowed on your site or in your app at the full size that is provided. Select the logo that best suits the visual design and functionality of your site or app.</p>
 
 <h3>Additional branding requirements</h3>
-<p>The Edmunds API badge should not be the most prominent element or logo on the Web page, nor the only branding on the page</p>
-<p>The Edmunds API badge must link directly to <a href="http://www.edmunds.com?id=apis" target="_blank"><strong>http://www.edmunds.com/?id=apis</strong></a></p>
+<ul>
+	<li>The Edmunds API badge should not be the most prominent element or logo on the Web page, nor the only branding on the page.</li>
+	<li>Pace the Edmunds API Web Logo directly next to the area where Edmunds API data is being interacted with or displayed.</li>
+	<li>The Edmunds API badge must link directly to <a href="http://www.edmunds.com?id=apis" target="_blank"><strong>http://www.edmunds.com/?id=apis</strong></a></li>
+</ul>
 
+<h3>HOW TO INSTALL EDMUNDS LOGO</h3>
+<h5>Web Page Installation:</h5>
+<ol>
+	<li>Place an <img> tag on your page next to where edmunds data is interacting or being displayed.</li>
+	<li>Next you will want to paste the following URL to the <img> src attribute in the following format: <br/>
+		<em>https://open-api.edmunds.com/api/openapi/v1/logo?size={size}&format={format}&retina={retina}&color={color}&api_key={api_key}</em>
+	</li>
+	<li>Change the parameters of the URL with the following values and remove the brackets:<br/>
+		a. size - 100, 200, 220, 300, 440, 600<br/>
+		b. format - horizontal, ad, square<br/>
+		c. retina - true, false<br/>
+		d. color - white, gray<br/>
+		e. api_key - your own API key.<br/>
+	</li>
+</ol>
+
+<h5>Example:</h5>
+<p>
+	<span><</span>a href="http://www.edmunds.com/?id=apis">
+	<span><</span>img src="https://open-api-rest-web.qa-dsg11.vip.aws1/api/openapi/v1/logo?size=200&format=horizontal&retina=true&color=gray&api_key=111111111111111111111111">
+	</a<span>></span>
+</p>
+
+<h3>Native Mobile Application Installation:</h3>
+<ol>
+	<li>Create a remote image container on the page in the acceptable sizes <w, h> and <w, h></li>
+	<li>
+		Paste the following URL to the image container in following format: <br/>
+		<em>https://open-api.edmunds.com/api/openapi/v1/logo?size={size}&format={format}&retina={retina}&color={color}&api_key={api_key}</em>
+	</li>
+	<li>Change the parameters of the URL with the following values and remove the brackets: <br/>
+		a. size - 100, 200, 220, 300, 440, 600<br/>
+		b. format - horizontal, ad, square<br/>
+		c. retina - true, false<br/>
+		d. color - white, gray<br/>
+		e. api_key - your own API key.<br/>
+	</li>
+</ol>
+
+<h5>Example:</h5>
+
+<strong>iOS Objective-C:<strong>
+<p>NSURL *url = [NSURL URLWithString:path]; NSData *data = [NSData dataWithContentsOfURL:url]; UIImage *img = [[UIImage alloc] initWithData:data]; UIImageView *imageView = [[UIImageView alloc] initWithImage:img];</p>
+
+<strong>iOS Swift:<strong>
+<p>var url = NSURL(string: path) var data = NSData(contentsOfURL : url!)
+let imageView = UIImageView.init(image: UIImage.init(data: data!, scale: 1.0))</p>
+
+<strong>Android:<strong>
+<p>URL newurl = new URL(path); mIcon_val = BitmapFactory.decodeStream(newurl.openConnection() .getInputStream()); imageView.setImageBitmap(mIcon_val);</p>
+
+<h3>EDMUND LOGO FORMATS</h3>
 <h4>300px (horizontal)</h4>
 <ul class="logos horizontal-300">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_horizontal_red.png" download="300_horizontal_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_horizontal_color.png" download="300_horizontal_color" target="_blank" >.PNG</a>)</div>
-	</li>
+		</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_horizontal_grey.png" download="300_horizontal_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>300px (horizontal)(RETINA)</h4>
 <ul class="logos horizontal-300">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_horizontal_red.png" download="300_horizontal_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_horizontal_color.png" download="300_horizontal_color" target="_blank" >.PNG</a>)</div>
-	</li>
+		</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_horizontal_grey.png" download="300_horizontal_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>300px (ad format)</h4>
 <ul class="logos ad-300">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_ad_red.png" download="300_ad_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_ad_color.png" download="300_ad_color" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/300_ad_grey.png" download="300_ad_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>300px (ad format)(RETINA)</h4>
 <ul class="logos ad-300">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_ad_red.png" download="300_ad_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_ad_color.png" download="300_ad_color" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/600_ad_grey.png" download="300_ad_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>220px (horizontal)</h4>
 <ul class="logos horizontal-220">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/220_red.png" download="220_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/220_color.png" download="220_color" target="_blank">.PNG</a>)</div>
 	</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/220_grey.png" download="220_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>220px (horizontal)(RETINA)</h4>
 <ul class="logos horizontal-220">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/440_red.png" download="220_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/440_color.png" download="220_color" target="_blank">.PNG</a>)</div>
 	</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/440_grey.png" download="220_grey" target="_blank">.PNG</a>)</div>
-	</li>
+		</li>
 </ul>
 
 <h4>100px (square)</h4>
 <ul class="logos square-100">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/100_red.png" download="100_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/100_color.png" download="100_color" target="_blank">.PNG</a>)</div>
 	</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/100_grey.png" download="100_grey" target="_blank">.PNG</a>)</div>
 	</li>
 </ul>
 
 <h4>100px (square)(RETINA)</h4>
 <ul class="logos square-100">
 	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/200_red.png" download="100_red" target="_blank">.PNG</a>)</div>
-	</li>
-	<li>
 		<div class="logo white">&nbsp;</div>
 		<div class="logo-descr">Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/200_color.png" download="100_color" target="_blank">.PNG</a>)</div>
 	</li>
 	<li>
 		<div class="logo grey">&nbsp;</div>
 		<div class="logo-descr">Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/retina/200_grey.png" download="100_grey" target="_blank">.PNG</a>)</div>
-	</li>
-</ul>
-
-<h4>EPS Files</h4>
-<ul class="logos ad-300">
-	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Square - Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_square_red.eps" target="_blank">.EPS</a>)</div>
-	</li>
-	<li>
-		<div class="logo white">&nbsp;</div>
-		<div class="logo-descr">Square - Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_square_color.eps" target="_blank">.EPS</a>)</div>
-	</li>
-	<li>
-		<div class="logo grey">&nbsp;</div>
-		<div class="logo-descr">Square - Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_square_dark.eps" target="_blank">.EPS</a>)</div>
-	</li>
-</ul>
-
-<ul class="logos horizontal-300">
-	<li>
-		<div class="logo red">&nbsp;</div>
-		<div class="logo-descr">Horizontal - Light on dark background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_vertical_red.eps" target="_blank">.EPS</a>)</div>
-	</li>
-	<li>
-		<div class="logo white">&nbsp;</div>
-		<div class="logo-descr">Horizontal - Color on white background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_vertical_color.eps" target="_blank">.EPS</a>)</div>
-	</li>
-	<li>
-		<div class="logo grey">&nbsp;</div>
-		<div class="logo-descr">Horizontal - Dark on light background</div>
-		<div class="logo-save-link">(<a href="{{ PATH }}/assets/themes/twitter/img/branding-guide/API_vertical_dark.eps" target="_blank">.EPS</a>)</div>
-	</li>
-</ul>
-
-<h3>Improper Usage</h3>
-<ul class="logos improper">
-	<li>
-		<div class="logo improper1">&nbsp;</div>
-		<div>Do not stretch or distort</div>
-	</li>
-	<li>
-		<div class="logo improper2">&nbsp;</div>
-		<div>Do not alter color field cropping</div>
-	</li>
-	<li>
-		<div class="logo improper3">&nbsp;</div>
-		<div>Do not change the typeface</div>
-	</li>
-	<li>
-		<div class="logo improper4">&nbsp;</div>
-		<div>Do not change field color</div>
-	</li>
-	<li>
-		<div class="logo improper5">&nbsp;</div>
-		<div>Do not change the naming convention</div>
-	</li>
-	<li>
-		<div class="logo improper6">&nbsp;</div>
-		<div>Do not rearrange layout</div>
-	</li>
-	<li>
-		<div class="logo improper7">&nbsp;</div>
-		<div>Do not manipulate the logo</div>
-	</li>
-	<li>
-		<div class="logo improper8">&nbsp;</div>
-		<div>Do not create your own graphic</div>
 	</li>
 </ul>
 
