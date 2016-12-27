@@ -8,13 +8,14 @@ Feature: Terms Of Use
       | REGISTER          |
       | API CONSOLE       |
       | API STATUS        |
-      | AFFILIATE NETWORK |
+      | CONTACT US        |
       | TERMS OF SERVICE  |
       | FAQ               |
     Given there is a list of menu:
       | api documentation    |
       | widgets and apps     |
       | showcase             |
+      | affiliate network   |
     Given there is a navigated list
       | TERMS OF USE       |
       | API CONSOLE        |

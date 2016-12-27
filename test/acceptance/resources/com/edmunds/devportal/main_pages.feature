@@ -9,13 +9,14 @@ Feature: Main pages
         | REGISTER          |
         | API CONSOLE       |
         | API STATUS        |
-        | AFFILIATE NETWORK |
+        | CONTACT US        |
         | TERMS OF SERVICE  |
         | FAQ               |
     Given there is a list of menu:
         | api documentation    |
         | widgets and apps     |
         | showcase             |
+        | affiliate network    |
     Then the page should have 'Edmunds Developer Network - Welcome to the Edmunds API' in the title
     And the page should have header links
     And the page should have header menu
