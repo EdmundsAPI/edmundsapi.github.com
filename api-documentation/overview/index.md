@@ -242,9 +242,14 @@ If an error persists and you can't resolve it, please <a href="http://developer.
 
 When an error occurs, you should get the following response:
 
-	{"error": {"code": xxx, "message":"some message"}}
+	{
+		"status": "http_status",
+		"errorType": "error_description",
+		"message": "some_message",
+		"moreInfoUrl": "http://developer.edmunds.com"
+	}
 	
-Your code should always be looking for the root key <code>error</code> in the API response. <a name='sec-9'> </a>
+<a name='sec-9'> </a>
 
 [Back to top](#top)
 
