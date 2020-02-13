@@ -1,6 +1,6 @@
 ---
 layout: api-documentation
-title : 'Get Car Style Details by Chrome Data ID'
+title : 'Get Car Style Details by Chrome Data ID Test'
 title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
