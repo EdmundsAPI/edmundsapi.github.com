@@ -26,7 +26,6 @@ The Style Resource allows you to look up a vehicle's details (e.g. colors, optio
 
 * [By supplying the car's make/model nice names and the car year](/api-documentation/vehicle/spec_style/v2/01_by_mmy/api-description.html)
 * [By supplying the car's Edmunds style ID](/api-documentation/vehicle/spec_style/v2/02_by_id/api-description.html)
-* [By supplying the car's Chrome Data ID**](/api-documentation/vehicle/spec_style/v2/03_chrome/api-description.html)
 
 ### Static Datasets
 
