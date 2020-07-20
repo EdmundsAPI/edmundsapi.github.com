@@ -145,6 +145,7 @@ Here are some common uses of the Vehicle API:
 | [Configuration](/api-documentation/vehicle/spec_configuration/v1/) | | | | |
 | [Equipment](/api-documentation/vehicle/spec_equipment/v2/) | | | | |
 | [VIN](/api-documentation/vehicle/spec_vin_decoding/v2/) and [SquishVin](/api-documentation/vehicle/spec_squishvin/v2/) | | | | |
+| [Model Year v3](/api-documentation/vehicle/spec_model_year/v3/) | | | | |
 
 All of these resources are accessible in the table of contents on the left.
 
