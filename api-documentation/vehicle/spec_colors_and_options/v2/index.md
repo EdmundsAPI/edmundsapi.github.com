@@ -4,7 +4,7 @@ title : 'Spec: Colors and Options'
 title_active_left_menu: "Spec: Colors and Options"
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 3
 spec: spec_colors_and_options
 version: v2
 api: vehicle
