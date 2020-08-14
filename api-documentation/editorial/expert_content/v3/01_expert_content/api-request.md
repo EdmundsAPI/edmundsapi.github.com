@@ -4,7 +4,7 @@ title : 'Get Expert content for make/model/year'
 title_active_left_menu: 'Expert Content'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Expert content for make/model/year'
 spec: articles
 version: v3

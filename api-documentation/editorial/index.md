@@ -48,6 +48,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
 
+#### Example 3: Get the *Edmunds Expert Content* of the ***Honda Civic 2018***
+
+> https://api.edmunds.com/api/editorial/v3/makes/honda/models/civic/years/2020/expertcontent?api_key={API key}
+
 <a name='sec-3'> </a>
 
 [Back to top](#top)
