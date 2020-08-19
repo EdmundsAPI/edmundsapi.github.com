@@ -4,7 +4,7 @@ title : 'Get Total Count of Car Makes/Brands'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 3
 title-endpoint: 'makes/count'
 spec: spec_make
 version: v2

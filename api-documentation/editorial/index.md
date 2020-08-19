@@ -48,6 +48,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
 
+#### Example 3: Get the *Edmunds Expert Content* of the ***Honda Civic 2018***
+
+> https://api.edmunds.com/api/editorial/v3/makes/honda/models/civic/years/2020/expertcontent?api_key={API key}
+
 <a name='sec-3'> </a>
 
 [Back to top](#top)
@@ -76,12 +80,13 @@ Each Article should be refreshed not less often than once every 30 days, in orde
 
 ### Available Resources
 
-The Editorial API has two resources:
+The Editorial API has three resources:
 
-| Resource Name  					| Description                           |
-|:----------------------------------|:--------------------------------------|
-| [Articles](/api-documentation/editorial/articles/v2/)        | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
-| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/)      | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year. |
+| Resource Name                                                     | Description                                                                                                                   |
+|:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
+| [Articles](/api-documentation/editorial/articles/v2/)             | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
+| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/) | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year.              |
+| [Expert Content](/api-documentation/editorial/expert_content/v3/) | Get expert content for make/model/year.                                                                                       |
 
 <a name='sec-5'> </a>
 
@@ -137,5 +142,6 @@ When using the **Editor Reviews** resource, you will get the review broken into 
 * Get all articles for a specific make/model/year
 * Get all articles for a specific make/model/year **and** specific category
 * Get the Edmunds Editor Review of a specific make/model/year
+* Get the Expert content of a specific make/model/year
 
 [Back to top](#top)
