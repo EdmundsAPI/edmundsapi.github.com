@@ -13,7 +13,7 @@ branches:
     - master
 
 before_install:
-  - sudo apt-get install openjdk-7-jdk
+  - sudo apt-get install openjdk-8-jdk
   - java -version
   - mvn -version
   - phantomjs --version
