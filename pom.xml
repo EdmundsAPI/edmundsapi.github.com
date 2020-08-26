@@ -7,7 +7,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>Developer Portal Acceptance Tests</name>
-	
+
 	<build>
 		<testSourceDirectory>test/acceptance/java</testSourceDirectory>
 		<testResources>
@@ -45,10 +45,17 @@
 		            	<cucumber.options>${cucumber.options}</cucumber.options>
 		            </systemPropertyVariables>
 				</configuration>
-			</plugin>
+			</plugin><plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>8</source>
+				<target>8</target>
+			</configuration>
+		</plugin>
 		</plugins>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<id>healthcheck</id>
