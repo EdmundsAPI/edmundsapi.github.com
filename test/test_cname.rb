@@ -13,7 +13,7 @@ module Test
       file.close
 
       if repository.include? PRODUCTION_REPOSITORY
-        verify = cname == "developer.edmunds.com"
+        verify = cname == "edmundsapi-preprod.github.io"
       else
         verify = repository.include? cname
       end
