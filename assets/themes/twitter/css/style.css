@@ -2,17 +2,17 @@
 
 .topLogo {
   display: block;
-  height: 103px;
-  width: 93px;
-  background-image: url('../img/api-logo.png');
+  height: 40px;
+  width: 250px;
+  background-image: url('../img/logo.svg');
   background-repeat: no-repeat;
+  margin: 25px 0 0 40px
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 1.5dppx),
        only screen and (-o-min-device-pixel-ratio: 3/2) {
   .topLogo {
-    background-image: url('../img/api-logo@2x.png');
-    background-size: 93px 103px;
+    background-image: url('../img/logo.svg');
   }
 }
 a.topLogo:hover {
@@ -168,7 +168,7 @@ body, html {
 /*__Start Header__*/
 header {
   position:relative;
-  padding: 14px 0 0 0;
+  padding: 0;
 }
 
 .topBlogBackground {
@@ -239,8 +239,8 @@ a.linkGetStart {
 	position:absolute;
 	right:0;
 	width:180px;
-  margin-top: 16px;
-  padding: 30px 0  6px 0;
+  margin-top: 0px;
+  padding: 26px 0 26px 0;
   color: #fff;
   font: 26px 'Oswald400';
   text-transform: lowercase;
@@ -831,9 +831,9 @@ ul.multiLevelMenu {
 	body:not(.fixElem) .api-header-row1 .container .row-fluid .span2,
 	body:not(.fixElem) .api-header-row2 .container .row-fluid .span2 { min-width: 200px; }
 	body:not(.fixElem) .api-header-row1 .container .row-fluid .span10,
-	body:not(.fixElem) .api-header-row2 .container .row-fluid .span10 { 
+	body:not(.fixElem) .api-header-row2 .container .row-fluid .span10 {
 		width: 900px;
-		margin: 0; 
+		margin: 0;
 	}
 }
 
@@ -960,7 +960,7 @@ ul.multiLevelMenu {
 
 	.api-header-row1 .row-fluid .span10,
 	.api-header-row2 .row-fluid .span10  { margin-left: 0; width: 950px; }
-	html body.tmv-promo, 
+	html body.tmv-promo,
 	html body.vehicle-conf-promo  { min-width: 1650px;  }
 
 }
