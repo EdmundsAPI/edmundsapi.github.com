@@ -26,7 +26,7 @@ level: 1
 
 ### Overview
 
-The Inventory API provides access to the *vehicle inventories* (or *cars for sale*) available at dealerships with a relationship with Edmunds.com. Due to the nature of this data, it's only available to **API Partners** and **Edmunds Developers**. If you're interested in becoming an API Partner, please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
+The Inventory API provides access to the *vehicle inventories* (or *cars for sale*) available at dealerships with a relationship with Edmunds.com. Due to the nature of this data, it's only available to **API Partners** and **Edmunds Developers**. If you're interested in becoming an API Partner, please <a href="http://developer.edmunds.com/contact_us.html" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a>.
 
 If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 
@@ -38,7 +38,7 @@ The Inventory API requires **[OAuth 2.0](http://aaronparecki.com/articles/2012/0
 
 	curl -i -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.edmunds.com/inventory/token' -X POST -d 'client_id=<api key>' -d 'client_secret=<shared secret>' -d 'grant_type=client_credentials'
 	
-You will find both your *api key* and *shared secret* in your [dashboard](http://edmunds.mashery.com/apps/mykeys).
+You will find both your *api key* and *shared secret* in your [dashboard](http://developer.edmunds.com/apps/mykeys).
 
 If you've been given access by the Edmunds API Team, you should receive an _access\_token_ back. The _access\_token_ is valid for **one hour** after which you'll need to get a new one.
 
@@ -56,7 +56,7 @@ We **do not recommend** the second approach since it's not secure.<a name='sec-3
 
 ### Quick Start
 
-Let's get right to it, shall we? Here's a few REST calls that should get you started using the API with ease. Better yet, you could use our [API Console](http://edmunds.mashery.com/io-docs) to make ***live API calls*** of your own.
+Let's get right to it, shall we? Here's a few REST calls that should get you started using the API with ease.
 
 #### Example 1: Get a listed call for sale by its VIN
 

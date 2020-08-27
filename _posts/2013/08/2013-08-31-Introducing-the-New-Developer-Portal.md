@@ -47,12 +47,10 @@ We have tons of goodies in this new portal:
 
 * **A Single API Key:** All new applications created on the portal would be issued **one API key** that would work with all publicly available APIs (i.e. vehicle, editorial and dealer). This should simplify development. You no longer need to keep track of *three different API keys*. We encourage all our developers with older keys to create a new application and get a new key. **We will start decommissioning the old keys by March 2014**.
 
-* **Javascript SDK:** We completely revamped our Javascript SDK to make it super easy to use with active examples that work out of the box. [Learn more](https://github.com/EdmundsAPI/sdk-javascript).
-
-* **API Status Dashboard:** Our developers weren't given visibility into API problems when they occurred. **Those days are over**. Now, when something is amiss, we [open a ticket](http://edmunds.statuspage.io/) for it of which you'll get notified if you [subscribe](http://edmunds.statuspage.io/) to get the alerts, and you'll know step-by-step what's going on with the API. [Learn more](http://edmunds.statuspage.io/).
+* **Javascript SDK:** We completely revamped our Javascript SDK to make it super easy to use with active examples that work out of the box.
 
 * **Edmunds API 101 Video:** We've had [this video](https://vimeo.com/65923039) out for a while, but if you haven't seen it you, you should check it out.
 
-We love to hear your feedback, suggestions, and comments on the new portal and our API in general. You can [tweets us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com) or post a comment on the [forum](http://edmunds.mashery.com/forum).
+We love to hear your feedback, suggestions, and comments on the new portal and our API in general. You can [tweets us](http://twitter.com/edmundsapi), [email us](mailto:api@edmunds.com).
 
 Happy coding!

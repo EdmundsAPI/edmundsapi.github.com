@@ -32,7 +32,7 @@ weight: 1
 
 ### Introduction
 
-**Welcome!** To get you started, let's go over the automotive datasets we've made available for you through the Edmunds API. Once you [register for a key](http://edmunds.mashery.com/member/register), you will be able to access the following datasets:
+**Welcome!** To get you started, let's go over the automotive datasets we've made available for you through the Edmunds API. Once you register for a key, you will be able to access the following datasets:
 
 | Dataset           | Description                                                                                               |
 |:------------------|:----------------------------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ Professional (100k CPD) is for users that have demonstrated they are good stewar
 #### Exploratory
 _25 cpd | 5 cps - Open Access_
 
-All Edmunds API keys are issued with a default quota of 25 calls/day and 5 calls/second. This rate limit should provide sufficient access to test and explore the Edmunds API. Don’t forget to check out the [API Console](http://edmunds.mashery.com/io-docs) for testing and education.
+All Edmunds API keys are issued with a default quota of 25 calls/day and 5 calls/second. This rate limit should provide sufficient access to test and explore the Edmunds API.
 
 #### Enhanced
 _100 cpd | 10 cps - Developers Must Request Access_
@@ -195,9 +195,6 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 		</td>
 		<td>Authorized API Key</td>
 		<td><strong>Yes</strong></td>
-		<td>
-			<a class="standart-btn" href="http://edmunds.mashery.com/member/my-account" title="Get your API key">Get your API key</a> 
-		</td>
 	</tr>
 
 </table>
@@ -234,11 +231,11 @@ API errors occur for several reasons. Here's a list of **common errors** and way
 | 401   		| Unauthorized				            | You are using the **wrong API key** or the key **isn't active** 				|
 | 403 			| Forbidden							    | You are not authorized to access this resource, sorry.						|
 | 404 			| Not Found							    | Check the URL path for typos								 					|
-| 502    		| Bad Gateway	                        | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
-| 503     	   	| Service Unavailable 					| If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
-| 504     	   	| Gateway Timeout                       | If this persists, check our [API Status](http://edmunds.statuspage.io). It might be an issue we're addressing	|
+| 502    		| Bad Gateway	                        | 	|
+| 503     	   	| Service Unavailable 					| 	|
+| 504     	   	| Gateway Timeout                       | 	|
 
-If an error persists and you can't resolve it, please <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> and let us know.
+If an error persists and you can't resolve it, please <a href="http://developer.edmunds.com/contact_us.html" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a> and let us know.
 
 When an error occurs, you should get the following response:
 
@@ -302,13 +299,9 @@ Our [Javascript](https://github.com/EdmundsAPI/sdk-javascript) and [Python](http
 
 If you’ve made it this far, **congratulations**! You’re way on your way to rocking the API!
 
-This is also a good time to make sure you're all set with an _account_ and a _key_ for the API(s) you want use. If you still haven't gotten your API key, <a class="linkGetKey" href="http://edmunds.mashery.com/member/my-account" title="get a key" target="_blank">get a key</a> now so you can start building in no time!
-
-All set? Awesome. Why not start making **live API calls** _right now_ by using the [API Console](http://edmunds.mashery.com/io-docs). You won't need to write a single line of code to do so! Seriously. It's an interactive tool built by our friends at [Mashery](http://www.mashery.com) to help you get a sense of our data before investing time and effort coding against it.
-
 Once you're comfortable with our APIs, you can start coding against it with confidence. We have a [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript) handy to help you start integrating the API into your pages in no time.
 
-Still have questions? Don't hesitate to <a href="http://developer.edmunds.com/contact_us/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a>. We love to hear from you!
+Still have questions? Don't hesitate to <a href="http://developer.edmunds.com/contact_us.html" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a>. We love to hear from you!
 
 [Back to top](#top)
 
