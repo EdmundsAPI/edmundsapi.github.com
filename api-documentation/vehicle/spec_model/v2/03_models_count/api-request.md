@@ -4,7 +4,7 @@ title : 'Get Total Count of Car Models for Specific Car Make'
 title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Total Count of Car Models for Specific Car Make'
 spec: spec_model
 version: v2

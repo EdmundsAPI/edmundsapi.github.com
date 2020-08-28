@@ -25,7 +25,6 @@ overview: page_version
 ### Endpoints
 
 * [Get Vehicle Equipment for a Car Style](/api-documentation/vehicle/spec_equipment/v2/01_by_style/api-description.html)
-* [Get the Equipment Details by the Equipment ID](/api-documentation/vehicle/spec_equipment/v2/02_by_id/api-description.html)
 
 ### Equipment Response Formats
 

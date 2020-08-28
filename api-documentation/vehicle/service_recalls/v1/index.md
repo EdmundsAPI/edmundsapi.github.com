@@ -22,5 +22,4 @@ overview: page_version
 
 ### Endpoints
 
-* [Get Recall Details by ID](/api-documentation/vehicle/service_recalls/v1/01_recall/api-description.html)
 * [Get List of Manufacturer Recalls for Vehicles with Model Year ID](/api-documentation/vehicle/service_recalls/v1/02_recallrepository/findbymodelyearid/api-description.html)

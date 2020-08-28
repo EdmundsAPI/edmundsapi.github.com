@@ -4,7 +4,7 @@ title : 'Vehicle Inventory VIN Lookup'
 title_active_left_menu: 'VIN Lookup'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Inventory by VIN'
 spec: vin_lookup
 version: v1

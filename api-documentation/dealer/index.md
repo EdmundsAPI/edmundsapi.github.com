@@ -44,10 +44,6 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=26643&limit=0%2C5&fmt=json&api_key={your API key}
 
-#### Example 3: Get model, model year, style and trim data for Honda
-
-> https://api.edmunds.com/v1/api/drrrepository/getdrrbyzipcodeandmake?zipcode=90019&make=bmw&limit=0%2C5&fmt=json&api_key={your API key}
-
 <a name='sec-3'> </a>
 
 [Back to top](#top)

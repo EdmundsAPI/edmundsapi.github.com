@@ -25,7 +25,6 @@ For more details, visit [http://www.edmunds.com/new-car-ratings/](http://www.edm
 ### Endpoints
 
 * [Get Edmunds.com Letter Grade Rating by Car Make/Model/Year Info](/api-documentation/vehicle/content_letter_grade/v2/01_by_mmy/api-description.html)
-* [Get All Rating Details Reviews for the Given Make/Model/Year](/api-documentation/vehicle/content_letter_grade/v2/03_ratings_by_make_model_year/api-description.html)
 * [Get Rating Details for the Given Make/Model/Year by ID](/api-documentation/vehicle/content_letter_grade/v2/04_rating_details_by_id_make_model_year/api-description.html)
 * [Get Rating Details by Style ID](/api-documentation/vehicle/content_letter_grade/v2/05_rating_details_by_style_id/api-description.html)
 

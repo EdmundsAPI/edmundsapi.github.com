@@ -4,7 +4,7 @@ title : 'Get Car Consumer Ratings and Reviews by Car Style ID'
 title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Car Consumer Ratings and Reviews by Car Style ID'
 spec: content_ratings_and_reviews
 version: v2

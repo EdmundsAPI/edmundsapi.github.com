@@ -4,7 +4,7 @@ title : 'Car Consumer Ratings and Reviews'
 title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: content_ratings_and_reviews
 version: v2
 api: vehicle
@@ -25,7 +25,6 @@ overview: page_version
 
 * [Get Consumer Ratings & Reviews by Make/Model/Year Info](/api-documentation/vehicle/content_ratings_and_reviews/v2/01_by_mmy/api-description.html)
 * [Get Consumer Ratings & Reviews by Style ID](/api-documentation/vehicle/content_ratings_and_reviews/v2/02_by_styleid/api-description.html)
-* [Get Consumer Ratings & Reviews by Reviews ID](/api-documentation/vehicle/content_ratings_and_reviews/v2/03_by_id/api-description.html)
 
 ### Special Requirements
 
