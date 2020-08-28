@@ -6,7 +6,7 @@
   width: 250px;
   background-image: url('../img/logo.svg');
   background-repeat: no-repeat;
-  margin: 25px 0 0 40px
+  margin: 25px 0 0 0
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 1.5dppx),
@@ -205,7 +205,7 @@ header {
 	text-decoration: none;
 }
 nav.headerLinks {
-  margin: 14px 0 13px;
+  margin: 35px 0 35px;
 }
 .navbar nav.headerMenu a {
   display: inline-block;
@@ -222,7 +222,7 @@ nav.headerLinks {
 .navbar nav.headerLinks ul a {
   padding: 0 20px 0 0;
   color:#555;
-  font: bold 9px/23px Arial;
+  font: 18px/20px Oswald400;
 }
 .navbar-inner {
   margin: 0;
@@ -275,7 +275,7 @@ a.linkGetStart {
 	border-bottom:0;
 }
 .topHeader .navbar nav {
-	margin-left: 70px;
+	margin-left: 30px;
 }
 .navbar-inner {filter: none;}
 
