@@ -15,16 +15,15 @@ weight: 1
 ### Page Content
 
 * [Introduction](#sec-1)
-* [Rate Limit](#sec-2)
-* [Available Resources](#sec-3)
-* [Data Hierarchy](#sec-4)
-* [Data Constraints](#sec-5)
-* [URI Format](#sec-6)
-* [URI Examples](#sec-7)
-* [Error Codes and Handling](#sec-8)
-* [Useful API Calls](#sec-9)
-* [SDKs and Code Samples](#sec-10)
-* [Pedal to The Metal!](#sec-11)
+* [Available Resources](#sec-2)
+* [Data Hierarchy](#sec-3)
+* [Data Constraints](#sec-4)
+* [URI Format](#sec-5)
+* [URI Examples](#sec-6)
+* [Error Codes and Handling](#sec-7)
+* [Useful API Calls](#sec-8)
+* [SDKs and Code Samples](#sec-9)
+* [Pedal to The Metal!](#sec-10)
 
 <a name='sec-1'> </a>
 
@@ -49,53 +48,11 @@ This overview covers the core concepts that you need to know before you could fu
 
 [Back to top](#top)
 
-### Rate Limit
-
-Access to our Open API is granted across three tiers, Exploratory, Enhanced, and Professional.
-
-Exploratory (25 CPD) is for you to test and Explore the Edmunds API.
-
-Enhanced (100 CPD) helps us to get to know who you are and what you are building with the Edmunds API.
-
-Professional (100k CPD) is for users that have demonstrated they are good stewards of the Edmunds API, and would like to scale their use of Edmunds’ Data.
-
-#### Exploratory
-_25 cpd | 5 cps - Open Access_
-
-All Edmunds API keys are issued with a default quota of 25 calls/day and 5 calls/second. This rate limit should provide sufficient access to test and explore the Edmunds API.
-
-#### Enhanced
-_100 cpd | 10 cps - Developers Must Request Access_
-
-If you would like to apply for enhanced access of our API, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and be sure to select “Request Enhanced Access” In order to be granted Enhanced access and receive an increased rate limit, we need to verify the following:
-
-* Use of Edmunds API is in compliance with our [Terms of Service](/terms_of_service/) and our [Branding Guide](/api_branding_guide/)
-
-Applications are reviewed every 2 weeks. When your application is approved, your rate limit will be increased to 100 calls/day. 
-
-
-#### Professional
-_100,000 cpd | 25 cps - Developers Must Request Access_
-
-Our professional access is reserved for partners that are approved by our Open API review board. If you would like to apply for Professional access of our API, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us</a> and be sure to select “Request Professional Access” in order to receive access with an increased rate limit of 100,000 calls/day we will need to verify the following:
-
-* Use of Edmunds API is in compliance with our [Terms of Service](/terms_of_service/) and our [Branding Guide](/api_branding_guide/)
-
-Applications are reviewed every 90 days. When your application is approved, your rate limit will be increased to 100,000 calls/day.<a name='sec-3'> </a> 
-
-[Back to top](#top)
-
 ### Available Resources
+
 {% include themes/twitter/api_overview/table_available_api.html %}
 
-Although access to these APIs is _free_, their _availability to developers_ varies based on the **access tier** to which the developer belongs. We currently offer  _four access tiers_:
-
-* **EXPLORATORY**: All developers and companies start exploring here.
-* **ENHANCED**: Increased rate limit to start building your application.
-* **PROFESSIONAL**: Increased rate limits to help your application grow.
-* **PARTNERS**: Developers working with Edmunds.com on strategic products and applications that include the Edmunds.com data and content. If you’d like to become an Edmunds API Partner, please <a href="https://tier3.wufoo.com/forms/q8wdmmf0iah3h4/" onclick="window.open(this.href,  null, 'height=1155, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">contact us </a>.
-
-Regardless of access tier, all developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-4'> </a>
+All developers using the Edmunds API need to **read** and **agree** to our [Terms of Service](/terms_of_service/).<a name='sec-3'> </a>
 
 [Back to top](#top)
  
@@ -116,7 +73,7 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 | Car Model Year | For a vehicle model, the calendar year designation assigned by the manufacturer to the annual version of that model |
 | Car Style      | A style is the specific version of a particular model. Each style offers different levels of equipment and a unique price point. Manufacturers have their own way of determining styles and these are not necessarily comparable across models. |
 
-[Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/). <a name='sec-5'> </a>
+[Here's a list of the complete Edmunds Glossary](http://www.edmunds.com/glossary/). <a name='sec-4'> </a>
 
 [Back to top](#top)
 
@@ -127,7 +84,7 @@ In the _Useful API Calls_ section below, we'll show you how to get both IDs in o
 3. We also *do not* have comprehensive coverage of vehicles which were sold with the intent for commercial use. 
 
 
-It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-6'> </a>
+It's also important to note that *our dataset goes all the way back to 1990 and not further*. So if you're looking for information on a 1981 DeLorean, you might be out of luck.<a name='sec-5'> </a>
 
 [Back to top](#top)
 
@@ -203,7 +160,7 @@ All API calls follow this format: _**{protocol}**://api.edmunds.com/**{endpoint}
 
 The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) which allows cross-domain requests to be made by JavaScript on a web page. Such "cross-domain" requests would otherwise be forbidden by web browsers, per the [same origin security policy](http://en.wikipedia.org/wiki/Same_origin_policy). CORS is supported by all modern web browsers, and a full list of browser support can be found [here](http://caniuse.com/cors).
 
-<a name='sec-7'> </a>
+<a name='sec-6'> </a>
 
 [Back to top](#top)
 
@@ -215,7 +172,7 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
 
 > https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&state=new&view=full
 
-<a name='sec-8'> </a>
+<a name='sec-7'> </a>
 
 [Back to top](#top)
 
@@ -246,7 +203,7 @@ When an error occurs, you should get the following response:
 		"moreInfoUrl": "http://developer.edmunds.com"
 	}
 	
-<a name='sec-9'> </a>
+<a name='sec-8'> </a>
 
 [Back to top](#top)
 
@@ -285,13 +242,13 @@ In the **response** of that call, you will find the following object:
 	
 The **id** key in this object is the _Style ID_.
 
-More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.<a name='sec-10'> </a>
+More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.<a name='sec-9'> </a>
 
 [Back to top](#top)
 
 ### SDKs and Code Samples
 
-Our [Javascript](https://github.com/EdmundsAPI/sdk-javascript) and [Python](https://github.com/EdmundsAPI/sdk-python) SDKs are a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-11'> </a>
+Our [Javascript](https://github.com/EdmundsAPI/sdk-javascript) and [Python](https://github.com/EdmundsAPI/sdk-python) SDKs are a great way to start integrating our API into your application _and_ work with many examples as well. For other SDKs and code samples, visit our [Github](https://github.com/EdmundsAPI/) home.<a name='sec-10'> </a>
 
 [Back to top](#top)
 

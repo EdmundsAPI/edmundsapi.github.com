@@ -15,9 +15,8 @@ level: 1
 * [Overview](#sec-1)
 * [Quick Start](#sec-2)
 * [Edmunds Inventory Link](#sec-3)
-* [Visibility Tiers](#sec-4)
-* [API Uses](#sec-5)
-* [Available Resources](#sec-6)
+* [API Uses](#sec-4)
+* [Available Resources](#sec-5)
 
 <a name='sec-1'> </a>
 
@@ -55,25 +54,13 @@ The information you need to compile this URL is available in the API response of
 
 [Back to top](#top)
 
-### Visibility Tiers
-
-Due to the nature of the inventory data, not all of it is available to the public, or even to strategic partners. Every endpoint has a section called **Response Format** in which each datapoint returned is described and its visibility called out. Our visibility tiers are as follows:
-
-1. **Edmunds:** This datapoint is visible to Edmunds developers
-2. **Partners:** This datapoint is visible to strategic partners. Your API Key has to be assigned as such.
-3. **Public:** This datapoint is visible to public partners (those who have their rate limit raised and apps verified for compliance with our TOS.) Your API Key has to be assigned as such.
-
-<a name='sec-5'> </a>
-
-[Back to top](#top)
-
 ### API Uses
 
 * Get all inventories within a certain zip code and radius
 * Get inventories by franchise id
 * Get inventories by style id
 
-<a name='sec-6'> </a>
+<a name='sec-5'> </a>
 
 [Back to top](#top)
 

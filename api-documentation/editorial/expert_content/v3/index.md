@@ -5,7 +5,7 @@ title_active_left_menu: 'Expert Content'
 title_parent: Api documentation
 
 amount_version: 1
-spec: articles
+spec: expert_content
 version: v3
 api: editorial
 dropdown-link: 'Select an Endpoint'

@@ -6,7 +6,7 @@ title_parent: Api documentation
 
 amount_version: 1
 title-endpoint: 'Get Expert content for make/model/year'
-spec: articles
+spec: expert_content
 version: v3
 api: editorial
 dropdown-link: 'api/editorial/v3/makes/{make}/models/{models}/years/{year}/expertcontent'
