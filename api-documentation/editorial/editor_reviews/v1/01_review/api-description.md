@@ -23,7 +23,7 @@ number: 1
 ### Description
 
 This resource offers access to the Edmunds Editor Reviews including the pros, cons, and Edmunds Says.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
+Make sure to see the [*Special Requirements*](/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
 ### URL
 

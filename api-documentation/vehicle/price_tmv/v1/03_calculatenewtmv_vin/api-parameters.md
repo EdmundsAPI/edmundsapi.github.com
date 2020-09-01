@@ -26,6 +26,6 @@ number: 2
 | {vin} 	 | The new vehicle VIN 					 | 					 | 				 | Yes		|
 | msrp       | Vehicle MSRP in dollars               | e.g. 33000        |               | Yes      |
 | zip        | Zip code		                         | e.g. 90404        |               | Yes      |
-| color      | Vehicle color	                     | See [list of colors](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/03_calculatenewtmv_vin/api-description.html)|   | No       |
+| color      | Vehicle color	                     | See [list of colors](/api-documentation/vehicle/price_tmv/v1/03_calculatenewtmv_vin/api-description.html)|   | No       |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |

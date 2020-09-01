@@ -22,7 +22,7 @@ overview: page_version
 
 ### Endpoints
 
-* [Get the Vehicle Color Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v2/01_color_id/api-description.html)
+* [Get the Vehicle Color Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v3/01_color_id/api-description.html)
 
 ### Option Categories
 

@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 Get the True Cost to Own® total for a **used** car.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tco/v1/#special_requirements) for displaying the Edmunds True Cost to Own®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tco/v1/#special_requirements) for displaying the Edmunds True Cost to Own®.
 
 ### URL
 

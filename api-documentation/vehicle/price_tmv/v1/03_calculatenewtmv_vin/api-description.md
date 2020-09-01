@@ -32,7 +32,7 @@ Get the TMV® price and dealer cash/consumer incentives for a specific *NEW* car
 | &bull; dark-green | &bull; light-brown | &bull; red				| 	|
 | &bull; dark-red   | &bull; light-green | &bull; silver			| 	|
 
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 

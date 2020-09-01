@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 Total Cash Price is the sum of the vehicle's **Private Party TMV®** price in **CLEAN** condition *plus* **typically equipped options**, and base tax and fees assessed by your state.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 
