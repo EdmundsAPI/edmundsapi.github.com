@@ -3,7 +3,7 @@ require 'test/unit'
 module Test
   class TestCName < Test::Unit::TestCase
 
-    PRODUCTION_REPOSITORY = "edmundsapi.github.com"
+    PRODUCTION_REPOSITORY = "developer.edmunds.com"
 
     def test_cname
       repository = `git remote -v`
@@ -13,7 +13,7 @@ module Test
       file.close
 
       if repository.include? PRODUCTION_REPOSITORY
-        verify = cname == "edmundsapi-preprod.github.io"
+        verify = cname == "developer.edmunds.com"
       else
         verify = repository.include? cname
       end
