@@ -4,7 +4,7 @@ title : 'Get Color Details by ID'
 title_active_left_menu: "Spec: Colors and Options"
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 title-endpoint: 'Get Colors Details by ID v3'
 spec: spec_colors_and_options
 version: v3

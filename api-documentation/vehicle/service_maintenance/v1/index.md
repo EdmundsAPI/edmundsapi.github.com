@@ -22,9 +22,7 @@ overview: page_version
 
 ### Endpoints
 
-* [Get Maintenance Details with ID](/api-documentation/vehicle/service_maintenance/v1/01_action/api-description.html)
 * [Get Maintenance Schedule for a Vehicle with Model Year ID](/api-documentation/vehicle/service_maintenance/v1/02_actionrepository/findbymodelyearid/api-description.html)
-* [Get a List of Model Year IDs with Available Maintenance Schedule Info](/api-documentation/vehicle/service_maintenance/v1/02_actionrepository/findmodelyearidswithmaint/api-description.html)
 
 ### Frequency IDs
 

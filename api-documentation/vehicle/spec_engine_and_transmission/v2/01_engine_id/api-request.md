@@ -4,7 +4,7 @@ title : 'Get Engine Details by ID'
 title_active_left_menu: "Spec: Engine and Transmission"
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Engine Details by ID'
 spec: spec_engine_and_transmission
 version: v2

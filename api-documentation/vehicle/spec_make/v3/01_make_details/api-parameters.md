@@ -4,7 +4,7 @@ title : 'Get details for a specific car make/brand v3'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 title-endpoint: 'v3/{make}'
 spec: spec_make
 version: v3

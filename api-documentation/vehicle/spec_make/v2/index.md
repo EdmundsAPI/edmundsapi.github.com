@@ -4,7 +4,7 @@ title : 'Spec: Make'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 spec: spec_make
 version: v2
 api: vehicle
@@ -24,8 +24,6 @@ A vehicle <i>make</i> is either the name of its manufacturer or, if the manufact
 
 ### Endpoints
 
-* [**Get Total Count of Car Makes**](/api-documentation/vehicle/spec_make/v2/03_makes_count/api-description.html): Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
-
 * [**Get Details on a Specific Car Make**](/api-documentation/vehicle/spec_make/v2/02_make_details/api-description.html): Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
 
 * [**Get a List of Car Makes**](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html): You can get the entire list of car makes or use some basic filters to return the array of car makes you're interested in.
@@ -41,7 +39,3 @@ These three endpoints provide all the necessary data.
 #### Example 2: Get information on _USED_ Hondas
 
 > http://api.edmunds.com/api/vehicle/v2/honda?fmt=json&state=used&api_key={vehicle api key}
-
-#### Example 3: Get the total number of car makes that are listed as __New__
-
-> http://api.edmunds.com/api/vehicle/v2/makes/count?fmt=json&state=new&api_key={vehicle api key}

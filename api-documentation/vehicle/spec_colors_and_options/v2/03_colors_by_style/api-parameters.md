@@ -4,7 +4,7 @@ title : 'Get All Colors for a Car Style'
 title_active_left_menu: "Spec: Colors and Options"
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 title-endpoint: 'Get All Colors for a Car Style'
 spec: spec_colors_and_options
 version: v2

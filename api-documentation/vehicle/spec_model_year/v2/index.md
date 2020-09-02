@@ -4,7 +4,7 @@ title : 'Spec: Model/Year'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 spec: spec_model_year
 version: v2
 api: vehicle
@@ -26,8 +26,6 @@ overview: page_version
 
 * [**Get Details on a Specific Car Make/Model/Year**](/api-documentation/vehicle/spec_model_year/v2/02_year_details/api-description.html): Returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
 
-* [**Get Total Count of Model Years for a Car Make/Model**](/api-documentation/vehicle/spec_model_year/v2/03_years_count/api-description.html): Get the total number of model years of a specific car make/model. You can use filters to get subtotals (e.g. give me the total number of **used** **1999** model years for a car make/model).
-
 These three endpoints provide all the necessary data points.
 
 ### Examples
@@ -39,9 +37,5 @@ These three endpoints provide all the necessary data points.
 #### Example 2: Get style details for all 2009 Honda Accords
 
 > https://api.edmunds.com/api/vehicle/v2/honda/accord/2009?fmt=json&api_key={api key}
-	
-#### Example 3: Get the total number of car model years for Acura MDXs that are listed as ***new***
-
-> https://api.edmunds.com/api/vehicle/v2/acura/mdx/years/count?fmt=json&state=new&api_key={api key}
 
 

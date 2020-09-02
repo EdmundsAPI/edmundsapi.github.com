@@ -4,7 +4,7 @@ title : 'Get Style Details for a Car Make/Model/Year'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 title-endpoint: 'Get Style Details for a Car Make/Model/Year v3'
 spec: spec_model_year
 version: v3

@@ -4,7 +4,7 @@ title : 'Spec: Equipment'
 title_active_left_menu: "Spec: Equipment"
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: spec_equipment
 version: v2
 api: vehicle
@@ -25,7 +25,6 @@ overview: page_version
 ### Endpoints
 
 * [Get Vehicle Equipment for a Car Style](/api-documentation/vehicle/spec_equipment/v2/01_by_style/api-description.html)
-* [Get the Equipment Details by the Equipment ID](/api-documentation/vehicle/spec_equipment/v2/02_by_id/api-description.html)
 
 ### Equipment Response Formats
 

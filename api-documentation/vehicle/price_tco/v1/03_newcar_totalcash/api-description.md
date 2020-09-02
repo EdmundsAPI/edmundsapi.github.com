@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 The Total Cash Price is the vehicle's True Market Value® (TMV®) price *plus* typically equipped options, destination charge, base tax and fees assessed by your state, and, if applicable, gas guzzler tax; less any widely available manufacturer-to-customer cash rebates. (However, we do not account for other types of cash rebates or incentives because of the variability of those offers and their eligibility requirements.)
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 

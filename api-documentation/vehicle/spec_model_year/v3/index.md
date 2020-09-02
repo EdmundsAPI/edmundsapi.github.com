@@ -4,7 +4,7 @@ title : 'Spec: Model/Year'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 3
+amount_version: 23
 spec: spec_model_year
 version: v3
 api: vehicle

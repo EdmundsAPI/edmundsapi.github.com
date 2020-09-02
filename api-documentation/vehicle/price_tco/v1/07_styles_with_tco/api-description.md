@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 Get a list of **all car styles** that have a True Cost to Own® value.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tco/v1/#special_requirements) for displaying the Edmunds True Cost to Own®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tco/v1/#special_requirements) for displaying the Edmunds True Cost to Own®.
 
 ### URL
 

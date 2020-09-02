@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 Get the TMV® price for a vehicle with ***typically equipped options*** installed. The vehicle style ID and zip code are required.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/price_tmv/v1/) for displaying the Edmunds True Market Value®.
 
 ### URL
 

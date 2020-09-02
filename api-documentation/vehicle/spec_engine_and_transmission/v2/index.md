@@ -4,7 +4,7 @@ title : 'Spec: Engine and Transmission'
 title_active_left_menu: "Spec: Engine and Transmission"
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: spec_engine_and_transmission
 version: v2
 api: vehicle
@@ -24,8 +24,7 @@ overview: page_version
 
 * [Get the Engine Detail by ID](/api-documentation/vehicle/spec_engine_and_transmission/v2/01_engine_id/api-description.html)
 * [Get the Vehicle Engines for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/02_engines_by_style/api-description.html)
-* [Get Transmission Details by ID](/api-documentation/vehicle/spec_engine_and_transmission/v2/03_transmission_id/api-description.html)
-* [Get the Vehicle Transmissions for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/04_transmissions_by_style/api-description.html)
+* [Get the Vehicle Transmissions for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/03_transmissions_by_style/api-description.html)
 
 ### Engine Details
 

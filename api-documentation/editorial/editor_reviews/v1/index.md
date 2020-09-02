@@ -19,7 +19,7 @@ overview: page_version
 	This resource offers access to the Edmunds Editor Reviews including the pros, cons, Edmunds Says.
 </div>
 
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
+Make sure to see the [*Special Requirements*](/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
 ### Endpoint
 

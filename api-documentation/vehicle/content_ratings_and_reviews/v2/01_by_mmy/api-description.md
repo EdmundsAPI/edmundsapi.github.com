@@ -4,7 +4,7 @@ title : 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
 title_active_left_menu: 'Content Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get Car Consumer Ratings and Reviews by Car Make/Model/Year'
 spec: content_ratings_and_reviews
 version: v2
@@ -22,7 +22,7 @@ number: 1
 ### Description
 
 Get the consumer ratings and reviews for a specific vehicle by its make/model/year information.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/vehicle/content_ratings_and_reviews/v2/) for displaying vistitor vehicle ratings and reviews.
+Make sure to see the [*Special Requirements*](/api-documentation/vehicle/content_ratings_and_reviews/v2/) for displaying vistitor vehicle ratings and reviews.
 
 ### URL
 

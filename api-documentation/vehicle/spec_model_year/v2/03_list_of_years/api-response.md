@@ -4,7 +4,7 @@ title : 'Get a List of Car Model Years for a Specific Car Make/Model'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 23
 title-endpoint: 'Get Model Year Details for a Car Make/Model'
 spec: spec_model_year
 version: v2

@@ -22,7 +22,7 @@ overview: page_version
 
 ### Endpoint
 
-* [Get a Car's Photos by its Style ID](/api-documentation/vehicle/media_photos/v1/01_photos_by_styleid/api-description.html)
+* [Get a Car's Photos by its Style ID](/api-documentation/media/photos/v1/01_photos_by_styleid/api-description)
 
 <div class="info-message">
 <p> 

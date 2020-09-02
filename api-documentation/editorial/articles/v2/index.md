@@ -20,7 +20,7 @@ overview: page_version
 	Get articles written by the Edmunds staff. This is done either by article category and/or by the vehicle's make/model/year.
 </div>
 
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
+Make sure to see the [*Special Requirements*](/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
 ### Endpoint
 

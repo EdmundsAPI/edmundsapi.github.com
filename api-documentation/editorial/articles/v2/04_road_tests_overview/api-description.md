@@ -23,7 +23,7 @@ number: 1
 ### Description
 
 Get road-tests articles written by the Edmunds staff. This is done by make name, model name and year.
-Make sure to see the [*Special Requirements*](http://developer.edmunds.com/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
+Make sure to see the [*Special Requirements*](/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
 ### URL
 
