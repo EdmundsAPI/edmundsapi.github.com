@@ -1,0 +1,87 @@
+<style>
+ul.nav.nav-tabs li.active a, ul.nav.nav-tabs li.active a:hover {
+    color: white !important;
+    background-color: #444444;
+    border-radius: 0;
+    border: 1px solid #444444;
+}
+
+ul.nav.nav-tabs li a {
+    font-weight: bold;
+    color: #444444;
+}
+
+ul.nav.nav-tabs li a:hover {
+    font-weight: bold;
+    color: #90be3f !important;
+}
+
+.transparent-table {
+    margin: 1em 0 1em 0;
+}
+
+.transparent-table tbody tr, .transparent-table tbody tr:hover td {
+    background-color: transparent !important;
+}
+
+.transparent-table tbody tr td {
+    text-align: left;
+    padding: 0px;
+    border: 0px;
+}
+
+.row-fluid hr {
+    border-bottom: 1px solid #ddd;
+}
+
+</style>
+<h3>Use retrieved content elements</h3>
+<p><a name="top"></a></p>
+<div class="row-fluid" style="margin-bottom: 1em;">
+    <p>
+        Once the content elements have been retrieved, the data can be integrated into your website. The following sections describe how the content might be used:
+    </p>
+    <ul>
+        <li><a href="#review_summary">Review summary</a></li>
+        <li><a href="#vehicle_scorecard">Vehicle scorecard</a></li>
+        <li><a href="#pros_cons">Pros and Cons</a></li>
+        <li><a href="#safety_information">Safety information</a></li>
+        <li><a href="#youTube_video">YouTube video embed</a></li>
+        <li><a href="#dealership_rating_reviews">Dealership rating and reviews</a></li>
+    </ul>
+
+    {% include themes/twitter/dealership_api_program/review_summary.html %}
+
+    <a href="#top">Back to top</a>
+
+    <hr>
+
+    {% include themes/twitter/dealership_api_program/vehicle_scorecard.html %}
+
+    <a href="#top">Back to top</a>
+
+    <hr>
+
+    {% include themes/twitter/dealership_api_program/pros_cons.html %}
+
+    <a href="#top">Back to top</a>
+
+    <hr>
+
+    {% include themes/twitter/dealership_api_program/safety_information.html %}
+
+    <a href="#top">Back to top</a>
+
+    <hr>
+
+    {% include themes/twitter/dealership_api_program/youTube_video.html %}
+
+    <a href="#top">Back to top</a>
+
+    <hr>
+
+    {% include themes/twitter/dealership_api_program/dealership_rating_reviews.html %}
+
+    <a href="#top">Back to top</a>
+
+</div>

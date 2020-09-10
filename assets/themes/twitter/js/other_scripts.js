@@ -3,14 +3,14 @@
 $(function(){
 	if ($('#faq-1').length > 0) {
  		function scrollTo(element){
-			var elementClick = element.attr("href");		
-			var cutElementClick = elementClick.substring(1);		
-			var destination = $('[name="'+ cutElementClick +'"]').offset().top;		
-			$("html, body").animate({ scrollTop: destination}, 500 );		
+			var elementClick = element.attr("href");
+			var cutElementClick = elementClick.substring(1);
+			var destination = $('[name="'+ cutElementClick +'"]').offset().top;
+			$("html, body").animate({ scrollTop: destination}, 500 );
 			return false;
 		};
- 
-	  	$("a").on('click', function (element) { 
+
+	  	$("a").on('click', function (element) {
 	   		var thisLink = $(this);
 	   		scrollTo(thisLink);
 	  	});
@@ -38,7 +38,7 @@ if ($('.carousel-indicators').length > 0) {
 // WIDGETS AND APPS - END
 
 if ($('.carousel').length > 0) {
-	
+
     $('.carousel').carousel({
 	    pause: true,
 		interval: false
@@ -58,7 +58,7 @@ if ($('#myTab').length > 0) {
     $('#myTab a').click(function (e) {
 	    e.preventDefault();
 	    $(this).tab('show');
-		
+
 	    //moving arrow
 		if ($('.arrow').length > 0) {
 	    	var hrefLink = $(this).attr('href');
@@ -238,7 +238,7 @@ $(function() {
 			if(rightIndex === -1) {
 				$nextShadow.fadeIn(600);
 				$pagerRight[0].style.display = "";
-			}			
+			}
 			if(leftIndex === -1) {
 				$prevShadow.fadeIn(600);
 				$pagerLeft[0].style.display = "";
@@ -256,7 +256,7 @@ $(function() {
 			rightCarousel.to(toStep + 1);
 		});
 
-		// Markers and popups 
+		// Markers and popups
 		$('.inner-marker').on('click', function(event) {
 			var $el = $(this).parent(),
 				markerNumber = $el.data('marker'),
@@ -271,7 +271,7 @@ $(function() {
 				var thisNumber = $(this).data('marker'),
 					thisStep = $(this).data('step');
 				if(thisNumber === markerNumber) {
-					if(thisStep === curStep ) {					
+					if(thisStep === curStep ) {
 						$(this).fadeIn(400);
 					}
 				}
@@ -339,10 +339,10 @@ $(function() {
 			else if($(this).hasClass('gray')) {
 				selectedColor = 'gray';
 			}
-	
+
 			$('.screen-bgnd').removeClass('yellow green gray').addClass(selectedColor);
 		});
-		interval(timeInterval); 
+		interval(timeInterval);
 	}
     $('.btn-glance-selector').on('click', function() {
         var selectedGlance;
@@ -371,7 +371,7 @@ $(function() {
 // WIDGETS - END
 
 $(function(){
-	//Set default active links top menu 
+	//Set default active links top menu
 	function acrivation_link(){
 		//top menu
 		var linkHeaderMenu = $('.headerMenu').find('a');
