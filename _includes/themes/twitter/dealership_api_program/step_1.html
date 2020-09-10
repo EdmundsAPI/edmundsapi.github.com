@@ -1,0 +1,62 @@
+<h3>Construct a correctly formatted URL to retrieve content object</h3>
+<div class="row-fluid">
+    <p><b>Properly formatted URL:</b></p>
+    <blockquote>
+        https://api.edmunds.com/api/editorial/v3/makes/<strong>{make}</strong>/models/<strong>{model}</strong>/years/<strong>{year}</strong>/expertcontent?api_key=<strong>{api key}</strong>
+    </blockquote>
+    <p><b>The tokens in yellow should be replaced with actual values for the content you are looking for:</b></p>
+    <table>
+        <thead>
+        <tr>
+            <th style="text-align: left">Parameter</th>
+            <th style="text-align: left">Description</th>
+            <th style="text-align: left">Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="text-align: left"><code>{make}</code></td>
+            <td style="text-align: left">make of the vehicle</td>
+            <td style="text-align: left">honda</td>
+        </tr>
+        <tr>
+            <td style="text-align: left"><code>{model}</code></td>
+            <td style="text-align: left">model of the vehicle</td>
+            <td style="text-align: left">civic</td>
+        </tr>
+        <tr>
+            <td style="text-align: left"><code>{year}</code></td>
+            <td style="text-align: left">model year of the vehicle</td>
+            <td style="text-align: left">2019</td>
+        </tr>
+        <tr>
+            <td style="text-align: left"><code>{api key}</code></td>
+            <td style="text-align: left">custom api key provided for your dealership</td>
+            <td style="text-align: left">ar355ajjgkz5pxxv5g3dfakx</td>
+        </tr>
+        </tbody>
+    </table>
+    <blockquote style="margin-bottom: 0px;">
+        https://api.edmunds.com/api/editorial/v3/makes/mercedes-benz/models/amg-gt/years/2020/expertcontent?api_key=ar355ajjgkz5pxxv5g3dfakx
+    </blockquote>
+    <p><i>Example URL to retrieve content for a 2020 Mercedes-Benz AMG GT (note: replace the api key value with your dealership api key that was provided to get this sample URL to work)</i></p>
+    <div class="idea-message" style="margin-top: 0px">
+        <p>The correct values to use for <code>{make}</code> (e.g., Honda = “honda”) and <code>{model}</code> (e.g., Civic = “civic”) can generally be intuited but, if you are uncertain about the correct value to use, you can look up the precise value for any make and model by using the following URL which returns the “niceName” values for make & model:</p>
+        <p>URL for getting the correct makes and models values for a given year:</p>
+        <blockquote style="margin-bottom: 0px;">https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&year={year}&api_key={api key}</blockquote>
+        <p><i>… where {year} represents the year in which you would like to see all active models of a make:</i></p>
+        <table style="margin: 1em 0 0 0;">
+            <tbody>
+            <tr style="background-color: #ECECEC;">
+                <td style="text-align: left; padding: 0px" class="span4"><img src="/assets/themes/twitter/img/getting_make_example.png"></td>
+                <td style="text-align: left" class="span8">
+                    <p>Snippet of the response returned when using <code>2020</code> for the <code>{year}</code> token showing the correct niceName values for:</p>
+                    <p><code>mercedez-benz</code> <b>(make)</b></p>
+                    <p><code>a-class</code> <b>(model)</b></p>
+                    <p><code>amg-gt</code> <b>(model)</b></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

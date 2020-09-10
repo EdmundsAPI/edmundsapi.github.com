@@ -1,0 +1,73 @@
+{% comment %}<!-- start title-page.html -->{% endcomment %}
+<div class="container">
+    <div class="row-fluid h1Title">
+        <div class="span12"><h1 style="padding-left: 0px">{{ page.title }}</h1></div>
+        <span id="h1Title">{{ page.title_parent }}</span>
+    </div>
+</div>
+{% comment %}<!-- end title-page.html -->{% endcomment %}
+
+
+<div class="container">
+    <h3>Accessing Edmunds content with Dealership API key</h3>
+    <p>
+        To access Edmunds content, REST APIs are used to retrieve a JSON data object that contains
+        a rich set of content elements that can be parsed and integrated into your website. The APIs are
+        located at a web address that begins with <code>https://api.edmunds.com/</code> and ends with a text string
+        containing the unique API key provided for your dealership, e.g,
+        <code>&api_key=ar355ajjgkz5pxxv5g3dfakx</code>. It is important that every URL you construct contains
+        this key string otherwise no content will be returned.
+        The process for using the API is as follows:
+    </p>
+</div>
+{% comment %}<!-- start filter-showcase.html -->{% endcomment %}
+<div id="wrapperWidget" class="step1">
+
+    <div id="myCarousel" class="carousel slide">
+        <div class="container">
+            <header class="headerWidgets" style="border-top: 1px solid #CCC">
+                <ul class="carousel-indicators container" style="margin-top: 10px">
+                    <li style="width: 25%" data-target="#myCarousel" data-slide-to="0" class="active text-center"><a href="#step1">STEP #1</a><img src="/assets/themes/twitter/img/arrow_breadcr_homepage.png" class="separator text-center"></li>
+                    <li style="width: 25%" data-target="#myCarousel" data-slide-to="1" class="text-center"><a href="#step2">STEP #2</a><img src="/assets/themes/twitter/img/arrow_breadcr_homepage.png" class="separator text-center"></li>
+                    <li style="width: 25%" data-target="#myCarousel" data-slide-to="2" class="text-center"><a href="#step3">STEP #3</a><img src="/assets/themes/twitter/img/arrow_breadcr_homepage.png" class="separator text-center"></li>
+                    <li style="width: 25%" data-target="#myCarousel" data-slide-to="3" class="text-center"><a href="#terms-of-use">TERMS OF USE</a></li>
+                </ul>
+                <span class="arrow"></span>
+            </header>
+
+        </div>
+        {% comment %}<!-- Carousel items -->{% endcomment %}
+        <div class="carousel-inner slider-content">
+
+            {% comment %}<!-- STEP 1 -->{% endcomment %}
+            <div class="active item">
+                <div class="slide1 container active">
+                    {% include themes/twitter/dealership_api_program/step_1.html %}
+                </div>
+            </div>
+
+            {% comment %}<!-- STEP 2 -->{% endcomment %}
+            <div class="item">
+                <div class="slide2 container">
+                    {% include themes/twitter/dealership_api_program/step_2.html %}
+                </div>
+            </div>
+
+            {% comment %}<!-- STEP 3 -->{% endcomment %}
+            <div class="item">
+                <div class="slide3 container">
+                    {% include themes/twitter/dealership_api_program/step_3.html %}
+                </div>
+            </div>
+
+            {% comment %}<!-- TERMS OF USE -->{% endcomment %}
+            <div class="item">
+                <div class="slide4 container">
+                    {% include themes/twitter/dealership_api_program/terms_of_use.html %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

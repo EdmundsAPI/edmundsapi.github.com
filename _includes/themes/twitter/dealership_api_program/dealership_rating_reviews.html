@@ -1,0 +1,59 @@
+<h3>Dealership rating and reviews</h3>
+<a name="dealership_rating_reviews"></a>
+<p><b>The dealer ratings and reviews integration will allow you to pull Edmunds’ rating for a dealership along with it’s reviews.</b></p>
+<blockquote>
+    https://api.edmunds.com/v1/api/drrrepository/getdrrbydealerid?dealerid=<strong>{dealership ID}</strong>&fmt=json&api_key=<strong>{api key}</strong>
+</blockquote>
+<p><b>API Code Example:</b></p>
+<div class="language-plaintext highlighter-rouge">
+    <div class="highlight">
+        <pre class="prettyprint linenums prettyprinted" style="padding-bottom: 0px;">
+            <ol class="linenums" style="line-height: 0;">
+                <li class="L0"><code><span class="tag">&lt;html&gt;</span></code></li>
+                <li class="L1"><code><span class="tag">&lt;head&gt;</span></code></li>
+                <li class="L2"><code><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">utf-8</span><span class="tag">&gt;</span></code></li>
+                <li class="L3"><code><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">Edmunds API Example</span><span class="tag">&lt;/title&gt;</span></code></li>
+                <li class="L4"><code><span class="tag">&lt;/head&gt;</span></code></li>
+                <li class="L5"><code><span class="tag">&lt;body&gt;</span></code></li>
+                <li class="L6"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"results-body"</span><span class="tag">&gt;&lt;/div&gt;</span></code></li>
+                <li class="L7"><code><span class="tag">&lt;script&gt;</span></code></li>
+                <li class="L8"><code><span class="pln">window</span><span class="pun">.</span><span class="pln">sdkAsyncInit </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li>
+                <li class="L9"><code><span class="pln">  </span><span class="com">// Instantiate the SDK</span></code></li>
+                <li class="L0"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> res </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> EDMUNDSAPI</span><span class="pun">(</span><span class="str">'YOUR API KEY'</span><span class="pun">);</span></code></li>
+                <li class="L1"><code><span class="pln">  </span><span class="com">// Optional parameters</span></code></li>
+                <li class="L2"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> options </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li>
+                <li class="L3"><code><span class="pln">    </span><span class="str">"dealerid"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"26811"</span><span class="pun">,</span></code></li>
+                <li class="L4"><code><span class="pln">    </span><span class="str">"limit"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0,5"</span></code></li>
+                <li class="L5"><code><span class="pln">  </span><span class="pun">};</span></code></li>
+                <li class="L6"><code></code></li>
+                <li class="L7"><code><span class="pln">  </span><span class="com">// Callback function to be called when the API response is returned</span></code></li>
+                <li class="L8"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> success</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li>
+                <li class="L9"><code><span class="pln">    </span><span class="kwd">var</span><span class="pln"> body </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">'results-body'</span><span class="pun">);</span></code></li>
+                <li class="L0"><code><span class="pln">    body</span><span class="pun">.</span><span class="pln">innerHTML </span><span class="pun">=</span><span class="pln"> </span><span class="str">"This dealer's name is : "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">dealerName</span><span class="pun">;</span></code></li>
+                <li class="L1"><code><span class="pln">  </span><span class="pun">}</span></code></li>
+                <li class="L2"><code></code></li>
+                <li class="L3"><code><span class="pln">  </span><span class="com">// Oops, Houston we have a problem!</span></code></li>
+                <li class="L4"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> fail</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li>
+                <li class="L5"><code><span class="pln">    console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">data</span><span class="pun">);</span></code></li>
+                <li class="L6"><code><span class="pln">  </span><span class="pun">}</span></code></li>
+                <li class="L7"><code></code></li>
+                <li class="L8"><code><span class="pln">  </span><span class="com">// Fire the API call</span></code></li>
+                <li class="L9"><code><span class="pln">  res</span><span class="pun">.</span><span class="pln">api</span><span class="pun">(</span><span class="str">'/v1/api/drrrepository/getdrrbydealerid'</span><span class="pun">,</span><span class="pln"> options</span><span class="pun">,</span><span class="pln"> success</span><span class="pun">,</span><span class="pln"> fail</span><span class="pun">);</span></code></li>
+                <li class="L0"><code><span class="pln">  </span><span class="com">// Additional initialization code such as adding Event Listeners goes here</span></code></li>
+                <li class="L1"><code><span class="pun">};</span></code></li>
+                <li class="L2"><code></code></li>
+                <li class="L3"><code><span class="com">// Load the SDK asynchronously</span></code></li>
+                <li class="L4"><code><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">,</span><span class="pln"> s</span><span class="pun">,</span><span class="pln"> id</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li>
+                <li class="L5"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> js</span><span class="pun">,</span><span class="pln"> sdkjs </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="pln">s</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">];</span></code></li>
+                <li class="L6"><code><span class="pln">  </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">d</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="pln">id</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="kwd">return</span><span class="pun">;}</span></code></li>
+                <li class="L7"><code><span class="pln">  js </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="pln">s</span><span class="pun">);</span><span class="pln"> js</span><span class="pun">.</span><span class="pln">id </span><span class="pun">=</span><span class="pln"> id</span><span class="pun">;</span></code></li>
+                <li class="L8"><code><span class="pln">  js</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">"path/to/sdk/file"</span><span class="pun">;</span></code></li>
+                <li class="L9"><code><span class="pln">  sdkjs</span><span class="pun">.</span><span class="pln">parentNode</span><span class="pun">.</span><span class="pln">insertBefore</span><span class="pun">(</span><span class="pln">js</span><span class="pun">,</span><span class="pln"> sdkjs</span><span class="pun">);</span></code></li>
+                <li class="L0"><code><span class="pun">}(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'script'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'edmunds-jssdk'</span><span class="pun">));</span></code></li>
+                <li class="L1"><code><span class="tag">&lt;/script&gt;</span></code></li>
+                <li class="L2"><code><span class="tag">&lt;/body&gt;</span></code></li>
+                <li class="L3"><code><span class="tag">&lt;/html&gt;</span></code></li>
+            </ol>
+        </pre>
+    </div>
+</div>
