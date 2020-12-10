@@ -4,7 +4,7 @@ title : 'Find Repairshops count'
 title_active_left_menu: Details and Location
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 125
 title-endpoint: 'Find Repairshops count'
 spec: details_and_location
 version: v2

@@ -67,5 +67,6 @@ The Dealer API has two resources:
 |:------------------|:--------------------------------------|
 | [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/) | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
 | [Dealer Details](/api-documentation/dealer/details_and_location/v2/) | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |
+| [Dealer Franchises Details](/api-documentation/dealer/details_and_location/v5/) | This is where you can get dealerships' name, location, operating hours, contact information,franchises etc. by zip code and optionally the cars they sell. |
 
 [Back to top](#top)

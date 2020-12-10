@@ -18,6 +18,10 @@
 						{% elsif page.amount_version == 23 %}
 							<a class="tab {% if page.version == 'v3' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v3/">v3</a>
 							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+						{% elsif page.amount_version == 125 %}
+							<a class="tab {% if page.version == 'v5' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v5/">v5</a>
+							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
+							<a class="tab {% if page.version == 'v1' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v1/">v1</a>
 						{% elsif page.amount_version == 3 %}
 							<a class="tab {% if page.version == 'v3' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v3/">v3</a>
 							<a class="tab {% if page.version == 'v2' %} active{% endif %}" href="{{ PATH }}/api-documentation/{{ page.api }}/{{ page.spec }}/v2/">v2</a>
