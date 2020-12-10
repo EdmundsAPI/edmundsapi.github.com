@@ -4,7 +4,7 @@ title : 'Get TMV® Price for a Used Car'
 title_active_left_menu: 'Price: True Market Value'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Get TMV® Price for a Used Car'
 spec: price_tmv
 version: v1

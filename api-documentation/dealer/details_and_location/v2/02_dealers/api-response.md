@@ -4,7 +4,7 @@ title : 'Find Rooftop Dealers by zipcode'
 title_active_left_menu: Details and Location
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 125
 title-endpoint: 'Find Rooftop Dealers by zipcode'
 spec: details_and_location
 version: v2

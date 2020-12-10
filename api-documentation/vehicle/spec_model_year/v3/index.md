@@ -17,7 +17,7 @@ overview: page_version
 ---
 
 <div class="info-message">
-  You can get model years with styles for a specific Car Make/Model with pagination:
+  You can get model years for a specific Car Make/Model with pagination:
 </div>
 
 ### Endpoints
@@ -26,15 +26,18 @@ overview: page_version
 
 * [**Get Details on a Specific Car Make/Model/Year**](/api-documentation/vehicle/spec_model_year/v3/02_year_details/api-description.html): Returns relevant information for a specific car make/model/year, including the **car styles and trims**. The information can also be narrowed down with filters.
 
+* [**Get A List of Model Years via Different Filters**](/api-documentation/vehicle/spec_model_year/v3/03_list_of_model_years/api-description.html): Returns relevant information about model years based on filters 
+
 ### Examples
 
 #### Example 1: Get model years and style details for all 2011 Lexus RX-350s
 
 > https://api.edmunds.com/api/vehicle/v3/lexus/rx350/years?year=2011&api_key={api key}
 
-#### Example 2: Get style details for all 2009 Honda Accords
+#### Example 2: Get model year details for all 2009 Honda Accords
 
 > https://api.edmunds.com/api/vehicle/v3/honda/accord/2009?api_key={api key}
 
+#### Example 3: Get a list of Model Years for all Honda Accords
 
-
+> https://api.edmunds.com/api/vehicle/v3/modelYears?api_key={api key}&makeNiceName=honda&modelNiceName=accord

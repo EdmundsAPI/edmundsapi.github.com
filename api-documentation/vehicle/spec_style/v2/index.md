@@ -4,7 +4,7 @@ title : 'Spec: Style'
 title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 23
 spec: spec_style
 version: v2
 api: vehicle

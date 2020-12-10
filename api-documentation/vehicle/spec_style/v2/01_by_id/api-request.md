@@ -4,7 +4,7 @@ title : 'Get Car Style Details by Car Style ID'
 title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 23
 title-endpoint: 'Get Car Style Details by Car Style ID'
 spec: spec_style
 version: v2

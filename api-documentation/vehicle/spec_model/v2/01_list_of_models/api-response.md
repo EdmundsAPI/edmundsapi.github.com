@@ -4,7 +4,7 @@ title : 'Get List of Car Models for a Car Make'
 title_active_left_menu: 'Spec: Model'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 23
 title-endpoint: 'Get List of Car Models for a Car Make'
 spec: spec_model
 version: v2

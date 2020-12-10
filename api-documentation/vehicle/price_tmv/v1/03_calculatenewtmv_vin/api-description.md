@@ -4,7 +4,7 @@ title : 'Get TMV® Price for a New Car by MSRP and VIN'
 title_active_left_menu: 'Price: True Market Value'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Get TMV® Price for a New Car by MSRP and VIN'
 spec: price_tmv
 version: v1

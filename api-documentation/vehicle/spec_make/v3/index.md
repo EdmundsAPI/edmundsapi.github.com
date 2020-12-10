@@ -26,7 +26,9 @@ A vehicle <i>make</i> is either the name of its manufacturer or, if the manufact
 
 * [**Get Details on a Specific Car Make**](/api-documentation/vehicle/spec_make/v3/01_make_details/api-description.html): Same as the first endpoint but this one returns relevant information for a specific car make. The information can also be narrowed down with filters.
 
-* [**Get Total Count of Car Makes**](/api-documentation/vehicle/spec_make/v3/02_makes_count/api-description.html): Get the total number of car makes. You can use filters to get subtotals (e.g. give me the total number of __new__ cars)
+* [**Get Total Count of Car Makes**](/api-documentation/vehicle/spec_make/v3/02_makes_count/api-description.html): Get the total number of car makes.
+
+* [**Get A List of Makes**](/api-documentation/vehicle/spec_make/v3/03_list_of_makes/api-description.html): Returns a list of makes based on filters. 
 
 These three endpoints provide all the necessary data.
 
@@ -39,3 +41,7 @@ These three endpoints provide all the necessary data.
 #### Example 2: Get the total number of car makes that are listed as __New__
 
 > http://api.edmunds.com/api/vehicle/v3/makes/count?api_key={vehicle api key}
+
+#### Example 3: Get a list of makes with NEW_USED publication state:
+
+> http://api.edmunds.com/api/vehicle/v3/makes?api_key={vehicle api key}&publicationStates=NEW_USED

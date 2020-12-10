@@ -4,7 +4,7 @@ title : 'Spec: Equipment'
 title_active_left_menu: "Spec: Equipment"
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 23
 spec: spec_equipment
 version: v2
 api: vehicle
