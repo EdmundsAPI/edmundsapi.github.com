@@ -4,7 +4,7 @@ title : 'Get Dealer Ratings and Reviews by Dealer ID'
 title_active_left_menu: 'Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 title-endpoint: 'Get Dealer Ratings and Reviews by Dealer ID'
 spec: ratings_and_reviews
 version: v1
