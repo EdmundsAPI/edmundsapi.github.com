@@ -37,8 +37,7 @@ number: 2
 | reviewType         | Review Type                                               | sales                                                  | Partner Entered  |               | Yes      |
 | publishingSource   | Publishing Source                                         | EDMUNDS_REST_API                                       | Partner Entered  |               | Yes      |
 | authorOrganization | Your Organization Name                                    |                                                        | Partner Entered  |               | No       |
-| ipAddress          | Your Organization IP. ipAddress should be a static IP for your organization, and that authorOrganization should be the name of your organization.  These should be pre-filled and remain unmodified.  All fields are required for successful submission. | Partner Entered |    |           | Yes       |
-
+| ipAddress          | Your Organization IP. ipAddress should be a static IP for your organization, and that authorOrganization should be the name of your organization.  These should be pre-filled and remain unmodified.  All fields are required for successful submission. | | Partner Entered |           | Yes       |
 #### Request body structure for Sales Dealer Review
 
 | Parameter            | Description                                                                        | Possible Values                                        | Entered By       | Default Value | Required |
@@ -59,4 +58,4 @@ number: 2
 | reviewType           | Review Type                                                                        | sales                                                  | Partner Entered  |               | Yes      |
 | publishingSource     | Publishing Source                                                                  | EDMUNDS_REST_API                                       | Partner Entered  |               | Yes      |
 | authorOrganization   | Your Organization Name                                                             |                                                        | Partner Entered  |               | Yes      |
-| ipAddress            | Your Organization IP. ipAddress should be a static IP for your organization, and that authorOrganization should be the name of your organization.  These should be pre-filled and remain unmodified.  All fields are required for successful submission. | Partner Entered |    |           | Yes       |
+| ipAddress            | Your Organization IP. ipAddress should be a static IP for your organization, and that authorOrganization should be the name of your organization.  These should be pre-filled and remain unmodified.  All fields are required for successful submission. |  | Partner Entered |           | Yes       |
