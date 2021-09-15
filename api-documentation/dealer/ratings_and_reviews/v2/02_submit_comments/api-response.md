@@ -32,4 +32,4 @@ number: 3
 |:-----------|:--------------------------------|:--------------------------|
 | id         | Dealer Review Comment ID        | Edmunds, Partners, public |
 | type       | Dealer Review Comment Type      | Edmunds, Partners, public |
-| dealerName | Dealer Review Comment Localtion | Edmunds, Partners, public |
+| location   | Dealer Review Comment Location  | Edmunds, Partners, public |
