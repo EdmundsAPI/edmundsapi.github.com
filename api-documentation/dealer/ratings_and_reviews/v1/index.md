@@ -4,7 +4,7 @@ title : 'Dealer Ratings and Reviews'
 title_active_left_menu: 'Ratings and Reviews'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 2
 spec: ratings_and_reviews
 version: v1
 api: dealer
@@ -24,6 +24,10 @@ overview: page_version
 * [Get Dealer Ratings and Reviews by Dealer ID](/api-documentation/dealer/ratings_and_reviews/v1/01_by_dealer_id/api-description.html)
 
 If you know the dealership ID you would like to get this content for, you should use the first endpoint. Otherwise, the second endpoint would be the best and only option for you to get this content.
+
+Also, You are able to submit a new dealer review.
+
+* [Dealer Review Submission](/api-documentation/dealer/ratings_and_reviews/v2/01_submit_dealer_review/api-description.html)
 
 ### Special Requirements
 
