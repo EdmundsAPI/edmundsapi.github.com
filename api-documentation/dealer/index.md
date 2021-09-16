@@ -46,11 +46,11 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 3: Submit Dealer Review
 
-> https://api.edmunds.com/v1/api/drrrepository/v2?api_key={your API key}
+> https://api.edmunds.com/api/dealerreviews/v2?api_key={your API key}
  
 #### Example 4: Submit Dealer Review Comment
 
-> https://api.edmunds.com/v1/api/drrrepository/v2/comments?api_key={your API key}
+> https://api.edmunds.com/api/dealerreviews/v2/comments?api_key={your API key}
 
 <a name='sec-3'> </a>
 

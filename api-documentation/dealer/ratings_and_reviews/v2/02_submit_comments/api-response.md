@@ -9,7 +9,7 @@ title-endpoint: 'Submit comments for dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'v1/api/drrrepository/v2/comments'
+dropdown-link: 'api/dealerreviews/v2/comments'
 
 
 level: 4

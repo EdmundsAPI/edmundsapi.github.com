@@ -9,7 +9,7 @@ title-endpoint: 'Submit dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'v1/api/drrrepository/v2'
+dropdown-link: 'api/dealerreviews/v2'
 
 
 level: 3
@@ -27,8 +27,25 @@ The Edmunds review submission and verification process does not require a user t
 
 ### URL
 
-	http://api.edmunds.com/v1/api/drrrepository/v2?api_key={api key}
-	
+	POST http://api.edmunds.com/api/dealerreviews/v2?api_key={api key}
+
+### Request Body
+
+	{
+	 "dealerId": 838870,
+	 "stateCode": "AK",
+	 "publishingSource": "EDMUNDS_REST_API",
+	 "title": "test",
+	 "text": "test",
+	 "authorName": "John",
+	 "email": "John@edmunds.com",
+	 "overallRating": "5",
+	 "reviewType": "sales",
+	 "dealerRecommended": true,
+	 "carBought": true,
+	 "ipAddress": "111.11.11.11"
+	}
+
 ### Code Example
 
 You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-sdk) to run this example.
@@ -50,8 +67,18 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-					"dealerid": "26811",
-					"limit": "0,5"
+				    "dealerId": 838870,
+				    "stateCode": "AK",
+				    "publishingSource": "EDMUNDS_REST_API",
+				    "title": "test",
+				    "text": "test",
+				    "authorName": "John",
+				    "email": "John@edmunds.com",
+				    "overallRating": "5",
+				    "reviewType": "sales",
+				    "dealerRecommended": true,
+				    "carBought": true,
+				    "ipAddress": "111.11.11.11"
 				};
 
 				// Callback function to be called when the API response is returned
@@ -66,7 +93,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/v1/api/drrrepository/v2', options, success, fail);
+				res.api('/api/dealerreviews/v2', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

@@ -9,7 +9,7 @@ title-endpoint: 'Submit comments for dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'v1/api/drrrepository/v2/comments'
+dropdown-link: 'api/dealerreviews/v2/comments'
 
 
 level: 4
@@ -26,8 +26,8 @@ Submit Dealer Review Comment for `dealerReviewId` **111111111**
 
 #### URL
 
-	POST https://api.edmunds.com/v1/api/drrrepository/v2/comments?api_key={api key}
-	
+	POST https://api.edmunds.com/api/dealerreviews/v2/comments?api_key={api key}
+
 #### Request Body
 
 	{

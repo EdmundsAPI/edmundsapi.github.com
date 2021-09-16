@@ -9,7 +9,7 @@ title-endpoint: 'Submit dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'v1/api/drrrepository/v2'
+dropdown-link: 'api/dealerreviews/v2'
 
 
 level: 4
@@ -26,8 +26,8 @@ Submit Sales Review with dealer id **838870**
 
 #### URL
 
-	POST https://api.edmunds.com/v1/api/drrrepository/v2?api_key={api key}
-	
+	POST https://api.edmunds.com/api/dealerreviews/v2?api_key={api key}
+
 #### Request Body
 
 	{
@@ -61,7 +61,7 @@ Submit Service Review with dealer id **838870**
 
 #### URL
 
-	POST https://api.edmunds.com/v1/api/drrrepository/v2?api_key={api key}
+	POST https://api.edmunds.com/api/dealerreviews/v2?api_key={api key}
 
 #### Request Body
 
