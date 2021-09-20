@@ -46,7 +46,11 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 3: Submit Dealer Review
 
-> https://api.edmunds.com/v1/api/drrrepository/v2?api_key={your API key}
+> https://api.edmunds.com/api/dealerreviews/v2?api_key={your API key}
+ 
+#### Example 4: Submit Dealer Review Comment
+
+> https://api.edmunds.com/api/dealerreviews/v2/comments?api_key={your API key}
 
 <a name='sec-3'> </a>
 
@@ -67,11 +71,12 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 The Dealer API has two resources:
 
-| Resource Name                                                                   | Description                           |
-|:--------------------------------------------------------------------------------|:--------------------------------------|
-| [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/) | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
-| [Submit Dealer Review](/api-documentation/dealer/ratings_and_reviews/v2/)       | This is where you can submit dealer reviews |
-| [Dealer Details](/api-documentation/dealer/details_and_location/v2/)            | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |
-| [Dealer Franchises Details](/api-documentation/dealer/details_and_location/v5/) | This is where you can get dealerships' name, location, operating hours, contact information,franchises etc. by zip code and optionally the cars they sell. |
+| Resource Name                                                                       | Description                           |
+|:------------------------------------------------------------------------------------|:--------------------------------------|
+| [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/)     | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
+| [Submit Dealer Review](/api-documentation/dealer/ratings_and_reviews/v2/)           | This is where you can submit dealer reviews |
+| [Submit Dealer Review Comments](/api-documentation/dealer/ratings_and_reviews/v2/)  | This is where you can submit dealer reviews comments |
+| [Dealer Details](/api-documentation/dealer/details_and_location/v2/)                | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |
+| [Dealer Franchises Details](/api-documentation/dealer/details_and_location/v5/)     | This is where you can get dealerships' name, location, operating hours, contact information,franchises etc. by zip code and optionally the cars they sell. |
 
 [Back to top](#top)

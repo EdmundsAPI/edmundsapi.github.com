@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Submit dealer review'
+title : 'Submit comments for dealer review'
 title_active_left_menu: 'Ratings and Reviews'
 title_parent: Api documentation
 
 amount_version: 2
-title-endpoint: 'Submit dealer review'
+title-endpoint: 'Submit comments for dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'api/dealerreviews/v2'
+dropdown-link: 'api/dealerreviews/v2/comments'
 
 
 level: 3
-description_edpoint: 'Submit dealer review'
+description_edpoint: 'Submit comments for dealer review'
 title_md : Description
 number: 1
 
@@ -27,22 +27,17 @@ The Edmunds review submission and verification process does not require a user t
 
 ### URL
 
-	POST http://api.edmunds.com/api/dealerreviews/v2?api_key={api key}
+	POST http://api.edmunds.com/api/dealerreviews/v2/comments?api_key={api key}
 
 ### Request Body
 
 	{
-	 "dealerId": 838870,
-	 "stateCode": "AK",
-	 "publishingSource": "EDMUNDS_REST_API",
-	 "title": "test",
-	 "text": "test",
-	 "authorName": "John",
-	 "email": "John@edmunds.com",
-	 "overallRating": "5",
-	 "reviewType": "sales",
-	 "dealerRecommended": true,
-	 "carBought": true,
+	 "parentId": 111111111,
+	 "text": "testText",
+	 "authorName": "testName",
+	 "email": "test@email.com",
+	 "dealerComment": false,
+	 "created": 11111111111,
 	 "ipAddress": "111.11.11.11"
 	}
 
@@ -67,18 +62,13 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
 				// Optional parameters
 				var options = {
-				    "dealerId": 838870,
-				    "stateCode": "AK",
-				    "publishingSource": "EDMUNDS_REST_API",
-				    "title": "test",
-				    "text": "test",
-				    "authorName": "John",
-				    "email": "John@edmunds.com",
-				    "overallRating": "5",
-				    "reviewType": "sales",
-				    "dealerRecommended": true,
-				    "carBought": true,
-				    "ipAddress": "111.11.11.11"
+				  "parentId": 111111111,
+				  "text": "testText",
+				  "authorName": "testName",
+				  "email": "test@email.com",
+				  "dealerComment": false,
+				  "created": 11111111111,
+				  "ipAddress": "111.11.11.11"
 				};
 
 				// Callback function to be called when the API response is returned
@@ -93,7 +83,7 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 				}
 
 				// Fire the API call
-				res.api('/api/dealerreviews/v2', options, success, fail);
+				res.api('/api/dealerreviews/v2/comments', options, success, fail);
 
 			    // Additional initialization code such as adding Event Listeners goes here
 		  };

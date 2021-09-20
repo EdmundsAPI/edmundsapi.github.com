@@ -9,7 +9,7 @@ title-endpoint: 'Submit dealer review'
 spec: ratings_and_reviews
 version: v2
 api: dealer
-dropdown-link: 'v1/api/drrrepository/v2'
+dropdown-link: 'api/dealerreviews/v2'
 
 
 level: 4
@@ -24,12 +24,10 @@ number: 3
 
 	{
 	 "id": {string},
-	 "type": {string},
-	 "location": {string}
+	 "type": {string}
 	}
 
 | Property   | Description             | Visibility                |
 |:-----------|:------------------------|:--------------------------|
 | id         | Dealer Review ID        | Edmunds, Partners, public |
 | type       | Dealer Review Type      | Edmunds, Partners, public |
-| dealerName | Dealer Review Localtion | Edmunds, Partners, public |

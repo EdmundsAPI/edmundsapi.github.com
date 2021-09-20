@@ -22,6 +22,7 @@ overview: page_version
 ### Endpoints
 
 * [Submit dealer review](/api-documentation/dealer/ratings_and_reviews/v2/01_submit_dealer_review/api-description.html)
+* [Submit dealer review comments](/api-documentation/dealer/ratings_and_reviews/v2/02_submit_comments/api-description.html)
 
 If you know the dealership ID you would like to get this content for, you should use the first endpoint. Otherwise, the second endpoint would be the best and only option for you to get this content.
 
