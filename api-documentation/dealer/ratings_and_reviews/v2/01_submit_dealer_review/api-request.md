@@ -49,8 +49,7 @@ Submit Sales Review with dealer id **838870**
 
 	{
 	 "id": "111111111",
-	 "type": "DRR_REVIEW",
-	 "location": "location"
+	 "type": "DRR_REVIEW"
 	}
 
 ---
@@ -90,6 +89,5 @@ Submit Service Review with dealer id **838870**
 
 	{
 	 "id": "111111111",
-	 "type": "DRR_REVIEW",
-	 "location": "location"
+	 "type": "DRR_REVIEW"
 	}

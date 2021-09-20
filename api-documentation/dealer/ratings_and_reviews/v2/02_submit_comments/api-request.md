@@ -43,7 +43,6 @@ Submit Dealer Review Comment for `dealerReviewId` **111111111**
 #### Response
 
 	{
-	 "id": "111111111",
-	 "type": "DRR_COMMENT",
-	 "location": "location"
+	 "id": "111111112",
+	 "type": "DRR_COMMENT"
 	}

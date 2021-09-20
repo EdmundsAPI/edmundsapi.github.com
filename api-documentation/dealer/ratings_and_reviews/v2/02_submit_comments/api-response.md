@@ -24,12 +24,10 @@ number: 3
 
 	{
 	 "id": {string},
-	 "type": {string},
-	 "location": {string}
+	 "type": {string}
 	}
 
 | Property   | Description                     | Visibility                |
 |:-----------|:--------------------------------|:--------------------------|
 | id         | Dealer Review Comment ID        | Edmunds, Partners, public |
 | type       | Dealer Review Comment Type      | Edmunds, Partners, public |
-| location   | Dealer Review Comment Location  | Edmunds, Partners, public |
