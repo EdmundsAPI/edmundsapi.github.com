@@ -25,7 +25,8 @@ number: 4
 		"averageRating": {float},
 		"links": {array},
 		"reviews": {array},
-		"reviewsCount": {integer}
+		"reviewsCount": {integer},
+		"edmundsBackLink": {string}
 	}
 
 The **links** array carries the API calls for either the next set of results or the previous set of results. Each element in the <code>links</code> array follows this format:
@@ -129,5 +130,6 @@ Each element in the <code>ratings</code> array follows this format:
 | value         | 1-5 rating value											| Edmunds, Partners, Public |
 
 
+`edmundsBackLink` provides the link to `Edmunds` website for checking `subnav-consumer-reviews` by make model.
 
-	
+Example: https://www.edmunds.com/honda/accord/#subnav-consumer-reviews

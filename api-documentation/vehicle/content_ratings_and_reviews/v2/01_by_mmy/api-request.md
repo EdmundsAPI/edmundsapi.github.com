@@ -217,6 +217,7 @@ Get the consumer ratings and reviews for the **2012 Honda Accord**.
 	      "commentsCount": 0,
 	      "averageRating": "2.875",
 	      "styleId": "101403690"
-	    }
+	    },
+	    "edmundsBackLink": "https://www.edmunds.com/honda/accord/#subnav-consumer-reviews"
 	  ]
 	}
