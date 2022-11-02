@@ -69,6 +69,6 @@ Get the expert content for mercedes-benz amg gt 2020.
         "transmission": "9-speed shiftable automatic",
         "horsepower": "577 hp @ 5500 rpm"
       },
-      "edmundsBackLink": "https://www.edmunds.com/mercedes-benz/amg-gt/"
+      "edmundsBackLink": "https://www.edmunds.com/mercedes-benz/amg-gt/2020/#subnav-consumer-reviews"
     }
     
