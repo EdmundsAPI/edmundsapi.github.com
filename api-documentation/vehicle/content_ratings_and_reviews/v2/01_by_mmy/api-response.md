@@ -132,4 +132,4 @@ Each element in the <code>ratings</code> array follows this format:
 
 `edmundsBackLink` provides the link to `Edmunds` website for checking `subnav-consumer-reviews` by make model.
 
-Example: https://www.edmunds.com/honda/accord/#subnav-consumer-reviews
+Example: https://www.edmunds.com/honda/accord/2012/#subnav-consumer-reviews
