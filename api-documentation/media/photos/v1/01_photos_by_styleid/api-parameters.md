@@ -23,6 +23,5 @@ number: 2
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
 | styleId    | The car style ID	| See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource | | Yes |
-| comparator | Sort results by photo shot type       | simple			 |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |
