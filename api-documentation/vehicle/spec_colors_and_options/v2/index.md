@@ -22,9 +22,7 @@ overview: page_version
 
 ### Endpoints
 
-* [Get the Vehicle Options for a Particular Vehicle Style](/api-documentation/vehicle/spec_colors_and_options/v2/01_options_by_style/api-description.html)
 * [Get the Vehicle Option Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v2/02_options_id/api-description.html)
-* [Get the Vehicle Colors for a Particular Vehicle Style](/api-documentation/vehicle/spec_colors_and_options/v2/03_colors_by_style/api-description.html)
 * [Get the Vehicle Color Details by its ID](/api-documentation/vehicle/spec_colors_and_options/v2/04_color_id/api-description.html)
 
 
