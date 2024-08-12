@@ -42,19 +42,19 @@ number: 3
 	}
 
 
-| Property      				| Description                         					| Visibility                |
-|:------------------------------|:------------------------------------------------------|:------------------------- |
-| squishVin		    			| The supplied squishVin								| Edmunds, Partners, Public |
-| make		    				| The car's make details (id, name and nicename)			| Edmunds, Partners, Public |
-| model							| The car's model details (id, name and nicename)			| Edmunds, Partners, Public |
-| year	  						| The car's model year details. See [Spec: Model Year](/api-documentation/vehicle/spec_model_year/v2/)		| Edmunds, Partners, Public |
-| engine		    			| Engine details. See [engine specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	| Edmunds, Partners, Public |
-| transmission					| Transmission details. See [transmission specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	| Edmunds, Partners, Public |
-| drivenWheels	    			| The car drive								| Edmunds, Partners, Public |
-| numOfDoors	    			| The number of doors on the car									| Edmunds, Partners, Public |
-| options					    | Options details. See [options specs](/api-documentation/vehicle/spec_colors_and_options/v2/)		| Edmunds, Partners, Public |
-| colors						| Color details. See [colors specs](/api-documentation/vehicle/spec_colors_and_options/v2/)					| Edmunds, Partners, Public |
-| manufacturer				    | The name of the manufacturer					| Edmunds, Partners, Public |
-| MPG						    | The highway and city MPG details					| Edmunds, Partners, Public |
+| Property      				| Description                         					                                                                    | Visibility                |
+|:------------------------------|:-------------------------------------------------------------------------------------------------------------|:------------------------- |
+| squishVin		    			| The supplied squishVin								                                                                               | Edmunds, Partners, Public |
+| make		    				| The car's make details (id, name and nicename)			                                                            | Edmunds, Partners, Public |
+| model							| The car's model details (id, name and nicename)			                                                           | Edmunds, Partners, Public |
+| year	  						| The car's model year details. See [Spec: Model Year](/api-documentation/vehicle/spec_model_year/v2/)		       | Edmunds, Partners, Public |
+| engine		    			| Engine details. See [engine specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	             | Edmunds, Partners, Public |
+| transmission					| Transmission details. See [transmission specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	 | Edmunds, Partners, Public |
+| drivenWheels	    			| The car drive								                                                                                        | Edmunds, Partners, Public |
+| numOfDoors	    			| The number of doors on the car									                                                                      | Edmunds, Partners, Public |
+| options					    | Options details. See [options specs](/api-documentation/vehicle/spec_colors_and_options/v3/)		               | Edmunds, Partners, Public |
+| colors						| Color details. See [colors specs](/api-documentation/vehicle/spec_colors_and_options/v3/)					               | Edmunds, Partners, Public |
+| manufacturer				    | The name of the manufacturer					                                                                            | Edmunds, Partners, Public |
+| MPG						    | The highway and city MPG details					                                                                        | Edmunds, Partners, Public |
 
 
