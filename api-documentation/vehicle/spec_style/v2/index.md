@@ -28,4 +28,4 @@ The Style Resource allows you to look up a vehicle's details (e.g. colors, optio
 
 ### Static Datasets
 
-In the response objects you will get back, you will come across properties like <code>equipmentType</code> and <code>optionType</code>. To understand those better, you should familiarize yourself with the [equipment spec](/api-documentation/vehicle/spec_equipment/v2/) and [options spec](/api-documentation/vehicle/spec_colors_and_options/v2/) resources.
+In the response objects you will get back, you will come across properties like <code>equipmentType</code> and <code>optionType</code>. To understand those better, you should familiarize yourself with the [equipment spec](/api-documentation/vehicle/spec_equipment/v2/) and [options spec](/api-documentation/vehicle/spec_colors_and_options/v3/) resources.
