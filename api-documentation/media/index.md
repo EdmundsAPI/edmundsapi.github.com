@@ -44,9 +44,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 Here are some common uses of the Media API:
 
-* Get photos by tags
 * Get photos by style id
-* Get photos by vehicle model
 * Get photos by vehicle make/mode/year
 
 <a name='sec-4'> </a>
