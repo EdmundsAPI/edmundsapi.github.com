@@ -20,26 +20,16 @@ overview: page_version
 
 ### Endpoints
 
-* [Get photos by tags](/api-documentation/media/photos/v2/01_photos_by_tags/api-description.html)
 * [Get photos by style id](/api-documentation/media/photos/v2/02_photos_by_style_id/api-description.html)
-* [Get photos by make/model](/api-documentation/media/photos/v2/03_photos_by_make_model/api-description.html)
 * [Get photos by make/model/year](/api-documentation/media/photos/v2/04_photos_by_make_model_year/api-description.html)
 
 ### Examples
 
-#### Example 1: Get photos by tags
-    
-> https://api.edmunds.com/api/media/v2/photoset?tag=bmw&api_key={api_key}
-
-#### Example 2: Get photos by make/model/year
+#### Example 1: Get photos by make/model/year
 
 > https://api.edmunds.com/api/media/v2/honda/civic/2013/photos?api_key={api_key}
 
-#### Example 3: Get photos by make/model
-
-> https://api.edmunds.com/api/media/v2/acura/ilx/photos?api_key={api_key}
-
-#### Example 4: Get photos by style ID
+#### Example 2: Get photos by style ID
 
 > https://api.edmunds.com/api/media/v2/styles/200692674/photos?api_key={api_key}
 
