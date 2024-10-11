@@ -44,4 +44,3 @@ Run acceptance tests only:
 Run acceptance tests against remote deployment:
 
     rake test:acceptance REMOTE=true (will use CNAME hostname) or rake test:acceptance SITE_URL={http url}
-
