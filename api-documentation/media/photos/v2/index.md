@@ -46,12 +46,14 @@ The photos returned from this endpoint come in URL stub format, for example '/au
 | 131        | 87        |
 | 150        | 100       |
 | 175        | 117       |
+| 180        | 110       |
 | 185        | 123       |
 | 196        | 131       |
 | 276        | 184       |
 | 300        | 200       |
 | 360        | 220       |
 | 396        | 264       |
+| 400        | 175       |
 | 400        | 267       |
 | 423        | 282       |
 | 500        | 333       |
