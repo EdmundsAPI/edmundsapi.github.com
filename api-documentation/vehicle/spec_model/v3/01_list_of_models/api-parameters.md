@@ -32,7 +32,7 @@ number: 2
 | publicationStates | Publication states                                    | NEW, USED, NEW_USED, PRE_PRODUCTION, FUTURE |               | No       |
 | modelYears.year   | The car year                                          | 1990 - current year |               | No       |
 | pageNum           | Page number                                           |                     | 1             | No       |
-| pageSize          | Page size                                             |                     | 10            | No       |
+| pageSize          | Page size                                             | Numeric value between 1-100 | 10            | No       |
 | sortby            | The desired sort (e.g. id:DESC, name:ASC)             |                     |               | No       |
 | distinct          | A field name for returning unique values of the field |                     |               | No       |
 | groupby           | A field name for grouping results (e.g. make)         |                     |               | No       |
