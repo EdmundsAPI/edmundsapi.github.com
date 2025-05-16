@@ -36,9 +36,9 @@ If you haven't yet, this might be a good time to read the [API Overview](/api-do
 
 Let's get right to it, shall we? Here's a few REST calls that should get you started using the API with ease. You could copy and paste these calls into your browser, add your *API key* to them and then press ENTER! Once you're comfortable with these calls, you should think about downloading our [Javascript SDK](https://github.com/EdmundsAPI/sdk-javascript). It will make your development life with the Edmunds API much easier :)
 
-#### Example 1: Get a list of all dealerships within 10 miles from 90019 that sell or service Hondas
-
-> https://api.edmunds.com/api/dealer/v2/dealers?zipcode=90019&make=honda&radius=10&fmt=json&api_key={your API key}
+#### Example 1: Get Dealer Franchises by ID
+    
+> https://api.edmunds.com/api/dealer/v5/dealership/1802465/franchises?api_key={your API key}
 
 #### Example 2: Get a dealership 5 most recent sales and service consumer ratings and reviews by the dealer ID
 
@@ -58,8 +58,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 ### API Uses
 
-* Get all dealerships within a certain zip code and radius
-* Get all dealerships by the kinds of cars they sell
+* Get dealer franchises by ID
 * Get consumer ratings and reviews of a dealership by its Edmunds ID
 * Get consumer ratings and reviews of dealerships by their car makes and the zip code they're in
 
@@ -76,7 +75,6 @@ The Dealer API has two resources:
 | [Dealer Ratings and Reviews](/api-documentation/dealer/ratings_and_reviews/v1/)     | This is where you can get dealerships' ratings and reviews that are collected on Edmunds.com's website, apps and tools. |
 | [Submit Dealer Review](/api-documentation/dealer/ratings_and_reviews/v2/)           | This is where you can submit dealer reviews |
 | [Submit Dealer Review Comments](/api-documentation/dealer/ratings_and_reviews/v2/)  | This is where you can submit dealer reviews comments |
-| [Dealer Details](/api-documentation/dealer/details_and_location/v2/)                | This is where you can get dealerships' name, location, operating hours, contact information, etc. by zip code and optionally the cars they sell. |
 | [Dealer Franchises Details](/api-documentation/dealer/details_and_location/v5/)     | This is where you can get dealerships' name, location, operating hours, contact information,franchises etc. by zip code and optionally the cars they sell. |
 
 [Back to top](#top)
