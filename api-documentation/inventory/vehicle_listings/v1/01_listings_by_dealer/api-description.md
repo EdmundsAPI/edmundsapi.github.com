@@ -21,7 +21,7 @@ number: 1
 
 ### Description
 
-Get cars available for sale at a specific dealership by providing the dealership ID, which is returned through [this endpoint](/api-documentation/dealer/details_and_location/v1/)
+Get cars available for sale at a specific dealership by providing the dealership ID
 
 ### URL
 
