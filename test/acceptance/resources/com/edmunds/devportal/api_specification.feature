@@ -377,32 +377,10 @@ Feature: API Documentation
 
     Then I choose 'Details and Location' left menu
     And menu 'Details and Location' should be active
-    And the 'v2' documentation should be present
-    And the 'v1' documentation should be present
-    And menu 'v2' should be active
-    And the documentation should have 9 endpoints
-    When I choose 'api/dealer/v2/repairshops' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/repairshops/{repairshopId}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/repairshops/count' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/franchises' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/franchises/{franchiseId}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/franchises/count' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/dealers' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/dealers/{id}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/dealer/v2/dealers/count' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1' documentation
-    And menu 'v1' should be active
+    And the 'v5' documentation should be present
+    And menu 'v5' should be active
     And the documentation should have 1 endpoints
-    When I choose 'v1/api/dealer' endpoint
+    When I choose 'api/dealer/v5/dealership/{id}/franchises' endpoint
     Then the endpoint should have specification articles
 
     Then I choose 'Photos' left menu
