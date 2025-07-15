@@ -26,8 +26,10 @@ number: 2
 | {make}        | The vehicle make                      |                                                                 |               | Yes      |
 | {model}       | The vehicle model                     |                                                                 |               | Yes      |
 | {year}        | The vehicle year                      |                                                                 |               | Yes      |
+| submodel      | The vehicle submodel                  |                                                                 |               | No       |
+| trim          | The vehicle trim                      |                                                                 |               | No       |
 | category      | The category of the photos            | interior, exterior, detail                                      |               | No       |
-| provider      | The provider of the photos            |                                                                 |               | No       |
+| color         | The vehicle color                     |                                                                 |               | No       |
 | width         | The width of the photos               | see [Photos](/api-documentation/media/photos/v2/) overview page |               | No       |
 | height        | The height of the photos              | see [Photos](/api-documentation/media/photos/v2/) overview page |               | No       |
 | shottype      | Shot type abbreviation for photo      | see [Photos](/api-documentation/media/photos/v2/) overview page |               | No       |
