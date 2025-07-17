@@ -26,7 +26,7 @@ level: 1
 
 The Dealer API is comprised of a collection of resources that provide access to an array of datasets _related directly to the automotive dealership_.
 
-**Please note** that *dealer inventories* aren't available in this API. They are available in the [Inventory API](/api-documentation/inventory/).
+**Please note** that *dealer inventories* aren't available in this API.
 
 If you haven't yet, this might be a good time to read the [API Overview](/api-documentation/overview/) page to familiarize yourself with some of the core concepts required to using the API.<a name='sec-2'> </a>
 

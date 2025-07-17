@@ -22,7 +22,6 @@ overview: page_version
 
 ### Endpoints
 
-* [Get the Engine Detail by ID](/api-documentation/vehicle/spec_engine_and_transmission/v2/01_engine_id/api-description.html)
 * [Get the Vehicle Engines for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/02_engines_by_style/api-description.html)
 * [Get the Vehicle Transmissions for a Particular Vehicle Style](/api-documentation/vehicle/spec_engine_and_transmission/v2/03_transmissions_by_style/api-description.html)
 

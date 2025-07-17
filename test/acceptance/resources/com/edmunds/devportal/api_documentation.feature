@@ -8,7 +8,6 @@ Feature: API Documentation
       | API Overview  |
       | Vehicle API   |
       | Editorial API |
-      | Inventory API |
       | Dealer API    |
       | Media API     |
     And menu 'Vehicle API' should have items:
@@ -35,9 +34,6 @@ Feature: API Documentation
     And menu 'Editorial API' should have items:
       | Articles       |
       | Editor Reviews |
-    And menu 'Inventory API' should have items:
-      | VIN Lookup       |
-      | Vehicle Listings |
     And menu 'Dealer API' should have items:
       | Ratings and Reviews  |
       | Details and Location |
@@ -134,18 +130,6 @@ Feature: API Documentation
       | Available Article Categories      |
       | Granular Editor Review Components |
       | API Uses                          |
-
-    Then I choose 'Inventory API' left menu
-    And menu 'Inventory API' should be active
-    And the page content should be displayed
-    Then the page content should have articles:
-      | Overview               |
-      | OAuth 2.0              |
-      | Quick Start            |
-      | Edmunds Inventory Link |
-      | Visibility Tiers       |
-      | API Uses               |
-      | Available Resources    |
 
     Then I choose 'Dealer API' left menu
     And menu 'Dealer API' should be active
