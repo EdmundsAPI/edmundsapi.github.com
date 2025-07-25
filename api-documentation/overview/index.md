@@ -42,7 +42,7 @@ weight: 1
 | Vehicle Media     | Vehicle photos                                                                                            |
 | Dealership Content| Dealership info, consumer reviews, list of cars for sale, dealer pricing, etc.                            |
 
-These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)**, **[Dealer API](/api-documentation/dealer/)** and **[Inventory API](/api-documentation/inventory/)**. A list of resources available under each API is on the left.
+These datasets are distributed across _four distinct APIs_: **[Vehicle API](/api-documentation/vehicle/)**, **[Editorial API](/api-documentation/editorial/)** and **[Dealer API](/api-documentation/dealer/)**. A list of resources available under each API is on the left.
 
 This overview covers the core concepts that you need to know before you could fully use the APIs to their potential. Once you have a good understanding of the API core concepts, you can then dig deeper into each API by visiting its dedicated overview page.<a name='sec-2'> </a>
 

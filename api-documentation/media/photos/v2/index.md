@@ -4,7 +4,7 @@ title : 'Photos'
 title_active_left_menu: 'Photos'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 spec: photos
 version: v2
 api: media
