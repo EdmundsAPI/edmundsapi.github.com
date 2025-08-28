@@ -27,8 +27,8 @@ number: 2
 | category	 	| The article category          		| See below; e.g. car+news |            | Yes/No (Not required if car make/model/year is supplied)  |
 | fmt        	| Response format                       | json, xml         	| json          | Yes                                                       |
 | api_key       | Your Edmunds/Editorial API key                     |                       |               | Yes                                                       |
-| make  	 	| The car make                  		| See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) | 		        | No                    |
-| model		 	| The car model                     	| See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) | 		    | No                    |
+| make  	 	| The car make                  		| See [Spec: Make](/api-documentation/vehicle/spec_make/v3/) | 		        | No                    |
+| model		 	| The car model                     	| See [Spec: Model](/api-documentation/vehicle/spec_model/v3/) | 		    | No                    |
 | year  	 	| The car year                      	| 1990-current year     | 		        | No                                                        |
 | limit		 	| Pagination (offset, size). The parameter has been deprecated, please use pagenum and pagesize instead | | 0, 30    | No                   |
 | pagenum	 	| The page number of the paginated result | 					| 1	            | No                                                        |

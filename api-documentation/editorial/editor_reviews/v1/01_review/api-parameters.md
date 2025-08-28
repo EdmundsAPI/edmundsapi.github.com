@@ -24,8 +24,8 @@ number: 2
 
 | Parameter  	| Description                           | Possible Values   					| Default Value | Required          |
 |:--------------|:--------------------------------------|:--------------------------------------|:------------- |:------------------|
-| make  	 	| The car make | Available in the [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) endpoint  | | Yes |
-| model		 	| The car model                     	| See [List of Models by Make](/api-documentation/vehicle/spec_model/v2/01_list_of_models/api-description.html) | | Yes |
+| make  	 	| The car make | Available in the [Spec: Make](/api-documentation/vehicle/spec_make/v3/03_list_of_makes/api-description.html) endpoint | | Yes |
+| model		 	| The car model                     	| See [List of Models by Make](/api-documentation/vehicle/spec_model/v3/01_list_of_models/api-description.html) | | Yes |
 | year  	 	| The car year                      	| 1990-current year                     | 		        | Yes               |
 | fmt        	| Response format                       | json              					| json          | Yes               |
 | api_key		| Your Edmunds/Editorial API key		| 										|				| Yes				|

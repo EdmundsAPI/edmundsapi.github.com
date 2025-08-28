@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| modelyearid | The car model year ID | See the [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) resource | | Yes |
+| modelyearid | The car model year ID | See the [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/) resource | | Yes |
 | fmt        | Response format                       | json              | json          | Yes      |
 | api_key    | Vehicle API key                       |                   |               | Yes      |

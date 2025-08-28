@@ -24,7 +24,7 @@ number: 2
 
 | Parameter     | Description                           | Possible Values   	| Default Value | Required                                                  |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:----------------------------------------------------------|
-| {make}        | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) |            | Yes                   |
+| {make}        | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v3/) |            | Yes                   |
 | view          | Response detail level                 | basic, full           | basic         | No                                                        |
 | fmt           | Response format                       | json                  | json          | Yes                                                       |
 | api_key       | Your Edmunds/Editorial API key        |                       |               | Yes                                                       |

@@ -30,8 +30,8 @@ number: 2
 | modelId                     | The car model Id (e.g. e-class)                       |                     |               | No       |
 | modelNiceId                 | The car model Nice Id (e.g. e-class)                  |                     |               | No       |
 | modelNiceName               | The car model Nice Name (e.g. eclass)                 |                     |               | No       |
-| modelYear.publicationStates | Model Year Publication states                         | NEW, USED, NEW_USED, PRE_PRODUCTION, FUTURE |               | No       |
-| publicationState            | The car style publication states                      | NEW, USED, NEW_USED, PRE_PRODUCTION, FUTURE |               | No       |
+| modelYear.publicationStates | Model Year Publication states                         | NEW, USED, NEW_USED, PRE_PROD |               | No       |
+| publicationState            | The car style publication states                      | NEW, USED, NEW_USED, PRE_PROD |               | No       |
 | year                        | The car style year                                    |                     |               | No       |
 | subModels.niceId            | Sub Model Nice Id (e.g. sedan)                        |                     |               | No       |
 | subModels.niceName          | Sub Model Nice Name (e.g. sedan)                      |                     |               | No       |

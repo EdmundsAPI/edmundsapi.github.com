@@ -4,7 +4,7 @@ title : 'Get A List of Model Years'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Model Years'
 spec: spec_model_year
 version: v3
@@ -30,7 +30,7 @@ number: 2
 | modelNiceId       | The car model Nice Id (e.g. e-class)                  | See [List of Models by Make](/api-documentation/vehicle/spec_model/v3/01_list_of_models/api-description.html) | | No |
 | modelNiceName     | The car model Nice Name (e.g. eclass)                 | See [List of Models by Make](/api-documentation/vehicle/spec_model/v3/01_list_of_models/api-description.html) | | No |
 | styles.id         | The car style id (e.g. 12226)                         |                     |               | No       |
-| publicationStates | Publication states                                    | NEW, USED, NEW_USED, PRE_PRODUCTION, FUTURE |               | No       |
+| publicationStates | Publication states                                    | NEW, USED, NEW_USED, PRE_PROD |               | No       |
 | year              | The car year                                          | 1990 - current year |               | No       |
 | pageNum           | Page number                                           |                     | 1             | No       |
 | pageSize          | Page size                                             |                     | 10            | No       |

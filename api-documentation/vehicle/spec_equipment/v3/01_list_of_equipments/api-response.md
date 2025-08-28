@@ -81,24 +81,9 @@ The properties within the <code>attributeGroups</code> object are:
       ...
       "attributeGroups": {
         "{attributeGroupName}": {
-          "id": {integer},
-          "name": {string},
           "properties": {
             "{propertyName1}": {string},
             "{propertyName2}": {string},
-            ...
-          },
-          "attributes": {
-            "{propertyName1}": {
-              "id": {integer},
-              "name": {string},
-              "value": {string}
-            },
-            "{propertyName2}": {
-              "id": {integer},
-              "name": {string},
-              "value": {string}
-            },
             ...
           }
         }
@@ -109,7 +94,4 @@ The properties within the <code>attributeGroups</code> object are:
 | Property             | Description                                                       | Visibility                |
 |:---------------------|:------------------------------------------------------------------|:------------------------- |
 | {attributeGroupName} | Attribute Group Name                                              | Edmunds, Partners, Public |
-| id                   | Attribute Group Id                                                | Edmunds, Partners, Public |
-| name                 | Attribute Group Name                                              | Edmunds, Partners, Public |
 | properties           | A Set of Properties of Attribute Group (key - value)              | Edmunds, Partners, Public |
-| attributes           | A Detailed Set of Properties of Attribute Group (id, name, value) | Edmunds, Partners, Public |

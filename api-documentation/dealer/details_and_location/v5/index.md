@@ -20,10 +20,10 @@ overview: page_version
 
 ### Endpoints
 
-* [Get Franchises by ID](/api-documentation/dealer/details_and_location/v5/03_franchises_by_id/api-description.html)
+* [Get Franchises by ID](/api-documentation/dealer/details_and_location/v5/01_franchises_by_id/api-description.html)
 
 ### Examples
 
 #### Example 1: Get Dealer Franchises by ID
     
-> https://api.edmunds.com/api/dealer/v5/dealership/1802465/franchises?api_key={api_key}
+> https://api.edmunds.com/api/dealer/v5/dealership/860087/franchises?api_key={api_key}

@@ -28,10 +28,6 @@ number: 3
 		    "customerIncentiveUsd": {float}
 		    "destinationFeeUsd": {float}
 		    "gasGuzzlerTaxUsd": {float}
-		    "link": {
-		        "rel": "full",
-		        "href": {URI}
-		    },
 		    "corePercent": {object},
 		    "regionAdjustment": {object},
 		    "colorAdjustment": {object}
@@ -63,7 +59,6 @@ number: 3
 | customerIncentiveUsd         | The customer incentive | Edmunds, Partners, Public |
 | destinationFeeUsd	        | Destination fee						| Edmunds, Partners, Public |
 | gasGuzzlerTaxUsd | Gas guzzler tax					           	| Edmunds, Partners, Public |
-| link 			   | Link to this API call				           	| Edmunds, Partners, Public |
 | corePercent      | TMV® price **without** any adjustments		    | Edmunds, Partners, Public |
 | regionAdjustment | Regional adjustment to the TMV® price			| Edmunds, Partners, Public |
 | colorAdjustment  | Color adjustment to the TMV® price	           	| Edmunds, Partners, Public |
