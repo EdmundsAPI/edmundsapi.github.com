@@ -4,7 +4,7 @@ title : 'Spec: Make'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Makes'
 spec: spec_make
 version: v3

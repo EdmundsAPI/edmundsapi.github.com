@@ -38,7 +38,7 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get Dealer Franchises by ID
     
-> https://api.edmunds.com/api/dealer/v5/dealership/1802465/franchises?api_key={your API key}
+> https://api.edmunds.com/api/dealer/v5/dealership/860087/franchises?api_key={your API key}
 
 #### Example 2: Get a dealership 5 most recent sales and service consumer ratings and reviews by the dealer ID
 

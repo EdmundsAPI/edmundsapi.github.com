@@ -21,9 +21,9 @@ number: 2
 
 ### Parameters
 
-| Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| {id}		 | The Style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/) endpoints | | Yes |
-| view       | The level of detail in the response  | basic, full		 | basic         | No       |
-| fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | vehicle api key                       |                   |               | Yes      |
+| Parameter  | Description                           | Possible Values                                                                                                                                   | Default Value | Required |
+|:-----------|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|:------------- |:-------- |
+| {id}		 | The Style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v3/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/) endpoints | | Yes |
+| view       | The level of detail in the response  | basic, full		                                                                                                                                     | basic         | No       |
+| fmt        | Response format                       | json                                                                                                                                              | json          | Yes      |
+| api_key    | vehicle api key                       |                                                                                                                                                   |               | Yes      |

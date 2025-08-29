@@ -4,7 +4,7 @@ title : 'Get A List of Model Years'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Model Years'
 spec: spec_model_year
 version: v3

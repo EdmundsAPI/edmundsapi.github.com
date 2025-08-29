@@ -21,14 +21,12 @@ number: 2
 
 ### Parameters
 
-| Parameter  	| Description                | Possible Values   | Default Value | Required |
-|:--------------|:---------------------------|:----------------- |:------------- |:-------- |
-| {make} 		| The car make 				 | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/01_list_of_makes/api-description.html) | | Yes |
-| {model} | The car model | See [List of Models by Make](/api-documentation/vehicle/spec_model/v2/01_list_of_models/api-description.html)| | Yes |
-| state			| The state of the car model | new, used, future | 	             | No       |
-| year       	| The year of the car model	 | 1990-current year |               | No       |
-| submodel      | The submodel of the car model | see [Vehicle API](/api-documentation/vehicle/) | | No |
-| category      | The category of the car model | see [Vehicle API](/api-documentation/vehicle/) | | No |
-| view			| Response detail level      | basic, full       | basic         | No       |
-| fmt			| Response format            | json              | json          | Yes      |
-| api_key    	| Vehicle API key            |                   |               | Yes      |
+| Parameter  	| Description                | Possible Values                                                                                 | Default Value | Required |
+|:--------------|:---------------------------|:------------------------------------------------------------------------------------------------|:------------- |:-------- |
+| {make} 		| The car make 				 | See [Spec: Make](/api-documentation/vehicle/spec_make/v3/03_list_of_makes/api-description.html) | | Yes |
+| {model} | The car model | See [List of Models by Make](/api-documentation/vehicle/spec_model/v3/01_list_of_models/api-description.html)| | Yes |
+| state			| The state of the car model | new, used, future                                                                               | 	             | No       |
+| year       	| The year of the car model	 | 1990-current year                                                                               |               | No       |
+| view			| Response detail level      | basic, full                                                                                     | basic         | No       |
+| fmt			| Response format            | json                                                                                            | json          | Yes      |
+| api_key    	| Vehicle API key            |                                                                                                 |               | Yes      |

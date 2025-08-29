@@ -4,7 +4,7 @@ title : 'Get years with styles for a Car Make/Model'
 title_active_left_menu: 'Spec Model/Year'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get years with styles for a Car Make/Model'
 spec: spec_model_year
 version: v3
@@ -32,7 +32,7 @@ For example:
 
 #### URL
 
-	https://api.edmunds.com/api/vehicle/v3/honda/civic?fmt=json&api_key={api key}
+	https://api.edmunds.com/api/vehicle/v3/honda/civic/years?fmt=json&api_key={api key}
 	
 #### Response
 
@@ -41,29 +41,9 @@ For example:
 	    {
 	      "id": 200442557,
 	      "year": 2013,
-	      "styles": [
-	        {
-	          "id": 200443845,
-	          "name": "LX 2dr Coupe (1.8L 4cyl 5A)",
-	          "submodel": {
-	            "body": "Coupe",
-	            "modelName": "Civic Coupe",
-	            "niceName": "coupe"
-	          },
-	          "trim": "LX"
-	        },
-	        ...
-	        {
-	          "id": 200463193,
-	          "name": "HF PZEV 4dr Sedan (1.8L 4cyl 5A)",
-	          "submodel": {
-	            "body": "Sedan",
-	            "modelName": "Civic Sedan",
-	            "niceName": "sedan"
-	          },
-	          "trim": "HF PZEV"
-	        }
-	      ]
+	      "states": [
+            "USED"
+          ]
 	    }
 	  ]
 	}

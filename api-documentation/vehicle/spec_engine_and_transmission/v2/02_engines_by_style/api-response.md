@@ -58,8 +58,8 @@ number: 3
 | availability		| The availability of the equipment (see overview)		| Edmunds, Partners, Public |
 | compressionRatio	| The engine compression ratio							| Edmunds, Partners, Public |
 | cylinder		    | The number of cylinders this engine has				| Edmunds, Partners, Public |
-| size			    | The car model year ID and four-digit year				| Edmunds, Partners, Public |
-| displacement	    | The engine size										| Edmunds, Partners, Public |
+| size			    | The engine size measured in litres (L)			| Edmunds, Partners, Public |
+| displacement	    | The engine size measured in cubic centimeters (cc)| Edmunds, Partners, Public |
 | configuration		| The engine configuration								| Edmunds, Partners, Public |
 | fuelType	        | The engine fuel type									| Edmunds, Partners, Public |
 | horsepower	    | The engine horsepower									| Edmunds, Partners, Public |

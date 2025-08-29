@@ -24,9 +24,9 @@ number: 2
 
 | Parameter     | Description                           | Possible Values   	| Default Value | Required                                                  |
 |:--------------|:--------------------------------------|:----------------------|:------------- |:----------------------------------------------------------|
-| {make}        | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v2/) |              | Yes                   |
-| {model}       | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) |            | Yes                   |
-| {year}        | The car year                          | See [Spec: Year](/api-documentation/vehicle/spec_model_year/v2/) |              | Yes                   |
+| {make}        | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v3/) |              | Yes                   |
+| {model}       | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v3/) |            | Yes                   |
+| {year}        | The car year                          | See [Spec: Year](/api-documentation/vehicle/spec_model_year/v3/) |              | Yes                   |
 | view          | Response detail level                 | basic, full           | basic         | No                                                        |
 | fmt           | Response format                       | json                  | json          | Yes                                                       |
 | api_key       | Your Edmunds/Editorial API key        |                       |               | Yes                                                       |

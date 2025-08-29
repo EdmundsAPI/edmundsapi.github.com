@@ -36,10 +36,6 @@ Get the TMV® price for VIN **1N4AL3AP4DC295509** in the **90019** area with MSR
 	        "customerIncentiveUsd": 2000.00,
 	        "destinationFeeUsd": 790.00,
 	        "gasGuzzlerTaxUsd": 0.00,
-	        "link": {
-	            "rel": "full",
-	            "href": "/api/v1/vehicle/nissan/2013/price?zip=90019&msrp=33000&model=altima&vehicleStyle=sedan&drivenWheels=front-wheel-drive&fuelType=gas&cylinders=4&styles=101404650,200418415,200418416,200444018,200418417"
-	        },
 	        "corePercent": {
 	            "priceUsd": 29444.69,
 	            "percent": null,

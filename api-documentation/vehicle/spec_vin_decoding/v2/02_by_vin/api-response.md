@@ -52,7 +52,7 @@ number: 3
 | squishVin                     | The car's squishVin                                                                                          | Edmunds, Partners, Public |
 | make		    				| The car's make details (id, name and nicename)			                                                            | Edmunds, Partners, Public |
 | model							| The car's model details (id, name and nicename)			                                                           | Edmunds, Partners, Public |
-| year	  						| The car's model year details. See [Spec: Model Year](/api-documentation/vehicle/spec_model_year/v2/)		       | Edmunds, Partners, Public |
+| year	  						| The car's model year details. See [Spec: Model Year](/api-documentation/vehicle/spec_model_year/v3/)		       | Edmunds, Partners, Public |
 | engine		    			| Engine details. See [engine specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	             | Edmunds, Partners, Public |
 | transmission					| Transmission details. See [transmission specs](/api-documentation/vehicle/spec_engine_and_transmission/v2/)	 | Edmunds, Partners, Public |
 | drivenWheels	    			| The car drive								                                                                                        | Edmunds, Partners, Public |

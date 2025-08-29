@@ -166,11 +166,11 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
 
 ### URI Examples
 
-> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334
+> https://api.edmunds.com/api/vehicle/v3/makes?api\_key=94tyghf85jdhshwge334
 
-> http://api.edmunds.com/api/vehicle/v2/lexus/models?fmt=json&api\_key=94tyghf85jdhshwge334&callback=myFunction
+> https://api.edmunds.com/api/vehicle/v3/models?api\_key=94tyghf85jdhshwge334&makeNiceName=lexus
 
-> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api\_key=94tyghf85jdhshwge334&state=new&view=full
+> https://api.edmunds.com/api/vehicle/v3/makes/count?api\_key=94tyghf85jdhshwge334
 
 <a name='sec-7'> </a>
 
@@ -242,7 +242,7 @@ In the **response** of that call, you will find the following object:
 	
 The **id** key in this object is the _Style ID_.
 
-More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v2/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v2/) resources under the Vehicle API.<a name='sec-9'> </a>
+More on these endpoints in the [_Spec: Make_](/api-documentation/vehicle/spec_make/v3/) and [_Spec: Model_](/api-documentation/vehicle/spec_model/v3) resources under the Vehicle API.<a name='sec-9'> </a>
 
 [Back to top](#top)
 

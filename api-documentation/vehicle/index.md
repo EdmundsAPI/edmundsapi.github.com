@@ -49,33 +49,29 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 #### Example 1: Get a list of all car makes
 
-> https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v3/makes?api_key={your API key}
 
-#### Example 2: Get a list of all new car makes
+#### Example 2: Get model, model year, style and trim data for Honda
 
-> https://api.edmunds.com/api/vehicle/v2/makes?state=new&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v3/styles?makeNiceId=honda&pageNum=1&pageSize=10&fields=makeName,modelName,year,makeNiceId,modelNiceId,modelYearId,trim&api_key={your API key}
 
-#### Example 3: Get model, model year, style and trim data for Honda
+#### Example 3: Get model, model year, style and trim data for 2001 Honda
 
-> https://api.edmunds.com/api/vehicle/v2/honda/models?fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v3/styles?makeNiceId=honda&year=2001&pageNum=1&pageSize=10&fields=makeName,modelName,year,makeNiceId,modelNiceId,modelYearId,trim&api_key={your API key}
 
-#### Example 4: Get model, model year, style and trim data for 2001 Honda
+#### Example 4: Get the total number of all new Acura models in the Edmunds data
 
-> https://api.edmunds.com/api/vehicle/v2/honda/models?year=2001&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v3/models?makeNiceId=acura&publicationStates=NEW,NEW_USED&api_key={your API key}
 
-#### Example 5: Get the total number of all new Acura models in the Edmunds data
+#### Example 5: Get a list of styles for 2001 Honda Accord
 
-> https://api.edmunds.com/api/vehicle/v2/acura/models/count?state=new&fmt=json&api_key={your API key}
+> https://api.edmunds.com/api/vehicle/v3/styles?makeNiceId=honda&modelNIceId=accord&year=2001&api_key={your API key}
 
-#### Example 6: Get a list of styles for 2001 Honda Accord
-
-> https://api.edmunds.com/api/vehicle/v2/honda/accord/2001?fmt=json&api_key={your API key}
-
-#### Example 7: Get a list of Maintenance Schedules for 2001 Honda Accord
+#### Example 6: Get a list of Maintenance Schedules for 2001 Honda Accord
 
 > https://api.edmunds.com/v1/api/maintenance/actionrepository/findbymodelyearid?modelyearid=100537293&fmt=json&api_key={your API key}
 
-#### Example 8: Get the TMV® for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A) w/ Outstanding condition and 25,000 miles in the 90069 area
+#### Example 7: Get the TMV® for 2001 Honda Accord EX 4dr Sedan (2.3L 4cyl 4A) w/ Outstanding condition and 25,000 miles in the 90069 area
 
 > https://api.edmunds.com/v1/api/tmv/tmvservice/calculateusedtmv?styleid=100001210&condition=Outstanding&mileage=25000&zip=90069&fmt=json&api_key={your API key}
 
@@ -92,22 +88,33 @@ Some of our datasets are static and don't change often (if at all.) Here's the *
 | &bull; Car	| &bull; Truck	| &bull; SUV	| &bull; Van	| &bull; Minivan	|
 
 
-| Vehicle Categories (aka submodels)						|							|								|							|
-|:----------------------|:--------------------------|:------------------------------|:--------------------------|
-| &bull; 4dr Hatchback	| &bull; 2dr Hatchback		| &bull; 2dr SUV 				| &bull; 4dr SUV			|
-| &bull; Cargo Minivan	| &bull; Cargo Van			| &bull; Convertible			| &bull; Convertible SUV	|
-| &bull; Coup			| &bull; Crew Cab Pickup	| &bull; Extended Cab Pickup 	| &bull; Passenger Minivan	|
-| &bull; Passenger Van 	| &bull; Regular Cab Pickup | &bull; Sedan				 	| &bull; Wagon				|
+| Vehicle Categories (aka submodels)| 	                | 	                    | 	              |
+|:----------------------------------|:-----------------|:----------------------|:----------------|
+| &bull; Access Cab                 | &bull; Cab Plus  | &bull; Cab Plus 4     | &bull; Club Cab |
+| &bull; Convertible                | &bull; Coupe     | &bull; Crew Cab       | &bull; CrewMax  |
+| &bull; CrewMax Cab                | &bull; Diesel    | &bull; Double Cab     | &bull; Electric |
+| &bull; Extended Cab               | &bull; Hatchback | &bull; Hybrid         | &bull; King Cab |
+| &bull; Mega Cab                   | &bull; Minivan   | &bull; Plug-in Hybrid | &bull; Quad Cab |
+| &bull; Regular Cab                | &bull; SUV       | &bull; Sedan          | &bull; SuperCab |
+| &bull; SuperCrew                  | &bull; Van       | &bull; Wagon          | &bull; Xtracab  |
 
-| Vehicle Sizes					|					|				|
-|:------------------|:------------------|:--------------|
-| &bull; Compact	| &bull; Midsize	| &bull; Large	|
+| Vehicle Sizes 	 | 					           | 				          |
+|:----------------|:----------------|:--------------|
+| &bull; Compact  | &bull; Midsize  | &bull; Large  |
 
-| Fuel Types					|							|					|
-|:------------------|:--------------------------|:------------------|
-| &bull; Electric	| &bull; Natural-gas-cng	| &bull; gas		|
-| &bull; hybrid		| &bull; Flex-fuel-ffv		| &bull; diesel		|
-                                 
+| Engine Types           |                          |                             |
+|:-----------------------|:-------------------------|:----------------------------|
+| &bull; diesel          | &bull; electric          | &bull; electric (fuel cell) |
+| &bull; flex-fuel (FFV) | &bull; gas               | &bull; hybrid               |
+| &bull; mild hybrid     | &bull; natural gas (CNG) | &bull; plug-in hybrid       |
+
+| Fuel Types					                                  | 							                                | 					                                               |
+|:-------------------------------------------------|:---------------------------------------|:----------------------------------------------------|
+| &bull; diesel                                    | &bull; electric                        | &bull; flex-fuel (premium unleaded recommended/E85) |
+| &bull; flex-fuel (premium unleaded required/E85) | &bull; flex-fuel (unleaded/E85)        | &bull; flex-fuel (unleaded/natural gas)             |
+| &bull; hydrogen                                  | &bull; midgrade unleaded (recommended) | &bull; natural gas                                  |
+| &bull; premium unleaded (recommended)            | &bull; premium unleaded (required)     | &bull; regular unleaded                             |
+              
 | Driven Wheels							|							|
 |:--------------------------|:--------------------------|
 | &bull; all-wheel-drive	| &bull; four-wheel-drive	|

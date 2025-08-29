@@ -38,10 +38,10 @@ These three endpoints provide all the necessary data.
 
 > http://api.edmunds.com/api/vehicle/v3/honda?state=USED&api_key={vehicle api key}
 
-#### Example 2: Get the total number of car makes that are listed as __New__
+#### Example 2: Get the total number of car makes
 
 > http://api.edmunds.com/api/vehicle/v3/makes/count?api_key={vehicle api key}
 
-#### Example 3: Get a list of makes with NEW_USED publication state:
+#### Example 3: Get a list of makes:
 
-> http://api.edmunds.com/api/vehicle/v3/makes?api_key={vehicle api key}&publicationStates=NEW_USED
+> http://api.edmunds.com/api/vehicle/v3/makes?api_key={vehicle api key}

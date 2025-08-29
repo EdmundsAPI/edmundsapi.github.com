@@ -4,7 +4,7 @@ title : 'Spec: Make'
 title_active_left_menu: 'Spec: Make'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Makes'
 spec: spec_make
 version: v3
@@ -23,7 +23,6 @@ number: 2
 | Parameter         | Description                                           | Possible Values     | Default Value | Required |
 |:------------------|:------------------------------------------------------|:-----------------   |:------------- |:-------- |
 | id                | The car make Id (e.g. 200000130)                      |                     |               | No       |
-| name              | The car make Name (e.g. Mercedes-Benz)                |                     |               | No       |
 | niceId            | The car make Nice Id (e.g. mercedes-benz)             |                     |               | No       |
 | niceName          | The car make Nice Name (e.g. mercedesbenz)            |                     |               | No       |
 | pageNum           | Page number                                           |                     | 1             | No       |
