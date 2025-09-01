@@ -24,7 +24,7 @@ number: 2
 | Parameter  | Description                           | Possible Values                                              | Default Value | Required |
 |:-----------|:--------------------------------------|:------------------------------------------------------------ |:------------- |:-------- |
 | {make}     | The car make                          | See [Spec: Make](/api-documentation/vehicle/spec_make/v3/)   |               | Yes      |
-| {model}    | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v2/) |               | Yes      |
+| {model}    | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v3/) |               | Yes      |
 | {year}     | The car year                          | 1990-current year                                            |               | Yes      |
 | reviewId   | The review ID                         |                                                              |               | Yes      |
 | fmt        | Response format                       | json                                                         | json          | Yes      |

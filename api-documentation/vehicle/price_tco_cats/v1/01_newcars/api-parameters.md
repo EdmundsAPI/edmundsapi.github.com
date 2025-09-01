@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values   | Default Value | Required |
 |:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/), or [Spec: Style](/api-documentation/vehicle/spec_style/v2/) endpoints | | Yes |
+| {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v3/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/), or [Spec: Style](/api-documentation/vehicle/spec_style/v3/) endpoints | | Yes |
 | {zipcode}  | ZIP Code                              |                   |               | Yes      |
 | {US State} | USA State Code                        | e.g. 'CA' or 'NY' |               | Yes      |
 | fmt        | Response format                       | json              | json          | Yes      |

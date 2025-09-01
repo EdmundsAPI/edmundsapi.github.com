@@ -23,6 +23,6 @@ number: 2
 
 | Parameter  | Description                           | Possible Values                                                              | Default Value | Required |
 |:-----------|:--------------------------------------|:-----------------------------------------------------------------------------|:------------- |:-------- |
-| {styleId} | The vehicle style ID                  | See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource    |               | Yes      |
+| {styleId} | The vehicle style ID                  | See the [Spec: Style](/api-documentation/vehicle/spec_style/v3/) resource    |               | Yes      |
 | fmt        | Response format                       | json                                                                         | json          | Yes      |
 | api_key    | Vehicle API key                       |                                                                              |               | Yes      |

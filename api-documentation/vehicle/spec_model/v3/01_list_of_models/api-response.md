@@ -4,7 +4,7 @@ title : 'Spec: Model'
 title_active_left_menu: 'Spec Model'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Models'
 spec: spec_model
 version: v3
