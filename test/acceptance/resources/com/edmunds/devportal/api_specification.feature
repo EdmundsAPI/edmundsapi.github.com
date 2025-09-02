@@ -63,7 +63,7 @@ Feature: API Documentation
     And the 'v2' documentation should be present
     And the 'v1' documentation should be present
     And menu 'v2' should be active
-    And the documentation should have 7 endpoints
+    And the documentation should have 5 endpoints
     When I choose 'api/vehicle/v2/styles/count' endpoint
     Then the endpoint should have specification articles
     When I choose 'api/vehicle/v2/{make}/styles/count' endpoint
@@ -170,8 +170,6 @@ Feature: API Documentation
     And the 'v1' documentation should be present
     And menu 'v1' should be active
     And the documentation should have 7 endpoints
-    When I choose 'v1/api/tco/usedtotalcashpricebystyleidandzip/{style ID}/{zipcode}' endpoint
-    Then the endpoint should have specification articles
     When I choose 'v1/api/tco/getmakeswithtcodata' endpoint
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/newtotalcashpricebystyleidandzip/{style ID}/{zipcode}' endpoint
@@ -179,8 +177,6 @@ Feature: API Documentation
     When I choose 'v1/api/tco/getstyleswithtcodatabysubmodel' endpoint
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'v1/api/tco/usedtruecosttoownbystyleidandzip/{style ID}/{zipcode}' endpoint
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/getmodelswithtcodata' endpoint
     Then the endpoint should have specification articles
