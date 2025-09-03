@@ -4,7 +4,7 @@ title : 'Spec: Style'
 title_active_left_menu: "Spec: Style"
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 title-endpoint: 'Get A List of Styles'
 spec: spec_style
 version: v3

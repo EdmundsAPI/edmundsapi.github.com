@@ -21,7 +21,7 @@ number: 2
 
 | Parameter      | Description                           | Possible Values    | Default Value | Required |
 |:---------------|:--------------------------------------|:-----------------  |:------------- |:-------- |
-| {style ID}     | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/) endpoints | | Yes |
+| {style ID}     | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v3/) and [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/) endpoints | | Yes |
 | availability	 | Equipment availability on this car    | optional, standard |               | No       |
 | equipmentType | Equipment type | See [Spec: Equipment Overview](/api-documentation/vehicle/spec_equipment/v2/index.html) | | No |
 | name | Equipment name | See [Spec: Equipment Overview](/api-documentation/vehicle/spec_equipment/v2/index.html) | | No |

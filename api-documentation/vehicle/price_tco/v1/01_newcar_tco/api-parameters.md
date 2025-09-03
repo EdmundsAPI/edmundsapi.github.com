@@ -21,9 +21,9 @@ number: 2
 
 ### Parameters
 
-| Parameter  | Description                           | Possible Values   | Default Value | Required |
-|:-----------|:--------------------------------------|:----------------- |:------------- |:-------- |
-| {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v2/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v2/), or [Spec: Style](/api-documentation/vehicle/spec_style/v2/) endpoints | | Yes |
-| {zipcode}  | ZIP Code                              |                   |               | Yes      |
-| fmt        | Response format                       | json              | json          | Yes      |
-| api_key    | Vehicle API key                       |                   |               | Yes      |
+| Parameter  | Description                           | Possible Values                                                                                                                                                                                             | Default Value | Required |
+|:-----------|:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------- |:-------- |
+| {style ID} | The vehicle style ID | See the [Spec: Model](/api-documentation/vehicle/spec_model/v3/), [Spec: Model/Year](/api-documentation/vehicle/spec_model_year/v3/), or [Spec: Style](/api-documentation/vehicle/spec_style/v3/) endpoints | | Yes |
+| {zipcode}  | ZIP Code                              |                                                                                                                                                                                                             |               | Yes      |
+| fmt        | Response format                       | json                                                                                                                                                                                                        | json          | Yes      |
+| api_key    | Vehicle API key                       |                                                                                                                                                                                                             |               | Yes      |

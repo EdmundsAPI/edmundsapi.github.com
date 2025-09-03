@@ -23,7 +23,7 @@ number: 2
 
 | Parameter  | Description                           | Possible Values                                                                        | Default Value | Required |
 |:-----------|:--------------------------------------|:---------------------------------------------------------------------------------------|:------------- |:-------- |
-| styleid    | The car style ID			             | See the [Spec: Style](/api-documentation/vehicle/spec_style/v2/) resource              | | Yes |
+| styleid    | The car style ID			             | See the [Spec: Style](/api-documentation/vehicle/spec_style/v3/) resource              | | Yes |
 | zip        | The ZIP code of the area  	         | 	                                                                                      |               | Yes      |
 | colorid    | Vehicle color ID (&colorid=xxx&colorid=xxx&colorid=xxx for multiples) | See [Spec: Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v3/) | | No |
 | optionid   | Vehicle option ID (&optionid=xxx&optionid=xxx&optionid=xxx for multiples) | See [Spec: Colors and Options](/api-documentation/vehicle/spec_colors_and_options/v3/) | | No |
