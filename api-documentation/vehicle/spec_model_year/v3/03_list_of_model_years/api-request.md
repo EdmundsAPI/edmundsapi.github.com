@@ -99,14 +99,6 @@ Get a list of model years for **Honda Accord**.
                 "FEATURES_AND_ACCESS_QUALITY_MECHANICAL": "5.0",
                 ...
               },
-              "attributes": {
-                "FEATURES_AND_ACCESS_QUALITY_MECHANICAL": {
-                  "id": 0,
-                  "name": "FEATURES_AND_ACCESS_QUALITY_MECHANICAL",
-                  "value": "5.0"
-                },
-                ...
-              },
               ...
             }
           },
