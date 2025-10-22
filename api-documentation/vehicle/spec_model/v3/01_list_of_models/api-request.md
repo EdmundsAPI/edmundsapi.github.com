@@ -68,19 +68,7 @@ Get A List of Models for **Honda**.
                 "EPI_CATEGORY_ID": "14",
                 ...
               },
-              "attributes": {
-                "USE_IN_NEW": {
-                  "id": 10,
-                  "name": "USE_IN_NEW",
-                  "value": "Y"
-                },
-                "EPI_CATEGORY_ID": {
-                  "id": 730,
-                  "name": "EPI_CATEGORY_ID",
-                  "value": "14"
-                },
-                ...
-              }
+              ...
             }
           },
           "categories": {

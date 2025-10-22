@@ -108,13 +108,7 @@ Get A List of Styles for **Honda Civic**.
               "properties": {
                 "CARGO_CAPACITY,_ALL_SEATS_IN_PLACE": "12.4"
               },
-              "attributes": {
-                "CARGO_CAPACITY,_ALL_SEATS_IN_PLACE": {
-                  "id": 120,
-                  "name": "CARGO_CAPACITY,_ALL_SEATS_IN_PLACE",
-                  "value": "12.4"
-                }
-              }
+              ...
             },
             ...
           },

@@ -54,53 +54,7 @@ Get equipments details for car style ID **101353967** (2011 Lexus RX 350 4dr SUV
                 "UNIVERSAL_REMOTE_TRANSMITTER": "universal remote transmitter",
                 "2ND_ROW_FLOOR_MATS": "rear floor mats"
               },
-              "attributes": {
-                "RETAINED_ACCESSORY_POWER": {
-                  "id": 296,
-                  "name": "RETAINED_ACCESSORY_POWER",
-                  "value": "retained accessory power"
-                },
-                "FLOOR_MAT_MATERIAL": {
-                  "id": 291,
-                  "name": "FLOOR_MAT_MATERIAL",
-                  "value": "carpet"
-                },
-                "FIRST_AID_KIT": {
-                  "id": 290,
-                  "name": "FIRST_AID_KIT",
-                  "value": "first aid kit"
-                },
-                "CRUISE_CONTROL": {
-                  "id": 289,
-                  "name": "CRUISE_CONTROL",
-                  "value": "cruise control"
-                },
-                "READING_LIGHTS": {
-                  "id": 294,
-                  "name": "READING_LIGHTS",
-                  "value": "front and rear reading lights"
-                },
-                "FLOOR_MATS": {
-                  "id": 293,
-                  "name": "FLOOR_MATS",
-                  "value": "floor mats"
-                },
-                "CARGO_AREA_LIGHT": {
-                  "id": 288,
-                  "name": "CARGO_AREA_LIGHT",
-                  "value": "cargo area light"
-                },
-                "UNIVERSAL_REMOTE_TRANSMITTER": {
-                  "id": 297,
-                  "name": "UNIVERSAL_REMOTE_TRANSMITTER",
-                  "value": "universal remote transmitter"
-                },
-                "2ND_ROW_FLOOR_MATS": {
-                  "id": 295,
-                  "name": "2ND_ROW_FLOOR_MATS",
-                  "value": "rear floor mats"
-                }
-              }
+              ...
             }
           },
           "equipmentClass": "UNKNOWN",
