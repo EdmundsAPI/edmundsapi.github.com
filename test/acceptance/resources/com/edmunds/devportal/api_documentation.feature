@@ -30,7 +30,6 @@ Feature: API Documentation
       | Service: Notes                       |
       | Service: Safety                      |
       | Content: Ratings and Reviews         |
-      | Content: Letter Grade Rating         |
     And menu 'Editorial API' should have items:
       | Articles       |
       | Editor Reviews |
