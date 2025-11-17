@@ -281,21 +281,6 @@ Feature: API Documentation
     And menu 'v1' should be active
     And the documentation should not have endpoints
 
-    Then I choose 'Content: Letter Grade Rating' left menu
-    And menu 'Content: Letter Grade Rating' should be active
-    And the 'v1' documentation shouldn't be present
-    And the 'v2' documentation should be present
-    And menu 'v2' should be active
-    And the documentation should have 4 endpoints
-    When I choose 'api/vehicle/v2/grade/{make}/{model}/{year}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/vehicle/v2/{make}/{model}/{year}/grade' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/vehicle/v2/{make}/{model}/{year}/grade/{reviewId}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/vehicle/v2/styles/{styleId}/grade' endpoint
-    Then the endpoint should have specification articles
-
     Then I choose 'Articles' left menu
     And menu 'Articles' should be active
     And the 'v2' documentation should be present

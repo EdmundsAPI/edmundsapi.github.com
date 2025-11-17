@@ -142,8 +142,8 @@ Here are some common uses of the Vehicle API:
 ### Available Resources
 
 | Specification					                                                                                                     | Service					| Pricing					| Review						| Media				|
-|:-----------------------------------------------------------------------------------------------------------------------|:--------------------------|:--------------------------|:------------------------------|:------------------|
-| [Make](/api-documentation/vehicle/spec_make/v3/)                                                                       | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | [Edmunds Grade Ratings](/api-documentation/vehicle/content_letter_grade/v2/) | [Vehicle Photos](/api-documentation/media/photos/v2/) |
+|:-----------------------------------------------------------------------------------------------------------------------|:--------------------------|:--------------------------|:-----------------------------|:------------------|
+| [Make](/api-documentation/vehicle/spec_make/v3/)                                                                       | [Maintenance Schedule](/api-documentation/vehicle/service_maintenance/v1/) | [True Market Value®](/api-documentation/vehicle/price_tmv/v1/) | | [Vehicle Photos](/api-documentation/media/photos/v2/) |
 | [Model](/api-documentation/vehicle/spec_model/v3/)                                                                     | [Recalls](/api-documentation/vehicle/service_recalls/v1/) | [True Cost to Own®](/api-documentation/vehicle/price_tco/v1/) | [Consumer Ratings and Reviews](/api-documentation/vehicle/content_ratings_and_reviews/v2/) | |
 | [Model Year and trim](/api-documentation/vehicle/spec_model_year/v3/)                                                  | | | | |
 | [Style](/api-documentation/vehicle/spec_style/v3/)                                                                     | | | | |
