@@ -34,7 +34,6 @@ You can also send your users to the following URL for more information on the Tr
 * [Get the Total Cash Price for a New Car](/api-documentation/vehicle/price_tco/v1/03_newcar_totalcash/api-description.html)
 * [Get Car Makes with TCO® Values](/api-documentation/vehicle/price_tco/v1/05_makes_with_tco/api-description.html)
 * [Get Car Models with a TCO® Value](/api-documentation/vehicle/price_tco/v1/06_models_with_tco/api-description.html)
-* [Get Car Styles with a TCO® Value](/api-documentation/vehicle/price_tco/v1/07_styles_with_tco/api-description.html)
 
 ### How We Calculate True Cost to Own®
 

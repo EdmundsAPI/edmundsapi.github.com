@@ -174,8 +174,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/newtotalcashpricebystyleidandzip/{style ID}/{zipcode}' endpoint
     Then the endpoint should have specification articles
-    When I choose 'v1/api/tco/getstyleswithtcodatabysubmodel' endpoint
-    Then the endpoint should have specification articles
     When I choose 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}' endpoint
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/getmodelswithtcodata' endpoint
