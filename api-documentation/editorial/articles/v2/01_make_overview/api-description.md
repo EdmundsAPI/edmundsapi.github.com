@@ -4,7 +4,7 @@ title : 'Get make overview'
 title_active_left_menu: 'Articles'
 title_parent: Api documentation
 
-amount_version: 2
+amount_version: 1
 title-endpoint: 'Get make overview'
 spec: articles
 version: v2

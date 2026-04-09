@@ -17,8 +17,7 @@ level: 1
 * [Special Requirements](#sec-3)
 * [Available Resources](#sec-4)
 * [Available Article Categories](#sec-5)
-* [Granular Editor Review Components](#sec-6)
-* [API Uses](#sec-7)
+* [API Uses](#sec-6)
 
 <a name='sec-1'> </a>
 
@@ -36,19 +35,7 @@ If you haven't yet, this might be a good time to read the [API Overview](/api-do
 
 Let's get right to it, shall we? Here's a few REST calls that should get you started using the API with ease. You could copy and paste these calls into your browser, add your *API key* to them and then press ENTER! . It will make your development life with the Edmunds API much easier :)
 
-#### Example 1: Get the latest *five* articles in the ***car news*** category
-
-> https://api.edmunds.com/v1/content/?category=car+news&limit=0%2C5&fmt=json&api_key={your API key}
-
-#### Example 2: Get the latest *ten* articles on ***Lexus RX-350 2013***
-
-> https://api.edmunds.com/v1/content/?make=lexus&model=rx-350&year=2013&limit=0%2C10&fmt=json&api_key={your API key}
-
-#### Example 3: Get the *Edmunds Editor Review* of the ***BMW X5 2013***
-
-> https://api.edmunds.com/v1/content/editorreviews?make=bmw&model=x5&year=2013&fmt=json&api_key={your API key}
-
-#### Example 3: Get the *Edmunds Expert Content* of the ***Honda Civic 2018***
+#### Example 1: Get the *Edmunds Expert Content* of the ***Honda Civic 2018***
 
 > https://api.edmunds.com/api/editorial/v3/makes/honda/models/civic/years/2020/expertcontent?api_key={API key}
 
@@ -85,7 +72,6 @@ The Editorial API has three resources:
 | Resource Name                                                     | Description                                                                                                                   |
 |:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | [Articles](/api-documentation/editorial/articles/v2/)             | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
-| [Editor Reviews](/api-documentation/editorial/editor_reviews/v1/) | Edmunds Editor Reviews including pros, cons, "Edmunds Says", and more. Reviews are found by car make/model/year.              |
 | [Expert Content](/api-documentation/editorial/expert_content/v3/) | Get expert content for make/model/year.                                                                                       |
 
 <a name='sec-5'> </a>
@@ -118,30 +104,10 @@ The Editorial API has three resources:
 
 [Back to top](#top)
 
-### Granular Editor Review Components
-
-When using the **Editor Reviews** resource, you will get the review broken into smaller chunks that makes it easy for you to take what you want out of it. The full review will also be included.
-
-* Pros
-* Cons
-* Edmunds Says
-* Safety
-* Powertrain
-* What's New
-* Driving and Handling
-* Video Review
-* Full Review
-
-<a name='sec-7'> </a>
-
-[Back to top](#top)
-
 ### API Uses
 
-* Get all articles in a specific category
 * Get all articles for a specific make/model/year
 * Get all articles for a specific make/model/year **and** specific category
-* Get the Edmunds Editor Review of a specific make/model/year
 * Get the Expert content of a specific make/model/year
 
 [Back to top](#top)
