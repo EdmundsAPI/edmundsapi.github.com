@@ -4,7 +4,7 @@ title : 'Get road tests overview'
 title_active_left_menu: 'Articles'
 title_parent: Api documentation
 
-amount_version: 1
+amount_version: 23
 title-endpoint: 'Get road tests overview'
 spec: articles
 version: v2

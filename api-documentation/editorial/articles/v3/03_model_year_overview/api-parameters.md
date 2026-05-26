@@ -1,19 +1,19 @@
 ---
 layout: api-documentation
-title : 'Get road tests overview'
+title : 'Get model/year overview'
 title_active_left_menu: 'Articles'
 title_parent: Api documentation
 
 amount_version: 23
-title-endpoint: 'Get road tests overview'
+title-endpoint: 'Get model/year overview'
 spec: articles
-version: v2
+version: v3
 api: editorial
-dropdown-link: 'api/editorial/v2/{make}/{model}/{year}/roadtests'
+dropdown-link: 'api/editorial/v3/{make}/{model}/{year}'
 
 
 level: 4
-description_edpoint: 'Get road tests overview'
+description_edpoint: 'Get model/year overview'
 title_md : Parameters
 number: 2
 

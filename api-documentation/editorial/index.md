@@ -39,6 +39,10 @@ Let's get right to it, shall we? Here's a few REST calls that should get you sta
 
 > https://api.edmunds.com/api/editorial/v3/makes/honda/models/civic/years/2020/expertcontent?api_key={API key}
 
+#### Example 2: Get the *Edmunds model/year overview* of the ***Honda Civic 2025***
+
+> https://api.edmunds.com/api/editorial/v3/honda/civic/2025?api_key={API key}
+
 <a name='sec-3'> </a>
 
 [Back to top](#top)
@@ -72,6 +76,7 @@ The Editorial API has three resources:
 | Resource Name                                                     | Description                                                                                                                   |
 |:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | [Articles](/api-documentation/editorial/articles/v2/)             | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
+| [Articles V3](/api-documentation/editorial/articles/v3/)          | Current editorial review and rating content by the vehicle's make/model/year.                                                 |
 | [Expert Content](/api-documentation/editorial/expert_content/v3/) | Get expert content for make/model/year.                                                                                       |
 
 <a name='sec-5'> </a>
@@ -108,6 +113,7 @@ The Editorial API has three resources:
 
 * Get all articles for a specific make/model/year
 * Get all articles for a specific make/model/year **and** specific category
+* Get current editorial review and rating content for a specific make/model/year
 * Get the Expert content of a specific make/model/year
 
 [Back to top](#top)
