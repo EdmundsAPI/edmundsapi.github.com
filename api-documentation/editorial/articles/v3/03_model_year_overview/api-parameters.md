@@ -28,5 +28,6 @@ number: 2
 | {model}       | The car model                         | See [Spec: Model](/api-documentation/vehicle/spec_model/v3/) |            | Yes                   |
 | {year}        | The car year                          | See [Spec: Year](/api-documentation/vehicle/spec_model_year/v3/) |              | Yes                   |
 | view          | Response detail level                 | basic, full           | basic         | No                                                        |
+| submodel      | Submodel nice ID used to filter the editorial content and ratings | Examples vary by model year and can include sedan, hatchback, si, type-r |       | No                                                        |
 | fmt           | Response format                       | json                  | json          | Yes                                                       |
 | api_key       | Your Edmunds/Editorial API key        |                       |               | Yes                                                       |

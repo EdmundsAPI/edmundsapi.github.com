@@ -23,6 +23,7 @@ number: 1
 ### Description
 
 Get editorial content written by the Edmunds staff by make name, model name and year. V3 includes the current editorial review and rating format used by newer model years.
+Pass the submodel nice ID when you need editorial content and ratings for a specific vehicle submodel. Submodel values vary by model year and can identify body styles or named variants, such as `sedan`, `hatchback`, `si` or `type-r`.
 Make sure to see the [*Special Requirements*](/api-documentation/editorial/#special_requirements) for displaying Edmunds editorial content.
 
 ### URL
@@ -50,7 +51,8 @@ You need the [Javascript SDK](https://github.com/EdmundsAPI/edmunds-javascript-s
 
                 // Optional parameters
                 var options = {
-                    "view": "full"
+                    "view": "full",
+                    "submodel": "sedan"
                 };
 
                 // Callback function to be called when the API response is returned
