@@ -16,8 +16,7 @@ level: 1
 * [Quick Start](#sec-2)
 * [Special Requirements](#sec-3)
 * [Available Resources](#sec-4)
-* [Available Article Categories](#sec-5)
-* [API Uses](#sec-6)
+* [API Uses](#sec-5)
 
 <a name='sec-1'> </a>
 
@@ -71,48 +70,19 @@ Each Article should be refreshed not less often than once every 30 days, in orde
 
 ### Available Resources
 
-The Editorial API has three resources:
+The Editorial API has two resources:
 
-| Resource Name                                                     | Description                                                                                                                   |
-|:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| [Articles](/api-documentation/editorial/articles/v2/)             | Articles written by the Edmunds staff. These can be found either by article category and/or by the vehicle's make/model/year. |
-| [Articles V3](/api-documentation/editorial/articles/v3/)          | Current editorial review and rating content by the vehicle's make/model/year.                                                 |
-| [Expert Content](/api-documentation/editorial/expert_content/v3/) | Get expert content for make/model/year.                                                                                       |
+| Resource Name                                                     | Description                                                                   |
+|:------------------------------------------------------------------|:------------------------------------------------------------------------------|
+| [Articles](/api-documentation/editorial/articles/v3/)             | Current editorial review and rating content by the vehicle's make/model/year. |
+| [Expert Content](/api-documentation/editorial/expert_content/v3/) | Get expert content for make/model/year.                                       |
 
 <a name='sec-5'> </a>
 
 [Back to top](#top)
 
-### Available Article Categories
-
-* auto finance
-* awards
-* best cars lists
-* car news
-* car buying
-* car leasing
-* car technology
-* driving
-* editor reviews
-* extended warranties
-* fuel economy
-* how-to advice
-* insurance
-* maintenance & repair
-* road tests
-* selling
-* top 10 lists
-* vehicle safety
-* warranties
-
-<a name='sec-6'> </a>
-
-[Back to top](#top)
-
 ### API Uses
 
-* Get all articles for a specific make/model/year
-* Get all articles for a specific make/model/year **and** specific category
 * Get current editorial review and rating content for a specific make/model/year
 * Get the Expert content of a specific make/model/year
 
