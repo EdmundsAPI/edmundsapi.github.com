@@ -4,7 +4,7 @@ title : 'Get Edmunds Articles by car make/model/year'
 title_active_left_menu: 'Articles'
 title_parent: Api documentation
 
-amount_version: 23
+amount_version: 1
 spec: articles
 version: v3
 api: editorial
