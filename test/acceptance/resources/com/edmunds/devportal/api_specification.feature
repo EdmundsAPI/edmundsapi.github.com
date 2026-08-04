@@ -281,18 +281,11 @@ Feature: API Documentation
 
     Then I choose 'Articles' left menu
     And menu 'Articles' should be active
-    And the 'v2' documentation should be present
-    And menu 'v2' should be active
-    And the documentation should have 5 endpoints
-    When I choose 'api/editorial/v2/{make}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/editorial/v2/{make}/{model}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/editorial/v2/{make}/{model}/{year}' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/editorial/v2/{make}/{model}/{year}/roadtests' endpoint
-    Then the endpoint should have specification articles
-    When I choose 'api/editorial/v2/articles?tag={tag}' endpoint
+    And the 'v2' documentation shouldn't be present
+    And the 'v3' documentation should be present
+    And menu 'v3' should be active
+    And the documentation should have 1 endpoints
+    When I choose 'api/editorial/v3/{make}/{model}/{year}' endpoint
     Then the endpoint should have specification articles
 
     Then I choose 'VIN Lookup' left menu

@@ -32,7 +32,7 @@ Feature: API Documentation
       | Content: Ratings and Reviews         |
     And menu 'Editorial API' should have items:
       | Articles       |
-      | Editor Reviews |
+      | Expert Content |
     And menu 'Dealer API' should have items:
       | Ratings and Reviews  |
       | Details and Location |
