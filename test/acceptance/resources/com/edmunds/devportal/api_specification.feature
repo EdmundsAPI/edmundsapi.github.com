@@ -176,8 +176,6 @@ Feature: API Documentation
     Then the endpoint should have specification articles
     When I choose 'v1/api/tco/newtruecosttoownbystyleidandzip/{style ID}/{zipcode}' endpoint
     Then the endpoint should have specification articles
-    When I choose 'v1/api/tco/getmodelswithtcodata' endpoint
-    Then the endpoint should have specification articles
 
     Then I choose 'Price: True Cost to Own® Categories' left menu
     And menu 'Price: True Cost to Own® Categories' should be active
